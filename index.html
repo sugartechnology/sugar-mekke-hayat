@@ -706,7 +706,7 @@ function adminMedia(){
    ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(m.brand):""}${m.cover?" · Kapak":""}</span></div>
      <div class="bd"><div class="form">
       <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
-      <label class="f">Paket<select data-k="brand">${opts(pk,m.brand,"Tümü")}</select></label>
+      <label class="f">Paket<select data-k="brand">${opts(m.brand&&!pk.includes(m.brand)?[...pk,m.brand]:pk,m.brand,"Tümü")}</select></label>
       <label class="f">Kat<select data-k="floor">${opts(fs,m.floor,"—")}</select></label>
       <label class="f">Oda<input data-k="room" list="roomsDL" value="${esc(m.room||"")}"></label>
       <label class="f" style="grid-column:1/-1">Başlık<input data-k="title" value="${esc(m.title||"")}"></label></div>
@@ -837,19 +837,30 @@ function parseHam(rows){ // Firma, Villa, Bölüm, Kod, Kalem, Marka, Tip, Topla
 function mergeParsed(p,extraFields){
   const cur=S.cfg||{projectName:"Hayat Mekke",subtitle:"Villa mobilya paketleri",location:"Mekke · Suudi Arabistan",vat:0.15,villaCount:250,fx:3.75,villaMeta:{}};
   const old=Object.fromEntries((cur.brands||[]).map(b=>[b.name,b]));
-  const map={...(S.keys.bySource||{})};const used=new Set(Object.values(map));
-  const tot=b=>p.villas.reduce((s,v)=>s+(b.values[v]||[]).reduce((x,y)=>x+(+y||0),0),0);
-  p.brands.filter(b=>!map[b.name]).sort((a,b)=>tot(a)-tot(b)).forEach(b=>{let n=TIERS.find(t=>!used.has(t));if(!n){let k=1;while(used.has("Paket "+k))k++;n="Paket "+k;}map[b.name]=n;used.add(n);});
-  S._pendingKeys=map;
-  const brandsN=p.brands.map(b=>{const name=map[b.name];const o=old[name]?.rates||{};const r={};["freight","assembly","insurance"].forEach(k=>r[k]=b.rates[k]!=null?b.rates[k]:(+o[k]||0));
+  // Package names always follow price order with no gaps: cheapest = Silver, next = Gold, …
+  // Suppliers that left the sheet free their name; their images are archived so they never show under another package.
+  const oldMap={...(S.keys.bySource||{})};
+  const tot=b=>{const r=b.rates||{};const k=1+(+r.freight||0)+(+r.assembly||0)+(+r.insurance||0);return p.villas.reduce((s,v)=>s+(b.values[v]||[]).reduce((x,y)=>x+(+y||0),0)*k,0);};
+  const order=p.brands.slice().sort((a,b)=>tot(a)-tot(b));
+  const map={};order.forEach((b,i)=>map[b.name]=TIERS[i]||("Paket "+(i+1)));
+  const ren={};for(const [src,oldName] of Object.entries(oldMap))ren[oldName]=map[src]||("Arşiv · "+oldName);
+  S._pendingKeys=map;S._renames=ren;
+  p.brands=order;
+  const brandsN=p.brands.map(b=>{const name=map[b.name];const o=old[oldMap[b.name]]?.rates||{};const r={};["freight","assembly","insurance"].forEach(k=>r[k]=b.rates[k]!=null?b.rates[k]:(+o[k]||0));
     const values={};p.villas.forEach(v=>values[v]=p.sections.map((_,i)=>+(b.values[v]?.[i]||0)));return {name,rates:r,values};});
   return {...cur,...extraFields,villas:p.villas,sections:p.sections,brands:brandsN,vat:p.vat!=null?p.vat:cur.vat,villaCount:p.villaCount||cur.villaCount,fx:p.fx||cur.fx,currency:"USD",updatedAt:new Date().toISOString()};}
 async function saveKeys(patch){const k={bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
 async function saveCfg(c,msg){try{delete c.sheetId;
   if(S._pendingKeys){await saveKeys({bySource:S._pendingKeys});S._pendingKeys=null;}
   await S.db.doc("config/main").set(c);if(msg)toast(msg);return true;}catch(e){toast(e?.code==="invalid_argument"?"Kaydetme yetkiniz yok":"Kaydedilemedi, tekrar deneyin");return false;}}
-async function saveBoq(ham,map){for(const [src,vv] of Object.entries(ham)){const name=map[src];if(!name)continue;const id=S.boqDocs[name]||slug(name);
-    await S.db.doc("boq/"+id).set({package:name,villas:vv,updatedAt:new Date().toISOString()});}}
+async function saveBoq(ham,map){const keep=new Set();
+  for(const [src,vv] of Object.entries(ham)){const name=map[src];if(!name)continue;const id=slug(name);keep.add(id);
+    await S.db.doc("boq/"+id).set({package:name,villas:vv,updatedAt:new Date().toISOString()});}
+  for(const id of Object.values(S.boqDocs))if(!keep.has(id)){try{await S.db.doc("boq/"+id).delete();}catch(e){}}}
+async function applyRenames(ren,hasHam){ // move image tags (and, without a fresh item list, item lists) to the new package names
+  const media=S.media.slice(),docs={...S.boqDocs};
+  for(const m of media){const n=m.brand&&ren[m.brand];if(n&&n!==m.brand){try{await S.db.doc("media/"+m.id).update({brand:n});}catch(e){}}}
+  if(!hasHam)for(const [oldName,id] of Object.entries(docs)){const n=ren[oldName];if(n&&n!==oldName){try{await S.db.doc("boq/"+id).update({package:n});}catch(e){}}}}
 function sheetIdFrom(s){const m=String(s||"").match(/\/d\/([A-Za-z0-9_-]{20,})/);return m?m[1]:String(s||"").trim();}
 const payloadRows=res=>{let p=res?.payload;if(typeof p==="string"){try{p=JSON.parse(p)}catch(e){}}return p?.values||p?.valueRange?.values;};
 function bindData(m){
@@ -861,8 +872,9 @@ function bindData(m){
       if(parsed.currency==="SAR")throw {message:"Excel SAR modunda. Özet sayfasında para birimini USD yapıp tekrar çekin"};
       let ham={};try{ham=parseHam(payloadRows(await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:HAM_RANGE},{cache:false})));}catch(e){}
       if(id!==S.keys.sheetId){try{await saveKeys({sheetId:id});}catch(e){}}
-      const cfg=mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"});const map=S._pendingKeys||S.keys.bySource;
-      if(await saveCfg(cfg)){if(Object.keys(ham).length)await saveBoq(ham,map);
+      const cfg=mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"});const map=S._pendingKeys||S.keys.bySource;const ren=S._renames||{};S._renames=null;
+      const hasHam=Object.keys(ham).length>0;
+      if(await saveCfg(cfg)){await applyRenames(ren,hasHam);if(hasHam)await saveBoq(ham,map);
         const n=Object.values(ham).reduce((a,vv)=>a+Object.values(vv).reduce((x,arr)=>x+arr.length,0),0);
         toast(`${parsed.brands.length} paket, ${parsed.villas.length} villa${n?`, ${n} kalem`:""} güncellendi`);st.textContent="Güncellendi";}}
     catch(e){st.textContent=e?.code==="not_granted"||e?.code==="server_not_connected"?"Google Sheets bağlantısına izin verin ya da bağlayıcıyı claude.ai'de açın.":"Çekilemedi: "+(e?.message||e?.code||"bilinmeyen hata");}});

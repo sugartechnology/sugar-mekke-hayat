@@ -51,41 +51,13 @@
         "Villa C": [
           36968,
           17960,
-          9577,
+          11377,
           9133
         ]
       }
     },
     {
       "name": "Platinum",
-      "rates": {
-        "freight": 0.07,
-        "assembly": 0.06,
-        "insurance": 0.004
-      },
-      "values": {
-        "Villa A": [
-          38418,
-          16888,
-          11261,
-          9000
-        ],
-        "Villa B": [
-          39835,
-          16536,
-          11081,
-          6972
-        ],
-        "Villa C": [
-          40575,
-          17898,
-          11331,
-          6972
-        ]
-      }
-    },
-    {
-      "name": "Pearl",
       "rates": {
         "freight": 0.06,
         "assembly": 0.06,
@@ -107,13 +79,13 @@
         "Villa C": [
           38404,
           23260,
-          11964,
+          13764,
           9133
         ]
       }
     },
     {
-      "name": "Emerald",
+      "name": "Pearl",
       "rates": {
         "freight": 0.04,
         "assembly": 0.06,
@@ -141,7 +113,7 @@
       }
     },
     {
-      "name": "Diamond",
+      "name": "Emerald",
       "rates": {
         "freight": 0.05,
         "assembly": 0.06,
@@ -149,19 +121,19 @@
       },
       "values": {
         "Villa A": [
-          44027,
+          42027,
           33940,
           15791,
           9133
         ],
         "Villa B": [
-          59906,
+          57906,
           40344,
-          15164,
+          15998,
           9133
         ],
         "Villa C": [
-          59915,
+          57915,
           41236,
           11964,
           9133
@@ -169,7 +141,7 @@
       }
     },
     {
-      "name": "Royal",
+      "name": "Diamond",
       "rates": {
         "freight": 0.034,
         "assembly": 0.05,
@@ -209,8 +181,8 @@
   ],
   "source": "sheets",
   "subtitle": "Villa mobilya paketleri",
-  "syncedAt": "2026-10-16T08:35:00Z",
-  "updatedAt": "2026-10-16T08:35:00Z",
+  "syncedAt": "2026-10-16T08:50:00Z",
+  "updatedAt": "2026-10-16T08:50:00Z",
   "vat": 0.15,
   "villaCount": 250,
   "villaMeta": {},
