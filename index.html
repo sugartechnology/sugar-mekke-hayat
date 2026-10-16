@@ -641,10 +641,21 @@ th.muted,td.muted{color:var(--muted)}
 .slide.cover::before{z-index:1}
 .slide.cover>*:not(.imgbg):not(.full-img){z-index:2}
 .slide .caption{z-index:2}
+.hdr-logos{display:flex;align-items:center;gap:14px;padding-left:18px;margin-left:2px;border-left:1px solid var(--line);height:36px}
+.hdr-logos .lg-e{height:34px;width:auto}.hdr-logos .lg-r{height:22px;width:auto}
+.lg-sep{width:1px;height:24px;background:var(--line)}
+@media (max-width:1180px){.hdr-logos{display:none}}
+.site-foot{border-top:1px solid var(--line);margin-top:72px;padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));background:var(--bg)}
+.site-foot:empty{display:none}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot-logos{display:flex;align-items:center;gap:22px}.foot-logos .lg-e{height:56px;width:auto}.foot-logos .lg-r{height:34px;width:auto}.foot-logos .lg-sep{height:40px}
+.site-foot p{margin:0;font-size:13px;color:var(--fg);text-align:right;line-height:1.6}.site-foot p span{color:var(--muted)}
+@media (max-width:640px){.site-foot p{text-align:left}.foot-logos .lg-e{height:46px}.foot-logos .lg-r{height:28px}}
 </style>
 
 <header class="bar"><div class="bar-in">
   <button class="logo" id="home"><i></i><div><b id="pname">Hayat Mekke</b><small id="psub">Villa mobilya paketleri</small></div></button>
+  <div class="hdr-logos" id="hdrLogos" aria-label="Proje ortakları"></div>
   <nav class="nav" id="tabs" aria-label="Bölümler"></nav>
   <div class="bar-actions">
     <div class="seg" role="group" aria-label="Para birimi"><button id="curUSD" aria-pressed="true">USD</button><button id="curSAR" aria-pressed="false">SAR</button></div>
@@ -654,6 +665,7 @@ th.muted,td.muted{color:var(--muted)}
 <main class="wrap" id="main">
   <div class="empty" style="margin-top:40px"><strong>Sunum yükleniyor</strong><span>Villa verileri ve görseller birkaç saniye içinde gelecek.</span></div>
 </main>
+<footer class="site-foot" id="siteFoot"></footer>
 <div id="sheet"></div>
 <div id="overlay"></div>
 
@@ -762,7 +774,12 @@ const initials=s=>String(s).split(/\s+/).filter(w=>!/^\d+$/.test(w)).slice(0,2).
 
 /* ---------- header ---------- */
 const VIEWS=[["villas","Villalar"],["compare","Paketleri karşılaştır"],["admin","Yönetim"]];
-function renderTabs(){
+function renderBrandLogos(){const lg=S.cfg?.logos||{};const h=$("#hdrLogos"),f=$("#siteFoot");if(!h||!f)return;
+  const key=[lg.emlak,lg.rapid].join("|");if(h.dataset.k===key)return;h.dataset.k=key;
+  const e=lg.emlak?`<img class="lg-e" src="${blob(lg.emlak)}" alt="Emlak Konut">`:"",r=lg.rapid?`<img class="lg-r" src="${blob(lg.rapid)}" alt="RapidRender">`:"";
+  h.innerHTML=e||r?`${e}${e&&r?`<span class="lg-sep"></span>`:""}${r}`:"";h.hidden=!(e||r);
+  f.innerHTML=e||r?`<div class="wrap foot-in"><div class="foot-logos">${e}${e&&r?`<span class="lg-sep"></span>`:""}${r}</div><p>${esc(S.cfg?.projectName||"Hayat Mekke")} · ${esc(S.cfg?.subtitle||"Villa mobilya paketleri")}<br><span>Fiyatlar villa başı, navlun, montaj ve sigorta dahil; KDV hariç.</span></p></div>`:"";}
+function renderTabs(){renderBrandLogos();
   const curV=S.view==="villa"?"villas":S.view;
   $("#tabs").innerHTML=VIEWS.filter(([k])=>k!=="admin"||S.canEdit).map(([k,l])=>`<button data-view="${k}" aria-current="${curV===k}">${l}</button>`).join("");
   $("#curSAR").setAttribute("aria-pressed",S.cur==="SAR");$("#curUSD").setAttribute("aria-pressed",S.cur==="USD");
