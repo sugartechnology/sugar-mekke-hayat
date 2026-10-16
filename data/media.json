@@ -345,7 +345,7 @@
     "cover": false
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_salon_02.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_05.jpg",
     "brand": "Diamond",
     "createdAt": "2026-10-16T15:36:15.526Z",
     "fileName": "homage_living_room_c (1).jpg",
@@ -353,9 +353,9 @@
     "kind": "render",
     "order": 1792164975526,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_salon_02.jpg",
-    "title": "Villa A · Salon · Diamond · Homage",
-    "villa": "Villa A",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_05.jpg",
+    "title": "Villa C · Salon · Diamond · Homage",
+    "villa": "Villa C",
     "id": "baxrpz2ec9t9iimdfuj1",
     "cover": false
   },
