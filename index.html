@@ -1082,6 +1082,7 @@ function adminHTML(){
   return `<section class="block"><div class="block-head"><div><span class="eyebrow">Yönetim</span><h2>Görseller ve veriler</h2></div></div>
    <div class="subtabs">${[["media","Medya yükle"],["pins","Plan üzerinde odalar"],["data","Maliyet verileri"],["info","Proje ve villa bilgileri"]].map(([k,l])=>`<button class="subtab" data-at="${k}" aria-current="${t===k}">${l}</button>`).join("")}</div>
    ${t==="media"?adminMedia():t==="pins"?adminPins():t==="data"?adminData():adminInfo()}</section>`;}
+function optsP(arr,sel,empty){return (empty!=null?`<option value="">${empty}</option>`:"")+arr.map(x=>`<option value="${esc(x)}" ${x===sel?"selected":""}>${esc(pl(x))}</option>`).join("");}
 function opts(arr,sel,empty){return (empty!=null?`<option value="">${empty}</option>`:"")+arr.map(x=>`<option value="${esc(x)}" ${x===sel?"selected":""}>${esc(x)}</option>`).join("");}
 function roomList(){const s=new Set(S.media.flatMap(m=>[m.room,...(m.pins||[]).map(p=>p.room)]).filter(Boolean));
   Object.values(S.boq).forEach(vv=>Object.values(vv).forEach(arr=>arr.forEach(it=>{if(!isExtra(it.f))s.add(labelItem(it).room);})));
@@ -1114,10 +1115,10 @@ function adminMedia(){
   return `<div class="card"><div class="form">
      <label class="f">Tür<select id="upKind"><option value="render">Oda renderı</option><option value="plan">Kat planı</option><option value="pano">360° panorama</option></select></label>
      <label class="f">Villa<select id="upVilla">${opts(vs,S.villa)}</select></label>
-     <label class="f">Paket<select id="upBrand">${opts(pk,S.pkg,"Tüm paketler (ortak)")}</select></label>
+     <label class="f">Paket<select id="upBrand">${optsP(pk,S.pkg,"Tüm paketler (ortak)")}</select></label>
      <label class="f">Kat<select id="upFloor">${opts(fs,S.floor,"Belirtilmemiş")}</select></label>
      <label class="f">Oda<select id="upRoom">${roomOptionsHTML(S.villa||vs[0],S.floor,S.pkg,"")}</select><input id="upRoomNew" placeholder="Yeni oda adı" hidden></label>
-     <label class="f" style="grid-column:1/-1">Başlık<span class="autot"><input id="upTitle" readonly aria-describedby="upTitleHint"><button type="button" class="btn sm" id="upTitleEdit">Düzenle</button></span><small id="upTitleHint" class="muted" style="font-weight:400">Villa · oda · paket adından otomatik oluşur</small></label></div>
+     <label class="f" style="grid-column:1/-1">Başlık<span class="autot"><input id="upTitle" readonly aria-describedby="upTitleHint"><button type="button" class="btn sm" id="upTitleEdit">Düzenle</button></span><small id="upTitleHint" class="muted" style="font-weight:400">Villa · oda · paket ve firma adından otomatik oluşur</small></label></div>
      <datalist id="roomsDL">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist>
      <p class="note" id="upInfo" style="margin:0"></p>
      <p class="note" style="margin:0">Paket seçilirse görsel yalnızca o paket açıkken görünür. Kat planı paketten bağımsızsa "Tüm paketler" bırakın.</p>
@@ -1125,10 +1126,10 @@ function adminMedia(){
        <label class="btn primary">Dosya seç<input type="file" id="upFile" accept="image/*" multiple hidden></label></div>
      <div class="uplist" id="upList"></div></div>
    <div class="block-head"><div><span class="eyebrow">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
-   ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(m.brand):""}${m.cover?" · Kapak":""}</span></div>
+   ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(pl(m.brand)):""}${m.cover?" · Kapak":""}</span></div>
      <div class="bd"><div class="form">
       <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
-      <label class="f">Paket<select data-k="brand">${opts(m.brand&&!pk.includes(m.brand)?[...pk,m.brand]:pk,m.brand,"Tümü")}</select></label>
+      <label class="f">Paket<select data-k="brand">${optsP(m.brand&&!pk.includes(m.brand)?[...pk,m.brand]:pk,m.brand,"Tümü")}</select></label>
       <label class="f">Kat<select data-k="floor">${opts(fs,m.floor,"—")}</select></label>
       <label class="f">Oda<select data-k="room">${roomOptionsHTML(m.villa,m.floor,m.brand,m.room||"")}</select><input data-knew="room" placeholder="Yeni oda adı" hidden></label>
       <label class="f" style="grid-column:1/-1">Başlık<input data-k="title" value="${esc(m.title||"")}"></label></div>
@@ -1141,7 +1142,7 @@ function adminPins(){
   const plans=mediaOf(m=>m.kind==="plan");
   if(!plans.length)return `<div class="empty"><strong>Kat planı yok</strong><span>Önce Medya yükle bölümünden kat planı ekleyin.</span></div>`;
   if(!S.pinPlan||!plans.some(p=>p.id===S.pinPlan))S.pinPlan=plans[0].id;const p=plans.find(x=>x.id===S.pinPlan);
-  return `<div class="villa-grid"><div class="card"><label class="f">Plan<select id="pinSel">${plans.map(x=>`<option value="${x.id}" ${x.id===p.id?"selected":""}>${esc([x.villa,x.floor,x.brand||"tüm paketler",x.title].filter(Boolean).join(" · "))}</option>`).join("")}</select></label>
+  return `<div class="villa-grid"><div class="card"><label class="f">Plan<select id="pinSel">${plans.map(x=>`<option value="${x.id}" ${x.id===p.id?"selected":""}>${esc([x.villa,x.floor,x.brand?pl(x.brand):"tüm paketler",x.title].filter(Boolean).join(" · "))}</option>`).join("")}</select></label>
      <p class="note" style="margin:0">Planda odanın üzerine tıklayın, oda adını seçip ekleyin. Kalem listesindeki oda adlarını kullanırsanız odanın maliyeti işaretle eşleşir.</p>
      <div class="plan-stage"><div class="plan-inner" id="pinStage" style="cursor:crosshair"><img src="${blob(p.asset)}" alt="">
       ${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}
@@ -1207,9 +1208,9 @@ function bindMedia(m){
     if(uR.value&&uR.value!=="__new"&&!uF.value){const f=roomFloor(uV.value,uR.value);if(f){uF.value=f;const r=uR.value;refill();uR.value=r;info();}}else info();});
   const uT=m.querySelector("#upTitle"),uTE=m.querySelector("#upTitleEdit"),uTH=m.querySelector("#upTitleHint");let manual=false;
   const roomVal=()=>uR.value==="__new"?uN.value.trim():uR.value;
-  const autoTitle=()=>[uV.value,roomVal()||uF.value||"",uB.value||""].filter(Boolean).join(" · ");
+  const autoTitle=()=>[uV.value,roomVal()||uF.value||"",uB.value?pl(uB.value):""].filter(Boolean).join(" · ");
   const syncTitle=()=>{if(!manual)uT.value=autoTitle();};
-  const setManual=on=>{manual=on;uT.readOnly=!on;uTE.textContent=on?"Otomatiğe dön":"Düzenle";uTH.textContent=on?"Elle düzenleniyor":"Villa · oda · paket adından otomatik oluşur";if(on){uT.focus();uT.select();}else syncTitle();};
+  const setManual=on=>{manual=on;uT.readOnly=!on;uTE.textContent=on?"Otomatiğe dön":"Düzenle";uTH.textContent=on?"Elle düzenleniyor":"Villa · oda · paket ve firma adından otomatik oluşur";if(on){uT.focus();uT.select();}else syncTitle();};
   uTE.onclick=()=>setManual(!manual);uT.addEventListener("click",()=>{if(!manual)setManual(true);});
   [uV,uF,uB,uR].forEach(el=>el.addEventListener("change",syncTitle));uN.addEventListener("input",syncTitle);
   info();syncTitle();
