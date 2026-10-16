@@ -717,9 +717,12 @@ const byOrder=(a,b)=>(a.order||0)-(b.order||0);
 function mediaOf(f){return S.media.filter(f).sort(byOrder);}
 const pkgMatch=(m,pkg)=>!m.brand||!pkg||m.brand===pkg;
 const floorIdx=f=>{const i=floorsOnly().indexOf(f);return i<0?99:i;};
-function coverImg(villa,pkg,strict){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa));
-  const pref=strict?[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand]:[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand,x=>x.cover,()=>true];
-  for(const p of pref){const r=pool.filter(p).sort(byOrder);if(r.length)return r[0];}return null;}
+const byCover=(a,b)=>(b.coverAt||0)-(a.coverAt||0)||byOrder(a,b);
+function coverImg(villa,pkg,mode){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa));
+  const pref=mode===true?[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand]
+    :mode==="villa"?[x=>x.cover&&x.brand===pkg,x=>x.cover,x=>x.brand===pkg,x=>!x.brand,()=>true]
+    :[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand,x=>x.cover,()=>true];
+  for(const p of pref){const r=pool.filter(p).sort(byCover);if(r.length)return r[0];}return null;}
 function thumb(m){return blob(m.thumb||m.asset);}
 function planFor(v,f,pkg){const ps=mediaOf(m=>m.kind==="plan"&&m.villa===v&&(m.floor===f||!m.floor)).sort((a,b)=>(a.floor===f?0:1)-(b.floor===f?0:1));
   return ps.find(p=>p.brand===pkg)||ps.find(p=>!p.brand)||ps[0]||null;}
@@ -770,7 +773,8 @@ function heroPool(){const seen=new Set();const out=[];
     const k1=m.asset,k2=[m.villa,m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return;seen.add(k1);seen.add(k2);out.push(m);});
   return out;}
 function heroList(){const pool=heroPool();const key=pool.map(m=>m.id).sort().join(",");
-  if(!S.hero||S.hero.key!==key){const a=pool.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}S.hero={key,list:a,i:0};}
+  const ckey=pool.filter(m=>m.cover).map(m=>m.id+":"+(m.coverAt||0)).join(",");
+  if(!S.hero||S.hero.key!==key||S.hero.ckey!==ckey){const covers=pool.filter(m=>m.cover).sort(byCover);const a=pool.filter(m=>!m.cover);for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}S.hero={key,ckey,list:[...covers,...a],i:0};}
   return S.hero.list;}
 function heroInfo(m){const b=pkgByName(m.brand);const v=m.villa;const pk=b||rankedFor(v)[0];
   return {villa:v,room:m.room||m.title||"Oda",pkg:pk,price:pk?net(pk,v):0,exact:!!b};}
@@ -809,7 +813,7 @@ function bindHero(){clearInterval(S.heroTimer);const h=$("#hero");if(!h||!S.hero
 
 /* ---------- home: villa list ---------- */
 function listHTML(){
-  const best=ranked()[0];const c=coverImg(null,best?.name);
+  const best=ranked()[0];const c=coverImg(null,best?.name,"villa");
   const minAll=Math.min(...villas().map(v=>net(rankedFor(v)[0],v)));
   return `<section><div class="intro"><div><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1></div>
       <div><p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
@@ -819,7 +823,7 @@ function listHTML(){
       <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)} ${S.cur}</b><span>başlangıç fiyatı, KDV hariç</span></div></div></section>
   <section class="block" id="villas"><div class="head"><div><h2>Villa tipleri</h2></div>
     <p>Fiyatlar mobilya, navlun, montaj ve sigorta dahil, KDV hariçtir.</p></div>
-   <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name);const meta=S.cfg.villaMeta?.[v]||{};
+   <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name,"villa");const meta=S.cfg.villaMeta?.[v]||{};
      const nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length;
      return `<button class="vc" data-villa="${esc(v)}">${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"><span class="tag">${nR} görsel</span></div>`:placeholder("","Görseller hazırlanıyor")}
       <div class="bd"><h3>${esc(v)}</h3><span class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı")}</span>
@@ -1367,6 +1371,7 @@ function mediaFilterHTML(items,vs,pk){const f=S.mf||(S.mf={v:"",b:"",k:"",q:"",d
     <input type="search" id="mfQ" placeholder="Oda, başlık ya da dosya ara" value="${esc(f.q)}">
     ${nd?`<label class="mdup"><input type="checkbox" id="mfDup" ${f.dup?"checked":""}> Yalnızca tekrarlananlar (${nd})</label>`:""}
     <button type="button" class="btn sm" id="mfReset">Temizle</button></div></div>
+   <p class="note" style="margin:0 0 14px">Kapak: her villa ve paket için bir görsel seçilir. Villa kartında, ana sayfa slaytının başında, villa galerisinde ilk sırada ve sunum ile PDF kapaklarında kullanılır.</p>
    <div class="empty" id="mfEmpty" hidden><strong>Bu filtreye uyan görsel yok</strong><span>Filtreyi değiştirin ya da temizleyin.</span></div>`;}
 function mfMatch(d,f,q,skip){return (skip==="v"||!f.v||d.fv===f.v)&&(skip==="b"||!f.b||(f.b==="__none"?!d.fb:d.fb===f.b))&&(skip==="k"||!f.k||d.fk===f.k)&&(!q||d.fq.includes(q))&&(!f.dup||d.dup==="1");}
 function applyMediaFilter(m){const f=S.mf||{};const q=(f.q||"").toLocaleLowerCase("tr").trim();let n=0;const all=[...m.querySelectorAll(".mitem")];
@@ -1561,7 +1566,13 @@ function bindMedia(m){
     card.querySelector('[data-knew="room"]')?.addEventListener("change",e=>{const v=e.target.value.trim();if(v)save("room",v);});
     card.querySelectorAll("[data-act]").forEach(b=>b.onclick=async()=>{const a=b.dataset.act;const it=S.media.find(x=>x.id===id);if(!it)return;
       try{
-      if(a==="cover"){await doc.update({cover:!it.cover});}
+      if(a==="cover"){b.disabled=true;
+        if(it.cover){await doc.update({cover:false});it.cover=false;toast("Kapaktan çıkarıldı");}
+        else{const others=S.media.filter(x=>x.id!==id&&x.cover&&x.kind==="render"&&x.villa===it.villa&&(x.brand||"")===(it.brand||""));
+          await doc.update({cover:true,coverAt:Date.now()});it.cover=true;
+          for(const o of others){try{await S.db.doc("media/"+o.id).update({cover:false});o.cover=false;}catch(e){}}
+          toast(`Kapak yapıldı · ${it.villa||""}${it.brand?" · "+pl(it.brand):""}${others.length?" · önceki kapak kaldırıldı":""}`);}
+        const mm=$("#main");if(mm){const y=window.scrollY;render();window.scrollTo({top:y});}}
       else if(a==="pins"){S.pinPlan=id;S.admin="pins";render();}
       else if(a==="up"||a==="down"){const peers=mediaOf(x=>x.kind===it.kind&&x.villa===it.villa&&(x.brand||"")===(it.brand||""));const i=peers.findIndex(x=>x.id===id);const j=a==="up"?i-1:i+1;
         if(j<0||j>=peers.length)return;const o=peers[j];const oi=it.order||0,oo=o.order||0;await doc.update({order:oo===oi?oo-1:oo});await S.db.doc("media/"+o.id).update({order:oi});}
