@@ -1,6 +1,6 @@
 [
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa22_gorsel19.jpeg",
     "floor": "Çatı katı",
     "kind": "render",
@@ -14,7 +14,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa21_gorsel18.jpeg",
     "floor": "Çatı katı",
     "kind": "render",
@@ -28,7 +28,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa20_gorsel17.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -42,7 +42,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa18_gorsel16.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -56,7 +56,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa17_gorsel15.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -70,7 +70,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa16_gorsel14.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -84,7 +84,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa15_gorsel13.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -98,7 +98,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa14_gorsel12.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -112,7 +112,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa13_gorsel11.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -126,7 +126,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa12_gorsel10.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -140,7 +140,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa11_gorsel09.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -154,7 +154,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa10_gorsel08.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -168,7 +168,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa09_gorsel07.jpeg",
     "floor": "1. kat",
     "kind": "render",
@@ -182,7 +182,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa08_gorsel06.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -196,7 +196,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa07_gorsel05.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -210,7 +210,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa05_gorsel04.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -224,7 +224,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa03_gorsel03.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
@@ -238,7 +238,7 @@
     "cover": false
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "cover": false,
     "fileName": "sayfa02_gorsel02.png",
     "floor": null,
@@ -252,7 +252,7 @@
     "thumb": "assets/villa-a/renders/thumbs/zemin-kat_18.jpg"
   },
   {
-    "brand": "Emerald",
+    "brand": "Pearl",
     "fileName": "sayfa01_gorsel01.jpeg",
     "floor": "Zemin kat",
     "kind": "render",
