@@ -303,6 +303,43 @@
     "floor": null,
     "kind": "plan",
     "order": 1792185049316,
+    "pins": [
+      {
+        "room": "Yatak odası 1",
+        "x": 0.4228,
+        "y": 0.2141
+      },
+      {
+        "room": "Ebeveyn yatak odası",
+        "x": 0.4211,
+        "y": 0.7885
+      },
+      {
+        "room": "Yatak odası 3",
+        "x": 0.5143,
+        "y": 0.6261
+      },
+      {
+        "room": "Yatak odası 2",
+        "x": 0.521,
+        "y": 0.2965
+      },
+      {
+        "room": "Salon",
+        "x": 0.1864,
+        "y": 0.2776
+      },
+      {
+        "room": "Aile salonu",
+        "x": 0.8106,
+        "y": 0.5978
+      },
+      {
+        "room": "Meclis",
+        "x": 0.2147,
+        "y": 0.6072
+      }
+    ],
     "room": null,
     "thumb": "assets/villa-a/plans/thumbs/kat-planlari.webp",
     "title": "Villa A",
@@ -318,6 +355,28 @@
     "floor": null,
     "kind": "plan",
     "order": 1792185079394,
+    "pins": [
+      {
+        "room": "Meclis",
+        "x": 0.2031,
+        "y": 0.6355
+      },
+      {
+        "room": "Salon",
+        "x": 0.1864,
+        "y": 0.2611
+      },
+      {
+        "room": "Rawashin",
+        "x": 0.7707,
+        "y": 0.2729
+      },
+      {
+        "room": "Mutfak",
+        "x": 0.1049,
+        "y": 0.1246
+      }
+    ],
     "room": null,
     "thumb": "assets/villa-b/plans/thumbs/kat-planlari.webp",
     "title": "Villa B",
@@ -333,6 +392,28 @@
     "floor": null,
     "kind": "plan",
     "order": 1792185090555,
+    "pins": [
+      {
+        "room": "Salon",
+        "x": 0.1714,
+        "y": 0.2847
+      },
+      {
+        "room": "Meclis",
+        "x": 0.2114,
+        "y": 0.5907
+      },
+      {
+        "room": "Mutfak",
+        "x": 0.2114,
+        "y": 0.4565
+      },
+      {
+        "room": "Ebeveyn yatak odası",
+        "x": 0.5127,
+        "y": 0.6778
+      }
+    ],
     "room": null,
     "thumb": "assets/villa-c/plans/thumbs/kat-planlari.webp",
     "title": "Villa C",
