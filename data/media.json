@@ -1,58 +1,5 @@
 [
   {
-    "asset": "assets/villa-a/renders/zemin-kat_18.webp",
-    "brand": "Emerald",
-    "cover": false,
-    "createdAt": "2026-10-15T06:26:40.528Z",
-    "fileName": "sayfa02_gorsel02.png",
-    "floor": null,
-    "kind": "plan",
-    "order": 1792045600528,
-    "original": "assets/villa-a/renders/zemin-kat_18.png",
-    "pins": [
-      {
-        "room": "Salon",
-        "x": 0.2827,
-        "y": 0.3
-      },
-      {
-        "room": "Meclis",
-        "x": 0.2637,
-        "y": 0.6211
-      },
-      {
-        "room": "Aile salonu",
-        "x": 0.7693,
-        "y": 0.6003
-      },
-      {
-        "room": "Ebeveyn yatak odası",
-        "x": 0.4488,
-        "y": 0.7621
-      },
-      {
-        "room": "Yatak odası 1",
-        "x": 0.4619,
-        "y": 0.2269
-      },
-      {
-        "room": "Yatak odası 2",
-        "x": 0.5406,
-        "y": 0.2974
-      },
-      {
-        "room": "Yatak odası 3",
-        "x": 0.542,
-        "y": 0.6316
-      }
-    ],
-    "room": null,
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_18.webp",
-    "title": "Kat planları · zemin, 1. kat, çatı",
-    "villa": "Villa A",
-    "id": "w2jcao94asjgvq10ue7s"
-  },
-  {
     "asset": "assets/villa-c/renders/zemin-kat_salon_01.webp",
     "brand": "Silver",
     "createdAt": "2026-10-16T15:20:22.669Z",
@@ -346,6 +293,51 @@
     "title": "Villa A · Ebeveyn yatak odası · Pearl · Modis",
     "villa": "Villa A",
     "id": "ayx3c5h727txbsmocvr2",
+    "cover": false
+  },
+  {
+    "asset": "assets/villa-a/plans/kat-planlari.webp",
+    "brand": null,
+    "createdAt": "2026-10-16T21:10:49.316Z",
+    "fileName": "New_Type_A_040826.png",
+    "floor": null,
+    "kind": "plan",
+    "order": 1792185049316,
+    "room": null,
+    "thumb": "assets/villa-a/plans/thumbs/kat-planlari.webp",
+    "title": "Villa A",
+    "villa": "Villa A",
+    "id": "tunuocaujc4lywge3mzk",
+    "cover": false
+  },
+  {
+    "asset": "assets/villa-b/plans/kat-planlari.webp",
+    "brand": null,
+    "createdAt": "2026-10-16T21:11:19.394Z",
+    "fileName": "New_Type_B-040826.png",
+    "floor": null,
+    "kind": "plan",
+    "order": 1792185079394,
+    "room": null,
+    "thumb": "assets/villa-b/plans/thumbs/kat-planlari.webp",
+    "title": "Villa B",
+    "villa": "Villa B",
+    "id": "yur3cli5ym9z01flm4sv",
+    "cover": false
+  },
+  {
+    "asset": "assets/villa-c/plans/kat-planlari.webp",
+    "brand": null,
+    "createdAt": "2026-10-16T21:11:30.555Z",
+    "fileName": "New_Type_C_040826.png",
+    "floor": null,
+    "kind": "plan",
+    "order": 1792185090555,
+    "room": null,
+    "thumb": "assets/villa-c/plans/thumbs/kat-planlari.webp",
+    "title": "Villa C",
+    "villa": "Villa C",
+    "id": "bhn3iip16u9tcr4mfl3k",
     "cover": false
   }
 ]
