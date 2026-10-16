@@ -611,7 +611,7 @@ const EXTRAS=[["Bed Linen","Nevresim takımları (6 oda × 2 takım, yorgan, yas
 const TYPES={"Fixed":"Hareketsiz mobilya","Loose Furniture":"Hareketli mobilya","Ev Dekorasyon":"Ev tekstili ve dekorasyon","":"Diğer"};
 const TYPE_COLOR={"Loose Furniture":"var(--f1)","Fixed":"var(--f2)","Ev Dekorasyon":"var(--fx)","":"var(--fv)"};
 const BRAND_TR={"Kitchen Furniture":"Mutfak mobilyası","Bathroom Furniture":"Banyo mobilyası"};
-const brandLabel=b=>!b?"Marka belirtilmemiş":(BRAND_TR[b]||b);
+const brandLabel=b=>{if(!b)return "Marka belirtilmemiş";const m=String(b).match(/^(.+) koleksiyonu$/);const pk=m&&brands().find(x=>x.name===m[1]);if(pk&&pk.firm)return pk.firm;return BRAND_TR[b]||b;};
 const TYPE_NOTE={"Fixed":"mutfak, banyo dolapları, gardıroplar · yerinde montaj","Loose Furniture":"kanepe, yatak, masa, sandalye","Ev Dekorasyon":"nevresim, havlu, halı, perde, mutfak seti"};
 const isExtra=f=>/tamamlay/i.test(f||"");
 function labelItem(it){
@@ -631,6 +631,7 @@ const sections=()=>S.cfg?.sections||[];
 const brands=()=>S.cfg?.brands||[];
 const floorsOnly=()=>sections().filter(s=>!isExtra(s));
 const pkgByName=n=>brands().find(b=>b.name===n);
+const pl=n=>{const b=pkgByName(n);return b&&b.firm?n+" · "+b.firm:(n||"");};
 function furn(b,v){return (b?.values?.[v]||[]).reduce((a,x)=>a+(+x||0),0);}
 function extra(b){const r=b?.rates||{};return (+r.freight||0)+(+r.assembly||0)+(+r.insurance||0);}
 function layers(b,v){const f=furn(b,v),r=b.rates||{},la=b.layers?.[v];
@@ -706,7 +707,7 @@ function listHTML(){
   return `<section><div class="intro"><div><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1></div>
       <div><p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
        <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları incele</button><button class="btn" data-deck>Sunumu başlat</button></div></div></div>
-     ${c?`<div class="cover"><img src="${blob(c.asset)}" alt="${esc(c.title||"")}"></div><div class="caption-line"><span>${esc(c.title||c.room||"")}</span><span>${esc([c.villa,c.brand?c.brand+" paketi":""].filter(Boolean).join(" · "))}</span></div>`:""}
+     ${c?`<div class="cover"><img src="${blob(c.asset)}" alt="${esc(c.title||"")}"></div><div class="caption-line"><span>${esc(c.title||c.room||"")}</span><span>${esc([c.villa,c.brand?pl(c.brand)+" paketi":""].filter(Boolean).join(" · "))}</span></div>`:""}
      <div class="facts"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
       <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)} ${S.cur}</b><span>başlangıç fiyatı, KDV hariç</span></div></div></section>
   <section class="block" id="villas"><div class="head"><div><h2>Villa tipleri</h2></div>
@@ -715,13 +716,13 @@ function listHTML(){
      const nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length;
      return `<button class="vc" data-villa="${esc(v)}">${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"><span class="tag">${nR} görsel</span></div>`:placeholder("","Görseller hazırlanıyor")}
       <div class="bd"><h3>${esc(v)}</h3><span class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı")}</span>
-       <div class="price-line"><div><small>Başlangıç · ${esc(lo?.name)}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
+       <div class="price-line"><div><small>Başlangıç · ${esc(pl(lo?.name))}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
         <div style="text-align:right"><small>${r.length} paket</small><span class="num muted" style="font-size:13px;font-weight:600">en yüksek ${money(net(hi,v))}</span></div></div>
        <span class="link">Villayı incele</span></div></button>`;}).join("")}</div></section>
   <section class="block"><div class="head"><div><h2>Mobilya paketleri</h2></div>
     <p>${esc(S.cfg.scope||"Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı.")} Hareketsiz mobilya ve ev tekstili tüm paketlerde aynı; fark hareketli mobilyanın seviyesinden gelir.</p></div>
-   <div class="pstrip">${ranked().map((b,i)=>`<button class="pcard" data-cmp><span class="nm">${dot(b.name)}${esc(b.name)}</span><b class="num">${money(avgGross(b))}${cur()}</b><small>villa başı ort. · KDV dahil${i===0?" · en uygun":""}</small></button>`).join("")}</div></section>
-  ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(best.name)} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
+   <div class="pstrip">${ranked().map((b,i)=>`<button class="pcard" data-cmp><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><b class="num">${money(avgGross(b))}${cur()}</b><small>villa başı ort. · KDV dahil${i===0?" · en uygun":""}</small></button>`).join("")}</div></section>
+  ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(pl(best.name))} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
     <button class="btn light" data-cmp>Tüm paketleri karşılaştır →</button></section>`:""}`;}
 function bindList(){const m=$("#main");
   m.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>openVilla(b.dataset.villa));
@@ -732,13 +733,13 @@ function bindList(){const m=$("#main");
 /* ---------- villa page ---------- */
 function galleryHTML(list,v,b){
   if(!list.length){const others=rankedFor(v).filter(x=>x!==b).map(x=>({p:x,n:S.media.filter(m=>m.villa===v&&m.kind==="render"&&m.brand===x.name).length})).filter(x=>x.n);
-    return `<div class="gempty"><div><b>${esc(b.name)} için görseller hazırlanıyor</b><span class="muted">Fiyat, odalar ve kalem listesi aşağıda.</span>
-      ${others.length?`<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">${others.map(x=>`<button class="btn sm" data-pkg="${esc(x.p.name)}">${dot(x.p.name)} ${esc(x.p.name)} görsellerini gör</button>`).join("")}</div>`:""}</div></div>`;}
+    return `<div class="gempty"><div><b>${esc(pl(b.name))} için görseller hazırlanıyor</b><span class="muted">Fiyat, odalar ve kalem listesi aşağıda.</span>
+      ${others.length?`<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">${others.map(x=>`<button class="btn sm" data-pkg="${esc(x.p.name)}">${dot(x.p.name)} ${esc(pl(x.p.name))} görsellerini gör</button>`).join("")}</div>`:""}</div></div>`;}
   const gi=Math.min(S.gi,list.length-1);const m=list[gi];
   return `<div class="gmain"><img id="gImg" src="${blob(m.asset)}" alt="${esc(m.title||m.room||"")}">
     <div class="gtop"><button data-gfull>Tam ekran</button></div>
     ${list.length>1?`<button class="gnav l" data-gstep="-1" aria-label="Önceki">‹</button><button class="gnav r" data-gstep="1" aria-label="Sonraki">›</button>`:""}
-    <div class="cap"><div><b id="gTitle">${esc(m.title||m.room||"Render")}</b><small id="gSub">${esc([m.floor,b.name].filter(Boolean).join(" · "))}</small></div><small class="num" id="gCnt">${gi+1} / ${list.length}</small></div></div>
+    <div class="cap"><div><b id="gTitle">${esc(m.title||m.room||"Render")}</b><small id="gSub">${esc([m.floor,pl(b.name)].filter(Boolean).join(" · "))}</small></div><small class="num" id="gCnt">${gi+1} / ${list.length}</small></div></div>
    ${list.length>1?`<div class="gthumbs">${list.map((x,i)=>`<button data-gi="${i}" aria-current="${i===gi}" aria-label="${esc(x.title||"")}"><img src="${thumb(x)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}`;}
 function villaHTML(){
   const v=S.villa,b=pkgByName(S.pkg),f=S.floor,meta=S.cfg.villaMeta?.[v]||{};const r=rankedFor(v),lo=r[0];const L=layers(b,v);
@@ -750,11 +751,11 @@ function villaHTML(){
    <div class="vgrid"><div class="gal" id="gal">${galleryHTML(list,v,b)}</div>
     <aside class="buy"><div><span class="eyebrow">Villa tipi</span><h1>${esc(v)}</h1><p class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"Zemin, 1. kat ve çatı katı · anahtar teslim döşeme")}</p></div>
      <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
-       return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(x.name)}${i===0?`<small>en uygun</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
-     <div class="total"><span class="eyebrow">${esc(b.name)} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span></div>
+       return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(pl(x.name))}${i===0?`<small>en uygun</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
+     <div class="total"><span class="eyebrow">${esc(pl(b.name))} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span></div>
      <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button></div>
     </aside></div></section>
-  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(b.name)} paketi ile</span><h2>Odalar</h2></div>
+  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>Odalar</h2></div>
      <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)}</span></button>`).join("")}</div></div>
    ${roomsHTML(v,b,f)}</section>
   ${plan?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Kat planı</h2></div><button class="btn sm" data-zoomplan="${plan.id}">Büyüt</button></div>
@@ -763,13 +764,13 @@ function villaHTML(){
      ${plan.title?`<span class="status">${esc(plan.title)}</span>`:""}</div></section>`:""}
   ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
    <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
-  <section class="block" id="cost"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(b.name)}</span><h2>Fiyat nasıl oluşuyor?</h2></div></div>
+  <section class="block" id="cost"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))}</span><h2>Fiyat nasıl oluşuyor?</h2></div></div>
    ${costHTML(b,v)}</section>
   <section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Diğer paketler</h2></div><p>Aynı villa, farklı mobilya seviyesi.</p></div>
    <div class="others">${r.filter(x=>x!==b).map(x=>{const cv=coverImg(v,x.name,true);const d=net(x,v)-L.net;
-     return `<button class="oc" data-pkg="${esc(x.name)}" data-top>${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"></div>`:`<div class="ph empty-ph" style="background:linear-gradient(135deg,${TIER_COLOR[x.name]||"var(--surface-2)"}33,var(--surface-2))"><b style="font-size:44px">${esc(x.name)}</b></div>`}
-      <div class="bd"><span class="nm">${dot(x.name)}${esc(x.name)}</span><span class="pr"><b>${money(net(x,v))}</b><span class="delta ${d<0?"ok":""}">${d<0?"−":"+"}${money(Math.abs(d))}</span></span></div></button>`;}).join("")}</div></section>
-  <section class="band"><div><h2>${esc(v)} · ${esc(b.name)}</h2><p>Bu villayı ve paketi tam ekran sunum olarak gösterin: görseller, odalar ve fiyat kırılımı.</p></div>
+     return `<button class="oc" data-pkg="${esc(x.name)}" data-top>${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"></div>`:`<div class="ph empty-ph" style="background:linear-gradient(135deg,${TIER_COLOR[x.name]||"var(--surface-2)"}33,var(--surface-2))"><b style="font-size:44px">${esc(pl(x.name))}</b></div>`}
+      <div class="bd"><span class="nm">${dot(x.name)}${esc(pl(x.name))}</span><span class="pr"><b>${money(net(x,v))}</b><span class="delta ${d<0?"ok":""}">${d<0?"−":"+"}${money(Math.abs(d))}</span></span></div></button>`;}).join("")}</div></section>
+  <section class="band"><div><h2>${esc(v)} · ${esc(pl(b.name))}</h2><p>Bu villayı ve paketi tam ekran sunum olarak gösterin: görseller, odalar ve fiyat kırılımı.</p></div>
    <button class="btn light" data-deckv>Sunumu başlat →</button></section>`;}
 function roomsHTML(v,b,f){
   const rt=roomTotals(b.name,v,f);
@@ -791,13 +792,13 @@ function costHTML(b,v){
   const tt=typeTotals(b.name,v),ttSum=Object.values(tt).reduce((a,x)=>a+x,0);const FC=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
   const items=boqItems(b.name,v);
   return `<div class="costgrid"><div class="cbig"><span class="eyebrow">Toplam · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b>
-      <span class="sub">${b===lo?"Bu villa için en uygun paket.":`En uygun pakete (${esc(lo.name)}) göre +${pct((L.net-net(lo,v))/net(lo,v))}.`} En yüksek paket ${esc(hi.name)}: ${money(gross(hi,v))} ${S.cur}.</span></div>
+      <span class="sub">${b===lo?"Bu villa için en uygun paket.":`En uygun pakete (${esc(pl(lo.name))}) göre +${pct((L.net-net(lo,v))/net(lo,v))}.`} En yüksek paket ${esc(pl(hi.name))}: ${money(gross(hi,v))} ${S.cur}.</span></div>
     <div style="display:grid;gap:14px"><div class="tiles">
       ${items.length?`<button class="tile tbtn" data-furn="type"><span class="l"><i style="background:var(--f1)"></i>Mobilya ve ürünler<em>Detay ›</em></span><b>${money(L.furn)}</b><small>${pct(L.furn/L.gross)} · ${items.length} kalem · hareketli, hareketsiz, marka</small></button>`:`<div class="tile"><span class="l"><i style="background:var(--f1)"></i>Mobilya ve ürünler</span><b>${money(L.furn)}</b><small>${pct(L.furn/L.gross)}</small></div>`}
       <div class="tile"><span class="l"><i style="background:var(--fx)"></i>Navlun, montaj, sigorta</span><b>${money(L.extras)}</b><small>${pct(L.extras/L.gross)} · ${extrasNote(b,v,L)}</small></div>
       <div class="tile"><span class="l"><i style="background:var(--fv)"></i>KDV</span><b>${money(L.vat)}</b><small>%${nf1.format((S.cfg.vat||0)*100)}</small></div></div>
      <div class="stack" aria-hidden="true"><i style="width:${L.furn/L.gross*100}%;background:var(--f1)"></i><i style="width:${L.extras/L.gross*100}%;background:var(--fx)"></i><i style="width:${L.vat/L.gross*100}%;background:var(--fv)"></i></div>
-     ${(()=>{const fi=fixedInsight(v);return fi?`<div class="insight"><b>Fark nereden geliyor?</b> Hareketsiz mobilya (mutfak, banyo, gardırop) ve ev tekstili ${brands().length} pakette de aynı: ${money(fi.fixed)} ${S.cur}. Paketler arasındaki fark yalnızca hareketli mobilyadan gelir; ${esc(fi.lo.name)} ${money(fi.looseMin)} ile ${esc(fi.hi.name)} ${money(fi.looseMax)} arasında.</div>`:"";})()}</div></div>
+     ${(()=>{const fi=fixedInsight(v);return fi?`<div class="insight"><b>Fark nereden geliyor?</b> Hareketsiz mobilya (mutfak, banyo, gardırop) ve ev tekstili ${brands().length} pakette de aynı: ${money(fi.fixed)} ${S.cur}. Paketler arasındaki fark yalnızca hareketli mobilyadan gelir; ${esc(pl(fi.lo.name))} ${money(fi.looseMin)} ile ${esc(pl(fi.hi.name))} ${money(fi.looseMax)} arasında.</div>`:"";})()}</div></div>
    <details class="more"><summary>Ayrıntılı kırılım<small>katlar, ek giderler, ürün tipleri</small></summary><div class="in">
      <div class="legend">${secs.map((s,i)=>`<div class="lg"><span class="sw" style="background:${FC[i]||"var(--f4)"}"></span><span>${esc(s)}</span><span class="v">${money(+vals[i]||0)}</span><span class="pc">${pct((+vals[i]||0)/L.gross)}</span></div>`).join("")}
       <div class="lg"><span class="sw" style="background:var(--fx)"></span><span>Navlun, montaj ve sigorta</span><span class="v">${money(L.extras)}</span><span class="pc">${pct(L.extras/L.gross)}</span></div>
@@ -827,7 +828,7 @@ function bindGallery(list){
   const g=$("#gal");if(!g||!list.length)return;
   const show=i=>{S.gi=(i+list.length)%list.length;const m=list[S.gi];const img=$("#gImg");img.classList.add("fade");
     setTimeout(()=>{img.src=blob(m.asset);img.onload=()=>img.classList.remove("fade");},120);
-    $("#gTitle").textContent=m.title||m.room||"Render";$("#gSub").textContent=[m.floor,S.pkg].filter(Boolean).join(" · ");$("#gCnt").textContent=`${S.gi+1} / ${list.length}`;
+    $("#gTitle").textContent=m.title||m.room||"Render";$("#gSub").textContent=[m.floor,pl(S.pkg)].filter(Boolean).join(" · ");$("#gCnt").textContent=`${S.gi+1} / ${list.length}`;
     g.querySelectorAll("[data-gi]").forEach(b=>b.setAttribute("aria-current",+b.dataset.gi===S.gi));
     g.querySelector(`[data-gi="${S.gi}"]`)?.scrollIntoView({block:"nearest",inline:"nearest"});};
   g.querySelectorAll("[data-gi]").forEach(b=>b.onclick=()=>show(+b.dataset.gi));
@@ -860,20 +861,20 @@ function openRoom(room,keepPos){
   const tot=items.reduce((a,x)=>a+(+x.v||0),0);
   const s=$("#sheet");const sc=s.querySelector(".sheet")?.scrollTop||0;document.body.style.overflow="hidden";
   s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet" role="dialog" aria-label="${esc(room)}">
-    <div class="sheet-head"><div><span class="eyebrow">${esc(v)} · ${esc(f)} · ${esc(b.name)}</span><h2>${esc(room)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
+    <div class="sheet-head"><div><span class="eyebrow">${esc(v)} · ${esc(f)} · ${esc(pl(b.name))}</span><h2>${esc(room)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
     ${imgs.length?`<div class="gal" id="rgal"><div class="gmain"><img id="rImg" src="${blob(imgs[0].asset)}" alt=""><div class="gtop"><button data-rfull>Tam ekran</button></div>
       ${imgs.length>1?`<button class="gnav l" data-rstep="-1" aria-label="Önceki">‹</button><button class="gnav r" data-rstep="1" aria-label="Sonraki">›</button>`:""}
       <div class="cap"><div><b id="rTitle">${esc(imgs[0].title||room)}</b></div><small class="num" id="rCnt">1 / ${imgs.length}</small></div></div>
       ${imgs.length>1?`<div class="gthumbs">${imgs.map((x,i)=>`<button data-ri="${i}" aria-current="${i===0}"><img src="${thumb(x)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}</div>`
-     :`<div class="gempty" style="aspect-ratio:21/9"><div><b>${esc(room)}</b><span class="muted">Bu oda için ${esc(b.name)} görseli henüz yok.</span></div></div>`}
+     :`<div class="gempty" style="aspect-ratio:21/9"><div><b>${esc(room)}</b><span class="muted">Bu oda için ${esc(pl(b.name))} görseli henüz yok.</span></div></div>`}
     ${panos.length?`<div style="display:flex;gap:8px;flex-wrap:wrap">${panos.map(p=>`<button class="btn primary" data-rp="${p.id}">360° gez · ${esc(p.title||room)}</button>`).join("")}</div>`:""}
     <div class="sumrow"><div><span class="eyebrow">Oda tutarı · mobilya</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${items.length}</b></div></div>
     ${items.length?`<div class="tbl-wrap" style="border:1px solid var(--line);border-radius:12px;background:var(--surface)"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Tip</th><th>Tutar</th></tr></thead><tbody>${itemRows(items)}</tbody></table></div>`
      :`<p class="note">Bu oda için kalem listesinde ayrı satır yok.</p>`}
     ${(()=>{const rows=rankedFor(v).map(x=>({x,t:boqItems(x.name,v).filter(it=>it.f===f&&labelItem(it).room===room).reduce((a,it)=>a+(+it.v||0),0)})).filter(r=>r.t>0).sort((a,c)=>a.t-c.t);
       if(rows.length<2)return "";const mx=rows[rows.length-1].t;
-      return `<div style="display:grid;gap:10px"><span class="eyebrow">Bu oda diğer paketlerde</span><div class="cmpl">${rows.map(r=>`<button class="cmpr" data-rpkg="${esc(r.x.name)}" aria-pressed="${r.x===b}"><span class="nm">${dot(r.x.name)}${esc(r.x.name)}</span><span class="bbar"><i style="width:${(r.t/mx*100).toFixed(1)}%;background:${r.x===b?"var(--accent)":"var(--f3)"}"></i></span><b>${money(r.t)}</b></button>`).join("")}</div></div>`;})()}
-    <p class="note">Tutarlar ${esc(b.name)} paketinin birim fiyat × adet değerleridir; navlun, montaj ve KDV hariç.</p></div></div>`;
+      return `<div style="display:grid;gap:10px"><span class="eyebrow">Bu oda diğer paketlerde</span><div class="cmpl">${rows.map(r=>`<button class="cmpr" data-rpkg="${esc(r.x.name)}" aria-pressed="${r.x===b}"><span class="nm">${dot(r.x.name)}${esc(pl(r.x.name))}</span><span class="bbar"><i style="width:${(r.t/mx*100).toFixed(1)}%;background:${r.x===b?"var(--accent)":"var(--f3)"}"></i></span><b>${money(r.t)}</b></button>`).join("")}</div></div>`;})()}
+    <p class="note">Tutarlar ${esc(pl(b.name))} paketinin birim fiyat × adet değerleridir; navlun, montaj ve KDV hariç.</p></div></div>`;
   if(keepPos)s.querySelector(".sheet").scrollTop=sc;
   s.querySelector("[data-x]").onclick=closeSheet;
   s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget)closeSheet();});
@@ -903,14 +904,14 @@ function openFurn(tab){
      <div class="tiles">${g.map(x=>`<div class="tile"><span class="l"><i style="background:${TYPE_COLOR[x.k]||"var(--fv)"}"></i>${esc(TYPES[x.k]||x.k)}</span><b>${money(x.v)}</b><small>${pct(x.v/tot)} · ${x.arr.length} kalem${TYPE_NOTE[x.k]?" · "+TYPE_NOTE[x.k]:""}</small></div>`).join("")}</div>
      ${g.map(x=>`<details class="more"><summary>${esc(TYPES[x.k]||x.k)}<small>${x.arr.length} kalem · ${money(x.v)} ${S.cur}</small></summary><div class="in" style="gap:0">${list(x.arr)}</div></details>`).join("")}`;}
   else {const g=group(it=>it.b||"");const max=g[0]?.v||1;
-    body=`<p class="note">Paket firmasının kendi ürünleri "koleksiyon" olarak gösterilir. Diğerleri pakette kullanılan üçüncü taraf markalardır.</p>
+    body=`<p class="note">Paket firmasının kendi ürünleri firma adıyla, diğerleri pakette kullanılan üçüncü taraf markalar olarak gösterilir.</p>
      <div class="brands">${g.map(x=>{const types=[...new Set(x.arr.map(i=>i.t||""))];
        return `<details class="brow"><summary><span class="bn"><b>${esc(brandLabel(x.k))}</b><span>${types.map(t=>`<span class="typetag">${esc(TYPES[t]||t)}</span>`).join(" ")}</span></span>
         <span class="bbar"><i style="width:${(x.v/max*100).toFixed(1)}%;background:${TYPE_COLOR[types[0]]||"var(--f1)"}"></i></span>
         <span class="bv"><b>${money(x.v)}</b><small>${pct(x.v/tot)} · ${x.arr.length} kalem</small></span></summary>${list(x.arr)}</details>`;}).join("")}</div>`;}
   const s=$("#sheet");document.body.style.overflow="hidden";
   s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet" role="dialog" aria-label="Mobilya ve ürünler">
-    <div class="sheet-head"><div><span class="eyebrow">${esc(v)} · ${esc(b.name)} paketi</span><h2>Mobilya ve ürünler</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
+    <div class="sheet-head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Mobilya ve ürünler</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
     <div class="sumrow"><div><span class="eyebrow">Toplam · net</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${all.length}</b></div><div><span class="eyebrow">Marka</span><b>${new Set(all.map(i=>i.b||"")).size}</b></div></div>
     <div class="seg" role="tablist" style="justify-self:start"><button data-ft="type" aria-pressed="${tab==="type"}">Hareketli / hareketsiz</button><button data-ft="brand" aria-pressed="${tab==="brand"}">Marka bazlı</button></div>
     ${body}
@@ -926,20 +927,20 @@ function openFurn(tab){
 function rankingHTML(){
   const r=ranked();if(!r.length)return "";const max=total3(r[r.length-1]),min=total3(r[0]);
   return `<div class="rank">${r.map((b,i)=>{const t=total3(b),d=(t-min)/min;
-    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(b.name)}</span>
+    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span>
       <div class="track"><i class="fill" style="width:${(t/max*100).toFixed(1)}%"></i></div>
       <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">villa başı ${money(avgGross(b))} KDV dahil</span></div></div>`;}).join("")}</div>`;}
 function villaMatrixHTML(){
   const bs=ranked(),vs=villas();
   return `<div class="tbl-wrap"><table><thead><tr><th>Paket</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}<th>${vs.length} villa toplamı</th><th>Villa başı · KDV dahil</th><th>Proje bütçesi</th></tr></thead><tbody>
-   ${bs.map(b=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(b.name)}</span></td>${vs.map(v=>{const mn=Math.min(...bs.map(x=>net(x,v)));return `<td class="${net(b,v)===mn?"best":""}"><button class="cellbtn" data-open="${esc(v)}|${esc(b.name)}">${money(net(b,v))}</button></td>`;}).join("")}
+   ${bs.map(b=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${vs.map(v=>{const mn=Math.min(...bs.map(x=>net(x,v)));return `<td class="${net(b,v)===mn?"best":""}"><button class="cellbtn" data-open="${esc(v)}|${esc(pl(b.name))}">${money(net(b,v))}</button></td>`;}).join("")}
      <td><b>${money(total3(b))}</b></td><td>${money(avgGross(b))}</td><td>${big(budget(b))}</td></tr>`).join("")}</tbody></table></div>`;}
 function matrixHTML(){
   const bs=ranked(),vs=villas(),secs=sections();
   let rows="";vs.forEach(v=>{rows+=`<tr class="grp"><td colspan="${bs.length+1}" style="text-align:left">${esc(v)}</td></tr>`;secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
     rows+=`<tr><td>${esc(s)}</td>${vals.map(x=>`<td class="${mn===mx?"":x===mn?"best":x===mx?"worst":""}">${money(x)}</td>`).join("")}</tr>`;});
     const tv=bs.map(b=>furn(b,v)),mn=Math.min(...tv);rows+=`<tr><td><b>Toplam</b></td>${tv.map(x=>`<td class="${x===mn?"best":""}"><b>${money(x)}</b></td>`).join("")}</tr>`;});
-  return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(b.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
+  return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(pl(b.name))}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
 function compositionHTML(){
   const bs=ranked(),vs=villas();if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
   const SEG=[["Loose Furniture","Hareketli mobilya","var(--f1)"],["Fixed","Hareketsiz mobilya","var(--f2)"],["Ev Dekorasyon","Ev tekstili","var(--f3)"],["_other","Diğer kalemler","var(--f4)"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
@@ -948,9 +949,9 @@ function compositionHTML(){
   const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));
   return `<section class="block"><div class="head"><div><span class="eyebrow">${vs.length} villa toplamı · net</span><h2>Fiyat farkı nereden geliyor?</h2></div><p>Hareketsiz mobilya, ev tekstili ve navlun tüm paketlerde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend">${segs.map(([k,l,c])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>
-   ${rows.map(({b,o})=>`<div class="crow"><span class="nm">${dot(b.name)}${esc(b.name)}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><b class="num">${money(o.tot)}</b></div>`).join("")}</div>
+   ${rows.map(({b,o})=>`<div class="crow"><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><b class="num">${money(o.tot)}</b></div>`).join("")}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l}</th>`).join("")}<th>Toplam</th></tr></thead><tbody>
-    ${rows.map(({b,o})=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(b.name)}</span></td>${segs.map(([k])=>`<td>${money(o[k])}</td>`).join("")}<td><b>${money(o.tot)}</b></td></tr>`).join("")}</tbody></table></div></section>`;}
+    ${rows.map(({b,o})=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${segs.map(([k])=>`<td>${money(o[k])}</td>`).join("")}<td><b>${money(o.tot)}</b></td></tr>`).join("")}</tbody></table></div></section>`;}
 function compareHTML(){
   return `<section class="block"><div class="head"><div><span class="eyebrow">Paket sıralaması</span><h2>${villas().length} villa toplamına göre</h2></div><p>${S.cur} · net, KDV hariç. Navlun, montaj ve sigorta dahil.</p></div>${rankingHTML()}</section>
   ${compositionHTML()}
@@ -967,7 +968,7 @@ function openDeckSetup(){
    <div class="ov-body"><div style="background:#151A18;border:1px solid #27302C;border-radius:16px;padding:24px;display:grid;gap:18px;max-width:520px;width:100%">
      <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">Villalar</span>${villas().map((v,i)=>`<label style="display:flex;gap:8px"><input type="checkbox" id="dv-${i}" data-dv="${esc(v)}" ${S.view!=="villa"||v===S.villa?"checked":""}> ${esc(v)}</label>`).join("")}</div>
      <label style="display:grid;gap:6px"><span class="eyebrow" style="color:#9FD0C2">Paket</span><select id="dPkg" style="background:#1E2522;border:1px solid #2A302E;border-radius:8px;padding:9px;color:#EEECE6">
-       <option value="">Her villada en uygun paket</option>${ranked().map(b=>`<option value="${esc(b.name)}" ${b.name===curPkg?"selected":""}>${esc(b.name)}</option>`).join("")}</select></label>
+       <option value="">Her villada en uygun paket</option>${ranked().map(b=>`<option value="${esc(b.name)}" ${b.name===curPkg?"selected":""}>${esc(pl(b.name))}</option>`).join("")}</select></label>
      <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">İçerik</span>
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-render" checked> Oda görselleri</label>
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-cost" checked> Fiyat kırılımı</label>
@@ -989,14 +990,14 @@ function buildSlides(opt){
   const fullImg=(m,eb)=>({html:`<div class="slide" style="padding:0"><img class="full-img" src="${blob(m.asset)}" alt=""><div class="caption"><span class="eyebrow">${esc(eb)}</span><h2>${esc(m.title||m.room||"Render")}</h2></div></div>`});
   const panoSl=(m,eb)=>({pano:m.asset,html:`<div class="slide" style="padding:0"><div class="pano" data-deckpano></div><div class="caption" style="pointer-events:none"><span class="eyebrow">360° · ${esc(eb)}</span><h2>${esc(m.title||m.room||"Panorama")}</h2></div></div>`});
   opt.villas.forEach(v=>{const b=pkgByName(opt.pkg)||rankedFor(v)[0];const meta=S.cfg.villaMeta?.[v]||{};const cv=coverImg(v,b.name);const pm=m=>pkgMatch(m,b.name);
-    sl.push({html:`<div class="slide cover" style="${cv?`background-image:url('${blob(cv.asset)}')`:"background:#1F4E44"}"><span class="eyebrow">Villa tipi · ${esc(b.name)} paketi</span><h2 style="font-size:clamp(56px,8vw,120px)">${esc(v)}</h2><p style="margin:0;color:#DDD9D0;font-size:18px;max-width:60ch">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · "))}</p></div>`});
+    sl.push({html:`<div class="slide cover" style="${cv?`background-image:url('${blob(cv.asset)}')`:"background:#1F4E44"}"><span class="eyebrow">Villa tipi · ${esc(pl(b.name))} paketi</span><h2 style="font-size:clamp(56px,8vw,120px)">${esc(v)}</h2><p style="margin:0;color:#DDD9D0;font-size:18px;max-width:60ch">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · "))}</p></div>`});
     floorsOnly().forEach(f=>{
-      if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,f,b.name].join(" · "))));
+      if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,f,pl(b.name)].join(" · "))));
       if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(panoSl(m,[v,f].join(" · "))));
     });
-    if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&!floorsOnly().includes(m.floor)&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,b.name].join(" · "))));
+    if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&!floorsOnly().includes(m.floor)&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,pl(b.name)].join(" · "))));
     if(opt.plan){const seen=new Set();floorsOnly().forEach(f=>{const p=planFor(v,f,b.name);if(p&&!seen.has(p.id)){seen.add(p.id);sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · kat planı</span><h2>${esc(p.floor||p.title||"Kat planı")}</h2><div class="grow"><div class="imgfit"><div class="plan-pins-deck"><img src="${blob(p.asset)}" alt="" style="max-height:calc(100vh - 280px);max-width:100%">${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}</div></div></div></div>`});}});}
-    if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${esc(b.name)} paketi</span><h2>Fiyat</h2><div class="grow">${deckCost(b,v)}</div></div>`});
+    if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Fiyat</h2><div class="grow">${deckCost(b,v)}</div></div>`});
   });
   if(opt.cmp){sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${brands().length} paket</h2><div class="grow" style="overflow:auto">${rankingHTML()}</div></div>`});
     sl.push({html:`<div class="slide"><span class="eyebrow">Villa × paket · ${S.cur}</span><h2>Villa başı fiyat</h2><div class="grow" style="overflow:auto">${villaMatrixHTML()}</div></div>`});}
@@ -1138,7 +1139,7 @@ function adminData(){
      <div class="form"><label class="f">KDV oranı (%)<input id="dVat" type="number" step="0.1" value="${((c.vat||0)*100).toFixed(1)}"></label><label class="f">Proje villa adedi<input id="dCount" type="number" value="${c.villaCount||0}"></label><label class="f">Kur · 1 USD = SAR<input id="dFx" type="number" step="0.0001" value="${c.fx||3.75}"></label></div>
      <div class="tbl-wrap"><table><thead><tr><th>Paket</th><th>Navlun %</th><th>Montaj %</th><th>Sigorta %</th></tr></thead><tbody>
       ${bs.map((b,bi)=>`<tr><td><input class="cell" style="width:160px;text-align:left" data-bname="${bi}" value="${esc(b.name)}"></td>${["freight","assembly","insurance"].map(k=>`<td><input class="cell" type="number" step="0.1" data-rate="${bi}|${k}" value="${((+b.rates?.[k]||0)*100).toFixed(1)}"></td>`).join("")}</tr>`).join("")}</tbody></table></div>
-     ${vs.map(v=>`<span class="eyebrow">${esc(v)}</span><div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(b.name)}</th>`).join("")}</tr></thead><tbody>
+     ${vs.map(v=>`<span class="eyebrow">${esc(v)}</span><div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(pl(b.name))}</th>`).join("")}</tr></thead><tbody>
        ${secs.map((s,si)=>`<tr><td>${esc(s)}</td>${bs.map((b,bi)=>`<td><input class="cell" type="number" data-val="${bi}|${esc(v)}|${si}" value="${Math.round(+b.values?.[v]?.[si]||0)}"></td>`).join("")}</tr>`).join("")}</tbody></table></div>`).join("")}
    </div>`:""}`;}
 function adminInfo(){
@@ -1178,7 +1179,7 @@ function bindMedia(m){
   const drop=m.querySelector("#drop"),inp=m.querySelector("#upFile"),list=m.querySelector("#upList");
   const run=async files=>{files=[...files].filter(f=>f.type.startsWith("image/")||/\.(jpe?g|png|webp|svg)$/i.test(f.name));if(!files.length){toast("Görsel dosyası seçin");return;}
     const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:m.querySelector("#upRoom").value.trim()||null,brand:m.querySelector("#upBrand").value||null,title:m.querySelector("#upTitle").value.trim()||null};
-    for(const f of files){const row=document.createElement("div");row.className="row";row.innerHTML=`<span>${esc(f.name)}</span><span class="muted">Bekliyor</span>`;list.appendChild(row);
+    for(const f of files){const row=document.createElement("div");row.className="row";row.innerHTML=`<span>${esc(pl(f.name))}</span><span class="muted">Bekliyor</span>`;list.appendChild(row);
       try{await uploadOne(f,meta,row);}catch(e){row.lastChild.textContent=errMsg(e);row.lastChild.style.color="var(--bad)";}}
     toast("Yükleme tamamlandı");};
   inp.onchange=()=>run(inp.files);
@@ -1251,7 +1252,7 @@ function mergeParsed(p,extraFields){
   S._pendingKeys=map;S._renames=ren;
   p.brands=order;
   const brandsN=p.brands.map(b=>{const name=map[b.name];const o=old[oldMap[b.name]]?.rates||{};const r={};["freight","assembly","insurance"].forEach(k=>r[k]=b.rates[k]!=null?b.rates[k]:(+o[k]||0));
-    const values={};p.villas.forEach(v=>values[v]=p.sections.map((_,i)=>+(b.values[v]?.[i]||0)));const o2={name,rates:r,values};if(b.layers)o2.layers=b.layers;return o2;});
+    const values={};p.villas.forEach(v=>values[v]=p.sections.map((_,i)=>+(b.values[v]?.[i]||0)));const o2={name,firm:b.name,rates:r,values};if(b.layers)o2.layers=b.layers;return o2;});
   return {...cur,...extraFields,villas:p.villas,sections:p.sections,brands:brandsN,vat:p.vat!=null?p.vat:cur.vat,villaCount:p.villaCount||cur.villaCount,fx:p.fx||cur.fx,currency:"USD",updatedAt:new Date().toISOString()};}
 async function saveKeys(patch){const k={bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
 async function saveCfg(c,msg){try{delete c.sheetId;

@@ -10,7 +10,6 @@ data/
   data.js                  Sitenin okuduğu veri (config + media)
   config.json              Paketler, kat tutarları (USD), oranlar, KDV, villa adedi, kur
   media.json               Görsellerin listesi: villa, kat, oda, paket, dosya yolu
-  boq.json                 Paket × villa kalem listesi (kod, kalem, kat, tip, tutar)
 assets/
   villa-a/renders/         Oda renderları
   villa-a/renders/thumbs/  Galeride kullanılan küçük önizlemeler
@@ -19,10 +18,6 @@ assets/
 src/
   claude-artifact.html     Claude'da yayınlanan sürümün kaynağı (yönetim paneli dahil)
 ```
-
-## Akış
-
-Villa tipleri listelenir. Bir villa açıldığında en uygun paketle gelir: maliyet kırılımı, kat planı, odalar, o pakete ait renderlar ve kalem listesi. Paket değiştirildiğinde maliyetler ve görseller o paketinkilerle yenilenir.
 
 ## Yerelde açmak
 
@@ -39,11 +34,10 @@ Villa tipleri listelenir. Bir villa açıldığında en uygun paketle gelir: mal
 
 - **Rakamlar:** `data/config.json` içinde her paketin `values` alanı villa başına `[Zemin kat, 1. kat, Çatı katı, Ev tamamlayıcı ürünler]` tutarlarını (USD) tutar. `rates` alanı navlun, montaj ve sigorta oranlarını tutar.
 - **Görseller:** Dosyayı `assets/` altına koyup `data/media.json` dosyasına bir kayıt ekleyin. `kind` alanı `render`, `plan` ya da `pano` olabilir.
-- **Kalem listesi:** `data/boq.json`.
-- Bu dosyaları değiştirdikten sonra `data/data.js` dosyasını da güncelleyin. Site bu dosyayı okur.
+- Her iki dosyayı değiştirdikten sonra `data/data.js` dosyasını da güncelleyin. Site bu dosyayı okur.
 
 Yönetim paneli (yükleme, oda işaretleme, Google Sheets'ten çekme) yalnızca Claude'daki sürümde çalışır. Bu klasör o sürümün bir anlık dışa aktarımıdır.
 
-## Gizlilik
+## Paket adları
 
-Paket adları (Silver … Royal) gerçek tedarikçi adlarının yerine kullanılır. Tedarikçi eşleşmesi ve kaynak Google Sheets bağlantısı bu klasöre **dahil edilmedi**.
+Paketler fiyat sırasına göre Silver'dan başlayarak adlandırılır ve firma adıyla birlikte gösterilir (ör. "Silver · Bellona"). Kaynak Google Sheets bağlantısı bu klasöre dahil edilmedi.

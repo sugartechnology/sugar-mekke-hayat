@@ -43,7 +43,8 @@
           9965,
           9133
         ]
-      }
+      },
+      "firm": "Bellona"
     },
     {
       "name": "Gold",
@@ -88,7 +89,8 @@
           14096,
           9133
         ]
-      }
+      },
+      "firm": "İnci Design"
     },
     {
       "name": "Platinum",
@@ -133,7 +135,8 @@
           17080,
           9133
         ]
-      }
+      },
+      "firm": "Sardunya"
     },
     {
       "name": "Pearl",
@@ -178,7 +181,8 @@
           17080,
           9133
         ]
-      }
+      },
+      "firm": "Gabba"
     },
     {
       "name": "Emerald",
@@ -223,7 +227,8 @@
           24303,
           9133
         ]
-      }
+      },
+      "firm": "Modis"
     },
     {
       "name": "Diamond",
@@ -268,7 +273,8 @@
           25144,
           9133
         ]
-      }
+      },
+      "firm": "Homage"
     }
   ],
   "currency": "USD",
@@ -284,7 +290,7 @@
   "source": "sheets",
   "subtitle": "Villa mobilya paketleri",
   "syncedAt": "2026-10-16T12:10:00Z",
-  "updatedAt": "2026-10-16T12:10:00Z",
+  "updatedAt": "2026-10-16T12:35:00Z",
   "vat": 0.15,
   "villaCount": 250,
   "villaMeta": {},
