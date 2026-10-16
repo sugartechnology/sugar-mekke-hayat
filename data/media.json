@@ -1,6 +1,6 @@
 [
   {
-    "asset": "assets/villa-a/renders/zemin-kat_01.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_01.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:27.944Z",
@@ -9,13 +9,14 @@
     "kind": "render",
     "order": 1792045527944,
     "room": "Aile salonu",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_01.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_01.webp",
     "title": "Aile salonu · TV alanı",
     "villa": "Villa A",
-    "id": "lcdhk71ifuni33w91yy0"
+    "id": "lcdhk71ifuni33w91yy0",
+    "original": "assets/villa-a/renders/zemin-kat_01.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_02.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_02.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:31.705Z",
@@ -24,13 +25,14 @@
     "kind": "render",
     "order": 1792045531705,
     "room": "Aile salonu",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_02.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_02.webp",
     "title": "Aile salonu",
     "villa": "Villa A",
-    "id": "7rq64ct2ackql4nog5jm"
+    "id": "7rq64ct2ackql4nog5jm",
+    "original": "assets/villa-a/renders/zemin-kat_02.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_03.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_03.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:35.331Z",
@@ -39,13 +41,14 @@
     "kind": "render",
     "order": 1792045535331,
     "room": "Meclis",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_03.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_03.webp",
     "title": "Meclis",
     "villa": "Villa A",
-    "id": "08zt8ej8aoqypmrznbzx"
+    "id": "08zt8ej8aoqypmrznbzx",
+    "original": "assets/villa-a/renders/zemin-kat_03.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_04.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_04.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:39.301Z",
@@ -54,13 +57,14 @@
     "kind": "render",
     "order": 1792045539301,
     "room": "Meclis",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_04.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_04.webp",
     "title": "Meclis · geniş açı",
     "villa": "Villa A",
-    "id": "4599l2nf97sbwr1i02qn"
+    "id": "4599l2nf97sbwr1i02qn",
+    "original": "assets/villa-a/renders/zemin-kat_04.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_05.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_05.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:44.198Z",
@@ -69,13 +73,14 @@
     "kind": "render",
     "order": 1792045544198,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_05.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_05.webp",
     "title": "Pencere önü oturma köşesi",
     "villa": "Villa A",
-    "id": "xnmuhbbwoawn3br41s31"
+    "id": "xnmuhbbwoawn3br41s31",
+    "original": "assets/villa-a/renders/zemin-kat_05.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_06.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_06.webp",
     "brand": "Pearl",
     "cover": true,
     "createdAt": "2026-10-15T06:25:47.218Z",
@@ -84,13 +89,14 @@
     "kind": "render",
     "order": 1792045547218,
     "room": "Yatak odası 1",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_06.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_06.webp",
     "title": "Yatak odası 1",
     "villa": "Villa A",
-    "id": "e70b7ney6ik69rd0kgu6"
+    "id": "e70b7ney6ik69rd0kgu6",
+    "original": "assets/villa-a/renders/zemin-kat_06.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_07.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_07.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:51.365Z",
@@ -99,13 +105,14 @@
     "kind": "render",
     "order": 1792045551365,
     "room": "Yatak odası 3",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_07.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_07.webp",
     "title": "Yatak odası 3",
     "villa": "Villa A",
-    "id": "bn6t442lg2tweo0y2wmg"
+    "id": "bn6t442lg2tweo0y2wmg",
+    "original": "assets/villa-a/renders/zemin-kat_07.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_08.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_08.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:25:54.478Z",
@@ -114,13 +121,14 @@
     "kind": "render",
     "order": 1792045554478,
     "room": "Yatak odası 2",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_08.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_08.webp",
     "title": "Yatak odası 2 · makyaj masası",
     "villa": "Villa A",
-    "id": "incuto5knc6bnwbzph3z"
+    "id": "incuto5knc6bnwbzph3z",
+    "original": "assets/villa-a/renders/zemin-kat_08.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_09.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_09.webp",
     "brand": "Pearl",
     "cover": true,
     "createdAt": "2026-10-15T06:25:58.784Z",
@@ -129,13 +137,14 @@
     "kind": "render",
     "order": 1792045558784,
     "room": "Yatak odası 1",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_09.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_09.webp",
     "title": "Yatak odası 1 · gardırop duvarı",
     "villa": "Villa A",
-    "id": "gf5j0vv9dyj00zghekeu"
+    "id": "gf5j0vv9dyj00zghekeu",
+    "original": "assets/villa-a/renders/zemin-kat_09.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_10.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_10.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:03.351Z",
@@ -144,13 +153,14 @@
     "kind": "render",
     "order": 1792045563351,
     "room": "Yatak odası 3",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_10.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_10.webp",
     "title": "Yatak odası 3 · yatak duvarı",
     "villa": "Villa A",
-    "id": "egmsmc7bd1zgtwou2c1m"
+    "id": "egmsmc7bd1zgtwou2c1m",
+    "original": "assets/villa-a/renders/zemin-kat_10.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_11.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_11.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:07.294Z",
@@ -159,13 +169,14 @@
     "kind": "render",
     "order": 1792045567294,
     "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_11.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_11.webp",
     "title": "Ebeveyn yatak odası",
     "villa": "Villa A",
-    "id": "vg8ulw5ivrk2n2u108fu"
+    "id": "vg8ulw5ivrk2n2u108fu",
+    "original": "assets/villa-a/renders/zemin-kat_11.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_12.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_12.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:11.918Z",
@@ -174,13 +185,14 @@
     "kind": "render",
     "order": 1792045571918,
     "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_12.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_12.webp",
     "title": "Ebeveyn yatak odası · pencere cephesi",
     "villa": "Villa A",
-    "id": "n8kkbkj1iqtvcck823s2"
+    "id": "n8kkbkj1iqtvcck823s2",
+    "original": "assets/villa-a/renders/zemin-kat_12.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_13.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_13.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:16.118Z",
@@ -189,13 +201,14 @@
     "kind": "render",
     "order": 1792045576118,
     "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_13.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_13.webp",
     "title": "Ebeveyn yatak odası · gardırop",
     "villa": "Villa A",
-    "id": "adcn3kmlov2epkn9alub"
+    "id": "adcn3kmlov2epkn9alub",
+    "original": "assets/villa-a/renders/zemin-kat_13.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_14.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_14.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:19.528Z",
@@ -204,13 +217,14 @@
     "kind": "render",
     "order": 1792045579528,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_14.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_14.webp",
     "title": "Salon · merdiven tarafı",
     "villa": "Villa A",
-    "id": "u3r0552roy0u863vsyh8"
+    "id": "u3r0552roy0u863vsyh8",
+    "original": "assets/villa-a/renders/zemin-kat_14.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_15.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_15.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:22.701Z",
@@ -219,13 +233,14 @@
     "kind": "render",
     "order": 1792045582701,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_15.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_15.webp",
     "title": "Salon ve yemek alanı",
     "villa": "Villa A",
-    "id": "egmgc7jo6h1ct8qvux9h"
+    "id": "egmgc7jo6h1ct8qvux9h",
+    "original": "assets/villa-a/renders/zemin-kat_15.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_16.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_16.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:26.093Z",
@@ -234,13 +249,14 @@
     "kind": "render",
     "order": 1792045586093,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_16.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_16.webp",
     "title": "Salon · bahçe cephesi",
     "villa": "Villa A",
-    "id": "25ch0vx5927kz1m1pqma"
+    "id": "25ch0vx5927kz1m1pqma",
+    "original": "assets/villa-a/renders/zemin-kat_16.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_17.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_17.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:30.491Z",
@@ -249,13 +265,14 @@
     "kind": "render",
     "order": 1792045590491,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_17.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_17.webp",
     "title": "Salon ve yemek masası",
     "villa": "Villa A",
-    "id": "lw7d602ly2juss4o5406"
+    "id": "lw7d602ly2juss4o5406",
+    "original": "assets/villa-a/renders/zemin-kat_17.jpg"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_18.png",
+    "asset": "assets/villa-a/renders/zemin-kat_18.webp",
     "brand": "Pearl",
     "cover": false,
     "createdAt": "2026-10-15T06:26:40.528Z",
@@ -264,13 +281,14 @@
     "kind": "plan",
     "order": 1792045600528,
     "room": null,
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_18.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_18.webp",
     "title": "Kat planları · zemin, 1. kat, çatı",
     "villa": "Villa A",
-    "id": "w2jcao94asjgvq10ue7s"
+    "id": "w2jcao94asjgvq10ue7s",
+    "original": "assets/villa-a/renders/zemin-kat_18.png"
   },
   {
-    "asset": "assets/villa-a/renders/zemin-kat_19.jpg",
+    "asset": "assets/villa-a/renders/zemin-kat_19.webp",
     "brand": "Pearl",
     "cover": true,
     "createdAt": "2026-10-15T06:26:46.193Z",
@@ -279,13 +297,14 @@
     "kind": "render",
     "order": 1792045606193,
     "room": "Salon",
-    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_19.jpg",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_19.webp",
     "title": "Giriş salonu ve merdiven",
     "villa": "Villa A",
-    "id": "fxfq3h1bgapdr5tfmzwy"
+    "id": "fxfq3h1bgapdr5tfmzwy",
+    "original": "assets/villa-a/renders/zemin-kat_19.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_01.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_01.webp",
     "brand": "Silver",
     "createdAt": "2026-10-16T15:20:22.669Z",
     "fileName": "bellona_ctipi_livingroom (1).jpg",
@@ -293,14 +312,15 @@
     "kind": "render",
     "order": 1792164022669,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_01.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_01.webp",
     "title": "Villa C · Salon · Silver · Bellona",
     "villa": "Villa C",
     "id": "yi8uuakur6z029w0yss3",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_01.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_02.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_02.webp",
     "brand": "Gold",
     "createdAt": "2026-10-16T15:34:49.859Z",
     "fileName": "inci_ctipi_livingroom (1).jpg",
@@ -308,14 +328,15 @@
     "kind": "render",
     "order": 1792164889859,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_02.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_02.webp",
     "title": "Villa C · Salon · Gold · Inci Design",
     "villa": "Villa C",
     "id": "b8z5nk9zgwxu6kibvpiw",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_02.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_03.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_03.webp",
     "brand": "Platinum",
     "createdAt": "2026-10-16T15:35:10.444Z",
     "fileName": "sardunya_c_Livingeoom (1).jpg",
@@ -323,14 +344,15 @@
     "kind": "render",
     "order": 1792164910444,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_03.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_03.webp",
     "title": "Villa C · Salon · Platinum · Sardunya",
     "villa": "Villa C",
     "id": "856ybchos0usvysryh40",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_03.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_05.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_05.webp",
     "brand": "Diamond",
     "createdAt": "2026-10-16T15:36:15.526Z",
     "fileName": "homage_living_room_c (1).jpg",
@@ -338,14 +360,15 @@
     "kind": "render",
     "order": 1792164975526,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_05.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_05.webp",
     "title": "Villa C · Salon · Diamond · Homage",
     "villa": "Villa C",
     "id": "baxrpz2ec9t9iimdfuj1",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_05.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_04.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_04.webp",
     "brand": "Emerald",
     "createdAt": "2026-10-16T15:36:35.490Z",
     "fileName": "modis_tipc_livingroom.jpg",
@@ -353,14 +376,15 @@
     "kind": "render",
     "order": 1792164995490,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_04.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_04.webp",
     "title": "Villa C · Salon · Emerald · Modis",
     "villa": "Villa C",
     "id": "nphykofxsuem8ygqr5jq",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_04.jpg"
   },
   {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_06.jpg",
+    "asset": "assets/villa-c/renders/zemin-kat_salon_06.webp",
     "brand": "Pearl",
     "createdAt": "2026-10-16T16:31:07.001Z",
     "fileName": "891db0e7-f22d-4e2e-9da3-ff30113405c7.jpg",
@@ -368,10 +392,11 @@
     "kind": "render",
     "order": 1792168267000,
     "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_06.jpg",
+    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_06.webp",
     "title": "Villa C · Salon · Pearl · Gabba",
     "villa": "Villa C",
     "id": "wwu28bag69h2pri27uit",
-    "cover": false
+    "cover": false,
+    "original": "assets/villa-c/renders/zemin-kat_salon_06.jpg"
   }
 ]

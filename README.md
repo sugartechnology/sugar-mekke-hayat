@@ -34,6 +34,7 @@ src/
 
 - **Rakamlar:** `data/config.json` içinde her paketin `values` alanı villa başına `[Zemin kat, 1. kat, Çatı katı, Ev tamamlayıcı ürünler]` tutarlarını (USD) tutar. `rates` alanı navlun, montaj ve sigorta oranlarını tutar.
 - **Görseller:** Dosyayı `assets/` altına koyup `data/media.json` dosyasına bir kayıt ekleyin. `kind` alanı `render`, `plan` ya da `pano` olabilir.
+- **WebP:** Site görselleri `.webp` olarak yükler (renderlar en fazla 3840 px, önizlemeler 900 px). Orijinal JPG/PNG dosyaları aynı klasörde durur ve `media.json` içindeki `original` alanında yazılıdır.
 - Her iki dosyayı değiştirdikten sonra `data/data.js` dosyasını da güncelleyin. Site bu dosyayı okur.
 
 Yönetim paneli (yükleme, oda işaretleme, Google Sheets'ten çekme) yalnızca Claude'daki sürümde çalışır. Bu klasör o sürümün bir anlık dışa aktarımıdır.
