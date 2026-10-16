@@ -556,6 +556,12 @@ td.best{font-weight:600}
 @media (max-width:700px){.bar-in{gap:10px;padding-block:10px}.logo small{display:none}.bar-actions{margin-left:auto}
  .nav{order:3;width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;gap:4px;scrollbar-width:none}.nav button{flex:none}}
 .autot{display:flex;gap:6px}.autot input{flex:1}.autot input[readonly]{background:var(--surface-2);color:var(--muted);cursor:pointer}
+.cmp-scope{position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);z-index:5;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--bg);padding:14px 0;border-bottom:1px solid var(--line);margin-bottom:-56px}
+@media (max-width:760px){.cmp-scope{position:static;margin-bottom:-48px}.cmp-scope .seg{overflow-x:auto;max-width:100%}}
+.cmp-scope .seg button{font-size:13px;padding:7px 14px}
+.cellbtn{cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+.cellbtn:hover{text-decoration-color:currentColor}
+th.muted,td.muted{color:var(--muted)}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -583,6 +589,7 @@ const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE
 const S={cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],view:"villas",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
   canEdit:false,db:null,assets:null,mcp:null,dbReady:false,admin:"media",pinPlan:null,pendingPin:null};
 try{const v=localStorage.getItem("hm_cur2");if(v==="SAR")S.cur="SAR";}catch(e){}
+try{const v=localStorage.getItem("hm_cmpv");if(v)S.cmpV=v;}catch(e){}
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -644,6 +651,12 @@ function total3(b){return villas().reduce((a,v)=>a+net(b,v),0);}
 function avgGross(b){const vs=villas();return vs.length?vs.reduce((a,v)=>a+gross(b,v),0)/vs.length:0;}
 function budget(b){return avgGross(b)*(S.cfg.villaCount||0);}
 function ranked(){return brands().slice().sort((a,b)=>total3(a)-total3(b));}
+const ALLV="__all";
+function cmpScope(){if(S.cmpV!==ALLV&&!villas().includes(S.cmpV))S.cmpV=villas()[0]||ALLV;return S.cmpV;}
+function netIn(b,v){return v===ALLV?total3(b):net(b,v);}
+function grossIn(b,v){return v===ALLV?villas().reduce((a,x)=>a+gross(b,x),0):gross(b,v);}
+function rankedIn(v){return brands().slice().sort((a,b)=>netIn(a,v)-netIn(b,v));}
+const scopeName=v=>v===ALLV?villas().length+" villa toplamı":v;
 function rankedFor(v){return brands().slice().sort((a,b)=>net(a,v)-net(b,v));}
 function boqItems(pkg,v){return (S.boq[pkg]?.[v]||[]);}
 function roomTotals(pkg,v,floor){const m=new Map();boqItems(pkg,v).filter(it=>!floor||it.f===floor).forEach(it=>{const {room}=labelItem(it);const o=m.get(room)||{v:0,n:0};o.v+=(+it.v||0);o.n++;m.set(room,o);});return m;}
@@ -720,14 +733,15 @@ function listHTML(){
        <div class="price-line"><div><small>Başlangıç · ${esc(pl(lo?.name))}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
         <div style="text-align:right"><small>${r.length} paket</small><span class="num muted" style="font-size:13px;font-weight:600">en yüksek ${money(net(hi,v))}</span></div></div>
        <span class="link">Villayı incele</span></div></button>`;}).join("")}</div></section>
-  <section class="block"><div class="head"><div><h2>Mobilya paketleri</h2></div>
+  <section class="block"><div class="head"><div><h2>Villa tipine göre paketler</h2></div>
     <p>${esc(S.cfg.scope||"Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı.")} Hareketsiz mobilya ve ev tekstili tüm paketlerde aynı; fark hareketli mobilyanın seviyesinden gelir.</p></div>
-   <div class="pstrip">${ranked().map((b,i)=>`<button class="pcard" data-cmp><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><b class="num">${money(avgGross(b))}${cur()}</b><small>villa başı ort. · KDV dahil${i===0?" · en uygun":""}</small></button>`).join("")}</div></section>
+   ${villaMatrixHTML()}<p class="note">${S.cur} · villa başı net fiyat, KDV hariç. Bir tutara tıklayın; villa o paketle açılır. Her sütunda en uygun paket işaretli.</p></section>
   ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(pl(best.name))} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
     <button class="btn light" data-cmp>Tüm paketleri karşılaştır →</button></section>`:""}`;}
 function bindList(){const m=$("#main");
   m.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>openVilla(b.dataset.villa));
   m.querySelectorAll("[data-cmp]").forEach(b=>b.onclick=()=>setView("compare"));
+  m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelector("[data-scroll]")?.addEventListener("click",()=>$("#villas").scrollIntoView());
   m.querySelector("[data-deck]")?.addEventListener("click",()=>openDeckSetup());}
 
@@ -925,40 +939,42 @@ function openFurn(tab){
   s.querySelector("[data-x]").focus({preventScroll:true});}
 
 /* ---------- compare ---------- */
-function rankingHTML(){
-  const r=ranked();if(!r.length)return "";const max=total3(r[r.length-1]),min=total3(r[0]);
-  return `<div class="rank">${r.map((b,i)=>{const t=total3(b),d=(t-min)/min;
+function rankingHTML(v){v=v||cmpScope();
+  const r=rankedIn(v);if(!r.length)return "";const max=netIn(r[r.length-1],v),min=netIn(r[0],v);
+  return `<div class="rank">${r.map((b,i)=>{const t=netIn(b,v),d=(t-min)/min;
     return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span>
       <div class="track"><i class="fill" style="width:${(t/max*100).toFixed(1)}%"></i></div>
-      <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">villa başı ${money(avgGross(b))} KDV dahil</span></div></div>`;}).join("")}</div>`;}
+      <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">KDV dahil ${money(grossIn(b,v))}</span></div></div>`;}).join("")}</div>`;}
 function villaMatrixHTML(){
   const bs=ranked(),vs=villas();
-  return `<div class="tbl-wrap"><table><thead><tr><th>Paket</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}<th>${vs.length} villa toplamı</th><th>Villa başı · KDV dahil</th><th>Proje bütçesi</th></tr></thead><tbody>
+  return `<div class="tbl-wrap"><table><thead><tr><th>Paket</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}<th class="muted">${vs.length} villa toplamı</th></tr></thead><tbody>
    ${bs.map(b=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${vs.map(v=>{const mn=Math.min(...bs.map(x=>net(x,v)));return `<td class="${net(b,v)===mn?"best":""}"><button class="cellbtn" data-open="${esc(v)}|${esc(pl(b.name))}">${money(net(b,v))}</button></td>`;}).join("")}
-     <td><b>${money(total3(b))}</b></td><td>${money(avgGross(b))}</td><td>${big(budget(b))}</td></tr>`).join("")}</tbody></table></div>`;}
-function matrixHTML(){
-  const bs=ranked(),vs=villas(),secs=sections();
-  let rows="";vs.forEach(v=>{rows+=`<tr class="grp"><td colspan="${bs.length+1}" style="text-align:left">${esc(v)}</td></tr>`;secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
+     <td class="muted">${money(total3(b))}</td></tr>`).join("")}</tbody></table></div>`;}
+function matrixHTML(sv){sv=sv||cmpScope();
+  const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv],secs=sections();
+  let rows="";vs.forEach(v=>{if(vs.length>1)rows+=`<tr class="grp"><td colspan="${bs.length+1}" style="text-align:left">${esc(v)}</td></tr>`;secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
     rows+=`<tr><td>${esc(s)}</td>${vals.map(x=>`<td class="${mn===mx?"":x===mn?"best":x===mx?"worst":""}">${money(x)}</td>`).join("")}</tr>`;});
     const tv=bs.map(b=>furn(b,v)),mn=Math.min(...tv);rows+=`<tr><td><b>Toplam</b></td>${tv.map(x=>`<td class="${x===mn?"best":""}"><b>${money(x)}</b></td>`).join("")}</tr>`;});
   return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(pl(b.name))}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
-function compositionHTML(){
-  const bs=ranked(),vs=villas();if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
+function compositionHTML(sv){sv=sv||cmpScope();
+  const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv];if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
   const SEG=[["Loose Furniture","Hareketli mobilya","var(--f1)"],["Fixed","Hareketsiz mobilya","var(--f2)"],["Ev Dekorasyon","Ev tekstili","var(--f3)"],["_other","Diğer kalemler","var(--f4)"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
   const rows=bs.map(b=>{const o={};SEG.forEach(([k])=>o[k]=0);vs.forEach(v=>{const t=typeTotals(b.name,v);const L=layers(b,v);const keys=Object.keys(t);const typed=keys.reduce((x,k)=>x+(t[k]||0),0);const f=typed?L.furn/typed:0;keys.forEach(k=>{const kk=["Loose Furniture","Fixed","Ev Dekorasyon"].includes(k)?k:"_other";o[kk]+=(t[k]||0)*f;});o._fr+=L.freight;o._as+=L.assembly+L.insurance;});
     o.tot=SEG.reduce((a,[k])=>a+o[k],0);return {b,o};});
   const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));
-  return `<section class="block"><div class="head"><div><span class="eyebrow">${vs.length} villa toplamı · net</span><h2>Fiyat farkı nereden geliyor?</h2></div><p>Hareketsiz mobilya, ev tekstili ve navlun tüm paketlerde aynı. Paketleri ayıran hareketli mobilya.</p></div>
+  return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Maliyet kırılımı: hareketli, hareketsiz, tekstil</h2></div><p>Hareketsiz mobilya, ev tekstili ve navlun tüm paketlerde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend">${segs.map(([k,l,c])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>
    ${rows.map(({b,o})=>`<div class="crow"><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><b class="num">${money(o.tot)}</b></div>`).join("")}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l}</th>`).join("")}<th>Toplam</th></tr></thead><tbody>
     ${rows.map(({b,o})=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${segs.map(([k])=>`<td>${money(o[k])}</td>`).join("")}<td><b>${money(o.tot)}</b></td></tr>`).join("")}</tbody></table></div></section>`;}
-function compareHTML(){
-  return `<section class="block"><div class="head"><div><span class="eyebrow">Paket sıralaması</span><h2>${villas().length} villa toplamına göre</h2></div><p>${S.cur} · net, KDV hariç. Navlun, montaj ve sigorta dahil.</p></div>${rankingHTML()}</section>
-  ${compositionHTML()}
+function compareHTML(){const v=cmpScope();
+  return `<div class="cmp-scope"><span class="eyebrow">Villa tipi</span><div class="seg" role="tablist">${villas().map(x=>`<button data-cv="${esc(x)}" aria-pressed="${v===x}">${esc(x)}</button>`).join("")}<button data-cv="${ALLV}" aria-pressed="${v===ALLV}">${villas().length} villa toplamı</button></div></div>
+  <section class="block"><div class="head"><div><span class="eyebrow">Paket sıralaması</span><h2>${esc(scopeName(v))}</h2></div><p>${S.cur} · net, KDV hariç. Navlun, montaj ve sigorta dahil.</p></div>${rankingHTML(v)}</section>
+  ${compositionHTML(v)}
   <section class="block"><div class="head"><div><span class="eyebrow">Villa × paket</span><h2>Villa başı fiyat</h2></div><p>Bir tutara tıklayın; villa o paketle açılır.</p></div>${villaMatrixHTML()}</section>
-  <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML()}</section>`;}
-function bindCompare(){$("#main").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});}
+  <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması · ${esc(scopeName(v))}</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML(v)}</section>`;}
+function bindCompare(){const m=$("#main");m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
+  m.querySelectorAll("[data-cv]").forEach(b=>b.onclick=()=>{S.cmpV=b.dataset.cv;try{localStorage.setItem("hm_cmpv",S.cmpV)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});}
 
 /* ---------- presentation deck ---------- */
 function openDeckSetup(){
@@ -1000,7 +1016,7 @@ function buildSlides(opt){
     if(opt.plan){const seen=new Set();floorsOnly().forEach(f=>{const p=planFor(v,f,b.name);if(p&&!seen.has(p.id)){seen.add(p.id);sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · kat planı</span><h2>${esc(p.floor||p.title||"Kat planı")}</h2><div class="grow"><div class="imgfit"><div class="plan-pins-deck"><img src="${blob(p.asset)}" alt="" style="max-height:calc(100vh - 280px);max-width:100%">${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}</div></div></div></div>`});}});}
     if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Fiyat</h2><div class="grow">${deckCost(b,v)}</div></div>`});
   });
-  if(opt.cmp){sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${brands().length} paket</h2><div class="grow" style="overflow:auto">${rankingHTML()}</div></div>`});
+  if(opt.cmp){(opt.villas.length?opt.villas:villas()).forEach(v=>sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${esc(v)}</h2><div class="grow" style="overflow:auto">${rankingHTML(v)}</div></div>`}));
     sl.push({html:`<div class="slide"><span class="eyebrow">Villa × paket · ${S.cur}</span><h2>Villa başı fiyat</h2><div class="grow" style="overflow:auto">${villaMatrixHTML()}</div></div>`});}
   sl.push({html:`<div class="slide cover" style="background:#1F4E44;justify-content:center;align-items:center;text-align:center"><span class="eyebrow" style="color:#CFE5DE">Teşekkürler</span><h2 style="font-size:clamp(56px,8vw,120px)">${name}</h2><p style="margin:0;color:#CFE5DE">${esc(S.cfg.subtitle||"")}</p></div>`});
   return sl;}
