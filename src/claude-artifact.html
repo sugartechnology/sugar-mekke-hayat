@@ -594,6 +594,18 @@ th.muted,td.muted{color:var(--muted)}
 .pdfbox .muted{color:#9AA29E;font-size:13px}
 .slide.cover{position:absolute;inset:0;aspect-ratio:auto;margin:0;max-width:none}
 .ov #dGo{background:#EEECE6;color:#151A18;border-color:#EEECE6}
+.mfilter{display:grid;gap:10px;padding:14px 0 18px;border-bottom:1px solid var(--line);margin-bottom:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);background:var(--bg);z-index:4}
+.mrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.mlab{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);width:56px;flex:none}
+.mchip{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 10px;font-size:13px;font-weight:500;border-radius:999px;cursor:pointer}
+.mchip span{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.mchip[aria-pressed="true"]{background:var(--fg);color:#fff;border-color:var(--fg)}.mchip[aria-pressed="true"] span{color:rgba(255,255,255,.75)}
+.mchip .dot{width:8px;height:8px}
+#mfQ{margin-left:auto;min-width:220px;border:1px solid var(--line);padding:6px 10px;font:inherit;font-size:13px;background:var(--surface);color:var(--fg)}
+.mdup{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+.mitem[hidden]{display:none!important}
+@media (max-width:760px){.mfilter{position:static}.mrow{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}.mlab{width:auto}#mfQ{margin-left:0;min-width:180px}}
+.mchip.zero{opacity:.45}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -1335,6 +1347,32 @@ function roomInfo(villa,floor,pkg,room){
   const f=floor||roomFloor(villa,room);const {tree,pk}=roomTree(villa,pkg);const o=f&&tree.get(f)?.get(room);
   if(!o)return `${esc(room)} · kalem listesinde yok (yeni oda)`;
   return `<b>${esc(room)}</b> · ${esc(f)} · ${o.n} kalem${o.n?` · ${money(o.v)} ${S.cur} (${esc(pl(pk))})`:""} · bu oda için ${o.img} görsel yüklü`;}
+function dupKeys(items){const g=new Map();items.forEach(m=>{const k=[m.villa,m.brand,m.kind,m.room,m.fileName].join("|");if(!g.has(k))g.set(k,[]);g.get(k).push(m.id);});
+  const d=new Set();g.forEach(a=>{if(a.length>1)a.forEach(x=>d.add(x));});return d;}
+function mediaFilterHTML(items,vs,pk){const f=S.mf||(S.mf={v:"",b:"",k:"",q:"",dup:false});
+  const cnt=(fn)=>items.filter(fn).length;const chip=(grp,val,label,n)=>`<button type="button" class="mchip" data-mf="${grp}" data-val="${esc(val)}" aria-pressed="${f[grp]===val}">${label}<span>${n}</span></button>`;
+  const brands=[...pk,...new Set(items.map(m=>m.brand).filter(b=>b&&!pk.includes(b)))];const nd=dupKeys(items).size;
+  return `<div class="mfilter" role="group" aria-label="Medya filtresi">
+   <div class="mrow"><span class="mlab">Villa</span>${chip("v","","Tümü",items.length)}${vs.map(v=>chip("v",v,esc(v),cnt(m=>m.villa===v))).join("")}</div>
+   <div class="mrow"><span class="mlab">Paket</span>${chip("b","","Tümü",items.length)}${brands.map(b=>chip("b",b,dot(b)+esc(pl(b)),cnt(m=>m.brand===b))).join("")}${chip("b","__none","Ortak",cnt(m=>!m.brand))}</div>
+   <div class="mrow"><span class="mlab">Tür</span>${chip("k","","Tümü",items.length)}${chip("k","render","Render",cnt(m=>(m.kind||"render")==="render"))}${chip("k","plan","Kat planı",cnt(m=>m.kind==="plan"))}${chip("k","pano","360°",cnt(m=>m.kind==="pano"))}
+    <input type="search" id="mfQ" placeholder="Oda, başlık ya da dosya ara" value="${esc(f.q)}">
+    ${nd?`<label class="mdup"><input type="checkbox" id="mfDup" ${f.dup?"checked":""}> Yalnızca tekrarlananlar (${nd})</label>`:""}
+    <button type="button" class="btn sm" id="mfReset">Temizle</button></div></div>
+   <div class="empty" id="mfEmpty" hidden><strong>Bu filtreye uyan görsel yok</strong><span>Filtreyi değiştirin ya da temizleyin.</span></div>`;}
+function mfMatch(d,f,q,skip){return (skip==="v"||!f.v||d.fv===f.v)&&(skip==="b"||!f.b||(f.b==="__none"?!d.fb:d.fb===f.b))&&(skip==="k"||!f.k||d.fk===f.k)&&(!q||d.fq.includes(q))&&(!f.dup||d.dup==="1");}
+function applyMediaFilter(m){const f=S.mf||{};const q=(f.q||"").toLocaleLowerCase("tr").trim();let n=0;const all=[...m.querySelectorAll(".mitem")];
+  all.forEach(el=>{const ok=mfMatch(el.dataset,f,q);el.hidden=!ok;if(ok)n++;});
+  m.querySelectorAll("[data-mf]").forEach(b=>{const g=b.dataset.mf,val=b.dataset.val;b.setAttribute("aria-pressed",(f[g]||"")===val);
+    const c=all.filter(el=>mfMatch(el.dataset,{...f,[g]:val},q)).length;const sp=b.querySelector("span");if(sp)sp.textContent=c;b.classList.toggle("zero",!c&&(f[g]||"")!==val);});
+  const c=m.querySelector("#mfCount");if(c)c.textContent=n===all.length?`${all.length} dosya`:`${n} / ${all.length} dosya gösteriliyor`;
+  const e=m.querySelector("#mfEmpty");if(e)e.hidden=n>0;}
+function bindMediaFilter(m){if(!m.querySelector(".mfilter"))return;S.mf=S.mf||{v:"",b:"",k:"",q:"",dup:false};
+  m.querySelectorAll("[data-mf]").forEach(b=>b.onclick=()=>{S.mf[b.dataset.mf]=b.dataset.val;applyMediaFilter(m);});
+  const q=m.querySelector("#mfQ");if(q)q.oninput=()=>{S.mf.q=q.value;applyMediaFilter(m);};
+  const d=m.querySelector("#mfDup");if(d)d.onchange=()=>{S.mf.dup=d.checked;applyMediaFilter(m);};
+  m.querySelector("#mfReset").onclick=()=>{S.mf={v:"",b:"",k:"",q:"",dup:false};if(q)q.value="";if(d)d.checked=false;applyMediaFilter(m);};
+  applyMediaFilter(m);}
 function adminMedia(){
   if(!S.assets)return `<div class="empty"><strong>Yükleme bu görünümde kapalı</strong><span>Görsel yüklemek için sayfayı düzenleme yetkisiyle açın.</span></div>`;
   const vs=villas().length?villas():["Villa A","Villa B","Villa C"],fs=floorsOnly().length?floorsOnly():["Zemin kat","1. kat","Çatı katı"];
@@ -1353,8 +1391,9 @@ function adminMedia(){
      <div class="drop" id="drop"><strong>Dosyaları buraya bırakın</strong><span class="muted" style="font-size:13px">JPG, PNG, WEBP ya da SVG · panoramalar 2:1 eşdikdörtgen (equirectangular) olmalı · görseller yüklenirken WebP’ye çevrilir (renderlar en fazla 3840 px, panoramalar 8192 px)</span>
        <label class="btn primary">Dosya seç<input type="file" id="upFile" accept="image/*" multiple hidden></label></div>
      <div class="uplist" id="upList"></div></div>
-   <div class="block-head"><div><span class="eyebrow">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
-   ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(pl(m.brand)):""}${m.cover?" · Kapak":""}</span></div>
+   <div class="block-head"><div><span class="eyebrow" id="mfCount">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
+   ${items.length?mediaFilterHTML(items,vs,pk):""}
+   ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}" data-fv="${esc(m.villa||"")}" data-fb="${esc(m.brand||"")}" data-fk="${esc(m.kind||"render")}" data-fq="${esc([m.room,m.title,m.fileName,m.floor].filter(Boolean).join(" ").toLocaleLowerCase("tr"))}" data-dup="${dupKeys(items).has(m.id)?1:0}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(pl(m.brand)):""}${m.cover?" · Kapak":""}</span></div>
      <div class="bd"><div class="form">
       <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
       <label class="f">Paket<select data-k="brand">${optsP(m.brand&&!pk.includes(m.brand)?[...pk,m.brand]:pk,m.brand,"Tümü")}</select></label>
@@ -1427,7 +1466,7 @@ async function uploadOne(file,meta,row){
   set("Yüklendi");}
 function errMsg(e){const c=e&&e.code;return c==="too_large"?"Dosya çok büyük":c==="unsupported_type"?"Desteklenmeyen dosya türü":c==="quota_or_state"?"Depolama alanı dolu":c==="rate_limited"?"Çok hızlı yükleme, biraz bekleyip tekrar deneyin":(e&&e.message)||"Yüklenemedi";}
 function bindMedia(m){
-  if(!S.assets)return;
+  if(!S.assets)return;bindMediaFilter(m);
   const drop=m.querySelector("#drop"),inp=m.querySelector("#upFile"),list=m.querySelector("#upList");
   const uV=m.querySelector("#upVilla"),uF=m.querySelector("#upFloor"),uB=m.querySelector("#upBrand"),uR=m.querySelector("#upRoom"),uN=m.querySelector("#upRoomNew"),uI=m.querySelector("#upInfo");
   const info=()=>{uI.innerHTML=uR.value==="__new"?"Yeni oda adı yazın; kalem listesinde olmayan bir alan olarak kaydedilir.":roomInfo(uV.value,uF.value||null,uB.value||null,uR.value);};
