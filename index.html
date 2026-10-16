@@ -562,6 +562,35 @@ td.best{font-weight:600}
 .cellbtn{cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
 .cellbtn:hover{text-decoration-color:currentColor}
 th.muted,td.muted{color:var(--muted)}
+.hshow{margin-top:28px;border-radius:0;aspect-ratio:21/9;background:var(--surface-2);position:relative;overflow:hidden;max-width:100%;cursor:pointer;outline:none}
+.hshow:focus-visible{box-shadow:0 0 0 2px var(--fg)}
+.hs{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1s ease;pointer-events:none}
+.hs.on{opacity:1;pointer-events:auto}
+.hs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 7s ease-out}
+.hs.on img{transform:scale(1)}
+.hs figcaption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:22px 26px 30px;color:#fff;
+  background:linear-gradient(180deg,rgba(0,0,0,.28) 0,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 48%,rgba(0,0,0,.62) 100%)}
+.hv{align-self:flex-start;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border:1px solid rgba(255,255,255,.7);padding:6px 10px}
+.hb{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.hl{display:grid;gap:8px;min-width:0}
+.hroom{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,52px);line-height:1}
+.hp{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:500}
+.hpr{display:grid;gap:3px;text-align:right;white-space:nowrap}
+.hpr small{font-size:11.5px;opacity:.85}
+.hpr b{font-family:var(--display);font-weight:400;font-size:clamp(24px,3vw,40px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.hpr b span{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.38em;letter-spacing:.06em}
+.hnav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;background:rgba(255,255,255,.85);color:#111;font-size:24px;line-height:1;opacity:0;transition:opacity .2s;z-index:2}
+.hshow:hover .hnav,.hshow:focus-within .hnav{opacity:1}
+.hnav.l{left:14px}.hnav.r{right:14px}
+.hdots{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);display:flex;gap:6px;z-index:2}
+.hdots button{width:6px;height:6px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.5)}
+.hdots button[aria-current="true"]{background:#fff}
+.hbar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.18);z-index:2}
+.hbar i{display:block;height:100%;background:#fff;transform-origin:left;animation:hbar var(--hms,6000ms) linear forwards}
+.hshow.paused .hbar i{animation-play-state:paused}.hshow.still .hbar{display:none}
+@keyframes hbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (max-width:640px){.hshow{aspect-ratio:4/5}.hs figcaption{padding:16px 16px 26px}.hb{flex-direction:column;align-items:flex-start;gap:14px}.hpr{text-align:left}.hnav,.hdots{display:none}}
+@media (prefers-reduced-motion:reduce){.hs,.hs img{transition:none}}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -714,6 +743,49 @@ function render(){
   else {S.view="villas";m.innerHTML=listHTML();bindList();}
 }
 
+/* ---------- home: hero slideshow ---------- */
+function heroPool(){const seen=new Set();const out=[];
+  S.media.filter(m=>m.kind==="render"&&m.asset&&villas().includes(m.villa)).sort(byOrder).forEach(m=>{
+    const k1=m.asset,k2=[m.villa,m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return;seen.add(k1);seen.add(k2);out.push(m);});
+  return out;}
+function heroList(){const pool=heroPool();const key=pool.map(m=>m.id).sort().join(",");
+  if(!S.hero||S.hero.key!==key){const a=pool.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}S.hero={key,list:a,i:0};}
+  return S.hero.list;}
+function heroInfo(m){const b=pkgByName(m.brand);const v=m.villa;const pk=b||rankedFor(v)[0];
+  return {villa:v,room:m.room||m.title||"Oda",pkg:pk,price:pk?net(pk,v):0,exact:!!b};}
+function heroSlide(m,i,on){const h=heroInfo(m);const load=on||i===((S.hero.i+1)%S.hero.list.length);
+  return `<figure class="hs${on?" on":""}" data-hi="${i}" aria-hidden="${!on}"><img ${load?`src="${blob(m.asset)}"`:`data-src="${blob(m.asset)}"`} alt="${esc([h.villa,h.room,h.pkg?pl(h.pkg.name):""].filter(Boolean).join(" · "))}">
+    <figcaption><span class="hv">${esc(h.villa)}</span>
+     <div class="hb"><div class="hl"><b class="hroom">${esc(h.room)}</b><span class="hp">${h.pkg?dot(h.pkg.name):""}${esc(h.pkg?pl(h.pkg.name)+" paketi":"")}</span></div>
+      <div class="hpr"><small>${h.exact?"Bu paketle villa fiyatı":"Başlangıç fiyatı"}</small><b class="num">${money(h.price)}&nbsp;<span>${S.cur}</span></b><small>KDV hariç · navlun, montaj dahil</small></div></div></figcaption></figure>`;}
+function heroHTML(fallback){const list=heroList();
+  if(!list.length)return fallback?`<div class="cover"><img src="${blob(fallback.asset)}" alt=""></div>`:"";
+  const i=Math.min(S.hero.i,list.length-1);S.hero.i=i;
+  return `<div class="hshow" id="hero" tabindex="0" aria-roledescription="slayt gösterisi" aria-label="Villa görselleri">${list.map((m,k)=>heroSlide(m,k,k===i)).join("")}
+    ${list.length>1?`<button class="hnav l" data-hstep="-1" aria-label="Önceki">‹</button><button class="hnav r" data-hstep="1" aria-label="Sonraki">›</button>
+    <div class="hdots">${list.map((_,k)=>`<button data-hgo="${k}" aria-label="${k+1}. görsel" aria-current="${k===i}"></button>`).join("")}</div><div class="hbar"><i></i></div>`:""}</div>`;}
+function heroGo(n){const h=$("#hero");if(!h||!S.hero)return;const L=S.hero.list.length;const i=((n%L)+L)%L;S.hero.i=i;
+  h.querySelectorAll(".hs").forEach(f=>{const on=+f.dataset.hi===i;f.classList.toggle("on",on);f.setAttribute("aria-hidden",!on);});
+  [i,(i+1)%L].forEach(k=>{const im=h.querySelector(`.hs[data-hi="${k}"] img[data-src]`);if(im){im.src=im.dataset.src;im.removeAttribute("data-src");}});
+  h.querySelectorAll("[data-hgo]").forEach(d=>d.setAttribute("aria-current",+d.dataset.hgo===i));
+  const bar=h.querySelector(".hbar i");if(bar){bar.style.animation="none";void bar.offsetWidth;bar.style.animation="";}}
+const HERO_MS=6000;
+function bindHero(){clearInterval(S.heroTimer);const h=$("#hero");if(!h||!S.hero||S.hero.list.length<2)return;
+  let paused=false;const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  h.style.setProperty("--hms",HERO_MS+"ms");
+  const tick=()=>{if(!document.getElementById("hero")){clearInterval(S.heroTimer);return;}if(!paused&&!document.hidden)heroGo(S.hero.i+1);};
+  if(!reduce)S.heroTimer=setInterval(tick,HERO_MS);else h.classList.add("still");
+  const pause=v=>{paused=v;h.classList.toggle("paused",v);};
+  h.addEventListener("mouseenter",()=>pause(true));h.addEventListener("mouseleave",()=>pause(false));
+  h.addEventListener("focusin",()=>pause(true));h.addEventListener("focusout",()=>pause(false));
+  const restart=()=>{clearInterval(S.heroTimer);if(!reduce)S.heroTimer=setInterval(tick,HERO_MS);};
+  h.addEventListener("click",e=>{const st=e.target.closest("[data-hstep]"),go=e.target.closest("[data-hgo]");
+    if(st){heroGo(S.hero.i+ +st.dataset.hstep);restart();return;}if(go){heroGo(+go.dataset.hgo);restart();return;}
+    const m=S.hero.list[S.hero.i];if(m)openVilla(m.villa,pkgByName(m.brand)?m.brand:undefined);});
+  h.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){heroGo(S.hero.i+1);restart();}else if(e.key==="ArrowLeft"){heroGo(S.hero.i-1);restart();}else if(e.key==="Enter"){const m=S.hero.list[S.hero.i];if(m)openVilla(m.villa,pkgByName(m.brand)?m.brand:undefined);}});
+  let x0=null;h.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;},{passive:true});
+  h.addEventListener("touchend",e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>40){heroGo(S.hero.i+(dx<0?1:-1));restart();}});}
+
 /* ---------- home: villa list ---------- */
 function listHTML(){
   const best=ranked()[0];const c=coverImg(null,best?.name);
@@ -721,7 +793,7 @@ function listHTML(){
   return `<section><div class="intro"><div><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1></div>
       <div><p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
        <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları incele</button><button class="btn" data-deck>Sunumu başlat</button></div></div></div>
-     ${c?`<div class="cover"><img src="${blob(c.asset)}" alt="${esc(c.title||"")}"></div><div class="caption-line"><span>${esc(c.title||c.room||"")}</span><span>${esc([c.villa,c.brand?pl(c.brand)+" paketi":""].filter(Boolean).join(" · "))}</span></div>`:""}
+     ${heroHTML(c)}
      <div class="facts"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
       <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)} ${S.cur}</b><span>başlangıç fiyatı, KDV hariç</span></div></div></section>
   <section class="block" id="villas"><div class="head"><div><h2>Villa tipleri</h2></div>
@@ -738,7 +810,7 @@ function listHTML(){
    ${villaMatrixHTML()}<p class="note">${S.cur} · villa başı net fiyat, KDV hariç. Bir tutara tıklayın; villa o paketle açılır. Her sütunda en uygun paket işaretli.</p></section>
   ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(pl(best.name))} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
     <button class="btn light" data-cmp>Tüm paketleri karşılaştır →</button></section>`:""}`;}
-function bindList(){const m=$("#main");
+function bindList(){const m=$("#main");bindHero();
   m.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>openVilla(b.dataset.villa));
   m.querySelectorAll("[data-cmp]").forEach(b=>b.onclick=()=>setView("compare"));
   m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
