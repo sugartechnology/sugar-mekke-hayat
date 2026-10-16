@@ -620,6 +620,7 @@ th.muted,td.muted{color:var(--muted)}
 .drvbar{height:3px;background:var(--surface-2);overflow:hidden;margin:8px 0}.drvbar i{display:block;height:100%;width:0;background:var(--fg);transition:width .2s}
 .drvlog{max-height:220px;overflow:auto;display:grid;gap:2px;font-size:12.5px}
 .drvrow{padding:3px 0;border-bottom:1px solid var(--line);color:var(--muted)}.drvrow.ok{color:var(--good)}.drvrow.bad{color:#B4472F}
+.mitem.deleting{opacity:.4;pointer-events:none}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -1362,6 +1363,7 @@ function roomInfo(villa,floor,pkg,room){
   const f=floor||roomFloor(villa,room);const {tree,pk}=roomTree(villa,pkg);const o=f&&tree.get(f)?.get(room);
   if(!o)return `${esc(room)} · kalem listesinde yok (yeni oda)`;
   return `<b>${esc(room)}</b> · ${esc(f)} · ${o.n} kalem${o.n?` · ${money(o.v)} ${S.cur} (${esc(pl(pk))})`:""} · bu oda için ${o.img} görsel yüklü`;}
+const DEL_MS=5000;const delArmed=id=>!!(S.delArm&&S.delArm.id===id&&Date.now()-S.delArm.t<DEL_MS);
 function dupKeys(items){const g=new Map();items.forEach(m=>{const k=[m.villa,m.brand,m.kind,m.room,m.fileName].join("|");if(!g.has(k))g.set(k,[]);g.get(k).push(m.id);});
   const d=new Set();g.forEach(a=>{if(a.length>1)a.forEach(x=>d.add(x));});return d;}
 function mediaFilterHTML(items,vs,pk){const f=S.mf||(S.mf={v:"",b:"",k:"",q:"",dup:false});
@@ -1469,7 +1471,7 @@ function adminMedia(){
       <div class="acts"><button class="btn sm" data-act="up" aria-label="Öne al">↑</button><button class="btn sm" data-act="down" aria-label="Geri al">↓</button>
        ${m.kind==="render"?`<button class="btn sm" data-act="cover">${m.cover?"Kapaktan çıkar":"Kapak yap"}</button>`:""}
        ${m.kind==="plan"?`<button class="btn sm" data-act="pins">Oda işaretle</button>`:""}
-       <button class="btn sm danger" data-act="del">Sil</button></div></div></div>`).join("")}</div>`
+       <button class="btn sm danger" data-act="del"${delArmed(m.id)?` data-armed="1"`:""}>${delArmed(m.id)?"Silmek için tekrar tıkla":"Sil"}</button></div></div></div>`).join("")}</div>`
    :`<div class="empty"><strong>Henüz medya yok</strong><span>Yukarıdan render, kat planı ya da panorama yükleyin.</span></div>`}`;}
 function adminPins(){
   const plans=mediaOf(m=>m.kind==="plan");
@@ -1572,8 +1574,12 @@ function bindMedia(m){
       else if(a==="pins"){S.pinPlan=id;S.admin="pins";render();}
       else if(a==="up"||a==="down"){const peers=mediaOf(x=>x.kind===it.kind&&x.villa===it.villa&&(x.brand||"")===(it.brand||""));const i=peers.findIndex(x=>x.id===id);const j=a==="up"?i-1:i+1;
         if(j<0||j>=peers.length)return;const o=peers[j];const oi=it.order||0,oo=o.order||0;await doc.update({order:oo===oi?oo-1:oo});await S.db.doc("media/"+o.id).update({order:oi});}
-      else if(a==="del"){if(b.dataset.armed!=="1"){b.dataset.armed="1";b.textContent="Silmek için tekrar tıkla";setTimeout(()=>{if(b.isConnected){b.dataset.armed="";b.textContent="Sil";}},3500);return;}
-        await doc.delete();for(const aid of [it.asset,it.thumb,it.original].filter(Boolean)){try{await S.assets.delete(aid);}catch(e){}}toast("Silindi");}
+      else if(a==="del"){if(!delArmed(id)){S.delArm={id,t:Date.now()};b.dataset.armed="1";b.textContent="Silmek için tekrar tıkla";
+          setTimeout(()=>{if(S.delArm?.id===id&&!delArmed(id)){S.delArm=null;const bb=document.querySelector(`.mitem[data-mid="${id}"] [data-act="del"]`);if(bb){bb.dataset.armed="";bb.textContent="Sil";}}},DEL_MS+50);return;}
+        S.delArm=null;b.disabled=true;b.textContent="Siliniyor…";card.classList.add("deleting");
+        try{await doc.delete();}catch(e){b.disabled=false;b.textContent="Sil";card.classList.remove("deleting");toast(e?.code==="invalid_argument"||e?.code==="permission_denied"?"Silme yetkiniz yok":"Silinemedi, tekrar deneyin");return;}
+        S.media=S.media.filter(x=>x.id!==id);card.remove();const mm=$("#main");if(mm)applyMediaFilter(mm);toast("Silindi");
+        for(const aid of [it.asset,it.thumb,it.original].filter(Boolean)){try{await S.assets.delete(aid);}catch(e){}}}
       }catch(e){toast("İşlem yapılamadı");}});});}
 function bindPins(m){
   const sel=m.querySelector("#pinSel");if(!sel)return;sel.onchange=()=>{S.pinPlan=sel.value;S.pendingPin=null;render();};
