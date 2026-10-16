@@ -9,29 +9,19 @@
 <title>Hayat Mekke Villa Sunumu</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
-/* Layout: property-listing page. Villa list → villa page (gallery + sticky package panel, rooms, cost story, other packages). Airy white, fresh sage-teal accent, one sans family. */
+/* Layout: quiet property brochure. White page, black type, hairline rules, photographs carry the colour. Single light look by choice. */
 :root{
-  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F4F7F6; --line:#E5EAE8; --fg:#101820; --muted:#5D6A72;
-  --accent:#2E8572; --accent-2:#246E5E; --accent-ink:#FFFFFF; --accent-soft:#EBF5F2; --gold:#B08A4E;
-  --good:#23825A; --good-bg:#E6F4EC; --bad:#B4533B; --bad-bg:#FBEDE8; --shade:rgba(16,24,32,.07);
-  --f1:#2E8572; --f2:#63AE9A; --f3:#A8D5C8; --f4:#D9EEE8; --fx:#E6CB8E; --fv:#E4E8EC;
-  --display:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
-  --body:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
-  --r:16px;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F5F5F2; --line:#E6E5E0; --fg:#1C1C1A; --muted:#6E6D67;
+  --accent:#41604F; --accent-2:#33503F; --accent-ink:#FFFFFF; --accent-soft:#F2F5F2; --gold:#9A7B4F;
+  --good:#3D7A55; --good-bg:transparent; --bad:#A4513C; --bad-bg:transparent; --shade:transparent;
+  --f1:#41604F; --f2:#7F9A88; --f3:#B9C9BD; --f4:#DCE5DE; --fx:#D2BE97; --fv:#E4E3DE;
+  --display:"Newsreader","Iowan Old Style",Georgia,serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --r:4px; color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0F1413; --surface:#161C1B; --surface-2:#1C2422; --line:#29322F; --fg:#EDF1EF; --muted:#9BA6A2;
-  --accent:#6CC2AC; --accent-2:#58AE98; --accent-ink:#0B1A16; --accent-soft:#18302A; --gold:#D6B67C;
-  --good:#7FCB9F; --good-bg:#183025; --bad:#E7A08A; --bad-bg:#34211C; --shade:rgba(0,0,0,.35);
-  --f1:#6CC2AC; --f2:#479C86; --f3:#2D6B5C; --f4:#21423A; --fx:#BFA26C; --fv:#3A4340; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0F1413; --surface:#161C1B; --surface-2:#1C2422; --line:#29322F; --fg:#EDF1EF; --muted:#9BA6A2;
-  --accent:#6CC2AC; --accent-2:#58AE98; --accent-ink:#0B1A16; --accent-soft:#18302A; --gold:#D6B67C;
-  --good:#7FCB9F; --good-bg:#183025; --bad:#E7A08A; --bad-bg:#34211C; --shade:rgba(0,0,0,.35);
-  --f1:#6CC2AC; --f2:#479C86; --f3:#2D6B5C; --f4:#21423A; --fx:#BFA26C; --fv:#3A4340; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -416,70 +406,153 @@ input.cell{padding:5px 7px;text-align:right;width:110px;font-variant-numeric:tab
 .mitem .acts{display:flex;gap:6px;flex-wrap:wrap}
 .toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:11px 18px;border-radius:999px;font-weight:700;font-size:14px;z-index:200;max-width:calc(100vw - 32px)}
 
-/* ---- v2: light, modern overrides ---- */
-h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.08}
-.eyebrow{font-size:11.5px;letter-spacing:.1em;color:var(--accent);font-weight:700}
-.head h2{font-size:clamp(26px,3vw,36px)}
-main{gap:72px;padding-top:28px}
-.bar{background:color-mix(in srgb,var(--bg) 92%,transparent)}
-.logo i{border-radius:10px}
-.logo b{font-family:var(--body);font-size:17px;font-weight:800;letter-spacing:-.02em}
-.nav button[aria-current="true"]{background:var(--accent-soft);color:var(--accent-2)}
-.btn{border-radius:12px;font-weight:700}
-.btn.primary{box-shadow:0 6px 16px -8px color-mix(in srgb,var(--accent) 70%,transparent)}
-.seg{border-radius:12px}.seg button{border-radius:9px}
-/* hero: split, light */
-.hero2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(24px,4vw,56px);align-items:center;padding-top:8px}
-@media (max-width:900px){.hero2{grid-template-columns:1fr}}
-.h-txt{display:grid;gap:20px;align-content:center}
-.h-txt h1{font-size:clamp(44px,6.4vw,84px);letter-spacing:-.04em;line-height:.98}
-.h-txt h1 span{color:var(--accent)}
-.h-txt p{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:46ch}
-.h-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:5/4;background:var(--surface-2);max-width:100%}
-.h-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.h-img .chip{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:#101820;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:700;box-shadow:0 10px 30px -12px rgba(0,0,0,.3)}
-.h-img .chip small{display:block;color:#5D6A72;font-weight:600;font-size:11.5px}
-.statrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2)}
-.statrow div{padding:20px 22px;display:grid;gap:2px}
-.statrow div+div{border-left:1px solid var(--line)}
-.statrow b{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums}
-.statrow span{font-size:12.5px;color:var(--muted);font-weight:600}
-@media (max-width:640px){.statrow{grid-template-columns:1fr 1fr}.statrow div:nth-child(3){border-left:0}.statrow div:nth-child(n+3){border-top:1px solid var(--line)}}
-/* cards */
-.vc,.rc,.oc,.pcard,.buy,.tile,.more,.rank,.comp,.plan,.tbl-wrap,.brow,.rrow,.card{border-color:var(--line)}
-.vc{border-radius:20px}
-.vc:hover,.rc:hover{box-shadow:0 20px 44px -24px rgba(16,24,32,.22)}
-.vc h3{font-size:26px}
-.price-line b{font-size:24px;font-weight:800;letter-spacing:-.02em}
-.ph.empty-ph{background:linear-gradient(135deg,var(--accent-soft),var(--surface-2))}
-.ph.empty-ph b{font-weight:800;font-size:96px;opacity:.18;letter-spacing:-.05em}
-.pcard b{font-size:22px;font-weight:800;letter-spacing:-.02em}
-/* villa page */
-.buy{box-shadow:0 24px 60px -36px rgba(16,24,32,.25);border-radius:20px}
-.buy h1{font-size:clamp(34px,4vw,46px)}
-.pkrow{border-radius:12px}
-.pkrow[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);box-shadow:none}
-.total b{font-size:40px;font-weight:800;letter-spacing:-.03em}
-.gmain{border-radius:20px}
-.ftabs button{border-radius:12px}
-.ftabs button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-2)}
-.cbig b{font-size:clamp(44px,5.4vw,64px);font-weight:800;letter-spacing:-.04em;line-height:1}
-.tile b{font-weight:800}
-.insight{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
-.lg.tot{border-top-color:var(--line)}
-/* light CTA band */
-.band{background:var(--accent-soft);color:var(--fg);border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)}
-.band h2{font-weight:800;font-size:clamp(26px,3vw,38px)}
-.band p{color:var(--muted);opacity:1}
-.band .btn.light{background:var(--accent);color:var(--accent-ink)}
-/* sheet */
-.sheet{background:var(--bg)}
-.sheet-wrap{background:rgba(16,24,32,.32);backdrop-filter:blur(2px)}
-.sheet-head h2{font-size:clamp(28px,3.4vw,38px)}
-/* compare */
-.rank-row .pos{font-family:var(--body);font-weight:800;font-size:16px}
-.cur{font-family:var(--body)}
 
+/* ---- v3: natural, editorial ---- */
+body{font-size:15.5px;line-height:1.6}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.01em;line-height:1.1}
+.eyebrow{font-size:13px;letter-spacing:0;text-transform:none;color:var(--muted);font-weight:400}
+.head{border-top:1px solid var(--fg);padding-top:14px}
+.head h2{font-size:clamp(28px,3vw,38px)}
+.head p{font-size:14.5px}
+main{gap:88px;padding-top:36px}
+.bar{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
+.logo i{border-radius:0;background:none;border:1px solid var(--fg);width:26px;height:26px}
+.logo i::after{border-color:var(--fg);width:9px;height:9px;border-width:1px}
+.logo b{font-family:var(--display);font-size:21px;font-weight:400;letter-spacing:0}
+.logo small{font-weight:400}
+.nav button{border-radius:0;padding:8px 2px;margin:0 10px;font-weight:500;color:var(--muted)}
+.nav button[aria-current="true"]{background:none;color:var(--fg);box-shadow:inset 0 -1px 0 var(--fg)}
+.seg{background:none;border:1px solid var(--line);border-radius:var(--r);padding:2px}
+.seg button{border-radius:2px;font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--fg);color:#fff;box-shadow:none}
+.btn{border-radius:var(--r);font-weight:500;box-shadow:none;padding:10px 18px}
+.btn.primary{background:var(--fg);border-color:var(--fg);color:#fff;box-shadow:none}
+.btn.primary:hover{background:#000;border-color:#000}
+.link{color:var(--fg);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.num,.statrow b,.total b,.cbig b,.price-line b,.pcard b{font-variant-numeric:lining-nums tabular-nums}
+/* hero */
+.intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:end}
+@media (max-width:820px){.intro{grid-template-columns:1fr;gap:16px}}
+.intro h1{font-size:clamp(48px,7vw,96px);line-height:.95;letter-spacing:-.02em}
+.intro p{color:var(--muted);font-size:17px;max-width:44ch}
+.intro .hero-cta{margin-top:18px}
+.cover{margin-top:28px;aspect-ratio:21/9;background:var(--surface-2);position:relative;overflow:hidden;max-width:100%}
+@media (max-width:640px){.cover{aspect-ratio:4/3}}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.caption-line{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted);padding-top:8px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:28px}
+.facts div{padding:16px 0;display:grid;gap:0}
+.facts div+div{padding-left:20px;border-left:1px solid var(--line)}
+.facts b{font-family:var(--display);font-size:clamp(26px,3vw,36px);font-weight:400;font-variant-numeric:lining-nums}
+.facts span{font-size:13px;color:var(--muted)}
+@media (max-width:640px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){padding-left:0;border-left:0}.facts div:nth-child(n+3){border-top:1px solid var(--line)}}
+/* villa list */
+.vcards{gap:36px 28px}
+.vc{border:0;border-radius:0;background:none;transition:none}
+.vc:hover{transform:none;box-shadow:none}
+.vc .ph{aspect-ratio:4/3}
+.vc:hover .ph img{transform:scale(1.02)}
+.vc .bd{padding:14px 0 0;gap:6px}
+.vc h3{font-size:30px}
+.price-line{border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
+.price-line b{font-family:var(--display);font-size:26px;font-weight:400}
+.ph .tag{border-radius:0;background:#fff;font-weight:500;font-size:12px;padding:3px 8px}
+.ph.empty-ph{background:var(--surface-2)}
+.ph.empty-ph b{display:none}
+.ph.empty-ph span{position:static;font-size:13px;color:var(--muted);font-weight:400}
+/* packages list on home */
+.pstrip{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-top:1px solid var(--line)}
+.pcard{border:0;border-radius:0;border-bottom:1px solid var(--line);padding:14px 16px 14px 0;background:none}
+.pcard+.pcard{padding-left:16px;border-left:1px solid var(--line)}
+.pcard .nm{font-weight:500}
+.pcard b{font-family:var(--display);font-size:26px;font-weight:400}
+.pcard small{font-weight:400}
+.dot{display:none}
+.band{background:none;border:0;border-top:1px solid var(--fg);border-radius:0;padding:20px 0 0;color:var(--fg)}
+.band h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,38px)}
+.band p{color:var(--muted)}
+.band .btn.light{background:var(--fg);color:#fff;border-color:var(--fg)}
+/* villa page */
+.crumb button{font-weight:400}
+.gmain{border-radius:0}
+.gnav{border-radius:0;box-shadow:none;background:#fff;width:40px;height:40px}
+.gtop button{border-radius:0;font-weight:500}
+.gthumbs button{border-radius:0;border-width:0 0 2px;opacity:.65}
+.gthumbs button[aria-current="true"]{border-color:var(--fg)}
+.gempty{border-radius:0;background:var(--surface-2)}
+.gempty b{font-family:var(--display);font-weight:400}
+.buy{border-radius:0;box-shadow:none;border:0;border-top:1px solid var(--fg);padding:16px 0 0;background:none}
+.buy h1{font-size:clamp(40px,4.4vw,56px)}
+.pklist{gap:0;border-top:1px solid var(--line)}
+.pkrow{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:11px 2px;background:none}
+.pkrow:hover{background:var(--surface-2)}
+.pkrow[aria-pressed="true"]{background:none;box-shadow:inset 3px 0 0 var(--fg);padding-left:12px}
+.pkrow[aria-pressed="true"] .n{font-weight:600}
+.pkrow .n{font-weight:500}
+.pkrow .n small{background:none;padding:0;color:var(--good);font-weight:500;letter-spacing:0;font-size:12px;text-transform:lowercase}
+.pkrow .p{font-weight:500}
+.total{border-top:0;padding-top:4px}
+.total b{font-family:var(--display);font-size:46px;font-weight:400}
+.buy .actions .btn{width:100%}
+.ftabs button{border-radius:0;border:0;border-bottom:1px solid transparent;padding:6px 0;margin-right:18px;background:none;font-weight:500}
+.ftabs button[aria-pressed="true"]{background:none;color:var(--fg);border-color:var(--fg)}
+.rgrid{gap:28px 20px}
+.rc{border:0;border-radius:0;background:none;transition:none}
+.rc:hover{transform:none;box-shadow:none}
+.rc .bd{padding:10px 0 0}
+.rc .t{font-weight:500}
+.b360{border-radius:0;background:#fff;color:var(--fg);font-weight:600}
+.rrows{gap:0;border-top:1px solid var(--line)}
+.rrow{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:12px 2px;background:none}
+.rrow:hover{background:var(--surface-2)}
+.rrow .t{font-weight:500}
+.plan{border:0;border-radius:0;padding:0}
+.plan-stage{border-radius:0}
+.pin{border-radius:2px;box-shadow:none;background:var(--fg);color:#fff;font-weight:500}
+.cbig b{font-family:var(--display);font-weight:400;font-size:clamp(52px,6vw,76px)}
+.tiles{gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tile{border:0;border-radius:0;padding:14px 16px;background:none}
+.tile+.tile{border-left:1px solid var(--line)}
+.tile .l{font-weight:400}
+.tile b{font-weight:500}
+.tbtn:hover{background:var(--surface-2);box-shadow:none}
+.tile .l em{color:var(--fg);font-weight:500;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:640px){.tile+.tile{border-left:0;border-top:1px solid var(--line)}}
+.stack{border-radius:0;height:8px}
+.insight{background:none;border:0;border-left:2px solid var(--fg);border-radius:0;padding:4px 0 4px 14px;color:var(--muted)}
+.insight b{color:var(--fg);font-weight:500}
+.more{border:0;border-top:1px solid var(--line);border-radius:0;background:none}
+.more>summary{padding:14px 0;font-weight:500}
+.more .in{padding:0 0 18px}
+.lg.tot{font-weight:600}
+.delta{background:none;padding:0;font-weight:500}
+.delta.ok{background:none}
+.others{gap:24px 20px}
+.oc{border:0;border-radius:0;background:none}
+.oc .bd{padding:10px 0 0}
+.oc .nm{font-weight:500}
+.oc .pr b{font-weight:500}
+.oc .ph.empty-ph{background:var(--surface-2)!important}
+.oc .ph.empty-ph b{display:block;font-family:var(--display);font-weight:400;font-size:28px!important;opacity:.5;color:var(--fg)}
+.tbl-wrap{border-radius:0;border-left:0;border-right:0}
+thead th{background:none;border-bottom:1px solid var(--fg);font-weight:500;letter-spacing:.02em}
+tr.grp td{background:var(--surface-2);font-weight:500}
+.typetag{border-radius:0;border:0;padding:0;font-weight:400}
+td.best{font-weight:600}
+/* sheets & compare */
+.sheet-wrap{background:rgba(28,28,26,.25);backdrop-filter:none}
+.sheet{background:#fff;box-shadow:-1px 0 0 var(--line)}
+.xbtn{border-radius:0}
+.cmpr,.brow{border-radius:0}
+.cmpr[aria-pressed="true"]{background:var(--surface-2);border-color:var(--fg)}
+.rank{border:0;border-radius:0;padding:0;background:none;border-top:1px solid var(--line)}
+.rank-row{border-radius:0;border-bottom:1px solid var(--line);padding:12px 0}
+.rank-row .pos{font-family:var(--display);font-weight:400}
+.track,.fill,.bbar,.bbar i,.tb .t,.tb .t i{border-radius:0}
+.comp{border:0;border-radius:0;padding:0;background:none}
+.cbar{border-radius:0}
+.ph,.h-img{border-radius:0}
+.toast{border-radius:var(--r)}
 @media (max-width:700px){.bar-in{gap:10px;padding-block:10px}.logo small{display:none}.bar-actions{margin-left:auto}
  .nav{order:3;width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;gap:4px;scrollbar-width:none}.nav button{flex:none}}
 </style>
@@ -630,24 +703,22 @@ function render(){
 function listHTML(){
   const best=ranked()[0];const c=coverImg(null,best?.name);
   const minAll=Math.min(...villas().map(v=>net(rankedFor(v)[0],v)));
-  const name=S.cfg.projectName||"Hayat Mekke";const parts=name.split(" ");
-  return `<section class="hero2"><div class="h-txt"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span>
-      <h1>${parts.length>1?esc(parts.slice(0,-1).join(" "))+" <span>"+esc(parts[parts.length-1])+"</span>":esc(name)}</h1>
-      <p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı ekranda görün.")}</p>
-      <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları keşfet</button><button class="btn" data-deck>Sunumu başlat</button></div></div>
-     <div class="h-img">${c?`<img src="${blob(c.asset)}" alt="">`:""}${c?`<span class="chip">${esc(c.title||c.room||"")}<small>${esc([c.villa,c.brand].filter(Boolean).join(" · "))} paketi</small></span>`:""}</div></section>
-   <div class="statrow"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
-     <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)}</b><span>${S.cur} · başlangıç fiyatı</span></div></div>
-  <section class="block" id="villas"><div class="head"><div><span class="eyebrow">Villa tipleri</span><h2>Size uygun villayı seçin</h2></div>
+  return `<section><div class="intro"><div><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1></div>
+      <div><p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
+       <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları incele</button><button class="btn" data-deck>Sunumu başlat</button></div></div></div>
+     ${c?`<div class="cover"><img src="${blob(c.asset)}" alt="${esc(c.title||"")}"></div><div class="caption-line"><span>${esc(c.title||c.room||"")}</span><span>${esc([c.villa,c.brand?c.brand+" paketi":""].filter(Boolean).join(" · "))}</span></div>`:""}
+     <div class="facts"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
+      <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)} ${S.cur}</b><span>başlangıç fiyatı, KDV hariç</span></div></div></section>
+  <section class="block" id="villas"><div class="head"><div><h2>Villa tipleri</h2></div>
     <p>Fiyatlar mobilya, navlun, montaj ve sigorta dahil, KDV hariçtir.</p></div>
    <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name);const meta=S.cfg.villaMeta?.[v]||{};
      const nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length;
-     return `<button class="vc" data-villa="${esc(v)}">${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"><span class="tag">${nR} görsel</span></div>`:placeholder(villaLetter(v),"Görseller hazırlanıyor")}
+     return `<button class="vc" data-villa="${esc(v)}">${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"><span class="tag">${nR} görsel</span></div>`:placeholder("","Görseller hazırlanıyor")}
       <div class="bd"><h3>${esc(v)}</h3><span class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı")}</span>
        <div class="price-line"><div><small>Başlangıç · ${esc(lo?.name)}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
         <div style="text-align:right"><small>${r.length} paket</small><span class="num muted" style="font-size:13px;font-weight:600">en yüksek ${money(net(hi,v))}</span></div></div>
-       <span class="link">Villayı incele →</span></div></button>`;}).join("")}</div></section>
-  <section class="block"><div class="head"><div><span class="eyebrow">Mobilya paketleri</span><h2>${brands().length} paket, tek ölçü</h2></div>
+       <span class="link">Villayı incele</span></div></button>`;}).join("")}</div></section>
+  <section class="block"><div class="head"><div><h2>Mobilya paketleri</h2></div>
     <p>${esc(S.cfg.scope||"Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı.")} Hareketsiz mobilya ve ev tekstili tüm paketlerde aynı; fark hareketli mobilyanın seviyesinden gelir.</p></div>
    <div class="pstrip">${ranked().map((b,i)=>`<button class="pcard" data-cmp><span class="nm">${dot(b.name)}${esc(b.name)}</span><b class="num">${money(avgGross(b))}${cur()}</b><small>villa başı ort. · KDV dahil${i===0?" · en uygun":""}</small></button>`).join("")}</div></section>
   ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(best.name)} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
@@ -679,7 +750,7 @@ function villaHTML(){
    <div class="vgrid"><div class="gal" id="gal">${galleryHTML(list,v,b)}</div>
     <aside class="buy"><div><span class="eyebrow">Villa tipi</span><h1>${esc(v)}</h1><p class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"Zemin, 1. kat ve çatı katı · anahtar teslim döşeme")}</p></div>
      <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
-       return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(x.name)}${i===0?`<small>EN UYGUN</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
+       return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(x.name)}${i===0?`<small>en uygun</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
      <div class="total"><span class="eyebrow">${esc(b.name)} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span></div>
      <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button></div>
     </aside></div></section>
