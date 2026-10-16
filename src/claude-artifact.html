@@ -1076,6 +1076,26 @@ function opts(arr,sel,empty){return (empty!=null?`<option value="">${empty}</opt
 function roomList(){const s=new Set(S.media.flatMap(m=>[m.room,...(m.pins||[]).map(p=>p.room)]).filter(Boolean));
   Object.values(S.boq).forEach(vv=>Object.values(vv).forEach(arr=>arr.forEach(it=>{if(!isExtra(it.f))s.add(labelItem(it).room);})));
   return [...s].sort((a,b)=>a.localeCompare(b,"tr"));}
+function roomTree(villa,pkg){ // floor → room → {n kalem, v tutar, img görsel}; rooms come from the item list (BoQ) and uploaded media
+  const fs=floorsOnly(),tree=new Map(fs.map(f=>[f,new Map()]));const pk=(pkg&&S.boq[pkg])?pkg:(ranked()[0]?.name);
+  boqItems(pk,villa).forEach(it=>{if(!tree.has(it.f))return;const r=labelItem(it).room;const o=tree.get(it.f).get(r)||{n:0,v:0,img:0};o.n++;o.v+=(+it.v||0);tree.get(it.f).set(r,o);});
+  S.media.forEach(m=>{if(m.villa!==villa||!m.room||!tree.has(m.floor))return;const t=tree.get(m.floor);const o=t.get(m.room)||{n:0,v:0,img:0};if(m.kind!=="plan"&&(!pkg||!m.brand||m.brand===pkg))o.img++;t.set(m.room,o);});
+  return {tree,pk};}
+function roomFloor(villa,room){for(const [f,t] of roomTree(villa,null).tree)if(t.has(room))return f;return null;}
+function roomOptionsHTML(villa,floor,pkg,current){
+  const {tree,pk}=roomTree(villa,pkg);const lab=(r,o)=>esc(r)+(o.n?` · ${o.n} kalem · ${money(o.v)} ${S.cur}`:"")+(o.img?` · ${o.img} görsel`:"");
+  const sorted=t=>[...t.entries()].sort((a,b)=>b[1].v-a[1].v||a[0].localeCompare(b[0],"tr"));
+  let html=`<option value="">— Oda yok (kat geneli) —</option>`;let found=!current;
+  const opt=(r,o)=>{if(r===current)found=true;return `<option value="${esc(r)}" ${r===current?"selected":""}>${lab(r,o)}</option>`;};
+  if(floor&&tree.has(floor))html+=sorted(tree.get(floor)).map(([r,o])=>opt(r,o)).join("");
+  else for(const [f,t] of tree)if(t.size)html+=`<optgroup label="${esc(f)}">${sorted(t).map(([r,o])=>opt(r,o)).join("")}</optgroup>`;
+  if(!found)html+=`<option value="${esc(current)}" selected>${esc(current)} (listede yok)</option>`;
+  return html+`<option value="__new">+ Yeni oda adı yaz…</option>`;}
+function roomInfo(villa,floor,pkg,room){
+  if(!room)return floor?`${esc(floor)} · görsel kat geneline eklenir`:"Oda ve kat seçilmedi · görsel villanın genel galerisine eklenir";
+  const f=floor||roomFloor(villa,room);const {tree,pk}=roomTree(villa,pkg);const o=f&&tree.get(f)?.get(room);
+  if(!o)return `${esc(room)} · kalem listesinde yok (yeni oda)`;
+  return `<b>${esc(room)}</b> · ${esc(f)} · ${o.n} kalem${o.n?` · ${money(o.v)} ${S.cur} (${esc(pl(pk))})`:""} · bu oda için ${o.img} görsel yüklü`;}
 function adminMedia(){
   if(!S.assets)return `<div class="empty"><strong>Yükleme bu görünümde kapalı</strong><span>Görsel yüklemek için sayfayı düzenleme yetkisiyle açın.</span></div>`;
   const vs=villas().length?villas():["Villa A","Villa B","Villa C"],fs=floorsOnly().length?floorsOnly():["Zemin kat","1. kat","Çatı katı"];
@@ -1086,9 +1106,10 @@ function adminMedia(){
      <label class="f">Villa<select id="upVilla">${opts(vs,S.villa)}</select></label>
      <label class="f">Paket<select id="upBrand">${opts(pk,S.pkg,"Tüm paketler (ortak)")}</select></label>
      <label class="f">Kat<select id="upFloor">${opts(fs,S.floor,"Belirtilmemiş")}</select></label>
-     <label class="f">Oda<input id="upRoom" list="roomsDL" placeholder="ör. Salon, Ebeveyn yatak odası"></label>
+     <label class="f">Oda<select id="upRoom">${roomOptionsHTML(S.villa||vs[0],S.floor,S.pkg,"")}</select><input id="upRoomNew" placeholder="Yeni oda adı" hidden></label>
      <label class="f">Başlık<input id="upTitle" placeholder="Boş bırakılırsa oda adı kullanılır"></label></div>
      <datalist id="roomsDL">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist>
+     <p class="note" id="upInfo" style="margin:0"></p>
      <p class="note" style="margin:0">Paket seçilirse görsel yalnızca o paket açıkken görünür. Kat planı paketten bağımsızsa "Tüm paketler" bırakın.</p>
      <div class="drop" id="drop"><strong>Dosyaları buraya bırakın</strong><span class="muted" style="font-size:13px">JPG, PNG, WEBP ya da SVG · panoramalar 2:1 eşdikdörtgen (equirectangular) olmalı · 19 MB üzeri görseller otomatik küçültülür</span>
        <label class="btn primary">Dosya seç<input type="file" id="upFile" accept="image/*" multiple hidden></label></div>
@@ -1099,7 +1120,7 @@ function adminMedia(){
       <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
       <label class="f">Paket<select data-k="brand">${opts(m.brand&&!pk.includes(m.brand)?[...pk,m.brand]:pk,m.brand,"Tümü")}</select></label>
       <label class="f">Kat<select data-k="floor">${opts(fs,m.floor,"—")}</select></label>
-      <label class="f">Oda<input data-k="room" list="roomsDL" value="${esc(m.room||"")}"></label>
+      <label class="f">Oda<select data-k="room">${roomOptionsHTML(m.villa,m.floor,m.brand,m.room||"")}</select><input data-knew="room" placeholder="Yeni oda adı" hidden></label>
       <label class="f" style="grid-column:1/-1">Başlık<input data-k="title" value="${esc(m.title||"")}"></label></div>
       <div class="acts"><button class="btn sm" data-act="up" aria-label="Öne al">↑</button><button class="btn sm" data-act="down" aria-label="Geri al">↓</button>
        ${m.kind==="render"?`<button class="btn sm" data-act="cover">${m.cover?"Kapaktan çıkar":"Kapak yap"}</button>`:""}
@@ -1168,8 +1189,15 @@ function errMsg(e){const c=e&&e.code;return c==="too_large"?"Dosya çok büyük"
 function bindMedia(m){
   if(!S.assets)return;
   const drop=m.querySelector("#drop"),inp=m.querySelector("#upFile"),list=m.querySelector("#upList");
+  const uV=m.querySelector("#upVilla"),uF=m.querySelector("#upFloor"),uB=m.querySelector("#upBrand"),uR=m.querySelector("#upRoom"),uN=m.querySelector("#upRoomNew"),uI=m.querySelector("#upInfo");
+  const info=()=>{uI.innerHTML=uR.value==="__new"?"Yeni oda adı yazın; kalem listesinde olmayan bir alan olarak kaydedilir.":roomInfo(uV.value,uF.value||null,uB.value||null,uR.value);};
+  const refill=()=>{const cur=uR.value==="__new"?"":uR.value;uR.innerHTML=roomOptionsHTML(uV.value,uF.value||null,uB.value||null,cur&&(!uF.value||roomFloor(uV.value,cur)===uF.value)?cur:"");uN.hidden=true;info();};
+  [uV,uF,uB].forEach(el=>el.addEventListener("change",refill));
+  uR.addEventListener("change",()=>{uN.hidden=uR.value!=="__new";if(!uN.hidden)uN.focus();
+    if(uR.value&&uR.value!=="__new"&&!uF.value){const f=roomFloor(uV.value,uR.value);if(f){uF.value=f;const r=uR.value;refill();uR.value=r;info();}}else info();});
+  info();
   const run=async files=>{files=[...files].filter(f=>f.type.startsWith("image/")||/\.(jpe?g|png|webp|svg)$/i.test(f.name));if(!files.length){toast("Görsel dosyası seçin");return;}
-    const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:m.querySelector("#upRoom").value.trim()||null,brand:m.querySelector("#upBrand").value||null,title:m.querySelector("#upTitle").value.trim()||null};
+    const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:(m.querySelector("#upRoom").value==="__new"?m.querySelector("#upRoomNew").value.trim():m.querySelector("#upRoom").value)||null,brand:m.querySelector("#upBrand").value||null,title:m.querySelector("#upTitle").value.trim()||null};
     for(const f of files){const row=document.createElement("div");row.className="row";row.innerHTML=`<span>${esc(pl(f.name))}</span><span class="muted">Bekliyor</span>`;list.appendChild(row);
       try{await uploadOne(f,meta,row);}catch(e){row.lastChild.textContent=errMsg(e);row.lastChild.style.color="var(--bad)";}}
     toast("Yükleme tamamlandı");};
@@ -1177,7 +1205,15 @@ function bindMedia(m){
   drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("over");});drop.addEventListener("dragleave",()=>drop.classList.remove("over"));
   drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("over");run(e.dataTransfer.files);});
   m.querySelectorAll(".mitem").forEach(card=>{const id=card.dataset.mid;const doc=S.db.doc("media/"+id);
-    card.querySelectorAll("[data-k]").forEach(el=>el.addEventListener("change",async()=>{const v=el.value.trim()||null;try{await doc.update({[el.dataset.k]:v});toast("Kaydedildi");}catch(e){toast("Kaydedilemedi");}}));
+    const save=async(k,v)=>{try{await doc.update({[k]:v});toast("Kaydedildi");}catch(e){toast("Kaydedilemedi");}};
+    card.querySelectorAll("[data-k]").forEach(el=>el.addEventListener("change",async()=>{
+      if(el.dataset.k==="room"){const nw=card.querySelector('[data-knew="room"]');if(el.value==="__new"){nw.hidden=false;nw.focus();return;}nw.hidden=true;
+        const it=S.media.find(x=>x.id===id);const patch={room:el.value||null};if(el.value&&!it?.floor){const f=roomFloor(it.villa,el.value);if(f)patch.floor=f;}
+        try{await doc.update(patch);toast("Kaydedildi");}catch(e){toast("Kaydedilemedi");}return;}
+      const v=el.value.trim()||null;
+      if(el.dataset.k==="floor"){const it=S.media.find(x=>x.id===id);const keep=it?.room&&v&&roomFloor(it.villa,it.room)===v;try{await doc.update(keep||!it?.room?{floor:v}:{floor:v,room:null});toast(keep||!it?.room?"Kaydedildi":"Kaydedildi · oda bu katta olmadığı için temizlendi");}catch(e){toast("Kaydedilemedi");}return;}
+      save(el.dataset.k,v);}));
+    card.querySelector('[data-knew="room"]')?.addEventListener("change",e=>{const v=e.target.value.trim();if(v)save("room",v);});
     card.querySelectorAll("[data-act]").forEach(b=>b.onclick=async()=>{const a=b.dataset.act;const it=S.media.find(x=>x.id===id);if(!it)return;
       try{
       if(a==="cover"){await doc.update({cover:!it.cover});}
