@@ -373,5 +373,20 @@
     "villa": "Villa C",
     "id": "nphykofxsuem8ygqr5jq",
     "cover": false
+  },
+  {
+    "asset": "assets/villa-a/renders/zemin-kat_salon_01.jpg",
+    "brand": "Pearl",
+    "createdAt": "2026-10-16T16:31:07.001Z",
+    "fileName": "891db0e7-f22d-4e2e-9da3-ff30113405c7.jpg",
+    "floor": "Zemin kat",
+    "kind": "render",
+    "order": 1792168267000,
+    "room": "Salon",
+    "thumb": "assets/villa-a/renders/thumbs/zemin-kat_salon_01.jpg",
+    "title": "Villa C · Salon · Pearl · Gabba",
+    "villa": "Villa C",
+    "id": "wwu28bag69h2pri27uit",
+    "cover": false
   }
 ]
