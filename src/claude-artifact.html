@@ -1,306 +1,393 @@
 <title>Hayat Mekke Villa Sunumu</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
-/* Layout: villa list → villa detail (package rail, cost breakdown, plan + rooms, renders, BoQ). Dark-first basalt + brass. */
+/* Layout: property-listing page. Villa list → villa page (gallery + sticky package panel, rooms, cost story, other packages). Light limestone + deep date-palm green. */
 :root{
-  --bg:#111513; --surface:#191e1b; --surface-2:#212824; --line:#2e3631;
-  --fg:#ebe5d9; --muted:#9aa197; --accent:#c8a45e; --accent-ink:#1a1408;
-  --good:#86a98e; --good-bg:rgba(134,169,142,.14); --bad:#d0866f; --bad-bg:rgba(208,134,111,.13);
-  --s1:#c8a45e; --s2:#8f7440; --s3:#e3d1a4; --s4:#7f9b88; --s5:#667585; --s6:#3f4a44;
-  --overlay:rgba(8,10,9,.92);
-  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --bg:#F5F5F2; --surface:#FFFFFF; --surface-2:#EDEDE8; --line:#E0E0D9; --fg:#14171A; --muted:#656B70;
+  --accent:#1F4E44; --accent-2:#2C6B5D; --accent-ink:#FFFFFF; --accent-soft:#E3ECE8; --gold:#9C7A45;
+  --good:#2F7A52; --good-bg:#E4F1E9; --bad:#A64B35; --bad-bg:#F6E6E1; --shade:rgba(20,23,26,.08);
+  --f1:#1F4E44; --f2:#3F7E6F; --f3:#86AFA3; --f4:#C8D9D3; --fx:#C9B48A; --fv:#D9D6CC;
+  --display:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
   --body:"Manrope","Segoe UI",system-ui,sans-serif;
-  color-scheme:dark;
+  --r:14px;
 }
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
-  --bg:#eef0eb; --surface:#ffffff; --surface-2:#f4f5f1; --line:#d8dcd3;
-  --fg:#1b201d; --muted:#5f665f; --accent:#8b6a2b; --accent-ink:#fffaf0;
-  --good:#3f7a4f; --good-bg:rgba(63,122,79,.11); --bad:#b0533a; --bad-bg:rgba(176,83,58,.1);
-  --s1:#8b6a2b; --s2:#b8924a; --s3:#dcc58f; --s4:#5f8a6c; --s5:#71808e; --s6:#b5bbb3;
-  --overlay:rgba(14,17,15,.93); color-scheme:light}}
-:root[data-theme="light"]{
-  --bg:#eef0eb; --surface:#ffffff; --surface-2:#f4f5f1; --line:#d8dcd3;
-  --fg:#1b201d; --muted:#5f665f; --accent:#8b6a2b; --accent-ink:#fffaf0;
-  --good:#3f7a4f; --good-bg:rgba(63,122,79,.11); --bad:#b0533a; --bad-bg:rgba(176,83,58,.1);
-  --s1:#8b6a2b; --s2:#b8924a; --s3:#dcc58f; --s4:#5f8a6c; --s5:#71808e; --s6:#b5bbb3;
-  --overlay:rgba(14,17,15,.93); color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1110; --surface:#161A19; --surface-2:#1E2321; --line:#2A302E; --fg:#ECEEEB; --muted:#9BA29E;
+  --accent:#7CC0AE; --accent-2:#5FA894; --accent-ink:#0C1A16; --accent-soft:#1B2C28; --gold:#D2B37A;
+  --good:#7DC39A; --good-bg:#1A2C22; --bad:#E39A84; --bad-bg:#33201B; --shade:rgba(0,0,0,.4);
+  --f1:#7CC0AE; --f2:#4E9583; --f3:#2F6457; --f4:#24413A; --fx:#B89D6A; --fv:#3A403D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1110; --surface:#161A19; --surface-2:#1E2321; --line:#2A302E; --fg:#ECEEEB; --muted:#9BA29E;
+  --accent:#7CC0AE; --accent-2:#5FA894; --accent-ink:#0C1A16; --accent-soft:#1B2C28; --gold:#D2B37A;
+  --good:#7DC39A; --good-bg:#1A2C22; --bad:#E39A84; --bad-bg:#33201B; --shade:rgba(0,0,0,.4);
+  --f1:#7CC0AE; --f2:#4E9583; --f3:#2F6457; --f4:#24413A; --fx:#B89D6A; --fv:#3A403D; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
-h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:.01em}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:0 64px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:-.01em;line-height:1.02}
+p{margin:0}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.num{font-variant-numeric:tabular-nums}
-.wrap{max-width:1280px;margin:0 auto}
-.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.num{font-variant-numeric:lining-nums tabular-nums}
+h1,h2,h3,.price-line b,.pcard b,.total b,.cbig b,.stats b,.bigp,.oc b{font-variant-numeric:lining-nums}
+@media (max-width:560px){.items tr:not(.grp)>:nth-child(1),.items tr:not(.grp)>:nth-child(3){display:none}.items td.wrap{min-width:0}}
+.wrap{max-width:1320px;margin:0 auto}
+.eyebrow{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
 .muted{color:var(--muted)}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
-  margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
-.bar-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-block:12px}
-.brand-mark{display:flex;align-items:center;gap:12px;min-width:0;background:none;border:0;padding:0;text-align:left}
-.brand-mark .seal{width:34px;height:34px;flex:none;border:1px solid var(--accent);display:grid;place-items:center;transform:rotate(45deg)}
-.brand-mark .seal span{width:16px;height:16px;border:1px solid var(--accent);transform:rotate(45deg)}
-.brand-mark h1{font-size:20px;line-height:1.1}
-.brand-mark small{display:block;color:var(--muted);font-size:12px}
-.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
-.tab{background:none;border:0;padding:8px 12px;border-radius:6px;color:var(--muted);font-weight:600;font-size:14px}
-.tab:hover{color:var(--fg);background:var(--surface-2)}
-.tab[aria-current="true"]{color:var(--fg);background:var(--surface-2);box-shadow:inset 0 -2px 0 var(--accent)}
+.cur{font-size:.5em;font-family:var(--body);font-weight:600;color:var(--muted);letter-spacing:.02em;margin-left:.25em}
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));padding-inline:max(20px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
+.bar-in{max-width:1320px;margin:0 auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-block:12px}
+.logo{display:flex;align-items:center;gap:11px;background:none;border:0;padding:0;text-align:left}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--accent);display:grid;place-items:center;flex:none}
+.logo i::after{content:"";width:12px;height:12px;border:2px solid var(--accent-ink);transform:rotate(45deg);border-radius:2px}
+.logo b{font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.01em;line-height:1}
+.logo small{display:block;font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.nav{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav button{background:none;border:0;padding:8px 13px;border-radius:999px;color:var(--muted);font-weight:700;font-size:13.5px}
+.nav button:hover{color:var(--fg)}
+.nav button[aria-current="true"]{color:var(--fg);background:var(--surface-2)}
 .bar-actions{display:flex;gap:8px;align-items:center}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.seg button{background:none;border:0;padding:6px 10px;font-size:12px;font-weight:700;color:var(--muted)}
-.seg button[aria-pressed="true"]{background:var(--surface-2);color:var(--fg)}
-.btn{border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:6px;font-weight:600;font-size:14px;display:inline-flex;gap:8px;align-items:center}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:999px;padding:3px}
+.seg button{background:none;border:0;padding:5px 11px;font-size:12px;font-weight:800;color:var(--muted);border-radius:999px}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px var(--shade)}
+.btn{border:1px solid var(--line);background:var(--surface);padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;display:inline-flex;gap:8px;align-items:center;justify-content:center;text-decoration:none;color:var(--fg);white-space:nowrap}
 .btn:hover{border-color:var(--muted)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn.primary:hover{filter:brightness(1.06)}
-.btn.sm{padding:5px 10px;font-size:12.5px}
-.btn.ghost{background:none;border-color:transparent;padding-inline:0;color:var(--muted)}
-.btn.ghost:hover{color:var(--fg)}
+.btn.primary:hover{background:var(--accent-2);border-color:var(--accent-2)}
+.btn.light{background:rgba(255,255,255,.92);border-color:transparent;color:#14171A}
+.btn.ghost-light{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+.btn.sm{padding:6px 12px;font-size:12.5px}
 .btn.danger{color:var(--bad)}
 .btn:disabled{opacity:.5;cursor:default}
-main{padding-top:24px;display:grid;gap:36px}
-section.block{display:grid;gap:16px}
-.block-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.block-head h2{font-size:26px}
-.hero{position:relative;border-radius:10px;overflow:hidden;min-height:260px;display:flex;align-items:flex-end;background:var(--surface)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(6,8,7,.84))}
-.hero.pattern::before{content:"";position:absolute;inset:0;background:var(--accent);opacity:.16;
-  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg fill='none' stroke='black' stroke-width='1.2'%3E%3Crect x='16' y='16' width='32' height='32'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='7'/%3E%3Cpath d='M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48'/%3E%3C/g%3E%3C/svg%3E") 0 0/64px 64px;
-  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg fill='none' stroke='black' stroke-width='1.2'%3E%3Crect x='16' y='16' width='32' height='32'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='7'/%3E%3Cpath d='M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48'/%3E%3C/g%3E%3C/svg%3E") 0 0/64px 64px}
-.hero-txt{position:relative;z-index:1;padding:28px;color:#f3eee4;max-width:760px}
-.hero-txt h2{font-size:clamp(30px,5vw,50px);line-height:1.05}
-.hero-txt p{margin:10px 0 0;color:#d6d0c4;max-width:60ch}
-.hero-txt .eyebrow{color:#d9bd84}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.kpi{background:var(--surface);padding:18px 20px;display:grid;gap:4px;align-content:start}
-.kpi b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1}
-.kpi .sub{font-size:12.5px;color:var(--muted)}
-/* villa list */
-.vlist{display:grid;gap:16px}
-.vrow{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);text-align:left;padding:0;width:100%}
-.vrow:hover{border-color:var(--muted)}
-.vrow .img{background:var(--surface-2);min-height:240px;position:relative}
-.vrow .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.vrow .img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px}
-.vrow .bd{padding:22px 24px;display:grid;gap:14px;align-content:start}
-.vrow h3{font-size:34px;line-height:1}
-.vrow .from{display:grid;gap:2px}
-.vrow .from b{font-family:var(--display);font-weight:400;font-size:30px}
-.vrow .facts{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
-.vrow .facts b{color:var(--fg);font-weight:600}
-.mini{display:grid;gap:5px}
-.mini-row{display:grid;grid-template-columns:72px 1fr 78px;gap:10px;align-items:center;font-size:12.5px}
-.mini-row .t{height:6px;background:var(--surface-2);border-radius:2px;position:relative}
-.mini-row .t i{position:absolute;inset:0 auto 0 0;background:color-mix(in srgb,var(--accent) 50%,var(--surface-2));border-radius:2px}
-.mini-row.best .t i{background:var(--accent)}
-.mini-row .v{text-align:right;font-variant-numeric:tabular-nums}
-.cta{display:inline-flex;gap:8px;align-items:center;font-weight:700;color:var(--accent);font-size:14px}
-@media (max-width:760px){.vrow{grid-template-columns:1fr}.vrow .img{min-height:200px}}
-/* villa detail */
-.crumb{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
-.crumb button{background:none;border:0;padding:0;color:var(--muted);font-weight:600}
+.link{background:none;border:0;padding:0;color:var(--accent);font-weight:700;font-size:14px;display:inline-flex;gap:6px;align-items:center}
+.link:hover{text-decoration:underline;text-underline-offset:3px}
+main{padding-top:24px;display:grid;gap:64px}
+section.block{display:grid;gap:22px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.head h2{font-size:clamp(30px,3.6vw,44px)}
+.head p{color:var(--muted);max-width:60ch;margin-top:6px}
+/* hero */
+.hero{position:relative;border-radius:22px;overflow:hidden;min-height:clamp(420px,64vh,660px);display:flex;align-items:flex-end;background:var(--accent)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,11,.05) 20%,rgba(8,12,11,.72) 100%)}
+.hero-in{position:relative;z-index:1;padding:clamp(24px,4vw,56px);color:#fff;display:grid;gap:18px;width:100%}
+.hero-in .eyebrow{color:rgba(255,255,255,.8)}
+.hero-in h1{font-size:clamp(52px,9vw,128px);font-weight:500;line-height:.92;letter-spacing:-.02em}
+.hero-in p{font-size:clamp(16px,1.6vw,19px);max-width:46ch;color:rgba(255,255,255,.88)}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.25);padding-top:18px;margin-top:10px;gap:16px}
+.stats div{display:grid;gap:2px}
+.stats b{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:500;line-height:1}
+.stats span{font-size:12.5px;color:rgba(255,255,255,.75);font-weight:600}
+@media (max-width:640px){.stats{grid-template-columns:1fr 1fr}}
+/* villa cards */
+.vcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.vc{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;text-align:left;padding:0;transition:transform .25s,box-shadow .25s}
+.vc:hover{transform:translateY(-3px);box-shadow:0 18px 40px -18px var(--shade)}
+.ph{position:relative;aspect-ratio:4/3;background:var(--surface-2);overflow:hidden;max-width:100%}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.vc:hover .ph img{transform:scale(1.035)}
+.ph .tag{position:absolute;left:12px;top:12px;background:rgba(255,255,255,.92);color:#14171A;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px}
+.ph.empty-ph{display:grid;place-items:center;background:linear-gradient(135deg,var(--accent-soft),var(--surface-2))}
+.ph.empty-ph b{font-family:var(--display);font-size:120px;font-weight:500;color:var(--accent);opacity:.25;line-height:1}
+.ph.empty-ph span{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:12.5px;color:var(--muted);font-weight:600}
+.vc .bd{padding:20px 22px 22px;display:grid;gap:10px;align-content:start}
+.vc h3{font-size:34px}
+.vc .meta{font-size:13px;color:var(--muted)}
+.price-line{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--line)}
+.price-line b{font-family:var(--display);font-size:30px;font-weight:600}
+.price-line small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+/* package strip on home */
+.pstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:6px;text-align:left}
+.pcard:hover{border-color:var(--muted)}
+.pcard .nm{display:flex;gap:9px;align-items:center;font-weight:800;font-size:15px}
+.pcard b{font-family:var(--display);font-size:26px;font-weight:600;line-height:1}
+.pcard small{font-size:12px;color:var(--muted);font-weight:600}
+.dot{width:12px;height:12px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+/* villa page */
+.crumbs{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.crumb{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);font-weight:600}
+.crumb button{background:none;border:0;padding:0;color:var(--muted);font-weight:700}
 .crumb button:hover{color:var(--fg)}
-.vhead{display:flex;justify-content:space-between;gap:16px;align-items:end;flex-wrap:wrap}
-.vhead h2{font-size:clamp(34px,5vw,52px);line-height:1}
-.pkgrail{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:8px}
-.pk{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:10px 12px;text-align:left;display:grid;gap:2px;position:relative}
-.pk:hover{border-color:var(--muted)}
-.pk[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 13%,var(--surface));box-shadow:inset 0 0 0 1px var(--accent)}
-.pk .n{font-weight:700;font-size:14px}
-.pk .p{font-variant-numeric:tabular-nums;font-size:13px}
-.pk .d{font-size:11.5px;color:var(--muted)}
-.pk .d.ok{color:var(--good);font-weight:700}
-.pk .cam{position:absolute;top:8px;right:9px;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.04em}
-.cost{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px}
-@media (max-width:900px){.cost{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:14px;align-content:start;min-width:0}
-.price-big{display:flex;gap:28px;flex-wrap:wrap;align-items:end}
-.price-big div{display:grid;gap:2px}
-.price-big b{font-family:var(--display);font-weight:400;font-size:40px;line-height:1}
-.price-big .s b{font-size:24px}
-.stack{display:flex;height:22px;border-radius:4px;overflow:hidden;background:var(--surface-2)}
-.stack i{display:block;height:100%;min-width:2px}
-.stack i+i{box-shadow:inset 1px 0 0 var(--surface)}
-.legend{display:grid;gap:0}
-.lg{display:grid;grid-template-columns:12px 1fr auto 52px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(320px,1fr);gap:24px;align-items:start}
+@media (max-width:980px){.vgrid{grid-template-columns:1fr}}
+.gal{display:grid;gap:10px;min-width:0}
+.gmain{position:relative;border-radius:var(--r);overflow:hidden;background:var(--surface-2);aspect-ratio:16/10;max-width:100%}
+.gmain img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.gmain img.fade{opacity:0}
+.gmain .cap{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 16px;background:linear-gradient(transparent,rgba(8,10,9,.7));color:#fff;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.gmain .cap b{font-weight:700;font-size:15px;display:block}
+.gmain .cap small{color:rgba(255,255,255,.8);font-size:12.5px;font-weight:600}
+.gnav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#14171A;font-size:20px;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.gnav.l{left:14px}.gnav.r{right:14px}
+.gtop{position:absolute;top:14px;right:14px;display:flex;gap:8px}
+.gtop button{border:0;background:rgba(255,255,255,.9);color:#14171A;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800}
+.gthumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.gthumbs button{flex:none;width:96px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;padding:0;border:2px solid transparent;background:var(--surface-2);opacity:.7}
+.gthumbs button[aria-current="true"]{border-color:var(--accent);opacity:1}
+.gthumbs button:hover{opacity:1}
+.gthumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.gempty{aspect-ratio:16/10;border-radius:var(--r);background:linear-gradient(135deg,var(--accent-soft),var(--surface-2));display:grid;place-items:center;text-align:center;padding:24px;max-width:100%}
+.gempty div{display:grid;gap:10px;justify-items:center;max-width:42ch}
+.gempty b{font-family:var(--display);font-size:30px;font-weight:600}
+.buy{position:sticky;top:calc(env(safe-area-inset-top,0px) + 78px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:grid;gap:18px;box-shadow:0 20px 50px -30px var(--shade)}
+@media (max-width:980px){.buy{position:static}}
+.buy h1{font-size:clamp(44px,5vw,60px)}
+.buy .meta{font-size:13px;color:var(--muted);margin-top:4px}
+.pklist{display:grid;gap:6px}
+.pkrow{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--surface);text-align:left;width:100%}
+.pkrow:hover{border-color:var(--muted)}
+.pkrow[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.pkrow .n{font-weight:800;font-size:14.5px;display:flex;gap:8px;align-items:center}
+.pkrow .n small{font-size:10.5px;font-weight:800;letter-spacing:.06em;color:var(--good);background:var(--good-bg);padding:2px 7px;border-radius:999px}
+.pkrow .p{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;font-size:14px}
+.pkrow .p small{display:block;font-size:11.5px;color:var(--muted);font-weight:600}
+.total{display:grid;gap:4px;padding-top:16px;border-top:1px solid var(--line)}
+.total b{font-family:var(--display);font-size:48px;font-weight:600;line-height:1}
+.total .sub{font-size:13px;color:var(--muted)}
+.buy .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* floors + rooms */
+.ftabs{display:flex;gap:6px;flex-wrap:wrap}
+.ftabs button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 15px;font-weight:700;font-size:13.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.ftabs button span{font-weight:600;font-size:12px;font-variant-numeric:tabular-nums}
+.ftabs button[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.rc{display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);overflow:hidden;text-align:left;padding:0;transition:transform .25s,box-shadow .25s}
+.rc:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px var(--shade)}
+.rc .ph{aspect-ratio:3/2}
+.rc .ph.empty-ph b{font-size:56px}
+.rc .bd{padding:14px 16px 16px;display:grid;gap:4px}
+.rc .t{font-weight:800;font-size:15px}
+.rc .s{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+.rc .s b{color:var(--fg);font-variant-numeric:tabular-nums}
+.b360{position:absolute;right:12px;top:12px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px}
+.rlist{display:grid;gap:10px}
+.rrows{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+.rrow{display:grid;grid-template-columns:1fr auto auto 14px;gap:12px;align-items:center;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-align:left}
+.rrow:hover{border-color:var(--muted)}
+.rrow .t{font-weight:800;font-size:14px}
+.rrow .s{font-size:12.5px;color:var(--muted)}
+.rrow b{font-variant-numeric:tabular-nums;font-size:14px}
+.rrow .go{color:var(--muted);font-size:18px;line-height:1}
+/* plan */
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:12px}
+.plan-stage{position:relative;background:var(--surface-2);border-radius:10px;overflow:hidden;display:grid;place-items:center;min-height:220px}
+.plan-stage img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain}
+.plan-inner{position:relative;width:100%}
+.pin{position:absolute;transform:translate(-50%,-50%);border:0;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3);white-space:nowrap}
+.pin.pending{background:var(--fg);color:var(--bg)}
+/* cost */
+.costgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:24px;align-items:start}
+@media (max-width:900px){.costgrid{grid-template-columns:1fr}}
+.cbig{display:grid;gap:8px}
+.cbig b{font-family:var(--display);font-size:clamp(56px,7vw,84px);font-weight:500;line-height:.95}
+.cbig .sub{color:var(--muted);font-size:14px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.tiles{grid-template-columns:1fr}}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:6px}
+.tile .l{display:flex;gap:8px;align-items:center;font-size:12.5px;font-weight:700;color:var(--muted)}
+.tile .l i{width:10px;height:10px;border-radius:3px;flex:none}
+.tile b{font-size:22px;font-variant-numeric:tabular-nums;font-weight:800;letter-spacing:-.01em}
+.tile small{font-size:12px;color:var(--muted)}
+.stack{display:flex;height:12px;border-radius:999px;overflow:hidden;background:var(--surface-2);gap:2px}
+.stack i{display:block;height:100%;min-width:3px}
+.more{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.more>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px;font-weight:800}
+.more>summary::-webkit-details-marker{display:none}
+.more>summary::after{content:"+";font-size:20px;font-weight:500;color:var(--muted);line-height:1}
+.more[open]>summary::after{content:"–"}
+.more>summary small{font-weight:600;color:var(--muted);margin-left:auto;margin-right:8px;font-size:13px}
+.more .in{padding:0 18px 18px;display:grid;gap:18px}
+.legend{display:grid}
+.lg{display:grid;grid-template-columns:12px 1fr auto 56px;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
 .lg:last-child{border-bottom:0}
 .lg .sw{width:12px;height:12px;border-radius:3px}
-.lg .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+.lg .v{font-variant-numeric:tabular-nums;font-weight:700;text-align:right}
 .lg .pc{font-variant-numeric:tabular-nums;color:var(--muted);text-align:right;font-size:12.5px}
-.lg.tot{font-weight:700;border-bottom:0;border-top:1px solid var(--line);margin-top:2px}
-.lg.sub{color:var(--muted);font-size:12.5px;padding:4px 0 4px 22px;border-bottom:0}
-.typebars{display:grid;gap:10px}
-.tb{display:grid;gap:4px;font-size:13px}
+.lg.sub{color:var(--muted);font-size:13px;padding:3px 0 3px 22px;border-bottom:0}
+.lg.sub .v{font-weight:500}
+.lg.tot{font-weight:800;border-top:1px solid var(--fg);border-bottom:0}
+.tb{display:grid;gap:5px;font-size:13.5px}
 .tb .top{display:flex;justify-content:space-between;gap:10px}
 .tb .top b{font-variant-numeric:tabular-nums}
-.tb .t{height:8px;background:var(--surface-2);border-radius:2px;position:relative}
-.tb .t i{position:absolute;inset:0 auto 0 0;background:var(--s4);border-radius:2px}
-.cmp{font-size:13px;display:grid;gap:6px}
-.cmp .row{display:flex;justify-content:space-between;gap:10px}
-.cmp .row b{font-variant-numeric:tabular-nums}
-.delta{font-size:12px;font-weight:700;padding:2px 7px;border-radius:999px;background:var(--bad-bg);color:var(--bad);white-space:nowrap}
-.delta.ok{background:var(--good-bg);color:var(--good)}
-.chips{display:flex;gap:6px;flex-wrap:wrap}
-.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--muted)}
-.chip:hover{color:var(--fg)}
-.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--fg);background:color-mix(in srgb,var(--accent) 14%,var(--surface))}
-.chip .c{font-weight:500;opacity:.75;margin-left:4px}
-.villa-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
-@media (max-width:900px){.villa-grid{grid-template-columns:1fr}}
-.plan-stage{position:relative;background:var(--surface-2);border-radius:6px;overflow:hidden;min-height:240px;display:grid;place-items:center}
-.plan-stage img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain}
-.plan-inner{position:relative;width:100%}
-.pin{position:absolute;transform:translate(-50%,-50%);border:0;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.35);white-space:nowrap}
-.pin[aria-pressed="true"]{outline:2px solid var(--fg)}
-.pin.pending{background:var(--fg);color:var(--bg)}
-.empty{border:1px dashed var(--line);border-radius:8px;padding:26px 18px;text-align:center;color:var(--muted);display:grid;gap:8px;justify-items:center}
-.empty strong{color:var(--fg);font-weight:600}
-.rooms{display:grid;gap:2px;max-height:420px;overflow:auto}
-.room{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 10px;border-radius:6px;background:none;border:0;text-align:left;width:100%;font-size:14px}
-.room:hover{background:var(--surface-2)}
-.room[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 16%,var(--surface))}
-.room .r{display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-.room .r b{color:var(--fg);font-weight:600}
-.tag360{background:var(--accent);color:var(--accent-ink);font-weight:700;border-radius:4px;padding:1px 6px;font-size:10.5px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
-.shot{position:relative;border:0;padding:0;border-radius:8px;overflow:hidden;background:var(--surface-2);aspect-ratio:4/3;max-width:100%;display:block;width:100%}
-.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
-.shot:hover img{transform:scale(1.04)}
-.shot .lbl{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;background:linear-gradient(transparent,rgba(5,7,6,.85));color:#f1ece2;font-size:13px;text-align:left;display:flex;justify-content:space-between;gap:8px;align-items:end}
-.shot .lbl small{display:block;color:#cfc8ba;font-size:11px}
-.shot .badge{position:absolute;top:10px;left:10px}
-.note{font-size:13px;color:var(--muted);max-width:75ch}
-.hint{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted)}
-/* BoQ */
-.boq{border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
-.boq details{border-bottom:1px solid var(--line)}
-.boq details:last-child{border-bottom:0}
-.boq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 16px;font-weight:600}
-.boq summary::-webkit-details-marker{display:none}
-.boq summary::before{content:"›";display:inline-block;margin-right:10px;color:var(--muted);transition:transform .2s}
-.boq details[open] summary::before{transform:rotate(90deg)}
-.boq summary .l{flex:1;display:flex;align-items:center;min-width:0}
-.boq summary .r{display:flex;gap:14px;align-items:center;font-variant-numeric:tabular-nums;font-size:14px}
-.boq summary .r small{color:var(--muted);font-weight:500;font-size:12px}
-.boq details.hl summary{background:color-mix(in srgb,var(--accent) 12%,var(--surface))}
-.boq table{margin:0 0 6px}
-.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
-.boq .tbl-wrap{border:0;border-radius:0;background:none}
+.tb .t{height:6px;background:var(--surface-2);border-radius:999px;position:relative;overflow:hidden}
+.tb .t i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:999px}
+.boqf{border-top:1px solid var(--line)}
+.boqf>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;padding:12px 0;font-weight:800}
+.boqf>summary::-webkit-details-marker{display:none}
+.boqf>summary span{font-variant-numeric:tabular-nums}
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.more .tbl-wrap,.sheet .tbl-wrap{border:0;border-radius:0;background:none}
 table{border-collapse:collapse;width:100%;font-size:13.5px}
-th,td{padding:8px 12px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
 th:first-child,td:first-child{text-align:left}
-td.wrap,th.wrap{white-space:normal;text-align:left;min-width:180px}
-thead th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--surface-2)}
+td.wrap{white-space:normal;text-align:left;min-width:180px}
+thead th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:800;background:var(--surface-2)}
 tbody tr:last-child td{border-bottom:0}
-tr.total td{font-weight:700;background:var(--surface-2)}
-td.best{color:var(--good);font-weight:700}
+tr.grp td{font-weight:800;background:var(--surface-2)}
+td.best{color:var(--good);font-weight:800}
 td.worst{color:var(--bad)}
 td.zero{color:var(--muted)}
-tr.is-best td:first-child{box-shadow:inset 3px 0 0 var(--good)}
-.typetag{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
-.rank{display:grid;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px}
-.rank-row{display:grid;grid-template-columns:28px minmax(90px,140px) 1fr auto;gap:14px;align-items:center;padding:9px 10px;border-radius:6px}
-.rank-row .pos{font-family:var(--display);font-size:20px;color:var(--muted)}
-.rank-row.best .pos{color:var(--accent)}
-.rank-row .nm{font-weight:700}
-.track{height:12px;background:var(--surface-2);border-radius:2px;position:relative}
-.fill{position:absolute;inset:0 auto 0 0;background:color-mix(in srgb,var(--accent) 55%,var(--surface-2));border-radius:2px}
+.typetag{font-size:11px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+/* other packages */
+.others{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.oc{display:grid;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);overflow:hidden;text-align:left;padding:0}
+.oc:hover{border-color:var(--muted)}
+.oc .ph{aspect-ratio:16/10}
+.oc .bd{padding:14px 16px;display:grid;gap:4px}
+.oc .nm{display:flex;gap:8px;align-items:center;font-weight:800}
+.oc .pr{display:flex;justify-content:space-between;gap:8px;align-items:baseline;font-variant-numeric:tabular-nums}
+.oc .pr b{font-size:18px}
+.delta{font-size:12px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--bad-bg);color:var(--bad);white-space:nowrap}
+.delta.ok{background:var(--good-bg);color:var(--good)}
+/* cta band */
+.band{background:var(--accent);color:var(--accent-ink);border-radius:22px;padding:clamp(28px,5vw,56px);display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+.band h2{font-size:clamp(32px,4vw,52px);font-weight:500}
+.band p{opacity:.85;margin-top:8px;max-width:52ch}
+.band .btn.light{color:#14171A}
+/* compare */
+.rank{display:grid;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px}
+.rank-row{display:grid;grid-template-columns:28px minmax(110px,150px) 1fr auto;gap:16px;align-items:center;padding:10px 12px;border-radius:10px}
+.rank-row:hover{background:var(--surface-2)}
+.rank-row .pos{font-family:var(--display);font-size:24px;color:var(--muted)}
+.rank-row .nm{font-weight:800;display:flex;gap:8px;align-items:center}
+.track{height:10px;background:var(--surface-2);border-radius:999px;position:relative;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--f3);border-radius:999px}
 .rank-row.best .fill{background:var(--accent)}
-.rank-row .vals{text-align:right;font-size:13px;min-width:150px}
+.rank-row .vals{text-align:right;font-size:13px;min-width:160px}
 .rank-row .vals b{font-size:15px}
 @media (max-width:640px){.rank-row{grid-template-columns:24px 1fr auto}.rank-row .track{grid-column:2/4;grid-row:2}}
-/* overlay */
-.ov{position:fixed;inset:0;z-index:100;background:var(--overlay);display:flex;flex-direction:column;
-  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);color:#efe9dd}
+.cellbtn{background:none;border:0;padding:0;font-weight:inherit;color:inherit;font-variant-numeric:tabular-nums}
+.cellbtn:hover{text-decoration:underline;text-underline-offset:3px}
+/* room sheet */
+.sheet-wrap{position:fixed;inset:0;z-index:90;background:rgba(10,12,11,.5);display:flex;justify-content:flex-end;animation:fadein .2s ease}
+.sheet{width:min(820px,100%);height:100%;background:var(--bg);overflow-y:auto;display:grid;align-content:start;gap:20px;
+  padding:max(20px,env(safe-area-inset-top,0px)) max(24px,env(safe-area-inset-right,0px)) max(32px,env(safe-area-inset-bottom,0px)) 24px;animation:slidein .28s ease}
+@keyframes slidein{from{transform:translateX(40px);opacity:.4}to{transform:none;opacity:1}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.sheet,.sheet-wrap{animation:none}}
+.sheet-head{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.sheet-head h2{font-size:clamp(34px,4vw,48px)}
+.xbtn{border:1px solid var(--line);background:var(--surface);border-radius:999px;width:40px;height:40px;font-size:18px;flex:none}
+.sheet .sumrow{display:flex;gap:28px;flex-wrap:wrap}
+.sheet .sumrow div{display:grid;gap:2px}
+.sheet .sumrow b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:26px 18px;text-align:center;color:var(--muted);display:grid;gap:8px;justify-items:center}
+.empty strong{color:var(--fg);font-weight:700}
+.note{font-size:13px;color:var(--muted);max-width:75ch}
+.status{font-size:12.5px;color:var(--muted)}
+.hr{height:1px;background:var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;gap:14px;align-content:start;min-width:0}
+.villa-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
+@media (max-width:900px){.villa-grid{grid-template-columns:1fr}}
+.rooms{display:grid;gap:2px;max-height:420px;overflow:auto}
+.room{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;background:none;border:0;text-align:left;width:100%;font-size:14px}
+.block-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.block-head h2{font-size:30px}
+/* overlays (lightbox, pano) */
+.ov{position:fixed;inset:0;z-index:100;background:rgba(8,10,9,.94);display:flex;flex-direction:column;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);color:#efede8}
 .ov-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px}
 .ov-top .t{font-size:14px;min-width:0}
-.ov-top .t b{font-family:var(--display);font-weight:400;font-size:20px;display:block}
-.ov-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#efe9dd;border-radius:6px;padding:7px 12px;font-weight:600;font-size:13px}
-.ov-btn:hover{background:rgba(255,255,255,.16)}
+.ov-top .t b{font-family:var(--display);font-weight:600;font-size:22px;display:block}
+.ov-btn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#efede8;border-radius:999px;padding:7px 14px;font-weight:700;font-size:13px}
+.ov-btn:hover{background:rgba(255,255,255,.18)}
 .ov-body{flex:1;min-height:0;position:relative;display:grid;place-items:center;padding:0 16px}
 .ov-body img{max-width:100%;max-height:100%;object-fit:contain}
-.ov-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:64px;border-radius:6px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:22px}
-.ov-nav.l{left:max(12px,env(safe-area-inset-left,0px))}.ov-nav.r{right:max(12px,env(safe-area-inset-right,0px))}
+.ov-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.9);border:0;color:#14171A;font-size:22px}
+.ov-nav.l{left:max(14px,env(safe-area-inset-left,0px))}.ov-nav.r{right:max(14px,env(safe-area-inset-right,0px))}
 .pano{position:absolute;inset:0;touch-action:none;cursor:grab;background:#000}
 .pano:active{cursor:grabbing}
 .pano canvas{display:block;width:100%;height:100%}
 .pano-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:6px 12px;border-radius:999px;pointer-events:none}
 .pano-strip{display:flex;gap:8px;overflow-x:auto;padding:10px 16px 14px}
-.pano-strip button{flex:none;width:120px;border:2px solid transparent;border-radius:6px;padding:0;overflow:hidden;background:#222;color:#fff;text-align:left}
-.pano-strip button[aria-pressed="true"]{border-color:var(--accent)}
+.pano-strip button{flex:none;width:120px;border:2px solid transparent;border-radius:8px;padding:0;overflow:hidden;background:#222;color:#fff;text-align:left}
+.pano-strip button[aria-pressed="true"]{border-color:#7CC0AE}
 .pano-strip img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block}
 .pano-strip span{display:block;font-size:11px;padding:4px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .loading{color:#bbb;font-size:13px}
-.deck{position:fixed;inset:0;z-index:120;background:#0d100e;color:#eee8dc;display:flex;flex-direction:column}
+/* presentation deck: a deliberately dark, single-look stage */
+.deck{position:fixed;inset:0;z-index:120;background:#0B0E0D;color:#EEECE6;display:flex;flex-direction:column}
 .deck .stage{flex:1;min-height:0;position:relative;overflow:hidden}
-.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:clamp(20px,4vw,56px);padding-left:max(clamp(20px,4vw,56px),env(safe-area-inset-left,0px));padding-right:max(clamp(20px,4vw,56px),env(safe-area-inset-right,0px));gap:18px;animation:fadein .45s ease}
-@keyframes fadein{from{opacity:.0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.slide{animation:none}.shot img{transition:none}}
-.slide h2{font-size:clamp(28px,4vw,54px);line-height:1.05;color:#f3eee4}
-.slide .eyebrow{color:#cfae6c}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:clamp(24px,4vw,64px);padding-left:max(clamp(24px,4vw,64px),env(safe-area-inset-left,0px));padding-right:max(clamp(24px,4vw,64px),env(safe-area-inset-right,0px));gap:20px;animation:fadein .45s ease}
+.slide h2{font-size:clamp(34px,5vw,72px);color:#F4F2EC;font-weight:500}
+.slide .eyebrow{color:#9FD0C2}
 .slide .grow{flex:1;min-height:0;position:relative}
 .slide.cover{justify-content:flex-end;background-size:cover;background-position:center}
-.slide.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.85))}
+.slide.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.8))}
 .slide.cover>*{position:relative}
 .slide .imgfit{position:absolute;inset:0;display:grid;place-items:center}
 .slide .full-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.slide .caption{position:absolute;left:0;right:0;bottom:0;padding:60px clamp(20px,4vw,56px) clamp(20px,3vw,40px);background:linear-gradient(transparent,rgba(0,0,0,.85))}
-.slide .caption h2{font-size:clamp(24px,3vw,40px)}
-.slide .card,.slide .kpi,.slide .rank,.slide .tbl-wrap{background:#151a17;border-color:#2b322d}
-.slide .kpis{background:#2b322d;border-color:#2b322d}
-.slide .muted,.slide .kpi .sub,.slide .lg .pc{color:#a7ab9f}
-.slide th,.slide td,.slide .lg{border-color:#2b322d}
-.slide thead th{background:#1c221f;color:#a7ab9f}
-.slide tr.total td{background:#1c221f}
-.slide .track,.slide .stack,.slide .tb .t{background:#232a26}
-.slide .stack i+i{box-shadow:inset 1px 0 0 #151a17}
-.deck-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom,0px));border-top:1px solid #222a25;font-size:13px}
-.deck-bar .prog{flex:1;height:3px;background:#242b27;border-radius:2px;overflow:hidden}
-.deck-bar .prog i{display:block;height:100%;background:#c8a45e}
+.slide .caption{position:absolute;left:0;right:0;bottom:0;padding:70px clamp(24px,4vw,64px) clamp(24px,3vw,44px);background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.slide .caption h2{font-size:clamp(28px,3.4vw,48px)}
+.slide .dk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.slide .dk div{background:#151A18;border:1px solid #27302C;border-radius:14px;padding:20px;display:grid;gap:6px}
+.slide .dk span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9AA29E;font-weight:700}
+.slide .dk b{font-size:32px;font-weight:800;font-variant-numeric:tabular-nums}
+.slide .dk small{color:#9AA29E;font-size:13px}
+.slide .bigp{font-family:var(--display);font-size:clamp(64px,9vw,130px);font-weight:500;line-height:.9}
+.slide table{color:#EEECE6}
+.slide th,.slide td{border-color:#27302C}
+.slide thead th{background:#151A18;color:#9AA29E}
+.slide .tbl-wrap{background:#111514;border-color:#27302C}
+.slide .rank{background:#111514;border-color:#27302C}
+.slide .rank-row:hover{background:#18201D}
+.slide .track{background:#1E2522}
+.slide .fill{background:#3F7E6F}.slide .rank-row.best .fill{background:#7CC0AE}
+.slide .muted,.slide .rank-row .pos{color:#9AA29E}
+.slide td.best{color:#7DC39A}.slide td.worst{color:#E39A84}
+.slide .delta{background:#33201B;color:#E39A84}.slide .delta.ok{background:#1A2C22;color:#7DC39A}
+.deck-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom,0px));border-top:1px solid #1E2522;font-size:13px}
+.deck-bar .prog{flex:1;height:3px;background:#1E2522;border-radius:2px;overflow:hidden}
+.deck-bar .prog i{display:block;height:100%;background:#7CC0AE}
 .plan-pins-deck{position:relative;max-width:100%;max-height:100%}
+/* admin */
 .subtabs{display:flex;gap:4px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.subtab{background:none;border:0;padding:10px 14px;color:var(--muted);font-weight:600;border-bottom:2px solid transparent;margin-bottom:-1px}
+.subtab{background:none;border:0;padding:10px 14px;color:var(--muted);font-weight:700;border-bottom:2px solid transparent;margin-bottom:-1px}
 .subtab[aria-current="true"]{color:var(--fg);border-bottom-color:var(--accent)}
 .form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-label.f{display:grid;gap:5px;font-size:12px;font-weight:600;color:var(--muted)}
-.f input,.f select,.f textarea,input.cell{background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:8px 10px;color:var(--fg);font-size:14px;width:100%;min-width:0}
+label.f{display:grid;gap:5px;font-size:12px;font-weight:700;color:var(--muted)}
+.f input,.f select,.f textarea,input.cell{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:9px 11px;color:var(--fg);font-size:14px;width:100%;min-width:0}
 .f textarea{min-height:110px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
 input.cell{padding:5px 7px;text-align:right;width:110px;font-variant-numeric:tabular-nums}
-.drop{border:1.5px dashed var(--line);border-radius:10px;padding:26px;text-align:center;display:grid;gap:8px;justify-items:center;background:var(--surface-2)}
+.drop{border:1.5px dashed var(--line);border-radius:12px;padding:26px;text-align:center;display:grid;gap:8px;justify-items:center;background:var(--surface-2)}
 .drop.over{border-color:var(--accent)}
 .uplist{display:grid;gap:6px;font-size:13px}
 .uplist .row{display:flex;justify-content:space-between;gap:10px}
 .mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.mitem{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface);display:grid;min-width:0}
+.mitem{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);display:grid;min-width:0}
 .mitem .th{aspect-ratio:16/9;background:var(--surface-2);position:relative;max-width:100%}
 .mitem .th img{width:100%;height:100%;object-fit:cover;display:block}
-.mitem .th .kind{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px}
+.mitem .th .kind{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
 .mitem .bd{padding:10px;display:grid;gap:8px}
 .mitem .bd .form{grid-template-columns:1fr 1fr;gap:8px}
 .mitem .f input,.mitem .f select{padding:6px 8px;font-size:13px}
 .mitem .acts{display:flex;gap:6px;flex-wrap:wrap}
-.toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:600;font-size:14px;z-index:200;max-width:calc(100vw - 32px)}
-.hr{height:1px;background:var(--line)}
-.status{font-size:12.5px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:11px 18px;border-radius:999px;font-weight:700;font-size:14px;z-index:200;max-width:calc(100vw - 32px)}
 </style>
 
 <header class="bar"><div class="bar-in">
-  <button class="brand-mark" id="home"><div class="seal"><span></span></div><div><h1 id="pname">Hayat Mekke</h1><small id="psub">Villa mobilya paketleri</small></div></button>
-  <nav class="tabs" id="tabs" aria-label="Bölümler"></nav>
+  <button class="logo" id="home"><i></i><div><b id="pname">Hayat Mekke</b><small id="psub">Villa mobilya paketleri</small></div></button>
+  <nav class="nav" id="tabs" aria-label="Bölümler"></nav>
   <div class="bar-actions">
     <div class="seg" role="group" aria-label="Para birimi"><button id="curUSD" aria-pressed="true">USD</button><button id="curSAR" aria-pressed="false">SAR</button></div>
-    <button class="btn primary" id="startDeck">Sunumu başlat</button>
+    <button class="btn primary sm" id="startDeck">Sunum</button>
   </div>
 </div></header>
 <main class="wrap" id="main">
   <div class="empty" style="margin-top:40px"><strong>Sunum yükleniyor</strong><span>Villa verileri ve görseller birkaç saniye içinde gelecek.</span></div>
 </main>
+<div id="sheet"></div>
 <div id="overlay"></div>
 
 <script>
@@ -309,7 +396,8 @@ input.cell{padding:5px 7px;text-align:right;width:110px;font-variant-numeric:tab
 const SHEET_RANGE="Veri!A1:J80", HAM_RANGE="Ham!A1:I3000";
 const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
 const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
-const S={cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],view:"villas",villa:null,pkg:null,floor:null,room:null,cur:"USD",
+const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE6D8",Emerald:"#2F7A5B",Diamond:"#A9D2E0",Royal:"#5E4C8E"};
+const S={cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],view:"villas",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
   canEdit:false,db:null,assets:null,mcp:null,dbReady:false,admin:"media",pinPlan:null,pendingPin:null};
 try{const v=localStorage.getItem("hm_cur2");if(v==="SAR")S.cur="SAR";}catch(e){}
 
@@ -323,6 +411,8 @@ const big=v=>{const x=conv(v);return x>=1e6?nf1.format(x/1e6)+" M":nf0.format(Ma
 const pct=v=>nf1.format(v*100)+"%";
 const blob=id=>!id?"":(/[\/.]/.test(id)?id:"/_blob/"+id);
 const slug=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"x";
+const dot=n=>`<span class="dot" style="background:${TIER_COLOR[n]||"var(--muted)"}"></span>`;
+const cur=()=>`<span class="cur">${S.cur}</span>`;
 function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2600);}
 
 /* ---------- BoQ labels (English source → Turkish display) ---------- */
@@ -337,7 +427,7 @@ const ITEMS=[["Cabinetry + Quartz Countertop","Mutfak dolapları + kuvars tezgâ
 const EXTRAS=[["Bed Linen","Nevresim takımları (6 oda × 2 takım, yorgan, yastık)"],["Bathroom Textiles","Banyo tekstili (havlu, bornoz, paspas · 8 banyo)"],["Dining & Kitchen","Mutfak ve sofra seti"],
  ["Carpets","Halı seti (6 oda)"],["Curtains","Perde paketi (karartma + tül)"]];
 const TYPES={"Fixed":"Sabit mobilya","Loose Furniture":"Hareketli mobilya","Ev Dekorasyon":"Ev tekstili ve dekorasyon","":"Diğer"};
-const TYPE_NOTE={"Fixed":"Mutfak, banyo dolapları, gardıroplar","Loose Furniture":"Kanepe, yatak, masa, sandalye","Ev Dekorasyon":"Nevresim, havlu, halı, perde, mutfak seti"};
+const TYPE_NOTE={"Fixed":"mutfak, banyo dolapları, gardıroplar","Loose Furniture":"kanepe, yatak, masa, sandalye","Ev Dekorasyon":"nevresim, havlu, halı, perde, mutfak seti"};
 const isExtra=f=>/tamamlay/i.test(f||"");
 function labelItem(it){
   const n=String(it.n||"").trim();
@@ -369,33 +459,38 @@ function budget(b){return avgGross(b)*(S.cfg.villaCount||0);}
 function ranked(){return brands().slice().sort((a,b)=>total3(a)-total3(b));}
 function rankedFor(v){return brands().slice().sort((a,b)=>net(a,v)-net(b,v));}
 function boqItems(pkg,v){return (S.boq[pkg]?.[v]||[]);}
-function roomTotals(pkg,v,floor){const m=new Map();boqItems(pkg,v).filter(it=>!floor||it.f===floor).forEach(it=>{const {room}=labelItem(it);m.set(room,(m.get(room)||0)+(+it.v||0));});return m;}
+function roomTotals(pkg,v,floor){const m=new Map();boqItems(pkg,v).filter(it=>!floor||it.f===floor).forEach(it=>{const {room}=labelItem(it);const o=m.get(room)||{v:0,n:0};o.v+=(+it.v||0);o.n++;m.set(room,o);});return m;}
 function typeTotals(pkg,v){const m={};boqItems(pkg,v).forEach(it=>{const k=it.t||"";m[k]=(m[k]||0)+(+it.v||0);});return m;}
 
 /* ---------- media helpers ---------- */
 const byOrder=(a,b)=>(a.order||0)-(b.order||0);
 function mediaOf(f){return S.media.filter(f).sort(byOrder);}
 const pkgMatch=(m,pkg)=>!m.brand||!pkg||m.brand===pkg;
-function coverImg(villa,pkg){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa));
-  const pref=[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand,x=>x.cover,()=>true];
+const floorIdx=f=>{const i=floorsOnly().indexOf(f);return i<0?99:i;};
+function coverImg(villa,pkg,strict){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa));
+  const pref=strict?[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand]:[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand,x=>x.cover,()=>true];
   for(const p of pref){const r=pool.filter(p).sort(byOrder);if(r.length)return r[0];}return null;}
 function thumb(m){return blob(m.thumb||m.asset);}
-function planFor(v,f,pkg){const ps=mediaOf(m=>m.kind==="plan"&&m.villa===v&&m.floor===f);
+function planFor(v,f,pkg){const ps=mediaOf(m=>m.kind==="plan"&&m.villa===v&&(m.floor===f||!m.floor)).sort((a,b)=>(a.floor===f?0:1)-(b.floor===f?0:1));
   return ps.find(p=>p.brand===pkg)||ps.find(p=>!p.brand)||ps[0]||null;}
+function galleryList(v,pkg){return S.media.filter(m=>m.kind==="render"&&m.villa===v&&pkgMatch(m,pkg)).sort((a,b)=>((b.cover?1:0)-(a.cover?1:0))||floorIdx(a.floor)-floorIdx(b.floor)||byOrder(a,b));}
+const placeholder=(txt,sub)=>`<div class="ph empty-ph"><b>${esc(txt)}</b>${sub?`<span>${esc(sub)}</span>`:""}</div>`;
+const villaLetter=v=>String(v).replace(/^Villa\s*/i,"").slice(0,2)||"V";
+const initials=s=>String(s).split(/\s+/).filter(w=>!/^\d+$/.test(w)).slice(0,2).map(w=>w[0]).join("").toUpperCase()+(String(s).match(/\d+$/)?.[0]||"");
 
 /* ---------- header ---------- */
-const VIEWS=[["villas","Villa tipleri"],["compare","Karşılaştırma"],["admin","Yönetim"]];
+const VIEWS=[["villas","Villalar"],["compare","Paketleri karşılaştır"],["admin","Yönetim"]];
 function renderTabs(){
-  const cur=S.view==="villa"?"villas":S.view;
-  $("#tabs").innerHTML=VIEWS.filter(([k])=>k!=="admin"||S.canEdit).map(([k,l])=>`<button class="tab" data-view="${k}" aria-current="${cur===k}">${l}</button>`).join("");
+  const curV=S.view==="villa"?"villas":S.view;
+  $("#tabs").innerHTML=VIEWS.filter(([k])=>k!=="admin"||S.canEdit).map(([k,l])=>`<button data-view="${k}" aria-current="${curV===k}">${l}</button>`).join("");
   $("#curSAR").setAttribute("aria-pressed",S.cur==="SAR");$("#curUSD").setAttribute("aria-pressed",S.cur==="USD");
   if(S.cfg){$("#pname").textContent=S.cfg.projectName||"Hayat Mekke";$("#psub").textContent=S.cfg.subtitle||"Villa mobilya paketleri";}
 }
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-view]");if(!b)return;setView(b.dataset.view);});
 $("#home").onclick=()=>setView("villas");
-function setView(v){S.view=v;render();window.scrollTo({top:0});}
-function openVilla(v,pkg){S.villa=v;S.pkg=pkg||rankedFor(v)[0]?.name;S.room=null;S.floor=floorsOnly()[0];setView("villa");}
-const setCur=c=>{S.cur=c;try{localStorage.setItem("hm_cur2",c)}catch(e){}render();};
+function setView(v){S.view=v;closeSheet();render();window.scrollTo({top:0,behavior:"instant"});}
+function openVilla(v,pkg){S.villa=v;S.pkg=pkg||rankedFor(v)[0]?.name;S.room=null;S.gi=0;S.floor=floorsOnly()[0];setView("villa");}
+const setCur=c=>{S.cur=c;try{localStorage.setItem("hm_cur2",c)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});if($("#sheet").children.length&&S.room)openRoom(S.room,true);};
 $("#curSAR").onclick=()=>setCur("SAR");$("#curUSD").onclick=()=>setCur("USD");
 $("#startDeck").onclick=()=>openDeckSetup();
 
@@ -419,144 +514,271 @@ function render(){
   else {S.view="villas";m.innerHTML=listHTML();bindList();}
 }
 
-/* ---------- villa list ---------- */
+/* ---------- home: villa list ---------- */
 function listHTML(){
-  const c=coverImg(null,ranked()[0]?.name);const best=ranked()[0];
-  return `<section class="hero ${c?"":"pattern"}">${c?`<img src="${blob(c.asset)}" alt="">`:""}
-    <div class="hero-txt"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h2>${esc(S.cfg.projectName||"Hayat Mekke")}</h2>
-    <p>${esc(S.cfg.intro||`${villas().length} villa tipi, ${brands().length} mobilya paketi. Bir villa seçin; en uygun paketle açılır, paketler arasında geçiş yaptıkça maliyet, kat planı ve görseller değişir.`)}</p></div></section>
-  <section class="block"><div class="block-head"><div><span class="eyebrow">Villa tipleri</span><h2>Bir villa seçin</h2></div><span class="status">${S.cur} · net fiyatlar KDV hariç, navlun, montaj ve sigorta dahil</span></div>
-   <div class="vlist">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name);const meta=S.cfg.villaMeta?.[v]||{};
-     const nItems=boqItems(lo?.name,v).length,nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length,nP=S.media.filter(m=>m.villa===v&&m.kind==="pano").length;
-     const max=net(hi,v);
-     return `<button class="vrow" data-villa="${esc(v)}"><div class="img">${cv?`<img src="${thumb(cv)}" alt="" loading="lazy">`:`<span class="ph">Görsel eklenmedi</span>`}</div>
-      <div class="bd"><div><span class="eyebrow">Villa tipi</span><h3>${esc(v)}</h3>${meta.desc?`<p class="note" style="margin:8px 0 0">${esc(meta.desc)}</p>`:""}</div>
-       <div class="from"><span class="eyebrow">Başlangıç · ${esc(lo?.name)} paketi</span><b class="num">${money(net(lo,v))} <small style="font-size:15px" class="muted">${S.cur}</small></b>
-        <span class="muted" style="font-size:13px">KDV dahil ${money(gross(lo,v))} · en yüksek paket ${money(max)}</span></div>
-       <div class="mini">${r.map((b,i)=>`<div class="mini-row ${i===0?"best":""}"><span>${esc(b.name)}</span><span class="t"><i style="width:${(net(b,v)/max*100).toFixed(1)}%"></i></span><span class="v">${money(net(b,v))}</span></div>`).join("")}</div>
-       <div class="facts">${[meta.area?`<span><b>${esc(meta.area)}</b> m²</span>`:"",meta.rooms?`<span><b>${esc(meta.rooms)}</b></span>`:"",nItems?`<span><b>${nItems}</b> kalem</span>`:"",`<span><b>${nR}</b> render</span>`,nP?`<span><b>${nP}</b> panorama</span>`:""].join("")}</div>
-       <span class="cta">Villayı incele ›</span></div></button>`;}).join("")}</div></section>
-  ${best?`<section class="block"><div class="block-head"><div><span class="eyebrow">Proje özeti · en uygun paket</span><h2>${esc(best.name)} ile ${nf0.format(S.cfg.villaCount||0)} villa</h2></div></div>
-   <div class="kpis"><div class="kpi"><span class="eyebrow">Villa başı ort. · net</span><b class="num">${money(total3(best)/Math.max(1,villas().length))}</b><span class="sub">${S.cur} · KDV hariç</span></div>
-   <div class="kpi"><span class="eyebrow">Villa başı ort. · KDV dahil</span><b class="num">${money(avgGross(best))}</b><span class="sub">${S.cur}</span></div>
-   <div class="kpi"><span class="eyebrow">Proje bütçesi · KDV dahil</span><b class="num">${big(budget(best))}</b><span class="sub">${S.cur} · ${nf0.format(S.cfg.villaCount||0)} villa</span></div></div></section>`:""}`;}
-function bindList(){document.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>openVilla(b.dataset.villa));}
+  const best=ranked()[0];const c=coverImg(null,best?.name);
+  const minAll=Math.min(...villas().map(v=>net(rankedFor(v)[0],v)));
+  return `<section class="hero">${c?`<img src="${blob(c.asset)}" alt="">`:""}
+    <div class="hero-in"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span>
+      <h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1>
+      <p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı ekranda görün.")}</p>
+      <div class="hero-cta"><button class="btn light" data-scroll="villas">Villaları keşfet</button><button class="btn ghost-light" data-deck>Sunumu başlat</button></div>
+      <div class="stats"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
+        <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b class="num">${money(minAll)}</b><span>${S.cur} · başlangıç fiyatı</span></div></div></div></section>
+  <section class="block" id="villas"><div class="head"><div><span class="eyebrow">Villa tipleri</span><h2>Size uygun villayı seçin</h2></div>
+    <p>Fiyatlar mobilya, navlun, montaj ve sigorta dahil, KDV hariçtir.</p></div>
+   <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name);const meta=S.cfg.villaMeta?.[v]||{};
+     const nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length;
+     return `<button class="vc" data-villa="${esc(v)}">${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"><span class="tag">${nR} görsel</span></div>`:placeholder(villaLetter(v),"Görseller hazırlanıyor")}
+      <div class="bd"><h3>${esc(v)}</h3><span class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı")}</span>
+       <div class="price-line"><div><small>Başlangıç · ${esc(lo?.name)}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
+        <div style="text-align:right"><small>${r.length} paket</small><span class="num muted" style="font-size:13px;font-weight:600">en yüksek ${money(net(hi,v))}</span></div></div>
+       <span class="link">Villayı incele →</span></div></button>`;}).join("")}</div></section>
+  <section class="block"><div class="head"><div><span class="eyebrow">Mobilya paketleri</span><h2>${brands().length} paket, tek ölçü</h2></div>
+    <p>Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı. Fark mobilyanın kalitesinden ve tedarikten gelir.</p></div>
+   <div class="pstrip">${ranked().map((b,i)=>`<button class="pcard" data-cmp><span class="nm">${dot(b.name)}${esc(b.name)}</span><b class="num">${money(avgGross(b))}${cur()}</b><small>villa başı ort. · KDV dahil${i===0?" · en uygun":""}</small></button>`).join("")}</div></section>
+  ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(best.name)} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
+    <button class="btn light" data-cmp>Tüm paketleri karşılaştır →</button></section>`:""}`;}
+function bindList(){const m=$("#main");
+  m.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>openVilla(b.dataset.villa));
+  m.querySelectorAll("[data-cmp]").forEach(b=>b.onclick=()=>setView("compare"));
+  m.querySelector("[data-scroll]")?.addEventListener("click",()=>$("#villas").scrollIntoView());
+  m.querySelector("[data-deck]")?.addEventListener("click",()=>openDeckSetup());}
 
-/* ---------- villa detail ---------- */
-const SEG_COLORS=["var(--s1)","var(--s2)","var(--s3)","var(--s4)","var(--s5)","var(--s6)"];
-function costHTML(b,v){
-  const L=layers(b,v),secs=sections(),vals=b.values?.[v]||[];
-  const segs=[...secs.map((s,i)=>({label:s,val:+vals[i]||0})),{label:"Navlun, montaj ve sigorta",val:L.extras,subs:[["Navlun ve lojistik",L.freight,b.rates?.freight],["Montaj ve kurulum",L.assembly,b.rates?.assembly],["Sigorta ve beklenmedik",L.insurance,b.rates?.insurance]]},{label:`KDV (${pct(S.cfg.vat||0)})`,val:L.vat}];
-  const r=rankedFor(v),lo=r[0],hi=r[r.length-1],rank=r.indexOf(b)+1;
-  const tt=typeTotals(b.name,v),ttSum=Object.values(tt).reduce((a,x)=>a+x,0);
-  return `<div class="cost"><div class="card">
-     <div class="price-big"><div><span class="eyebrow">Villa fiyatı · KDV dahil</span><b class="num">${money(L.gross)}</b><span class="muted" style="font-size:12.5px">${S.cur}</span></div>
-      <div class="s"><span class="eyebrow">Net · KDV hariç</span><b class="num">${money(L.net)}</b></div>
-      <div class="s"><span class="eyebrow">Mobilya ve ürünler</span><b class="num">${money(L.furn)}</b></div></div>
-     <div class="stack" role="img" aria-label="Maliyet kırılımı">${segs.map((s,i)=>`<i style="width:${(s.val/L.gross*100).toFixed(2)}%;background:${SEG_COLORS[i]}" title="${esc(s.label)}: ${money(s.val)}"></i>`).join("")}</div>
-     <div class="legend">${segs.map((s,i)=>`<div class="lg"><span class="sw" style="background:${SEG_COLORS[i]}"></span><span>${esc(s.label)}</span><span class="v">${money(s.val)}</span><span class="pc">${pct(s.val/L.gross)}</span></div>
-       ${s.subs?s.subs.map(([l,x,rt])=>`<div class="lg sub"><span></span><span>${l} · %${nf1.format((+rt||0)*100)}</span><span class="v" style="font-weight:500">${money(x)}</span><span></span></div>`).join(""):""}`).join("")}
-       <div class="lg tot"><span></span><span>Genel toplam</span><span class="v">${money(L.gross)}</span><span class="pc">100%</span></div></div></div>
-   <div class="card"><div><span class="eyebrow">${esc(b.name)} · ${rank}. sırada (${r.length} paket)</span></div>
-     <div class="cmp"><div class="row"><span>En uygun paket (${esc(lo.name)})</span><b>${money(net(lo,v))}</b></div>
-      <div class="row"><span>Bu paket</span><b>${money(L.net)} ${b===lo?`<span class="delta ok">en uygun</span>`:`<span class="delta">+${pct((L.net-net(lo,v))/net(lo,v))}</span>`}</b></div>
-      <div class="row"><span>En yüksek paket (${esc(hi.name)})</span><b>${money(net(hi,v))}</b></div></div>
-     ${ttSum?`<div class="hr"></div><span class="eyebrow">Ürün tipine göre</span><div class="typebars">${Object.entries(tt).sort((a,b)=>b[1]-a[1]).map(([k,x])=>`<div class="tb"><div class="top"><span>${esc(TYPES[k]||k)}${TYPE_NOTE[k]?` <span class="muted" style="font-size:12px">· ${TYPE_NOTE[k]}</span>`:""}</span><b>${money(x)} <span class="muted" style="font-weight:500">${pct(x/ttSum)}</span></b></div><div class="t"><i style="width:${(x/ttSum*100).toFixed(1)}%"></i></div></div>`).join("")}</div>`:""}
-   </div></div>`;}
+/* ---------- villa page ---------- */
+function galleryHTML(list,v,b){
+  if(!list.length){const others=rankedFor(v).filter(x=>x!==b).map(x=>({p:x,n:S.media.filter(m=>m.villa===v&&m.kind==="render"&&m.brand===x.name).length})).filter(x=>x.n);
+    return `<div class="gempty"><div><b>${esc(b.name)} için görseller hazırlanıyor</b><span class="muted">Fiyat, odalar ve kalem listesi aşağıda.</span>
+      ${others.length?`<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">${others.map(x=>`<button class="btn sm" data-pkg="${esc(x.p.name)}">${dot(x.p.name)} ${esc(x.p.name)} görsellerini gör</button>`).join("")}</div>`:""}</div></div>`;}
+  const gi=Math.min(S.gi,list.length-1);const m=list[gi];
+  return `<div class="gmain"><img id="gImg" src="${blob(m.asset)}" alt="${esc(m.title||m.room||"")}">
+    <div class="gtop"><button data-gfull>Tam ekran</button></div>
+    ${list.length>1?`<button class="gnav l" data-gstep="-1" aria-label="Önceki">‹</button><button class="gnav r" data-gstep="1" aria-label="Sonraki">›</button>`:""}
+    <div class="cap"><div><b id="gTitle">${esc(m.title||m.room||"Render")}</b><small id="gSub">${esc([m.floor,b.name].filter(Boolean).join(" · "))}</small></div><small class="num" id="gCnt">${gi+1} / ${list.length}</small></div></div>
+   ${list.length>1?`<div class="gthumbs">${list.map((x,i)=>`<button data-gi="${i}" aria-current="${i===gi}" aria-label="${esc(x.title||"")}"><img src="${thumb(x)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}`;}
 function villaHTML(){
-  const v=S.villa,b=pkgByName(S.pkg),f=S.floor,meta=S.cfg.villaMeta?.[v]||{};const r=rankedFor(v),lo=r[0];
-  const plan=planFor(v,f,b.name);const rt=roomTotals(b.name,v,f);
-  const pinRooms=(plan?.pins||[]).map(p=>p.room);
-  const mediaRooms=new Set(S.media.filter(m=>m.villa===v&&m.floor===f&&m.room&&pkgMatch(m,b.name)).map(m=>m.room));
-  const rooms=[...new Set([...pinRooms,...rt.keys(),...mediaRooms])];
-  const roomMedia=room=>S.media.filter(m=>m.villa===v&&m.room===room&&pkgMatch(m,b.name));
-  let renders=mediaOf(m=>m.kind==="render"&&m.villa===v&&(!m.floor||m.floor===f)&&pkgMatch(m,b.name));
-  if(S.room)renders=renders.filter(m=>m.room===S.room);
-  const panos=mediaOf(m=>m.kind==="pano"&&m.villa===v&&pkgMatch(m,b.name)&&(!S.room||m.room===S.room));
-  const others=r.filter(x=>x!==b).map(x=>({p:x,n:S.media.filter(m=>m.villa===v&&m.kind==="render"&&m.brand===x.name).length})).filter(x=>x.n);
-  const floorVal=i=>+b.values?.[v]?.[i]||0;
-  return `<section class="block"><div class="crumb"><button data-back>Villa tipleri</button><span>›</span><span>${esc(v)}</span></div>
-   <div class="vhead"><div><h2>${esc(v)}</h2>${meta.desc||meta.area||meta.rooms?`<p class="note" style="margin:8px 0 0">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · "))}</p>`:""}</div>
-    <div class="chips">${villas().map(x=>`<button class="chip" data-v="${esc(x)}" aria-pressed="${x===v}">${esc(x)}</button>`).join("")}</div></div>
-   <div><span class="eyebrow">Mobilya paketi · fiyata göre sıralı</span>
-    <div class="pkgrail" style="margin-top:8px">${r.map((x,i)=>{const n=net(x,v);const hasImg=S.media.some(m=>m.villa===v&&m.brand===x.name);
-      return `<button class="pk" data-pkg="${esc(x.name)}" aria-pressed="${x===b}">${hasImg?`<span class="cam">GÖRSEL</span>`:""}<span class="n">${esc(x.name)}</span><span class="p">${money(n)} ${S.cur}</span><span class="d ${i===0?"ok":""}">${i===0?"En uygun":"+"+pct((n-net(lo,v))/net(lo,v))}</span></button>`;}).join("")}</div></div>
+  const v=S.villa,b=pkgByName(S.pkg),f=S.floor,meta=S.cfg.villaMeta?.[v]||{};const r=rankedFor(v),lo=r[0];const L=layers(b,v);
+  const list=galleryList(v,b.name);
+  const plan=planFor(v,f,b.name);
+  const panos=mediaOf(m=>m.kind==="pano"&&m.villa===v&&pkgMatch(m,b.name));
+  return `<section class="block" style="gap:16px"><div class="crumbs"><div class="crumb"><button data-back>Villalar</button><span>/</span><span>${esc(v)}</span></div>
+     <div class="seg">${villas().map(x=>`<button data-v="${esc(x)}" aria-pressed="${x===v}">${esc(x)}</button>`).join("")}</div></div>
+   <div class="vgrid"><div class="gal" id="gal">${galleryHTML(list,v,b)}</div>
+    <aside class="buy"><div><span class="eyebrow">Villa tipi</span><h1>${esc(v)}</h1><p class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"Zemin, 1. kat ve çatı katı · anahtar teslim döşeme")}</p></div>
+     <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
+       return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(x.name)}${i===0?`<small>EN UYGUN</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
+     <div class="total"><span class="eyebrow">${esc(b.name)} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span></div>
+     <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button></div>
+    </aside></div></section>
+  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(b.name)} paketi ile</span><h2>Odalar</h2></div>
+     <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)}</span></button>`).join("")}</div></div>
+   ${roomsHTML(v,b,f)}</section>
+  ${plan?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Kat planı</h2></div><button class="btn sm" data-zoomplan="${plan.id}">Büyüt</button></div>
+    <div class="plan"><div class="plan-stage"><div class="plan-inner"><img src="${blob(plan.asset)}" alt="${esc(plan.title||"Kat planı")}">
+     ${(plan.pins||[]).map(p=>`<button class="pin" style="left:${p.x*100}%;top:${p.y*100}%" data-room="${esc(p.room)}">${esc(p.room)}</button>`).join("")}</div></div>
+     ${plan.title?`<span class="status">${esc(plan.title)}</span>`:""}</div></section>`:""}
+  ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
+   <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
+  <section class="block" id="cost"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(b.name)}</span><h2>Fiyat nasıl oluşuyor?</h2></div></div>
    ${costHTML(b,v)}</section>
-  <section class="block"><div class="block-head"><div><span class="eyebrow">${esc(b.name)} paketi</span><h2>Kat planı ve odalar</h2></div>
-     <div class="chips">${floorsOnly().map(x=>{const i=sections().indexOf(x);return `<button class="chip" data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span class="c num">${big(floorVal(i))}</span></button>`;}).join("")}</div></div>
-   <div class="villa-grid">
-     <div class="card"><div class="block-head"><span class="eyebrow">Kat planı · ${esc(f)}${plan&&plan.brand&&plan.brand!==b.name?` · ${esc(plan.brand)} planı`:""}</span>${plan?`<button class="btn sm" data-zoomplan="${plan.id}">Büyüt</button>`:""}</div>
-       ${plan?`<div class="plan-stage"><div class="plan-inner"><img src="${blob(plan.asset)}" alt="${esc(v+" "+f+" planı")}">
-         ${(plan.pins||[]).map(p=>`<button class="pin" style="left:${p.x*100}%;top:${p.y*100}%" data-room="${esc(p.room)}" aria-pressed="${S.room===p.room}" title="${rt.has(p.room)?money(rt.get(p.room))+" "+S.cur:""}">${esc(p.room)}</button>`).join("")}</div></div>`
-       :`<div class="empty"><strong>Bu kat için plan yok</strong><span>${S.canEdit?"Yönetim › Medya yükle bölümünden kat planı ekleyin.":"Kat planı eklendiğinde burada görünecek."}</span></div>`}
-     </div>
-     <div class="card"><div class="block-head"><span class="eyebrow">Odalar · ${esc(f)}</span>${S.room?`<button class="btn sm" data-room="">Tüm odalar</button>`:""}</div>
-       ${rooms.length?`<div class="rooms">${rooms.sort((a,c)=>(rt.get(c)||0)-(rt.get(a)||0)).map(room=>{const mm=roomMedia(room);const nr=mm.filter(x=>x.kind==="render").length,np=mm.filter(x=>x.kind==="pano").length;
-         return `<button class="room" data-room="${esc(room)}" aria-pressed="${S.room===room}"><span>${esc(room)}</span><span class="r">${nr?`<span>${nr} görsel</span>`:""}${np?`<span class="tag360">360°</span>`:""}${rt.has(room)?`<b>${money(rt.get(room))}</b>`:""}</span></button>`;}).join("")}</div>`
-       :`<div class="empty"><span>Bu kat için oda bilgisi yok.</span></div>`}
-       <div class="hr"></div><div class="cmp"><div class="row"><span>${esc(f)} toplamı</span><b>${money(floorVal(sections().indexOf(f)))} ${S.cur}</b></div></div>
-     </div>
-   </div></section>
-  <section class="block"><div class="block-head"><div><span class="eyebrow">${esc(b.name)} · ${S.room?esc(S.room):esc(f)}</span><h2>Oda renderları</h2></div></div>
-   ${renders.length?`<div class="gallery">${renders.map(m=>shotHTML(m)).join("")}</div>`
-   :`<div class="empty"><strong>${esc(b.name)} paketi için bu seçimde render yok</strong>${others.length?`<div class="hint">Görseli olan paketler: ${others.map(x=>`<button class="chip" data-pkg="${esc(x.p.name)}">${esc(x.p.name)}<span class="c">${x.n}</span></button>`).join("")}</div>`:`<span>${S.canEdit?"Yönetim › Medya yükle bölümünden bu paket için görsel ekleyin.":""}</span>`}</div>`}</section>
-  ${panos.length?`<section class="block"><div class="block-head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
-   <div class="gallery">${panos.map(m=>`<button class="shot" data-pano="${m.id}"><img src="${thumb(m)}" alt="" loading="lazy"><span class="badge tag360">360°</span><span class="lbl"><span>${esc(m.title||m.room||"Panorama")}<small>${esc(m.floor||"")}</small></span><span>Gez ›</span></span></button>`).join("")}</div></section>`:""}
-  <section class="block"><div class="block-head"><div><span class="eyebrow">${esc(b.name)} · ${esc(v)}</span><h2>Kalem listesi</h2></div><span class="status">${S.cur} · birim fiyat × adet, navlun, montaj ve KDV hariç</span></div>
-   ${boqHTML(b.name,v)}</section>`;}
-function shotHTML(m){return `<button class="shot" data-shot="${m.id}"><img src="${thumb(m)}" alt="${esc(m.title||m.room||"")}" loading="lazy"><span class="lbl"><span>${esc(m.title||m.room||"Render")}<small>${esc([m.title&&m.room?m.room:"",m.floor].filter(Boolean).join(" · "))}</small></span></span></button>`;}
+  <section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Diğer paketler</h2></div><p>Aynı villa, farklı mobilya seviyesi.</p></div>
+   <div class="others">${r.filter(x=>x!==b).map(x=>{const cv=coverImg(v,x.name,true);const d=net(x,v)-L.net;
+     return `<button class="oc" data-pkg="${esc(x.name)}" data-top>${cv?`<div class="ph"><img src="${thumb(cv)}" alt="" loading="lazy"></div>`:`<div class="ph empty-ph" style="background:linear-gradient(135deg,${TIER_COLOR[x.name]||"var(--surface-2)"}33,var(--surface-2))"><b style="font-size:44px">${esc(x.name)}</b></div>`}
+      <div class="bd"><span class="nm">${dot(x.name)}${esc(x.name)}</span><span class="pr"><b>${money(net(x,v))}</b><span class="delta ${d<0?"ok":""}">${d<0?"−":"+"}${money(Math.abs(d))}</span></span></div></button>`;}).join("")}</div></section>
+  <section class="band"><div><h2>${esc(v)} · ${esc(b.name)}</h2><p>Bu villayı ve paketi tam ekran sunum olarak gösterin: görseller, odalar ve fiyat kırılımı.</p></div>
+   <button class="btn light" data-deckv>Sunumu başlat →</button></section>`;}
+function roomsHTML(v,b,f){
+  const rt=roomTotals(b.name,v,f);
+  const mediaRooms=[...new Set(S.media.filter(m=>m.villa===v&&m.floor===f&&m.room&&pkgMatch(m,b.name)&&m.kind!=="plan").map(m=>m.room))];
+  const names=[...new Set([...mediaRooms,...rt.keys()])];
+  if(!names.length)return `<div class="empty"><span>Bu kat için oda bilgisi yok.</span></div>`;
+  const imgs=room=>S.media.filter(m=>m.villa===v&&m.room===room&&m.kind==="render"&&pkgMatch(m,b.name)).sort(byOrder);
+  const has360=room=>S.media.some(m=>m.villa===v&&m.room===room&&m.kind==="pano"&&pkgMatch(m,b.name));
+  names.sort((a,c)=>(imgs(c).length?1:0)-(imgs(a).length?1:0)||(rt.get(c)?.v||0)-(rt.get(a)?.v||0));
+  const withImg=names.filter(n=>imgs(n).length),plain=names.filter(n=>!imgs(n).length);
+  const card=room=>{const im=imgs(room);const t=rt.get(room);
+    return `<button class="rc" data-room="${esc(room)}"><div class="ph"><img src="${thumb(im[0])}" alt="" loading="lazy">${has360(room)?`<span class="b360">360°</span>`:""}${im.length>1?`<span class="tag">${im.length} görsel</span>`:""}</div>
+     <div class="bd"><span class="t">${esc(room)}</span><span class="s"><span>${t?t.n+" kalem":"görsel"}</span>${t?`<b>${money(t.v)} ${S.cur}</b>`:""}</span></div></button>`;};
+  const row=room=>{const t=rt.get(room);return `<button class="rrow" data-room="${esc(room)}"><span class="t">${esc(room)}</span><span class="s">${t?t.n+" kalem":""}</span><b>${t?money(t.v):""}</b><span class="go">›</span></button>`;};
+  return `${withImg.length?`<div class="rgrid">${withImg.map(card).join("")}</div>`:""}
+   ${plain.length?`<div class="rlist">${withImg.length?`<span class="eyebrow">Görseli hazırlanan diğer alanlar</span>`:""}<div class="rrows">${plain.map(row).join("")}</div></div>`:""}`;}
+function costHTML(b,v){
+  const L=layers(b,v),secs=sections(),vals=b.values?.[v]||[];const r=rankedFor(v),lo=r[0],hi=r[r.length-1];
+  const tt=typeTotals(b.name,v),ttSum=Object.values(tt).reduce((a,x)=>a+x,0);const FC=["var(--f1)","var(--f2)","var(--f3)","var(--f4)"];
+  const items=boqItems(b.name,v);
+  return `<div class="costgrid"><div class="cbig"><span class="eyebrow">Toplam · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b>
+      <span class="sub">${b===lo?"Bu villa için en uygun paket.":`En uygun pakete (${esc(lo.name)}) göre +${pct((L.net-net(lo,v))/net(lo,v))}.`} En yüksek paket ${esc(hi.name)}: ${money(gross(hi,v))} ${S.cur}.</span></div>
+    <div style="display:grid;gap:14px"><div class="tiles">
+      <div class="tile"><span class="l"><i style="background:var(--f1)"></i>Mobilya ve ürünler</span><b>${money(L.furn)}</b><small>${pct(L.furn/L.gross)} · ${items.length||"—"} kalem</small></div>
+      <div class="tile"><span class="l"><i style="background:var(--fx)"></i>Navlun, montaj, sigorta</span><b>${money(L.extras)}</b><small>${pct(L.extras/L.gross)} · mobilya bedelinin %${nf1.format(extra(b)*100)}'i</small></div>
+      <div class="tile"><span class="l"><i style="background:var(--fv)"></i>KDV</span><b>${money(L.vat)}</b><small>%${nf1.format((S.cfg.vat||0)*100)}</small></div></div>
+     <div class="stack" aria-hidden="true"><i style="width:${L.furn/L.gross*100}%;background:var(--f1)"></i><i style="width:${L.extras/L.gross*100}%;background:var(--fx)"></i><i style="width:${L.vat/L.gross*100}%;background:var(--fv)"></i></div></div></div>
+   <details class="more"><summary>Ayrıntılı kırılım<small>katlar, ek giderler, ürün tipleri</small></summary><div class="in">
+     <div class="legend">${secs.map((s,i)=>`<div class="lg"><span class="sw" style="background:${FC[i]||"var(--f4)"}"></span><span>${esc(s)}</span><span class="v">${money(+vals[i]||0)}</span><span class="pc">${pct((+vals[i]||0)/L.gross)}</span></div>`).join("")}
+      <div class="lg"><span class="sw" style="background:var(--fx)"></span><span>Navlun, montaj ve sigorta</span><span class="v">${money(L.extras)}</span><span class="pc">${pct(L.extras/L.gross)}</span></div>
+      ${[["Navlun ve lojistik",L.freight,b.rates?.freight],["Montaj ve kurulum",L.assembly,b.rates?.assembly],["Sigorta ve beklenmedik",L.insurance,b.rates?.insurance]].map(([l,x,rt])=>`<div class="lg sub"><span></span><span>${l} · %${nf1.format((+rt||0)*100)}</span><span class="v">${money(x)}</span><span></span></div>`).join("")}
+      <div class="lg"><span class="sw" style="background:var(--fv)"></span><span>KDV</span><span class="v">${money(L.vat)}</span><span class="pc">${pct(L.vat/L.gross)}</span></div>
+      <div class="lg tot"><span></span><span>Genel toplam</span><span class="v">${money(L.gross)}</span><span class="pc">100%</span></div></div>
+     ${ttSum?`<div style="display:grid;gap:12px"><span class="eyebrow">Ürün tipine göre</span>${Object.entries(tt).sort((a,c)=>c[1]-a[1]).map(([k,x])=>`<div class="tb"><div class="top"><span>${esc(TYPES[k]||k)} <span class="muted" style="font-size:12.5px">· ${TYPE_NOTE[k]||""}</span></span><b>${money(x)} <span class="muted" style="font-weight:600">${pct(x/ttSum)}</span></b></div><div class="t"><i style="width:${(x/ttSum*100).toFixed(1)}%"></i></div></div>`).join("")}</div>`:""}
+   </div></details>
+   ${items.length?`<details class="more"><summary>Tüm kalemler<small>${items.length} kalem · birim fiyat × adet</small></summary><div class="in" style="gap:0">${boqHTML(b.name,v)}</div></details>`:""}`;}
+function itemRows(arr){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}</td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}
 function boqHTML(pkg,v){
   const items=boqItems(pkg,v);
-  if(!items.length)return `<div class="empty"><span>Bu paket için kalem listesi yüklenmedi.${S.canEdit?" Yönetim › Maliyet verileri › Google Sheets'ten çek.":""}</span></div>`;
-  return `<div class="boq">${sections().map(sec=>{const its=items.filter(it=>it.f===sec);if(!its.length)return "";
+  return sections().map(sec=>{const its=items.filter(it=>it.f===sec);if(!its.length)return "";
     const groups=new Map();its.forEach(it=>{const L=labelItem(it);if(!groups.has(L.room))groups.set(L.room,[]);groups.get(L.room).push({...it,label:L.label});});
-    const tot=its.reduce((a,x)=>a+(+x.v||0),0);const open=sec===S.floor||(S.room&&groups.has(S.room));
-    return `<details ${open?"open":""} class="${S.room&&groups.has(S.room)?"hl":""}"><summary><span class="l">${esc(sec)}</span><span class="r"><small>${its.length} kalem</small><b>${money(tot)}</b></span></summary>
-      <div class="tbl-wrap"><table><thead><tr><th>Kod</th><th class="wrap">Kalem</th><th style="text-align:left">Tip</th><th>Tutar</th></tr></thead><tbody>
-      ${[...groups.entries()].map(([room,arr])=>{const st=arr.reduce((a,x)=>a+(+x.v||0),0);
-        return `<tr class="total"><td colspan="3" style="text-align:left">${esc(room)}${S.room===room?" ·  seçili":""}</td><td>${money(st)}</td></tr>`+
-        arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}</td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}).join("")}
-      </tbody></table></div></details>`;}).join("")}</div>`;}
+    const tot=its.reduce((a,x)=>a+(+x.v||0),0);
+    return `<details class="boqf"><summary><span>${esc(sec)} <span class="muted" style="font-weight:600">· ${its.length} kalem</span></span><span>${money(tot)} ${S.cur}</span></summary>
+      <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Tip</th><th>Tutar</th></tr></thead><tbody>
+      ${[...groups.entries()].map(([room,arr])=>`<tr class="grp"><td colspan="3" style="text-align:left">${esc(room)}</td><td>${money(arr.reduce((a,x)=>a+(+x.v||0),0))}</td></tr>`+itemRows(arr)).join("")}
+      </tbody></table></div></details>`;}).join("");}
+function bindGallery(list){
+  const g=$("#gal");if(!g||!list.length)return;
+  const show=i=>{S.gi=(i+list.length)%list.length;const m=list[S.gi];const img=$("#gImg");img.classList.add("fade");
+    setTimeout(()=>{img.src=blob(m.asset);img.onload=()=>img.classList.remove("fade");},120);
+    $("#gTitle").textContent=m.title||m.room||"Render";$("#gSub").textContent=[m.floor,S.pkg].filter(Boolean).join(" · ");$("#gCnt").textContent=`${S.gi+1} / ${list.length}`;
+    g.querySelectorAll("[data-gi]").forEach(b=>b.setAttribute("aria-current",+b.dataset.gi===S.gi));
+    g.querySelector(`[data-gi="${S.gi}"]`)?.scrollIntoView({block:"nearest",inline:"nearest"});};
+  g.querySelectorAll("[data-gi]").forEach(b=>b.onclick=()=>show(+b.dataset.gi));
+  g.querySelectorAll("[data-gstep]").forEach(b=>b.onclick=()=>show(S.gi+ +b.dataset.gstep));
+  g.querySelector("[data-gfull]")?.addEventListener("click",()=>openLightbox(list,S.gi));
+  let sx=null;const gm=g.querySelector(".gmain");gm?.addEventListener("touchstart",e=>{sx=e.touches[0].clientX;},{passive:true});
+  gm?.addEventListener("touchend",e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)show(S.gi+(dx<0?1:-1));sx=null;});}
 function bindVilla(){
-  const m=$("#main");
+  const m=$("#main");const list=galleryList(S.villa,S.pkg);
   m.querySelector("[data-back]").onclick=()=>setView("villas");
-  m.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{const keep=S.pkg;openVilla(b.dataset.v);});
-  m.querySelectorAll("[data-pkg]").forEach(b=>b.onclick=()=>{S.pkg=b.dataset.pkg;S.room=null;render();});
-  m.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{S.floor=b.dataset.f;S.room=null;render();});
-  m.querySelectorAll("[data-room]").forEach(b=>b.onclick=()=>{const r=b.dataset.room;S.room=(r&&S.room!==r)?r:null;render();});
-  const list=[...m.querySelectorAll("[data-shot]")].map(b=>S.media.find(x=>x.id===b.dataset.shot)).filter(Boolean);
-  m.querySelectorAll("[data-shot]").forEach((b,i)=>b.onclick=()=>openLightbox(list,i));
+  m.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>openVilla(b.dataset.v,S.pkg));
+  m.querySelectorAll("[data-pkg]").forEach(b=>b.onclick=()=>{S.pkg=b.dataset.pkg;S.gi=0;const top=b.hasAttribute("data-top");const y=window.scrollY;render();window.scrollTo({top:top?0:y,behavior:top?"smooth":"instant"});});
+  m.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{S.floor=b.dataset.f;const y=window.scrollY;render();window.scrollTo({top:y});});
+  m.querySelectorAll("[data-room]").forEach(b=>b.onclick=()=>openRoom(b.dataset.room));
+  m.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView());
   m.querySelectorAll("[data-pano]").forEach(b=>b.onclick=()=>openPano(b.dataset.pano));
   m.querySelector("[data-zoomplan]")?.addEventListener("click",e=>{const p=S.media.find(x=>x.id===e.currentTarget.dataset.zoomplan);if(p)openLightbox([p],0);});
-}
+  m.querySelector("[data-deckv]")?.addEventListener("click",()=>runDeck({villas:[S.villa],pkg:S.pkg,cost:true,plan:true,render:true,pano:true,cmp:false}));
+  bindGallery(list);}
+
+/* ---------- room sheet ---------- */
+let sheetKeys=null;
+function closeSheet(){const s=$("#sheet");if(!s)return;s.innerHTML="";S.room=null;if(sheetKeys){document.removeEventListener("keydown",sheetKeys);sheetKeys=null;}if(!$("#overlay").children.length)document.body.style.overflow="";}
+function openRoom(room,keepPos){
+  const v=S.villa,b=pkgByName(S.pkg),f=S.floor;S.room=room;
+  const imgs=S.media.filter(m=>m.villa===v&&m.room===room&&m.kind==="render"&&pkgMatch(m,b.name)).sort(byOrder);
+  const panos=S.media.filter(m=>m.villa===v&&m.room===room&&m.kind==="pano"&&pkgMatch(m,b.name)).sort(byOrder);
+  const items=boqItems(b.name,v).filter(it=>it.f===f).map(it=>({...it,...labelItem(it)})).filter(it=>it.room===room);
+  const tot=items.reduce((a,x)=>a+(+x.v||0),0);
+  const s=$("#sheet");const sc=s.querySelector(".sheet")?.scrollTop||0;document.body.style.overflow="hidden";
+  s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet" role="dialog" aria-label="${esc(room)}">
+    <div class="sheet-head"><div><span class="eyebrow">${esc(v)} · ${esc(f)} · ${esc(b.name)}</span><h2>${esc(room)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
+    ${imgs.length?`<div class="gal" id="rgal"><div class="gmain"><img id="rImg" src="${blob(imgs[0].asset)}" alt=""><div class="gtop"><button data-rfull>Tam ekran</button></div>
+      ${imgs.length>1?`<button class="gnav l" data-rstep="-1" aria-label="Önceki">‹</button><button class="gnav r" data-rstep="1" aria-label="Sonraki">›</button>`:""}
+      <div class="cap"><div><b id="rTitle">${esc(imgs[0].title||room)}</b></div><small class="num" id="rCnt">1 / ${imgs.length}</small></div></div>
+      ${imgs.length>1?`<div class="gthumbs">${imgs.map((x,i)=>`<button data-ri="${i}" aria-current="${i===0}"><img src="${thumb(x)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}</div>`
+     :`<div class="gempty" style="aspect-ratio:21/9"><div><b>${esc(room)}</b><span class="muted">Bu oda için ${esc(b.name)} görseli henüz yok.</span></div></div>`}
+    ${panos.length?`<div style="display:flex;gap:8px;flex-wrap:wrap">${panos.map(p=>`<button class="btn primary" data-rp="${p.id}">360° gez · ${esc(p.title||room)}</button>`).join("")}</div>`:""}
+    <div class="sumrow"><div><span class="eyebrow">Oda tutarı · mobilya</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${items.length}</b></div></div>
+    ${items.length?`<div class="tbl-wrap" style="border:1px solid var(--line);border-radius:12px;background:var(--surface)"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Tip</th><th>Tutar</th></tr></thead><tbody>${itemRows(items)}</tbody></table></div>`
+     :`<p class="note">Bu oda için kalem listesinde ayrı satır yok.</p>`}
+    <p class="note">Tutarlar ${esc(b.name)} paketinin birim fiyat × adet değerleridir; navlun, montaj ve KDV hariç.</p></div></div>`;
+  if(keepPos)s.querySelector(".sheet").scrollTop=sc;
+  s.querySelector("[data-x]").onclick=closeSheet;
+  s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget)closeSheet();});
+  let ri=0;const show=i=>{ri=(i+imgs.length)%imgs.length;$("#rImg").src=blob(imgs[ri].asset);$("#rTitle").textContent=imgs[ri].title||room;$("#rCnt").textContent=`${ri+1} / ${imgs.length}`;
+    s.querySelectorAll("[data-ri]").forEach(b=>b.setAttribute("aria-current",+b.dataset.ri===ri));};
+  s.querySelectorAll("[data-ri]").forEach(b=>b.onclick=()=>show(+b.dataset.ri));
+  s.querySelectorAll("[data-rstep]").forEach(b=>b.onclick=()=>show(ri+ +b.dataset.rstep));
+  s.querySelector("[data-rfull]")?.addEventListener("click",()=>openLightbox(imgs,ri));
+  s.querySelectorAll("[data-rp]").forEach(b=>b.onclick=()=>openPano(b.dataset.rp));
+  if(sheetKeys)document.removeEventListener("keydown",sheetKeys);
+  sheetKeys=e=>{if($("#overlay").children.length)return;if(e.key==="Escape")closeSheet();else if(imgs.length>1&&e.key==="ArrowRight")show(ri+1);else if(imgs.length>1&&e.key==="ArrowLeft")show(ri-1);};
+  document.addEventListener("keydown",sheetKeys);
+  s.querySelector("[data-x]").focus({preventScroll:true});}
 
 /* ---------- compare ---------- */
 function rankingHTML(){
   const r=ranked();if(!r.length)return "";const max=total3(r[r.length-1]),min=total3(r[0]);
   return `<div class="rank">${r.map((b,i)=>{const t=total3(b),d=(t-min)/min;
-    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${esc(b.name)}</span>
+    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(b.name)}</span>
       <div class="track"><i class="fill" style="width:${(t/max*100).toFixed(1)}%"></i></div>
       <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">villa başı ${money(avgGross(b))} KDV dahil</span></div></div>`;}).join("")}</div>`;}
 function villaMatrixHTML(){
   const bs=ranked(),vs=villas();
   return `<div class="tbl-wrap"><table><thead><tr><th>Paket</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}<th>${vs.length} villa toplamı</th><th>Villa başı · KDV dahil</th><th>Proje bütçesi</th></tr></thead><tbody>
-   ${bs.map((b,i)=>`<tr class="${i===0?"is-best":""}"><td><b>${esc(b.name)}</b></td>${vs.map(v=>{const mn=Math.min(...bs.map(x=>net(x,v)));return `<td class="${net(b,v)===mn?"best":""}"><button class="btn ghost" data-open="${esc(v)}|${esc(b.name)}" style="font-weight:inherit;color:inherit">${money(net(b,v))}</button></td>`;}).join("")}
+   ${bs.map(b=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(b.name)}</span></td>${vs.map(v=>{const mn=Math.min(...bs.map(x=>net(x,v)));return `<td class="${net(b,v)===mn?"best":""}"><button class="cellbtn" data-open="${esc(v)}|${esc(b.name)}">${money(net(b,v))}</button></td>`;}).join("")}
      <td><b>${money(total3(b))}</b></td><td>${money(avgGross(b))}</td><td>${big(budget(b))}</td></tr>`).join("")}</tbody></table></div>`;}
 function matrixHTML(){
   const bs=ranked(),vs=villas(),secs=sections();
-  let rows="";vs.forEach(v=>{secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
-    rows+=`<tr><td>${esc(v)} · ${esc(s)}</td>${vals.map(x=>`<td class="${mn===mx?"":x===mn?"best":x===mx?"worst":""}">${money(x)}</td>`).join("")}</tr>`;});
-    const tv=bs.map(b=>furn(b,v)),mn=Math.min(...tv);rows+=`<tr class="total"><td>${esc(v)} toplamı</td>${tv.map(x=>`<td class="${x===mn?"best":""}">${money(x)}</td>`).join("")}</tr>`;});
-  return `<div class="tbl-wrap"><table><thead><tr><th>Villa · bölüm</th>${bs.map(b=>`<th>${esc(b.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
+  let rows="";vs.forEach(v=>{rows+=`<tr class="grp"><td colspan="${bs.length+1}" style="text-align:left">${esc(v)}</td></tr>`;secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
+    rows+=`<tr><td>${esc(s)}</td>${vals.map(x=>`<td class="${mn===mx?"":x===mn?"best":x===mx?"worst":""}">${money(x)}</td>`).join("")}</tr>`;});
+    const tv=bs.map(b=>furn(b,v)),mn=Math.min(...tv);rows+=`<tr><td><b>Toplam</b></td>${tv.map(x=>`<td class="${x===mn?"best":""}"><b>${money(x)}</b></td>`).join("")}</tr>`;});
+  return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(b.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
 function compareHTML(){
-  return `<section class="block"><div class="block-head"><div><span class="eyebrow">Paket sıralaması</span><h2>${villas().length} villa toplamına göre</h2></div><span class="status">${S.cur} · net, KDV hariç</span></div>${rankingHTML()}</section>
-  <section class="block"><div class="block-head"><div><span class="eyebrow">Villa × paket</span><h2>Villa başı net fiyat</h2></div><span class="status">Tutara tıklayınca villa o paketle açılır</span></div>${villaMatrixHTML()}</section>
-  <section class="block"><div class="block-head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması</h2></div><span class="status">Mobilya net · yeşil satırdaki en uygun, kırmızı en yüksek</span></div>${matrixHTML()}</section>`;}
+  return `<section class="block"><div class="head"><div><span class="eyebrow">Paket sıralaması</span><h2>${villas().length} villa toplamına göre</h2></div><p>${S.cur} · net, KDV hariç. Navlun, montaj ve sigorta dahil.</p></div>${rankingHTML()}</section>
+  <section class="block"><div class="head"><div><span class="eyebrow">Villa × paket</span><h2>Villa başı fiyat</h2></div><p>Bir tutara tıklayın; villa o paketle açılır.</p></div>${villaMatrixHTML()}</section>
+  <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML()}</section>`;}
 function bindCompare(){$("#main").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});}
+
+/* ---------- presentation deck ---------- */
+function openDeckSetup(){
+  if(!S.cfg){toast("Sunum için önce veri yükleyin");return;}
+  closeOv();const o=$("#overlay");document.body.style.overflow="hidden";
+  const curPkg=S.view==="villa"?S.pkg:"";
+  o.innerHTML=`<div class="ov" role="dialog" aria-label="Sunum ayarları"><div class="ov-top"><div class="t"><b>Sunumu hazırla</b>Villaları ve paketi seçin, sonra başlatın.</div><button class="ov-btn" data-x>Kapat</button></div>
+   <div class="ov-body"><div style="background:#151A18;border:1px solid #27302C;border-radius:16px;padding:24px;display:grid;gap:18px;max-width:520px;width:100%">
+     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">Villalar</span>${villas().map((v,i)=>`<label style="display:flex;gap:8px"><input type="checkbox" id="dv-${i}" data-dv="${esc(v)}" ${S.view!=="villa"||v===S.villa?"checked":""}> ${esc(v)}</label>`).join("")}</div>
+     <label style="display:grid;gap:6px"><span class="eyebrow" style="color:#9FD0C2">Paket</span><select id="dPkg" style="background:#1E2522;border:1px solid #2A302E;border-radius:8px;padding:9px;color:#EEECE6">
+       <option value="">Her villada en uygun paket</option>${ranked().map(b=>`<option value="${esc(b.name)}" ${b.name===curPkg?"selected":""}>${esc(b.name)}</option>`).join("")}</select></label>
+     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">İçerik</span>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-render" checked> Oda görselleri</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-cost" checked> Fiyat kırılımı</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-plan" checked> Kat planları</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-pano" checked> 360° panoramalar</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-cmp" checked> Paket karşılaştırması</label></div>
+     <button class="btn primary" id="dGo">Başlat</button>
+     <span style="font-size:12.5px;color:#9AA29E">Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.</span></div></div></div>`;
+  o.querySelector("[data-x]").onclick=closeOv;
+  o.querySelector("#dGo").onclick=()=>{const q=s=>o.querySelector(s).checked;const opt={villas:[...o.querySelectorAll("[data-dv]")].filter(x=>x.checked).map(x=>x.dataset.dv),pkg:o.querySelector("#dPkg").value,cost:q("#d-cost"),plan:q("#d-plan"),render:q("#d-render"),pano:q("#d-pano"),cmp:q("#d-cmp")};closeOv();runDeck(opt);};}
+function deckCost(b,v){const L=layers(b,v);
+  return `<div style="display:grid;gap:28px;align-content:center;height:100%"><div><span class="eyebrow">Toplam · KDV dahil</span><div class="bigp num">${money(L.gross)} <span style="font-size:.3em;color:#9AA29E">${S.cur}</span></div></div>
+   <div class="dk"><div><span>Mobilya ve ürünler</span><b>${money(L.furn)}</b><small>${sections().map((s,i)=>`${esc(s)} ${money(+b.values?.[v]?.[i]||0)}`).join(" · ")}</small></div>
+    <div><span>Navlun, montaj, sigorta</span><b>${money(L.extras)}</b><small>mobilya bedelinin %${nf1.format(extra(b)*100)}'i</small></div>
+    <div><span>KDV</span><b>${money(L.vat)}</b><small>%${nf1.format((S.cfg.vat||0)*100)}</small></div></div></div>`;}
+function buildSlides(opt){
+  const sl=[];const name=esc(S.cfg.projectName||"Hayat Mekke");const c=coverImg(null,opt.pkg||ranked()[0]?.name);
+  sl.push({html:`<div class="slide cover" style="${c?`background-image:url('${blob(c.asset)}')`:"background:#1F4E44"}"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h2 style="font-size:clamp(56px,9vw,140px)">${name}</h2><p style="max-width:60ch;color:#DDD9D0;margin:0;font-size:19px">${esc(S.cfg.subtitle||"Villa mobilya paketleri")}</p></div>`});
+  const fullImg=(m,eb)=>({html:`<div class="slide" style="padding:0"><img class="full-img" src="${blob(m.asset)}" alt=""><div class="caption"><span class="eyebrow">${esc(eb)}</span><h2>${esc(m.title||m.room||"Render")}</h2></div></div>`});
+  const panoSl=(m,eb)=>({pano:m.asset,html:`<div class="slide" style="padding:0"><div class="pano" data-deckpano></div><div class="caption" style="pointer-events:none"><span class="eyebrow">360° · ${esc(eb)}</span><h2>${esc(m.title||m.room||"Panorama")}</h2></div></div>`});
+  opt.villas.forEach(v=>{const b=pkgByName(opt.pkg)||rankedFor(v)[0];const meta=S.cfg.villaMeta?.[v]||{};const cv=coverImg(v,b.name);const pm=m=>pkgMatch(m,b.name);
+    sl.push({html:`<div class="slide cover" style="${cv?`background-image:url('${blob(cv.asset)}')`:"background:#1F4E44"}"><span class="eyebrow">Villa tipi · ${esc(b.name)} paketi</span><h2 style="font-size:clamp(56px,8vw,120px)">${esc(v)}</h2><p style="margin:0;color:#DDD9D0;font-size:18px;max-width:60ch">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · "))}</p></div>`});
+    floorsOnly().forEach(f=>{
+      if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,f,b.name].join(" · "))));
+      if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(panoSl(m,[v,f].join(" · "))));
+    });
+    if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&!floorsOnly().includes(m.floor)&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,b.name].join(" · "))));
+    if(opt.plan){const seen=new Set();floorsOnly().forEach(f=>{const p=planFor(v,f,b.name);if(p&&!seen.has(p.id)){seen.add(p.id);sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · kat planı</span><h2>${esc(p.floor||p.title||"Kat planı")}</h2><div class="grow"><div class="imgfit"><div class="plan-pins-deck"><img src="${blob(p.asset)}" alt="" style="max-height:calc(100vh - 280px);max-width:100%">${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}</div></div></div></div>`});}});}
+    if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${esc(b.name)} paketi</span><h2>Fiyat</h2><div class="grow">${deckCost(b,v)}</div></div>`});
+  });
+  if(opt.cmp){sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${brands().length} paket</h2><div class="grow" style="overflow:auto">${rankingHTML()}</div></div>`});
+    sl.push({html:`<div class="slide"><span class="eyebrow">Villa × paket · ${S.cur}</span><h2>Villa başı fiyat</h2><div class="grow" style="overflow:auto">${villaMatrixHTML()}</div></div>`});}
+  sl.push({html:`<div class="slide cover" style="background:#1F4E44;justify-content:center;align-items:center;text-align:center"><span class="eyebrow" style="color:#CFE5DE">Teşekkürler</span><h2 style="font-size:clamp(56px,8vw,120px)">${name}</h2><p style="margin:0;color:#CFE5DE">${esc(S.cfg.subtitle||"")}</p></div>`});
+  return sl;}
+function runDeck(opt){
+  closeSheet();const sl=buildSlides(opt);let i=0,pv=null;const o=$("#overlay");document.body.style.overflow="hidden";
+  o.innerHTML=`<div class="deck" role="dialog" aria-label="Sunum"><div class="stage" id="dStage"></div><div class="deck-bar"><button class="ov-btn" data-p>‹ Önceki</button><button class="ov-btn" data-n>Sonraki ›</button><span class="num" id="dCnt"></span><div class="prog"><i id="dProg"></i></div><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Çık</button></div></div>`;
+  const stage=o.querySelector("#dStage");
+  const show=()=>{if(pv){pv.destroy();pv=null;}stage.innerHTML=sl[i].html;o.querySelector("#dCnt").textContent=`${i+1} / ${sl.length}`;o.querySelector("#dProg").style.width=((i+1)/sl.length*100)+"%";
+    const pe=stage.querySelector("[data-deckpano]");if(pe&&sl[i].pano){pv=PanoViewer(pe);pv.load(blob(sl[i].pano));}};
+  const go=d=>{i=Math.max(0,Math.min(sl.length-1,i+d));show();};
+  const exit=()=>{if(pv)pv.destroy();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});closeOv();};
+  o.querySelector("[data-p]").onclick=()=>go(-1);o.querySelector("[data-n]").onclick=()=>go(1);o.querySelector("[data-x]").onclick=exit;
+  const fs=()=>{const el=o.querySelector(".deck");(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.())?.catch?.(()=>toast("Tam ekran bu görünümde desteklenmiyor"));};
+  o.querySelector("[data-fs]").onclick=fs;
+  stage.addEventListener("click",e=>{if(e.target.closest(".pano,.tbl-wrap,.rank,.dk"))return;const x=e.clientX/stage.clientWidth;go(x<0.3?-1:1);});
+  ovKeys=e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="PageDown"){e.preventDefault();go(1);}else if(e.key==="ArrowLeft"||e.key==="PageUp")go(-1);else if(e.key==="Escape"&&!document.fullscreenElement)exit();else if(e.key==="f"||e.key==="F")fs();else if(e.key==="Home"){i=0;show();}else if(e.key==="End"){i=sl.length-1;show();}};
+  document.addEventListener("keydown",ovKeys);show();}
 
 /* ---------- lightbox ---------- */
 let ovKeys=null;
-function closeOv(){const o=$("#overlay");if(o._pano){o._pano.destroy();o._pano=null;}o.innerHTML="";if(ovKeys){document.removeEventListener("keydown",ovKeys);ovKeys=null;}document.body.style.overflow="";}
+function closeOv(){const o=$("#overlay");if(o._pano){o._pano.destroy();o._pano=null;}o.innerHTML="";if(ovKeys){document.removeEventListener("keydown",ovKeys);ovKeys=null;}if(!$("#sheet").children.length)document.body.style.overflow="";}
 function openLightbox(list,i){if(!list.length)return;closeOv();const o=$("#overlay");let idx=i;document.body.style.overflow="hidden";
   const draw=()=>{const m=list[idx];o.innerHTML=`<div class="ov" role="dialog" aria-label="Görsel"><div class="ov-top"><div class="t"><b>${esc(m.title||m.room||(m.kind==="plan"?"Kat planı":"Render"))}</b>${esc([m.villa,m.floor,m.title&&m.room?m.room:"",m.brand].filter(Boolean).join(" · "))}</div>
     <div style="display:flex;gap:8px;align-items:center"><span class="num" style="font-size:13px">${idx+1} / ${list.length}</span><button class="ov-btn" data-x>Kapat</button></div></div>
@@ -610,61 +832,6 @@ function openPano(id){closeOv();const first=S.media.find(m=>m.id===id);if(!first
   o.querySelector("[data-x]").onclick=()=>{if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});closeOv();};
   o.querySelector("[data-fs]").onclick=()=>{const el=o.querySelector(".ov");(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.())?.catch?.(()=>toast("Tam ekran bu görünümde desteklenmiyor"));};
   ovKeys=e=>{if(e.key==="Escape")closeOv();};document.addEventListener("keydown",ovKeys);}
-
-/* ---------- presentation deck ---------- */
-function openDeckSetup(){
-  if(!S.cfg){toast("Sunum için önce veri yükleyin");return;}
-  closeOv();const o=$("#overlay");document.body.style.overflow="hidden";
-  const curPkg=S.view==="villa"?S.pkg:"";
-  o.innerHTML=`<div class="ov" role="dialog" aria-label="Sunum ayarları"><div class="ov-top"><div class="t"><b>Sunumu hazırla</b>Villaları ve paketi seçin, sonra başlatın.</div><button class="ov-btn" data-x>Kapat</button></div>
-   <div class="ov-body"><div style="background:#151a17;border:1px solid #2b322d;border-radius:10px;padding:22px;display:grid;gap:16px;max-width:520px;width:100%">
-     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#cfae6c">Villalar</span>${villas().map((v,i)=>`<label style="display:flex;gap:8px"><input type="checkbox" id="dv-${i}" data-dv="${esc(v)}" checked> ${esc(v)}</label>`).join("")}</div>
-     <label style="display:grid;gap:6px"><span class="eyebrow" style="color:#cfae6c">Paket</span><select id="dPkg" style="background:#212824;border:1px solid #2e3631;border-radius:6px;padding:8px;color:#ebe5d9">
-       <option value="">Her villada en uygun paket</option>${ranked().map(b=>`<option value="${esc(b.name)}" ${b.name===curPkg?"selected":""}>${esc(b.name)}</option>`).join("")}</select></label>
-     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#cfae6c">İçerik</span>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-cost" checked> Maliyet kırılımı</label>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-plan" checked> Kat planları</label>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-render" checked> Oda renderları</label>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-pano" checked> 360° panoramalar</label>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-cmp" checked> Paket karşılaştırması</label></div>
-     <button class="btn primary" id="dGo" style="justify-content:center">Başlat</button>
-     <span style="font-size:12.5px;color:#a7ab9f">Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.</span></div></div></div>`;
-  o.querySelector("[data-x]").onclick=closeOv;
-  o.querySelector("#dGo").onclick=()=>{const q=s=>o.querySelector(s).checked;const opt={villas:[...o.querySelectorAll("[data-dv]")].filter(x=>x.checked).map(x=>x.dataset.dv),pkg:o.querySelector("#dPkg").value,cost:q("#d-cost"),plan:q("#d-plan"),render:q("#d-render"),pano:q("#d-pano"),cmp:q("#d-cmp")};closeOv();runDeck(opt);};}
-function buildSlides(opt){
-  const sl=[];const name=esc(S.cfg.projectName||"Hayat Mekke");const c=coverImg(null,opt.pkg||ranked()[0]?.name);
-  sl.push({html:`<div class="slide cover" style="${c?`background-image:url('${blob(c.asset)}')`:"background:#151a17"}"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h2 style="font-size:clamp(40px,7vw,96px)">${name}</h2><p style="max-width:60ch;color:#d6d0c4;margin:0;font-size:18px">${esc(S.cfg.subtitle||"Villa mobilya paketleri")}</p></div>`});
-  const fullImg=(m,eb)=>({html:`<div class="slide" style="padding:0"><img class="full-img" src="${blob(m.asset)}" alt=""><div class="caption"><span class="eyebrow">${esc(eb)}</span><h2>${esc(m.title||m.room||"Render")}</h2></div></div>`});
-  const panoSl=(m,eb)=>({pano:m.asset,html:`<div class="slide" style="padding:0"><div class="pano" data-deckpano></div><div class="caption" style="pointer-events:none"><span class="eyebrow">360° · ${esc(eb)}</span><h2>${esc(m.title||m.room||"Panorama")}</h2></div></div>`});
-  opt.villas.forEach(v=>{const b=pkgByName(opt.pkg)||rankedFor(v)[0];const meta=S.cfg.villaMeta?.[v]||{};const cv=coverImg(v,b.name);const pm=m=>pkgMatch(m,b.name);
-    sl.push({html:`<div class="slide cover" style="${cv?`background-image:url('${blob(cv.asset)}')`:"background:#151a17"}"><span class="eyebrow">Villa tipi · ${esc(b.name)} paketi</span><h2 style="font-size:clamp(40px,6vw,84px)">${esc(v)}</h2><p style="margin:0;color:#d6d0c4;font-size:17px;max-width:60ch">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · "))}</p></div>`});
-    if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${esc(b.name)} paketi · ${S.cur}</span><h2>Maliyet kırılımı</h2><div class="grow" style="overflow:auto">${costHTML(b,v)}</div></div>`});
-    floorsOnly().forEach(f=>{
-      if(opt.plan){const p=planFor(v,f,b.name);if(p)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · kat planı</span><h2>${esc(f)}</h2><div class="grow"><div class="imgfit"><div class="plan-pins-deck"><img src="${blob(p.asset)}" alt="" style="max-height:calc(100vh - 260px)">${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}</div></div></div></div>`});}
-      if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,f,b.name].join(" · "))));
-      if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&m.floor===f&&pm(m)).forEach(m=>sl.push(panoSl(m,[v,f].join(" · "))));
-    });
-    if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&!floorsOnly().includes(m.floor)&&pm(m)).forEach(m=>sl.push(fullImg(m,[v,b.name].join(" · "))));
-    if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&!floorsOnly().includes(m.floor)&&pm(m)).forEach(m=>sl.push(panoSl(m,v)));
-  });
-  if(opt.cmp){sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${villas().length} villa toplamına göre paketler</h2><div class="grow" style="overflow:auto">${rankingHTML()}</div></div>`});
-    sl.push({html:`<div class="slide"><span class="eyebrow">Villa × paket · ${S.cur}</span><h2>Villa başı net fiyat</h2><div class="grow" style="overflow:auto">${villaMatrixHTML()}</div></div>`});}
-  sl.push({html:`<div class="slide cover" style="background:#151a17;justify-content:center;align-items:center;text-align:center"><span class="eyebrow">Teşekkürler</span><h2>${name}</h2><p class="muted" style="margin:0">${esc(S.cfg.subtitle||"")}</p></div>`});
-  return sl;}
-function runDeck(opt){
-  const sl=buildSlides(opt);let i=0,pv=null;const o=$("#overlay");document.body.style.overflow="hidden";
-  o.innerHTML=`<div class="deck" role="dialog" aria-label="Sunum"><div class="stage" id="dStage"></div><div class="deck-bar"><button class="ov-btn" data-p>‹ Önceki</button><button class="ov-btn" data-n>Sonraki ›</button><span class="num" id="dCnt"></span><div class="prog"><i id="dProg"></i></div><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Çık</button></div></div>`;
-  const stage=o.querySelector("#dStage");
-  const show=()=>{if(pv){pv.destroy();pv=null;}stage.innerHTML=sl[i].html;o.querySelector("#dCnt").textContent=`${i+1} / ${sl.length}`;o.querySelector("#dProg").style.width=((i+1)/sl.length*100)+"%";
-    const pe=stage.querySelector("[data-deckpano]");if(pe&&sl[i].pano){pv=PanoViewer(pe);pv.load(blob(sl[i].pano));}};
-  const go=d=>{i=Math.max(0,Math.min(sl.length-1,i+d));show();};
-  const exit=()=>{if(pv)pv.destroy();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});closeOv();};
-  o.querySelector("[data-p]").onclick=()=>go(-1);o.querySelector("[data-n]").onclick=()=>go(1);o.querySelector("[data-x]").onclick=exit;
-  const fs=()=>{const el=o.querySelector(".deck");(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.())?.catch?.(()=>toast("Tam ekran bu görünümde desteklenmiyor"));};
-  o.querySelector("[data-fs]").onclick=fs;
-  stage.addEventListener("click",e=>{if(e.target.closest(".pano,.tbl-wrap,.card,.rank"))return;const x=e.clientX/stage.clientWidth;go(x<0.3?-1:1);});
-  ovKeys=e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="PageDown"){e.preventDefault();go(1);}else if(e.key==="ArrowLeft"||e.key==="PageUp")go(-1);else if(e.key==="Escape"&&!document.fullscreenElement)exit();else if(e.key==="f"||e.key==="F")fs();else if(e.key==="Home"){i=0;show();}else if(e.key==="End"){i=sl.length-1;show();}};
-  document.addEventListener("keydown",ovKeys);show();}
 
 /* ---------- admin ---------- */
 function adminHTML(){
