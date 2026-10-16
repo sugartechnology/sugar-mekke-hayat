@@ -300,5 +300,10 @@
     "Villa A",
     "Villa B",
     "Villa C"
-  ]
+  ],
+  "logos": {
+    "emlak": "assets/brand/emlak-konut.png",
+    "rapid": "assets/brand/rapidrender.png",
+    "rapidWhite": "assets/brand/rapidrender-white.png"
+  }
 }

@@ -42,3 +42,7 @@ Yönetim paneli (yükleme, oda işaretleme, Google Sheets'ten çekme) yalnızca 
 ## Paket adları
 
 Paketler fiyat sırasına göre Silver'dan başlayarak adlandırılır ve firma adıyla birlikte gösterilir (ör. "Silver · Bellona"). Kaynak Google Sheets bağlantısı bu klasöre dahil edilmedi.
+
+## Sunum ve PDF
+
+Üst menüdeki **Sunum** düğmesi iki biçim sunar: ekranda ilerleyen **interaktif sunum** ve **PDF**. PDF A4 yatay hazırlanır; her sayfada Emlak Konut ve RapidRender logoları, villa tiplerinin kat planları, paket maliyetleri ve paket bazlı oda görselleri (ürün fiyatlarıyla) yer alır. Logolar `assets/brand/` altında, yolları `config.json` içindeki `logos` alanında. PDF görselleri okuyabilmek için sitenin bir web adresinden (GitHub Pages ya da yerel sunucu) açılması gerekir; dosyaya çift tıklayarak açıldığında tarayıcı görselleri PDF'e eklemeye izin vermez.

@@ -591,6 +591,17 @@ th.muted,td.muted{color:var(--muted)}
 @keyframes hbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media (max-width:640px){.hshow{aspect-ratio:4/5}.hs figcaption{padding:16px 16px 26px}.hb{flex-direction:column;align-items:flex-start;gap:14px}.hpr{text-align:left}.hnav,.hdots{display:none}}
 @media (prefers-reduced-motion:reduce){.hs,.hs img{transition:none}}
+.fmtseg{display:inline-flex;border:1px solid #2A302E;border-radius:10px;padding:3px;gap:3px;justify-self:start}
+.fmtseg button{background:none;border:0;color:#B9C0BC;padding:7px 14px;border-radius:7px;font-weight:600;font-size:13.5px}
+.fmtseg button[aria-pressed="true"]{background:#EEECE6;color:#151A18}
+.deck-logos{position:absolute;top:14px;right:18px;z-index:5;display:flex;gap:14px;align-items:center;pointer-events:none}
+.deck-logos .dl-e{background:#fff;padding:5px 9px;border-radius:6px;display:flex}.deck-logos .dl-e img{height:30px;width:auto}
+.deck-logos .dl-r{height:24px;width:auto}
+.pdfbox{background:#151A18;border:1px solid #27302C;border-radius:16px;padding:28px;display:grid;gap:16px;max-width:460px;width:100%;color:#EEECE6}
+.pdfbox .prog{height:4px;background:#27302C;border-radius:2px;overflow:hidden}.pdfbox .prog i{display:block;height:100%;width:0;background:#7CC0AE;transition:width .2s}
+.pdfbox .muted{color:#9AA29E;font-size:13px}
+.slide.cover{position:absolute;inset:0;aspect-ratio:auto;margin:0;max-width:none}
+.ov #dGo{background:#EEECE6;color:#151A18;border-color:#EEECE6}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -1055,6 +1066,8 @@ function openDeckSetup(){
   const curPkg=S.view==="villa"?S.pkg:"";
   o.innerHTML=`<div class="ov" role="dialog" aria-label="Sunum ayarları"><div class="ov-top"><div class="t"><b>Sunumu hazırla</b>Villaları ve paketi seçin, sonra başlatın.</div><button class="ov-btn" data-x>Kapat</button></div>
    <div class="ov-body"><div style="background:#151A18;border:1px solid #27302C;border-radius:16px;padding:24px;display:grid;gap:18px;max-width:520px;width:100%">
+     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">Biçim</span><div class="fmtseg" role="tablist"><button data-fmt="live" aria-pressed="true">İnteraktif sunum</button><button data-fmt="pdf" aria-pressed="false">PDF</button></div>
+       <span id="fmtNote" style="font-size:12.5px;color:#9AA29E">Ekranda, tam ekran ilerleyen sunum.</span></div>
      <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#9FD0C2">Villalar</span>${villas().map((v,i)=>`<label style="display:flex;gap:8px"><input type="checkbox" id="dv-${i}" data-dv="${esc(v)}" ${S.view!=="villa"||v===S.villa?"checked":""}> ${esc(v)}</label>`).join("")}</div>
      <label style="display:grid;gap:6px"><span class="eyebrow" style="color:#9FD0C2">Paket</span><select id="dPkg" style="background:#1E2522;border:1px solid #2A302E;border-radius:8px;padding:9px;color:#EEECE6">
        <option value="">Her villada en uygun paket</option>${ranked().map(b=>`<option value="${esc(b.name)}" ${b.name===curPkg?"selected":""}>${esc(pl(b.name))}</option>`).join("")}</select></label>
@@ -1062,12 +1075,19 @@ function openDeckSetup(){
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-render" checked> Oda görselleri</label>
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-cost" checked> Fiyat kırılımı</label>
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-plan" checked> Kat planları</label>
-       <label style="display:flex;gap:8px"><input type="checkbox" id="d-pano" checked> 360° panoramalar</label>
+       <label style="display:flex;gap:8px" id="panoRow"><input type="checkbox" id="d-pano" checked> 360° panoramalar</label>
        <label style="display:flex;gap:8px"><input type="checkbox" id="d-cmp" checked> Paket karşılaştırması</label></div>
      <button class="btn primary" id="dGo">Başlat</button>
-     <span style="font-size:12.5px;color:#9AA29E">Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.</span></div></div></div>`;
-  o.querySelector("[data-x]").onclick=closeOv;
-  o.querySelector("#dGo").onclick=()=>{const q=s=>o.querySelector(s).checked;const opt={villas:[...o.querySelectorAll("[data-dv]")].filter(x=>x.checked).map(x=>x.dataset.dv),pkg:o.querySelector("#dPkg").value,cost:q("#d-cost"),plan:q("#d-plan"),render:q("#d-render"),pano:q("#d-pano"),cmp:q("#d-cmp")};closeOv();runDeck(opt);};}
+     <span id="dHint" style="font-size:12.5px;color:#9AA29E">Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.</span></div></div></div>`;
+  o.querySelector("[data-x]").onclick=closeOv;let fmt="live";
+  const setFmt=f=>{fmt=f;o.querySelectorAll("[data-fmt]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.fmt===f));const pdf=f==="pdf";
+    o.querySelector("#panoRow").hidden=pdf;o.querySelector("#dPkg").options[0].text=pdf?"Tüm paketler":"Her villada en uygun paket";
+    o.querySelector("#dGo").textContent=pdf?"PDF oluştur":"Başlat";
+    o.querySelector("#fmtNote").textContent=pdf?"A4 yatay PDF: her sayfada Emlak Konut ve RapidRender logoları, kat planları, paket maliyetleri, paket bazlı oda görselleri ve ürün fiyatları.":"Ekranda, tam ekran ilerleyen sunum.";
+    o.querySelector("#dHint").textContent=pdf?"Oluşturma görsel sayısına göre birkaç saniye sürer.":"Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.";};
+  o.querySelectorAll("[data-fmt]").forEach(b=>b.onclick=()=>setFmt(b.dataset.fmt));
+  o.querySelector("#dGo").onclick=()=>{const q=s=>o.querySelector(s).checked;const opt={villas:[...o.querySelectorAll("[data-dv]")].filter(x=>x.checked).map(x=>x.dataset.dv),pkg:o.querySelector("#dPkg").value,cost:q("#d-cost"),plan:q("#d-plan"),render:q("#d-render"),pano:q("#d-pano"),cmp:q("#d-cmp")};
+    if(!opt.villas.length){toast("En az bir villa seçin");return;}closeOv();if(fmt==="pdf")runPdf(opt);else runDeck(opt);};}
 function deckCost(b,v){const L=layers(b,v);
   return `<div style="display:grid;gap:28px;align-content:center;height:100%"><div><span class="eyebrow">Toplam · KDV dahil</span><div class="bigp num">${money(L.gross)} <span style="font-size:.3em;color:#9AA29E">${S.cur}</span></div></div>
    <div class="dk"><div><span>Mobilya ve ürünler</span><b>${money(L.furn)}</b><small>${sections().map((s,i)=>`${esc(s)} ${money(+b.values?.[v]?.[i]||0)}`).join(" · ")}</small></div>
@@ -1094,7 +1114,8 @@ function buildSlides(opt){
   return sl;}
 function runDeck(opt){
   closeSheet();const sl=buildSlides(opt);let i=0,pv=null;const o=$("#overlay");document.body.style.overflow="hidden";
-  o.innerHTML=`<div class="deck" role="dialog" aria-label="Sunum"><div class="stage" id="dStage"></div><div class="deck-bar"><button class="ov-btn" data-p>‹ Önceki</button><button class="ov-btn" data-n>Sonraki ›</button><span class="num" id="dCnt"></span><div class="prog"><i id="dProg"></i></div><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Çık</button></div></div>`;
+  const lg=S.cfg.logos||{};
+  o.innerHTML=`<div class="deck" role="dialog" aria-label="Sunum">${lg.emlak||lg.rapidWhite?`<div class="deck-logos">${lg.emlak?`<span class="dl-e"><img src="${blob(lg.emlak)}" alt="Emlak Konut"></span>`:""}${lg.rapidWhite?`<img class="dl-r" src="${blob(lg.rapidWhite)}" alt="RapidRender">`:""}</div>`:""}<div class="stage" id="dStage"></div><div class="deck-bar"><button class="ov-btn" data-p>‹ Önceki</button><button class="ov-btn" data-n>Sonraki ›</button><span class="num" id="dCnt"></span><div class="prog"><i id="dProg"></i></div><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Çık</button></div></div>`;
   const stage=o.querySelector("#dStage");
   const show=()=>{if(pv){pv.destroy();pv=null;}stage.innerHTML=sl[i].html;o.querySelector("#dCnt").textContent=`${i+1} / ${sl.length}`;o.querySelector("#dProg").style.width=((i+1)/sl.length*100)+"%";
     const pe=stage.querySelector("[data-deckpano]");if(pe&&sl[i].pano){pv=PanoViewer(pe);pv.load(blob(sl[i].pano));}};
@@ -1106,6 +1127,134 @@ function runDeck(opt){
   stage.addEventListener("click",e=>{if(e.target.closest(".pano,.tbl-wrap,.rank,.dk"))return;const x=e.clientX/stage.clientWidth;go(x<0.3?-1:1);});
   ovKeys=e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="PageDown"){e.preventDefault();go(1);}else if(e.key==="ArrowLeft"||e.key==="PageUp")go(-1);else if(e.key==="Escape"&&!document.fullscreenElement)exit();else if(e.key==="f"||e.key==="F")fs();else if(e.key==="Home"){i=0;show();}else if(e.key==="End"){i=sl.length-1;show();}};
   document.addEventListener("keydown",ovKeys);show();}
+
+/* ---------- PDF export ---------- */
+const PW=1754,PH=1240,PM=72,PDF_INK="#1B1D1C",PDF_MUTED="#6B706D",PDF_LINE="#DAD7CF",PDF_SOFT="#F4F2EC";
+const JSPDF_SRC="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+function loadScript(src){return new Promise((res,rej)=>{if(window.jspdf)return res();const s=document.createElement("script");s.src=src;s.onload=()=>res();s.onerror=()=>rej(new Error("PDF kütüphanesi yüklenemedi"));document.head.appendChild(s);});}
+const pimgCache=new Map();
+function pimg(url){if(!url)return Promise.resolve(null);if(pimgCache.has(url))return pimgCache.get(url);
+  const p=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=url;});pimgCache.set(url,p);return p;}
+function fitCover(c,img,x,y,w,h){const s=Math.max(w/img.naturalWidth,h/img.naturalHeight),sw=w/s,sh=h/s;c.drawImage(img,(img.naturalWidth-sw)/2,(img.naturalHeight-sh)/2,sw,sh,x,y,w,h);}
+function fitContain(c,img,x,y,w,h,al){const s=Math.min(w/img.naturalWidth,h/img.naturalHeight),dw=img.naturalWidth*s,dh=img.naturalHeight*s;
+  const dx=al==="left"?x:al==="right"?x+w-dw:x+(w-dw)/2;c.drawImage(img,dx,y+(h-dh)/2,dw,dh);return {x:dx,y:y+(h-dh)/2,w:dw,h:dh};}
+const PF=(sz,w,d)=>`${w||400} ${sz}px ${d?'"Newsreader",Georgia,serif':'"IBM Plex Sans",system-ui,sans-serif'}`;
+function ptx(c,s,x,y,o={}){c.font=PF(o.size||22,o.weight,o.d);c.fillStyle=o.color||PDF_INK;c.textAlign=o.align||"left";c.textBaseline="alphabetic";
+  let t=String(s??"");if(o.max&&c.measureText(t).width>o.max){while(t.length>1&&c.measureText(t+"…").width>o.max)t=t.slice(0,-1);t+="…";}c.fillText(t,x,y);return c.measureText(t).width;}
+function pwrap(c,s,x,y,w,lh,o={}){c.font=PF(o.size||22,o.weight,o.d);const ws=String(s||"").split(/\s+/);let line="",yy=y,n=0;
+  for(const wd of ws){const t=line?line+" "+wd:wd;if(c.measureText(t).width>w&&line){ptx(c,line,x,yy,o);yy+=lh;line=wd;if(o.lines&&++n>=o.lines){return yy;}}else line=t;}
+  if(line){ptx(c,line,x,yy,o);yy+=lh;}return yy;}
+function prule(c,x1,y,x2,col,h){c.fillStyle=col||PDF_LINE;c.fillRect(x1,y,x2-x1,h||2);}
+function pdot(c,x,y,name){c.fillStyle=TIER_HEX[name]||"#999";c.beginPath();c.arc(x,y,9,0,Math.PI*2);c.fill();}
+const TIER_HEX={Silver:"#A9AEB1",Gold:"#C8A24A",Platinum:"#8C9BA5",Pearl:"#D9CFC0",Emerald:"#2E7D5B",Diamond:"#6FA8C7",Royal:"#6D4C8F"};
+function pFrame(c,L,pg,total,title){c.fillStyle="#fff";c.fillRect(0,0,PW,PH);
+  if(L.emlak)fitContain(c,L.emlak,PM,26,210,66,"left");
+  if(L.rapid)fitContain(c,L.rapid,PW-PM-240,34,240,50,"right");
+  if(title)ptx(c,title,PW/2,70,{size:18,color:PDF_MUTED,align:"center",weight:500});
+  prule(c,PM,112,PW-PM);prule(c,PM,PH-72,PW-PM);
+  ptx(c,`${S.cfg.projectName||"Hayat Mekke"} · ${S.cfg.subtitle||"Villa mobilya paketleri"}`,PM,PH-38,{size:17,color:PDF_MUTED});
+  ptx(c,`${pg} / ${total}`,PW-PM,PH-38,{size:17,color:PDF_MUTED,align:"right"});}
+function pHead(c,eyebrow,title){ptx(c,eyebrow,PM,170,{size:19,color:PDF_MUTED,weight:500});ptx(c,title,PM,240,{size:58,d:true});}
+const pdfDate=()=>new Date().toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"});
+function pdfRenders(v,pkgs){const seen=new Set();const rank=n=>rankedFor(v).findIndex(b=>b.name===n);
+  return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.asset&&(!m.brand||pkgs.includes(m.brand))).sort(byOrder).filter(m=>{const k1=m.asset,k2=[m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return false;seen.add(k1);seen.add(k2);return true;})
+    .sort((a,b)=>floorIdx(a.floor)-floorIdx(b.floor)||String(a.room).localeCompare(String(b.room),"tr")||rank(a.brand)-rank(b.brand));}
+function pdfRoomItems(pkg,v,room,floor){const all=boqItems(pkg,v).map(it=>({...it,...labelItem(it)})).filter(it=>it.room===room);
+  const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort((a,b)=>(+b.v||0)-(+a.v||0));}
+function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);const pkgs=opt.pkg?[opt.pkg]:pkgsAll;const vs=opt.villas.length?opt.villas:villas();
+  // cover
+  P.push({title:"",cover:true,draw:async(c,L)=>{const im=await pimg(blob((coverImg(null,ranked()[0]?.name)||{}).asset));c.fillStyle="#fff";c.fillRect(0,0,PW,PH);
+    if(im)fitCover(c,im,0,0,PW,780);else{c.fillStyle=PDF_SOFT;c.fillRect(0,0,PW,780);}
+    ptx(c,S.cfg.location||"Mekke · Suudi Arabistan",PM,872,{size:22,color:PDF_MUTED,weight:500});
+    ptx(c,S.cfg.projectName||"Hayat Mekke",PM-4,990,{size:120,d:true});
+    ptx(c,"Villa mobilya ve dekorasyon paketleri",PM,1060,{size:30,color:PDF_INK});
+    ptx(c,`${vs.length} villa tipi · ${pkgs.length} paket · ${pdfDate()}`,PM,1110,{size:21,color:PDF_MUTED});
+    if(L.emlak)fitContain(c,L.emlak,PW-PM-300,830,300,158,"right");
+    if(L.rapid)fitContain(c,L.rapid,PW-PM-300,1030,300,80,"right");
+    prule(c,PM,PH-72,PW-PM);ptx(c,`Fiyatlar ${S.cur}, KDV hariç; navlun, montaj ve sigorta dahildir.`,PM,PH-38,{size:17,color:PDF_MUTED});}});
+  // overview
+  P.push({title:"Villa tipleri",draw:async(c)=>{pHead(c,"Genel bakış","Villa tipleri ve paketler");
+    pwrap(c,`Her villa tipi ${pkgsAll.length} mobilya paketiyle fiyatlandırıldı. Aşağıda her villa için paketlerin net fiyatı (mobilya, navlun, montaj ve sigorta dahil, KDV hariç) yer alıyor.`,PM,292,1100,32,{size:22,color:PDF_MUTED});
+    const n=vs.length,gap=40,w=(PW-PM*2-gap*(n-1))/n;
+    for(let i=0;i<n;i++){const v=vs[i],x=PM+i*(w+gap);const r=rankedFor(v).filter(b=>pkgs.includes(b.name));const cv=coverImg(v,r[0]?.name);const im=await pimg(blob(cv?.thumb||cv?.asset));
+      if(im)fitCover(c,im,x,370,w,260);else{c.fillStyle=PDF_SOFT;c.fillRect(x,370,w,260);}
+      ptx(c,v,x,700,{size:44,d:true});const meta=S.cfg.villaMeta?.[v]||{};ptx(c,[meta.area?meta.area+" m²":"",meta.rooms].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı",x,736,{size:18,color:PDF_MUTED,max:w});
+      prule(c,x,760,x+w);let y=800;const mn=Math.min(...r.map(b=>net(b,v)));
+      r.forEach(b=>{pdot(c,x+9,y-7,b.name);ptx(c,pl(b.name),x+28,y,{size:20,max:w-200,weight:b===r[0]?600:400});ptx(c,money(net(b,v)),x+w,y,{size:21,align:"right",weight:net(b,v)===mn?600:400,color:net(b,v)===mn?"#2E6B5E":PDF_INK});y+=46;});}
+    ptx(c,`${S.cur} · villa başı net`,PW-PM,PH-100,{size:16,color:PDF_MUTED,align:"right"});}});
+  vs.forEach(v=>{const r=rankedFor(v).filter(b=>pkgs.includes(b.name));
+    if(opt.plan)P.push({title:`${v} · Kat planları`,draw:async(c)=>{pHead(c,`${v} · villa tipi`,"Kat planları");
+      const plans=mediaOf(m=>m.kind==="plan"&&m.villa===v);const ax=PM,ay=280,aw=1120,ah=PH-110-ay;
+      if(plans.length){const cols=plans.length>1?2:1,rows=Math.ceil(plans.length/cols),cw=(aw-(cols-1)*24)/cols,ch=(ah-(rows-1)*24)/rows;
+        for(let k=0;k<plans.length;k++){const im=await pimg(blob(plans[k].asset));const x=ax+(k%cols)*(cw+24),y=ay+Math.floor(k/cols)*(ch+24);c.fillStyle=PDF_SOFT;c.fillRect(x,y,cw,ch);
+          if(im)fitContain(c,im,x+16,y+16,cw-32,ch-56);ptx(c,plans[k].floor||plans[k].title||"Kat planı",x+16,y+ch-16,{size:18,color:PDF_MUTED,max:cw-32});}}
+      else{const cv=coverImg(v,r[0]?.name);const im=await pimg(blob(cv?.asset));c.fillStyle=PDF_SOFT;c.fillRect(ax,ay,aw,ah);if(im){c.globalAlpha=.35;fitCover(c,im,ax,ay,aw,ah);c.globalAlpha=1;}
+        ptx(c,"Kat planı hazırlanıyor",ax+aw/2,ay+ah/2,{size:34,d:true,align:"center"});}
+      const x=ax+aw+60,w=PW-PM-x;let y=300;ptx(c,"Katlar ve mobilya bedeli",x,y,{size:19,color:PDF_MUTED,weight:500});y+=20;
+      sections().forEach((s,i)=>{const vals=r.map(b=>+b.values?.[v]?.[i]||0);prule(c,x,y+18,x+w);y+=64;ptx(c,s,x,y,{size:24,max:w});
+        ptx(c,vals.length?`${money(Math.min(...vals))} – ${money(Math.max(...vals))} ${S.cur}`:"",x,y+34,{size:19,color:PDF_MUTED});y+=40;});
+      prule(c,x,y+18,x+w);y+=70;ptx(c,"Paket aralığı · net",x,y,{size:19,color:PDF_MUTED,weight:500});
+      ptx(c,`${money(net(r[0],v))} – ${money(net(r[r.length-1],v))}`,x,y+56,{size:40,d:true});ptx(c,`${S.cur}, KDV hariç`,x,y+88,{size:18,color:PDF_MUTED});}});
+    if(opt.cost)P.push({title:`${v} · Paket maliyetleri`,draw:async(c)=>{pHead(c,`${v} · villa tipi`,"Paket maliyetleri");
+      const secs=sections();const short=x=>/tamamlay/i.test(x)?"Tamamlayıcı":x;const cols=[["Paket",360,"l"],...secs.map(s=>[short(s),150,"r"]),["Mobilya",150,"r"],["Navlun",120,"r"],["Montaj + sigorta",160,"r"],["Net",150,"r"],["KDV dahil",160,"r"]];
+      const tw=PW-PM*2,fixed=cols.slice(1).reduce((a,x)=>a+x[1],0);cols[0][1]=tw-fixed;let y=310;
+      const xs=[];let xx=PM;cols.forEach(cl=>{xs.push(xx);xx+=cl[1];});
+      cols.forEach((cl,i)=>ptx(c,cl[0],cl[2]==="l"?xs[i]:xs[i]+cl[1]-8,y,{size:16,color:PDF_MUTED,weight:500,align:cl[2]==="l"?"left":"right",max:cl[1]-12}));
+      prule(c,PM,y+16,PW-PM,PDF_INK);y+=68;const mn=net(r[0],v);
+      r.forEach(b=>{const Lr=layers(b,v);const vals=[...secs.map((s,i)=>+b.values?.[v]?.[i]||0),Lr.furn,Lr.freight,Lr.assembly+Lr.insurance,Lr.net,Lr.gross];
+        pdot(c,PM+10,y-7,b.name);ptx(c,pl(b.name),PM+30,y,{size:21,weight:600,max:cols[0][1]-40});
+        vals.forEach((val,k)=>{const i=k+1;ptx(c,money(val),xs[i]+cols[i][1]-8,y,{size:20,align:"right",weight:i>=cols.length-2?600:400,color:i===cols.length-2&&Lr.net===mn?"#2E6B5E":PDF_INK});});
+        prule(c,PM,y+22,PW-PM);y+=62;});
+      y+=40;ptx(c,"Maliyet kırılımı",PM,y,{size:19,color:PDF_MUTED,weight:500});y+=24;
+      const SEG=[["Loose Furniture","Hareketli mobilya","#3F6B5E"],["Fixed","Hareketsiz mobilya","#8FA89C"],["Ev Dekorasyon","Ev tekstili","#C9D6CF"],["_o","Diğer","#E3E1DA"],["_fr","Navlun","#D2B98A"],["_as","Montaj ve sigorta","#E9DFC9"]];
+      const rows=r.map(b=>{const t=typeTotals(b.name,v),Lr=layers(b,v),keys=Object.keys(t),typed=keys.reduce((a,k)=>a+(t[k]||0),0),f=typed?Lr.furn/typed:0,o={_o:0,_fr:Lr.freight,_as:Lr.assembly+Lr.insurance};
+        keys.forEach(k=>{const kk=["Loose Furniture","Fixed","Ev Dekorasyon"].includes(k)?k:"_o";o[kk]=(o[kk]||0)+(t[k]||0)*f;});if(!typed)o._o=Lr.furn;return {b,o,tot:Lr.net};});
+      const mx=Math.max(...rows.map(x=>x.tot)),bx=PM+330,bw=PW-PM-bx-170,bh=26;
+      let lx=PM;SEG.filter(([k])=>rows.some(x=>(x.o[k]||0)>0.5)).forEach(([k,l,col])=>{c.fillStyle=col;c.fillRect(lx,y,18,18);lx+=26+ptx(c,l,lx+26,y+16,{size:16,color:PDF_MUTED})+30;});y+=56;
+      rows.forEach(({b,o,tot})=>{ptx(c,pl(b.name),PM,y+20,{size:18,max:310});let x=bx;SEG.forEach(([k,,col])=>{const w=(o[k]||0)/mx*bw;if(w>0.5){c.fillStyle=col;c.fillRect(x,y,w-2,bh);x+=w;}});ptx(c,money(tot),PW-PM,y+20,{size:19,align:"right",weight:600});y+=44;});
+      ptx(c,`${S.cur} · KDV %${nf1.format((S.cfg.vat||0)*100)}${S.cur==="SAR"?` · 1 USD = ${S.cfg.fx||3.75} SAR`:""}`,PW-PM,PH-100,{size:16,color:PDF_MUTED,align:"right"});}});
+    if(opt.render)pdfRenders(v,pkgs).forEach(m=>{const b=pkgByName(m.brand)||r[0];
+      P.push({title:`${v} · ${m.room||"Oda"}`,draw:async(c)=>{const im=await pimg(blob(m.asset));const ix=PM,iy=140,iw=1130,ih=PH-110-iy;
+        if(im)fitCover(c,im,ix,iy,iw,ih);else{c.fillStyle=PDF_SOFT;c.fillRect(ix,iy,iw,ih);}
+        const x=ix+iw+50,w=PW-PM-x;let y=200;ptx(c,[v,m.floor].filter(Boolean).join(" · "),x,y,{size:19,color:PDF_MUTED,weight:500});
+        y=pwrap(c,m.room||m.title||"Oda",x,y+66,w,62,{size:56,d:true,lines:2});
+        pdot(c,x+9,y-6,b.name);ptx(c,pl(b.name)+" paketi",x+28,y,{size:21,weight:600,max:w-28});y+=30;prule(c,x,y,x+w);y+=44;
+        const items=pdfRoomItems(b.name,v,m.room,m.floor);const tot=items.reduce((a,it)=>a+(+it.v||0),0);
+        if(items.length){ptx(c,"Bu odadaki ürünler",x,y,{size:17,color:PDF_MUTED,weight:500});ptx(c,S.cur,x+w,y,{size:17,color:PDF_MUTED,align:"right"});y+=40;
+          const maxY=PH-260;let shown=0;for(const it of items){if(y>maxY)break;ptx(c,it.label,x,y,{size:19,max:w-130});ptx(c,money(it.v),x+w,y,{size:19,align:"right"});
+            if(it.b){ptx(c,brandLabel(it.b),x,y+22,{size:14,color:PDF_MUTED,max:w-130});y+=50;}else y+=34;shown++;}
+          if(shown<items.length){ptx(c,`+${items.length-shown} kalem daha`,x,y,{size:17,color:PDF_MUTED});}
+          prule(c,x,PH-226,x+w,PDF_INK);ptx(c,"Oda toplamı",x,PH-186,{size:19,color:PDF_MUTED});ptx(c,money(tot)+" "+S.cur,x+w,PH-180,{size:34,d:true,align:"right"});}
+        else{y=pwrap(c,"Bu oda için ayrı bir kalem listesi tutulmuyor; ürünler villa toplamına dahil.",x,y,w,30,{size:19,color:PDF_MUTED});}
+        ptx(c,`Villa toplamı (bu paket): ${money(net(b,v))} ${S.cur}`,x,PH-128,{size:17,color:PDF_MUTED,max:w});
+        ptx(c,"Birim fiyat × adet; navlun, montaj ve KDV hariç.",x,PH-100,{size:14,color:PDF_MUTED,max:w});}});});});
+  if(opt.cmp)P.push({title:"Özet",draw:async(c)=>{pHead(c,"Özet","Villa tipine göre paket fiyatları");const bs=ranked().filter(b=>pkgs.includes(b.name));
+    const cw=230,x0=PW-PM-cw*(vs.length+1);let y=330;vs.forEach((v,i)=>ptx(c,v,x0+cw*(i+1)-8,y,{size:18,color:PDF_MUTED,weight:500,align:"right"}));ptx(c,`${vs.length} villa toplamı`,PW-PM-8,y,{size:18,color:PDF_MUTED,weight:500,align:"right"});ptx(c,"Paket",PM,y,{size:18,color:PDF_MUTED,weight:500});
+    prule(c,PM,y+16,PW-PM,PDF_INK);y+=74;
+    bs.forEach(b=>{pdot(c,PM+10,y-8,b.name);ptx(c,pl(b.name),PM+30,y,{size:24,weight:600});vs.forEach((v,i)=>{const mn=Math.min(...bs.map(x=>net(x,v)));ptx(c,money(net(b,v)),x0+cw*(i+1)-8,y,{size:24,align:"right",weight:net(b,v)===mn?600:400,color:net(b,v)===mn?"#2E6B5E":PDF_INK});});
+      ptx(c,money(vs.reduce((a,v)=>a+net(b,v),0)),PW-PM-8,y,{size:24,align:"right",color:PDF_MUTED});prule(c,PM,y+26,PW-PM);y+=72;});
+    pwrap(c,`Tutarlar ${S.cur}, villa başı net: mobilya, navlun, montaj ve sigorta dahil, KDV (%${nf1.format((S.cfg.vat||0)*100)}) hariç. Her sütunda en uygun paket yeşil gösterilir.`,PM,y+40,1200,30,{size:19,color:PDF_MUTED});}});
+  return P;}
+async function makePdf(opt,onProg){await loadScript(JSPDF_SRC);
+  await Promise.all([PF(40,400,true),PF(40,400),PF(40,500),PF(40,600)].map(f=>document.fonts.load(f).catch(()=>{})));
+  const lg=S.cfg.logos||{};const [emlak,rapid]=await Promise.all([pimg(blob(lg.emlak)),pimg(blob(lg.rapid))]);const L={emlak,rapid};
+  const pages=buildPdfPages(opt);const {jsPDF}=window.jspdf;const doc=new jsPDF({orientation:"landscape",unit:"mm",format:"a4",compress:true});
+  const cv=document.createElement("canvas");cv.width=PW;cv.height=PH;const c=cv.getContext("2d");
+  for(let i=0;i<pages.length;i++){onProg&&onProg(i,pages.length);const p=pages[i];c.save();if(!p.cover)pFrame(c,L,i+1,pages.length,p.title);await p.draw(c,L);c.restore();
+    let data;try{data=cv.toDataURL("image/jpeg",.88);}catch(e){throw new Error("Görseller bu açılışta PDF'e eklenemiyor. Sayfayı bir web adresinden açın.");}
+    if(i)doc.addPage("a4","landscape");doc.addImage(data,"JPEG",0,0,297,210,undefined,"FAST");await new Promise(r=>setTimeout(r,0));}
+  onProg&&onProg(pages.length,pages.length);return {blob:doc.output("blob"),pages:pages.length};}
+async function savePdf(res,name){
+  if(S.downloads){try{await S.downloads.save({filename:name,data:res.blob});toast("PDF kaydedildi");}catch(e){const c=e&&e.code;if(c==="declined")return;toast(c==="rate_limited"?"Bir indirme penceresi zaten açık":"PDF bu görünümde indirilemiyor");}return;}
+  const u=URL.createObjectURL(res.blob);const a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);}
+function runPdf(opt){const o=$("#overlay");document.body.style.overflow="hidden";
+  o.innerHTML=`<div class="ov" role="dialog" aria-label="PDF"><div class="ov-top"><div class="t"><b>PDF hazırlanıyor</b>Logolar, kat planları, paket maliyetleri ve oda görselleri</div><button class="ov-btn" data-x>Kapat</button></div>
+   <div class="ov-body"><div class="pdfbox"><b id="pdfMsg">Sayfalar hazırlanıyor…</b><div class="prog"><i id="pdfBar"></i></div><button class="btn primary" id="pdfSave" hidden>PDF'i indir</button><span id="pdfNote" class="muted"></span></div></div></div>`;
+  let cancelled=false;o.querySelector("[data-x]").onclick=()=>{cancelled=true;closeOv();};
+  const name=`${(S.cfg.projectName||"Hayat Mekke").replace(/\s+/g,"-")}-sunum-${new Date().toISOString().slice(0,10)}.pdf`;
+  makePdf(opt,(i,n)=>{if(cancelled)return;const m=o.querySelector("#pdfMsg");if(m)m.textContent=i<n?`Sayfa ${i+1} / ${n}`:`${n} sayfa hazır`;const b=o.querySelector("#pdfBar");if(b)b.style.width=(i/n*100)+"%";})
+   .then(res=>{if(cancelled)return;const s=o.querySelector("#pdfSave");s.hidden=false;s.textContent=`PDF'i indir · ${(res.blob.size/1048576).toFixed(1)} MB`;s.onclick=()=>savePdf(res,name);s.focus();})
+   .catch(e=>{if(cancelled)return;const m=o.querySelector("#pdfMsg");if(m)m.textContent="PDF oluşturulamadı";const n=o.querySelector("#pdfNote");if(n)n.textContent=e.message||"";});}
 
 /* ---------- lightbox ---------- */
 let ovKeys=null;
@@ -1455,8 +1604,8 @@ new MutationObserver(()=>{if(!$("#overlay").children.length&&renderPending){rend
   if(!claude||!claude.use){ // standalone build (GitHub Pages / local): data comes from data/data.js
     const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));S.boq=D.boq||{};}
     S.dbReady=true;render();return;}
-  const [db,user,assets,mcp]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("assets"),claude.use("mcp")]);
-  S.db=db;S.assets=assets;S.mcp=mcp;
+  const [db,user,assets,mcp,downloads]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("assets"),claude.use("mcp"),claude.use("downloads")]);
+  S.db=db;S.assets=assets;S.mcp=mcp;S.downloads=downloads;
   try{S.canEdit=!!(user&&await user.canEdit());}catch(e){}
   if(!S.canEdit&&assets)S.canEdit=true;
   if(!db){S.dbReady=true;render();return;}
