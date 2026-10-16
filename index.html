@@ -1122,7 +1122,7 @@ function adminMedia(){
      <datalist id="roomsDL">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist>
      <p class="note" id="upInfo" style="margin:0"></p>
      <p class="note" style="margin:0">Paket seçilirse görsel yalnızca o paket açıkken görünür. Kat planı paketten bağımsızsa "Tüm paketler" bırakın.</p>
-     <div class="drop" id="drop"><strong>Dosyaları buraya bırakın</strong><span class="muted" style="font-size:13px">JPG, PNG, WEBP ya da SVG · panoramalar 2:1 eşdikdörtgen (equirectangular) olmalı · 19 MB üzeri görseller otomatik küçültülür</span>
+     <div class="drop" id="drop"><strong>Dosyaları buraya bırakın</strong><span class="muted" style="font-size:13px">JPG, PNG, WEBP ya da SVG · panoramalar 2:1 eşdikdörtgen (equirectangular) olmalı · görseller yüklenirken WebP’ye çevrilir (renderlar en fazla 3840 px, panoramalar 8192 px)</span>
        <label class="btn primary">Dosya seç<input type="file" id="upFile" accept="image/*" multiple hidden></label></div>
      <div class="uplist" id="upList"></div></div>
    <div class="block-head"><div><span class="eyebrow">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
@@ -1183,17 +1183,18 @@ function bindAdmin(){const m=$("#main");
   if(S.admin==="media")bindMedia(m);else if(S.admin==="pins")bindPins(m);else if(S.admin==="data")bindData(m);else bindInfo(m);}
 
 function loadImg(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file);const i=new Image();i.onload=()=>res({img:i,url:u});i.onerror=()=>{URL.revokeObjectURL(u);rej(new Error("Görsel okunamadı"));};i.src=u;});}
-function toJpeg(img,maxW,q){const s=Math.min(1,maxW/img.naturalWidth);const c=document.createElement("canvas");c.width=Math.round(img.naturalWidth*s);c.height=Math.round(img.naturalHeight*s);
-  c.getContext("2d").drawImage(img,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,"image/jpeg",q));}
+function encodeImg(img,maxW,q){const s=Math.min(1,maxW/img.naturalWidth);const c=document.createElement("canvas");c.width=Math.round(img.naturalWidth*s);c.height=Math.round(img.naturalHeight*s);
+  c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+  return new Promise(r=>c.toBlob(b=>{if(b&&b.type==="image/webp")r(b);else c.toBlob(r,"image/jpeg",q);},"image/webp",q));}
 const OK_TYPES=["image/jpeg","image/png","image/webp","image/gif","image/svg+xml"];
 async function uploadOne(file,meta,row){
   const set=t=>row.lastChild.textContent=t;let main=file,thumbBlob=null;const isSvg=file.type==="image/svg+xml";
   if(!isSvg){set("Hazırlanıyor…");const {img,url}=await loadImg(file);
-    if(file.size>19*1024*1024||!OK_TYPES.includes(file.type)){main=await toJpeg(img,meta.kind==="pano"?8192:6000,.88);}
-    thumbBlob=await toJpeg(img,meta.kind==="pano"?1000:900,.8);URL.revokeObjectURL(url);}
+    if(file.type!=="image/gif"||file.size>19*1024*1024){main=await encodeImg(img,meta.kind==="pano"?8192:3840,meta.kind==="pano"?.86:.84);}
+    thumbBlob=await encodeImg(img,meta.kind==="pano"?1000:900,.8);URL.revokeObjectURL(url);}
   set("Yükleniyor…");
   const up=await S.assets.upload(main,{type:main.type||"image/jpeg"});
-  let th=null;if(thumbBlob){try{th=(await S.assets.upload(thumbBlob,{type:"image/jpeg"})).id;}catch(e){}}
+  let th=null;if(thumbBlob){try{th=(await S.assets.upload(thumbBlob,{type:thumbBlob.type||"image/jpeg"})).id;}catch(e){}}
   await S.db.collection("media").doc().set({...meta,asset:up.id,thumb:th,order:Date.now(),createdAt:new Date().toISOString(),fileName:file.name});
   set("Yüklendi");}
 function errMsg(e){const c=e&&e.code;return c==="too_large"?"Dosya çok büyük":c==="unsupported_type"?"Desteklenmeyen dosya türü":c==="quota_or_state"?"Depolama alanı dolu":c==="rate_limited"?"Çok hızlı yükleme, biraz bekleyip tekrar deneyin":(e&&e.message)||"Yüklenemedi";}
@@ -1239,7 +1240,7 @@ function bindMedia(m){
       else if(a==="up"||a==="down"){const peers=mediaOf(x=>x.kind===it.kind&&x.villa===it.villa&&(x.brand||"")===(it.brand||""));const i=peers.findIndex(x=>x.id===id);const j=a==="up"?i-1:i+1;
         if(j<0||j>=peers.length)return;const o=peers[j];const oi=it.order||0,oo=o.order||0;await doc.update({order:oo===oi?oo-1:oo});await S.db.doc("media/"+o.id).update({order:oi});}
       else if(a==="del"){if(b.dataset.armed!=="1"){b.dataset.armed="1";b.textContent="Silmek için tekrar tıkla";setTimeout(()=>{if(b.isConnected){b.dataset.armed="";b.textContent="Sil";}},3500);return;}
-        await doc.delete();for(const aid of [it.asset,it.thumb].filter(Boolean)){try{await S.assets.delete(aid);}catch(e){}}toast("Silindi");}
+        await doc.delete();for(const aid of [it.asset,it.thumb,it.original].filter(Boolean)){try{await S.assets.delete(aid);}catch(e){}}toast("Silindi");}
       }catch(e){toast("İşlem yapılamadı");}});});}
 function bindPins(m){
   const sel=m.querySelector("#pinSel");if(!sel)return;sel.onchange=()=>{S.pinPlan=sel.value;S.pendingPin=null;render();};
