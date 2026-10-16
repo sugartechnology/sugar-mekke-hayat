@@ -1215,6 +1215,7 @@ function pFrame(c,L,pg,total,title){c.fillStyle="#fff";c.fillRect(0,0,PW,PH);
   prule(c,PM,112,PW-PM);prule(c,PM,PH-72,PW-PM);
   ptx(c,`${S.cfg.projectName||"Hayat Mekke"} · ${S.cfg.subtitle||"Villa mobilya paketleri"}`,PM,PH-38,{size:17,color:PDF_MUTED});
   ptx(c,`${pg} / ${total}`,PW-PM,PH-38,{size:17,color:PDF_MUTED,align:"right"});}
+function pHeadV(c,villa,section){ptx(c,"Villa tipi",PM,170,{size:19,color:PDF_MUTED,weight:500});const w=ptx(c,villa,PM,244,{size:66,d:true});ptx(c,section,PM+w+30,244,{size:42,d:true,color:PDF_MUTED});}
 function pHead(c,eyebrow,title){ptx(c,eyebrow,PM,170,{size:19,color:PDF_MUTED,weight:500});ptx(c,title,PM,240,{size:58,d:true});}
 const pdfDate=()=>new Date().toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"});
 function pdfRenders(v,pkgs){const seen=new Set();const rank=n=>rankedFor(v).findIndex(b=>b.name===n);
@@ -1249,7 +1250,7 @@ function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);con
       r.forEach(b=>{pdot(c,x+9,y-7,b.name);ptx(c,pl(b.name),x+28,y,{size:20,max:w-200,weight:b===r[0]?600:400});ptx(c,money(net(b,v)),x+w,y,{size:21,align:"right",weight:net(b,v)===mn?600:400,color:net(b,v)===mn?"#2E6B5E":PDF_INK});y+=46;});}
     ptx(c,`${S.cur} · villa başı net`,PW-PM,PH-100,{size:16,color:PDF_MUTED,align:"right"});}});
   vs.forEach(v=>{const r=rankedFor(v).filter(b=>pkgs.includes(b.name));
-    if(opt.plan)P.push({title:`${v} · Kat planları`,draw:async(c)=>{pHead(c,`${v} · villa tipi`,"Kat planları");
+    if(opt.plan)P.push({title:`${v} · Kat planları`,draw:async(c)=>{pHeadV(c,v,"Kat planları");
       const plans=mediaOf(m=>m.kind==="plan"&&m.villa===v);const ax=PM,ay=280,aw=1120,ah=PH-110-ay;
       if(plans.length){const cols=plans.length>1?2:1,rows=Math.ceil(plans.length/cols),cw=(aw-(cols-1)*24)/cols,ch=(ah-(rows-1)*24)/rows;
         for(let k=0;k<plans.length;k++){const im=await pimg(blob(plans[k].asset));const x=ax+(k%cols)*(cw+24),y=ay+Math.floor(k/cols)*(ch+24);c.fillStyle=PDF_SOFT;c.fillRect(x,y,cw,ch);
@@ -1261,7 +1262,7 @@ function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);con
         ptx(c,vals.length?`${money(Math.min(...vals))} – ${money(Math.max(...vals))} ${S.cur}`:"",x,y+34,{size:19,color:PDF_MUTED});y+=40;});
       prule(c,x,y+18,x+w);y+=70;ptx(c,"Paket aralığı · net",x,y,{size:19,color:PDF_MUTED,weight:500});
       ptx(c,`${money(net(r[0],v))} – ${money(net(r[r.length-1],v))}`,x,y+56,{size:40,d:true});ptx(c,`${S.cur}, KDV hariç`,x,y+88,{size:18,color:PDF_MUTED});}});
-    if(opt.cost)P.push({title:`${v} · Paket maliyetleri`,draw:async(c)=>{pHead(c,`${v} · villa tipi`,"Paket maliyetleri");
+    if(opt.cost)P.push({title:`${v} · Paket maliyetleri`,draw:async(c)=>{pHeadV(c,v,"Paket maliyetleri");
       const secs=sections();const short=x=>/tamamlay/i.test(x)?"Tamamlayıcı":x;const cols=[["Paket",360,"l"],...secs.map(s=>[short(s),150,"r"]),["Mobilya",150,"r"],["Navlun",120,"r"],["Montaj + sigorta",160,"r"],["Net",150,"r"],["KDV dahil",160,"r"]];
       const tw=PW-PM*2,fixed=cols.slice(1).reduce((a,x)=>a+x[1],0);cols[0][1]=tw-fixed;let y=310;
       const xs=[];let xx=PM;cols.forEach(cl=>{xs.push(xx);xx+=cl[1];});
@@ -1284,7 +1285,7 @@ function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);con
         const ih=im?Math.min(Math.round(iw*im.naturalHeight/im.naturalWidth),720):630;
         c.fillStyle=PDF_SOFT;c.fillRect(ix,iy,iw,ih);if(im)fitContain(c,im,ix,iy,iw,ih);
         const items=pdfRoomItems(b.name,v,m.room,m.floor);const tot=items.reduce((a,it)=>a+(+it.v||0),0);
-        let ly=iy+ih+64;ptx(c,[v,m.floor].filter(Boolean).join(" · "),ix,ly,{size:19,color:PDF_MUTED,weight:500});
+        let ly=iy+ih+64;(()=>{const w=ptx(c,v,ix,ly,{size:30,d:true});if(m.floor)ptx(c,"· "+m.floor,ix+w+12,ly,{size:20,color:PDF_MUTED,weight:500});})();
         ly=pwrap(c,m.room||m.title||"Oda",ix,ly+64,iw-420,60,{size:56,d:true,lines:1});pdot(c,ix+9,ly-6,b.name);ptx(c,pl(b.name)+" paketi",ix+28,ly,{size:22,weight:600,max:iw-450});
         if(items.length){ptx(c,"Oda toplamı · net",ix+iw,iy+ih+64,{size:18,color:PDF_MUTED,align:"right"});ptx(c,money(tot)+" "+S.cur,ix+iw,iy+ih+136,{size:54,d:true,align:"right"});}
         ptx(c,`Villa toplamı (bu paket): ${money(net(b,v))} ${S.cur}`,ix+iw,ly,{size:17,color:PDF_MUTED,align:"right"});
