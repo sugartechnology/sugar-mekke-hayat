@@ -614,6 +614,12 @@ th.muted,td.muted{color:var(--muted)}
 .mitem[hidden]{display:none!important}
 @media (max-width:760px){.mfilter{position:static}.mrow{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}.mlab{width:auto}#mfQ{margin-left:0;min-width:180px}}
 .mchip.zero{opacity:.45}
+.drvcard{display:grid;gap:14px;margin:0 0 18px}
+.drvhead b{display:block;font-size:16px;margin-bottom:4px}.drvhead .muted{font-size:13px}.drvhead code{font-size:12px;background:var(--surface-2);padding:1px 5px}
+.drvform{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}.drvform .f{flex:1;min-width:260px}
+.drvbar{height:3px;background:var(--surface-2);overflow:hidden;margin:8px 0}.drvbar i{display:block;height:100%;width:0;background:var(--fg);transition:width .2s}
+.drvlog{max-height:220px;overflow:auto;display:grid;gap:2px;font-size:12.5px}
+.drvrow{padding:3px 0;border-bottom:1px solid var(--line);color:var(--muted)}.drvrow.ok{color:var(--good)}.drvrow.bad{color:#B4472F}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -1382,6 +1388,56 @@ function bindMediaFilter(m){if(!m.querySelector(".mfilter"))return;S.mf=S.mf||{v
   const d=m.querySelector("#mfDup");if(d)d.onchange=()=>{S.mf.dup=d.checked;applyMediaFilter(m);};
   m.querySelector("#mfReset").onclick=()=>{S.mf={v:"",b:"",k:"",q:"",dup:false};if(q)q.value="";if(d)d.checked=false;applyMediaFilter(m);};
   applyMediaFilter(m);}
+/* ---------- export to Google Drive ---------- */
+const DRIVE="Google Drive";
+const driveId=s=>{s=String(s||"").trim();const m=s.match(/folders\/([A-Za-z0-9_-]{10,})/)||s.match(/[?&]id=([A-Za-z0-9_-]{10,})/);return m?m[1]:(/^[A-Za-z0-9_-]{10,}$/.test(s)?s:"");};
+const dq=s=>String(s).replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+const driveFiles=p=>{const x=p&&(p.payload??p);return (x&&(x.files||x.items))||[];};
+function driveNames(list){const firmOf=b=>pkgByName(b)?.firm||b||"Ortak";const used=new Map();const seen=new Set();const out=[];
+  S.media.filter(m=>(m.kind||"render")==="render").sort(byOrder).forEach(m=>{const k=[m.villa,m.brand,m.room,m.fileName].join("|");if(seen.has(k))return;seen.add(k);
+    const base=[m.villa,m.floor,m.room||"Genel",firmOf(m.brand)].filter(Boolean).join(" - ");const n=(used.get(base)||0)+1;used.set(base,n);
+    out.push({m,firm:firmOf(m.brand),villa:m.villa||"Genel",base:`${base} ${String(n).padStart(2,"0")}`});});
+  const ids=new Set(list.map(m=>m.id));return out.filter(x=>ids.has(x.m.id));}
+async function driveCall(tool,input){const r=await S.mcp.callTool(DRIVE,tool,input,{cache:false});return r&&r.payload!==undefined?r.payload:r;}
+async function driveChildFolder(parent,name,create){
+  const p=await driveCall("search_files",{query:`parentId = '${dq(parent)}' and mimeType = 'application/vnd.google-apps.folder'`,pageSize:100,excludeContentSnippets:true});
+  const fs=driveFiles(p);const want=normB(name);const hit=fs.find(f=>normB(f.title||f.name)===want)||fs.find(f=>{const t=normB(f.title||f.name);return t&&(want.startsWith(t)||t.startsWith(want));});
+  if(hit)return hit.id;if(!create)return null;
+  const c=await driveCall("create_file",{title:name,contentMimeType:"application/vnd.google-apps.folder",parentId:parent});return c.id;}
+async function driveHas(parent,title){const p=await driveCall("search_files",{query:`parentId = '${dq(parent)}' and title = '${dq(title)}'`,pageSize:5,excludeContentSnippets:true});return driveFiles(p).length>0;}
+const b64=buf=>{const u=new Uint8Array(buf);let s="";for(let i=0;i<u.length;i+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000));return btoa(s);};
+async function runDriveExport(list,root,box){
+  const st=box.querySelector("#drvStatus"),bar=box.querySelector("#drvBar i"),log=box.querySelector("#drvLog");const say=t=>st.textContent=t;
+  const row=(t,cls)=>{const d=document.createElement("div");d.className="drvrow "+(cls||"");d.textContent=t;log.prepend(d);};
+  let fileArgs=false;try{const lt=await S.mcp.listTools();fileArgs=!!lt.fileArgs;}catch(e){}
+  const jobs=driveNames(list);const cache=new Map();let ok=0,skip=0,fail=0;
+  const folder=async(path)=>{const key=path.join("/");if(cache.has(key))return cache.get(key);let id=root;for(let i=0;i<path.length;i++){const k=path.slice(0,i+1).join("/");if(cache.has(k)){id=cache.get(k);continue;}id=await driveChildFolder(id,path[i],true);cache.set(k,id);}return id;};
+  for(let i=0;i<jobs.length;i++){const j=jobs[i];bar.style.width=(i/jobs.length*100)+"%";say(`${i+1} / ${jobs.length} · ${j.base}`);
+    try{const res=await fetch(blob(j.m.original||j.m.asset));if(!res.ok)throw new Error("Görsel okunamadı");const bl=await res.blob();
+      const type=bl.type||"image/jpeg",ext=type.includes("png")?"png":type.includes("webp")?"webp":"jpg",title=`${j.base}.${ext}`;
+      const parent=await folder([j.firm,"Renders",j.villa]);
+      if(await driveHas(parent,title)){skip++;row(`Zaten var · ${j.firm}/Renders/${j.villa}/${title}`,"skip");continue;}
+      const input={title,contentMimeType:type,parentId:parent,disableConversionToGoogleType:true};
+      if(fileArgs)input.base64Content={$file:{data:bl,name:title,type}};
+      else if(bl.size<700*1024)input.base64Content=b64(await bl.arrayBuffer());
+      else throw new Error("Dosya bu görünümde doğrudan yüklenemeyecek kadar büyük");
+      await driveCall("create_file",input);ok++;row(`Yüklendi · ${j.firm}/Renders/${j.villa}/${title}`,"ok");}
+    catch(e){fail++;const c=e&&e.code;row(`Hata · ${j.base}: ${c==="not_in_manifest"||c==="approval_required"?"Google Drive izni verilmedi":c==="server_not_connected"?"Google Drive bağlı değil":(e&&e.message)||"yüklenemedi"}`,"bad");
+      if(c==="not_in_manifest"||c==="server_not_connected"||c==="needs_reauth"||c==="approval_required")break;}}
+  bar.style.width="100%";say(`${ok} yüklendi · ${skip} zaten vardı${fail?` · ${fail} hata`:""}`);return {ok,skip,fail};}
+function driveCardHTML(){const id=S.keys.driveFolder||"";
+  return `<div class="card drvcard" id="drvCard"><div class="drvhead"><div><b>Google Drive'a aktar</b><span class="muted">Filtrelenen görseller marka klasörlerine yüklenir: <code>Firma / Renders / Villa / Villa - Kat - Oda - Firma 01.jpg</code>. Orijinal çözünürlük kullanılır; aynı adlı dosya varsa atlanır.</span></div></div>
+    <div class="drvform"><label class="f">Drive klasörü (bağlantı ya da kimlik)<input id="drvFolder" value="${esc(id?"https://drive.google.com/drive/folders/"+id:"")}" placeholder="https://drive.google.com/drive/folders/…"></label>
+     <button class="btn primary" id="drvGo" ${S.mcp?"":"disabled"}>Filtrelenen görselleri aktar</button></div>
+    <div id="drvBox" hidden><div class="status" id="drvStatus"></div><div class="drvbar" id="drvBar"><i></i></div><div class="drvlog" id="drvLog"></div></div></div>`;}
+function bindDrive(m){const go=m.querySelector("#drvGo");if(!go)return;
+  go.onclick=async()=>{const root=driveId(m.querySelector("#drvFolder").value);if(!root){toast("Geçerli bir Drive klasör bağlantısı girin");return;}
+    const list=[...m.querySelectorAll(".mitem")].filter(el=>!el.hidden).map(el=>S.media.find(x=>x.id===el.dataset.mid)).filter(Boolean);
+    if(!list.length){toast("Filtrede görsel yok");return;}
+    if(root!==S.keys.driveFolder){try{await saveKeys({driveFolder:root});}catch(e){}}
+    const box=m.querySelector("#drvBox");box.hidden=false;m.querySelector("#drvLog").innerHTML="";go.disabled=true;S.busy=true;
+    try{await runDriveExport(list,root,box);}finally{go.disabled=false;S.busy=false;}};}
+
 function adminMedia(){
   if(!S.assets)return `<div class="empty"><strong>Yükleme bu görünümde kapalı</strong><span>Görsel yüklemek için sayfayı düzenleme yetkisiyle açın.</span></div>`;
   const vs=villas().length?villas():["Villa A","Villa B","Villa C"],fs=floorsOnly().length?floorsOnly():["Zemin kat","1. kat","Çatı katı"];
@@ -1402,6 +1458,7 @@ function adminMedia(){
      <div class="uplist" id="upList"></div></div>
    <div class="block-head"><div><span class="eyebrow" id="mfCount">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
    ${items.length?mediaFilterHTML(items,vs,pk):""}
+   ${items.length&&S.mcp?driveCardHTML():""}
    ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}" data-fv="${esc(m.villa||"")}" data-fb="${esc(m.brand||"")}" data-fk="${esc(m.kind||"render")}" data-fq="${esc([m.room,m.title,m.fileName,m.floor].filter(Boolean).join(" ").toLocaleLowerCase("tr"))}" data-dup="${dupKeys(items).has(m.id)?1:0}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.brand?" · "+esc(pl(m.brand)):""}${m.cover?" · Kapak":""}</span></div>
      <div class="bd"><div class="form">
       <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
@@ -1475,7 +1532,7 @@ async function uploadOne(file,meta,row){
   set("Yüklendi");}
 function errMsg(e){const c=e&&e.code;return c==="too_large"?"Dosya çok büyük":c==="unsupported_type"?"Desteklenmeyen dosya türü":c==="quota_or_state"?"Depolama alanı dolu":c==="rate_limited"?"Çok hızlı yükleme, biraz bekleyip tekrar deneyin":(e&&e.message)||"Yüklenemedi";}
 function bindMedia(m){
-  if(!S.assets)return;bindMediaFilter(m);
+  if(!S.assets)return;bindMediaFilter(m);bindDrive(m);
   const drop=m.querySelector("#drop"),inp=m.querySelector("#upFile"),list=m.querySelector("#upList");
   const uV=m.querySelector("#upVilla"),uF=m.querySelector("#upFloor"),uB=m.querySelector("#upBrand"),uR=m.querySelector("#upRoom"),uN=m.querySelector("#upRoomNew"),uI=m.querySelector("#upInfo");
   const info=()=>{uI.innerHTML=uR.value==="__new"?"Yeni oda adı yazın; kalem listesinde olmayan bir alan olarak kaydedilir.":roomInfo(uV.value,uF.value||null,uB.value||null,uR.value);};
@@ -1576,7 +1633,7 @@ function mergeParsed(p,extraFields){
   const brandsN=p.brands.map(b=>{const name=map[b.name];const o=old[oldMap[b.name]]?.rates||{};const r={};["freight","assembly","insurance"].forEach(k=>r[k]=b.rates[k]!=null?b.rates[k]:(+o[k]||0));
     const values={};p.villas.forEach(v=>values[v]=p.sections.map((_,i)=>+(b.values[v]?.[i]||0)));const o2={name,firm:b.name,rates:r,values};if(b.layers)o2.layers=b.layers;return o2;});
   return {...cur,...extraFields,villas:p.villas,sections:p.sections,brands:brandsN,vat:p.vat!=null?p.vat:cur.vat,villaCount:p.villaCount||cur.villaCount,fx:p.fx||cur.fx,currency:"USD",updatedAt:new Date().toISOString()};}
-async function saveKeys(patch){const k={bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
+async function saveKeys(patch){const k={...S.keys,bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
 async function saveCfg(c,msg){try{delete c.sheetId;
   if(S._pendingKeys){await saveKeys({bySource:S._pendingKeys});S._pendingKeys=null;}
   await S.db.doc("config/main").set(c);if(msg)toast(msg);return true;}catch(e){toast(e?.code==="invalid_argument"?"Kaydetme yetkiniz yok":"Kaydedilemedi, tekrar deneyin");return false;}}
@@ -1632,6 +1689,7 @@ function bindInfo(m){m.querySelector("#saveInfo").onclick=()=>{if(!S.cfg)return;
 let renderPending=false;
 const typing=()=>document.activeElement&&/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
 function scheduleRender(){
+  if(S.busy&&S.view==="admin"){renderPending=true;return;}
   if(S.view==="admin"&&typing()&&S.admin!=="pins"){renderPending=true;return;}
   if($("#overlay").children.length){renderTabs();renderPending=true;return;}
   const y=window.scrollY;render();window.scrollTo({top:y});}
@@ -1651,7 +1709,7 @@ new MutationObserver(()=>{if(!$("#overlay").children.length&&renderPending){rend
   db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;S.dbReady=true;scheduleRender();},()=>{S.dbReady=true;render();});
   db.collection("media").onSnapshot(q=>{S.media=q.docs.map(d=>({id:d.id,...d.data()}));scheduleRender();},()=>{});
   db.collection("boq").onSnapshot(q=>{const b={},ids={};q.docs.forEach(d=>{const x=d.data();if(x.package){b[x.package]=x.villas||{};ids[x.package]=d.id;}});S.boq=b;S.boqDocs=ids;scheduleRender();},()=>{});
-  if(S.canEdit)db.doc("private/keys").onSnapshot(s=>{if(s.exists){const d=s.data();S.keys={bySource:{...(d.bySource||{})},sheetId:d.sheetId||""};}},()=>{});
+  if(S.canEdit)db.doc("private/keys").onSnapshot(s=>{if(s.exists){const d=s.data();S.keys={bySource:{...(d.bySource||{})},sheetId:d.sheetId||"",driveFolder:d.driveFolder||""};}},()=>{});
 })();
 render();
 })();
