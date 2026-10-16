@@ -1,28 +1,29 @@
 {
   "brands": [
     {
-      "name": "Silver",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.005
-      },
+      "firm": "Bellona",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 3628.0,
-          "insurance": 366.0
+          "assembly": 3628,
+          "freight": 7000,
+          "insurance": 366
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 3651.0,
-          "insurance": 369.0
+          "assembly": 3651,
+          "freight": 7000,
+          "insurance": 369
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 3653.0,
-          "insurance": 369.0
+          "assembly": 3653,
+          "freight": 7000,
+          "insurance": 369
         }
+      },
+      "name": "Silver",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
       },
       "values": {
         "Villa A": [
@@ -43,32 +44,32 @@
           9965,
           9133
         ]
-      },
-      "firm": "Bellona"
+      }
     },
     {
-      "name": "Gold",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.005
-      },
+      "firm": "Inci Design",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 4223.0,
-          "insurance": 428.0
+          "assembly": 4223,
+          "freight": 7000,
+          "insurance": 428
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 4333.0,
-          "insurance": 440.0
+          "assembly": 4333,
+          "freight": 7000,
+          "insurance": 440
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 4466.0,
-          "insurance": 454.0
+          "assembly": 4466,
+          "freight": 7000,
+          "insurance": 454
         }
+      },
+      "name": "Gold",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
       },
       "values": {
         "Villa A": [
@@ -89,32 +90,32 @@
           14096,
           9133
         ]
-      },
-      "firm": "İnci Design"
+      }
     },
     {
-      "name": "Platinum",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.005
-      },
+      "firm": "Sardunya",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 4756.0,
-          "insurance": 484.0
+          "assembly": 4756,
+          "freight": 7000,
+          "insurance": 484
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 4890.0,
-          "insurance": 498.0
+          "assembly": 4890,
+          "freight": 7000,
+          "insurance": 498
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 5014.0,
-          "insurance": 511.0
+          "assembly": 5014,
+          "freight": 7000,
+          "insurance": 511
         }
+      },
+      "name": "Platinum",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
       },
       "values": {
         "Villa A": [
@@ -135,32 +136,32 @@
           17080,
           9133
         ]
-      },
-      "firm": "Sardunya"
+      }
     },
     {
-      "name": "Pearl",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.005
-      },
+      "firm": "Gabba",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 5999.0,
-          "insurance": 614.0
+          "assembly": 5999,
+          "freight": 7000,
+          "insurance": 614
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 7379.0,
-          "insurance": 757.0
+          "assembly": 7379,
+          "freight": 7000,
+          "insurance": 757
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 7263.0,
-          "insurance": 745.0
+          "assembly": 7263,
+          "freight": 7000,
+          "insurance": 745
         }
+      },
+      "name": "Pearl",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
       },
       "values": {
         "Villa A": [
@@ -181,32 +182,32 @@
           17080,
           9133
         ]
-      },
-      "firm": "Gabba"
+      }
     },
     {
-      "name": "Emerald",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.005
-      },
+      "firm": "Modis",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 6330.0,
-          "insurance": 648.0
+          "assembly": 6330,
+          "freight": 7000,
+          "insurance": 648
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 6893.0,
-          "insurance": 707.0
+          "assembly": 6893,
+          "freight": 7000,
+          "insurance": 707
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 7540.0,
-          "insurance": 774.0
+          "assembly": 7540,
+          "freight": 7000,
+          "insurance": 774
         }
+      },
+      "name": "Emerald",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
       },
       "values": {
         "Villa A": [
@@ -227,32 +228,32 @@
           24303,
           9133
         ]
-      },
-      "firm": "Modis"
+      }
     },
     {
-      "name": "Diamond",
-      "rates": {
-        "freight": 0,
-        "assembly": 0,
-        "insurance": 0.004
-      },
+      "firm": "Homage",
       "layers": {
         "Villa A": {
-          "freight": 7000.0,
-          "assembly": 5739.0,
-          "insurance": 565.0
+          "assembly": 5739,
+          "freight": 7000,
+          "insurance": 565
         },
         "Villa B": {
-          "freight": 7000.0,
-          "assembly": 6170.0,
-          "insurance": 608.0
+          "assembly": 6170,
+          "freight": 7000,
+          "insurance": 608
         },
         "Villa C": {
-          "freight": 7000.0,
-          "assembly": 6545.0,
-          "insurance": 645.0
+          "assembly": 6545,
+          "freight": 7000,
+          "insurance": 645
         }
+      },
+      "name": "Diamond",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.004
       },
       "values": {
         "Villa A": [
@@ -273,14 +274,15 @@
           25144,
           9133
         ]
-      },
-      "firm": "Homage"
+      }
     }
   ],
   "currency": "USD",
+  "freightNote": "Navlun ve lojistik villa başı sabit tutar",
   "fx": 3.75,
   "location": "Mekke · Suudi Arabistan",
   "projectName": "Hayat Mekke",
+  "scope": "228 kalemlik mobilya metrajı (BoQ rev07); tüm paketler aynı şablon ve aynı miktarlarla fiyatlandırıldı.",
   "sections": [
     "Zemin kat",
     "1. kat",
@@ -289,8 +291,8 @@
   ],
   "source": "sheets",
   "subtitle": "Villa mobilya paketleri",
-  "syncedAt": "2026-10-16T12:10:00Z",
-  "updatedAt": "2026-10-16T12:35:00Z",
+  "syncedAt": "2026-10-16T12:41:05.303Z",
+  "updatedAt": "2026-10-16T12:41:05.304Z",
   "vat": 0.15,
   "villaCount": 250,
   "villaMeta": {},
@@ -298,7 +300,5 @@
     "Villa A",
     "Villa B",
     "Villa C"
-  ],
-  "scope": "228 kalemlik mobilya metrajı (BoQ rev07); tüm paketler aynı şablon ve aynı miktarlarla fiyatlandırıldı.",
-  "freightNote": "Navlun ve lojistik villa başı sabit tutar"
+  ]
 }
