@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Hayat Mekke Villa Sunumu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+/* Layout: sticky project bar + tabbed workspace; villa view pairs plan (left) with rooms (right); presentation is a full-screen deck. Dark-first, basalt + brass. */
+:root{
+  --bg:#111513; --surface:#191e1b; --surface-2:#212824; --line:#2e3631;
+  --fg:#ebe5d9; --muted:#9aa197; --accent:#c8a45e; --accent-ink:#1a1408;
+  --good:#86a98e; --good-bg:rgba(134,169,142,.14); --bad:#d0866f; --bad-bg:rgba(208,134,111,.13);
+  --overlay:rgba(8,10,9,.92);
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#eef0eb; --surface:#ffffff; --surface-2:#f4f5f1; --line:#d8dcd3;
+  --fg:#1b201d; --muted:#5f665f; --accent:#8b6a2b; --accent-ink:#fffaf0;
+  --good:#3f7a4f; --good-bg:rgba(63,122,79,.11); --bad:#b0533a; --bad-bg:rgba(176,83,58,.1);
+  --overlay:rgba(14,17,15,.93); color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#eef0eb; --surface:#ffffff; --surface-2:#f4f5f1; --line:#d8dcd3;
+  --fg:#1b201d; --muted:#5f665f; --accent:#8b6a2b; --accent-ink:#fffaf0;
+  --good:#3f7a4f; --good-bg:rgba(63,122,79,.11); --bad:#b0533a; --bad-bg:rgba(176,83,58,.1);
+  --overlay:rgba(14,17,15,.93); color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:.01em}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1280px;margin:0 auto}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.muted{color:var(--muted)}
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
+  margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
+.bar-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-block:12px}
+.brand-mark{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark .seal{width:34px;height:34px;flex:none;border:1px solid var(--accent);display:grid;place-items:center;transform:rotate(45deg)}
+.brand-mark .seal span{width:16px;height:16px;border:1px solid var(--accent);transform:rotate(45deg)}
+.brand-mark h1{font-size:20px;line-height:1.1}
+.brand-mark small{display:block;color:var(--muted);font-size:12px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.tab{background:none;border:0;padding:8px 12px;border-radius:6px;color:var(--muted);font-weight:600;font-size:14px}
+.tab:hover{color:var(--fg);background:var(--surface-2)}
+.tab[aria-current="true"]{color:var(--fg);background:var(--surface-2);box-shadow:inset 0 -2px 0 var(--accent)}
+.bar-actions{display:flex;gap:8px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{background:none;border:0;padding:6px 10px;font-size:12px;font-weight:700;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface-2);color:var(--fg)}
+.btn{border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:6px;font-weight:600;font-size:14px;display:inline-flex;gap:8px;align-items:center}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn.sm{padding:5px 10px;font-size:12.5px}
+.btn.danger{color:var(--bad)}
+.btn:disabled{opacity:.5;cursor:default}
+main{padding-top:28px;display:grid;gap:36px}
+section.block{display:grid;gap:16px}
+.block-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.block-head h2{font-size:26px}
+/* hero */
+.hero{position:relative;border-radius:10px;overflow:hidden;min-height:320px;display:flex;align-items:flex-end;background:var(--surface)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(6,8,7,.82))}
+.hero.pattern::before{content:"";position:absolute;inset:0;background:var(--accent);opacity:.16;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg fill='none' stroke='black' stroke-width='1.2'%3E%3Crect x='16' y='16' width='32' height='32'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='7'/%3E%3Cpath d='M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48'/%3E%3C/g%3E%3C/svg%3E") 0 0/64px 64px;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg fill='none' stroke='black' stroke-width='1.2'%3E%3Crect x='16' y='16' width='32' height='32'/%3E%3Crect x='16' y='16' width='32' height='32' transform='rotate(45 32 32)'/%3E%3Ccircle cx='32' cy='32' r='7'/%3E%3Cpath d='M0 0L16 16M64 0L48 16M0 64L16 48M64 64L48 48'/%3E%3C/g%3E%3C/svg%3E") 0 0/64px 64px}
+.hero-txt{position:relative;z-index:1;padding:28px;color:#f3eee4;max-width:760px}
+.hero-txt h2{font-size:clamp(30px,5vw,52px);line-height:1.05}
+.hero-txt p{margin:10px 0 0;color:#d6d0c4;max-width:60ch}
+.hero-txt .eyebrow{color:#d9bd84}
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kpi{background:var(--surface);padding:18px 20px;display:grid;gap:4px;align-content:start}
+.kpi b{font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1}
+.kpi .sub{font-size:12.5px;color:var(--muted)}
+/* ranking */
+.rank{display:grid;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px}
+.rank-row{display:grid;grid-template-columns:28px minmax(110px,170px) 1fr auto;gap:14px;align-items:center;padding:9px 10px;border-radius:6px}
+.rank-row:hover{background:var(--surface-2)}
+.rank-row .pos{font-family:var(--display);font-size:20px;color:var(--muted)}
+.rank-row.best .pos{color:var(--accent)}
+.rank-row .nm{font-weight:700;text-transform:capitalize;min-width:0;overflow-wrap:anywhere}
+.track{height:12px;background:var(--surface-2);border-radius:2px;position:relative}
+.fill{position:absolute;inset:0 auto 0 0;background:color-mix(in srgb,var(--accent) 55%,var(--surface-2));border-radius:2px}
+.rank-row.best .fill{background:var(--accent)}
+.rank-row .vals{text-align:right;font-size:13px;min-width:150px}
+.rank-row .vals b{font-size:15px}
+.delta{font-size:12px;font-weight:700;padding:2px 7px;border-radius:999px;background:var(--bad-bg);color:var(--bad);white-space:nowrap}
+.delta.ok{background:var(--good-bg);color:var(--good)}
+@media (max-width:640px){.rank-row{grid-template-columns:24px 1fr auto;}.rank-row .track{grid-column:2/4;grid-row:2}}
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:9px 12px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left}
+thead th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--surface-2)}
+tbody tr:last-child td{border-bottom:0}
+tr.total td{font-weight:700;background:var(--surface-2)}
+td.best{color:var(--good);font-weight:700}
+td.worst{color:var(--bad)}
+tr.is-best td:first-child{box-shadow:inset 3px 0 0 var(--good)}
+.cap{text-transform:capitalize}
+/* chips */
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--muted)}
+.chip:hover{color:var(--fg)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--fg);background:color-mix(in srgb,var(--accent) 14%,var(--surface))}
+.chip .c{font-weight:500;opacity:.75;margin-left:4px}
+/* villa view */
+.villa-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
+@media (max-width:900px){.villa-grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:12px;align-content:start;min-width:0}
+.plan-stage{position:relative;background:var(--surface-2);border-radius:6px;overflow:hidden;min-height:260px;display:grid;place-items:center}
+.plan-stage img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain}
+.plan-inner{position:relative;width:100%}
+.pin{position:absolute;transform:translate(-50%,-50%);border:0;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.35);white-space:nowrap}
+.pin[aria-pressed="true"]{outline:2px solid var(--fg)}
+.pin.pending{background:var(--fg);color:var(--bg)}
+.empty{border:1px dashed var(--line);border-radius:8px;padding:28px 18px;text-align:center;color:var(--muted);display:grid;gap:8px;justify-items:center}
+.empty strong{color:var(--fg);font-weight:600}
+.rooms{display:grid;gap:2px}
+.room{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 10px;border-radius:6px;background:none;border:0;text-align:left;width:100%}
+.room:hover{background:var(--surface-2)}
+.room[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 16%,var(--surface))}
+.room .tags{display:flex;gap:6px;font-size:11.5px;color:var(--muted)}
+.tag360{background:var(--accent);color:var(--accent-ink);font-weight:700;border-radius:4px;padding:1px 6px;font-size:10.5px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.shot{position:relative;border:0;padding:0;border-radius:8px;overflow:hidden;background:var(--surface-2);aspect-ratio:4/3;max-width:100%;display:block;width:100%}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.shot:hover img{transform:scale(1.04)}
+.shot .lbl{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;background:linear-gradient(transparent,rgba(5,7,6,.85));color:#f1ece2;font-size:13px;text-align:left;display:flex;justify-content:space-between;gap:8px;align-items:end}
+.shot .lbl small{display:block;color:#cfc8ba;font-size:11px}
+.shot .badge{position:absolute;top:10px;left:10px}
+.villa-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.vcard{border:1px solid var(--line);background:var(--surface);border-radius:10px;overflow:hidden;padding:0;text-align:left;display:grid}
+.vcard .img{aspect-ratio:16/9;background:var(--surface-2);max-width:100%}
+.vcard .img img{width:100%;height:100%;object-fit:cover;display:block}
+.vcard .bd{padding:14px 16px;display:grid;gap:4px}
+.vcard h3{font-size:22px}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.split>*{min-width:0}
+/* heat */
+td.heat{position:relative}
+/* overlay */
+.ov{position:fixed;inset:0;z-index:100;background:var(--overlay);display:flex;flex-direction:column;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);color:#efe9dd}
+.ov-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px}
+.ov-top .t{font-size:14px;min-width:0}
+.ov-top .t b{font-family:var(--display);font-weight:400;font-size:20px;display:block}
+.ov-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#efe9dd;border-radius:6px;padding:7px 12px;font-weight:600;font-size:13px}
+.ov-btn:hover{background:rgba(255,255,255,.16)}
+.ov-body{flex:1;min-height:0;position:relative;display:grid;place-items:center;padding:0 16px}
+.ov-body img{max-width:100%;max-height:100%;object-fit:contain}
+.ov-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:64px;border-radius:6px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:22px}
+.ov-nav.l{left:max(12px,env(safe-area-inset-left,0px))}.ov-nav.r{right:max(12px,env(safe-area-inset-right,0px))}
+.pano{position:absolute;inset:0;touch-action:none;cursor:grab;background:#000}
+.pano:active{cursor:grabbing}
+.pano canvas{display:block;width:100%;height:100%}
+.pano-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:6px 12px;border-radius:999px;pointer-events:none}
+.pano-strip{display:flex;gap:8px;overflow-x:auto;padding:10px 16px 14px}
+.pano-strip button{flex:none;width:120px;border:2px solid transparent;border-radius:6px;padding:0;overflow:hidden;background:#222;color:#fff;text-align:left}
+.pano-strip button[aria-pressed="true"]{border-color:var(--accent)}
+.pano-strip img{width:100%;aspect-ratio:2/1;object-fit:cover;display:block}
+.pano-strip span{display:block;font-size:11px;padding:4px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.loading{color:#bbb;font-size:13px}
+/* deck */
+.deck{position:fixed;inset:0;z-index:120;background:#0d100e;color:#eee8dc;display:flex;flex-direction:column}
+.deck .stage{flex:1;min-height:0;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:clamp(20px,4vw,56px);padding-left:max(clamp(20px,4vw,56px),env(safe-area-inset-left,0px));padding-right:max(clamp(20px,4vw,56px),env(safe-area-inset-right,0px));gap:18px;animation:fadein .45s ease}
+@keyframes fadein{from{opacity:.0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.slide{animation:none}.shot img{transition:none}}
+.slide h2{font-size:clamp(28px,4vw,54px);line-height:1.05;color:#f3eee4}
+.slide .eyebrow{color:#cfae6c}
+.slide .grow{flex:1;min-height:0;position:relative}
+.slide.cover{justify-content:flex-end;background-size:cover;background-position:center}
+.slide.cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.85))}
+.slide.cover>*{position:relative}
+.slide .imgfit{position:absolute;inset:0;display:grid;place-items:center}
+.slide .imgfit img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
+.slide .full-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide .caption{position:absolute;left:0;right:0;bottom:0;padding:60px clamp(20px,4vw,56px) clamp(20px,3vw,40px);background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.slide .caption h2{font-size:clamp(24px,3vw,40px)}
+.slide .kpis{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.12)}
+.slide .kpi{background:#151a17}
+.slide .kpi .sub{color:#a7ab9f}
+.slide .rank,.slide .tbl-wrap{background:#151a17;border-color:#2b322d}
+.slide th,.slide td{border-color:#2b322d}
+.slide thead th{background:#1c221f;color:#a7ab9f}
+.slide tr.total td{background:#1c221f}
+.slide .track{background:#232a26}
+.slide .muted{color:#a7ab9f}
+.deck-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;padding-bottom:max(10px,env(safe-area-inset-bottom,0px));border-top:1px solid #222a25;font-size:13px}
+.deck-bar .prog{flex:1;height:3px;background:#242b27;border-radius:2px;overflow:hidden}
+.deck-bar .prog i{display:block;height:100%;background:#c8a45e}
+.plan-pins-deck{position:relative;max-width:100%;max-height:100%}
+/* admin */
+.subtabs{display:flex;gap:4px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.subtab{background:none;border:0;padding:10px 14px;color:var(--muted);font-weight:600;border-bottom:2px solid transparent;margin-bottom:-1px}
+.subtab[aria-current="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+label.f{display:grid;gap:5px;font-size:12px;font-weight:600;color:var(--muted)}
+.f input,.f select,.f textarea,input.cell{background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:8px 10px;color:var(--fg);font-size:14px;width:100%;min-width:0}
+.f textarea{min-height:110px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+input.cell{padding:5px 7px;text-align:right;width:110px;font-variant-numeric:tabular-nums}
+.drop{border:1.5px dashed var(--line);border-radius:10px;padding:26px;text-align:center;display:grid;gap:8px;justify-items:center;background:var(--surface-2)}
+.drop.over{border-color:var(--accent)}
+.uplist{display:grid;gap:6px;font-size:13px}
+.uplist .row{display:flex;justify-content:space-between;gap:10px}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.mitem{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface);display:grid;min-width:0}
+.mitem .th{aspect-ratio:16/9;background:var(--surface-2);position:relative;max-width:100%}
+.mitem .th img{width:100%;height:100%;object-fit:cover;display:block}
+.mitem .th .kind{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px}
+.mitem .bd{padding:10px;display:grid;gap:8px}
+.mitem .bd .form{grid-template-columns:1fr 1fr;gap:8px}
+.mitem .f input,.mitem .f select{padding:6px 8px;font-size:13px}
+.mitem .acts{display:flex;gap:6px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:600;font-size:14px;z-index:200;max-width:calc(100vw - 32px)}
+.note{font-size:13px;color:var(--muted);max-width:75ch}
+.hr{height:1px;background:var(--line)}
+.status{font-size:12.5px;color:var(--muted)}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <div class="brand-mark"><div class="seal"><span></span></div><div><h1 id="pname">Hayat Mekke</h1><small id="psub">Villa mobilya paketleri</small></div></div>
+  <nav class="tabs" id="tabs" aria-label="Bölümler"></nav>
+  <div class="bar-actions">
+    <div class="seg" role="group" aria-label="Para birimi"><button id="curUSD" aria-pressed="true">USD</button><button id="curSAR" aria-pressed="false">SAR</button></div>
+    <button class="btn primary" id="startDeck">Sunumu başlat</button>
+  </div>
+</div></header>
+<main class="wrap" id="main">
+  <div class="empty" style="margin-top:40px"><strong>Sunum yükleniyor</strong><span>Villa verileri ve görseller birkaç saniye içinde gelecek.</span></div>
+</main>
+<div id="overlay"></div>
+
+<script src="data/data.js"></script>
+<script>
+(function(){
+"use strict";
+const SHEET_RANGE="Veri!A1:J80";
+const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
+const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
+const S={cfg:null,keys:{bySource:{},sheetId:""},media:[],view:"overview",villa:null,floor:null,room:null,brandFilter:null,brand:null,cur:"USD",
+  canEdit:false,db:null,assets:null,mcp:null,dbReady:false,admin:"media",pinPlan:null,pendingPin:null};
+try{const v=localStorage.getItem("hm_cur2");if(v==="SAR")S.cur="SAR";const t=localStorage.getItem("hm_view");if(t)S.view=t;}catch(e){}
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const nf0=new Intl.NumberFormat("tr-TR",{maximumFractionDigits:0});
+const nf1=new Intl.NumberFormat("tr-TR",{minimumFractionDigits:1,maximumFractionDigits:1});
+const conv=v=>S.cur==="SAR"?v*(S.cfg?.fx||3.75):v;
+const money=v=>nf0.format(Math.round(conv(v)));
+const big=v=>{const x=conv(v);return x>=1e6?nf1.format(x/1e6)+" M":nf0.format(Math.round(x));};
+const pct=v=>nf1.format(v*100)+"%";
+const blob=id=>!id?"":(/[\/.]/.test(id)?id:"/_blob/"+id);
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2600);}
+
+/* ---------- calculations ---------- */
+const villas=()=>S.cfg?.villas||[];
+const sections=()=>S.cfg?.sections||[];
+const brands=()=>S.cfg?.brands||[];
+const floorsOnly=()=>sections().filter(s=>!/tamamlay/i.test(s));
+function furn(b,v){return (b.values?.[v]||[]).reduce((a,x)=>a+(+x||0),0);}
+function extra(b){const r=b.rates||{};return (+r.freight||0)+(+r.assembly||0)+(+r.insurance||0);}
+function layers(b,v){const f=furn(b,v),r=b.rates||{};const comp=sections().reduce((a,s,i)=>a+(/tamamlay/i.test(s)?(+b.values?.[v]?.[i]||0):0),0);
+  const fr=f*(+r.freight||0),as=f*(+r.assembly||0),ins=f*(+r.insurance||0);const net=f+fr+as+ins;const vat=net*(S.cfg.vat||0);
+  return {furn:f,furnExcl:f-comp,comp,freight:fr,assembly:as,insurance:ins,net,vat,gross:net+vat};}
+function net(b,v){return furn(b,v)*(1+extra(b));}
+function gross(b,v){return net(b,v)*(1+(S.cfg.vat||0));}
+function total3(b){return villas().reduce((a,v)=>a+net(b,v),0);}
+function avgGross(b){const vs=villas();return vs.length?vs.reduce((a,v)=>a+gross(b,v),0)/vs.length:0;}
+function budget(b){return avgGross(b)*(S.cfg.villaCount||0);}
+function ranked(){return brands().slice().sort((a,b)=>total3(a)-total3(b));}
+
+/* ---------- media helpers ---------- */
+const byOrder=(a,b)=>(a.order||0)-(b.order||0);
+function mediaOf(f){return S.media.filter(f).sort(byOrder);}
+function coverImg(villa){const c=mediaOf(m=>m.kind==="render"&&m.cover&&(!villa||m.villa===villa));if(c[0])return c[0];
+  return mediaOf(m=>m.kind==="render"&&(!villa||m.villa===villa))[0]||null;}
+function thumb(m){return blob(m.thumb||m.asset);}
+function roomsFor(villa,floor){const set=new Map();
+  S.media.filter(m=>m.villa===villa&&(!floor||m.floor===floor)&&m.room&&(m.kind==="render"||m.kind==="pano")).forEach(m=>{
+    const r=set.get(m.room)||{room:m.room,renders:0,panos:0};m.kind==="pano"?r.panos++:r.renders++;set.set(m.room,r);});
+  S.media.filter(m=>m.kind==="plan"&&m.villa===villa&&(!floor||m.floor===floor)).forEach(p=>(p.pins||[]).forEach(pin=>{if(!set.has(pin.room))set.set(pin.room,{room:pin.room,renders:0,panos:0});}));
+  return [...set.values()];}
+
+/* ---------- header ---------- */
+const VIEWS=[["overview","Genel bakış"],["villas","Villalar"],["packages","Paketler"],["admin","Yönetim"]];
+function renderTabs(){
+  $("#tabs").innerHTML=VIEWS.filter(([k])=>k!=="admin"||S.canEdit).map(([k,l])=>`<button class="tab" data-view="${k}" aria-current="${S.view===k}">${l}</button>`).join("");
+  $("#curSAR").setAttribute("aria-pressed",S.cur==="SAR");$("#curUSD").setAttribute("aria-pressed",S.cur==="USD");
+  if(S.cfg){$("#pname").textContent=S.cfg.projectName||"Hayat Mekke";$("#psub").textContent=S.cfg.subtitle||"Villa mobilya paketleri";}
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-view]");if(!b)return;setView(b.dataset.view);});
+function setView(v){S.view=v;try{localStorage.setItem("hm_view",v)}catch(e){}render();window.scrollTo({top:0});}
+$("#curSAR").onclick=()=>{S.cur="SAR";try{localStorage.setItem("hm_cur2","SAR")}catch(e){}render();};
+$("#curUSD").onclick=()=>{S.cur="USD";try{localStorage.setItem("hm_cur2","USD")}catch(e){}render();};
+$("#startDeck").onclick=()=>openDeckSetup();
+
+/* ---------- main render ---------- */
+function render(){
+  renderTabs();
+  const m=$("#main");
+  if(S.view==="admin"&&!S.canEdit)S.view="overview";
+  if(!S.cfg){
+    if(S.view==="admin"){m.innerHTML=adminHTML();bindAdmin();return;}
+    m.innerHTML=`<div class="empty" style="margin-top:40px"><strong>${S.dbReady?"Henüz veri yok":"Sunum yükleniyor"}</strong>
+      <span>${S.dbReady?(S.canEdit?"Yönetim bölümünden Google Sheets verisini çekin ya da Excel tablosunu yapıştırın.":"Proje verileri yüklendiğinde sunum burada görünecek."):"Villa verileri ve görseller birkaç saniye içinde gelecek."}</span>
+      ${S.dbReady&&S.canEdit?`<button class="btn primary" data-go="admin">Yönetime git</button>`:""}</div>`;
+    m.querySelector("[data-go]")?.addEventListener("click",()=>{S.admin="data";setView("admin")});
+    return;}
+  if(!S.villa||!villas().includes(S.villa))S.villa=villas()[0];
+  if(!S.floor||!floorsOnly().includes(S.floor))S.floor=floorsOnly()[0];
+  if(!S.brand||!brands().some(b=>b.name===S.brand))S.brand=ranked()[0]?.name;
+  if(S.view==="overview"){m.innerHTML=overviewHTML();bindOverview();}
+  else if(S.view==="villas"){m.innerHTML=villaHTML();bindVilla();}
+  else if(S.view==="packages"){m.innerHTML=packagesHTML();bindPackages();}
+  else {m.innerHTML=adminHTML();bindAdmin();}
+}
+
+/* ---------- overview ---------- */
+function kpisHTML(){
+  const r=ranked();if(!r.length)return "";const best=r[0],worst=r[r.length-1];
+  return `<div class="kpis">
+   <div class="kpi"><span class="eyebrow">En uygun paket</span><b class="cap">${esc(best.name)}</b><span class="sub">${villas().length} villa toplamında 1. sırada</span></div>
+   <div class="kpi"><span class="eyebrow">${villas().length} villa toplamı · net</span><b class="num">${money(total3(best))}</b><span class="sub">${S.cur} · KDV hariç, ek giderler dahil</span></div>
+   <div class="kpi"><span class="eyebrow">Villa başı ort. · KDV dahil</span><b class="num">${money(avgGross(best))}</b><span class="sub">${S.cur} · en uygun paket</span></div>
+   <div class="kpi"><span class="eyebrow">Proje bütçesi · KDV dahil</span><b class="num">${big(budget(best))}</b><span class="sub">${S.cur} · ${nf0.format(S.cfg.villaCount||0)} villa</span></div>
+   <div class="kpi"><span class="eyebrow">En yüksek / en uygun</span><b class="num">${nf1.format(total3(worst)/total3(best)).replace(",0","")}x</b><span class="sub cap">${esc(worst.name)} ile fark ${money(total3(worst)-total3(best))}</span></div>
+  </div>`;}
+function rankingHTML(){
+  const r=ranked();if(!r.length)return "";const max=total3(r[r.length-1]),min=total3(r[0]);
+  return `<div class="rank">${r.map((b,i)=>{const t=total3(b),d=(t-min)/min;
+    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${esc(b.name)}</span>
+      <div class="track"><i class="fill" style="width:${(t/max*100).toFixed(1)}%"></i></div>
+      <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">villa başı ${money(avgGross(b))} KDV dahil</span></div></div>`;}).join("")}</div>`;}
+function overviewHTML(){
+  const c=coverImg();
+  return `<section class="hero ${c?"":"pattern"}">${c?`<img src="${blob(c.asset)}" alt="">`:""}
+    <div class="hero-txt"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h2>${esc(S.cfg.projectName||"Hayat Mekke")}</h2>
+    <p>${esc(S.cfg.intro||`${villas().length} örnek villa tipi için ${brands().length} farklı mobilya paketi. Kat planları, oda renderları, 360° panoramalar ve maliyet karşılaştırması.`)}</p></div></section>
+  <section class="block">${kpisHTML()}</section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">Paket sıralaması</span><h2>${villas().length} villa toplamına göre paketler</h2></div><span class="status">${S.cur} · net, KDV hariç</span></div>${rankingHTML()}</section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">Villa tipleri</span><h2>Villaları gezin</h2></div></div>
+   <div class="villa-cards">${villas().map(v=>{const cv=coverImg(v);const r=brands().slice().sort((a,b)=>net(a,v)-net(b,v));
+     const nR=S.media.filter(m=>m.villa===v&&m.kind==="render").length,nP=S.media.filter(m=>m.villa===v&&m.kind==="pano").length,meta=S.cfg.villaMeta?.[v]||{};
+     return `<button class="vcard" data-villa="${esc(v)}"><div class="img">${cv?`<img src="${thumb(cv)}" alt="" loading="lazy">`:""}</div><div class="bd">
+       <h3>${esc(v)}</h3><span class="muted" style="font-size:13px">${esc([meta.area?meta.area+" m²":"",meta.rooms||""].filter(Boolean).join(" · ")||`${nR} render · ${nP} panorama`)}</span>
+       <span style="font-size:13px">En uygun: <b class="cap">${esc(r[0]?.name||"")}</b> · <span class="num">${money(net(r[0],v))} ${S.cur}</span></span></div></button>`;}).join("")}</div></section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">Villa tipine göre</span><h2>En uygun iki paket</h2></div></div>${bestByVillaTable()}</section>`;}
+function bestByVillaTable(){
+  const rows=villas().map(v=>{const r=brands().slice().sort((a,b)=>net(a,v)-net(b,v));const vals=r.map(b=>net(b,v));
+    return `<tr><td>${esc(v)}</td><td class="cap best">${esc(r[0]?.name)}</td><td>${money(vals[0])}</td><td class="cap">${esc(r[1]?.name||"")}</td><td>${money(vals[1]||0)}</td><td>${money(vals.reduce((a,x)=>a+x,0)/vals.length)}</td><td class="worst">${money(vals[vals.length-1])}</td><td>${money(vals[vals.length-1]-vals[0])}</td></tr>`;}).join("");
+  return `<div class="tbl-wrap"><table><thead><tr><th>Villa</th><th style="text-align:left">En uygun</th><th>Tutar</th><th style="text-align:left">2. sıradaki</th><th>Tutar</th><th>Ortalama</th><th>En yüksek</th><th>Fark</th></tr></thead><tbody>${rows}</tbody></table></div>`;}
+function bindOverview(){document.querySelectorAll("[data-villa]").forEach(b=>b.onclick=()=>{S.villa=b.dataset.villa;S.room=null;setView("villas");});}
+
+/* ---------- villa view ---------- */
+function villaHTML(){
+  const v=S.villa,f=S.floor,meta=S.cfg.villaMeta?.[v]||{};
+  const plans=mediaOf(m=>m.kind==="plan"&&m.villa===v&&m.floor===f);
+  const rooms=roomsFor(v,f);
+  let renders=mediaOf(m=>m.kind==="render"&&m.villa===v&&(!S.floor||!m.floor||m.floor===f));
+  if(S.room)renders=renders.filter(m=>m.room===S.room);
+  if(S.brandFilter)renders=renders.filter(m=>!m.brand||m.brand===S.brandFilter);
+  const panos=mediaOf(m=>m.kind==="pano"&&m.villa===v&&(!S.room||m.room===S.room));
+  const usedBrands=[...new Set(S.media.filter(m=>m.villa===v&&m.brand).map(m=>m.brand))];
+  const plan=plans[0];
+  return `<section class="block"><div class="block-head"><div><span class="eyebrow">Villa tipi</span><h2>${esc(v)}</h2>
+     ${meta.desc?`<p class="note" style="margin:6px 0 0">${esc(meta.desc)}</p>`:""}</div>
+     <div class="chips">${villas().map(x=>`<button class="chip" data-v="${esc(x)}" aria-pressed="${x===v}">${esc(x)}</button>`).join("")}</div></div>
+   <div class="chips">${floorsOnly().map(x=>`<button class="chip" data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}</button>`).join("")}</div>
+   <div class="villa-grid">
+     <div class="card"><div class="block-head"><span class="eyebrow">Kat planı · ${esc(f)}</span>${plan?`<button class="btn sm" data-zoomplan="${plan.id}">Büyüt</button>`:""}</div>
+       ${plan?`<div class="plan-stage"><div class="plan-inner"><img src="${blob(plan.asset)}" alt="${esc(v+" "+f+" planı")}">
+         ${(plan.pins||[]).map(p=>`<button class="pin" style="left:${p.x*100}%;top:${p.y*100}%" data-room="${esc(p.room)}" aria-pressed="${S.room===p.room}">${esc(p.room)}</button>`).join("")}</div></div>
+         ${plans.length>1?`<span class="status">${plans.length-1} ek plan sayfası daha var, Büyüt ile görün.</span>`:""}`
+       :`<div class="empty"><strong>Bu kat için plan yok</strong><span>${S.canEdit?"Yönetim › Medya bölümünden kat planı yükleyin.":"Kat planı eklendiğinde burada görünecek."}</span></div>`}
+     </div>
+     <div class="card"><div class="block-head"><span class="eyebrow">Odalar</span>${S.room?`<button class="btn sm" data-room="">Tüm odalar</button>`:""}</div>
+       ${rooms.length?`<div class="rooms">${rooms.map(r=>`<button class="room" data-room="${esc(r.room)}" aria-pressed="${S.room===r.room}"><span>${esc(r.room)}</span><span class="tags">${r.renders?`<span>${r.renders} render</span>`:""}${r.panos?`<span class="tag360">360°</span>`:""}</span></button>`).join("")}</div>`
+       :`<div class="empty"><span>Bu katta oda etiketli görsel yok.</span></div>`}
+       ${villaMetaHTML(meta)}
+     </div>
+   </div></section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">${S.room?esc(S.room):esc(f)}</span><h2>Oda renderları</h2></div>
+     ${usedBrands.length?`<div class="chips"><button class="chip" data-bf="" aria-pressed="${!S.brandFilter}">Tüm paketler</button>${usedBrands.map(b=>`<button class="chip cap" data-bf="${esc(b)}" aria-pressed="${S.brandFilter===b}">${esc(b)}</button>`).join("")}</div>`:""}</div>
+   ${renders.length?`<div class="gallery">${renders.map((m,i)=>shotHTML(m,i)).join("")}</div>`:`<div class="empty"><strong>Render yok</strong><span>Bu seçim için render bulunmuyor.</span></div>`}</section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
+   ${panos.length?`<div class="gallery">${panos.map(m=>`<button class="shot" data-pano="${m.id}"><img src="${thumb(m)}" alt="" loading="lazy"><span class="badge tag360">360°</span><span class="lbl"><span>${esc(m.title||m.room||"Panorama")}<small>${esc([m.floor,m.brand].filter(Boolean).join(" · "))}</small></span><span>Gez ›</span></span></button>`).join("")}</div>`
+   :`<div class="empty"><span>${esc(v)} için panorama yok.</span></div>`}</section>
+  <section class="block"><div class="block-head"><div><span class="eyebrow">${esc(v)} maliyeti</span><h2>Paketlere göre kat kırılımı</h2></div><span class="status">${S.cur} · mobilya net, ek gider ve KDV ayrı</span></div>${villaCostTable(v)}</section>`;}
+function villaMetaHTML(meta){const items=[["Brüt alan",meta.area?meta.area+" m²":""],["Oda düzeni",meta.rooms],["Kat sayısı",meta.floors]].filter(x=>x[1]);
+  if(!items.length)return "";return `<div class="hr"></div><div style="display:grid;gap:6px;font-size:13px">${items.map(([k,v])=>`<div style="display:flex;justify-content:space-between;gap:10px"><span class="muted">${k}</span><b>${esc(v)}</b></div>`).join("")}</div>`;}
+function shotHTML(m,i){return `<button class="shot" data-shot="${m.id}"><img src="${thumb(m)}" alt="${esc(m.title||m.room||"")}" loading="lazy"><span class="lbl"><span>${esc(m.title||m.room||"Render")}<small>${esc([m.room&&m.title?m.room:"",m.brand].filter(Boolean).join(" · "))}</small></span></span></button>`;}
+function villaCostTable(v){
+  const bs=brands().slice().sort((a,b)=>net(a,v)-net(b,v));const min=net(bs[0],v);const secs=sections();
+  const colMin=secs.map((_,i)=>Math.min(...bs.map(b=>+b.values?.[v]?.[i]||0))),colMax=secs.map((_,i)=>Math.max(...bs.map(b=>+b.values?.[v]?.[i]||0)));
+  return `<div class="tbl-wrap"><table><thead><tr><th>Paket</th>${secs.map(s=>`<th>${esc(s)}</th>`).join("")}<th>Ek giderler</th><th>Net</th><th>KDV dahil</th><th>Fark</th></tr></thead><tbody>
+   ${bs.map((b,ri)=>{const L=layers(b,v);return `<tr class="${ri===0?"is-best":""}"><td class="cap"><b>${esc(b.name)}</b></td>${secs.map((s,i)=>{const x=+b.values?.[v]?.[i]||0;const cls=colMin[i]===colMax[i]?"":x===colMin[i]?"best":x===colMax[i]?"worst":"";return `<td class="${cls}">${money(x)}</td>`;}).join("")}
+     <td>${money(L.freight+L.assembly+L.insurance)}</td><td><b>${money(L.net)}</b></td><td>${money(L.gross)}</td><td>${ri===0?`<span class="delta ok">en uygun</span>`:`<span class="delta">+${pct((L.net-min)/min)}</span>`}</td></tr>`;}).join("")}
+  </tbody></table></div>`;}
+function bindVilla(){
+  const m=$("#main");
+  m.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{S.villa=b.dataset.v;S.room=null;render();});
+  m.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{S.floor=b.dataset.f;S.room=null;render();});
+  m.querySelectorAll("[data-room]").forEach(b=>b.onclick=()=>{const r=b.dataset.room;S.room=(r&&S.room!==r)?r:null;render();});
+  m.querySelectorAll("[data-bf]").forEach(b=>b.onclick=()=>{S.brandFilter=b.dataset.bf||null;render();});
+  const list=[...m.querySelectorAll("[data-shot]")].map(b=>S.media.find(x=>x.id===b.dataset.shot)).filter(Boolean);
+  m.querySelectorAll("[data-shot]").forEach((b,i)=>b.onclick=()=>openLightbox(list,i));
+  m.querySelectorAll("[data-pano]").forEach(b=>b.onclick=()=>openPano(b.dataset.pano));
+  m.querySelector("[data-zoomplan]")?.addEventListener("click",()=>openLightbox(mediaOf(x=>x.kind==="plan"&&x.villa===S.villa&&x.floor===S.floor),0));
+}
+
+/* ---------- packages view ---------- */
+function packagesHTML(){
+  const r=ranked(),b=brands().find(x=>x.name===S.brand)||r[0];if(!b)return "";
+  const rank=r.indexOf(b)+1,secs=sections(),vs=villas();
+  const secRank=i=>{const tot=x=>vs.reduce((a,v)=>a+(+x.values?.[v]?.[i]||0),0);const s=brands().slice().sort((p,q)=>tot(p)-tot(q));return s.indexOf(b)+1;};
+  const ft=vs.reduce((a,v)=>a+furn(b,v),0);
+  const brandMedia=mediaOf(m=>m.brand===b.name&&m.kind!=="plan");
+  return `<section class="block"><div class="block-head"><div><span class="eyebrow">Mobilya paketi</span><h2>Paket detayı</h2></div></div>
+    <div class="chips">${r.map((x,i)=>`<button class="chip cap" data-b="${esc(x.name)}" aria-pressed="${x===b}">${i+1}. ${esc(x.name)}<span class="c num">${big(total3(x))}</span></button>`).join("")}</div>
+    <div class="kpis">
+      <div class="kpi"><span class="eyebrow">Sıra</span><b class="cap">${rank}. ${esc(b.name)}</b><span class="sub">${brands().length} paket içinde</span></div>
+      ${vs.map(v=>`<div class="kpi"><span class="eyebrow">${esc(v)} · net</span><b class="num">${money(net(b,v))}</b><span class="sub">KDV dahil ${money(gross(b,v))}</span></div>`).join("")}
+      <div class="kpi"><span class="eyebrow">Proje bütçesi</span><b class="num">${big(budget(b))}</b><span class="sub">${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil</span></div>
+    </div></section>
+  <section class="split">
+   <div class="block"><span class="eyebrow">Bölüm kırılımı · mobilya net</span><div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}<th>Toplam</th><th>Pay</th><th>Sıra</th></tr></thead><tbody>
+     ${secs.map((s,i)=>{const t=vs.reduce((a,v)=>a+(+b.values?.[v]?.[i]||0),0);const sr=secRank(i);return `<tr><td>${esc(s)}</td>${vs.map(v=>`<td>${money(+b.values?.[v]?.[i]||0)}</td>`).join("")}<td><b>${money(t)}</b></td><td>${pct(ft?t/ft:0)}</td><td class="${sr===1?"best":""}">${sr}</td></tr>`;}).join("")}
+     <tr class="total"><td>Toplam</td>${vs.map(v=>`<td>${money(furn(b,v))}</td>`).join("")}<td>${money(ft)}</td><td>100%</td><td></td></tr></tbody></table></div></div>
+   <div class="block"><span class="eyebrow">Maliyet katmanları</span><div class="tbl-wrap"><table><thead><tr><th>Kalem</th><th>Oran</th>${vs.map(v=>`<th>${esc(v)}</th>`).join("")}</tr></thead><tbody>
+     ${[["Mobilya ve tamamlayıcı ürünler","","furn"],["Navlun ve lojistik",b.rates?.freight,"freight"],["Montaj ve kurulum",b.rates?.assembly,"assembly"],["Sigorta ve beklenmedik giderler",b.rates?.insurance,"insurance"]].map(([l,rt,k])=>`<tr><td>${l}</td><td>${rt!==""?pct(+rt||0):""}</td>${vs.map(v=>`<td>${money(layers(b,v)[k])}</td>`).join("")}</tr>`).join("")}
+     <tr class="total"><td>Toplam net tedarik</td><td></td>${vs.map(v=>`<td>${money(layers(b,v).net)}</td>`).join("")}</tr>
+     <tr><td>KDV</td><td>${pct(S.cfg.vat||0)}</td>${vs.map(v=>`<td>${money(layers(b,v).vat)}</td>`).join("")}</tr>
+     <tr class="total"><td>Genel toplam</td><td></td>${vs.map(v=>`<td>${money(layers(b,v).gross)}</td>`).join("")}</tr></tbody></table></div></div>
+  </section>
+  ${brandMedia.length?`<section class="block"><div class="block-head"><div><span class="eyebrow cap">${esc(b.name)}</span><h2>Paket görselleri</h2></div></div><div class="gallery">${brandMedia.map(m=>m.kind==="pano"?`<button class="shot" data-pano="${m.id}"><img src="${thumb(m)}" alt="" loading="lazy"><span class="badge tag360">360°</span><span class="lbl"><span>${esc(m.title||m.room||"Panorama")}<small>${esc(m.villa||"")}</small></span></span></button>`:shotHTML(m)).join("")}</div></section>`:""}
+  <section class="block"><div class="block-head"><div><span class="eyebrow">Tüm paketler</span><h2>Kat ve bölüm karşılaştırması</h2></div><span class="status">Yeşil satırdaki en uygun, kırmızı en yüksek · ${S.cur}</span></div>${matrixHTML()}</section>`;}
+function matrixHTML(){
+  const bs=ranked(),vs=villas(),secs=sections();
+  let rows="";vs.forEach(v=>{secs.forEach((s,i)=>{const vals=bs.map(b=>+b.values?.[v]?.[i]||0),mn=Math.min(...vals),mx=Math.max(...vals);
+    rows+=`<tr><td>${esc(v)} · ${esc(s)}</td>${vals.map(x=>`<td class="${mn===mx?"":x===mn?"best":x===mx?"worst":""}">${money(x)}</td>`).join("")}</tr>`;});
+    const tv=bs.map(b=>furn(b,v)),mn=Math.min(...tv);rows+=`<tr class="total"><td>${esc(v)} toplamı</td>${tv.map(x=>`<td class="${x===mn?"best":""}">${money(x)}</td>`).join("")}</tr>`;});
+  return `<div class="tbl-wrap"><table><thead><tr><th>Villa · bölüm</th>${bs.map(b=>`<th class="cap">${esc(b.name)}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
+function bindPackages(){const m=$("#main");
+  m.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{S.brand=b.dataset.b;render();});
+  const list=[...m.querySelectorAll("[data-shot]")].map(b=>S.media.find(x=>x.id===b.dataset.shot)).filter(Boolean);
+  m.querySelectorAll("[data-shot]").forEach((b,i)=>b.onclick=()=>openLightbox(list,i));
+  m.querySelectorAll("[data-pano]").forEach(b=>b.onclick=()=>openPano(b.dataset.pano));}
+
+/* ---------- lightbox ---------- */
+let ovKeys=null;
+function closeOv(){const o=$("#overlay");if(o._pano){o._pano.destroy();o._pano=null;}o.innerHTML="";if(ovKeys){document.removeEventListener("keydown",ovKeys);ovKeys=null;}document.body.style.overflow="";}
+function openLightbox(list,i){if(!list.length)return;closeOv();const o=$("#overlay");let idx=i;document.body.style.overflow="hidden";
+  const draw=()=>{const m=list[idx];o.innerHTML=`<div class="ov" role="dialog" aria-label="Görsel"><div class="ov-top"><div class="t"><b>${esc(m.title||m.room||(m.kind==="plan"?"Kat planı":"Render"))}</b>${esc([m.villa,m.floor,m.room&&m.title?m.room:"",m.brand].filter(Boolean).join(" · "))}</div>
+    <div style="display:flex;gap:8px;align-items:center"><span class="num" style="font-size:13px">${idx+1} / ${list.length}</span><button class="ov-btn" data-x>Kapat</button></div></div>
+    <div class="ov-body"><div style="position:relative;max-width:100%;max-height:100%;display:grid;place-items:center;height:100%"><div style="position:relative;max-height:100%"><img src="${blob(m.asset)}" alt="" style="max-height:calc(100vh - 140px)">
+    ${m.kind==="plan"?(m.pins||[]).map(p=>`<span class="pin" style="left:${p.x*100}%;top:${p.y*100}%">${esc(p.room)}</span>`).join(""):""}</div></div>
+    ${list.length>1?`<button class="ov-nav l" data-p aria-label="Önceki">‹</button><button class="ov-nav r" data-n aria-label="Sonraki">›</button>`:""}</div><div style="height:16px"></div></div>`;
+    o.querySelector("[data-x]").onclick=closeOv;o.querySelector("[data-p]")?.addEventListener("click",()=>{idx=(idx-1+list.length)%list.length;draw();});
+    o.querySelector("[data-n]")?.addEventListener("click",()=>{idx=(idx+1)%list.length;draw();});};
+  ovKeys=e=>{if(e.key==="Escape")closeOv();else if(e.key==="ArrowRight"){idx=(idx+1)%list.length;draw();}else if(e.key==="ArrowLeft"){idx=(idx-1+list.length)%list.length;draw();}};
+  document.addEventListener("keydown",ovKeys);draw();}
+
+/* ---------- panorama viewer ---------- */
+function PanoViewer(el){
+  if(!window.THREE){el.innerHTML=`<div class="pano-hint">360° görüntüleyici yüklenemedi. Sayfayı yenileyin.</div>`;return {load(){},destroy(){}};}
+  const T=window.THREE;const r=new T.WebGLRenderer({antialias:true});r.setPixelRatio(Math.min(window.devicePixelRatio||1,2));r.outputEncoding=T.sRGBEncoding;
+  el.appendChild(r.domElement);const hint=document.createElement("div");hint.className="pano-hint";hint.textContent="Sürükleyerek bakın · tekerlek ya da iki parmakla yakınlaştırın";el.appendChild(hint);
+  const scene=new T.Scene(),cam=new T.PerspectiveCamera(75,1,1,1100),geo=new T.SphereGeometry(500,64,40);geo.scale(-1,1,1);
+  const mat=new T.MeshBasicMaterial({color:0x222222}),mesh=new T.Mesh(geo,mat);scene.add(mesh);
+  let lon=0,lat=0,fov=75,alive=true,auto=true,raf=0,pts=new Map(),pinch=0,tex=null;
+  const size=()=>{const w=el.clientWidth||1,h=el.clientHeight||1;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();};
+  const ro=new ResizeObserver(size);ro.observe(el);size();
+  const frame=()=>{if(!alive)return;if(auto&&!pts.size)lon+=0.035;lat=Math.max(-85,Math.min(85,lat));
+    const phi=T.MathUtils.degToRad(90-lat),th=T.MathUtils.degToRad(lon);cam.fov=fov;cam.updateProjectionMatrix();
+    cam.lookAt(500*Math.sin(phi)*Math.cos(th),500*Math.cos(phi),500*Math.sin(phi)*Math.sin(th));r.render(scene,cam);raf=requestAnimationFrame(frame);};
+  frame();
+  const stop=()=>{auto=false;hint.remove();};
+  el.addEventListener("pointerdown",e=>{stop();el.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.clientX,y:e.clientY});if(pts.size===2){const [a,b]=[...pts.values()];pinch=Math.hypot(a.x-b.x,a.y-b.y);}});
+  el.addEventListener("pointermove",e=>{const p=pts.get(e.pointerId);if(!p)return;
+    if(pts.size===2){p.x=e.clientX;p.y=e.clientY;const [a,b]=[...pts.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch){fov=Math.max(30,Math.min(95,fov*(pinch/d)));}pinch=d;return;}
+    const k=0.12*(fov/75);lon-=(e.clientX-p.x)*k;lat+=(e.clientY-p.y)*k;p.x=e.clientX;p.y=e.clientY;});
+  const up=e=>{pts.delete(e.pointerId);if(pts.size<2)pinch=0;};el.addEventListener("pointerup",up);el.addEventListener("pointercancel",up);
+  el.addEventListener("wheel",e=>{e.preventDefault();stop();fov=Math.max(30,Math.min(95,fov+e.deltaY*0.04));},{passive:false});
+  return {
+    load(url,onDone){const img=new Image();img.onload=()=>{if(!alive)return;const max=Math.min(r.capabilities.maxTextureSize||4096,8192);let src=img;
+        if(img.naturalWidth>max){const c=document.createElement("canvas");c.width=max;c.height=Math.round(img.naturalHeight*max/img.naturalWidth);c.getContext("2d").drawImage(img,0,0,c.width,c.height);src=c;}
+        if(tex)tex.dispose();tex=new T.Texture(src);tex.encoding=T.sRGBEncoding;tex.minFilter=T.LinearFilter;tex.generateMipmaps=false;tex.needsUpdate=true;
+        mat.map=tex;mat.color.set(0xffffff);mat.needsUpdate=true;lon=0;lat=0;fov=75;onDone&&onDone(true);};
+      img.onerror=()=>onDone&&onDone(false);img.src=url;},
+    destroy(){alive=false;cancelAnimationFrame(raf);ro.disconnect();if(tex)tex.dispose();geo.dispose();mat.dispose();r.dispose();el.innerHTML="";}
+  };}
+function openPano(id){closeOv();const first=S.media.find(m=>m.id===id);if(!first)return;const o=$("#overlay");document.body.style.overflow="hidden";
+  const list=mediaOf(m=>m.kind==="pano"&&m.villa===first.villa);
+  o.innerHTML=`<div class="ov" role="dialog" aria-label="360° panorama"><div class="ov-top"><div class="t" id="pT"></div><div style="display:flex;gap:8px"><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Kapat</button></div></div>
+    <div class="ov-body" style="padding:0"><div class="pano" id="panoEl"></div><div class="loading" id="pL" style="position:absolute">Panorama yükleniyor…</div></div>
+    ${list.length>1?`<div class="pano-strip">${list.map(m=>`<button data-pid="${m.id}" aria-pressed="${m.id===id}"><img src="${thumb(m)}" alt=""><span>${esc(m.title||m.room||"Panorama")}</span></button>`).join("")}</div>`:`<div style="height:12px"></div>`}</div>`;
+  const pv=PanoViewer(o.querySelector("#panoEl"));o._pano=pv;
+  const show=m=>{o.querySelector("#pT").innerHTML=`<b>${esc(m.title||m.room||"Panorama")}</b>${esc([m.villa,m.floor,m.brand].filter(Boolean).join(" · "))}`;
+    const L=o.querySelector("#pL");L.hidden=false;L.textContent="Panorama yükleniyor…";pv.load(blob(m.asset),ok=>{if(ok)L.hidden=true;else L.textContent="Panorama açılamadı.";});
+    o.querySelectorAll("[data-pid]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.pid===m.id));};
+  show(first);
+  o.querySelectorAll("[data-pid]").forEach(b=>b.onclick=()=>show(S.media.find(m=>m.id===b.dataset.pid)));
+  o.querySelector("[data-x]").onclick=()=>{if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});closeOv();};
+  o.querySelector("[data-fs]").onclick=()=>{const el=o.querySelector(".ov");(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.())?.catch?.(()=>toast("Tam ekran bu görünümde desteklenmiyor"));};
+  ovKeys=e=>{if(e.key==="Escape")closeOv();};document.addEventListener("keydown",ovKeys);}
+
+/* ---------- presentation deck ---------- */
+function openDeckSetup(){
+  if(!S.cfg){toast("Sunum için önce veri yükleyin");return;}
+  closeOv();const o=$("#overlay");document.body.style.overflow="hidden";
+  o.innerHTML=`<div class="ov" role="dialog" aria-label="Sunum ayarları"><div class="ov-top"><div class="t"><b>Sunumu hazırla</b>Bölümleri seçin, sonra başlatın.</div><button class="ov-btn" data-x>Kapat</button></div>
+   <div class="ov-body"><div style="background:#151a17;border:1px solid #2b322d;border-radius:10px;padding:22px;display:grid;gap:16px;max-width:520px;width:100%">
+     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#cfae6c">Villalar</span>${villas().map(v=>`<label style="display:flex;gap:8px"><input type="checkbox" id="dv-${esc(v).replace(/\s/g,"_")}" data-dv="${esc(v)}" checked> ${esc(v)}</label>`).join("")}</div>
+     <div style="display:grid;gap:8px"><span class="eyebrow" style="color:#cfae6c">İçerik</span>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-cost" checked> Maliyet ve paket karşılaştırması</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-plan" checked> Kat planları</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-render" checked> Oda renderları</label>
+       <label style="display:flex;gap:8px"><input type="checkbox" id="d-pano" checked> 360° panoramalar</label></div>
+     <button class="btn primary" id="dGo" style="justify-content:center">Başlat</button>
+     <span style="font-size:12.5px;color:#a7ab9f">Ok tuşları ya da boşluk ile ilerleyin, F tam ekran, Esc çıkış.</span></div></div></div>`;
+  o.querySelector("[data-x]").onclick=closeOv;
+  o.querySelector("#dGo").onclick=()=>{const opt={villas:[...o.querySelectorAll("[data-dv]")].filter(x=>x.checked).map(x=>x.dataset.dv),cost:o.querySelector("#d-cost").checked,plan:o.querySelector("#d-plan").checked,render:o.querySelector("#d-render").checked,pano:o.querySelector("#d-pano").checked};closeOv();runDeck(opt);};}
+function buildSlides(opt){
+  const sl=[];const c=coverImg();const name=esc(S.cfg.projectName||"Hayat Mekke");
+  sl.push({html:`<div class="slide cover" style="${c?`background-image:url('${blob(c.asset)}')`:"background:#151a17"}"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h2 style="font-size:clamp(40px,7vw,96px)">${name}</h2><p style="max-width:60ch;color:#d6d0c4;margin:0;font-size:18px">${esc(S.cfg.subtitle||"Villa mobilya paketleri")}</p></div>`});
+  if(opt.cost){
+    sl.push({html:`<div class="slide"><span class="eyebrow">Özet</span><h2>Maliyet özeti</h2><div class="grow" style="display:grid;align-content:center">${kpisHTML()}</div></div>`});
+    sl.push({html:`<div class="slide"><span class="eyebrow">Paket sıralaması · ${S.cur}, net</span><h2>${villas().length} villa toplamına göre paketler</h2><div class="grow" style="overflow:auto">${rankingHTML()}</div></div>`});}
+  opt.villas.forEach(v=>{const meta=S.cfg.villaMeta?.[v]||{};const cv=coverImg(v);
+    sl.push({html:`<div class="slide cover" style="${cv?`background-image:url('${blob(cv.asset)}')`:"background:#151a17"}"><span class="eyebrow">Villa tipi</span><h2 style="font-size:clamp(40px,6vw,84px)">${esc(v)}</h2><p style="margin:0;color:#d6d0c4;font-size:17px;max-width:60ch">${esc(meta.desc||[meta.area?meta.area+" m²":"",meta.rooms].filter(Boolean).join(" · "))}</p></div>`});
+    floorsOnly().forEach(f=>{
+      if(opt.plan)mediaOf(m=>m.kind==="plan"&&m.villa===v&&m.floor===f).forEach(p=>sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · kat planı</span><h2>${esc(f)}</h2><div class="grow"><div class="imgfit"><div class="plan-pins-deck"><img src="${blob(p.asset)}" alt="" style="max-height:calc(100vh - 260px)">${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}</div></div></div></div>`}));
+      if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&m.floor===f).forEach(m=>sl.push({html:`<div class="slide" style="padding:0"><img class="full-img" src="${blob(m.asset)}" alt=""><div class="caption"><span class="eyebrow">${esc([v,f,m.brand].filter(Boolean).join(" · "))}</span><h2>${esc(m.title||m.room||"Render")}</h2></div></div>`}));
+      if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&m.floor===f).forEach(m=>sl.push({pano:m.asset,html:`<div class="slide" style="padding:0"><div class="pano" data-deckpano></div><div class="caption" style="pointer-events:none"><span class="eyebrow">360° · ${esc([v,f,m.brand].filter(Boolean).join(" · "))}</span><h2>${esc(m.title||m.room||"Panorama")}</h2></div></div>`}));
+    });
+    if(opt.render)mediaOf(m=>m.kind==="render"&&m.villa===v&&!floorsOnly().includes(m.floor)).forEach(m=>sl.push({html:`<div class="slide" style="padding:0"><img class="full-img" src="${blob(m.asset)}" alt=""><div class="caption"><span class="eyebrow">${esc([v,m.brand].filter(Boolean).join(" · "))}</span><h2>${esc(m.title||m.room||"Render")}</h2></div></div>`}));
+    if(opt.pano)mediaOf(m=>m.kind==="pano"&&m.villa===v&&!floorsOnly().includes(m.floor)).forEach(m=>sl.push({pano:m.asset,html:`<div class="slide" style="padding:0"><div class="pano" data-deckpano></div><div class="caption" style="pointer-events:none"><span class="eyebrow">360° · ${esc(v)}</span><h2>${esc(m.title||m.room||"Panorama")}</h2></div></div>`}));
+    if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">${esc(v)} · ${S.cur}</span><h2>Paketlere göre maliyet</h2><div class="grow" style="overflow:auto">${villaCostTable(v)}</div></div>`});
+  });
+  if(opt.cost)sl.push({html:`<div class="slide"><span class="eyebrow">Tüm paketler · ${S.cur}</span><h2>Kat ve bölüm karşılaştırması</h2><div class="grow" style="overflow:auto">${matrixHTML()}</div></div>`});
+  sl.push({html:`<div class="slide cover" style="background:#151a17;justify-content:center;align-items:center;text-align:center"><span class="eyebrow">Teşekkürler</span><h2>${name}</h2><p class="muted" style="margin:0">${esc(S.cfg.subtitle||"")}</p></div>`});
+  return sl;}
+function runDeck(opt){
+  const sl=buildSlides(opt);let i=0,pv=null;const o=$("#overlay");document.body.style.overflow="hidden";
+  o.innerHTML=`<div class="deck" role="dialog" aria-label="Sunum"><div class="stage" id="dStage"></div><div class="deck-bar"><button class="ov-btn" data-p>‹ Önceki</button><button class="ov-btn" data-n>Sonraki ›</button><span class="num" id="dCnt"></span><div class="prog"><i id="dProg"></i></div><button class="ov-btn" data-fs>Tam ekran</button><button class="ov-btn" data-x>Çık</button></div></div>`;
+  const stage=o.querySelector("#dStage");
+  const show=()=>{if(pv){pv.destroy();pv=null;}stage.innerHTML=sl[i].html;o.querySelector("#dCnt").textContent=`${i+1} / ${sl.length}`;o.querySelector("#dProg").style.width=((i+1)/sl.length*100)+"%";
+    const pe=stage.querySelector("[data-deckpano]");if(pe&&sl[i].pano){pv=PanoViewer(pe);pv.load(blob(sl[i].pano));}};
+  const go=d=>{i=Math.max(0,Math.min(sl.length-1,i+d));show();};
+  const exit=()=>{if(pv)pv.destroy();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});closeOv();};
+  o.querySelector("[data-p]").onclick=()=>go(-1);o.querySelector("[data-n]").onclick=()=>go(1);o.querySelector("[data-x]").onclick=exit;
+  const fs=()=>{const el=o.querySelector(".deck");(document.fullscreenElement?document.exitFullscreen():el.requestFullscreen?.())?.catch?.(()=>toast("Tam ekran bu görünümde desteklenmiyor"));};
+  o.querySelector("[data-fs]").onclick=fs;
+  stage.addEventListener("click",e=>{if(e.target.closest(".pano"))return;const x=e.clientX/stage.clientWidth;go(x<0.3?-1:1);});
+  ovKeys=e=>{if(e.key==="ArrowRight"||e.key===" "||e.key==="PageDown"){e.preventDefault();go(1);}else if(e.key==="ArrowLeft"||e.key==="PageUp")go(-1);else if(e.key==="Escape"&&!document.fullscreenElement)exit();else if(e.key==="f"||e.key==="F")fs();else if(e.key==="Home"){i=0;show();}else if(e.key==="End"){i=sl.length-1;show();}};
+  document.addEventListener("keydown",ovKeys);show();}
+
+/* ---------- admin ---------- */
+function adminHTML(){
+  const t=S.admin;
+  return `<section class="block"><div class="block-head"><div><span class="eyebrow">Yönetim</span><h2>Görseller ve veriler</h2></div><span class="status" id="adminStatus"></span></div>
+   <div class="subtabs">${[["media","Medya yükle"],["pins","Plan üzerinde odalar"],["data","Maliyet verileri"],["info","Proje ve villa bilgileri"]].map(([k,l])=>`<button class="subtab" data-at="${k}" aria-current="${t===k}">${l}</button>`).join("")}</div>
+   ${t==="media"?adminMedia():t==="pins"?adminPins():t==="data"?adminData():adminInfo()}</section>`;}
+function opts(arr,sel,empty){return (empty!=null?`<option value="">${empty}</option>`:"")+arr.map(x=>`<option value="${esc(x)}" ${x===sel?"selected":""}>${esc(x)}</option>`).join("");}
+function roomList(){return [...new Set(S.media.flatMap(m=>[m.room,...(m.pins||[]).map(p=>p.room)]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"tr"));}
+function adminMedia(){
+  if(!S.assets)return `<div class="empty"><strong>Yükleme bu görünümde kapalı</strong><span>Görsel yüklemek için sayfayı düzenleme yetkisiyle açın.</span></div>`;
+  const vs=villas().length?villas():["Villa A","Villa B","Villa C"],fs=floorsOnly().length?floorsOnly():["Zemin kat","1. kat","Çatı katı"];
+  const items=S.media.slice().sort((a,b)=>(a.villa||"").localeCompare(b.villa||"")||(a.kind||"").localeCompare(b.kind||"")||byOrder(a,b));
+  return `<div class="card"><div class="form">
+     <label class="f">Tür<select id="upKind"><option value="render">Oda renderı</option><option value="plan">Kat planı</option><option value="pano">360° panorama</option></select></label>
+     <label class="f">Villa<select id="upVilla">${opts(vs,S.villa)}</select></label>
+     <label class="f">Kat<select id="upFloor">${opts(fs,S.floor,"Belirtilmemiş")}</select></label>
+     <label class="f">Oda<input id="upRoom" list="roomsDL" placeholder="ör. Salon, Ebeveyn yatak odası"></label>
+     <label class="f">Paket<select id="upBrand">${opts(brands().map(b=>b.name),null,"Tüm paketler")}</select></label>
+     <label class="f">Başlık<input id="upTitle" placeholder="Boş bırakılırsa oda adı kullanılır"></label></div>
+     <datalist id="roomsDL">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist>
+     <div class="drop" id="drop"><strong>Dosyaları buraya bırakın</strong><span class="muted" style="font-size:13px">JPG, PNG, WEBP ya da SVG · panoramalar 2:1 eşdikdörtgen (equirectangular) olmalı · 19 MB üzeri görseller otomatik küçültülür</span>
+       <label class="btn primary">Dosya seç<input type="file" id="upFile" accept="image/*" multiple hidden></label></div>
+     <div class="uplist" id="upList"></div></div>
+   <div class="block-head"><div><span class="eyebrow">${S.media.length} dosya</span><h2 style="font-size:22px">Yüklü medya</h2></div></div>
+   ${items.length?`<div class="mgrid">${items.map(m=>`<div class="mitem" data-mid="${m.id}"><div class="th"><img src="${thumb(m)}" alt="" loading="lazy"><span class="kind">${m.kind==="plan"?"Kat planı":m.kind==="pano"?"360°":"Render"}${m.cover?" · Kapak":""}</span></div>
+     <div class="bd"><div class="form">
+      <label class="f">Villa<select data-k="villa">${opts(vs,m.villa)}</select></label>
+      <label class="f">Kat<select data-k="floor">${opts(fs,m.floor,"—")}</select></label>
+      <label class="f">Oda<input data-k="room" list="roomsDL" value="${esc(m.room||"")}"></label>
+      <label class="f">Paket<select data-k="brand">${opts(brands().map(b=>b.name),m.brand,"Tümü")}</select></label>
+      <label class="f" style="grid-column:1/-1">Başlık<input data-k="title" value="${esc(m.title||"")}"></label></div>
+      <div class="acts"><button class="btn sm" data-act="up" aria-label="Öne al">↑</button><button class="btn sm" data-act="down" aria-label="Geri al">↓</button>
+       ${m.kind==="render"?`<button class="btn sm" data-act="cover">${m.cover?"Kapaktan çıkar":"Kapak yap"}</button>`:""}
+       ${m.kind==="plan"?`<button class="btn sm" data-act="pins">Oda işaretle</button>`:""}
+       <button class="btn sm danger" data-act="del">Sil</button></div></div></div>`).join("")}</div>`
+   :`<div class="empty"><strong>Henüz medya yok</strong><span>Yukarıdan render, kat planı ya da panorama yükleyin.</span></div>`}`;}
+function adminPins(){
+  const plans=mediaOf(m=>m.kind==="plan");
+  if(!plans.length)return `<div class="empty"><strong>Kat planı yok</strong><span>Önce Medya yükle bölümünden kat planı ekleyin.</span></div>`;
+  if(!S.pinPlan||!plans.some(p=>p.id===S.pinPlan))S.pinPlan=plans[0].id;const p=plans.find(x=>x.id===S.pinPlan);
+  return `<div class="villa-grid"><div class="card"><label class="f">Plan<select id="pinSel">${plans.map(x=>`<option value="${x.id}" ${x.id===p.id?"selected":""}>${esc([x.villa,x.floor,x.title].filter(Boolean).join(" · "))}</option>`).join("")}</select></label>
+     <p class="note" style="margin:0">Planda odanın üzerine tıklayın, oda adını yazıp ekleyin. Villa sayfasında bu işaretlere tıklayınca o odanın renderları açılır.</p>
+     <div class="plan-stage"><div class="plan-inner" id="pinStage" style="cursor:crosshair"><img src="${blob(p.asset)}" alt="">
+      ${(p.pins||[]).map(x=>`<span class="pin" style="left:${x.x*100}%;top:${x.y*100}%">${esc(x.room)}</span>`).join("")}
+      ${S.pendingPin?`<span class="pin pending" style="left:${S.pendingPin.x*100}%;top:${S.pendingPin.y*100}%">+</span>`:""}</div></div></div>
+   <div class="card"><span class="eyebrow">İşaretli odalar</span>
+     ${S.pendingPin?`<div style="display:grid;gap:8px"><label class="f">Oda adı<input id="pinName" list="roomsDL2" placeholder="ör. Salon"></label><datalist id="roomsDL2">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist><div style="display:flex;gap:8px"><button class="btn primary sm" id="pinAdd">Ekle</button><button class="btn sm" id="pinCancel">Vazgeç</button></div></div>`:`<span class="status">Yeni işaret için plana tıklayın.</span>`}
+     <div class="rooms">${(p.pins||[]).map((x,i)=>`<div class="room"><span>${esc(x.room)}</span><button class="btn sm danger" data-delpin="${i}">Kaldır</button></div>`).join("")||`<span class="status">Bu planda işaret yok.</span>`}</div></div></div>`;}
+function adminData(){
+  const c=S.cfg;const bs=brands(),vs=villas(),secs=sections();
+  return `<div class="card"><span class="eyebrow">Google Sheets bağlantısı</span>
+     <p class="note" style="margin:0">Excel'deki Veri sayfasını doğrudan çeker: kat tutarları, ek gider oranları, KDV, villa adedi ve kur. Firma dosyalarında fiyat değişince buradan tekrar çekmeniz yeterli.</p>
+     <div class="form"><label class="f" style="grid-column:1/-1">Tablo bağlantısı ya da ID<input id="sheetId" value="${esc(S.keys.sheetId||"")}"></label></div>
+     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn primary" id="syncBtn" ${S.mcp?"":"disabled"}>Google Sheets'ten çek</button>
+      <span class="status" id="syncStatus">${S.mcp?(c?.syncedAt?"Son çekim: "+new Date(c.syncedAt).toLocaleString("tr-TR"):""):"Google Sheets bağlantısı bu görünümde kullanılamıyor. Aşağıdan yapıştırarak güncelleyebilirsiniz."}</span></div></div>
+   <div class="card"><span class="eyebrow">Excel'den yapıştır</span><p class="note" style="margin:0">Veri sayfasında başlık satırı dahil "Villa | Bölüm | marka…" tablosunu (ve istersen ek gider oranlarını) kopyalayıp yapıştırın. Tutarlar USD olmalı.</p>
+     <label class="f"><textarea id="pasteArea" placeholder="Villa&#9;Bölüm&#9;Firma 1&#9;Firma 2…"></textarea></label><div><button class="btn" id="pasteBtn">Yapıştırılanı uygula</button></div></div>
+   ${c?`<div class="card"><div class="block-head"><span class="eyebrow">Tutarları düzenle · USD, mobilya net</span><div style="display:flex;gap:8px"><button class="btn sm" id="addBrand">Paket ekle</button><button class="btn primary sm" id="saveData">Kaydet</button></div></div>
+     <div class="form"><label class="f">KDV oranı (%)<input id="dVat" type="number" step="0.1" value="${((c.vat||0)*100).toFixed(1)}"></label><label class="f">Proje villa adedi<input id="dCount" type="number" value="${c.villaCount||0}"></label><label class="f">Kur · 1 USD = SAR<input id="dFx" type="number" step="0.0001" value="${c.fx||3.75}"></label></div>
+     <div class="tbl-wrap"><table><thead><tr><th>Paket</th><th>Navlun %</th><th>Montaj %</th><th>Sigorta %</th><th></th></tr></thead><tbody>
+      ${bs.map((b,bi)=>`<tr><td><input class="cell" style="width:160px;text-align:left" data-bname="${bi}" value="${esc(b.name)}"></td>${["freight","assembly","insurance"].map(k=>`<td><input class="cell" type="number" step="0.1" data-rate="${bi}|${k}" value="${((+b.rates?.[k]||0)*100).toFixed(1)}"></td>`).join("")}<td><button class="btn sm danger" data-delbrand="${bi}">Kaldır</button></td></tr>`).join("")}</tbody></table></div>
+     ${vs.map(v=>`<span class="eyebrow">${esc(v)}</span><div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th class="cap">${esc(b.name)}</th>`).join("")}</tr></thead><tbody>
+       ${secs.map((s,si)=>`<tr><td>${esc(s)}</td>${bs.map((b,bi)=>`<td><input class="cell" type="number" data-val="${bi}|${esc(v)}|${si}" value="${Math.round(+b.values?.[v]?.[si]||0)}"></td>`).join("")}</tr>`).join("")}</tbody></table></div>`).join("")}
+   </div>`:""}`;}
+function adminInfo(){
+  const c=S.cfg||{};const vs=villas();
+  return `<div class="card"><span class="eyebrow">Proje</span><div class="form">
+     <label class="f">Proje adı<input id="iName" value="${esc(c.projectName||"Hayat Mekke")}"></label>
+     <label class="f">Alt başlık<input id="iSub" value="${esc(c.subtitle||"")}"></label>
+     <label class="f">Konum<input id="iLoc" value="${esc(c.location||"")}" placeholder="Mekke · Suudi Arabistan"></label>
+     <label class="f" style="grid-column:1/-1">Giriş metni<input id="iIntro" value="${esc(c.intro||"")}" placeholder="Ana sayfadaki kapak metni"></label></div></div>
+   ${vs.map(v=>{const m=c.villaMeta?.[v]||{};const k=esc(v);return `<div class="card"><span class="eyebrow">${k}</span><div class="form">
+     <label class="f">Brüt alan (m²)<input data-vm="${k}|area" value="${esc(m.area||"")}"></label>
+     <label class="f">Oda düzeni<input data-vm="${k}|rooms" value="${esc(m.rooms||"")}" placeholder="ör. 5+1"></label>
+     <label class="f">Kat sayısı<input data-vm="${k}|floors" value="${esc(m.floors||"")}"></label>
+     <label class="f" style="grid-column:1/-1">Açıklama<input data-vm="${k}|desc" value="${esc(m.desc||"")}"></label></div></div>`;}).join("")}
+   <div><button class="btn primary" id="saveInfo" ${S.cfg?"":"disabled"}>Kaydet</button></div>`;}
+
+function bindAdmin(){const m=$("#main");
+  m.querySelectorAll("[data-at]").forEach(b=>b.onclick=()=>{S.admin=b.dataset.at;S.pendingPin=null;render();});
+  if(S.admin==="media")bindMedia(m);else if(S.admin==="pins")bindPins(m);else if(S.admin==="data")bindData(m);else bindInfo(m);}
+
+/* uploads */
+function loadImg(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file);const i=new Image();i.onload=()=>res({img:i,url:u});i.onerror=()=>{URL.revokeObjectURL(u);rej(new Error("Görsel okunamadı"));};i.src=u;});}
+function toJpeg(img,maxW,q){const s=Math.min(1,maxW/img.naturalWidth);const c=document.createElement("canvas");c.width=Math.round(img.naturalWidth*s);c.height=Math.round(img.naturalHeight*s);
+  c.getContext("2d").drawImage(img,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,"image/jpeg",q));}
+const OK_TYPES=["image/jpeg","image/png","image/webp","image/gif","image/svg+xml"];
+async function uploadOne(file,meta,row){
+  const set=t=>row.lastChild.textContent=t;
+  let main=file,thumbBlob=null;const isSvg=file.type==="image/svg+xml";
+  if(!isSvg){set("Hazırlanıyor…");const {img,url}=await loadImg(file);
+    if(file.size>19*1024*1024||!OK_TYPES.includes(file.type)){main=await toJpeg(img,meta.kind==="pano"?8192:6000,.88);}
+    thumbBlob=await toJpeg(img,meta.kind==="pano"?1000:900,.8);URL.revokeObjectURL(url);}
+  set("Yükleniyor…");
+  const up=await S.assets.upload(main,{type:main.type||"image/jpeg"});
+  let th=null;if(thumbBlob){try{th=(await S.assets.upload(thumbBlob,{type:"image/jpeg"})).id;}catch(e){}}
+  const ref=S.db.collection("media").doc();
+  await ref.set({...meta,asset:up.id,thumb:th,order:Date.now(),createdAt:new Date().toISOString(),fileName:file.name});
+  set("Yüklendi");}
+function errMsg(e){const c=e&&e.code;return c==="too_large"?"Dosya çok büyük":c==="unsupported_type"?"Desteklenmeyen dosya türü":c==="quota_or_state"?"Depolama alanı dolu":c==="rate_limited"?"Çok hızlı yükleme, biraz bekleyip tekrar deneyin":(e&&e.message)||"Yüklenemedi";}
+function bindMedia(m){
+  if(!S.assets)return;
+  const drop=m.querySelector("#drop"),inp=m.querySelector("#upFile"),list=m.querySelector("#upList");
+  const run=async files=>{files=[...files].filter(f=>f.type.startsWith("image/")||/\.(jpe?g|png|webp|svg)$/i.test(f.name));if(!files.length){toast("Görsel dosyası seçin");return;}
+    const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:m.querySelector("#upRoom").value.trim()||null,brand:m.querySelector("#upBrand").value||null,title:m.querySelector("#upTitle").value.trim()||null};
+    for(const f of files){const row=document.createElement("div");row.className="row";row.innerHTML=`<span>${esc(f.name)}</span><span class="muted">Bekliyor</span>`;list.appendChild(row);
+      try{await uploadOne(f,meta,row);}catch(e){row.lastChild.textContent=errMsg(e);row.lastChild.style.color="var(--bad)";}}
+    toast("Yükleme tamamlandı");};
+  inp.onchange=()=>run(inp.files);
+  drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("over");});drop.addEventListener("dragleave",()=>drop.classList.remove("over"));
+  drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("over");run(e.dataTransfer.files);});
+  m.querySelectorAll(".mitem").forEach(card=>{const id=card.dataset.mid;const doc=S.db.doc("media/"+id);
+    card.querySelectorAll("[data-k]").forEach(el=>el.addEventListener("change",async()=>{const v=el.value.trim()||null;try{await doc.update({[el.dataset.k]:v});toast("Kaydedildi");}catch(e){toast("Kaydedilemedi");}}));
+    card.querySelectorAll("[data-act]").forEach(b=>b.onclick=async()=>{const a=b.dataset.act;const it=S.media.find(x=>x.id===id);if(!it)return;
+      try{
+      if(a==="cover"){await doc.update({cover:!it.cover});}
+      else if(a==="pins"){S.pinPlan=id;S.admin="pins";render();}
+      else if(a==="up"||a==="down"){const peers=mediaOf(x=>x.kind===it.kind&&x.villa===it.villa);const i=peers.findIndex(x=>x.id===id);const j=a==="up"?i-1:i+1;
+        if(j<0||j>=peers.length)return;const o=peers[j];const oi=it.order||0,oo=o.order||0;await doc.update({order:oo===oi?oo-1:oo});await S.db.doc("media/"+o.id).update({order:oi});}
+      else if(a==="del"){if(b.dataset.armed!=="1"){b.dataset.armed="1";b.textContent="Silmek için tekrar tıkla";setTimeout(()=>{if(b.isConnected){b.dataset.armed="";b.textContent="Sil";}},3500);return;}
+        await doc.delete();for(const aid of [it.asset,it.thumb].filter(Boolean)){try{await S.assets.delete(aid);}catch(e){}}toast("Silindi");}
+      }catch(e){toast("İşlem yapılamadı");}});});}
+function bindPins(m){
+  const sel=m.querySelector("#pinSel");if(!sel)return;sel.onchange=()=>{S.pinPlan=sel.value;S.pendingPin=null;render();};
+  const st=m.querySelector("#pinStage");st.addEventListener("click",e=>{const r=st.getBoundingClientRect();S.pendingPin={x:(e.clientX-r.left)/r.width,y:(e.clientY-r.top)/r.height};render();setTimeout(()=>$("#pinName")?.focus(),0);});
+  const plan=S.media.find(x=>x.id===S.pinPlan);const doc=S.db.doc("media/"+S.pinPlan);
+  const add=async()=>{const n=$("#pinName").value.trim();if(!n){toast("Oda adı yazın");return;}const pins=[...(plan.pins||[]),{x:+S.pendingPin.x.toFixed(4),y:+S.pendingPin.y.toFixed(4),room:n}];
+    try{await doc.update({pins});S.pendingPin=null;toast("İşaret eklendi");}catch(e){toast("Kaydedilemedi");}};
+  m.querySelector("#pinAdd")?.addEventListener("click",add);m.querySelector("#pinName")?.addEventListener("keydown",e=>{if(e.key==="Enter")add();});
+  m.querySelector("#pinCancel")?.addEventListener("click",()=>{S.pendingPin=null;render();});
+  m.querySelectorAll("[data-delpin]").forEach(b=>b.onclick=async()=>{const pins=(plan.pins||[]).filter((_,i)=>i!==+b.dataset.delpin);try{await doc.update({pins});}catch(e){toast("Kaydedilemedi");}});}
+
+/* data parsing */
+function parseNum(s){if(typeof s==="number")return s;s=String(s==null?"":s).replace(/SAR|USD|\s| /g,"");if(!s||s==="-")return 0;const isPct=s.includes("%");s=s.replace("%","");
+  if(/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(s))s=s.replace(/\./g,"").replace(",",".");
+  else if(/^-?\d{1,3}(,\d{3})+(\.\d+)?$/.test(s))s=s.replace(/,/g,"");
+  else if(s.includes(",")&&!s.includes("."))s=s.replace(",",".");
+  const n=parseFloat(s);return isNaN(n)?0:(isPct?n/100:n);}
+function parseVeri(rows){
+  const out={brands:null,villas:[],sections:[],rates:{}};let mode=null,bnames=[];const vals={};
+  for(const raw of rows){const cells=(raw||[]).map(x=>String(x==null?"":x).trim());let i=0;while(i<cells.length&&cells[i]==="")i++;const r=cells.slice(i);
+    if(!r.length){if(mode==="tbl")mode="done";continue;}
+    const lab=r[0];
+    if(/^KDV oran/i.test(lab))out.vat=parseNum(r[1]);
+    else if(/^Proje villa adedi/i.test(lab))out.villaCount=parseNum(r[1]);
+    else if(/^Kur/i.test(lab))out.fx=parseNum(r[1]);
+    if(/Villa\s*×\s*bölüm/i.test(lab)){out.currency=/USD/.test(lab)?"USD":/SAR/.test(lab)?"SAR":null;}
+    if(mode!=="done"&&lab==="Villa"&&r[1]==="Bölüm"){bnames=r.slice(2).filter(Boolean);mode="tbl";continue;}
+    if(mode==="tbl"&&/^Villa/i.test(lab)&&r.length>=3){const v=lab,s=r[1];if(!out.villas.includes(v))out.villas.push(v);if(!out.sections.includes(s))out.sections.push(s);
+      bnames.forEach((b,bi)=>{vals[b]=vals[b]||{};vals[b][v]=vals[b][v]||[];vals[b][v][out.sections.indexOf(s)]=parseNum(r[2+bi]);});continue;}
+    if(RATE_LABELS[lab]){let v=r.slice(1);if(v[0]==="")v=v.slice(1);out.rates[RATE_LABELS[lab]]=v.map(parseNum);}}
+  if(!bnames.length)return null;
+  out.brands=bnames.map((b,bi)=>({name:b,values:vals[b]||{},rates:{freight:out.rates.freight?.[bi],assembly:out.rates.assembly?.[bi],insurance:out.rates.insurance?.[bi]}}));
+  return out;}
+function mergeParsed(p,extra){
+  const cur=S.cfg||{projectName:"Hayat Mekke",subtitle:"Villa mobilya paketleri",location:"Mekke · Suudi Arabistan",vat:0.15,villaCount:250,fx:3.75,villaMeta:{}};
+  const old=Object.fromEntries((cur.brands||[]).map(b=>[b.name,b]));
+  // real supplier names never reach config/main: map each to its package name (private/keys, editors only)
+  const map={...(S.keys.bySource||{})};const used=new Set(Object.values(map));
+  const fresh=p.brands.filter(b=>!map[b.name]).sort((a,b)=>p.villas.reduce((s,v)=>s+(a.values[v]||[]).reduce((x,y)=>x+(+y||0),0),0)-p.villas.reduce((s,v)=>s+(b.values[v]||[]).reduce((x,y)=>x+(+y||0),0),0));
+  fresh.forEach(b=>{let n=TIERS.find(t=>!used.has(t));if(!n){let k=1;while(used.has("Paket "+k))k++;n="Paket "+k;}map[b.name]=n;used.add(n);});
+  S._pendingKeys=map;
+  p.brands=p.brands.map(b=>({...b,name:map[b.name]}));
+  const brandsN=p.brands.map(b=>{const o=old[b.name]?.rates||{};const r={};["freight","assembly","insurance"].forEach(k=>r[k]=b.rates[k]!=null?b.rates[k]:(+o[k]||0));
+    const values={};p.villas.forEach(v=>values[v]=p.sections.map((_,i)=>+(b.values[v]?.[i]||0)));return {name:b.name,rates:r,values};});
+  return {...cur,...extra,villas:p.villas,sections:p.sections,brands:brandsN,vat:p.vat!=null?p.vat:cur.vat,villaCount:p.villaCount||cur.villaCount,fx:p.fx||cur.fx,updatedAt:new Date().toISOString()};}
+async function saveKeys(patch){const k={bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
+async function saveCfg(c,msg){try{delete c.sheetId;
+  if(S._pendingKeys){await saveKeys({bySource:S._pendingKeys});S._pendingKeys=null;}
+  await S.db.doc("config/main").set(c);toast(msg||"Kaydedildi");}catch(e){toast(e?.code==="invalid_argument"?"Kaydetme yetkiniz yok":"Kaydedilemedi, tekrar deneyin");}}
+function sheetIdFrom(s){const m=String(s||"").match(/\/d\/([A-Za-z0-9_-]{20,})/);return m?m[1]:String(s||"").trim();}
+function bindData(m){
+  m.querySelector("#syncBtn")?.addEventListener("click",async()=>{const st=m.querySelector("#syncStatus");const id=sheetIdFrom(m.querySelector("#sheetId").value);if(!id){st.textContent="Tablo bağlantısını girin.";return;}
+    st.textContent="Google Sheets okunuyor…";
+    try{const res=await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:SHEET_RANGE},{cache:false});let p=res.payload;if(typeof p==="string"){try{p=JSON.parse(p)}catch(e){}}
+      const rows=p?.values||p?.valueRange?.values;if(!Array.isArray(rows))throw {message:"Veri sayfası okunamadı"};
+      const parsed=parseVeri(rows);if(!parsed)throw {message:"Veri sayfasında 'Villa | Bölüm' tablosu bulunamadı"};
+      if(parsed.currency==="SAR")throw {message:"Excel SAR modunda. Özet sayfasında para birimini USD yapıp tekrar çekin"};
+      if(id!==S.keys.sheetId){try{await saveKeys({sheetId:id});}catch(e){}}
+      await saveCfg(mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"}),`${parsed.brands.length} paket, ${parsed.villas.length} villa güncellendi`);}
+    catch(e){st.textContent=e?.code==="not_granted"||e?.code==="server_not_connected"?"Google Sheets bağlantısına izin verin ya da bağlayıcıyı claude.ai'de açın.":"Çekilemedi: "+(e?.message||e?.code||"bilinmeyen hata");}});
+  m.querySelector("#pasteBtn").onclick=()=>{const t=m.querySelector("#pasteArea").value;const rows=t.split(/\r?\n/).map(l=>l.split("\t"));const p=parseVeri(rows);
+    if(!p){toast("Başlık satırı (Villa, Bölüm, markalar) bulunamadı");return;}saveCfg(mergeParsed(p,{source:"paste"}),`${p.brands.length} paket içe aktarıldı`);};
+  if(!S.cfg)return;
+  m.querySelector("#addBrand").onclick=()=>{const c=structuredClone(S.cfg);c.brands.push({name:"Yeni paket",rates:{freight:0,assembly:0,insurance:0},values:Object.fromEntries(villas().map(v=>[v,sections().map(()=>0)]))});saveCfg(c,"Paket eklendi");};
+  m.querySelectorAll("[data-delbrand]").forEach(b=>b.onclick=()=>{if(b.dataset.armed!=="1"){b.dataset.armed="1";b.textContent="Emin misiniz?";return;}const c=structuredClone(S.cfg);c.brands.splice(+b.dataset.delbrand,1);saveCfg(c,"Paket kaldırıldı");});
+  m.querySelector("#saveData").onclick=()=>{const c=structuredClone(S.cfg);
+    c.vat=parseNum(m.querySelector("#dVat").value)/100;c.villaCount=parseNum(m.querySelector("#dCount").value);c.fx=parseNum(m.querySelector("#dFx").value)||3.75;
+    const renames={};
+    m.querySelectorAll("[data-bname]").forEach(el=>{const b=c.brands[+el.dataset.bname];const n=el.value.trim();if(n&&n!==b.name){renames[b.name]=n;b.name=n;}});
+    if(Object.keys(renames).length){const bs={...(S.keys.bySource||{})};for(const k in bs)if(renames[bs[k]])bs[k]=renames[bs[k]];S._pendingKeys=bs;
+      S.media.filter(x=>renames[x.brand]).forEach(x=>S.db.doc("media/"+x.id).update({brand:renames[x.brand]}).catch(()=>{}));}
+    m.querySelectorAll("[data-rate]").forEach(el=>{const [bi,k]=el.dataset.rate.split("|");c.brands[+bi].rates[k]=parseNum(el.value)/100;});
+    m.querySelectorAll("[data-val]").forEach(el=>{const [bi,v,si]=el.dataset.val.split("|");const b=c.brands[+bi];b.values[v]=b.values[v]||[];b.values[v][+si]=parseNum(el.value);});
+    c.updatedAt=new Date().toISOString();c.source="manual";saveCfg(c,"Veriler kaydedildi");};}
+function bindInfo(m){m.querySelector("#saveInfo").onclick=()=>{if(!S.cfg)return;const c=structuredClone(S.cfg);
+  c.projectName=m.querySelector("#iName").value.trim()||"Hayat Mekke";c.subtitle=m.querySelector("#iSub").value.trim();c.location=m.querySelector("#iLoc").value.trim();c.intro=m.querySelector("#iIntro").value.trim();
+  c.villaMeta=c.villaMeta||{};m.querySelectorAll("[data-vm]").forEach(el=>{const [v,k]=el.dataset.vm.split("|");c.villaMeta[v]=c.villaMeta[v]||{};c.villaMeta[v][k]=el.value.trim();});saveCfg(c,"Bilgiler kaydedildi");};}
+
+/* ---------- boot ---------- */
+let renderPending=false;
+function scheduleRender(){
+  // avoid wiping in-progress admin form edits: only rerender admin if user is not typing
+  if(S.view==="admin"&&document.activeElement&&/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&S.admin!=="pins"){renderPending=true;return;}
+  if($("#overlay").children.length){renderTabs();renderPending=true;return;}
+  render();}
+document.addEventListener("focusout",()=>setTimeout(()=>{if(renderPending&&!(document.activeElement&&/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))&&!$("#overlay").children.length){renderPending=false;render();}},50));
+new MutationObserver(()=>{if(!$("#overlay").children.length&&renderPending){renderPending=false;render();}}).observe($("#overlay"),{childList:true});
+
+(async function boot(){
+  const claude=window.claude;
+  if(!claude||!claude.use){ // standalone build (GitHub Pages / local): data comes from data/data.js
+    const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));}
+    S.dbReady=true;render();return;}
+  const [db,user,assets,mcp]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("assets"),claude.use("mcp")]);
+  S.db=db;S.assets=assets;S.mcp=mcp;
+  try{S.canEdit=!!(user&&await user.canEdit());}catch(e){}
+  if(!S.canEdit&&assets)S.canEdit=true;
+  if(!db){S.dbReady=true;render();return;}
+  db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;S.dbReady=true;scheduleRender();},e=>{S.dbReady=true;render();});
+  if(S.canEdit)db.doc("private/keys").onSnapshot(s=>{if(s.exists){const d=s.data();S.keys={bySource:{...(d.bySource||{})},sheetId:d.sheetId||""};}},()=>{});
+  db.collection("media").onSnapshot(q=>{S.media=q.docs.map(d=>({id:d.id,...d.data()}));scheduleRender();},()=>{});
+})();
+render();
+})();
+</script>
+
+</body>
+</html>

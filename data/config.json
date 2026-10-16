@@ -1,0 +1,222 @@
+{
+  "brands": [
+    {
+      "name": "Silver",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.08,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          43365,
+          20678,
+          10801,
+          11250
+        ],
+        "Villa B": [
+          45413,
+          20373,
+          10173,
+          8715
+        ],
+        "Villa C": [
+          45888,
+          22373,
+          7840,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Gold",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.07,
+        "insurance": 0.004
+      },
+      "values": {
+        "Villa A": [
+          50523,
+          21110,
+          14076,
+          11250
+        ],
+        "Villa B": [
+          52294,
+          18995,
+          13851,
+          8715
+        ],
+        "Villa C": [
+          53219,
+          22373,
+          14164,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Platinum",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.05,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          51593,
+          21053,
+          14969,
+          11250
+        ],
+        "Villa B": [
+          54260,
+          20311,
+          15159,
+          8715
+        ],
+        "Villa C": [
+          58710,
+          22373,
+          11971,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Pearl",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.06,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          54025,
+          27335,
+          17363,
+          11250
+        ],
+        "Villa B": [
+          57896,
+          25215,
+          17296,
+          8715
+        ],
+        "Villa C": [
+          60505,
+          28998,
+          14955,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Emerald",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.05,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          62285,
+          41709,
+          20639,
+          11250
+        ],
+        "Villa B": [
+          84883,
+          46995,
+          18955,
+          8715
+        ],
+        "Villa C": [
+          84894,
+          49968,
+          14955,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Diamond",
+      "rates": {
+        "assembly": 0.06,
+        "freight": 0.04,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          70373,
+          40443,
+          21950,
+          11250
+        ],
+        "Villa B": [
+          78898,
+          41480,
+          24429,
+          8715
+        ],
+        "Villa C": [
+          92886,
+          42319,
+          22178,
+          8715
+        ]
+      }
+    },
+    {
+      "name": "Royal",
+      "rates": {
+        "assembly": 0.05,
+        "freight": 0.034,
+        "insurance": 0.004
+      },
+      "values": {
+        "Villa A": [
+          75033,
+          45903,
+          22546,
+          11250
+        ],
+        "Villa B": [
+          82456,
+          45153,
+          25170,
+          8715
+        ],
+        "Villa C": [
+          109678,
+          51233,
+          23019,
+          8715
+        ]
+      }
+    }
+  ],
+  "currency": "USD",
+  "fx": 3.75,
+  "location": "Mekke · Suudi Arabistan",
+  "projectName": "Hayat Mekke",
+  "sections": [
+    "Zemin kat",
+    "1. kat",
+    "Çatı katı",
+    "Ev tamamlayıcı ürünler"
+  ],
+  "source": "sheets",
+  "subtitle": "Villa mobilya paketleri",
+  "syncedAt": "2026-10-15T06:40:00Z",
+  "updatedAt": "2026-10-15T06:40:00Z",
+  "vat": 0.15,
+  "villaCount": 250,
+  "villaMeta": {},
+  "villas": [
+    "Villa A",
+    "Villa B",
+    "Villa C"
+  ]
+}
