@@ -139,6 +139,52 @@
       }
     },
     {
+      "firm": "Modis",
+      "layers": {
+        "Villa A": {
+          "assembly": 5307,
+          "freight": 7000,
+          "insurance": 541
+        },
+        "Villa B": {
+          "assembly": 5702,
+          "freight": 7000,
+          "insurance": 583
+        },
+        "Villa C": {
+          "assembly": 6144,
+          "freight": 7000,
+          "insurance": 629
+        }
+      },
+      "name": "Pearl",
+      "rates": {
+        "assembly": 0,
+        "freight": 0,
+        "insurance": 0.005
+      },
+      "values": {
+        "Villa A": [
+          50264,
+          31804,
+          17077,
+          9133
+        ],
+        "Villa B": [
+          54183,
+          33444,
+          19751,
+          9133
+        ],
+        "Villa C": [
+          63488,
+          33360,
+          19735,
+          9133
+        ]
+      }
+    },
+    {
       "firm": "Gabba",
       "layers": {
         "Villa A": {
@@ -157,7 +203,7 @@
           "insurance": 745
         }
       },
-      "name": "Pearl",
+      "name": "Emerald",
       "rates": {
         "assembly": 0,
         "freight": 0,
@@ -180,52 +226,6 @@
           72019,
           50795,
           17080,
-          9133
-        ]
-      }
-    },
-    {
-      "firm": "Modis",
-      "layers": {
-        "Villa A": {
-          "assembly": 6330,
-          "freight": 7000,
-          "insurance": 648
-        },
-        "Villa B": {
-          "assembly": 6893,
-          "freight": 7000,
-          "insurance": 707
-        },
-        "Villa C": {
-          "assembly": 7540,
-          "freight": 7000,
-          "insurance": 774
-        }
-      },
-      "name": "Emerald",
-      "rates": {
-        "assembly": 0,
-        "freight": 0,
-        "insurance": 0.005
-      },
-      "values": {
-        "Villa A": [
-          60246,
-          39279,
-          20934,
-          9133
-        ],
-        "Villa B": [
-          66398,
-          41485,
-          24304,
-          9133
-        ],
-        "Villa C": [
-          80011,
-          41356,
-          24303,
           9133
         ]
       }
@@ -281,6 +281,11 @@
   "freightNote": "Navlun ve lojistik villa başı sabit tutar",
   "fx": 3.75,
   "location": "Mekke · Suudi Arabistan",
+  "logos": {
+    "emlak": "assets/brand/emlak-konut.png",
+    "rapid": "assets/brand/rapidrender.png",
+    "rapidWhite": "assets/brand/rapidrender-white.png"
+  },
   "projectName": "Hayat Mekke",
   "scope": "228 kalemlik mobilya metrajı (BoQ rev07); tüm paketler aynı şablon ve aynı miktarlarla fiyatlandırıldı.",
   "sections": [
@@ -291,8 +296,8 @@
   ],
   "source": "sheets",
   "subtitle": "Villa mobilya paketleri",
-  "syncedAt": "2026-10-16T12:41:05.303Z",
-  "updatedAt": "2026-10-16T12:41:05.304Z",
+  "syncedAt": "2026-10-16T20:34:36.579Z",
+  "updatedAt": "2026-10-16T20:34:36.579Z",
   "vat": 0.15,
   "villaCount": 250,
   "villaMeta": {},
@@ -300,10 +305,5 @@
     "Villa A",
     "Villa B",
     "Villa C"
-  ],
-  "logos": {
-    "emlak": "assets/brand/emlak-konut.png",
-    "rapid": "assets/brand/rapidrender.png",
-    "rapidWhite": "assets/brand/rapidrender-white.png"
-  }
+  ]
 }

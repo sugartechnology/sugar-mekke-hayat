@@ -429,7 +429,7 @@
     "b": "Livello",
     "c": "F-062",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -437,7 +437,7 @@
     "b": "Livello",
     "c": "F-063",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -887,7 +887,7 @@
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1361.25
    },
@@ -895,7 +895,7 @@
     "b": "Livello",
     "c": "F-123",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 496.25
    },
@@ -1055,7 +1055,7 @@
     "b": "Livello",
     "c": "F-143",
     "f": "1. kat",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom",
     "t": "Fixed",
     "v": 642.5
    },
@@ -1063,7 +1063,7 @@
     "b": "Livello",
     "c": "F-144",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 2312.5
    },
@@ -1681,7 +1681,7 @@
     "b": "Livello",
     "c": "F-223",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -1689,7 +1689,7 @@
     "b": "Livello",
     "c": "F-224",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 787.5
    },
@@ -2285,7 +2285,7 @@
     "b": "Livello",
     "c": "F-062",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -2293,7 +2293,7 @@
     "b": "Livello",
     "c": "F-063",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -2743,7 +2743,7 @@
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1361.25
    },
@@ -2751,7 +2751,7 @@
     "b": "Livello",
     "c": "F-123",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 496.25
    },
@@ -2911,7 +2911,7 @@
     "b": "Livello",
     "c": "F-143",
     "f": "1. kat",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom",
     "t": "Fixed",
     "v": 642.5
    },
@@ -2919,7 +2919,7 @@
     "b": "Livello",
     "c": "F-144",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 2312.5
    },
@@ -3537,7 +3537,7 @@
     "b": "Livello",
     "c": "F-223",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -3545,7 +3545,7 @@
     "b": "Livello",
     "c": "F-224",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 787.5
    },
@@ -4141,7 +4141,7 @@
     "b": "Livello",
     "c": "F-062",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -4149,7 +4149,7 @@
     "b": "Livello",
     "c": "F-063",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -4599,7 +4599,7 @@
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1361.25
    },
@@ -4607,7 +4607,7 @@
     "b": "Livello",
     "c": "F-123",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 496.25
    },
@@ -4767,7 +4767,7 @@
     "b": "Livello",
     "c": "F-143",
     "f": "1. kat",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom",
     "t": "Fixed",
     "v": 642.5
    },
@@ -4775,7 +4775,7 @@
     "b": "Livello",
     "c": "F-144",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 2312.5
    },
@@ -5393,7 +5393,7 @@
     "b": "Livello",
     "c": "F-223",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -5401,7 +5401,7 @@
     "b": "Livello",
     "c": "F-224",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 787.5
    },
@@ -5591,7 +5591,7 @@
     "f": "Zemin kat",
     "n": "Living Room 3-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 1695
+    "v": 1685.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5599,7 +5599,7 @@
     "f": "Zemin kat",
     "n": "Living Room 2-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 1695
+    "v": 1377.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5607,7 +5607,7 @@
     "f": "Zemin kat",
     "n": "Living Room Armchair",
     "t": "Loose Furniture",
-    "v": 1470
+    "v": 1597.76
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5615,7 +5615,7 @@
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
     "t": "Loose Furniture",
-    "v": 1056.25
+    "v": 925.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5623,7 +5623,7 @@
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
     "t": "Loose Furniture",
-    "v": 1056.25
+    "v": 497
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5631,7 +5631,7 @@
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
     "t": "Loose Furniture",
-    "v": 646.25
+    "v": 601.12
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5639,7 +5639,7 @@
     "f": "Zemin kat",
     "n": "Living Room TV Console",
     "t": "Loose Furniture",
-    "v": 1367.5
+    "v": 1153.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5647,7 +5647,7 @@
     "f": "Zemin kat",
     "n": "Living Room Dining Table",
     "t": "Loose Furniture",
-    "v": 1101.25
+    "v": 995.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5655,7 +5655,7 @@
     "f": "Zemin kat",
     "n": "Living Room Chair",
     "t": "Loose Furniture",
-    "v": 1890
+    "v": 4466
    },
    {
     "b": "Kitchen Furniture",
@@ -5695,7 +5695,7 @@
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
     "t": "Loose Furniture",
-    "v": 1025
+    "v": 1064
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5703,7 +5703,7 @@
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
     "t": "Loose Furniture",
-    "v": 323.75
+    "v": 855.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5711,7 +5711,7 @@
     "f": "Zemin kat",
     "n": "Majlis TV Console",
     "t": "Loose Furniture",
-    "v": 1367.5
+    "v": 1152.38
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5719,7 +5719,7 @@
     "f": "Zemin kat",
     "n": "Majlis 3-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 2372.5
+    "v": 1298.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5727,7 +5727,7 @@
     "f": "Zemin kat",
     "n": "Majlis 2-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 2372.5
+    "v": 1298.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5735,7 +5735,7 @@
     "f": "Zemin kat",
     "n": "Majlis Dining Table",
     "t": "Loose Furniture",
-    "v": 1518.75
+    "v": 1482.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5743,7 +5743,7 @@
     "f": "Zemin kat",
     "n": "Majlis Chair",
     "t": "Loose Furniture",
-    "v": 4230
+    "v": 2842
    },
    {
     "b": "Bathroom Furniture",
@@ -5823,7 +5823,7 @@
     "f": "1. kat",
     "n": "Bedroom-1 Double Bed",
     "t": "Loose Furniture",
-    "v": 2655
+    "v": 1712.38
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5831,7 +5831,7 @@
     "f": "1. kat",
     "n": "Bedroom-1 Bedside Table",
     "t": "Loose Furniture",
-    "v": 1950
+    "v": 1118.24
    },
    {
     "b": "Livello",
@@ -5855,7 +5855,7 @@
     "f": "1. kat",
     "n": "Bedroom-2 Double Bed",
     "t": "Loose Furniture",
-    "v": 2537.5
+    "v": 1712.38
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5863,7 +5863,7 @@
     "f": "1. kat",
     "n": "Bedroom-2 Bedside Table",
     "t": "Loose Furniture",
-    "v": 2537.5
+    "v": 1118.24
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5871,7 +5871,7 @@
     "f": "1. kat",
     "n": "Bedroom-2 Dressing Table",
     "t": "Loose Furniture",
-    "v": 1218.75
+    "v": 992.25
    },
    {
     "b": "Livello",
@@ -5887,7 +5887,7 @@
     "f": "1. kat",
     "n": "Bedroom-2 Chair",
     "t": "Loose Furniture",
-    "v": 181.25
+    "v": 540.75
    },
    {
     "b": "Bathroom Furniture",
@@ -5903,7 +5903,7 @@
     "f": "1. kat",
     "n": "Bedroom-3 Double Bed",
     "t": "Loose Furniture",
-    "v": 2537.5
+    "v": 1712.38
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5911,7 +5911,7 @@
     "f": "1. kat",
     "n": "Bedroom-3 Bedside Table",
     "t": "Loose Furniture",
-    "v": 2537.5
+    "v": 1118.24
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5919,7 +5919,7 @@
     "f": "1. kat",
     "n": "Bedroom-3 Dressing Table",
     "t": "Loose Furniture",
-    "v": 1218.75
+    "v": 992.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5927,7 +5927,7 @@
     "f": "1. kat",
     "n": "Bedroom-3 Chair",
     "t": "Loose Furniture",
-    "v": 181.25
+    "v": 559.12
    },
    {
     "b": "Livello",
@@ -5951,7 +5951,7 @@
     "f": "1. kat",
     "n": "Master Bedroom Double Bed",
     "t": "Loose Furniture",
-    "v": 5320
+    "v": 1998.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5959,7 +5959,7 @@
     "f": "1. kat",
     "n": "Master Bedroom Bedside Table",
     "t": "Loose Furniture",
-    "v": 2537.5
+    "v": 1319.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5967,7 +5967,7 @@
     "f": "1. kat",
     "n": "Master Bedroom Dressing Table",
     "t": "Loose Furniture",
-    "v": 1218.75
+    "v": 992.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5975,7 +5975,7 @@
     "f": "1. kat",
     "n": "Master Bedroom Chair",
     "t": "Loose Furniture",
-    "v": 181.25
+    "v": 708.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -5983,7 +5983,7 @@
     "f": "1. kat",
     "n": "Master Bedroom Bed bench",
     "t": "Loose Furniture",
-    "v": 500
+    "v": 846.12
    },
    {
     "b": "Bathroom Furniture",
@@ -5997,7 +5997,7 @@
     "b": "Livello",
     "c": "F-062",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -6005,7 +6005,7 @@
     "b": "Livello",
     "c": "F-063",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -6047,7 +6047,7 @@
     "f": "Çatı katı",
     "n": "Hallway Console table",
     "t": "Loose Furniture",
-    "v": 1467.5
+    "v": 555.62
    },
    {
     "b": "Pearl koleksiyonu",
@@ -6055,7 +6055,7 @@
     "f": "Çatı katı",
     "n": "Family Living 3-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 4745
+    "v": 3972.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -6063,7 +6063,7 @@
     "f": "Çatı katı",
     "n": "Living Room 2-Seater Sofa",
     "t": "Loose Furniture",
-    "v": 2372.5
+    "v": 1986.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -6071,7 +6071,7 @@
     "f": "Çatı katı",
     "n": "Family Living TV Console",
     "t": "Loose Furniture",
-    "v": 1450
+    "v": 1153.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -6079,10 +6079,1866 @@
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
     "t": "Loose Furniture",
-    "v": 1025
+    "v": 887.25
    },
    {
     "b": "Pearl koleksiyonu",
+    "c": "F-073",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 443.62
+   },
+   {
+    "b": "Livello",
+    "c": "F-074",
+    "f": "Çatı katı",
+    "n": "Storage Wardrobe",
+    "t": "Fixed",
+    "v": 702.5
+   },
+   {
+    "b": "Livello",
+    "c": "F-075",
+    "f": "Çatı katı",
+    "n": "Storage Wardrobe",
+    "t": "Fixed",
+    "v": 897.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-076",
+    "f": "Çatı katı",
+    "n": "Terrace Table",
+    "t": "Loose Furniture",
+    "v": 1621.25
+   },
+   {
+    "b": "Luva",
+    "c": "F-077",
+    "f": "Çatı katı",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2000
+   },
+   {
+    "b": "Penelope",
+    "c": "D1",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
+    "t": "Ev Dekorasyon",
+    "v": 3387.26
+   },
+   {
+    "b": "Penelope",
+    "c": "D2",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
+    "t": "Ev Dekorasyon",
+    "v": 1944
+   },
+   {
+    "b": "Karaca/Korkmaz",
+    "c": "D3",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving equipment)",
+    "t": "Ev Dekorasyon",
+    "v": 1000
+   },
+   {
+    "b": "Loominology",
+    "c": "D4",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Carpets & Rugs Set (6 Rooms)",
+    "t": "Ev Dekorasyon",
+    "v": 1122
+   },
+   {
+    "b": "Dercan Tekstil",
+    "c": "D5",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Curtains Package (Blackout + Sheer)",
+    "t": "Ev Dekorasyon",
+    "v": 780
+   },
+   {
+    "b": "Silver koleksiyonu",
+    "c": "D6",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "",
+    "t": "Ev Dekorasyon",
+    "v": 900
+   }
+  ],
+  "Villa B": [
+   {
+    "b": "Luva",
+    "c": "F-078",
+    "f": "Zemin kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-079",
+    "f": "Zemin kat",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2552.5
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-085",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 7500
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-086",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 0
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-087",
+    "f": "Zemin kat",
+    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "t": "Fixed",
+    "v": 5625
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-092",
+    "f": "Zemin kat",
+    "n": "Living Room 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 2288.12
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-093",
+    "f": "Zemin kat",
+    "n": "Living Room 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 2288.12
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-094",
+    "f": "Zemin kat",
+    "n": "Living Room Armchair",
+    "t": "Loose Furniture",
+    "v": 1774.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-095",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1153.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-096",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1153.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-097",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 674.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-098",
+    "f": "Zemin kat",
+    "n": "Living Room TV Console",
+    "t": "Loose Furniture",
+    "v": 574.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-099",
+    "f": "Zemin kat",
+    "n": "Living Room Dining Table",
+    "t": "Loose Furniture",
+    "v": 673.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-100",
+    "f": "Zemin kat",
+    "n": "Living Room Chair",
+    "t": "Loose Furniture",
+    "v": 4612.96
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-101",
+    "f": "Zemin kat",
+    "n": "Living Room Buffet",
+    "t": "Loose Furniture",
+    "v": 826
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-102",
+    "f": "Zemin kat",
+    "n": "Powder Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Livello",
+    "c": "F-103",
+    "f": "Zemin kat",
+    "n": "Guest Entrance Coat Rack",
+    "t": "Fixed",
+    "v": 787.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-104",
+    "f": "Zemin kat",
+    "n": "Guest Basin Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1500
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-105",
+    "f": "Zemin kat",
+    "n": "Powder Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-106",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 1064.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-107",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 855.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-108",
+    "f": "Zemin kat",
+    "n": "Majlis TV Console",
+    "t": "Loose Furniture",
+    "v": 1064.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-109",
+    "f": "Zemin kat",
+    "n": "Majlis 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1297.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-110",
+    "f": "Zemin kat",
+    "n": "Majlis 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1297.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-111",
+    "f": "Zemin kat",
+    "n": "Majlis Dining Table",
+    "t": "Loose Furniture",
+    "v": 1481.38
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-112",
+    "f": "Zemin kat",
+    "n": "Majlis Chair",
+    "t": "Loose Furniture",
+    "v": 3122
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-113",
+    "f": "Zemin kat",
+    "n": "Majlis Armchair",
+    "t": "Loose Furniture",
+    "v": 1597.76
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-114",
+    "f": "Zemin kat",
+    "n": "Majlis Side Table",
+    "t": "Loose Furniture",
+    "v": 700
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-115",
+    "f": "Zemin kat",
+    "n": "Driver Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-116",
+    "f": "Zemin kat",
+    "n": "Driver Room Wardrobe",
+    "t": "Fixed",
+    "v": 642.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-117",
+    "f": "Zemin kat",
+    "n": "Driver WC Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1500
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-118",
+    "f": "1. kat",
+    "n": "Bedroom-1 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-119",
+    "f": "1. kat",
+    "n": "Bedroom-1 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-120",
+    "f": "1. kat",
+    "n": "Bedroom-1 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1007.12
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-121",
+    "f": "1. kat",
+    "n": "Bedroom-1 Chair",
+    "t": "Loose Furniture",
+    "v": 395.5
+   },
+   {
+    "b": "Livello",
+    "c": "F-122",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 1361.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-123",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 496.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-124",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-125",
+    "f": "1. kat",
+    "n": "Bedroom-2 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-126",
+    "f": "1. kat",
+    "n": "Bedroom-2 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-127",
+    "f": "1. kat",
+    "n": "Bedroom-2 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1007.12
+   },
+   {
+    "b": "Livello",
+    "c": "F-128",
+    "f": "1. kat",
+    "n": "Bedroom-2 Wardrobe",
+    "t": "Fixed",
+    "v": 1583.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-129",
+    "f": "1. kat",
+    "n": "Bedroom-2 Chair",
+    "t": "Loose Furniture",
+    "v": 395.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-130",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-131",
+    "f": "1. kat",
+    "n": "Bedroom-3 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-132",
+    "f": "1. kat",
+    "n": "Bedroom-3 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-133",
+    "f": "1. kat",
+    "n": "Bedroom-3 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1007.12
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-134",
+    "f": "1. kat",
+    "n": "Bedroom-3 Chair",
+    "t": "Loose Furniture",
+    "v": 395.5
+   },
+   {
+    "b": "Livello",
+    "c": "F-135",
+    "f": "1. kat",
+    "n": "Bedroom-3 Wardrobe",
+    "t": "Fixed",
+    "v": 985
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-136",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-137",
+    "f": "1. kat",
+    "n": "Master Bedroom Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-138",
+    "f": "1. kat",
+    "n": "Master Bedroom Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-139",
+    "f": "1. kat",
+    "n": "Master Bedroom Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1007.12
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-140",
+    "f": "1. kat",
+    "n": "Master Bedroom Chair",
+    "t": "Loose Furniture",
+    "v": 395.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-141",
+    "f": "1. kat",
+    "n": "Master Bedroom Bed bench",
+    "t": "Loose Furniture",
+    "v": 846.12
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-142",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Livello",
+    "c": "F-143",
+    "f": "1. kat",
+    "n": "Master Bedroom",
+    "t": "Fixed",
+    "v": 642.5
+   },
+   {
+    "b": "Livello",
+    "c": "F-144",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 2312.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-145",
+    "f": "1. kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-146",
+    "f": "1. kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 852.96
+   },
+   {
+    "b": "Luva",
+    "c": "F-147",
+    "f": "Çatı katı",
+    "n": "Rawashin Chair",
+    "t": "Loose Furniture",
+    "v": 2552.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-148",
+    "f": "Çatı katı",
+    "n": "Rawashin Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-149",
+    "f": "Çatı katı",
+    "n": "Family Living 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 3710
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-150",
+    "f": "Çatı katı",
+    "n": "Family Living TV Console",
+    "t": "Loose Furniture",
+    "v": 1152.38
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-151",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 443.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-152",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 886.38
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-153",
+    "f": "Çatı katı",
+    "n": "Family Living Room Buffet",
+    "t": "Loose Furniture",
+    "v": 4431.88
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-154",
+    "f": "Çatı katı",
+    "n": "Maid Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-155",
+    "f": "Çatı katı",
+    "n": "Maid Bath Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1375
+   },
+   {
+    "b": "Luva",
+    "c": "F-156",
+    "f": "Çatı katı",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-157",
+    "f": "Çatı katı",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2552.5
+   },
+   {
+    "b": "Penelope",
+    "c": "D1",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
+    "t": "Ev Dekorasyon",
+    "v": 3387.26
+   },
+   {
+    "b": "Penelope",
+    "c": "D2",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
+    "t": "Ev Dekorasyon",
+    "v": 1944
+   },
+   {
+    "b": "Karaca/Korkmaz",
+    "c": "D3",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving)",
+    "t": "Ev Dekorasyon",
+    "v": 1000
+   },
+   {
+    "b": "Loominology",
+    "c": "D4",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Carpets & Rugs Set (6 Rooms)",
+    "t": "Ev Dekorasyon",
+    "v": 1122
+   },
+   {
+    "b": "Dercan Tekstil",
+    "c": "D5",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Curtains Package (Blackout + Sheer)",
+    "t": "Ev Dekorasyon",
+    "v": 780
+   },
+   {
+    "b": "Silver koleksiyonu",
+    "c": "D6",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "",
+    "t": "Ev Dekorasyon",
+    "v": 900
+   }
+  ],
+  "Villa C": [
+   {
+    "b": "Luva",
+    "c": "F-158",
+    "f": "Zemin kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-159",
+    "f": "Zemin kat",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2555
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-160",
+    "f": "Zemin kat",
+    "n": "Living Room 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1809.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-161",
+    "f": "Zemin kat",
+    "n": "Living Room 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1729.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-162",
+    "f": "Zemin kat",
+    "n": "Living Room Armchair",
+    "t": "Loose Furniture",
+    "v": 1774.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-163",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 855.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-164",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1064.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-165",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 855.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-166",
+    "f": "Zemin kat",
+    "n": "Living Room Buffet",
+    "t": "Loose Furniture",
+    "v": 3370.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-167",
+    "f": "Zemin kat",
+    "n": "Living Room TV Console",
+    "t": "Loose Furniture",
+    "v": 1153.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-168",
+    "f": "Zemin kat",
+    "n": "Living Room Dining Table",
+    "t": "Loose Furniture",
+    "v": 2187.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-169",
+    "f": "Zemin kat",
+    "n": "Living Room Chair",
+    "t": "Loose Furniture",
+    "v": 5676.96
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-170",
+    "f": "Zemin kat",
+    "n": "Living Room Bookcase",
+    "t": "Loose Furniture",
+    "v": 3368.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-171",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 1064.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-172",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 855.75
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-173",
+    "f": "Zemin kat",
+    "n": "Majlis TV Console",
+    "t": "Loose Furniture",
+    "v": 1153.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-174",
+    "f": "Zemin kat",
+    "n": "Majlis 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1297.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-175",
+    "f": "Zemin kat",
+    "n": "Majlis 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1297.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-176",
+    "f": "Zemin kat",
+    "n": "Majlis Dining Table",
+    "t": "Loose Furniture",
+    "v": 1628.38
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-177",
+    "f": "Zemin kat",
+    "n": "Majlis Chair",
+    "t": "Loose Furniture",
+    "v": 4956
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-178",
+    "f": "Zemin kat",
+    "n": "Majlis Armchair",
+    "t": "Loose Furniture",
+    "v": 1597.76
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-179",
+    "f": "Zemin kat",
+    "n": "Side Table",
+    "t": "Loose Furniture",
+    "v": 855.75
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-180",
+    "f": "Zemin kat",
+    "n": "Powder Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-181",
+    "f": "Zemin kat",
+    "n": "Guest Basin Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1500
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-186",
+    "f": "Zemin kat",
+    "n": "Kitchen Base Cabinet",
+    "t": "Fixed",
+    "v": 7500
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-187",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 0
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-188",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 0
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-189",
+    "f": "Zemin kat",
+    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "t": "Fixed",
+    "v": 5625
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-194",
+    "f": "Zemin kat",
+    "n": "Powder Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1125
+   },
+   {
+    "b": "Livello",
+    "c": "F-195",
+    "f": "Zemin kat",
+    "n": "Guest Entrance Coat Rack",
+    "t": "Fixed",
+    "v": 787.5
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-196",
+    "f": "Zemin kat",
+    "n": "Driver Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-197",
+    "f": "Zemin kat",
+    "n": "Driver Room Wardrobe",
+    "t": "Fixed",
+    "v": 642.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-198",
+    "f": "Zemin kat",
+    "n": "Driver WC Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1500
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-199",
+    "f": "1. kat",
+    "n": "Bedroom-1 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-200",
+    "f": "1. kat",
+    "n": "Bedroom-1 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-201",
+    "f": "1. kat",
+    "n": "Bedroom-1 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 992.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-202",
+    "f": "1. kat",
+    "n": "Bedroom-1 Chair",
+    "t": "Loose Furniture",
+    "v": 396.38
+   },
+   {
+    "b": "Livello",
+    "c": "F-203",
+    "f": "1. kat",
+    "n": "Bedroom-1 Wardrobe",
+    "t": "Fixed",
+    "v": 1361.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-204",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-205",
+    "f": "1. kat",
+    "n": "Bedroom-2 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-206",
+    "f": "1. kat",
+    "n": "Bedroom-2 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-207",
+    "f": "1. kat",
+    "n": "Bedroom-2 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 992.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-208",
+    "f": "1. kat",
+    "n": "Bedroom-2 Wardrobe",
+    "t": "Fixed",
+    "v": 1361.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-209",
+    "f": "1. kat",
+    "n": "Bedroom-2 Chair",
+    "t": "Loose Furniture",
+    "v": 396.38
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-210",
+    "f": "1. kat",
+    "n": "Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-211",
+    "f": "1. kat",
+    "n": "Bedroom-3 Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-212",
+    "f": "1. kat",
+    "n": "Bedroom-3 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-213",
+    "f": "1. kat",
+    "n": "Bedroom-3 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 992.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-214",
+    "f": "1. kat",
+    "n": "Bedroom-3 Chair",
+    "t": "Loose Furniture",
+    "v": 396.38
+   },
+   {
+    "b": "Livello",
+    "c": "F-215",
+    "f": "1. kat",
+    "n": "Bedroom-3 Wardrobe",
+    "t": "Fixed",
+    "v": 985
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-216",
+    "f": "1. kat",
+    "n": "Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-217",
+    "f": "1. kat",
+    "n": "Master Bedroom Double Bed",
+    "t": "Loose Furniture",
+    "v": 1830.5
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-218",
+    "f": "1. kat",
+    "n": "Master Bedroom Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1246
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-219",
+    "f": "1. kat",
+    "n": "Master Bedroom Dressing Table",
+    "t": "Loose Furniture",
+    "v": 992.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-220",
+    "f": "1. kat",
+    "n": "Master Bedroom Chair",
+    "t": "Loose Furniture",
+    "v": 541.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-221",
+    "f": "1. kat",
+    "n": "Master Bedroom Bed bench",
+    "t": "Loose Furniture",
+    "v": 652.75
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-222",
+    "f": "1. kat",
+    "n": "Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Livello",
+    "c": "F-223",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 1203.75
+   },
+   {
+    "b": "Livello",
+    "c": "F-224",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 787.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-225",
+    "f": "1. kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-226",
+    "f": "1. kat",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2555
+   },
+   {
+    "b": "Luva",
+    "c": "F-227",
+    "f": "Çatı katı",
+    "n": "Rawashin Chair",
+    "t": "Loose Furniture",
+    "v": 1800
+   },
+   {
+    "b": "Luva",
+    "c": "F-228",
+    "f": "Çatı katı",
+    "n": "Rawashin Coffee Table",
+    "t": "Loose Furniture",
+    "v": 880
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-229",
+    "f": "Çatı katı",
+    "n": "Family Living 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 3794
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-230",
+    "f": "Çatı katı",
+    "n": "Family Living TV Console",
+    "t": "Loose Furniture",
+    "v": 1153.25
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-231",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 567.88
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-232",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 709.62
+   },
+   {
+    "b": "Pearl koleksiyonu",
+    "c": "F-233",
+    "f": "Çatı katı",
+    "n": "Family Living Buffet",
+    "t": "Loose Furniture",
+    "v": 4433.62
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-234",
+    "f": "Çatı katı",
+    "n": "Maid Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-235",
+    "f": "Çatı katı",
+    "n": "Maid Room Wardrobe",
+    "t": "Fixed",
+    "v": 642.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-236",
+    "f": "Çatı katı",
+    "n": "Maid Bath Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1375
+   },
+   {
+    "b": "Luva",
+    "c": "F-237",
+    "f": "Çatı katı",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-238",
+    "f": "Çatı katı",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2555
+   },
+   {
+    "b": "Penelope",
+    "c": "D1",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
+    "t": "Ev Dekorasyon",
+    "v": 3387.26
+   },
+   {
+    "b": "Penelope",
+    "c": "D2",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
+    "t": "Ev Dekorasyon",
+    "v": 1944
+   },
+   {
+    "b": "Karaca/Korkmaz",
+    "c": "D3",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving)",
+    "t": "Ev Dekorasyon",
+    "v": 1000
+   },
+   {
+    "b": "Loominology",
+    "c": "D4",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Carpets & Rugs Set (6 Rooms)",
+    "t": "Ev Dekorasyon",
+    "v": 1122
+   },
+   {
+    "b": "Dercan Tekstil",
+    "c": "D5",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Curtains Package (Blackout + Sheer)",
+    "t": "Ev Dekorasyon",
+    "v": 780
+   },
+   {
+    "b": "Silver koleksiyonu",
+    "c": "D6",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "",
+    "t": "Ev Dekorasyon",
+    "v": 900
+   }
+  ]
+ },
+ "Emerald": {
+  "Villa A": [
+   {
+    "b": "Luva",
+    "c": "F-001",
+    "f": "Zemin kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-002",
+    "f": "Zemin kat",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 2555
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-003",
+    "f": "Zemin kat",
+    "n": "Living Room 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1695
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-004",
+    "f": "Zemin kat",
+    "n": "Living Room 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 1695
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-005",
+    "f": "Zemin kat",
+    "n": "Living Room Armchair",
+    "t": "Loose Furniture",
+    "v": 1470
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-006",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1056.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-007",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1056.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-008",
+    "f": "Zemin kat",
+    "n": "Living Room Coffee Table",
+    "t": "Loose Furniture",
+    "v": 646.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-009",
+    "f": "Zemin kat",
+    "n": "Living Room TV Console",
+    "t": "Loose Furniture",
+    "v": 1367.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-010",
+    "f": "Zemin kat",
+    "n": "Living Room Dining Table",
+    "t": "Loose Furniture",
+    "v": 1101.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-011",
+    "f": "Zemin kat",
+    "n": "Living Room Chair",
+    "t": "Loose Furniture",
+    "v": 1890
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-016",
+    "f": "Zemin kat",
+    "n": "Kitchen Base Cabinet",
+    "t": "Fixed",
+    "v": 7500
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-017",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 0
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-018",
+    "f": "Zemin kat",
+    "n": "Kitchen Wall Cabinet",
+    "t": "Fixed",
+    "v": 0
+   },
+   {
+    "b": "Kitchen Furniture",
+    "c": "F-019",
+    "f": "Zemin kat",
+    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "t": "Fixed",
+    "v": 5625
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-024",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 1025
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-025",
+    "f": "Zemin kat",
+    "n": "Majlis Coffee table",
+    "t": "Loose Furniture",
+    "v": 323.75
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-026",
+    "f": "Zemin kat",
+    "n": "Majlis TV Console",
+    "t": "Loose Furniture",
+    "v": 1367.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-027",
+    "f": "Zemin kat",
+    "n": "Majlis 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 2372.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-028",
+    "f": "Zemin kat",
+    "n": "Majlis 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 2372.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-029",
+    "f": "Zemin kat",
+    "n": "Majlis Dining Table",
+    "t": "Loose Furniture",
+    "v": 1518.75
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-030",
+    "f": "Zemin kat",
+    "n": "Majlis Chair",
+    "t": "Loose Furniture",
+    "v": 4230
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-031",
+    "f": "Zemin kat",
+    "n": "Powder Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-032",
+    "f": "Zemin kat",
+    "n": "Maid Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-033",
+    "f": "Zemin kat",
+    "n": "Maid Room Wardrobe",
+    "t": "Fixed",
+    "v": 1036.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-034",
+    "f": "Zemin kat",
+    "n": "Maid Bath Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1375
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-035",
+    "f": "Zemin kat",
+    "n": "Guest Basin Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1500
+   },
+   {
+    "b": "Livello",
+    "c": "F-036",
+    "f": "Zemin kat",
+    "n": "Guest Entrance Coat Rack",
+    "t": "Fixed",
+    "v": 787.5
+   },
+   {
+    "b": "Platinum koleksiyonu",
+    "c": "F-037",
+    "f": "Zemin kat",
+    "n": "Driver Room Bed",
+    "t": "Loose Furniture",
+    "v": 1001.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-038",
+    "f": "Zemin kat",
+    "n": "Driver Room Wardrobe",
+    "t": "Fixed",
+    "v": 642.5
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-039",
+    "f": "Zemin kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-040",
+    "f": "1. kat",
+    "n": "Bedroom-1 Double Bed",
+    "t": "Loose Furniture",
+    "v": 2655
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-041",
+    "f": "1. kat",
+    "n": "Bedroom-1 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 1950
+   },
+   {
+    "b": "Livello",
+    "c": "F-042",
+    "f": "1. kat",
+    "n": "Bedroom-1 Wardrobe",
+    "t": "Fixed",
+    "v": 1361.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-043",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-044",
+    "f": "1. kat",
+    "n": "Bedroom-2 Double Bed",
+    "t": "Loose Furniture",
+    "v": 2537.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-045",
+    "f": "1. kat",
+    "n": "Bedroom-2 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 2537.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-046",
+    "f": "1. kat",
+    "n": "Bedroom-2 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1218.75
+   },
+   {
+    "b": "Livello",
+    "c": "F-047",
+    "f": "1. kat",
+    "n": "Bedroom-2 Wardrobe",
+    "t": "Fixed",
+    "v": 1361.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-048",
+    "f": "1. kat",
+    "n": "Bedroom-2 Chair",
+    "t": "Loose Furniture",
+    "v": 181.25
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-049",
+    "f": "1. kat",
+    "n": "Bathroom Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-050",
+    "f": "1. kat",
+    "n": "Bedroom-3 Double Bed",
+    "t": "Loose Furniture",
+    "v": 2537.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-051",
+    "f": "1. kat",
+    "n": "Bedroom-3 Bedside Table",
+    "t": "Loose Furniture",
+    "v": 2537.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-052",
+    "f": "1. kat",
+    "n": "Bedroom-3 Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1218.75
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-053",
+    "f": "1. kat",
+    "n": "Bedroom-3 Chair",
+    "t": "Loose Furniture",
+    "v": 181.25
+   },
+   {
+    "b": "Livello",
+    "c": "F-054",
+    "f": "1. kat",
+    "n": "Bedroom-3 Wardrobe",
+    "t": "Fixed",
+    "v": 985
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-055",
+    "f": "1. kat",
+    "n": "Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1250
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-056",
+    "f": "1. kat",
+    "n": "Master Bedroom Double Bed",
+    "t": "Loose Furniture",
+    "v": 5320
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-057",
+    "f": "1. kat",
+    "n": "Master Bedroom Bedside Table",
+    "t": "Loose Furniture",
+    "v": 2537.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-058",
+    "f": "1. kat",
+    "n": "Master Bedroom Dressing Table",
+    "t": "Loose Furniture",
+    "v": 1218.75
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-059",
+    "f": "1. kat",
+    "n": "Master Bedroom Chair",
+    "t": "Loose Furniture",
+    "v": 181.25
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-060",
+    "f": "1. kat",
+    "n": "Master Bedroom Bed bench",
+    "t": "Loose Furniture",
+    "v": 500
+   },
+   {
+    "b": "Bathroom Furniture",
+    "c": "F-061",
+    "f": "1. kat",
+    "n": "Bathroom Vanity",
+    "t": "Fixed",
+    "v": 1875
+   },
+   {
+    "b": "Livello",
+    "c": "F-062",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 1203.75
+   },
+   {
+    "b": "Livello",
+    "c": "F-063",
+    "f": "1. kat",
+    "n": "Master Bedroom Wardrobe",
+    "t": "Fixed",
+    "v": 1203.75
+   },
+   {
+    "b": "Luva",
+    "c": "F-064",
+    "f": "1. kat",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 822.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-065",
+    "f": "1. kat",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 1800
+   },
+   {
+    "b": "Luva",
+    "c": "F-066",
+    "f": "Çatı katı",
+    "n": "Terrace Coffee Table",
+    "t": "Loose Furniture",
+    "v": 877.5
+   },
+   {
+    "b": "Luva",
+    "c": "F-067",
+    "f": "Çatı katı",
+    "n": "Terrace Outdoor lounge chair",
+    "t": "Loose Furniture",
+    "v": 1980
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-068",
+    "f": "Çatı katı",
+    "n": "Hallway Console table",
+    "t": "Loose Furniture",
+    "v": 1467.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-069",
+    "f": "Çatı katı",
+    "n": "Family Living 3-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 4745
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-070",
+    "f": "Çatı katı",
+    "n": "Living Room 2-Seater Sofa",
+    "t": "Loose Furniture",
+    "v": 2372.5
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-071",
+    "f": "Çatı katı",
+    "n": "Family Living TV Console",
+    "t": "Loose Furniture",
+    "v": 1450
+   },
+   {
+    "b": "Emerald koleksiyonu",
+    "c": "F-072",
+    "f": "Çatı katı",
+    "n": "Family Living Coffee Table",
+    "t": "Loose Furniture",
+    "v": 1025
+   },
+   {
+    "b": "Emerald koleksiyonu",
     "c": "F-073",
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
@@ -6212,7 +8068,7 @@
     "v": 5625
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-092",
     "f": "Zemin kat",
     "n": "Living Room 3-Seater Sofa",
@@ -6220,7 +8076,7 @@
     "v": 3778.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-093",
     "f": "Zemin kat",
     "n": "Living Room 2-Seater Sofa",
@@ -6228,7 +8084,7 @@
     "v": 3833.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-094",
     "f": "Zemin kat",
     "n": "Living Room Armchair",
@@ -6236,7 +8092,7 @@
     "v": 2727.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-095",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6244,7 +8100,7 @@
     "v": 1343.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-096",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6252,7 +8108,7 @@
     "v": 1343.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-097",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6260,7 +8116,7 @@
     "v": 968.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-098",
     "f": "Zemin kat",
     "n": "Living Room TV Console",
@@ -6268,7 +8124,7 @@
     "v": 1936.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-099",
     "f": "Zemin kat",
     "n": "Living Room Dining Table",
@@ -6276,7 +8132,7 @@
     "v": 1778.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-100",
     "f": "Zemin kat",
     "n": "Living Room Chair",
@@ -6284,7 +8140,7 @@
     "v": 4430
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-101",
     "f": "Zemin kat",
     "n": "Living Room Buffet",
@@ -6324,7 +8180,7 @@
     "v": 1875
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-106",
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
@@ -6332,7 +8188,7 @@
     "v": 1976.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-107",
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
@@ -6340,7 +8196,7 @@
     "v": 968.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-108",
     "f": "Zemin kat",
     "n": "Majlis TV Console",
@@ -6348,7 +8204,7 @@
     "v": 1897.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-109",
     "f": "Zemin kat",
     "n": "Majlis 3-Seater Sofa",
@@ -6356,7 +8212,7 @@
     "v": 4016.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-110",
     "f": "Zemin kat",
     "n": "Majlis 2-Seater Sofa",
@@ -6364,7 +8220,7 @@
     "v": 4016.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-111",
     "f": "Zemin kat",
     "n": "Majlis Dining Table",
@@ -6372,7 +8228,7 @@
     "v": 2568.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-112",
     "f": "Zemin kat",
     "n": "Majlis Chair",
@@ -6380,7 +8236,7 @@
     "v": 4270
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-113",
     "f": "Zemin kat",
     "n": "Majlis Armchair",
@@ -6388,7 +8244,7 @@
     "v": 2252.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-114",
     "f": "Zemin kat",
     "n": "Majlis Side Table",
@@ -6420,7 +8276,7 @@
     "v": 1500
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-118",
     "f": "1. kat",
     "n": "Bedroom-1 Double Bed",
@@ -6428,7 +8284,7 @@
     "v": 3695
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-119",
     "f": "1. kat",
     "n": "Bedroom-1 Bedside Table",
@@ -6436,7 +8292,7 @@
     "v": 2250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-120",
     "f": "1. kat",
     "n": "Bedroom-1 Dressing Table",
@@ -6444,7 +8300,7 @@
     "v": 2567.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-121",
     "f": "1. kat",
     "n": "Bedroom-1 Chair",
@@ -6455,7 +8311,7 @@
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1361.25
    },
@@ -6463,7 +8319,7 @@
     "b": "Livello",
     "c": "F-123",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 496.25
    },
@@ -6476,7 +8332,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-125",
     "f": "1. kat",
     "n": "Bedroom-2 Double Bed",
@@ -6484,7 +8340,7 @@
     "v": 2953.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-126",
     "f": "1. kat",
     "n": "Bedroom-2 Bedside Table",
@@ -6492,7 +8348,7 @@
     "v": 1800
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-127",
     "f": "1. kat",
     "n": "Bedroom-2 Dressing Table",
@@ -6508,7 +8364,7 @@
     "v": 1583.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-129",
     "f": "1. kat",
     "n": "Bedroom-2 Chair",
@@ -6524,7 +8380,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-131",
     "f": "1. kat",
     "n": "Bedroom-3 Double Bed",
@@ -6532,7 +8388,7 @@
     "v": 3705
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-132",
     "f": "1. kat",
     "n": "Bedroom-3 Bedside Table",
@@ -6540,7 +8396,7 @@
     "v": 1977.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-133",
     "f": "1. kat",
     "n": "Bedroom-3 Dressing Table",
@@ -6548,7 +8404,7 @@
     "v": 2428.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-134",
     "f": "1. kat",
     "n": "Bedroom-3 Chair",
@@ -6572,7 +8428,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-137",
     "f": "1. kat",
     "n": "Master Bedroom Double Bed",
@@ -6580,7 +8436,7 @@
     "v": 2490
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-138",
     "f": "1. kat",
     "n": "Master Bedroom Bedside Table",
@@ -6588,7 +8444,7 @@
     "v": 2125
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-139",
     "f": "1. kat",
     "n": "Master Bedroom Dressing Table",
@@ -6596,7 +8452,7 @@
     "v": 2428.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-140",
     "f": "1. kat",
     "n": "Master Bedroom Chair",
@@ -6604,7 +8460,7 @@
     "v": 533.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-141",
     "f": "1. kat",
     "n": "Master Bedroom Bed bench",
@@ -6623,7 +8479,7 @@
     "b": "Livello",
     "c": "F-143",
     "f": "1. kat",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom",
     "t": "Fixed",
     "v": 642.5
    },
@@ -6631,7 +8487,7 @@
     "b": "Livello",
     "c": "F-144",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 2312.5
    },
@@ -6668,7 +8524,7 @@
     "v": 822.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-149",
     "f": "Çatı katı",
     "n": "Family Living 3-Seater Sofa",
@@ -6676,7 +8532,7 @@
     "v": 4795
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-150",
     "f": "Çatı katı",
     "n": "Family Living TV Console",
@@ -6684,7 +8540,7 @@
     "v": 1658.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-151",
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
@@ -6692,7 +8548,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-152",
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
@@ -6700,7 +8556,7 @@
     "v": 1042.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-153",
     "f": "Çatı katı",
     "n": "Family Living Room Buffet",
@@ -6806,7 +8662,7 @@
     "v": 2555
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-160",
     "f": "Zemin kat",
     "n": "Living Room 3-Seater Sofa",
@@ -6814,7 +8670,7 @@
     "v": 2902.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-161",
     "f": "Zemin kat",
     "n": "Living Room 2-Seater Sofa",
@@ -6822,7 +8678,7 @@
     "v": 2902.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-162",
     "f": "Zemin kat",
     "n": "Living Room Armchair",
@@ -6830,7 +8686,7 @@
     "v": 2882.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-163",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6838,7 +8694,7 @@
     "v": 1482.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-164",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6846,7 +8702,7 @@
     "v": 1091.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-165",
     "f": "Zemin kat",
     "n": "Living Room Coffee Table",
@@ -6854,7 +8710,7 @@
     "v": 546.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-166",
     "f": "Zemin kat",
     "n": "Living Room Buffet",
@@ -6862,7 +8718,7 @@
     "v": 2470
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-167",
     "f": "Zemin kat",
     "n": "Living Room TV Console",
@@ -6870,7 +8726,7 @@
     "v": 1935
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-168",
     "f": "Zemin kat",
     "n": "Living Room Dining Table",
@@ -6878,7 +8734,7 @@
     "v": 1976.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-169",
     "f": "Zemin kat",
     "n": "Living Room Chair",
@@ -6886,7 +8742,7 @@
     "v": 4950
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-170",
     "f": "Zemin kat",
     "n": "Living Room Bookcase",
@@ -6894,7 +8750,7 @@
     "v": 2500
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-171",
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
@@ -6902,7 +8758,7 @@
     "v": 1711.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-172",
     "f": "Zemin kat",
     "n": "Majlis Coffee table",
@@ -6910,7 +8766,7 @@
     "v": 731.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-173",
     "f": "Zemin kat",
     "n": "Majlis TV Console",
@@ -6918,7 +8774,7 @@
     "v": 2601.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-174",
     "f": "Zemin kat",
     "n": "Majlis 3-Seater Sofa",
@@ -6926,7 +8782,7 @@
     "v": 2775
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-175",
     "f": "Zemin kat",
     "n": "Majlis 2-Seater Sofa",
@@ -6934,7 +8790,7 @@
     "v": 2775
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-176",
     "f": "Zemin kat",
     "n": "Majlis Dining Table",
@@ -6942,7 +8798,7 @@
     "v": 2133.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-177",
     "f": "Zemin kat",
     "n": "Majlis Chair",
@@ -6950,7 +8806,7 @@
     "v": 4430
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-178",
     "f": "Zemin kat",
     "n": "Majlis Armchair",
@@ -6958,7 +8814,7 @@
     "v": 3557.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-179",
     "f": "Zemin kat",
     "n": "Side Table",
@@ -7054,7 +8910,7 @@
     "v": 1500
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-199",
     "f": "1. kat",
     "n": "Bedroom-1 Double Bed",
@@ -7062,7 +8918,7 @@
     "v": 3705
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-200",
     "f": "1. kat",
     "n": "Bedroom-1 Bedside Table",
@@ -7070,7 +8926,7 @@
     "v": 2000
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-201",
     "f": "1. kat",
     "n": "Bedroom-1 Dressing Table",
@@ -7078,7 +8934,7 @@
     "v": 2942.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-202",
     "f": "1. kat",
     "n": "Bedroom-1 Chair",
@@ -7102,7 +8958,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-205",
     "f": "1. kat",
     "n": "Bedroom-2 Double Bed",
@@ -7110,7 +8966,7 @@
     "v": 2653.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-206",
     "f": "1. kat",
     "n": "Bedroom-2 Bedside Table",
@@ -7118,7 +8974,7 @@
     "v": 1947.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-207",
     "f": "1. kat",
     "n": "Bedroom-2 Dressing Table",
@@ -7134,7 +8990,7 @@
     "v": 1361.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-209",
     "f": "1. kat",
     "n": "Bedroom-2 Chair",
@@ -7150,7 +9006,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-211",
     "f": "1. kat",
     "n": "Bedroom-3 Double Bed",
@@ -7158,7 +9014,7 @@
     "v": 2490
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-212",
     "f": "1. kat",
     "n": "Bedroom-3 Bedside Table",
@@ -7166,7 +9022,7 @@
     "v": 1750
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-213",
     "f": "1. kat",
     "n": "Bedroom-3 Dressing Table",
@@ -7174,7 +9030,7 @@
     "v": 2428.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-214",
     "f": "1. kat",
     "n": "Bedroom-3 Chair",
@@ -7198,7 +9054,7 @@
     "v": 1250
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-217",
     "f": "1. kat",
     "n": "Master Bedroom Double Bed",
@@ -7206,7 +9062,7 @@
     "v": 3556.25
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-218",
     "f": "1. kat",
     "n": "Master Bedroom Bedside Table",
@@ -7214,7 +9070,7 @@
     "v": 4500
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-219",
     "f": "1. kat",
     "n": "Master Bedroom Dressing Table",
@@ -7222,7 +9078,7 @@
     "v": 2375
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-220",
     "f": "1. kat",
     "n": "Master Bedroom Chair",
@@ -7230,7 +9086,7 @@
     "v": 562.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-221",
     "f": "1. kat",
     "n": "Master Bedroom Bed bench",
@@ -7249,7 +9105,7 @@
     "b": "Livello",
     "c": "F-223",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -7257,7 +9113,7 @@
     "b": "Livello",
     "c": "F-224",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 787.5
    },
@@ -7294,7 +9150,7 @@
     "v": 880
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-229",
     "f": "Çatı katı",
     "n": "Family Living 3-Seater Sofa",
@@ -7302,7 +9158,7 @@
     "v": 3517.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-230",
     "f": "Çatı katı",
     "n": "Family Living TV Console",
@@ -7310,7 +9166,7 @@
     "v": 1267.5
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-231",
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
@@ -7318,7 +9174,7 @@
     "v": 750
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-232",
     "f": "Çatı katı",
     "n": "Family Living Coffee Table",
@@ -7326,1868 +9182,12 @@
     "v": 468.75
    },
    {
-    "b": "Pearl koleksiyonu",
+    "b": "Emerald koleksiyonu",
     "c": "F-233",
     "f": "Çatı katı",
     "n": "Family Living Buffet",
     "t": "Loose Furniture",
     "v": 2000
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-234",
-    "f": "Çatı katı",
-    "n": "Maid Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-235",
-    "f": "Çatı katı",
-    "n": "Maid Room Wardrobe",
-    "t": "Fixed",
-    "v": 642.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-236",
-    "f": "Çatı katı",
-    "n": "Maid Bath Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1375
-   },
-   {
-    "b": "Luva",
-    "c": "F-237",
-    "f": "Çatı katı",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-238",
-    "f": "Çatı katı",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2555
-   },
-   {
-    "b": "Penelope",
-    "c": "D1",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
-    "t": "Ev Dekorasyon",
-    "v": 3387.26
-   },
-   {
-    "b": "Penelope",
-    "c": "D2",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
-    "t": "Ev Dekorasyon",
-    "v": 1944
-   },
-   {
-    "b": "Karaca/Korkmaz",
-    "c": "D3",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving)",
-    "t": "Ev Dekorasyon",
-    "v": 1000
-   },
-   {
-    "b": "Loominology",
-    "c": "D4",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Carpets & Rugs Set (6 Rooms)",
-    "t": "Ev Dekorasyon",
-    "v": 1122
-   },
-   {
-    "b": "Dercan Tekstil",
-    "c": "D5",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Curtains Package (Blackout + Sheer)",
-    "t": "Ev Dekorasyon",
-    "v": 780
-   },
-   {
-    "b": "Silver koleksiyonu",
-    "c": "D6",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "",
-    "t": "Ev Dekorasyon",
-    "v": 900
-   }
-  ]
- },
- "Emerald": {
-  "Villa A": [
-   {
-    "b": "Luva",
-    "c": "F-001",
-    "f": "Zemin kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-002",
-    "f": "Zemin kat",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2555
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-003",
-    "f": "Zemin kat",
-    "n": "Living Room 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 2407.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-004",
-    "f": "Zemin kat",
-    "n": "Living Room 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1967.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-005",
-    "f": "Zemin kat",
-    "n": "Living Room Armchair",
-    "t": "Loose Furniture",
-    "v": 2282.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-006",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1322.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-007",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 710
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-008",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 858.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-009",
-    "f": "Zemin kat",
-    "n": "Living Room TV Console",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-010",
-    "f": "Zemin kat",
-    "n": "Living Room Dining Table",
-    "t": "Loose Furniture",
-    "v": 1422.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-011",
-    "f": "Zemin kat",
-    "n": "Living Room Chair",
-    "t": "Loose Furniture",
-    "v": 6380
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-016",
-    "f": "Zemin kat",
-    "n": "Kitchen Base Cabinet",
-    "t": "Fixed",
-    "v": 7500
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-017",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 0
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-018",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 0
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-019",
-    "f": "Zemin kat",
-    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
-    "t": "Fixed",
-    "v": 5625
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-024",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1520
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-025",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-026",
-    "f": "Zemin kat",
-    "n": "Majlis TV Console",
-    "t": "Loose Furniture",
-    "v": 1646.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-027",
-    "f": "Zemin kat",
-    "n": "Majlis 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1855
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-028",
-    "f": "Zemin kat",
-    "n": "Majlis 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1855
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-029",
-    "f": "Zemin kat",
-    "n": "Majlis Dining Table",
-    "t": "Loose Furniture",
-    "v": 2117.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-030",
-    "f": "Zemin kat",
-    "n": "Majlis Chair",
-    "t": "Loose Furniture",
-    "v": 4060
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-031",
-    "f": "Zemin kat",
-    "n": "Powder Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-032",
-    "f": "Zemin kat",
-    "n": "Maid Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-033",
-    "f": "Zemin kat",
-    "n": "Maid Room Wardrobe",
-    "t": "Fixed",
-    "v": 1036.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-034",
-    "f": "Zemin kat",
-    "n": "Maid Bath Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1375
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-035",
-    "f": "Zemin kat",
-    "n": "Guest Basin Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1500
-   },
-   {
-    "b": "Livello",
-    "c": "F-036",
-    "f": "Zemin kat",
-    "n": "Guest Entrance Coat Rack",
-    "t": "Fixed",
-    "v": 787.5
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-037",
-    "f": "Zemin kat",
-    "n": "Driver Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-038",
-    "f": "Zemin kat",
-    "n": "Driver Room Wardrobe",
-    "t": "Fixed",
-    "v": 642.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-039",
-    "f": "Zemin kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-040",
-    "f": "1. kat",
-    "n": "Bedroom-1 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2446.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-041",
-    "f": "1. kat",
-    "n": "Bedroom-1 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1597.5
-   },
-   {
-    "b": "Livello",
-    "c": "F-042",
-    "f": "1. kat",
-    "n": "Bedroom-1 Wardrobe",
-    "t": "Fixed",
-    "v": 1361.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-043",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-044",
-    "f": "1. kat",
-    "n": "Bedroom-2 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2446.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-045",
-    "f": "1. kat",
-    "n": "Bedroom-2 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1597.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-046",
-    "f": "1. kat",
-    "n": "Bedroom-2 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Livello",
-    "c": "F-047",
-    "f": "1. kat",
-    "n": "Bedroom-2 Wardrobe",
-    "t": "Fixed",
-    "v": 1361.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-048",
-    "f": "1. kat",
-    "n": "Bedroom-2 Chair",
-    "t": "Loose Furniture",
-    "v": 772.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-049",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-050",
-    "f": "1. kat",
-    "n": "Bedroom-3 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2446.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-051",
-    "f": "1. kat",
-    "n": "Bedroom-3 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1597.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-052",
-    "f": "1. kat",
-    "n": "Bedroom-3 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-053",
-    "f": "1. kat",
-    "n": "Bedroom-3 Chair",
-    "t": "Loose Furniture",
-    "v": 798.75
-   },
-   {
-    "b": "Livello",
-    "c": "F-054",
-    "f": "1. kat",
-    "n": "Bedroom-3 Wardrobe",
-    "t": "Fixed",
-    "v": 985
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-055",
-    "f": "1. kat",
-    "n": "Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-056",
-    "f": "1. kat",
-    "n": "Master Bedroom Double Bed",
-    "t": "Loose Furniture",
-    "v": 2855
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-057",
-    "f": "1. kat",
-    "n": "Master Bedroom Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1885
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-058",
-    "f": "1. kat",
-    "n": "Master Bedroom Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-059",
-    "f": "1. kat",
-    "n": "Master Bedroom Chair",
-    "t": "Loose Furniture",
-    "v": 1012.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-060",
-    "f": "1. kat",
-    "n": "Master Bedroom Bed bench",
-    "t": "Loose Furniture",
-    "v": 1208.75
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-061",
-    "f": "1. kat",
-    "n": "Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Livello",
-    "c": "F-062",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 1203.75
-   },
-   {
-    "b": "Livello",
-    "c": "F-063",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 1203.75
-   },
-   {
-    "b": "Luva",
-    "c": "F-064",
-    "f": "1. kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-065",
-    "f": "1. kat",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 1800
-   },
-   {
-    "b": "Luva",
-    "c": "F-066",
-    "f": "Çatı katı",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 877.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-067",
-    "f": "Çatı katı",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 1980
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-068",
-    "f": "Çatı katı",
-    "n": "Hallway Console table",
-    "t": "Loose Furniture",
-    "v": 793.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-069",
-    "f": "Çatı katı",
-    "n": "Family Living 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 5675
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-070",
-    "f": "Çatı katı",
-    "n": "Living Room 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 2837.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-071",
-    "f": "Çatı katı",
-    "n": "Family Living TV Console",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-072",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1267.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-073",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 633.75
-   },
-   {
-    "b": "Livello",
-    "c": "F-074",
-    "f": "Çatı katı",
-    "n": "Storage Wardrobe",
-    "t": "Fixed",
-    "v": 702.5
-   },
-   {
-    "b": "Livello",
-    "c": "F-075",
-    "f": "Çatı katı",
-    "n": "Storage Wardrobe",
-    "t": "Fixed",
-    "v": 897.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-076",
-    "f": "Çatı katı",
-    "n": "Terrace Table",
-    "t": "Loose Furniture",
-    "v": 1621.25
-   },
-   {
-    "b": "Luva",
-    "c": "F-077",
-    "f": "Çatı katı",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2000
-   },
-   {
-    "b": "Penelope",
-    "c": "D1",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
-    "t": "Ev Dekorasyon",
-    "v": 3387.26
-   },
-   {
-    "b": "Penelope",
-    "c": "D2",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
-    "t": "Ev Dekorasyon",
-    "v": 1944
-   },
-   {
-    "b": "Karaca/Korkmaz",
-    "c": "D3",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving equipment)",
-    "t": "Ev Dekorasyon",
-    "v": 1000
-   },
-   {
-    "b": "Loominology",
-    "c": "D4",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Carpets & Rugs Set (6 Rooms)",
-    "t": "Ev Dekorasyon",
-    "v": 1122
-   },
-   {
-    "b": "Dercan Tekstil",
-    "c": "D5",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Curtains Package (Blackout + Sheer)",
-    "t": "Ev Dekorasyon",
-    "v": 780
-   },
-   {
-    "b": "Silver koleksiyonu",
-    "c": "D6",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "",
-    "t": "Ev Dekorasyon",
-    "v": 900
-   }
-  ],
-  "Villa B": [
-   {
-    "b": "Luva",
-    "c": "F-078",
-    "f": "Zemin kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-079",
-    "f": "Zemin kat",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2552.5
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-085",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 7500
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-086",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 0
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-087",
-    "f": "Zemin kat",
-    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
-    "t": "Fixed",
-    "v": 5625
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-092",
-    "f": "Zemin kat",
-    "n": "Living Room 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 3268.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-093",
-    "f": "Zemin kat",
-    "n": "Living Room 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 3268.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-094",
-    "f": "Zemin kat",
-    "n": "Living Room Armchair",
-    "t": "Loose Furniture",
-    "v": 2535
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-095",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-096",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-097",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 963.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-098",
-    "f": "Zemin kat",
-    "n": "Living Room TV Console",
-    "t": "Loose Furniture",
-    "v": 821.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-099",
-    "f": "Zemin kat",
-    "n": "Living Room Dining Table",
-    "t": "Loose Furniture",
-    "v": 962.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-100",
-    "f": "Zemin kat",
-    "n": "Living Room Chair",
-    "t": "Loose Furniture",
-    "v": 6590
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-101",
-    "f": "Zemin kat",
-    "n": "Living Room Buffet",
-    "t": "Loose Furniture",
-    "v": 1180
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-102",
-    "f": "Zemin kat",
-    "n": "Powder Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Livello",
-    "c": "F-103",
-    "f": "Zemin kat",
-    "n": "Guest Entrance Coat Rack",
-    "t": "Fixed",
-    "v": 787.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-104",
-    "f": "Zemin kat",
-    "n": "Guest Basin Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1500
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-105",
-    "f": "Zemin kat",
-    "n": "Powder Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-106",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1521.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-107",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-108",
-    "f": "Zemin kat",
-    "n": "Majlis TV Console",
-    "t": "Loose Furniture",
-    "v": 1521.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-109",
-    "f": "Zemin kat",
-    "n": "Majlis 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1853.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-110",
-    "f": "Zemin kat",
-    "n": "Majlis 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1853.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-111",
-    "f": "Zemin kat",
-    "n": "Majlis Dining Table",
-    "t": "Loose Furniture",
-    "v": 2116.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-112",
-    "f": "Zemin kat",
-    "n": "Majlis Chair",
-    "t": "Loose Furniture",
-    "v": 4460
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-113",
-    "f": "Zemin kat",
-    "n": "Majlis Armchair",
-    "t": "Loose Furniture",
-    "v": 2282.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-114",
-    "f": "Zemin kat",
-    "n": "Majlis Side Table",
-    "t": "Loose Furniture",
-    "v": 1000
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-115",
-    "f": "Zemin kat",
-    "n": "Driver Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-116",
-    "f": "Zemin kat",
-    "n": "Driver Room Wardrobe",
-    "t": "Fixed",
-    "v": 642.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-117",
-    "f": "Zemin kat",
-    "n": "Driver WC Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1500
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-118",
-    "f": "1. kat",
-    "n": "Bedroom-1 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-119",
-    "f": "1. kat",
-    "n": "Bedroom-1 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-120",
-    "f": "1. kat",
-    "n": "Bedroom-1 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1438.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-121",
-    "f": "1. kat",
-    "n": "Bedroom-1 Chair",
-    "t": "Loose Furniture",
-    "v": 565
-   },
-   {
-    "b": "Livello",
-    "c": "F-122",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 1361.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-123",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 496.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-124",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-125",
-    "f": "1. kat",
-    "n": "Bedroom-2 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-126",
-    "f": "1. kat",
-    "n": "Bedroom-2 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-127",
-    "f": "1. kat",
-    "n": "Bedroom-2 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1438.75
-   },
-   {
-    "b": "Livello",
-    "c": "F-128",
-    "f": "1. kat",
-    "n": "Bedroom-2 Wardrobe",
-    "t": "Fixed",
-    "v": 1583.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-129",
-    "f": "1. kat",
-    "n": "Bedroom-2 Chair",
-    "t": "Loose Furniture",
-    "v": 565
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-130",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-131",
-    "f": "1. kat",
-    "n": "Bedroom-3 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-132",
-    "f": "1. kat",
-    "n": "Bedroom-3 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-133",
-    "f": "1. kat",
-    "n": "Bedroom-3 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1438.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-134",
-    "f": "1. kat",
-    "n": "Bedroom-3 Chair",
-    "t": "Loose Furniture",
-    "v": 565
-   },
-   {
-    "b": "Livello",
-    "c": "F-135",
-    "f": "1. kat",
-    "n": "Bedroom-3 Wardrobe",
-    "t": "Fixed",
-    "v": 985
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-136",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-137",
-    "f": "1. kat",
-    "n": "Master Bedroom Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-138",
-    "f": "1. kat",
-    "n": "Master Bedroom Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-139",
-    "f": "1. kat",
-    "n": "Master Bedroom Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1438.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-140",
-    "f": "1. kat",
-    "n": "Master Bedroom Chair",
-    "t": "Loose Furniture",
-    "v": 565
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-141",
-    "f": "1. kat",
-    "n": "Master Bedroom Bed bench",
-    "t": "Loose Furniture",
-    "v": 1208.75
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-142",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Livello",
-    "c": "F-143",
-    "f": "1. kat",
-    "n": "Walk-In Closet",
-    "t": "Fixed",
-    "v": 642.5
-   },
-   {
-    "b": "Livello",
-    "c": "F-144",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 2312.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-145",
-    "f": "1. kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-146",
-    "f": "1. kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 852.96
-   },
-   {
-    "b": "Luva",
-    "c": "F-147",
-    "f": "Çatı katı",
-    "n": "Rawashin Chair",
-    "t": "Loose Furniture",
-    "v": 2552.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-148",
-    "f": "Çatı katı",
-    "n": "Rawashin Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-149",
-    "f": "Çatı katı",
-    "n": "Family Living 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 5300
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-150",
-    "f": "Çatı katı",
-    "n": "Family Living TV Console",
-    "t": "Loose Furniture",
-    "v": 1646.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-151",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 633.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-152",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1266.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-153",
-    "f": "Çatı katı",
-    "n": "Family Living Room Buffet",
-    "t": "Loose Furniture",
-    "v": 6331.25
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-154",
-    "f": "Çatı katı",
-    "n": "Maid Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-155",
-    "f": "Çatı katı",
-    "n": "Maid Bath Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1375
-   },
-   {
-    "b": "Luva",
-    "c": "F-156",
-    "f": "Çatı katı",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-157",
-    "f": "Çatı katı",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2552.5
-   },
-   {
-    "b": "Penelope",
-    "c": "D1",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bed Linen Sets (6 Rooms x 2 Sets + Duvets + Pillows)",
-    "t": "Ev Dekorasyon",
-    "v": 3387.26
-   },
-   {
-    "b": "Penelope",
-    "c": "D2",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Bathroom Textiles (Towels, Bathrobes, Mats - 8 Baths)",
-    "t": "Ev Dekorasyon",
-    "v": 1944
-   },
-   {
-    "b": "Karaca/Korkmaz",
-    "c": "D3",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Dining & Kitchen Household Set (Dinnerware, Cookware, Serving)",
-    "t": "Ev Dekorasyon",
-    "v": 1000
-   },
-   {
-    "b": "Loominology",
-    "c": "D4",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Carpets & Rugs Set (6 Rooms)",
-    "t": "Ev Dekorasyon",
-    "v": 1122
-   },
-   {
-    "b": "Dercan Tekstil",
-    "c": "D5",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "Curtains Package (Blackout + Sheer)",
-    "t": "Ev Dekorasyon",
-    "v": 780
-   },
-   {
-    "b": "Silver koleksiyonu",
-    "c": "D6",
-    "f": "Ev tamamlayıcı ürünler",
-    "n": "",
-    "t": "Ev Dekorasyon",
-    "v": 900
-   }
-  ],
-  "Villa C": [
-   {
-    "b": "Luva",
-    "c": "F-158",
-    "f": "Zemin kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-159",
-    "f": "Zemin kat",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2555
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-160",
-    "f": "Zemin kat",
-    "n": "Living Room 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 2585
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-161",
-    "f": "Zemin kat",
-    "n": "Living Room 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 2471.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-162",
-    "f": "Zemin kat",
-    "n": "Living Room Armchair",
-    "t": "Loose Furniture",
-    "v": 2535
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-163",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-164",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1521.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-165",
-    "f": "Zemin kat",
-    "n": "Living Room Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-166",
-    "f": "Zemin kat",
-    "n": "Living Room Buffet",
-    "t": "Loose Furniture",
-    "v": 4815
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-167",
-    "f": "Zemin kat",
-    "n": "Living Room TV Console",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-168",
-    "f": "Zemin kat",
-    "n": "Living Room Dining Table",
-    "t": "Loose Furniture",
-    "v": 3125
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-169",
-    "f": "Zemin kat",
-    "n": "Living Room Chair",
-    "t": "Loose Furniture",
-    "v": 8110
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-170",
-    "f": "Zemin kat",
-    "n": "Living Room Bookcase",
-    "t": "Loose Furniture",
-    "v": 4812.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-171",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1521.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-172",
-    "f": "Zemin kat",
-    "n": "Majlis Coffee table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-173",
-    "f": "Zemin kat",
-    "n": "Majlis TV Console",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-174",
-    "f": "Zemin kat",
-    "n": "Majlis 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1853.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-175",
-    "f": "Zemin kat",
-    "n": "Majlis 2-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 1853.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-176",
-    "f": "Zemin kat",
-    "n": "Majlis Dining Table",
-    "t": "Loose Furniture",
-    "v": 2326.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-177",
-    "f": "Zemin kat",
-    "n": "Majlis Chair",
-    "t": "Loose Furniture",
-    "v": 7080
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-178",
-    "f": "Zemin kat",
-    "n": "Majlis Armchair",
-    "t": "Loose Furniture",
-    "v": 2282.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-179",
-    "f": "Zemin kat",
-    "n": "Side Table",
-    "t": "Loose Furniture",
-    "v": 1222.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-180",
-    "f": "Zemin kat",
-    "n": "Powder Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-181",
-    "f": "Zemin kat",
-    "n": "Guest Basin Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1500
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-186",
-    "f": "Zemin kat",
-    "n": "Kitchen Base Cabinet",
-    "t": "Fixed",
-    "v": 7500
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-187",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 0
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-188",
-    "f": "Zemin kat",
-    "n": "Kitchen Wall Cabinet",
-    "t": "Fixed",
-    "v": 0
-   },
-   {
-    "b": "Kitchen Furniture",
-    "c": "F-189",
-    "f": "Zemin kat",
-    "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
-    "t": "Fixed",
-    "v": 5625
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-194",
-    "f": "Zemin kat",
-    "n": "Powder Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1125
-   },
-   {
-    "b": "Livello",
-    "c": "F-195",
-    "f": "Zemin kat",
-    "n": "Guest Entrance Coat Rack",
-    "t": "Fixed",
-    "v": 787.5
-   },
-   {
-    "b": "Platinum koleksiyonu",
-    "c": "F-196",
-    "f": "Zemin kat",
-    "n": "Driver Room Bed",
-    "t": "Loose Furniture",
-    "v": 1001.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-197",
-    "f": "Zemin kat",
-    "n": "Driver Room Wardrobe",
-    "t": "Fixed",
-    "v": 642.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-198",
-    "f": "Zemin kat",
-    "n": "Driver WC Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1500
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-199",
-    "f": "1. kat",
-    "n": "Bedroom-1 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-200",
-    "f": "1. kat",
-    "n": "Bedroom-1 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-201",
-    "f": "1. kat",
-    "n": "Bedroom-1 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-202",
-    "f": "1. kat",
-    "n": "Bedroom-1 Chair",
-    "t": "Loose Furniture",
-    "v": 566.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-203",
-    "f": "1. kat",
-    "n": "Bedroom-1 Wardrobe",
-    "t": "Fixed",
-    "v": 1361.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-204",
-    "f": "1. kat",
-    "n": "Bathroom Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-205",
-    "f": "1. kat",
-    "n": "Bedroom-2 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-206",
-    "f": "1. kat",
-    "n": "Bedroom-2 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-207",
-    "f": "1. kat",
-    "n": "Bedroom-2 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Livello",
-    "c": "F-208",
-    "f": "1. kat",
-    "n": "Bedroom-2 Wardrobe",
-    "t": "Fixed",
-    "v": 1361.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-209",
-    "f": "1. kat",
-    "n": "Bedroom-2 Chair",
-    "t": "Loose Furniture",
-    "v": 566.25
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-210",
-    "f": "1. kat",
-    "n": "Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-211",
-    "f": "1. kat",
-    "n": "Bedroom-3 Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-212",
-    "f": "1. kat",
-    "n": "Bedroom-3 Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-213",
-    "f": "1. kat",
-    "n": "Bedroom-3 Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-214",
-    "f": "1. kat",
-    "n": "Bedroom-3 Chair",
-    "t": "Loose Furniture",
-    "v": 566.25
-   },
-   {
-    "b": "Livello",
-    "c": "F-215",
-    "f": "1. kat",
-    "n": "Bedroom-3 Wardrobe",
-    "t": "Fixed",
-    "v": 985
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-216",
-    "f": "1. kat",
-    "n": "Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1250
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-217",
-    "f": "1. kat",
-    "n": "Master Bedroom Double Bed",
-    "t": "Loose Furniture",
-    "v": 2615
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-218",
-    "f": "1. kat",
-    "n": "Master Bedroom Bedside Table",
-    "t": "Loose Furniture",
-    "v": 1780
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-219",
-    "f": "1. kat",
-    "n": "Master Bedroom Dressing Table",
-    "t": "Loose Furniture",
-    "v": 1417.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-220",
-    "f": "1. kat",
-    "n": "Master Bedroom Chair",
-    "t": "Loose Furniture",
-    "v": 773.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-221",
-    "f": "1. kat",
-    "n": "Master Bedroom Bed bench",
-    "t": "Loose Furniture",
-    "v": 932.5
-   },
-   {
-    "b": "Bathroom Furniture",
-    "c": "F-222",
-    "f": "1. kat",
-    "n": "Bathroom Vanity",
-    "t": "Fixed",
-    "v": 1875
-   },
-   {
-    "b": "Livello",
-    "c": "F-223",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 1203.75
-   },
-   {
-    "b": "Livello",
-    "c": "F-224",
-    "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
-    "t": "Fixed",
-    "v": 787.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-225",
-    "f": "1. kat",
-    "n": "Terrace Coffee Table",
-    "t": "Loose Furniture",
-    "v": 822.5
-   },
-   {
-    "b": "Luva",
-    "c": "F-226",
-    "f": "1. kat",
-    "n": "Terrace Outdoor lounge chair",
-    "t": "Loose Furniture",
-    "v": 2555
-   },
-   {
-    "b": "Luva",
-    "c": "F-227",
-    "f": "Çatı katı",
-    "n": "Rawashin Chair",
-    "t": "Loose Furniture",
-    "v": 1800
-   },
-   {
-    "b": "Luva",
-    "c": "F-228",
-    "f": "Çatı katı",
-    "n": "Rawashin Coffee Table",
-    "t": "Loose Furniture",
-    "v": 880
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-229",
-    "f": "Çatı katı",
-    "n": "Family Living 3-Seater Sofa",
-    "t": "Loose Furniture",
-    "v": 5420
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-230",
-    "f": "Çatı katı",
-    "n": "Family Living TV Console",
-    "t": "Loose Furniture",
-    "v": 1647.5
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-231",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 811.25
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-232",
-    "f": "Çatı katı",
-    "n": "Family Living Coffee Table",
-    "t": "Loose Furniture",
-    "v": 1013.75
-   },
-   {
-    "b": "Emerald koleksiyonu",
-    "c": "F-233",
-    "f": "Çatı katı",
-    "n": "Family Living Buffet",
-    "t": "Loose Furniture",
-    "v": 6333.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -9709,7 +9709,7 @@
     "b": "Livello",
     "c": "F-062",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -9717,7 +9717,7 @@
     "b": "Livello",
     "c": "F-063",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -10167,7 +10167,7 @@
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1361.25
    },
@@ -10175,7 +10175,7 @@
     "b": "Livello",
     "c": "F-123",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 496.25
    },
@@ -10335,7 +10335,7 @@
     "b": "Livello",
     "c": "F-143",
     "f": "1. kat",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom",
     "t": "Fixed",
     "v": 642.5
    },
@@ -10343,7 +10343,7 @@
     "b": "Livello",
     "c": "F-144",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 2312.5
    },
@@ -10961,7 +10961,7 @@
     "b": "Livello",
     "c": "F-223",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 1203.75
    },
@@ -10969,7 +10969,7 @@
     "b": "Livello",
     "c": "F-224",
     "f": "1. kat",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Wardrobe",
     "t": "Fixed",
     "v": 787.5
    },
