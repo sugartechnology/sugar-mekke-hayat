@@ -547,6 +547,7 @@ td.best{font-weight:600}
 .toast{border-radius:var(--r)}
 @media (max-width:700px){.bar-in{gap:10px;padding-block:10px}.logo small{display:none}.bar-actions{margin-left:auto}
  .nav{order:3;width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;gap:4px;scrollbar-width:none}.nav button{flex:none}}
+.autot{display:flex;gap:6px}.autot input{flex:1}.autot input[readonly]{background:var(--surface-2);color:var(--muted);cursor:pointer}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -1107,7 +1108,7 @@ function adminMedia(){
      <label class="f">Paket<select id="upBrand">${opts(pk,S.pkg,"Tüm paketler (ortak)")}</select></label>
      <label class="f">Kat<select id="upFloor">${opts(fs,S.floor,"Belirtilmemiş")}</select></label>
      <label class="f">Oda<select id="upRoom">${roomOptionsHTML(S.villa||vs[0],S.floor,S.pkg,"")}</select><input id="upRoomNew" placeholder="Yeni oda adı" hidden></label>
-     <label class="f">Başlık<input id="upTitle" placeholder="Boş bırakılırsa oda adı kullanılır"></label></div>
+     <label class="f" style="grid-column:1/-1">Başlık<span class="autot"><input id="upTitle" readonly aria-describedby="upTitleHint"><button type="button" class="btn sm" id="upTitleEdit">Düzenle</button></span><small id="upTitleHint" class="muted" style="font-weight:400">Villa · oda · paket adından otomatik oluşur</small></label></div>
      <datalist id="roomsDL">${roomList().map(r=>`<option value="${esc(r)}">`).join("")}</datalist>
      <p class="note" id="upInfo" style="margin:0"></p>
      <p class="note" style="margin:0">Paket seçilirse görsel yalnızca o paket açıkken görünür. Kat planı paketten bağımsızsa "Tüm paketler" bırakın.</p>
@@ -1195,11 +1196,18 @@ function bindMedia(m){
   [uV,uF,uB].forEach(el=>el.addEventListener("change",refill));
   uR.addEventListener("change",()=>{uN.hidden=uR.value!=="__new";if(!uN.hidden)uN.focus();
     if(uR.value&&uR.value!=="__new"&&!uF.value){const f=roomFloor(uV.value,uR.value);if(f){uF.value=f;const r=uR.value;refill();uR.value=r;info();}}else info();});
-  info();
+  const uT=m.querySelector("#upTitle"),uTE=m.querySelector("#upTitleEdit"),uTH=m.querySelector("#upTitleHint");let manual=false;
+  const roomVal=()=>uR.value==="__new"?uN.value.trim():uR.value;
+  const autoTitle=()=>[uV.value,roomVal()||uF.value||"",uB.value||""].filter(Boolean).join(" · ");
+  const syncTitle=()=>{if(!manual)uT.value=autoTitle();};
+  const setManual=on=>{manual=on;uT.readOnly=!on;uTE.textContent=on?"Otomatiğe dön":"Düzenle";uTH.textContent=on?"Elle düzenleniyor":"Villa · oda · paket adından otomatik oluşur";if(on){uT.focus();uT.select();}else syncTitle();};
+  uTE.onclick=()=>setManual(!manual);uT.addEventListener("click",()=>{if(!manual)setManual(true);});
+  [uV,uF,uB,uR].forEach(el=>el.addEventListener("change",syncTitle));uN.addEventListener("input",syncTitle);
+  info();syncTitle();
   const run=async files=>{files=[...files].filter(f=>f.type.startsWith("image/")||/\.(jpe?g|png|webp|svg)$/i.test(f.name));if(!files.length){toast("Görsel dosyası seçin");return;}
-    const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:(m.querySelector("#upRoom").value==="__new"?m.querySelector("#upRoomNew").value.trim():m.querySelector("#upRoom").value)||null,brand:m.querySelector("#upBrand").value||null,title:m.querySelector("#upTitle").value.trim()||null};
+    const meta={kind:m.querySelector("#upKind").value,villa:m.querySelector("#upVilla").value,floor:m.querySelector("#upFloor").value||null,room:(m.querySelector("#upRoom").value==="__new"?m.querySelector("#upRoomNew").value.trim():m.querySelector("#upRoom").value)||null,brand:m.querySelector("#upBrand").value||null,title:(manual?uT.value.trim():autoTitle())||null};
     for(const f of files){const row=document.createElement("div");row.className="row";row.innerHTML=`<span>${esc(pl(f.name))}</span><span class="muted">Bekliyor</span>`;list.appendChild(row);
-      try{await uploadOne(f,meta,row);}catch(e){row.lastChild.textContent=errMsg(e);row.lastChild.style.color="var(--bad)";}}
+      try{await uploadOne(f,files.length>1&&meta.title?{...meta,title:meta.title+" · "+(files.indexOf(f)+1)}:meta,row);}catch(e){row.lastChild.textContent=errMsg(e);row.lastChild.style.color="var(--bad)";}}
     toast("Yükleme tamamlandı");};
   inp.onchange=()=>run(inp.files);
   drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("over");});drop.addEventListener("dragleave",()=>drop.classList.remove("over"));
