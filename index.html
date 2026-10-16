@@ -9,29 +9,29 @@
 <title>Hayat Mekke Villa Sunumu</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
-/* Layout: property-listing page. Villa list → villa page (gallery + sticky package panel, rooms, cost story, other packages). Light limestone + deep date-palm green. */
+/* Layout: property-listing page. Villa list → villa page (gallery + sticky package panel, rooms, cost story, other packages). Airy white, fresh sage-teal accent, one sans family. */
 :root{
-  --bg:#F5F5F2; --surface:#FFFFFF; --surface-2:#EDEDE8; --line:#E0E0D9; --fg:#14171A; --muted:#656B70;
-  --accent:#1F4E44; --accent-2:#2C6B5D; --accent-ink:#FFFFFF; --accent-soft:#E3ECE8; --gold:#9C7A45;
-  --good:#2F7A52; --good-bg:#E4F1E9; --bad:#A64B35; --bad-bg:#F6E6E1; --shade:rgba(20,23,26,.08);
-  --f1:#1F4E44; --f2:#3F7E6F; --f3:#86AFA3; --f4:#C8D9D3; --fx:#C9B48A; --fv:#D9D6CC;
-  --display:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
-  --body:"Manrope","Segoe UI",system-ui,sans-serif;
-  --r:14px;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F4F7F6; --line:#E5EAE8; --fg:#101820; --muted:#5D6A72;
+  --accent:#2E8572; --accent-2:#246E5E; --accent-ink:#FFFFFF; --accent-soft:#EBF5F2; --gold:#B08A4E;
+  --good:#23825A; --good-bg:#E6F4EC; --bad:#B4533B; --bad-bg:#FBEDE8; --shade:rgba(16,24,32,.07);
+  --f1:#2E8572; --f2:#63AE9A; --f3:#A8D5C8; --f4:#D9EEE8; --fx:#E6CB8E; --fv:#E4E8EC;
+  --display:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
+  --body:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
+  --r:16px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0E1110; --surface:#161A19; --surface-2:#1E2321; --line:#2A302E; --fg:#ECEEEB; --muted:#9BA29E;
-  --accent:#7CC0AE; --accent-2:#5FA894; --accent-ink:#0C1A16; --accent-soft:#1B2C28; --gold:#D2B37A;
-  --good:#7DC39A; --good-bg:#1A2C22; --bad:#E39A84; --bad-bg:#33201B; --shade:rgba(0,0,0,.4);
-  --f1:#7CC0AE; --f2:#4E9583; --f3:#2F6457; --f4:#24413A; --fx:#B89D6A; --fv:#3A403D; color-scheme:dark}}
+  --bg:#0F1413; --surface:#161C1B; --surface-2:#1C2422; --line:#29322F; --fg:#EDF1EF; --muted:#9BA6A2;
+  --accent:#6CC2AC; --accent-2:#58AE98; --accent-ink:#0B1A16; --accent-soft:#18302A; --gold:#D6B67C;
+  --good:#7FCB9F; --good-bg:#183025; --bad:#E7A08A; --bad-bg:#34211C; --shade:rgba(0,0,0,.35);
+  --f1:#6CC2AC; --f2:#479C86; --f3:#2D6B5C; --f4:#21423A; --fx:#BFA26C; --fv:#3A4340; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0E1110; --surface:#161A19; --surface-2:#1E2321; --line:#2A302E; --fg:#ECEEEB; --muted:#9BA29E;
-  --accent:#7CC0AE; --accent-2:#5FA894; --accent-ink:#0C1A16; --accent-soft:#1B2C28; --gold:#D2B37A;
-  --good:#7DC39A; --good-bg:#1A2C22; --bad:#E39A84; --bad-bg:#33201B; --shade:rgba(0,0,0,.4);
-  --f1:#7CC0AE; --f2:#4E9583; --f3:#2F6457; --f4:#24413A; --fx:#B89D6A; --fv:#3A403D; color-scheme:dark}
+  --bg:#0F1413; --surface:#161C1B; --surface-2:#1C2422; --line:#29322F; --fg:#EDF1EF; --muted:#9BA6A2;
+  --accent:#6CC2AC; --accent-2:#58AE98; --accent-ink:#0B1A16; --accent-soft:#18302A; --gold:#D6B67C;
+  --good:#7FCB9F; --good-bg:#183025; --bad:#E7A08A; --bad-bg:#34211C; --shade:rgba(0,0,0,.35);
+  --f1:#6CC2AC; --f2:#479C86; --f3:#2D6B5C; --f4:#21423A; --fx:#BFA26C; --fv:#3A4340; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -218,6 +218,7 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .cbar{display:flex;height:20px;border-radius:6px;overflow:hidden;gap:2px}
 .cbar i{display:block;height:100%;min-width:2px}
 @media (max-width:560px){.crow{grid-template-columns:1fr auto}.crow .cbar{grid-column:1/-1;grid-row:2}}
+
 /* plan */
 .plan{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:12px}
 .plan-stage{position:relative;background:var(--surface-2);border-radius:10px;overflow:hidden;display:grid;place-items:center;min-height:220px}
@@ -414,6 +415,73 @@ input.cell{padding:5px 7px;text-align:right;width:110px;font-variant-numeric:tab
 .mitem .f input,.mitem .f select{padding:6px 8px;font-size:13px}
 .mitem .acts{display:flex;gap:6px;flex-wrap:wrap}
 .toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:11px 18px;border-radius:999px;font-weight:700;font-size:14px;z-index:200;max-width:calc(100vw - 32px)}
+
+/* ---- v2: light, modern overrides ---- */
+h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.08}
+.eyebrow{font-size:11.5px;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.head h2{font-size:clamp(26px,3vw,36px)}
+main{gap:72px;padding-top:28px}
+.bar{background:color-mix(in srgb,var(--bg) 92%,transparent)}
+.logo i{border-radius:10px}
+.logo b{font-family:var(--body);font-size:17px;font-weight:800;letter-spacing:-.02em}
+.nav button[aria-current="true"]{background:var(--accent-soft);color:var(--accent-2)}
+.btn{border-radius:12px;font-weight:700}
+.btn.primary{box-shadow:0 6px 16px -8px color-mix(in srgb,var(--accent) 70%,transparent)}
+.seg{border-radius:12px}.seg button{border-radius:9px}
+/* hero: split, light */
+.hero2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(24px,4vw,56px);align-items:center;padding-top:8px}
+@media (max-width:900px){.hero2{grid-template-columns:1fr}}
+.h-txt{display:grid;gap:20px;align-content:center}
+.h-txt h1{font-size:clamp(44px,6.4vw,84px);letter-spacing:-.04em;line-height:.98}
+.h-txt h1 span{color:var(--accent)}
+.h-txt p{font-size:clamp(16px,1.4vw,18px);color:var(--muted);max-width:46ch}
+.h-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:5/4;background:var(--surface-2);max-width:100%}
+.h-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.h-img .chip{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);color:#101820;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:700;box-shadow:0 10px 30px -12px rgba(0,0,0,.3)}
+.h-img .chip small{display:block;color:#5D6A72;font-weight:600;font-size:11.5px}
+.statrow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r);background:var(--surface-2)}
+.statrow div{padding:20px 22px;display:grid;gap:2px}
+.statrow div+div{border-left:1px solid var(--line)}
+.statrow b{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.03em;font-variant-numeric:lining-nums tabular-nums}
+.statrow span{font-size:12.5px;color:var(--muted);font-weight:600}
+@media (max-width:640px){.statrow{grid-template-columns:1fr 1fr}.statrow div:nth-child(3){border-left:0}.statrow div:nth-child(n+3){border-top:1px solid var(--line)}}
+/* cards */
+.vc,.rc,.oc,.pcard,.buy,.tile,.more,.rank,.comp,.plan,.tbl-wrap,.brow,.rrow,.card{border-color:var(--line)}
+.vc{border-radius:20px}
+.vc:hover,.rc:hover{box-shadow:0 20px 44px -24px rgba(16,24,32,.22)}
+.vc h3{font-size:26px}
+.price-line b{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.ph.empty-ph{background:linear-gradient(135deg,var(--accent-soft),var(--surface-2))}
+.ph.empty-ph b{font-weight:800;font-size:96px;opacity:.18;letter-spacing:-.05em}
+.pcard b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+/* villa page */
+.buy{box-shadow:0 24px 60px -36px rgba(16,24,32,.25);border-radius:20px}
+.buy h1{font-size:clamp(34px,4vw,46px)}
+.pkrow{border-radius:12px}
+.pkrow[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);box-shadow:none}
+.total b{font-size:40px;font-weight:800;letter-spacing:-.03em}
+.gmain{border-radius:20px}
+.ftabs button{border-radius:12px}
+.ftabs button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-2)}
+.cbig b{font-size:clamp(44px,5.4vw,64px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.tile b{font-weight:800}
+.insight{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent)}
+.lg.tot{border-top-color:var(--line)}
+/* light CTA band */
+.band{background:var(--accent-soft);color:var(--fg);border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)}
+.band h2{font-weight:800;font-size:clamp(26px,3vw,38px)}
+.band p{color:var(--muted);opacity:1}
+.band .btn.light{background:var(--accent);color:var(--accent-ink)}
+/* sheet */
+.sheet{background:var(--bg)}
+.sheet-wrap{background:rgba(16,24,32,.32);backdrop-filter:blur(2px)}
+.sheet-head h2{font-size:clamp(28px,3.4vw,38px)}
+/* compare */
+.rank-row .pos{font-family:var(--body);font-weight:800;font-size:16px}
+.cur{font-family:var(--body)}
+
+@media (max-width:700px){.bar-in{gap:10px;padding-block:10px}.logo small{display:none}.bar-actions{margin-left:auto}
+ .nav{order:3;width:100%;margin-left:0;flex-wrap:nowrap;overflow-x:auto;gap:4px;scrollbar-width:none}.nav button{flex:none}}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -562,13 +630,14 @@ function render(){
 function listHTML(){
   const best=ranked()[0];const c=coverImg(null,best?.name);
   const minAll=Math.min(...villas().map(v=>net(rankedFor(v)[0],v)));
-  return `<section class="hero">${c?`<img src="${blob(c.asset)}" alt="">`:""}
-    <div class="hero-in"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span>
-      <h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1>
+  const name=S.cfg.projectName||"Hayat Mekke";const parts=name.split(" ");
+  return `<section class="hero2"><div class="h-txt"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span>
+      <h1>${parts.length>1?esc(parts.slice(0,-1).join(" "))+" <span>"+esc(parts[parts.length-1])+"</span>":esc(name)}</h1>
       <p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı ekranda görün.")}</p>
-      <div class="hero-cta"><button class="btn light" data-scroll="villas">Villaları keşfet</button><button class="btn ghost-light" data-deck>Sunumu başlat</button></div>
-      <div class="stats"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
-        <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b class="num">${money(minAll)}</b><span>${S.cur} · başlangıç fiyatı</span></div></div></div></section>
+      <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları keşfet</button><button class="btn" data-deck>Sunumu başlat</button></div></div>
+     <div class="h-img">${c?`<img src="${blob(c.asset)}" alt="">`:""}${c?`<span class="chip">${esc(c.title||c.room||"")}<small>${esc([c.villa,c.brand].filter(Boolean).join(" · "))} paketi</small></span>`:""}</div></section>
+   <div class="statrow"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
+     <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)}</b><span>${S.cur} · başlangıç fiyatı</span></div></div>
   <section class="block" id="villas"><div class="head"><div><span class="eyebrow">Villa tipleri</span><h2>Size uygun villayı seçin</h2></div>
     <p>Fiyatlar mobilya, navlun, montaj ve sigorta dahil, KDV hariçtir.</p></div>
    <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name);const meta=S.cfg.villaMeta?.[v]||{};
