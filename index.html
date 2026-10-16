@@ -621,6 +621,20 @@ th.muted,td.muted{color:var(--muted)}
 .drvlog{max-height:220px;overflow:auto;display:grid;gap:2px;font-size:12.5px}
 .drvrow{padding:3px 0;border-bottom:1px solid var(--line);color:var(--muted)}.drvrow.ok{color:var(--good)}.drvrow.bad{color:#B4472F}
 .mitem.deleting{opacity:.4;pointer-events:none}
+.gmain .capr{display:grid;justify-items:end;gap:2px}
+.gmain .capr b{font-family:var(--display);font-weight:400;font-size:24px;line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.dsg{display:grid;grid-template-columns:minmax(150px,1fr) minmax(220px,1.4fr) auto;gap:22px;align-items:start;border:1px solid var(--line);background:var(--surface);padding:16px 18px;margin-top:10px}
+.dsg .dl{display:grid;gap:4px}.dsg .dl b{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.05}
+.dsg .dl .muted{font-size:12.5px;display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
+.dits{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13.5px}
+.dits li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:5px}
+.dits li span{display:grid}.dits li small{font-size:11.5px;color:var(--muted)}.dits li.more{color:var(--muted);border:0;font-size:12.5px}
+.dsg .dr{display:grid;gap:6px;justify-items:end;text-align:right}
+.dsg .dr b{font-family:var(--display);font-weight:400;font-size:34px;line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.dsg .dr b span{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:13px;margin-left:6px;letter-spacing:.05em;color:var(--muted)}
+.dsg.empty{grid-template-columns:1fr auto}
+@media (max-width:760px){.dsg{grid-template-columns:1fr;gap:14px}.dsg .dr{justify-items:start;text-align:left}}
+@media (max-width:640px){.gmain .capr b{font-size:19px;white-space:nowrap}.gmain .cap b#gTitle{font-size:13.5px}}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -669,7 +683,7 @@ const ROOMS=[["Powder Bathroom","Misafir WC"],["Maid Room","Hizmetli odası"],["
  ["Driver Room","Şoför odası"],["Driver WC","Şoför WC"],["Master Bedroom","Ebeveyn yatak odası"],["Walk-In Closet","Giyinme odası"],["Family Living","Aile salonu"],["Living Room","Salon"],
  ["Bedroom-1","Yatak odası 1"],["Bedroom-2","Yatak odası 2"],["Bedroom-3","Yatak odası 3"],["Bathroom","Banyo"],["Kitchen","Mutfak"],["Majlis","Meclis"],["Rawashin","Rawashin"],
  ["Terrace","Teras"],["Hallway","Koridor"],["Storage","Depo"]];
-const ITEMS=[["Cabinetry + Quartz Countertop","Mutfak dolapları + kuvars tezgâh"],["Outdoor lounge chair","Dış mekân şezlongu"],["3-Seater Sofa","Üçlü kanepe"],["2-Seater Sofa","İkili kanepe"],
+const ITEMS=[["Room Buffet","Büfe"],["Buffet","Büfe"],["Bookcase","Kitaplık"],["Cabinetry + Quartz Countertop","Mutfak dolapları + kuvars tezgâh"],["Outdoor lounge chair","Dış mekân şezlongu"],["3-Seater Sofa","Üçlü kanepe"],["2-Seater Sofa","İkili kanepe"],
  ["Armchair","Berjer"],["Coffee Table","Orta sehpa"],["Side Table","Yan sehpa"],["TV Console","TV ünitesi"],["Dining Table","Yemek masası"],["Console table","Konsol"],["Bedside Table","Komodin"],
  ["Dressing Table","Makyaj masası"],["Double Bed","Çift kişilik yatak"],["Bed bench","Yatak önü bankı"],["Bathroom Vanity","Lavabo dolabı"],["Base Cabinet","Alt dolap"],["Wall Cabinet","Üst dolap"],
  ["Vanity","Lavabo dolabı"],["Coat Rack","Portmanto"],["Wardrobe","Gardırop"],["Chair","Sandalye"],["Table","Masa"],["Bed","Yatak"]];
@@ -852,6 +866,17 @@ function bindList(){const m=$("#main");bindHero();
   m.querySelector("[data-deck]")?.addEventListener("click",()=>openDeckSetup());}
 
 /* ---------- villa page ---------- */
+function designInfo(m,b,v){const pk=pkgByName(m.brand)||b;const items=m.room?pdfRoomItems(pk.name,v,m.room,m.floor):[];
+  return {pk,items,tot:items.reduce((a,it)=>a+(+it.v||0),0)};}
+function designHTML(m,b,v){const d=designInfo(m,b,v);
+  if(!d.items.length)return `<div class="dsg empty"><div class="dl"><span class="eyebrow">Bu görseldeki tasarım</span><b>${esc(m.room||m.title||"Genel görünüm")}</b><span class="muted">${esc([m.floor,pl(d.pk.name)+" paketi"].filter(Boolean).join(" · "))} · bu görsel için oda kalemi eşleşmedi</span></div>
+    <div class="dr"><span class="eyebrow">Paket toplamı · net</span><b class="num">${money(net(d.pk,v))}<span>${S.cur}</span></b></div></div>`;
+  const top=d.items.slice(0,4);
+  return `<div class="dsg"><div class="dl"><span class="eyebrow">Bu görseldeki tasarım</span><b>${esc(m.room)}</b>
+      <span class="muted">${dot(d.pk.name)}${esc(pl(d.pk.name))} paketi · ${esc(m.floor||"")} · ${d.items.length} ürün</span></div>
+    <ul class="dits">${top.map(it=>`<li><span>${esc(it.label)}<small>${esc(brandLabel(it.b))}</small></span><b class="num">${money(it.v)}</b></li>`).join("")}${d.items.length>top.length?`<li class="more">+${d.items.length-top.length} ürün daha</li>`:""}</ul>
+    <div class="dr"><span class="eyebrow">Tasarımın fiyatı · net</span><b class="num">${money(d.tot)}<span>${S.cur}</span></b>
+      <button class="btn sm" data-droom="${esc(m.room)}" data-dfloor="${esc(m.floor||"")}">Tüm ürünler ve fiyatlar ›</button></div></div>`;}
 function galleryHTML(list,v,b){
   if(!list.length){const others=rankedFor(v).filter(x=>x!==b).map(x=>({p:x,n:S.media.filter(m=>m.villa===v&&m.kind==="render"&&m.brand===x.name).length})).filter(x=>x.n);
     return `<div class="gempty"><div><b>${esc(pl(b.name))} için görseller hazırlanıyor</b><span class="muted">Fiyat, odalar ve kalem listesi aşağıda.</span>
@@ -860,7 +885,8 @@ function galleryHTML(list,v,b){
   return `<div class="gmain"><img id="gImg" src="${blob(m.asset)}" alt="${esc(m.title||m.room||"")}">
     <div class="gtop"><button data-gfull>Tam ekran</button></div>
     ${list.length>1?`<button class="gnav l" data-gstep="-1" aria-label="Önceki">‹</button><button class="gnav r" data-gstep="1" aria-label="Sonraki">›</button>`:""}
-    <div class="cap"><div><b id="gTitle">${esc(m.title||m.room||"Render")}</b><small id="gSub">${esc([m.floor,pl(b.name)].filter(Boolean).join(" · "))}</small></div><small class="num" id="gCnt">${gi+1} / ${list.length}</small></div></div>
+    <div class="cap"><div><b id="gTitle">${esc(m.title||m.room||"Render")}</b><small id="gSub">${esc([m.floor,pl(b.name)].filter(Boolean).join(" · "))}</small></div><div class="capr"><b class="num" id="gPrice">${(()=>{const d=designInfo(m,b,v);return d.items.length?money(d.tot)+" "+S.cur:"";})()}</b><small class="num" id="gCnt">${gi+1} / ${list.length}</small></div></div></div>
+   <div id="gDesign">${designHTML(m,b,v)}</div>
    ${list.length>1?`<div class="gthumbs">${list.map((x,i)=>`<button data-gi="${i}" aria-current="${i===gi}" aria-label="${esc(x.title||"")}"><img src="${thumb(x)}" alt="" loading="lazy"></button>`).join("")}</div>`:""}`;}
 function villaHTML(){
   const v=S.villa,b=pkgByName(S.pkg),f=S.floor,meta=S.cfg.villaMeta?.[v]||{};const r=rankedFor(v),lo=r[0];const L=layers(b,v);
@@ -945,16 +971,19 @@ function boqHTML(pkg,v){
       <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Tip</th><th>Tutar</th></tr></thead><tbody>
       ${[...groups.entries()].map(([room,arr])=>`<tr class="grp"><td colspan="3" style="text-align:left">${esc(room)}</td><td>${money(arr.reduce((a,x)=>a+(+x.v||0),0))}</td></tr>`+itemRows(arr)).join("")}
       </tbody></table></div></details>`;}).join("");}
+function bindDesign(g){g.querySelector("[data-droom]")?.addEventListener("click",e=>{const b=e.currentTarget;const f=b.dataset.dfloor;
+  if(f&&f!==S.floor&&floorsOnly().includes(f)){S.floor=f;const y=window.scrollY;render();window.scrollTo({top:y});}openRoom(b.dataset.droom);});}
 function bindGallery(list){
   const g=$("#gal");if(!g||!list.length)return;
   const show=i=>{S.gi=(i+list.length)%list.length;const m=list[S.gi];const img=$("#gImg");img.classList.add("fade");
     setTimeout(()=>{img.src=blob(m.asset);img.onload=()=>img.classList.remove("fade");},120);
     $("#gTitle").textContent=m.title||m.room||"Render";$("#gSub").textContent=[m.floor,pl(S.pkg)].filter(Boolean).join(" · ");$("#gCnt").textContent=`${S.gi+1} / ${list.length}`;
+    {const b=pkgByName(S.pkg),d=designInfo(m,b,S.villa);$("#gPrice").textContent=d.items.length?money(d.tot)+" "+S.cur:"";$("#gDesign").innerHTML=designHTML(m,b,S.villa);bindDesign(g);}
     g.querySelectorAll("[data-gi]").forEach(b=>b.setAttribute("aria-current",+b.dataset.gi===S.gi));
     g.querySelector(`[data-gi="${S.gi}"]`)?.scrollIntoView({block:"nearest",inline:"nearest"});};
   g.querySelectorAll("[data-gi]").forEach(b=>b.onclick=()=>show(+b.dataset.gi));
   g.querySelectorAll("[data-gstep]").forEach(b=>b.onclick=()=>show(S.gi+ +b.dataset.gstep));
-  g.querySelector("[data-gfull]")?.addEventListener("click",()=>openLightbox(list,S.gi));
+  g.querySelector("[data-gfull]")?.addEventListener("click",()=>openLightbox(list,S.gi));bindDesign(g);
   let sx=null;const gm=g.querySelector(".gmain");gm?.addEventListener("touchstart",e=>{sx=e.touches[0].clientX;},{passive:true});
   gm?.addEventListener("touchend",e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)show(S.gi+(dx<0?1:-1));sx=null;});}
 function bindVilla(){
