@@ -655,6 +655,12 @@ th.muted,td.muted{color:var(--muted)}
 .foot-logos{display:flex;align-items:center;gap:22px}.foot-logos .lg-e{height:56px;width:auto}.foot-logos .lg-r{height:34px;width:auto}.foot-logos .lg-sep{height:40px}
 .site-foot p{margin:0;font-size:13px;color:var(--fg);text-align:right;line-height:1.6}.site-foot p span{color:var(--muted)}
 @media (max-width:640px){.site-foot p{text-align:left}.foot-logos .lg-e{height:46px}.foot-logos .lg-r{height:28px}}
+.lockbtn{display:inline-flex;gap:6px;align-items:center}
+.lockov .ov-body{align-items:center}
+.lockbox{background:var(--bg);color:var(--fg);border:1px solid var(--line);padding:26px;display:grid;gap:12px;width:min(380px,100%)}
+.lockbox b{font-family:var(--display);font-weight:400;font-size:24px}.lockbox span{font-size:13px;color:var(--muted)}
+.lockbox input{font:inherit;padding:10px 12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.lockbox small{color:#B4472F;min-height:16px;font-size:12.5px}.lockact{display:flex;gap:8px;justify-content:flex-end}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -663,6 +669,7 @@ th.muted,td.muted{color:var(--muted)}
   <nav class="nav" id="tabs" aria-label="Bölümler"></nav>
   <div class="bar-actions">
     <div class="seg" role="group" aria-label="Para birimi"><button id="curUSD" aria-pressed="true">USD</button><button id="curSAR" aria-pressed="false">SAR</button></div>
+    <button class="btn sm lockbtn" id="lockBtn" hidden></button>
     <button class="btn primary sm" id="startDeck">Sunum</button>
   </div>
 </div></header>
@@ -673,7 +680,7 @@ th.muted,td.muted{color:var(--muted)}
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610162120"></script>
+<script src="data/data.js?v=202610221034"></script>
 <script>
 (function(){
 "use strict";
@@ -691,9 +698,10 @@ const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;"
 const nf0=new Intl.NumberFormat("tr-TR",{maximumFractionDigits:0});
 const nf1=new Intl.NumberFormat("tr-TR",{minimumFractionDigits:1,maximumFractionDigits:1});
 const conv=v=>S.cur==="SAR"?v*(S.cfg?.fx||3.75):v;
-const money=v=>nf0.format(Math.round(conv(v)));
-const big=v=>{const x=conv(v);return x>=1e6?nf1.format(x/1e6)+" M":nf0.format(Math.round(x));};
-const pct=v=>nf1.format(v*100)+"%";
+const MASK="•••.•••";
+const money=v=>S.locked?MASK:nf0.format(Math.round(conv(v)));
+const big=v=>{if(S.locked)return MASK;const x=conv(v);return x>=1e6?nf1.format(x/1e6)+" M":nf0.format(Math.round(x));};
+const pct=v=>S.locked?"•,•%":nf1.format(v*100)+"%";
 const blob=id=>!id?"":(/[\/.]/.test(id)?id:"/_blob/"+id);
 const slug=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"x";
 const dot=n=>`<span class="dot" style="background:${TIER_COLOR[n]||"var(--muted)"}"></span>`;
@@ -982,8 +990,8 @@ function costHTML(b,v){
      ${ttSum?`<div style="display:grid;gap:12px"><span class="eyebrow">Ürün tipine göre</span>${Object.entries(tt).sort((a,c)=>c[1]-a[1]).map(([k,x])=>`<div class="tb"><div class="top"><span>${esc(TYPES[k]||k)} <span class="muted" style="font-size:12.5px">· ${TYPE_NOTE[k]||""}</span></span><b>${money(x)} <span class="muted" style="font-weight:600">${pct(x/ttSum)}</span></b></div><div class="t"><i style="width:${(x/ttSum*100).toFixed(1)}%"></i></div></div>`).join("")}</div>`:""}
    </div></details>
    ${items.length?`<details class="more"><summary>Tüm kalemler<small>${items.length} kalem · birim fiyat × adet</small></summary><div class="in" style="gap:0">${boqHTML(b.name,v)}</div></details>`:""}`;}
-function extrasNote(b,v,L){return b.layers?.[v]?`navlun ${money(L.freight)} (villa başı sabit) · montaj ${money(L.assembly)}`:`mobilya bedelinin %${nf1.format(L.extras/L.furn*100)}'i`;}
-function rateLabel(b,v,k,L){if(b.layers?.[v]){if(k==="freight")return "villa başı sabit tutar";return "mobilya bedelinin %"+nf1.format((k==="assembly"?L.assembly:L.insurance)/L.furn*100)+"'i";}return "%"+nf1.format((+b.rates?.[k]||0)*100);}
+function extrasNote(b,v,L){if(S.locked)return "fiyatlar şifreyle görünür";return b.layers?.[v]?`navlun ${money(L.freight)} (villa başı sabit) · montaj ${money(L.assembly)}`:`mobilya bedelinin %${nf1.format(L.extras/L.furn*100)}'i`;}
+function rateLabel(b,v,k,L){if(S.locked)return "•";if(b.layers?.[v]){if(k==="freight")return "villa başı sabit tutar";return "mobilya bedelinin %"+nf1.format((k==="assembly"?L.assembly:L.insurance)/L.furn*100)+"'i";}return "%"+nf1.format((+b.rates?.[k]||0)*100);}
 function fixedInsight(v){ // fixed furniture + home textiles identical across packages → price difference comes only from loose furniture
   const bs=rankedFor(v);if(bs.length<2||!bs.every(b=>boqItems(b.name,v).length))return null;
   const tt=bs.map(b=>typeTotals(b.name,v));const fx=tt.map(t=>t["Fixed"]||0);const same=Math.max(...fx)-Math.min(...fx)<=Math.max(5,fx[0]*0.005);
@@ -1774,11 +1782,40 @@ function scheduleRender(){
 document.addEventListener("focusout",()=>setTimeout(()=>{if(renderPending&&!typing()&&!$("#overlay").children.length){renderPending=false;scheduleRender();}},50));
 new MutationObserver(()=>{if(!$("#overlay").children.length&&renderPending){renderPending=false;scheduleRender();}}).observe($("#overlay"),{childList:true});
 
+/* ---------- price lock (static build) ---------- */
+const b64d=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function unlockPrices(pw,silent){const e=S.enc;if(!e)return false;
+  if(!(window.crypto&&crypto.subtle))throw new Error("Bu tarayıcı şifre çözmeyi desteklemiyor (https gerekli)");
+  const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b64d(e.salt),iterations:e.iter,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
+  let txt;try{txt=new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:b64d(e.iv)},key,b64d(e.ct)));}catch(err){if(!silent)throw new Error("hatalı");return false;}
+  const real=JSON.parse(txt);S.cfg=real.config;S.boq=real.boq;S.locked=false;try{sessionStorage.setItem("hm_pw",pw);}catch(err){}
+  S.hero=null;renderLock();const y=window.scrollY;render();window.scrollTo({top:y});return true;}
+function lockPrices(){if(!S.mask)return;toast("Çıkış yapıldı · fiyatlar gizli");S.cfg=S.mask.cfg;S.boq=S.mask.boq;S.locked=true;try{sessionStorage.removeItem("hm_pw");}catch(e){}S.hero=null;renderLock();const y=window.scrollY;render();window.scrollTo({top:y});}
+function renderLock(){const b=$("#lockBtn");if(!b)return;b.hidden=!S.enc;if(!S.enc)return;
+  const ic=d=>`<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+  b.innerHTML=S.locked?`${ic('<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/>')}<span>Giriş</span>`
+    :`${ic('<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/>')}<span>Çıkış</span>`;
+  b.title=S.locked?"Fiyatları görmek için giriş yapın":"Çıkış yap, fiyatları gizle";
+  b.setAttribute("aria-pressed",!S.locked);b.onclick=()=>S.locked?openUnlock():lockPrices();}
+function openUnlock(){closeOv();const o=$("#overlay");document.body.style.overflow="hidden";
+  o.innerHTML=`<div class="ov lockov" role="dialog" aria-label="Fiyatları göster"><div class="ov-body"><form class="lockbox" id="lockForm">
+    <b>Giriş</b><span>Fiyatları görmek için kullanıcı adı ve şifrenizi girin. Giriş yapılmadan villa ve paket fiyatları gizli kalır.</span>
+    <input type="text" id="lockUser" autocomplete="username" placeholder="Kullanıcı adı" autocapitalize="none" spellcheck="false" required>
+    <input type="password" id="lockPw" autocomplete="current-password" placeholder="Şifre" required>
+    <small id="lockErr" role="alert"></small>
+    <div class="lockact"><button type="button" class="btn sm" data-x>Vazgeç</button><button class="btn primary sm" id="lockGo">Giriş yap</button></div></form></div></div>`;
+  const f=o.querySelector("#lockForm"),inp=o.querySelector("#lockPw"),usr=o.querySelector("#lockUser"),err=o.querySelector("#lockErr");usr.focus();
+  o.querySelector("[data-x]").onclick=closeOv;ovKeys=e=>{if(e.key==="Escape")closeOv();};document.addEventListener("keydown",ovKeys);
+  f.onsubmit=async ev=>{ev.preventDefault();err.textContent="";const g=o.querySelector("#lockGo");g.disabled=true;g.textContent="Kontrol ediliyor…";
+    try{await unlockPrices(usr.value.trim().toLocaleLowerCase("tr")+":"+inp.value);closeOv();toast("Giriş yapıldı · fiyatlar görünüyor");}catch(e2){err.textContent=/hatalı/.test(e2.message||"")?"Kullanıcı adı ya da şifre hatalı":(e2.message||"Giriş yapılamadı");inp.select();g.disabled=false;g.textContent="Giriş yap";}};}
 (async function boot(){
   const claude=window.claude;
   if(!claude||!claude.use){ // standalone build (GitHub Pages / local): data comes from data/data.js
-    const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));S.boq=D.boq||{};}
-    S.dbReady=true;render();return;}
+    const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));S.boq=D.boq||{};
+      if(D.enc){S.enc=D.enc;S.mask={cfg:S.cfg,boq:S.boq};S.locked=true;let pw=null;try{pw=sessionStorage.getItem("hm_pw");}catch(e){}
+        if(pw)unlockPrices(pw,true).catch(()=>{});}}
+    S.dbReady=true;renderLock();render();return;}
   const [db,user,assets,mcp,downloads]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("assets"),claude.use("mcp"),claude.use("downloads")]);
   S.db=db;S.assets=assets;S.mcp=mcp;S.downloads=downloads;
   try{S.canEdit=!!(user&&await user.canEdit());}catch(e){}
