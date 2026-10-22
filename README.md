@@ -30,12 +30,6 @@ src/
 
 > Fiyatlar ve renderlar müşteriye özel bilgi. Repoyu **private** tutmanız önerilir. GitHub Pages'te private repo yayını ücretli planlarda vardır.
 
-## Fiyat gizliliği
-
-Sitede fiyatlar şifreli tutulur. `data/data.js` içindeki gerçek tutarlar AES-GCM ile şifrelidir (`enc` alanı); `config.json` ve `boq.json` dosyalarındaki tutarlar maskelidir (gerçek değil). Giriş yapılmadan tüm fiyatlar `•••.•••` olarak görünür. Sağ üstteki **Giriş** ile kullanıcı adı ve şifre girilince fiyatlar tarayıcıda çözülür; **Çıkış** ile tekrar gizlenir. Giriş bilgisi tarayıcı sekmesi kapanana kadar hatırlanır.
-
-Şifreli veri Claude'daki yönetim panelinden dışa aktarılırken üretilir; elle düzenlemeyin.
-
 ## Veriyi güncellemek
 
 - **Rakamlar:** `data/config.json` içinde her paketin `values` alanı villa başına `[Zemin kat, 1. kat, Çatı katı, Ev tamamlayıcı ürünler]` tutarlarını (USD) tutar. `rates` alanı navlun, montaj ve sigorta oranlarını tutar.
