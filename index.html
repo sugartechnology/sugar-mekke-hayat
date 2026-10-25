@@ -750,6 +750,9 @@ th.muted,td.muted{color:var(--muted)}
 .ppin.has{background:var(--accent)}.ppin.has::after{content:"";position:absolute;right:-5px;top:-5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--accent)}
 .ppin:hover,.ppin:focus-visible{background:#000;z-index:3}
 .pp-total{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.96);padding:12px 16px;display:grid;gap:2px;box-shadow:0 10px 30px -14px rgba(0,0,0,.5);max-width:calc(100% - 28px)}
+.ppin .pcur{font-style:normal;font-weight:500;opacity:.75;margin-left:2px;font-size:.85em}
+.btag{cursor:pointer;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:2px}.btag:hover{color:var(--accent)}
+.pp-fl{list-style:none;margin:8px 0 0;padding:8px 0 0;border-top:1px solid var(--line);display:grid;gap:3px}.pp-fl li{display:flex;justify-content:space-between;gap:16px;font-size:12.5px}.pp-fl li b{font-family:inherit;font-size:12.5px;font-weight:600;line-height:1.3}
 .pp-total .eyebrow{display:flex;align-items:center;gap:6px}.pp-total b{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.05}.pp-total small{font-size:12px;color:var(--muted)}
 .pp-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}.pp-legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
 @media (max-width:640px){.ppin{padding:3px 6px}.ppin span{font-size:9.5px}.ppin b{font-size:10.5px}.pp-total{position:static;box-shadow:none;border-bottom:1px solid var(--line)}.pp-total b{font-size:24px}}
@@ -772,6 +775,7 @@ th.muted,td.muted{color:var(--muted)}
 .pkrow .p{font-size:13px}.pkrow .p small{font-size:11px}
 .total b{font-size:34px}.total .sub{font-size:12px}
 .buy .actions .btn{padding:8px 12px;font-size:13px}
+.qty{display:block;font-size:11.5px;color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums;margin-top:1px}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -791,11 +795,11 @@ th.muted,td.muted{color:var(--muted)}
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610251845"></script>
+<script src="data/data.js?v=202610252236"></script>
 <script>
 (function(){
 "use strict";
-const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:I4000";
+const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:J4000";
 const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
 const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
 const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE6D8",Emerald:"#2F7A5B",Diamond:"#A9D2E0",Royal:"#5E4C8E"};
@@ -1033,7 +1037,7 @@ function roomPanelHTML(room,floor,pk,v,items,tot,eyebrow){const panos=S.media.fi
       <span class="muted">${firmLogoSm(pk)}${esc(pl(pk.name))} · ${esc(floor||"")} · ${items.length} ürün</span>
       ${panos.length?`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">${panos.map(x=>`<button class="btn sm primary" data-pano="${x.id}">360° gez</button>`).join("")}</div>`:""}</div>
     <div class="dr"><span class="eyebrow">Oda fiyatı · net</span><b class="num">${money(tot)}<span>${S.cur}</span></b></div>
-    ${items.length?`<ul class="dits2">${items.map(it=>`<li>${itemThumb(it,pk.name,v)}<span class="nm">${esc(it.label)}<small>${esc([brandLabel(it.b),TYPES[it.t||""]||""].filter(Boolean).join(" · "))}</small></span><b class="num">${+it.v?money(it.v):"dahil"}</b></li>`).join("")}</ul>`:""}</div>`;}
+    ${items.length?`<ul class="dits2">${items.map(it=>`<li>${itemThumb(it,pk.name,v)}<span class="nm">${esc(it.label)}<small>${[brandTag(it.b),esc(TYPES[it.t||""]||"")].filter(Boolean).join(" · ")}</small>${qtyTag(it)}</span><b class="num">${+it.v?money(it.v):"dahil"}</b></li>`).join("")}</ul>`:""}</div>`;}
 const firmLogoSm=pk=>{const f=firmByName(firmName(pk));return f&&f.d.logo?`<img class="plogo" src="${esc(blob(f.d.logo))}" alt="">`:`<span class="plogo-t">${esc(String(firmName(pk)).toUpperCase())}</span>`;};
 function galleryHTML(list,v,b){
   if(!list.length&&S.froom){const items=pdfRoomItems(b.name,v,S.froom,S.ffloor);const tot=items.reduce((a,x)=>a+(+x.v||0),0);
@@ -1066,7 +1070,7 @@ function villaHTML(){
     </aside></div></section>
   ${plan?planRoomsHTML(v,b,plan,L):""}
   <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>${plan?"Kat kat odalar":"Odalar"}</h2></div>
-     <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)}</span></button>`).join("")}</div></div>
+     <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)} ${esc(S.cur)}</span></button>`).join("")}</div></div>
    ${roomsHTML(v,b,f)}</section>
   ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
    <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
@@ -1087,8 +1091,8 @@ function planRoomsHTML(v,b,plan,L){const ra=roomAll(b.name,v);const pins=plan.pi
   const pinned=new Set(pins.map(p=>p.room));const off=[...ra.entries()].filter(([r,o])=>!pinned.has(r)&&o.v>0).sort((a,c)=>c[1].v-a[1].v);
   return `<section class="block pplan" id="plan"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Kat planı üzerinden odalar</h2></div><p>Odaya tıklayın: görselleri, 360° panoraması ve ürün listesi açılır. Paket değişince oda fiyatları ve toplam plan üzerinde güncellenir.</p></div>
    <div class="pp-stage"><div class="pp-inner"><img src="${blob(plan.asset)}" alt="${esc(v)} kat planı">
-    ${pins.map(p=>{const pv=pinValue(p,b.name,v,ra);return `<button class="ppin${hasImg(p.room)?" has":""}${S.froom===p.room&&(!S.ffloor||!p.floor||S.ffloor===p.floor)?" on":""}" style="left:${p.x*100}%;top:${p.y*100}%" data-proom="${esc(p.room)}" data-pfloor="${esc(p.floor||"")}" aria-label="${esc(p.room)}${p.floor?" · "+esc(p.floor):""}${pv!=null?" · "+money(pv)+" "+S.cur:""}"><span>${esc(p.room)}</span><b>${pv!=null?(pv?money(pv):"kapsam dışı"):"–"}</b></button>`;}).join("")}</div>
-    <div class="pp-total"><span class="eyebrow">${dot(b.name)}${esc(pl(b.name))} · toplam</span><b class="num">${money(L.net)}${cur()}</b><small>net, KDV hariç · KDV dahil ${money(L.gross)} ${S.cur}</small></div></div>
+    ${pins.map(p=>{const pv=pinValue(p,b.name,v,ra);return `<button class="ppin${hasImg(p.room)?" has":""}${S.froom===p.room&&(!S.ffloor||!p.floor||S.ffloor===p.floor)?" on":""}" style="left:${p.x*100}%;top:${p.y*100}%" data-proom="${esc(p.room)}" data-pfloor="${esc(p.floor||"")}" aria-label="${esc(p.room)}${p.floor?" · "+esc(p.floor):""}${pv!=null?" · "+money(pv)+" "+S.cur:""}"><span>${esc(p.room)}</span><b>${pv!=null?(pv?money(pv)+`<i class="pcur">${S.cur==="USD"?"$":esc(S.cur)}</i>`:"kapsam dışı"):"–"}</b></button>`;}).join("")}</div>
+    <div class="pp-total"><span class="eyebrow">${dot(b.name)}${esc(pl(b.name))} · toplam</span><b class="num">${money(L.net)}${cur()}</b><small>net, KDV hariç · KDV dahil ${money(L.gross)} ${S.cur}</small><ul class="pp-fl">${floorsOnly().map(x=>`<li><span>${esc(x)}</span><b class="num">${money(+b.values?.[v]?.[sections().indexOf(x)]||0)} ${S.cur}</b></li>`).join("")}</ul></div></div>
    <div class="pp-legend"><span><i style="background:var(--accent)"></i>Görseli ya da 360° panoraması olan oda</span><span><i style="background:var(--fg)"></i>Yalnızca ürün listesi</span><span>Oda tutarları mobilya bedelidir (navlun, montaj, KDV hariç).</span>
     ${off.length?`<span>Planda işaretli olmayanlar: ${off.map(([r,o])=>`<button class="flink" data-proom="${esc(r)}">${esc(r)} ${money(o.v)}</button>`).join(" · ")}</span>`:""}</div></section>`;}
 function roomsHTML(v,b,f){
@@ -1133,9 +1137,11 @@ function fixedInsight(v){ // fixed furniture + home textiles identical across pa
   const bs=rankedFor(v);if(bs.length<2||!bs.every(b=>boqItems(b.name,v).length))return null;
   const tt=bs.map(b=>typeTotals(b.name,v));const fx=tt.map(t=>t["Fixed"]||0);const same=Math.max(...fx)-Math.min(...fx)<=Math.max(5,fx[0]*0.005);
   if(!same)return null;const lo=tt.map(t=>t["Loose Furniture"]||0);return {fixed:fx[0],looseMin:Math.min(...lo),looseMax:Math.max(...lo),lo:bs[lo.indexOf(Math.min(...lo))],hi:bs[lo.indexOf(Math.max(...lo))]};}
+const qtyOf=it=>{const q=+it.q;return isFinite(q)&&it.q!=null&&it.q!==""?q:null;};
+const qtyTag=it=>{const q=qtyOf(it);if(q==null)return "";const u=q?(+it.v||0)/q:0;return `<span class="qty">${nf0.format(q)} adet${q>1&&u?` × ${money(u)}`:""}</span>`;};
 function itemImg(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];return d?.villas?.[v||S.villa]?.[it.c]||null;}
 function itemThumb(it,pkg,v){const id=itemImg(it,pkg,v);return id?`<button type="button" class="ithumb" data-izoom="${esc(id)}" data-ilabel="${esc(it.label||it.n||"")}" data-isub="${esc([it.c,brandLabel(it.b)].filter(Boolean).join(" · "))}" aria-label="${esc((it.label||"")+" görselini büyüt")}"><img src="${esc(blob(id))}" alt="" loading="lazy"></button>`:`<span class="ithumb none" aria-hidden="true"></span>`;}
-function itemRows(arr,pkg,v){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,v)}<div>${esc(it.label)}${it.b!==undefined?`<small class="ib">${esc(brandLabel(it.b))}</small>`:""}</div></div></td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}
+function itemRows(arr,pkg,v){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,v)}<div>${esc(it.label)}${it.b!==undefined?`<small class="ib">${brandTag(it.b)}</small>`:""}${qtyTag(it)}</div></div></td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}
 function boqHTML(pkg,v){
   const items=boqItems(pkg,v);
   return sections().map(sec=>{const its=items.filter(it=>it.f===sec);if(!its.length)return "";
@@ -1222,7 +1228,7 @@ function openFurn(tab){
   const v=S.villa,b=pkgByName(S.pkg);S.furnTab=tab;const all=boqItems(b.name,v).map(it=>({...it,...labelItem(it)}));
   const tot=all.reduce((a,x)=>a+(+x.v||0),0)||1;
   const list=arr=>`<div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
-    ${arr.slice().sort((a,c)=>(+c.v||0)-(+a.v||0)).map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}<small class="ib">${esc(tab==="brand"?(TYPES[it.t||""]||""):brandLabel(it.b))}</small></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("")}</tbody></table></div>`;
+    ${arr.slice().sort((a,c)=>(+c.v||0)-(+a.v||0)).map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}<small class="ib">${tab==="brand"?esc(TYPES[it.t||""]||""):brandTag(it.b)}</small>${qtyTag(it)}</td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("")}</tbody></table></div>`;
   const group=(keyFn)=>{const m=new Map();all.forEach(it=>{const k=keyFn(it);if(!m.has(k))m.set(k,[]);m.get(k).push(it);});return [...m.entries()].map(([k,arr])=>({k,arr,v:arr.reduce((a,x)=>a+(+x.v||0),0)})).sort((a,c)=>c.v-a.v);};
   let body="";
   if(tab==="type"){const g=group(it=>it.t||"");
@@ -1232,7 +1238,7 @@ function openFurn(tab){
   else {const g=group(it=>it.b||"");const max=g[0]?.v||1;
     body=`<p class="note">Paket firmasının kendi ürünleri firma adıyla, diğerleri pakette kullanılan üçüncü taraf markalar olarak gösterilir.</p>
      <div class="brands">${g.map(x=>{const types=[...new Set(x.arr.map(i=>i.t||""))];
-       return `<details class="brow"><summary><span class="bn"><b>${esc(brandLabel(x.k))}</b><span>${types.map(t=>`<span class="typetag">${esc(TYPES[t]||t)}</span>`).join(" ")}</span></span>
+       return `<details class="brow"><summary><span class="bn"><b>${brandTag(x.k)}</b><span>${types.map(t=>`<span class="typetag">${esc(TYPES[t]||t)}</span>`).join(" ")}</span></span>
         <span class="bbar"><i style="width:${(x.v/max*100).toFixed(1)}%;background:${TYPE_COLOR[types[0]]||"var(--f1)"}"></i></span>
         <span class="bv"><b>${money(x.v)}</b><small>${pct(x.v/tot)} · ${x.arr.length} kalem</small></span></summary>${list(x.arr)}</details>`;}).join("")}</div>`;}
   const s=$("#sheet");document.body.style.overflow="hidden";
@@ -1309,7 +1315,12 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-izoom]");i
 const NETS=[["instagram","Instagram"],["facebook","Facebook"],["linkedin","LinkedIn"],["youtube","YouTube"],["x","X"],["pinterest","Pinterest"]];
 const firmName=b=>b?.firm||b?.name||"";
 function firmList(){return ranked().map(b=>({b,name:firmName(b),d:S.firms[slug(firmName(b))]||{}}));}
-function firmByName(n){return firmList().find(f=>f.name===n);}
+function brandList(){return Object.values(S.firms||{}).filter(d=>d&&d.role==="brand"&&d.name).map(d=>({b:null,name:d.name,d,brand:true})).sort((a,c)=>a.name.localeCompare(c.name,"tr"));}
+function firmByName(n){return firmList().find(f=>f.name===n)||brandList().find(f=>f.name===n);}
+const brandDoc=b=>{const k=String(b||"").trim().toLowerCase();if(!k)return null;return brandList().find(f=>[f.name,...(f.d.aliases||[])].some(a=>String(a).toLowerCase()===k))||null;};
+const brandTag=b=>{const f=brandDoc(b);const t=esc(f?f.name:brandLabel(b));return f?`<span class="flink btag" role="link" tabindex="0" data-firm="${esc(f.name)}">${t}</span>`:t;};
+function brandUse(f){const rows=[];const keys=[f.name,...(f.d.aliases||[])].map(a=>String(a).toLowerCase());
+  ranked().forEach(b=>villas().forEach(v=>boqItems(b.name,v).forEach(it=>{if(keys.includes(String(it.b||"").trim().toLowerCase()))rows.push({...it,...labelItem(it),pkg:b.name,villa:v});})));return rows;}
 function firmLogo(f,cls){const c=cls||"flogo";const d=f.d||{};return d.logo?`<img class="${c}" src="${esc(blob(d.logo))}" alt="${esc(f.name)} logosu">`:`<span class="${c} mono" aria-hidden="true">${esc(initials(f.name))}</span>`;}
 const fLink=(b,txt)=>`<button type="button" class="flink" data-firm="${esc(firmName(b))}">${txt||esc(firmName(b))}</button>`;
 function openFirm(n){S.firm=n;setView("firm");}
@@ -1347,20 +1358,27 @@ function firmsHTML(){const fs=firmList();
      return `<button class="fcard" data-firm="${esc(f.name)}"><div class="fc-top">${cv&&cv.brand===f.b.name?`<img class="fc-bg" src="${thumb(cv)}" alt="" loading="lazy">`:""}<div class="fc-logo">${firmLogo(f)}</div></div>
       <div class="bd"><span class="eyebrow">${dot(f.b.name)}${esc(f.b.name)} paketi${sub?" · "+esc(sub):""}</span><h3>${esc(f.name)}</h3>
        <p class="muted">${esc(clip(f.d.about,150)||"Firma bilgisi henüz eklenmedi.")}</p>
-       <div class="price-line"><div><small>${villas().length} villa toplamı · net</small><b class="num">${money(total3(f.b))}${cur()}</b></div><span class="link">Firma sayfası</span></div></div></button>`;}).join("")}</div></section>`;}
-function firmHTML(){const f=firmByName(S.firm);const d=f.d,b=f.b,r=ranked(),pos=r.indexOf(b)+1;
+       <div class="price-line"><div><small>${villas().length} villa toplamı · net</small><b class="num">${money(total3(f.b))}${cur()}</b></div><span class="link">Firma sayfası</span></div></div></button>`;}).join("")}</div></section>
+   ${brandList().length?`<section class="block"><div class="head"><div><span class="eyebrow">Tamamlayıcı markalar</span><h2>Paketlerde kullanılan markalar</h2></div><p>Bazı kalemler paket firması dışındaki markalardan gelir. Markaya tıklayın; hakkında bilgi, mağazalar ve projede kullanılan ürünler açılır.</p></div>
+    <div class="fgrid">${brandList().map(f=>{const u=brandUse(f);const pk=[...new Set(u.map(x=>x.pkg))];const sub=[f.d.hq,f.d.founded?"Kuruluş "+f.d.founded:""].filter(Boolean).join(" · ");
+     return `<button class="fcard" data-firm="${esc(f.name)}"><div class="fc-top"><div class="fc-logo">${firmLogo(f)}</div></div>
+      <div class="bd"><span class="eyebrow">Marka${sub?" · "+esc(sub):""}</span><h3>${esc(f.name)}</h3>
+       <p class="muted">${esc(f.d.products||clip(f.d.about,150)||"")}</p>
+       <div class="price-line"><div><small>Projede</small><b class="num" style="font-size:20px">${u.length} kalem · ${pk.length} paket</b></div><span class="link">Marka sayfası</span></div></div></button>`;}).join("")}</div></section>`:""}`;}
+function firmHTML(){const f=firmByName(S.firm);if(!f)return `<div class="empty"><strong>Firma bulunamadı</strong></div>`;const d=f.d,b=f.b,r=ranked(),pos=b?r.indexOf(b)+1:0;
   const web=safeUrl(d.website);const soc=NETS.filter(([k])=>safeUrl(d.social?.[k]));
   const fairs=(d.fairs||[]).slice().sort((x,y)=>(parseInt(y.year)||0)-(parseInt(x.year)||0));const stores=d.stores||[];
   const posts=(d.posts||[]).slice().sort((x,y)=>String(y.date||"").localeCompare(String(x.date||"")));
   const vids=(d.videos||[]).filter(x=>safeUrl(x.url)).sort((x,y)=>(parseInt(y.year)||0)-(parseInt(x.year)||0));const fv=vids.filter(x=>x.kind!=="brand"),bv=vids.filter(x=>x.kind==="brand");
-  const renders=S.media.filter(m=>m.kind==="render"&&m.brand===b.name&&m.asset&&villas().includes(m.villa)).sort(byCover).slice(0,8);
+  const renders=!b?[]:S.media.filter(m=>m.kind==="render"&&m.brand===b.name&&m.asset&&villas().includes(m.villa)).sort(byCover).slice(0,8);
   const meta=[d.hq,d.founded?"Kuruluş "+d.founded:"",d.storeCount||""].filter(Boolean).join(" · ");
   return `<div class="crumbs"><nav class="crumb"><button data-goview="firms">Firmalar</button><span>/</span><span>${esc(f.name)}</span></nav></div>
   <section class="fhero"><div class="fh-logo">${firmLogo(f,"flogo xl")}</div>
-   <div class="fh-txt"><span class="eyebrow">${dot(b.name)}${esc(b.name)} paketi · ${pos}. sırada (${r.length} paket)</span><h1>${esc(f.name)}</h1>${meta?`<p class="muted">${esc(meta)}</p>`:""}
+   <div class="fh-txt"><span class="eyebrow">${b?`${dot(b.name)}${esc(b.name)} paketi · ${pos}. sırada (${r.length} paket)`:`Marka${d.products?" · "+esc(d.products):""}`}</span><h1>${esc(f.name)}</h1>${meta?`<p class="muted">${esc(meta)}</p>`:""}
     <div class="fh-act">${web?`<a class="btn" href="${esc(web)}" target="_blank" rel="noopener">${esc(hostOf(web))} ↗</a>`:""}${soc.map(([k,l])=>`<a class="btn sm" href="${esc(safeUrl(d.social[k]))}" target="_blank" rel="noopener">${l}</a>`).join("")}</div></div>
-   <div class="fh-price"><small>${villas().length} villa toplamı · net, KDV hariç</small><b class="num">${money(total3(b))}${cur()}</b>
-    <div class="fh-v">${villas().map(v=>`<button data-open="${esc(v)}|${esc(b.name)}"><span>${esc(v)}</span><b class="num">${money(net(b,v))} ${S.cur}</b></button>`).join("")}</div></div></section>
+   ${b?`<div class="fh-price"><small>${villas().length} villa toplamı · net, KDV hariç</small><b class="num">${money(total3(b))}${cur()}</b>
+    <div class="fh-v">${villas().map(v=>`<button data-open="${esc(v)}|${esc(b.name)}"><span>${esc(v)}</span><b class="num">${money(net(b,v))} ${S.cur}</b></button>`).join("")}</div></div>`:brandPriceHTML(f)}</section>
+  ${b?"":brandUseHTML(f)}
   <section class="block"><div class="head"><div><h2>Hakkımızda</h2></div></div>${d.about?`<div class="fabout">${esc(d.about).split(/\n{2,}/).map(x=>`<p>${x.replace(/\n/g,"<br>")}</p>`).join("")}</div>`:fEmpty("Hakkımızda metni henüz eklenmedi.")}</section>
   <div class="fcols">
    <section class="block"><div class="head"><div><h2>Katıldığı fuarlar</h2></div></div>${fairs.length?`<ol class="ftl">${fairs.map(x=>`<li><span class="yr">${esc(x.year||"–")}</span><div><b>${esc(x.name||"")}</b>${x.city?`<span class="muted">${esc(x.city)}</span>`:""}</div></li>`).join("")}</ol>`:fEmpty("Fuar bilgisi henüz eklenmedi.")}</section>
@@ -1374,11 +1392,24 @@ function firmHTML(){const f=firmByName(S.firm);const d=f.d,b=f.b,r=ranked(),pos=
    ${fv.length?`<div class="fvgrid">${fv.map(videoCard).join("")}</div>`:""}${bv.length?`${fv.length?`<span class="eyebrow">Tanıtım ve showroom</span>`:""}<div class="fvgrid">${bv.map(videoCard).join("")}</div>`:""}</section>`:""}
   ${renders.length?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(b.name)} paketi</span><h2>Bu projedeki tasarımları</h2></div></div><div class="frend">${renders.map(m=>`<button data-open="${esc(m.villa)}|${esc(b.name)}"><img src="${thumb(m)}" alt="" loading="lazy"><span>${esc([m.villa,m.room||m.title].filter(Boolean).join(" · "))}</span></button>`).join("")}</div></section>`:""}
   ${(d.sources||[]).filter(safeUrl).length?`<p class="note">Kaynaklar: ${(d.sources||[]).filter(safeUrl).slice(0,6).map(u=>ext(u,esc(hostOf(u)))).join(" · ")}</p>`:""}`;}
+function brandPriceHTML(f){const u=brandUse(f);const byP=new Map();u.forEach(x=>byP.set(x.pkg,(byP.get(x.pkg)||0)+(+x.v||0)));
+  return `<div class="fh-price"><small>Projede kullanımı · ${villas().length} villa</small><b class="num">${u.length} kalem</b>
+    <div class="fh-v">${ranked().filter(b=>byP.has(b.name)).map(b=>`<button data-firm="${esc(firmName(b))}"><span>${dot(b.name)}${esc(pl(b.name))}</span><b class="num">${money(byP.get(b.name))} ${S.cur}</b></button>`).join("")||`<span class="muted">Paketlerde kalem bulunamadı.</span>`}</div></div>`;}
+function brandUseHTML(f){const u=brandUse(f);if(!u.length)return "";const pk=ranked().filter(b=>u.some(x=>x.pkg===b.name));
+  if(!pk.some(b=>b.name===S.bpkg))S.bpkg=pk[0].name;const cur=u.filter(x=>x.pkg===S.bpkg);
+  return `<section class="block" id="buse"><div class="head"><div><span class="eyebrow">${esc(f.name)} ürünleri</span><h2>Projede kullanılan ürünler</h2></div>
+    <div class="ftabs">${pk.map(b=>`<button data-bpkg="${esc(b.name)}" aria-pressed="${b.name===S.bpkg}">${esc(pl(b.name))}<span>${u.filter(x=>x.pkg===b.name).length} kalem</span></button>`).join("")}</div></div>
+   ${villas().map(v=>{const a=cur.filter(x=>x.villa===v);if(!a.length)return "";const t=a.reduce((s,x)=>s+(+x.v||0),0);
+     return `<details class="more" open><summary>${esc(v)} · ${esc(firmName(pkgByName(S.bpkg)))}<small>${a.length} kalem · ${money(t)} ${S.cur}</small></summary><div class="in" style="gap:0"><div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
+      ${a.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,S.bpkg,v)}<div>${esc(it.label)}<small class="ib">${esc(TYPES[it.t||""]||it.t||"")}</small>${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("")}</tbody></table></div></div></details>`;}).join("")}</section>`;}
 function bindFirm(){const m=$("#main");
   m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelectorAll("[data-goview]").forEach(b=>b.onclick=()=>setView(b.dataset.goview));
+  m.querySelectorAll("[data-bpkg]").forEach(b=>b.onclick=()=>{S.bpkg=b.dataset.bpkg;const y=window.scrollY;render();window.scrollTo({top:y});});
   m.querySelectorAll("[data-play]").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src=b.dataset.play;f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;f.title="Video";const box=b.parentElement;box.innerHTML="";box.appendChild(f);});}
 $("#main").addEventListener("click",e=>{const b=e.target.closest("[data-firm]");if(!b||S.view==="admin")return;e.preventDefault();e.stopPropagation();openFirm(b.dataset.firm);});
+document.addEventListener("click",e=>{const b=e.target.closest(".btag[data-firm]");if(!b||$("#main").contains(b))return;e.preventDefault();e.stopPropagation();closeSheet();openFirm(b.dataset.firm);},true);
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList?.contains("btag")){e.preventDefault();e.target.click();}});
 
 /* firm editor (admin) */
 function adminFirms(){const fs=firmList();if(!fs.length)return `<div class="empty"><strong>Önce maliyet verisini çekin</strong><span>Firmalar paket verisinden gelir.</span></div>`;
@@ -1977,9 +2008,9 @@ function parseVeri(rows){
   return out;}
 function parseHam(rows){ // Firma, Villa, Bölüm, Kod, Kalem, Marka, Tip, Toplam, Kalem mi  (Marka is dropped on purpose)
   const out={};if(!rows?.length)return out;const h=rows[0].map(x=>String(x).trim());const ix=k=>h.indexOf(k);
-  const F=ix("Firma"),V=ix("Villa"),B=ix("Bölüm"),K=ix("Kod"),N=ix("Kalem"),M=ix("Marka"),T=ix("Tip"),P=ix("Toplam"),Q=ix("Kalem mi");if(F<0||V<0||P<0)return out;
+  const F=ix("Firma"),V=ix("Villa"),B=ix("Bölüm"),K=ix("Kod"),N=ix("Kalem"),M=ix("Marka"),T=ix("Tip"),P=ix("Toplam"),Q=ix("Kalem mi"),A=ix("Adet");if(F<0||V<0||P<0)return out;
   rows.slice(1).forEach(r=>{if(Q>=0&&!/^true$/i.test(String(r[Q]||"").trim()))return;const f=String(r[F]||"").trim();if(!f)return;const v=String(r[V]||"").trim();
-    ((out[f]=out[f]||{})[v]=out[f][v]||[]).push({f:String(r[B]||"").trim(),c:String(r[K]||"").trim(),n:String(r[N]||"").trim(),b:M>=0?String(r[M]||"").trim():"",t:String(r[T]||"").trim(),v:parseNum(r[P])});});
+    ((out[f]=out[f]||{})[v]=out[f][v]||[]).push({f:String(r[B]||"").trim(),c:String(r[K]||"").trim(),n:String(r[N]||"").trim(),b:M>=0?String(r[M]||"").trim():"",t:String(r[T]||"").trim(),v:parseNum(r[P]),...(A>=0&&String(r[A]??"").trim()!==""?{q:parseNum(r[A])}:{})});});
   return out;}
 function mergeParsed(p,extraFields){
   const cur=S.cfg||{projectName:"Hayat Mekke",subtitle:"Villa mobilya paketleri",location:"Mekke · Suudi Arabistan",vat:0.15,villaCount:250,fx:3.75,villaMeta:{}};
@@ -2110,6 +2141,3 @@ function openUnlock(){closeOv();const o=$("#overlay");document.body.style.overfl
 render();
 })();
 </script>
-
-</body>
-</html>

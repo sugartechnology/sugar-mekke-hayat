@@ -487,5 +487,383 @@
    }
   ],
   "website": "https://sardunyafurniture.com/"
+ },
+ "livello": {
+  "about": "Livello, İnegöl'de yatak odası ve giyinme odası sistemleri üreten bir Türk mobilya markasıdır. Kendini \"Türkiye'nin Sonsuz Giyinme Odası Markası\" olarak tanımlar.\n\nŞirket Kasım 2005'te AKC Mobilya San. Tic. Ltd. Şti. (Akan Ahşap) adıyla, 3.800 m² kapalı üretim alanında kuruldu. Tasarımı, üretimi ve kalite kontrolü kendi tesisinde yürütür; ürünleri işlevsel ve ölçüye göre uyarlanabilir yapıdadır. Türkiye genelinde satış noktalarıyla büyüyen marka, uluslararası pazarlara da açılmaktadır.\n\nBu projede villaların yatak odalarındaki yatak, gardırop ve komodin kalemlerinde Livello ürünleri yer alır.",
+  "aliases": [
+   "Livello"
+  ],
+  "fairs": [
+   {
+    "city": "İstanbul",
+    "name": "IFF – İstanbul Uluslararası Mobilya Fuarı",
+    "year": "2026"
+   },
+   {
+    "city": "İstanbul",
+    "name": "IFF – İstanbul Uluslararası Mobilya Fuarı",
+    "year": "2025"
+   },
+   {
+    "city": "İnegöl, Bursa",
+    "name": "İnegöl Mobilya Fuarı",
+    "year": "2025"
+   },
+   {
+    "city": "İnegöl, Bursa",
+    "name": "İnegöl Mobilya Fuarı",
+    "year": "2024"
+   }
+  ],
+  "founded": "2005",
+  "hq": "İnegöl, Bursa",
+  "logo": "assets/firms/livello.png",
+  "name": "Livello",
+  "posts": [],
+  "products": "Yatak, gardırop ve giyinme odası sistemleri, şifonyer, komodin",
+  "role": "brand",
+  "social": {
+   "instagram": "https://www.instagram.com/livellomobilya/",
+   "youtube": "https://www.youtube.com/@LivelloMobilya.16"
+  },
+  "sources": [
+   "https://www.livello.com.tr/hakkimizda/",
+   "https://www.livello.com.tr/fuarlar/",
+   "https://www.livello.com.tr/satis-noktalarimiz/"
+  ],
+  "storeCount": "50 satış noktası · Livello Exclusive (Bursa) ve 49 bayi",
+  "stores": [
+   {
+    "address": "Süleymaniye OSB 1. Cad. No:27, İnegöl",
+    "city": "Bursa",
+    "country": "Türkiye",
+    "name": "Livello Exclusive",
+    "url": "https://www.livello.com.tr/satis-noktalarimiz/"
+   },
+   {
+    "city": "Antalya",
+    "country": "Türkiye",
+    "name": "Ordinal Mobilya"
+   },
+   {
+    "city": "Bursa",
+    "country": "Türkiye",
+    "name": "Karadağ Halı Mobilya"
+   },
+   {
+    "city": "Sakarya",
+    "country": "Türkiye",
+    "name": "QEV"
+   },
+   {
+    "city": "Mardin",
+    "country": "Türkiye",
+    "name": "AS Home"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Nusse Mobilya"
+   },
+   {
+    "city": "Elazığ",
+    "country": "Türkiye",
+    "name": "Şekerdağ Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Ustalar"
+   },
+   {
+    "city": "Sakarya",
+    "country": "Türkiye",
+    "name": "Aksu Home"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "A&S Mobilya"
+   },
+   {
+    "city": "Sakarya",
+    "country": "Türkiye",
+    "name": "Altanlar Mobilya"
+   },
+   {
+    "city": "Van",
+    "country": "Türkiye",
+    "name": "Aybella Mobilya"
+   },
+   {
+    "city": "Antalya",
+    "country": "Türkiye",
+    "name": "Altıntaş Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Asnur Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "CaddeYıldız Mobilya"
+   },
+   {
+    "city": "Antalya",
+    "country": "Türkiye",
+    "name": "Casside Mobilya"
+   },
+   {
+    "city": "Antalya",
+    "country": "Türkiye",
+    "name": "Ducca Home"
+   },
+   {
+    "city": "Erzurum",
+    "country": "Türkiye",
+    "name": "Elif AVM"
+   },
+   {
+    "city": "Aksaray",
+    "country": "Türkiye",
+    "name": "Arya Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Engince Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Evgör Mobilya"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Evmoda Mobilya"
+   },
+   {
+    "city": "Afyonkarahisar",
+    "country": "Türkiye",
+    "name": "Fehmioğlu Mobilya"
+   },
+   {
+    "city": "Uşak",
+    "country": "Türkiye",
+    "name": "Gökçe Group Mobilya"
+   },
+   {
+    "city": "Konya",
+    "country": "Türkiye",
+    "name": "Gürbüzoğulları Mobilya"
+   },
+   {
+    "city": "İzmir",
+    "country": "Türkiye",
+    "name": "Gizem Mobilya"
+   },
+   {
+    "city": "Şanlıurfa",
+    "country": "Türkiye",
+    "name": "Harem Home"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Innova Mobilya"
+   },
+   {
+    "city": "Kocaeli",
+    "country": "Türkiye",
+    "name": "Kolsuzlar Mobilya"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Master Mobilya"
+   },
+   {
+    "city": "Gaziantep",
+    "country": "Türkiye",
+    "name": "Ağaç Evi Mobilya"
+   },
+   {
+    "city": "Batman",
+    "country": "Türkiye",
+    "name": "Mifo Home"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Misafir Home Etimesgut"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Misafir Home Siteler"
+   },
+   {
+    "city": "Balıkesir",
+    "country": "Türkiye",
+    "name": "Movill Home"
+   },
+   {
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Nova Home"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Özince Mobilya"
+   },
+   {
+    "city": "Edirne",
+    "country": "Türkiye",
+    "name": "Obense Mobilya"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Özbay Mobilya"
+   },
+   {
+    "city": "Denizli",
+    "country": "Türkiye",
+    "name": "Relax Mobilya"
+   },
+   {
+    "city": "Kocaeli",
+    "country": "Türkiye",
+    "name": "Ridos Mobilya"
+   },
+   {
+    "city": "İzmir",
+    "country": "Türkiye",
+    "name": "SG Design Mobilya"
+   },
+   {
+    "city": "Ordu",
+    "country": "Türkiye",
+    "name": "Simaş Sadeler Mobilya"
+   },
+   {
+    "city": "Adana",
+    "country": "Türkiye",
+    "name": "Safir Mobilya"
+   },
+   {
+    "city": "Mersin",
+    "country": "Türkiye",
+    "name": "Saray Mobilya"
+   },
+   {
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Sefa Mobilya"
+   },
+   {
+    "city": "Kayseri",
+    "country": "Türkiye",
+    "name": "Titanik Mobilya"
+   },
+   {
+    "city": "Hatay",
+    "country": "Türkiye",
+    "name": "Turhan Home Center"
+   },
+   {
+    "city": "Samsun",
+    "country": "Türkiye",
+    "name": "Zendora Mobilya"
+   },
+   {
+    "city": "Kahramanmaraş",
+    "country": "Türkiye",
+    "name": "Lorenza Furniture"
+   }
+  ],
+  "videos": [
+   {
+    "fair": "IFF",
+    "kind": "fair",
+    "title": "IFF 2026 standı",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4",
+    "year": "2026"
+   },
+   {
+    "fair": "İnegöl Mobilya Fuarı",
+    "kind": "fair",
+    "title": "İnegöl Fuarı 2024 standı",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4",
+    "year": "2024"
+   },
+   {
+    "kind": "brand",
+    "title": "Pegasus koleksiyonu",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4"
+   },
+   {
+    "kind": "brand",
+    "title": "Livello mağazası",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4"
+   }
+  ],
+  "website": "https://www.livello.com.tr/"
+ },
+ "luva-concept": {
+  "about": "Luva Concept, dış mekân ve bahçe mobilyası üzerine çalışan bir markadır. İstanbul'da Masko ve Modoko'da, ayrıca Bodrum'da showroom'ları bulunur.\n\nShowroom'larında ithal ve yerli ürünleri bir arada sunar; kendi imalatından gelen deneyimle projeye özel üretim de yapar.\n\nBu projede villaların teras ve dış mekân oturma kalemlerinde Luva Concept ürünleri yer alır.",
+  "aliases": [
+   "Luva",
+   "Luva Concept"
+  ],
+  "fairs": [],
+  "hq": "İstanbul",
+  "logo": "assets/firms/luva-concept.png",
+  "name": "Luva Concept",
+  "posts": [],
+  "products": "Dış mekân ve bahçe mobilyası: oturma grupları, şezlong, dış mekân masa ve sandalyeleri",
+  "role": "brand",
+  "social": {
+   "instagram": "https://www.instagram.com/luvaconcept/",
+   "linkedin": "https://www.linkedin.com/company/luva-concept/",
+   "pinterest": "https://tr.pinterest.com/luvaconcept/"
+  },
+  "sources": [
+   "https://luvaconcept.com/hakkimizda/",
+   "https://luvaconcept.com/lokasyonlar/"
+  ],
+  "storeCount": "3 showroom · İstanbul Avrupa ve Anadolu yakası, Bodrum",
+  "stores": [
+   {
+    "address": "İkitelli OSB Mah. Masko Mobilyacılar Sitesi 17B Blok No:33-35",
+    "city": "Başakşehir, İstanbul",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-masko.jpg",
+    "name": "Avrupa Yakası showroom (Masko)",
+    "url": "https://luvaconcept.com/avrupa-yakasi/"
+   },
+   {
+    "address": "Necip Fazıl Bulvarı No:84/A Şerifali",
+    "city": "Ümraniye, İstanbul",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-umraniye.jpg",
+    "name": "Anadolu Yakası showroom",
+    "url": "https://luvaconcept.com/anadolu-yakasi/"
+   },
+   {
+    "address": "Müskebi Mah. Kapuz Cad. Plaza Bodrum Sitesi No:8/8",
+    "city": "Bodrum, Muğla",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-bodrum.jpg",
+    "name": "Bodrum showroom",
+    "url": "https://luvaconcept.com/bodrum/"
+   }
+  ],
+  "videos": [],
+  "website": "https://luvaconcept.com/"
  }
 }
