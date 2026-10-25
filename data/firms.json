@@ -865,5 +865,161 @@
   ],
   "videos": [],
   "website": "https://luvaconcept.com/"
+ },
+ "volly-smart": {
+  "about": "Volly Teknoloji'nin akıllı ev ve IoT markası. Bu projede villaların akıllı ev sistemi kalemleri (aydınlatma ve iklim kontrolü, sensörler, kontrol panelleri) Volly Smart ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Volly Smart",
+   "Volly"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/volly.svg",
+  "name": "Volly Smart",
+  "posts": [],
+  "products": "Akıllı ev sistemi: otomasyon, sensörler, kontrol panelleri",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://volly.com.tr/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://volly.com.tr/"
+ },
+ "teka": {
+  "about": "Mutfak ve banyo cihazları üreten TEKA, bu projede ocak, davlumbaz, mikrodalga, bulaşık makinesi, buzdolabı ve çamaşır makinesi kalemlerinde yer alır. Teklif ve büyük cihazların montajı TEKA ALJ üzerinden verildi (REV.2, 20.10.2026).",
+  "aliases": [
+   "TEKA",
+   "TEKA ALJ"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/teka.svg",
+  "name": "TEKA",
+  "posts": [],
+  "products": "Ankastre mutfak cihazları ve beyaz eşya",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.teka.com/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.teka.com/"
+ },
+ "philips": {
+  "about": "Bu projede küçük ev aletleri (su ısıtıcı, buharlı ütü, toz torbalı süpürge) Philips ürünleriyle fiyatlandırıldı; TEKA ALJ teklifine dahil.",
+  "aliases": [
+   "Philips"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/philips.svg",
+  "name": "Philips",
+  "posts": [],
+  "products": "Küçük ev aletleri: su ısıtıcı, buharlı ütü, süpürge",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.philips.com.tr/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.philips.com.tr/"
+ },
+ "beko": {
+  "about": "Bu projede 60 cm çok fonksiyonlu ankastre fırın kalemi BEKO ürünüyle fiyatlandırıldı; TEKA ALJ teklifine dahil.",
+  "aliases": [
+   "BEKO",
+   "Beko"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/beko.svg",
+  "name": "BEKO",
+  "posts": [],
+  "products": "Ankastre fırın",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.beko.com.tr/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.beko.com.tr/"
+ },
+ "karaca-korkmaz": {
+  "about": "Bu projede her villanın mutfak ve yemek seti (porselen yemek takımı, çelik tencere seti, çatal-bıçak ve servis ürünleri) Karaca ve Korkmaz ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Karaca/Korkmaz",
+   "Karaca",
+   "Korkmaz",
+   "Karaca / Korkmaz"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/karaca.svg",
+  "logos": [
+   "assets/firms/brands/karaca.svg",
+   "assets/firms/brands/korkmaz.png"
+  ],
+  "name": "Karaca / Korkmaz",
+  "posts": [],
+  "products": "Yemek takımı, tencere seti ve servis ürünleri",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.karaca.com/",
+   "https://www.korkmaz.com.tr/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.karaca.com/"
+ },
+ "loominology": {
+  "about": "Bu projede 6 ana oda için halı seti Loominology ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Loominology"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/loominology.png",
+  "name": "Loominology",
+  "posts": [],
+  "products": "Halı ve kilim",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.loominology.com/en"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.loominology.com/"
+ },
+ "penelope": {
+  "about": "Bu projede nevresim takımları, yorgan ve yastıklar ile banyo tekstili (havlu, bornoz, paspas) Penelope ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Penelope"
+  ],
+  "fairs": [],
+  "name": "Penelope",
+  "posts": [],
+  "products": "Nevresim takımları ve banyo tekstili",
+  "role": "brand",
+  "social": {},
+  "sources": [],
+  "stores": [],
+  "videos": []
+ },
+ "dercan-tekstil": {
+  "about": "Bu projede tüm pencereler için çift katlı perde paketi (blackout ve tül, ray ve montaj dahil) Dercan Tekstil'in villaya özel fiyatıyla yer alır.",
+  "aliases": [
+   "Dercan Tekstil",
+   "Dercan"
+  ],
+  "fairs": [],
+  "name": "Dercan Tekstil",
+  "posts": [],
+  "products": "Perde paketi (blackout ve tül)",
+  "role": "brand",
+  "social": {},
+  "sources": [],
+  "stores": [],
+  "videos": []
  }
 }

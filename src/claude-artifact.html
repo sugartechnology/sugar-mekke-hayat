@@ -743,7 +743,7 @@ th.muted,td.muted{color:var(--muted)}
 .ppin:hover,.ppin:focus-visible{background:#000;z-index:3}
 .pp-total{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.96);padding:12px 16px;display:grid;gap:2px;box-shadow:0 10px 30px -14px rgba(0,0,0,.5);max-width:calc(100% - 28px)}
 .ppin .pcur{font-style:normal;font-weight:500;opacity:.75;margin-left:2px;font-size:.85em}
-.btag{cursor:pointer;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:2px}.btag:hover{color:var(--accent)}
+.blogo{height:14px;width:auto;max-width:64px;object-fit:contain;vertical-align:-2px;margin-right:5px;display:inline-block}.btag{white-space:nowrap;cursor:pointer;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:2px}.btag:hover{color:var(--accent)}
 .vcw{position:relative;display:grid}.vcw.sel .vc .ph{outline:3px solid var(--accent);outline-offset:-3px}
 .vcpick{position:absolute;top:12px;right:12px;display:inline-flex;gap:6px;align-items:center;padding:7px 11px;border:0;border-radius:999px;background:rgba(255,255,255,.94);color:var(--fg);font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;box-shadow:0 6px 18px -8px rgba(0,0,0,.45)}
 .vcpick[aria-pressed="true"]{background:var(--accent);color:#fff}.vcpick:hover{transform:translateY(-1px)}
@@ -1390,7 +1390,8 @@ function firmList(){return ranked().map(b=>({b,name:firmName(b),d:S.firms[slug(f
 function brandList(){return Object.values(S.firms||{}).filter(d=>d&&d.role==="brand"&&d.name).map(d=>({b:null,name:d.name,d,brand:true})).sort((a,c)=>a.name.localeCompare(c.name,"tr"));}
 function firmByName(n){return firmList().find(f=>f.name===n)||brandList().find(f=>f.name===n);}
 const brandDoc=b=>{const k=String(b||"").trim().toLowerCase();if(!k)return null;return brandList().find(f=>[f.name,...(f.d.aliases||[])].some(a=>String(a).toLowerCase()===k))||null;};
-const brandTag=b=>{const f=brandDoc(b);const t=esc(f?f.name:brandLabel(b));return f?`<span class="flink btag" role="link" tabindex="0" data-firm="${esc(f.name)}">${t}</span>`:t;};
+const brandLogos=f=>{const ls=(f?.d?.logos&&f.d.logos.length?f.d.logos:f?.d?.logo?[f.d.logo]:[]);return ls.map(l=>`<img class="blogo" src="${esc(blob(l))}" alt="" loading="lazy">`).join("");};
+const brandTag=b=>{const f=brandDoc(b);const t=esc(f?f.name:brandLabel(b));return f?`<span class="flink btag" role="link" tabindex="0" data-firm="${esc(f.name)}">${brandLogos(f)}${t}</span>`:t;};
 function brandUse(f){const rows=[];const keys=[f.name,...(f.d.aliases||[])].map(a=>String(a).toLowerCase());
   ranked().forEach(b=>villas().forEach(v=>boqItems(b.name,v).forEach(it=>{if(keys.includes(String(it.b||"").trim().toLowerCase()))rows.push({...it,...labelItem(it),pkg:b.name,villa:v});})));return rows;}
 function firmLogo(f,cls){const c=cls||"flogo";const d=f.d||{};return d.logo?`<img class="${c}" src="${esc(blob(d.logo))}" alt="${esc(f.name)} logosu">`:`<span class="${c} mono" aria-hidden="true">${esc(initials(f.name))}</span>`;}
