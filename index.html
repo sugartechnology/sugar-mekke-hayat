@@ -777,6 +777,16 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 .ppin.oosh{box-shadow:0 0 0 2px #A4513C}.ppin .oosdot{position:absolute;top:-7px;right:-7px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:#A4513C;color:#fff;font:600 10px/16px var(--body);font-style:normal;text-align:center}
 .ppin{position:absolute}
 .freels{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}.reel{border:1px solid var(--line);background:var(--surface);display:grid}.reel .rv{position:relative;aspect-ratio:9/16;background:#111}.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.reel .bd{padding:10px 12px 12px;display:grid;gap:4px;font-size:13px}.reel .bd b{font-weight:600;line-height:1.3}.reel .bd a{font-size:12px}
+#pcmp{gap:16px}.pcpick{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pcsel{display:grid;gap:6px;border:1px solid var(--line);padding:12px}
+.pcchips{display:flex;flex-wrap:wrap;gap:6px}.pcchips button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);padding:6px 10px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}
+.pcchips button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent);font-weight:600}.pcchips button:disabled{opacity:.35;cursor:not-allowed}.pcchips .plogo{height:14px}
+.pcsum{display:grid;grid-template-columns:1fr auto 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);align-items:stretch}.pcsum>div{background:var(--surface);padding:14px 16px;display:grid;gap:4px;align-content:center}.pcsum small{font-size:12px;color:var(--muted)}.pcsum b{font-family:var(--display);font-weight:400;font-size:28px}.pcsum .vs{color:var(--muted);font-size:12px;text-align:center}.pcsum .dd .pcd{font-size:22px}
+.pcd{font-weight:600;white-space:nowrap}.pcd.up{color:var(--bad)}.pcd.dn{color:var(--good)}.pcd.eq{color:var(--muted);font-weight:500}.pcd.na{color:#A4513C;font-size:12px}
+.pct tr.tot td{border-top:2px solid var(--fg)}.pcrooms{display:grid;gap:8px}.pcrooms>div{display:flex;flex-wrap:wrap;gap:6px}.pcrooms button{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--surface);padding:6px 11px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}.pcrooms button[aria-pressed="true"]{border-color:var(--fg);box-shadow:inset 0 0 0 1px var(--fg)}.pcrooms .pcd{font-size:12px}
+.pcimg{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pcimg figure{margin:0;border:1px solid var(--line);background:var(--surface)}.pcimg img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}.pcimg .noimg{aspect-ratio:16/10;display:grid;place-items:center;background:var(--surface-2);color:var(--muted);font-size:13px;text-align:center;padding:12px}
+.pcimg figcaption{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;font-size:13px}.pcimg figcaption span{display:inline-flex;gap:8px;align-items:center;white-space:nowrap}.pcimg .plogo{height:14px!important;width:auto!important;max-width:90px!important;flex:none}.pcimg figcaption b{font-family:var(--display);font-weight:400;font-size:22px}
+.pcit{display:flex;gap:8px;align-items:center}.pcit small{display:block;font-size:11.5px;color:var(--muted)}.pcit .ithumb{width:40px;height:40px;flex:none}
+@media (max-width:760px){.pcpick,.pcimg{grid-template-columns:1fr}.pcsum{grid-template-columns:1fr 1fr}.pcsum .vs{display:none}}
 .pp-fl{list-style:none;margin:8px 0 0;padding:8px 0 0;border-top:1px solid var(--line);display:grid;gap:3px}.pp-fl li{display:flex;justify-content:space-between;gap:16px;font-size:12.5px}.pp-fl li b{font-family:inherit;font-size:12.5px;font-weight:600;line-height:1.3}
 .pp-total .eyebrow{display:flex;align-items:center;gap:6px}.pp-total b{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.05}.pp-total small{font-size:12px;color:var(--muted)}
 .pp-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}.pp-legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
@@ -820,7 +830,7 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610252341"></script>
+<script src="data/data.js?v=202610260057"></script>
 <script>
 (function(){
 "use strict";
@@ -910,7 +920,8 @@ function grossIn(b,v){return v===ALLV?villas().reduce((a,x)=>a+gross(b,x),0):gro
 function rankedIn(v){return brands().slice().sort((a,b)=>netIn(a,v)-netIn(b,v));}
 const scopeName=v=>v===ALLV?villas().length+" villa toplamı":v;
 function rankedFor(v){return brands().slice().sort((a,b)=>net(a,v)-net(b,v));}
-function boqItems(pkg,v){const a=S.boq[pkg]?.[v]||[];if(a.length&&a[0]._vil!==v)a.forEach(it=>{Object.defineProperty(it,"_vil",{value:v,enumerable:true,configurable:true,writable:true});Object.defineProperty(it,"_pkg",{value:pkg,enumerable:true,configurable:true,writable:true});});return a;}
+const _bq=new WeakMap();
+function boqItems(pkg,v){const a=S.boq[pkg]?.[v];if(!a||!a.length)return [];let c=_bq.get(a);if(!c||c._k!==pkg+"|"+v){c=a.map(it=>({...it,_vil:v,_pkg:pkg}));c._k=pkg+"|"+v;try{_bq.set(a,c);}catch(e){}}return c;}
 /* referans fiyat: kapsam dışı kalem için diğer paketlerdeki aynı kalem (hareketsiz mobilya ve tamamlayıcılar paketlerde aynı) */
 function oosRef(it){if(!isOOS(it)||!it._vil)return 0;for(const b of ranked()){if(b.name===it._pkg)continue;const m=(S.boq[b.name]?.[it._vil]||[]).find(x=>x.c===it.c&&x.f===it.f&&!isOOS(x)&&+x.v>0);if(m)return +m.v;}return 0;}
 const typeLabel=it=>it.t==="Fixed"?"Hareketsiz M. · "+FIXED_SUB(it):it.t==="Loose Furniture"?"Hareketli M.":(TYPES[it.t||""]||it.t||"");
@@ -1047,7 +1058,7 @@ function listHTML(){
       <div class="bd"><h3>${esc(v)}</h3><span class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"3 katlı villa · zemin, 1. kat ve çatı katı")}</span>
        <div class="price-line"><div><small>Başlangıç · ${esc(pl(lo?.name))}</small><b class="num">${money(net(lo,v))}${cur()}</b></div>
         <div style="text-align:right"><small>${r.length} paket</small><span class="num muted" style="font-size:13px;font-weight:600">en yüksek ${money(net(hi,v))}</span></div></div>
-       <span class="link">Villayı incele</span></div></button><button type="button" class="vcpick" data-vcpick="${esc(v)}" aria-pressed="${on}" title="${on?"Karşılaştırmadan çıkar":"Karşılaştırmaya ekle"}">${VC_ICON}<span>${on?"Seçildi":"Karşılaştır"}</span></button></div>`;}).join("")}</div>${vcBarHTML()}</section>
+       <span class="link">Villayı incele</span></div></button></div>`;}).join("")}</div></section>
   <section class="block"><div class="head"><div><h2>Villa tipine göre paketler</h2></div>
     <p>${esc(S.cfg.scope||"Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı.")} Hareketsiz mobilya ve ev tekstili tüm paketlerde aynı; fark hareketli mobilyanın seviyesinden gelir.</p></div>
    ${villaMatrixHTML()}<p class="note">${S.cur} · villa başı net fiyat, KDV hariç. Bir tutara tıklayın; villa o paketle açılır. Her sütunda en uygun paket işaretli.</p></section>
@@ -1102,7 +1113,7 @@ function villaHTML(){
      <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
        return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}"><span class="pkl">${firmLogoSm(x)}</span><span class="n">${esc(firmName(x))}<small class="tier">${esc(x.name)}${i===0?" · en uygun":""}</small></span><span class="p">${money(n)}${i?`<small>+${money(n-net(lo,v))}</small>`:""}</span></button>`;}).join("")}</div>
      <div class="total"><span class="eyebrow">${esc(pl(b.name))} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span><span class="sub">${fLink(b,esc(firmName(b))+" firma profili →")}</span></div>
-     <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button></div>
+     <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button><button class="btn" data-pcgo="">Paketleri karşılaştır</button></div>
     </aside></div></section>
   ${plan?planRoomsHTML(v,b,plan,L):""}
   <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>${plan?"Kat kat odalar":"Odalar"}</h2></div>
@@ -1110,6 +1121,7 @@ function villaHTML(){
    ${roomsHTML(v,b,f)}</section>
   ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
    <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
+  ${pkgCompareHTML(v)}
   <section class="block" id="cost"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))}</span><h2>Fiyat nasıl oluşuyor?</h2></div></div>
    ${costHTML(b,v)}</section>
   <section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Diğer paketler</h2></div><p>Aynı villa, farklı mobilya seviyesi.</p></div>
@@ -1217,7 +1229,7 @@ function bindVilla(){
   m.querySelectorAll("[data-pano]").forEach(b=>b.onclick=()=>openPano(b.dataset.pano));
   m.querySelector("[data-zoomplan]")?.addEventListener("click",e=>{const p=S.media.find(x=>x.id===e.currentTarget.dataset.zoomplan);if(p)openLightbox([p],0);});
   m.querySelector("[data-deckv]")?.addEventListener("click",()=>runDeck({villas:[S.villa],pkg:S.pkg,cost:true,plan:true,render:true,pano:true,cmp:false}));
-  bindGallery(list);}
+  bindPkgCompare();bindGallery(list);}
 
 /* ---------- room sheet ---------- */
 let sheetKeys=null;
@@ -1354,6 +1366,45 @@ function openItemZoom(id,label,sub){const o=document.createElement("div");o.clas
   apply();o.querySelector("[data-zx]").focus();}
 document.addEventListener("play",e=>{if(e.target.tagName!=="VIDEO")return;document.querySelectorAll("video").forEach(v=>{if(v!==e.target&&!v.paused)v.pause();});},true);
 document.addEventListener("click",e=>{const b=e.target.closest("[data-izoom]");if(!b)return;e.preventDefault();e.stopPropagation();openItemZoom(b.dataset.izoom,b.dataset.ilabel,b.dataset.isub);},true);
+
+/* ---------- villa detayında iki paket karşılaştırma ---------- */
+function pcPair(v){const r=rankedFor(v);let a=pkgByName(S.pcA)?S.pcA:S.pkg;if(!pkgByName(a))a=r[0]?.name;let b=pkgByName(S.pcB)?S.pcB:null;if(!b||b===a)b=(r.find(x=>x.name!==a)||{}).name;return [a,b];}
+const pcSign=d=>d>0.5?"+":d<-0.5?"−":"";
+const pcDiff=(d,cls)=>Math.abs(d)<0.5?`<span class="pcd eq">aynı</span>`:`<span class="pcd ${d>0?"up":"dn"}">${pcSign(d)}${money(Math.abs(d))}</span>`;
+function pcItems(pkg,v,room){return boqItems(pkg,v).filter(it=>!isTech(it.f)).map(it=>({...it,...labelItem(it)})).filter(it=>!room||it.room===room);}
+function pcRoomImg(v,pkg,room){return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.room===room&&m.asset&&pkgMatch(m,pkg)).sort((a,c)=>((c.brand===pkg?1:0)-(a.brand===pkg?1:0))||byCover(a,c))[0]||null;}
+function pkgCompareHTML(v){const [a,b]=pcPair(v);if(!a||!b)return "";const A=pkgByName(a),B=pkgByName(b);const r=rankedFor(v);
+  const nA=net(A,v),nB=net(B,v);const ra=roomAll(a,v),rb=roomAll(b,v);
+  const rooms=[...new Set([...ra.keys(),...rb.keys()])].filter(x=>(ra.get(x)?.v||0)+(rb.get(x)?.v||0)>0).sort((x,y)=>Math.abs((rb.get(y)?.v||0)-(ra.get(y)?.v||0))-Math.abs((rb.get(x)?.v||0)-(ra.get(x)?.v||0)));
+  if(!rooms.includes(S.pcRoom))S.pcRoom=rooms.includes(S.froom)?S.froom:(rooms.includes("Salon")?"Salon":rooms[0]);const room=S.pcRoom;
+  const ia=pcItems(a,v,room),ib=pcItems(b,v,room);const codes=[...new Set([...ia,...ib].map(x=>x.c))].sort((x,y)=>codeKey(x).localeCompare(codeKey(y)));
+  const imA=pcRoomImg(v,a,room),imB=pcRoomImg(v,b,room);
+  const secs=sections();const LA=layers(A,v),LB=layers(B,v);
+  const chip=(sel,key)=>`<div class="pcsel"><span class="eyebrow">${key==="a"?"1. paket":"2. paket"}</span><div class="pcchips">${r.map(x=>`<button data-pc${key}="${esc(x.name)}" aria-pressed="${x.name===sel}" ${x.name===(key==="a"?b:a)?"disabled":""}>${firmLogoSm(x)}<span>${esc(firmName(x))}</span></button>`).join("")}</div></div>`;
+  const cell=(it)=>it?`<div class="pcit">${itemThumb(it,it._pkg,v)}<div><b>${priceTxt(it)}</b><small>${brandTag(it.b)} · ${esc(typeLabel(it))}</small></div></div>`:`<span class="muted">Bu pakette yok</span>`;
+  return `<section class="block" id="pcmp"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>İki paketi karşılaştır</h2></div><p>İki marka seçin. Toplam, kat, oda ve kalem bazında fark yan yana görünür; fark 2. paketin 1. pakete göre farkıdır.</p></div>
+   <div class="pcpick">${chip(a,"a")}${chip(b,"b")}</div>
+   <div class="pcsum">
+    <div><small>${esc(pl(a))} · net</small><b class="num">${money(nA)}${cur()}</b></div>
+    <div class="vs">karşı</div>
+    <div><small>${esc(pl(b))} · net</small><b class="num">${money(nB)}${cur()}</b></div>
+    <div class="dd"><small>Fark</small>${pcDiff(nB-nA)}<span class="muted">${nA?`${nB>=nA?"+":"−"}${nf1.format(Math.abs(nB/nA-1)*100)}%`:""}</span></div></div>
+   <div class="tbl-wrap"><table class="items pct"><thead><tr><th style="text-align:left">Kalem</th><th>${esc(firmName(A))}</th><th>${esc(firmName(B))}</th><th>Fark</th></tr></thead><tbody>
+    ${secs.map((s,i)=>{const x=+A.values?.[v]?.[i]||0,y=+B.values?.[v]?.[i]||0;return `<tr><td style="text-align:left">${esc(s)}</td><td>${money(x)}</td><td>${money(y)}</td><td>${pcDiff(y-x)}</td></tr>`;}).join("")}
+    <tr><td style="text-align:left">Navlun</td><td>${money(LA.freight)}</td><td>${money(LB.freight)}</td><td>${pcDiff(LB.freight-LA.freight)}</td></tr>
+    <tr><td style="text-align:left">Montaj ve sigorta</td><td>${money(LA.assembly+LA.insurance)}</td><td>${money(LB.assembly+LB.insurance)}</td><td>${pcDiff(LB.assembly+LB.insurance-LA.assembly-LA.insurance)}</td></tr>
+    <tr class="tot"><td style="text-align:left"><b>Villa toplamı (net)</b></td><td><b>${money(nA)}</b></td><td><b>${money(nB)}</b></td><td>${pcDiff(nB-nA)}</td></tr></tbody></table></div>
+   <div class="pcrooms"><span class="eyebrow">Oda seçin · fark büyükten küçüğe</span><div>${rooms.map(x=>{const d=(rb.get(x)?.v||0)-(ra.get(x)?.v||0);return `<button data-pcroom="${esc(x)}" aria-pressed="${x===room}"><span>${esc(x)}</span>${pcDiff(d)}</button>`;}).join("")}</div></div>
+   <div class="pcimg">${[[A,imA,ra],[B,imB,rb]].map(([P,im,rr])=>`<figure>${im?`<img src="${esc(blob(im.asset))}" alt="${esc(room)} · ${esc(firmName(P))}" loading="lazy">`:`<div class="noimg">${esc(firmName(P))} için bu odanın görseli yok</div>`}<figcaption><span>${firmLogoSm(P)}${esc(pl(P.name))}</span><b class="num">${money(rr.get(room)?.v||0)} ${S.cur}</b></figcaption></figure>`).join("")}</div>
+   <div class="tbl-wrap"><table class="items pct pcitems"><thead><tr><th>Kod</th><th style="text-align:left">${esc(room)} · kalem</th><th style="text-align:left">${esc(firmName(A))}</th><th style="text-align:left">${esc(firmName(B))}</th><th>Fark</th></tr></thead><tbody>
+    ${codes.map(c=>{const x=ia.find(i=>i.c===c),y=ib.find(i=>i.c===c);const d=(+y?.v||0)-(+x?.v||0);const lb=(x||y);
+      return `<tr><td class="muted">${esc(c)}</td><td class="wrap" style="text-align:left">${esc(lb.label||lb.n||"")}${qtyTag(lb)}</td><td style="text-align:left">${cell(x)}</td><td style="text-align:left">${cell(y)}</td><td>${(isOOS(x||{})||isOOS(y||{}))?`<span class="pcd na">kapsam dışı</span>`:pcDiff(d)}</td></tr>`;}).join("")}
+    <tr class="tot"><td></td><td style="text-align:left"><b>Oda toplamı</b></td><td style="text-align:left"><b>${money(ra.get(room)?.v||0)}</b></td><td style="text-align:left"><b>${money(rb.get(room)?.v||0)}</b></td><td>${pcDiff((rb.get(room)?.v||0)-(ra.get(room)?.v||0))}</td></tr></tbody></table></div></section>`;}
+function bindPkgCompare(){const m=$("#main");const re=()=>{const y=window.scrollY;render();window.scrollTo({top:y});};
+  m.querySelectorAll("[data-pca]").forEach(b=>b.onclick=()=>{S.pcA=b.dataset.pca;re();});
+  m.querySelectorAll("[data-pcb]").forEach(b=>b.onclick=()=>{S.pcB=b.dataset.pcb;re();});
+  m.querySelectorAll("[data-pcroom]").forEach(b=>b.onclick=()=>{S.pcRoom=b.dataset.pcroom;re();});
+  m.querySelectorAll("[data-pcgo]").forEach(b=>b.onclick=()=>{S.pcA=S.pkg;if(b.dataset.pcgo)S.pcB=b.dataset.pcgo;render();document.getElementById("pcmp")?.scrollIntoView({behavior:"smooth"});});}
 
 /* ---------- villa karşılaştırma ---------- */
 const VC_ICON=`<svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4" width="6" height="12" rx="1"/><rect x="11.5" y="4" width="6" height="12" rx="1"/><path d="M10 2v16"/></svg>`;
