@@ -12,7 +12,40 @@
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/homage-logo.svg",
   "name": "Homage",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Debk3JZjGeR/",
+    "video": "assets/videos/ig_homage_Debk3JZjGeR.mp4",
+    "img": "assets/videos/ig_homage_Debk3JZjGeR.jpg",
+    "caption": "Homage flagship mağaza",
+    "date": "2026-10-13"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dbs9fRCgFR9/",
+    "video": "assets/videos/ig_homage_Dbs9fRCgFR9.mp4",
+    "img": "assets/videos/ig_homage_Dbs9fRCgFR9.jpg",
+    "caption": "Monk koleksiyonu",
+    "date": "2026-08-06"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DavKZgpCjJk/",
+    "video": "assets/videos/ig_homage_DavKZgpCjJk.mp4",
+    "img": "assets/videos/ig_homage_DavKZgpCjJk.jpg",
+    "caption": "Monk oturma grubu",
+    "date": "2026-07-13"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DcOZXXQMdcY/",
+    "video": "assets/videos/ig_homage_DcOZXXQMdcY.mp4",
+    "img": "assets/videos/ig_homage_DcOZXXQMdcY.jpg",
+    "caption": "Traverten detayları",
+    "date": "2026-08-19"
+   }
+  ],
   "social": {
    "facebook": "https://www.facebook.com/homagebursa",
    "instagram": "https://www.instagram.com/homagemobilya",
@@ -69,12 +102,18 @@
    {
     "kind": "brand",
     "title": "Homage tanıtım filmi · 1",
-    "url": "https://homage.com.tr/img/first-video.mp4"
+    "url": "https://homage.com.tr/img/first-video.mp4",
+    "file": "assets/videos/homage-1.mp4",
+    "poster": "assets/videos/homage-1.jpg",
+    "source": "https://homage.com.tr/img/first-video.mp4"
    },
    {
     "kind": "brand",
     "title": "Homage tanıtım filmi · 2",
-    "url": "https://homage.com.tr/img/second-video.mp4"
+    "url": "https://homage.com.tr/img/second-video.mp4",
+    "file": "assets/videos/homage-2.mp4",
+    "poster": "assets/videos/homage-2.jpg",
+    "source": "https://homage.com.tr/img/second-video.mp4"
    }
   ],
   "website": "https://homage.com.tr/"
@@ -92,7 +131,40 @@
   "hq": "Kayseri, Türkiye",
   "logo": "assets/firms/bellona-logo.png",
   "name": "Bellona",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeYwSUClFUd/",
+    "video": "assets/videos/ig_bellona_DeYwSUClFUd.mp4",
+    "img": "assets/videos/ig_bellona_DeYwSUClFUd.jpg",
+    "caption": "Valenty koltuk takımı",
+    "date": "2026-10-12"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeTdE1VlF8L/",
+    "video": "assets/videos/ig_bellona_DeTdE1VlF8L.mp4",
+    "img": "assets/videos/ig_bellona_DeTdE1VlF8L.jpg",
+    "caption": "Valencia köşe takımı",
+    "date": "2026-10-10"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeOcP-uFdym/",
+    "video": "assets/videos/ig_bellona_DeOcP-uFdym.mp4",
+    "img": "assets/videos/ig_bellona_DeOcP-uFdym.jpg",
+    "caption": "Napoli yatak odası",
+    "date": "2026-10-08"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dd0w7pyDg8N/",
+    "video": "assets/videos/ig_bellona_Dd0w7pyDg8N.mp4",
+    "img": "assets/videos/ig_bellona_Dd0w7pyDg8N.jpg",
+    "caption": "Valenty yemek odası",
+    "date": "2026-09-28"
+   }
+  ],
   "social": {
    "facebook": "https://www.facebook.com/BellonaGlobal/",
    "instagram": "https://www.instagram.com/bellonamobilya/",
@@ -137,17 +209,26 @@
     "fair": "IIFF İstanbul",
     "kind": "fair",
     "title": "Bellona CEO'su Serdar Karavil, \"57 ülkeye yaptığımız ihracatın IIFF ile artmasını bekliyoruz\"",
-    "url": "https://www.youtube.com/watch?v=AamPcb-G7UY"
+    "url": "https://www.youtube.com/watch?v=AamPcb-G7UY",
+    "file": "assets/videos/AamPcb-G7UY.mp4",
+    "poster": "assets/videos/AamPcb-G7UY.jpg",
+    "source": "https://www.youtube.com/watch?v=AamPcb-G7UY"
    },
    {
     "kind": "brand",
     "title": "Bellona Mobilya Fabrika Tanıtımı - Mobilya Tv",
-    "url": "https://www.youtube.com/watch?v=Zc4k-s08_nI"
+    "url": "https://www.youtube.com/watch?v=Zc4k-s08_nI",
+    "file": "assets/videos/Zc4k-s08_nI.mp4",
+    "poster": "assets/videos/Zc4k-s08_nI.jpg",
+    "source": "https://www.youtube.com/watch?v=Zc4k-s08_nI"
    },
    {
     "kind": "brand",
     "title": "Bellona Mobilya Stuttgart & Frankfurt",
-    "url": "https://www.youtube.com/watch?v=LdC4fimFpZs"
+    "url": "https://www.youtube.com/watch?v=LdC4fimFpZs",
+    "file": "assets/videos/LdC4fimFpZs.mp4",
+    "poster": "assets/videos/LdC4fimFpZs.jpg",
+    "source": "https://www.youtube.com/watch?v=LdC4fimFpZs"
    }
   ],
   "website": "https://www.bellona.com.tr"
@@ -161,7 +242,42 @@
   },
   "stores": [],
   "updatedAt": "2026-10-25T18:10:00Z",
-  "website": "https://incikoltuk.com/"
+  "website": "https://incikoltuk.com/",
+  "videos": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/De06pr5CNP6/",
+    "video": "assets/videos/ig_inci-design_De06pr5CNP6.mp4",
+    "img": "assets/videos/ig_inci-design_De06pr5CNP6.jpg",
+    "caption": "Showroom",
+    "date": "2026-10-23"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DecdqQ6AdtH/",
+    "video": "assets/videos/ig_inci-design_DecdqQ6AdtH.mp4",
+    "img": "assets/videos/ig_inci-design_DecdqQ6AdtH.jpg",
+    "caption": "Mori koltuk takımı",
+    "date": "2026-10-13"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DecdbCXjP8s/",
+    "video": "assets/videos/ig_inci-design_DecdbCXjP8s.mp4",
+    "img": "assets/videos/ig_inci-design_DecdbCXjP8s.jpg",
+    "caption": "Mori yemek odası",
+    "date": "2026-10-13"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DdbDV2vD65B/",
+    "video": "assets/videos/ig_inci-design_DdbDV2vD65B.mp4",
+    "img": "assets/videos/ig_inci-design_DdbDV2vD65B.jpg",
+    "caption": "Sienna oturma odası",
+    "date": "2026-09-18"
+   }
+  ]
  },
  "gabba": {
   "about": "Gabba Home, üçüncü kuşağın yönettiği, İnegöl merkezli bir lüks salon, oturma grubu ve yemek odası üreticisidir. Aile 1988'de üretim ve satışı İnegöl'e taşıdı, 1990'da ilk mağazasını açtı. İlk ihracatını 2001'de Yunanistan'a yaptı, 2013'te ilk yurt dışı deneyim merkezini Romanya'da açtı. 2020'de 65.000 m²'lik entegre tesise geçti. Yaklaşık 350–450 çalışanı var.",
@@ -181,7 +297,40 @@
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/gabba-logo.png",
   "name": "Gabba",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeZ-7OasJ1b/",
+    "video": "assets/videos/ig_gabba_DeZ-7OasJ1b.mp4",
+    "img": "assets/videos/ig_gabba_DeZ-7OasJ1b.jpg",
+    "caption": "Hanedan koleksiyonu",
+    "date": "2026-10-12"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeSGnTmhwHo/",
+    "video": "assets/videos/ig_gabba_DeSGnTmhwHo.mp4",
+    "img": "assets/videos/ig_gabba_DeSGnTmhwHo.jpg",
+    "caption": "FDI 2026 fuarı",
+    "date": "2026-10-09"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Ddotmy5N_I8/",
+    "video": "assets/videos/ig_gabba_Ddotmy5N_I8.mp4",
+    "img": "assets/videos/ig_gabba_Ddotmy5N_I8.jpg",
+    "caption": "FDI 2026 fuar standı",
+    "date": "2026-09-23"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DdelysLBKIH/",
+    "video": "assets/videos/ig_gabba_DdelysLBKIH.mp4",
+    "img": "assets/videos/ig_gabba_DdelysLBKIH.jpg",
+    "caption": "Tamzara koleksiyonu",
+    "date": "2026-09-19"
+   }
+  ],
   "social": {
    "facebook": "https://www.facebook.com/furnituregabba",
    "instagram": "https://www.instagram.com/gabbafurniture/",
@@ -223,39 +372,57 @@
     "kind": "fair",
     "title": "2023 IFF Furniture Fair | Gabba",
     "url": "https://www.youtube.com/watch?v=0qcpnZDqvOc",
-    "year": "2023"
+    "year": "2023",
+    "file": "assets/videos/0qcpnZDqvOc.mp4",
+    "poster": "assets/videos/0qcpnZDqvOc.jpg",
+    "source": "https://www.youtube.com/watch?v=0qcpnZDqvOc"
    },
    {
     "fair": "IIFF İstanbul",
     "kind": "fair",
     "title": "IIFF 2026 standı · 1",
     "url": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0",
-    "year": "2026"
+    "year": "2026",
+    "file": "assets/videos/gabba-iiff1.mp4",
+    "poster": "assets/videos/gabba-iiff1.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0"
    },
    {
     "fair": "IIFF İstanbul",
     "kind": "fair",
     "title": "IIFF 2026 standı · 2",
     "url": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0",
-    "year": "2026"
+    "year": "2026",
+    "file": "assets/videos/gabba-iiff2.mp4",
+    "poster": "assets/videos/gabba-iiff2.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0"
    },
    {
     "fair": "IIFF İstanbul",
     "kind": "fair",
     "title": "IIFF 2026 standı · 3",
     "url": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0",
-    "year": "2026"
+    "year": "2026",
+    "file": "assets/videos/gabba-iiff3.mp4",
+    "poster": "assets/videos/gabba-iiff3.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0"
    },
    {
     "kind": "brand",
     "title": "Factory Trailer | Gabba",
     "url": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y",
-    "year": "2022"
+    "year": "2022",
+    "file": "assets/videos/c4aPcCe3Q_Y.mp4",
+    "poster": "assets/videos/c4aPcCe3Q_Y.jpg",
+    "source": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y"
    },
    {
     "kind": "brand",
     "title": "MASKO Deneyim Merkezi",
-    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0"
+    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0",
+    "file": "assets/videos/gabba-masko.mp4",
+    "poster": "assets/videos/gabba-masko.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0"
    }
   ],
   "website": "https://gabbahome.com/"
@@ -287,7 +454,40 @@
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/modis-logo.png",
   "name": "Modis",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeRFHLJAjtn/",
+    "video": "assets/videos/ig_modis_DeRFHLJAjtn.mp4",
+    "img": "assets/videos/ig_modis_DeRFHLJAjtn.jpg",
+    "caption": "Villa projesi",
+    "date": "2026-10-09"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dc3BCCFDCUK/",
+    "video": "assets/videos/ig_modis_Dc3BCCFDCUK.mp4",
+    "img": "assets/videos/ig_modis_Dc3BCCFDCUK.jpg",
+    "caption": "Olympos",
+    "date": "2026-09-04"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DZpdVHhiZ3l/",
+    "video": "assets/videos/ig_modis_DZpdVHhiZ3l.mp4",
+    "img": "assets/videos/ig_modis_DZpdVHhiZ3l.jpg",
+    "caption": "Colosseum",
+    "date": "2026-06-16"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DXbPqchiOVF/",
+    "video": "assets/videos/ig_modis_DXbPqchiOVF.mp4",
+    "img": "assets/videos/ig_modis_DXbPqchiOVF.jpg",
+    "caption": "İtalya, yeni koleksiyonlar",
+    "date": "2026-04-22"
+   }
+  ],
   "social": {
    "facebook": "https://www.facebook.com/modisinterior/",
    "instagram": "https://www.instagram.com/modis_interiors/"
@@ -363,17 +563,18 @@
    {
     "kind": "brand",
     "title": "FACTORY",
-    "url": "https://www.youtube.com/watch?v=1NOcFf670GM"
-   },
-   {
-    "kind": "brand",
-    "title": "Modis Interiors",
-    "url": "https://www.youtube.com/watch?v=y-V-MlL_uGE"
+    "url": "https://www.youtube.com/watch?v=1NOcFf670GM",
+    "file": "assets/videos/1NOcFf670GM.mp4",
+    "poster": "assets/videos/1NOcFf670GM.jpg",
+    "source": "https://www.youtube.com/watch?v=1NOcFf670GM"
    },
    {
     "kind": "brand",
     "title": "Chester Long Design By Modis İnteriors ( Chester Köşe Koltuk )",
-    "url": "https://www.youtube.com/watch?v=EkLUVOpTVfc"
+    "url": "https://www.youtube.com/watch?v=EkLUVOpTVfc",
+    "file": "assets/videos/EkLUVOpTVfc.mp4",
+    "poster": "assets/videos/EkLUVOpTVfc.jpg",
+    "source": "https://www.youtube.com/watch?v=EkLUVOpTVfc"
    }
   ],
   "website": "https://www.modisinteriors.com/"
@@ -395,7 +596,40 @@
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/sardunya-logo.png",
   "name": "Sardunya",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DewBkJmAvle/",
+    "video": "assets/videos/ig_sardunya_DewBkJmAvle.mp4",
+    "img": "assets/videos/ig_sardunya_DewBkJmAvle.jpg",
+    "caption": "Metropol",
+    "date": "2026-10-21"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DaK8CzTk846/",
+    "video": "assets/videos/ig_sardunya_DaK8CzTk846.mp4",
+    "img": "assets/videos/ig_sardunya_DaK8CzTk846.jpg",
+    "caption": "Volume koleksiyonu",
+    "date": "2026-06-29"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DaK7dymDmoR/",
+    "video": "assets/videos/ig_sardunya_DaK7dymDmoR.mp4",
+    "img": "assets/videos/ig_sardunya_DaK7dymDmoR.jpg",
+    "caption": "Solaris koleksiyonu",
+    "date": "2026-06-29"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DUC4b_bjlhK/",
+    "video": "assets/videos/ig_sardunya_DUC4b_bjlhK.mp4",
+    "img": "assets/videos/ig_sardunya_DUC4b_bjlhK.jpg",
+    "caption": "IIFF 2026 fuar standı",
+    "date": "2026-01-28"
+   }
+  ],
   "social": {
    "facebook": "https://www.facebook.com/sardunyafurniture",
    "instagram": "https://www.instagram.com/sardunyafurniture/",
@@ -473,17 +707,26 @@
     "kind": "fair",
     "title": "IIFF 2026 fuar standı",
     "url": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4",
-    "year": "2026"
+    "year": "2026",
+    "file": "assets/videos/sardunya-iiff2026.mp4",
+    "poster": "assets/videos/sardunya-iiff2026.jpg",
+    "source": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4"
    },
    {
     "kind": "brand",
     "title": "Sardunya tanıtım filmi",
-    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4"
+    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4",
+    "file": "assets/videos/sardunya-home.mp4",
+    "poster": "assets/videos/sardunya-home.jpg",
+    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4"
    },
    {
     "kind": "brand",
     "title": "Sardunya hakkında",
-    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
+    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4",
+    "file": "assets/videos/sardunya-about.mp4",
+    "poster": "assets/videos/sardunya-about.jpg",
+    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
    }
   ],
   "website": "https://sardunyafurniture.com/"
@@ -519,7 +762,40 @@
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/livello.png",
   "name": "Livello",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dd81cgvoehz/",
+    "video": "assets/videos/ig_livello_Dd81cgvoehz.mp4",
+    "img": "assets/videos/ig_livello_Dd81cgvoehz.jpg",
+    "caption": "FLEX giyinme odası",
+    "date": "2026-10-01"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dd6POZtI-EV/",
+    "video": "assets/videos/ig_livello_Dd6POZtI-EV.mp4",
+    "img": "assets/videos/ig_livello_Dd6POZtI-EV.jpg",
+    "caption": "Paris yatak odası",
+    "date": "2026-09-30"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DZEwiaxI-l8/",
+    "video": "assets/videos/ig_livello_DZEwiaxI-l8.mp4",
+    "img": "assets/videos/ig_livello_DZEwiaxI-l8.jpg",
+    "caption": "Paris REN karyola",
+    "date": "2026-06-02"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DUIXY4nCDsh/",
+    "video": "assets/videos/ig_livello_DUIXY4nCDsh.mp4",
+    "img": "assets/videos/ig_livello_DUIXY4nCDsh.jpg",
+    "caption": "IFF 2026 standı",
+    "date": "2026-01-30"
+   }
+  ],
   "products": "Yatak, gardırop ve giyinme odası sistemleri, şifonyer, komodin",
   "role": "brand",
   "social": {
@@ -792,24 +1068,36 @@
     "kind": "fair",
     "title": "IFF 2026 standı",
     "url": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4",
-    "year": "2026"
+    "year": "2026",
+    "file": "assets/videos/livello-iff2026.mp4",
+    "poster": "assets/videos/livello-iff2026.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4"
    },
    {
     "fair": "İnegöl Mobilya Fuarı",
     "kind": "fair",
     "title": "İnegöl Fuarı 2024 standı",
     "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4",
-    "year": "2024"
+    "year": "2024",
+    "file": "assets/videos/livello-inegol2024.mp4",
+    "poster": "assets/videos/livello-inegol2024.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4"
    },
    {
     "kind": "brand",
     "title": "Pegasus koleksiyonu",
-    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4"
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4",
+    "file": "assets/videos/livello-pegasus.mp4",
+    "poster": "assets/videos/livello-pegasus.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4"
    },
    {
     "kind": "brand",
     "title": "Livello mağazası",
-    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4"
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4",
+    "file": "assets/videos/livello-magaza.mp4",
+    "poster": "assets/videos/livello-magaza.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4"
    }
   ],
   "website": "https://www.livello.com.tr/"
@@ -824,7 +1112,40 @@
   "hq": "İstanbul",
   "logo": "assets/firms/luva-concept.png",
   "name": "Luva Concept",
-  "posts": [],
+  "posts": [
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/De6H_kJj4C2/",
+    "video": "assets/videos/ig_luva-concept_De6H_kJj4C2.mp4",
+    "img": "assets/videos/ig_luva-concept_De6H_kJj4C2.jpg",
+    "caption": "Aurora",
+    "date": "2026-10-25"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dd8U-XSjL1L/",
+    "video": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.mp4",
+    "img": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.jpg",
+    "caption": "Aston",
+    "date": "2026-10-01"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DcXzD5ylLEp/",
+    "video": "assets/videos/ig_luva-concept_DcXzD5ylLEp.mp4",
+    "img": "assets/videos/ig_luva-concept_DcXzD5ylLEp.jpg",
+    "caption": "Copenhagen",
+    "date": "2026-08-23"
+   },
+   {
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DcFxeZrkg2b/",
+    "video": "assets/videos/ig_luva-concept_DcFxeZrkg2b.mp4",
+    "img": "assets/videos/ig_luva-concept_DcFxeZrkg2b.jpg",
+    "caption": "Luna",
+    "date": "2026-08-16"
+   }
+  ],
   "products": "Dış mekân ve bahçe mobilyası: oturma grupları, şezlong, dış mekân masa ve sandalyeleri",
   "role": "brand",
   "social": {

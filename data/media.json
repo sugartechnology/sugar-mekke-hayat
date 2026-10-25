@@ -1159,22 +1159,5 @@
   "title": "Villa A · Yatak odası 1",
   "villa": "Villa A",
   "id": "0mv8jsdokuiamqyfyzjd"
- },
- {
-  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_ortak.webp",
-  "brand": null,
-  "createdAt": "2026-10-22T20:53:04.677Z",
-  "fileName": "TypeA_Ebeveynyatakodası.jpg",
-  "floor": "1. kat",
-  "hideFirms": [
-   "Ergo"
-  ],
-  "kind": "render",
-  "order": 1792702384677,
-  "room": "Ebeveyn yatak odası",
-  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_ortak.webp",
-  "title": "Villa A · Ebeveyn yatak odası",
-  "villa": "Villa A",
-  "id": "lpxy1jgr8zjzcwlg1nu4"
  }
 ]

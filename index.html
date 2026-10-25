@@ -769,12 +769,14 @@ th.muted,td.muted{color:var(--muted)}
 .vc-t tr[data-vcroom]{cursor:pointer}.vc-t tr.on td{background:var(--accent-soft)}.vc-t td.lo{color:var(--good);font-weight:600}.vc-t .vc-sub td{border-top:1px solid var(--line);background:var(--surface-2)}
 @media (max-width:640px){.vc-stage{aspect-ratio:4/3}.vc-chip{min-width:0;flex:1}.vc-chip b{font-size:20px}}
 th.xcol,td.xcol{color:var(--muted);background:var(--surface-2)}th.xcol small{display:block;font-weight:400;text-transform:none;letter-spacing:0}
+.oosv{text-decoration:underline;text-decoration-color:#A4513C;text-decoration-thickness:2px;text-underline-offset:3px;color:#A4513C;font-weight:600;cursor:help}
 .oos{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border:1px dashed #A4513C;color:#A4513C;background:repeating-linear-gradient(135deg,#FBEDE8 0 4px,#fff 4px 8px);font-size:11px;font-weight:600;letter-spacing:.02em;border-radius:3px;white-space:nowrap}
 td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{color:var(--muted)}li.isoos .ithumb img{opacity:.55}
 .oosnote{display:flex;gap:8px;align-items:center;font-size:12px;color:#A4513C;margin-top:4px}
 .ppin.oosp{background:repeating-linear-gradient(135deg,#A4513C 0 5px,#8E4331 5px 10px)!important;color:#fff;outline:1px dashed #fff;outline-offset:-3px}
 .ppin.oosh{box-shadow:0 0 0 2px #A4513C}.ppin .oosdot{position:absolute;top:-7px;right:-7px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:#A4513C;color:#fff;font:600 10px/16px var(--body);font-style:normal;text-align:center}
 .ppin{position:absolute}
+.freels{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}.reel{border:1px solid var(--line);background:var(--surface);display:grid}.reel .rv{position:relative;aspect-ratio:9/16;background:#111}.reel video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.reel .bd{padding:10px 12px 12px;display:grid;gap:4px;font-size:13px}.reel .bd b{font-weight:600;line-height:1.3}.reel .bd a{font-size:12px}
 .pp-fl{list-style:none;margin:8px 0 0;padding:8px 0 0;border-top:1px solid var(--line);display:grid;gap:3px}.pp-fl li{display:flex;justify-content:space-between;gap:16px;font-size:12.5px}.pp-fl li b{font-family:inherit;font-size:12.5px;font-weight:600;line-height:1.3}
 .pp-total .eyebrow{display:flex;align-items:center;gap:6px}.pp-total b{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.05}.pp-total small{font-size:12px;color:var(--muted)}
 .pp-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}.pp-legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
@@ -818,7 +820,7 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610252316"></script>
+<script src="data/data.js?v=202610252341"></script>
 <script>
 (function(){
 "use strict";
@@ -862,7 +864,7 @@ const TYPE_COLOR={"Loose Furniture":"var(--f1)","Fixed":"var(--f2)","Ev Dekorasy
 const BRAND_TR={"Kitchen Furniture":"Mutfak mobilyası","Bathroom Furniture":"Banyo mobilyası"};
 const isOOS=it=>/kapsam\s*dışı/i.test(String(it?.b||""))||/kapsam\s*dışı/i.test(String(it?.n||""));
 const OOS_BADGE=`<span class="oos" title="Bu kalem firmanın teklif kapsamı dışında; fiyata dahil değil">Kapsam dışı</span>`;
-const priceTxt=it=>+it.v?money(+it.v):isOOS(it)?OOS_BADGE:"dahil";
+const priceTxt=it=>{if(+it.v)return money(+it.v);if(!isOOS(it))return "dahil";const r=oosRef(it);return r?`<span class="oosv" title="Firmanın teklifinde yok. Diğer paketlerdeki aynı kalemin fiyatı; toplama dahil değil.">${money(r)}</span> ${OOS_BADGE}`:OOS_BADGE;};
 const brandLabel=b=>{if(!b)return "Marka belirtilmemiş";b=String(b).replace(/\s*\(kapsam\s*dışı\)\s*$/i,"");const m=String(b).match(/^(.+) koleksiyonu$/);const pk=m&&brands().find(x=>x.name===m[1]);if(pk&&pk.firm)return pk.firm;return BRAND_TR[b]||b;};
 const TYPE_NOTE={"Fixed":"mutfak, banyo dolapları, gardıroplar · yerinde montaj","Loose Furniture":"kanepe, yatak, masa, sandalye","Ev Dekorasyon":"nevresim, havlu, halı, perde, mutfak seti","Electrical Appliance":"ankastre mutfak cihazları, buzdolabı, çamaşır makinesi, küçük ev aletleri, TV, split klima","Smart Home":"Volly KNX paketi: oda kontrol panelleri, akıllı kapı kilidi, görüntülü kapı paneli, kamera, devreye alma","Installation":"beyaz eşya, TV ve klima montajı, test ve devreye alma"};
 const APPL=[["Induction Hob","İndüksiyonlu ocak, 60 cm"],["Bottom-Freezer Refrigerator","Alttan donduruculu buzdolabı, 401 L"],["Built-in Oven","Ankastre çok fonksiyonlu fırın, 60 cm, 67 L"],["Recirculation Hood","Sürgülü aspiratör, 60 cm"],["Microwave","Ankastre mikrodalga + ızgara, 20 L"],["Dishwasher","Tam ankastre bulaşık makinesi, 12 kişilik"],["Washing Machine","Çamaşır makinesi, 8 kg"],["Electric Kettle","Elektrikli su ısıtıcı, 1,7 L"],["Steam Iron","Buharlı ütü, 2000 W"],["Vacuum Cleaner","Torbalı elektrikli süpürge, 1800 W"],["Smart Televisions","65\" akıllı televizyon (salon ve meclis)"],["Split AC","Split klima, 18.000 BTU inverter"],["Installation of all appliances","Tüm cihazların montajı (küçük ev aletleri hariç)"],["TV installation","TV montajı, kurulum ve test"],["AC back-to-back","Klima montaj işçiliği"],["KNX Smart Home System","KNX akıllı ev sistemi · komple villa paketi (16 kalem)"],["Room Controller","Oda kontrol paneli 4\" (Inspinia SQ)"],["10\" Panel – Siyah","Merkezi dokunmatik panel 10\" (Inspinia SQ, siyah çerçeve)"],["VRF Gateway","Klima (Midea VRF) KNX entegrasyon modülü"],["Fixed Dome","Güvenlik kamerası 2 MP, IR, PoE"],["LogicMachine5","Akıllı ev sunucusu (LogicMachine5 Lite)"],["Add-on Modülü","KNX ek modül (G2)"]];
@@ -908,7 +910,11 @@ function grossIn(b,v){return v===ALLV?villas().reduce((a,x)=>a+gross(b,x),0):gro
 function rankedIn(v){return brands().slice().sort((a,b)=>netIn(a,v)-netIn(b,v));}
 const scopeName=v=>v===ALLV?villas().length+" villa toplamı":v;
 function rankedFor(v){return brands().slice().sort((a,b)=>net(a,v)-net(b,v));}
-function boqItems(pkg,v){return (S.boq[pkg]?.[v]||[]);}
+function boqItems(pkg,v){const a=S.boq[pkg]?.[v]||[];if(a.length&&a[0]._vil!==v)a.forEach(it=>{Object.defineProperty(it,"_vil",{value:v,enumerable:true,configurable:true,writable:true});Object.defineProperty(it,"_pkg",{value:pkg,enumerable:true,configurable:true,writable:true});});return a;}
+/* referans fiyat: kapsam dışı kalem için diğer paketlerdeki aynı kalem (hareketsiz mobilya ve tamamlayıcılar paketlerde aynı) */
+function oosRef(it){if(!isOOS(it)||!it._vil)return 0;for(const b of ranked()){if(b.name===it._pkg)continue;const m=(S.boq[b.name]?.[it._vil]||[]).find(x=>x.c===it.c&&x.f===it.f&&!isOOS(x)&&+x.v>0);if(m)return +m.v;}return 0;}
+const typeLabel=it=>it.t==="Fixed"?"Hareketsiz M. · "+FIXED_SUB(it):it.t==="Loose Furniture"?"Hareketli M.":(TYPES[it.t||""]||it.t||"");
+const FIXED_SUB=it=>{const n=String(it.n||"");return /kitchen/i.test(n)?"Mutfak":/vanity|bath/i.test(n)?"Banyo":/wardrobe|coat|closet|dressing|storage|bedroom/i.test(n)?"Dolap":"Diğer";};
 function roomTotals(pkg,v,floor){const m=new Map();boqItems(pkg,v).filter(it=>!floor||it.f===floor).forEach(it=>{const {room}=labelItem(it);const o=m.get(room)||{v:0,n:0};o.v+=(+it.v||0);o.n++;m.set(room,o);});return m;}
 function typeTotals(pkg,v){const m={};boqItems(pkg,v).forEach(it=>{const k=it.t||"";m[k]=(m[k]||0)+(+it.v||0);});return m;}
 
@@ -1067,7 +1073,7 @@ function roomPanelHTML(room,floor,pk,v,items,tot,eyebrow){const panos=S.media.fi
       <span class="muted">${firmLogoSm(pk)}${esc(pl(pk.name))} · ${esc(floor||"")} · ${items.length} ürün</span>${items.some(isOOS)?`<span class="oosnote">${OOS_BADGE} ${items.filter(isOOS).length} kalem firmanın teklifinde yok, fiyata dahil değil</span>`:""}
       ${panos.length?`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">${panos.map(x=>`<button class="btn sm primary" data-pano="${x.id}">360° gez</button>`).join("")}</div>`:""}</div>
     <div class="dr"><span class="eyebrow">Oda fiyatı · net</span><b class="num">${money(tot)}<span>${S.cur}</span></b></div>
-    ${items.length?`<ul class="dits2">${items.map(it=>`<li${isOOS(it)?' class="isoos"':""}>${itemThumb(it,pk.name,v)}<span class="nm">${esc(it.label)}<small>${[brandTag(it.b),esc(TYPES[it.t||""]||"")].filter(Boolean).join(" · ")}</small>${qtyTag(it)}</span><b class="num">${priceTxt(it)}</b></li>`).join("")}</ul>`:""}</div>`;}
+    ${items.length?`<ul class="dits2">${items.map(it=>`<li${isOOS(it)?' class="isoos"':""}>${itemThumb(it,pk.name,v)}<span class="nm">${esc(it.label)}<small>${[brandTag(it.b),esc(typeLabel(it))].filter(Boolean).join(" · ")}</small>${qtyTag(it)}</span><b class="num">${priceTxt(it)}</b></li>`).join("")}</ul>`:""}</div>`;}
 const firmLogoSm=pk=>{const f=firmByName(firmName(pk));return f&&f.d.logo?`<img class="plogo" src="${esc(blob(f.d.logo))}" alt="">`:`<span class="plogo-t">${esc(String(firmName(pk)).toUpperCase())}</span>`;};
 function galleryHTML(list,v,b){
   if(!list.length&&S.froom){const items=pdfRoomItems(b.name,v,S.froom,S.ffloor);const tot=items.reduce((a,x)=>a+(+x.v||0),0);
@@ -1172,7 +1178,7 @@ const qtyOf=it=>{const q=+it.q;return isFinite(q)&&it.q!=null&&it.q!==""?q:null;
 const qtyTag=it=>{const q=qtyOf(it);if(q==null)return "";const u=q?(+it.v||0)/q:0;return `<span class="qty">${nf0.format(q)} adet${q>1&&u?` × ${money(u)}`:""}</span>`;};
 function itemImg(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];return d?.villas?.[v||S.villa]?.[it.c]||null;}
 function itemThumb(it,pkg,v){const id=itemImg(it,pkg,v);return id?`<button type="button" class="ithumb" data-izoom="${esc(id)}" data-ilabel="${esc(it.label||it.n||"")}" data-isub="${esc([it.c,brandLabel(it.b)].filter(Boolean).join(" · "))}" aria-label="${esc((it.label||"")+" görselini büyüt")}"><img src="${esc(blob(id))}" alt="" loading="lazy"></button>`:`<span class="ithumb none" aria-hidden="true"></span>`;}
-function itemRows(arr,pkg,v){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,v)}<div>${esc(it.label)}${it.b!==undefined?`<small class="ib">${brandTag(it.b)}</small>`:""}${qtyTag(it)}</div></div></td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("");}
+function itemRows(arr,pkg,v){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,v)}<div>${esc(it.label)}${it.b!==undefined?`<small class="ib">${brandTag(it.b)}</small>`:""}${qtyTag(it)}</div></div></td><td style="text-align:left"><span class="typetag">${esc(typeLabel(it))}</span></td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("");}
 function boqHTML(pkg,v){
   const items=boqItems(pkg,v);
   return sections().map(sec=>{const its=items.filter(it=>it.f===sec);if(!its.length)return "";
@@ -1259,7 +1265,7 @@ function openFurn(tab){
   const v=S.villa,b=pkgByName(S.pkg);S.furnTab=tab;const all=boqItems(b.name,v).map(it=>({...it,...labelItem(it)}));
   const tot=all.reduce((a,x)=>a+(+x.v||0),0)||1;
   const list=arr=>`<div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
-    ${arr.slice().sort((a,c)=>(+c.v||0)-(+a.v||0)).map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}<small class="ib">${tab==="brand"?esc(TYPES[it.t||""]||""):brandTag(it.b)}</small>${qtyTag(it)}</td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`;
+    ${arr.slice().sort((a,c)=>(+c.v||0)-(+a.v||0)).map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}<small class="ib">${tab==="brand"?esc(typeLabel(it)):brandTag(it.b)}</small>${qtyTag(it)}</td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`;
   const group=(keyFn)=>{const m=new Map();all.forEach(it=>{const k=keyFn(it);if(!m.has(k))m.set(k,[]);m.get(k).push(it);});return [...m.entries()].map(([k,arr])=>({k,arr,v:arr.reduce((a,x)=>a+(+x.v||0),0)})).sort((a,c)=>c.v-a.v);};
   let body="";
   if(tab==="type"){const g=group(it=>it.t||"");
@@ -1306,19 +1312,20 @@ function matrixHTML(sv){sv=sv||cmpScope();
   return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(pl(b.name))}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
 function compositionHTML(sv){sv=sv||cmpScope();
   const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv];if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
-  const SEG=[["Loose Furniture","Hareketli mobilya","var(--f1)"],["Fixed","Hareketsiz mobilya","var(--f2)"],["Ev Dekorasyon","Ev tekstili ve dekorasyon","var(--f3)"],["Electrical Appliance","Elektrikli ev aletleri (beyaz eşya, mutfak cihazları, TV, klima)","#8FA3B8"],["Installation","Cihaz montajı ve kurulumu","#C3CFDA"],["Smart Home","Akıllı ev sistemi (otomasyon, sensör, kontrol)","#B79FC2"],["_other","Tipi belirtilmemiş kalemler","var(--f4)"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
+  const SEG=[["Loose Furniture","Hareketli M.","var(--f1)"],["Fixed:Mutfak","Hareketsiz M. · Mutfak","#5F7E6C"],["Fixed:Dolap","Hareketsiz M. · Dolap","var(--f2)"],["Fixed:Banyo","Hareketsiz M. · Banyo","#A9BDB1"],["Fixed:Diğer","Hareketsiz M. · Diğer","#C8D4CC"],["Ev Dekorasyon","Ev tekstili ve dekorasyon","var(--f3)"],["Electrical Appliance","Elektrikli ev aletleri (beyaz eşya, mutfak cihazları, TV, klima)","#8FA3B8"],["Installation","Cihaz montajı ve kurulumu","#C3CFDA"],["Smart Home","Akıllı ev sistemi (otomasyon, sensör, kontrol)","#B79FC2"],["_other","Tipi belirtilmemiş kalemler","var(--f4)"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
   const TK=["Electrical Appliance","Installation","Smart Home"];const inPrice=k=>!TK.includes(k);
-  const rows=bs.map(b=>{const o={};SEG.forEach(([k])=>o[k]=0);vs.forEach(v=>{const L=layers(b,v);const t={},tx={};boqItems(b.name,v).forEach(it=>{const k=it.t||"";const d=isTech(it.f)?tx:t;d[k]=(d[k]||0)+(+it.v||0);});
+  const rows=bs.map(b=>{const o={};SEG.forEach(([k])=>o[k]=0);vs.forEach(v=>{const L=layers(b,v);const t={},tx={};boqItems(b.name,v).forEach(it=>{const k=it.t==="Fixed"?"Fixed:"+FIXED_SUB(it):(it.t||"");const d=isTech(it.f)?tx:t;d[k]=(d[k]||0)+(+it.v||0);if(isOOS(it)&&!isTech(it.f))o._oos=(o._oos||0)+oosRef(it);});
       const typed=Object.values(t).reduce((x,y)=>x+y,0);const f=typed?L.furn/typed:0;
-      Object.keys(t).forEach(k=>{const kk=["Loose Furniture","Fixed","Ev Dekorasyon"].includes(k)?k:TK.includes(k)?k:"_other";o[kk]+=(t[k]||0)*f;});
+      Object.keys(t).forEach(k=>{const kk=(["Loose Furniture","Ev Dekorasyon"].includes(k)||k.startsWith("Fixed:"))?k:TK.includes(k)?k:"_other";o[kk]+=(t[k]||0)*f;});
       Object.keys(tx).forEach(k=>{const kk=TK.includes(k)?k:"_other";o["x_"+kk]=(o["x_"+kk]||0)+(tx[k]||0);});o._fr+=L.freight;o._as+=L.assembly+L.insurance;});
     o.tot=SEG.reduce((a,[k])=>a+o[k],0);o.xt=TK.reduce((a,k)=>a+(o["x_"+k]||0),0)+(o.x__other||0);return {b,o};});
-  const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const xsegs=SEG.filter(([k])=>rows.some(r=>(r.o["x_"+k]||0)>0.5));
+  const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const xsegs=SEG.filter(([k])=>rows.some(r=>(r.o["x_"+k]||0)>0.5));const hasOos=rows.some(r=>r.o._oos>0.5);
   return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Maliyet kırılımı: mobilya, tekstil, cihazlar ve akıllı ev</h2></div><p>Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend">${segs.map(([k,l,c])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>
    ${rows.map(({b,o})=>`<div class="crow"><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><b class="num">${money(o.tot)}</b></div>`).join("")}</div>
-   <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l.split(" (")[0]}</th>`).join("")}<th>Toplam</th>${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
-    ${rows.map(({b,o})=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${segs.map(([k])=>`<td>${money(o[k])}</td>`).join("")}<td><b>${money(o.tot)}</b></td>${xsegs.map(([k])=>`<td class="xcol">${money(o["x_"+k]||0)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+   <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l.split(" (")[0]}</th>`).join("")}<th>Toplam</th>${hasOos?`<th class="xcol">Kapsam dışı<small>referans fiyat · dahil değil</small></th>`:""}${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
+    ${rows.map(({b,o})=>`<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${segs.map(([k])=>`<td>${money(o[k])}</td>`).join("")}<td><b>${money(o.tot)}</b></td>${hasOos?`<td class="xcol">${o._oos>0.5?`<span class="oosv" title="Firmanın teklifinde olmayan kalemler; diğer paketlerdeki aynı kalemlerin fiyatıyla">${money(o._oos)}</span>`:"–"}</td>`:""}${xsegs.map(([k])=>`<td class="xcol">${money(o["x_"+k]||0)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+   ${hasOos?`<p class="note"><span class="oosv">Altı çizili</span> tutarlar firmanın teklif kapsamı dışında kalan kalemlerdir (Ergo: banyo dolapları, mutfak seti ve birkaç sehpa). Tutar, aynı kalemin diğer paketlerdeki fiyatıdır; paket toplamına dahil değildir.</p>`:""}
    ${xsegs.length?`<p class="note">Elektrikli ev aletleri, cihaz montajı ve akıllı ev sistemi kalemleri BoQ'da ayrı listelenir ve paket fiyatına dahil değildir. Villa başına yaklaşık ${money(rows[0].o.xt/vs.length)} ${S.cur}; tüm paketlerde aynı cihaz listesi.</p>`:""}</section>`;}
 function compareHTML(){const v=cmpScope();
   return `<div class="cmp-scope"><span class="eyebrow">Villa tipi</span><div class="seg" role="tablist">${villas().map(x=>`<button data-cv="${esc(x)}" aria-pressed="${v===x}">${esc(x)}</button>`).join("")}<button data-cv="${ALLV}" aria-pressed="${v===ALLV}">${villas().length} villa toplamı</button></div></div>
@@ -1345,6 +1352,7 @@ function openItemZoom(id,label,sub){const o=document.createElement("div");o.clas
   img.addEventListener("pointermove",e=>{if(!drag||z===1)return;const dx=e.clientX-drag.sx,dy=e.clientY-drag.sy;if(Math.abs(dx)+Math.abs(dy)>4)moved=true;x=drag.x+dx;y=drag.y+dy;apply();});
   img.addEventListener("pointerup",e=>{const was=drag;drag=null;if(!moved&&was)setZ(z>1?1:2.5,e.clientX,e.clientY);});
   apply();o.querySelector("[data-zx]").focus();}
+document.addEventListener("play",e=>{if(e.target.tagName!=="VIDEO")return;document.querySelectorAll("video").forEach(v=>{if(v!==e.target&&!v.paused)v.pause();});},true);
 document.addEventListener("click",e=>{const b=e.target.closest("[data-izoom]");if(!b)return;e.preventDefault();e.stopPropagation();openItemZoom(b.dataset.izoom,b.dataset.ilabel,b.dataset.isub);},true);
 
 /* ---------- villa karşılaştırma ---------- */
@@ -1421,12 +1429,16 @@ function firmStripHTML(){const fs=firmList();if(!fs.length)return "";
 const igCode=u=>{const m=String(u||"").match(/instagram\.com\/(?:[^\/]+\/)?(p|reel|tv)\/([A-Za-z0-9_-]+)/);return m?{t:m[1],c:m[2]}:null;};
 const ytId=u=>{const m=String(u||"").match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);return m?m[1]:null;};
 const vmId=u=>{const m=String(u||"").match(/vimeo\.com\/(?:video\/)?(\d+)/);return m?m[1]:null;};
-function postCard(x){const u=safeUrl(x.url);const ig=igCode(u);const meta=esc([netLabel(x.network||(ig?"instagram":"")),fmtDate(x.date)].filter(Boolean).join(" · "));
+function postCard(x){if(x.video){const u=safeUrl(x.url);const meta=esc([netLabel(x.network||"instagram"),fmtDate(x.date)].filter(Boolean).join(" · "));
+    return `<div class="reel"><div class="rv"><video src="${esc(blob(x.video))}" ${x.img?`poster="${esc(blob(x.img))}"`:""} controls playsinline preload="none"></video></div><div class="bd"><span class="eyebrow">${meta}</span><b>${esc(clip(x.caption,90))}</b>${u?ext(u,"Instagram'da aç ↗"):""}</div></div>`;}
+  const u=safeUrl(x.url);const ig=igCode(u);const meta=esc([netLabel(x.network||(ig?"instagram":"")),fmtDate(x.date)].filter(Boolean).join(" · "));
   if(ig&&!x.img)return `<div class="igbox"><iframe src="https://www.instagram.com/${ig.t==="reel"?"reel":"p"}/${ig.c}/embed/captioned/" loading="lazy" title="Instagram paylaşımı" allowtransparency="true" scrolling="no"></iframe><div class="bd"><span class="eyebrow">${meta}</span>${ext(u,"Instagram'da aç ↗")}</div></div>`;
   const img=x.img?blob(x.img):"";
   return `<a class="fpost" ${u?`href="${esc(u)}" target="_blank" rel="noopener"`:""}>${img?`<div class="ph"><img src="${esc(img)}" alt="" loading="lazy"></div>`:`<div class="ph empty-ph"><span>${esc(netLabel(x.network)||"Paylaşım")}</span></div>`}
    <div class="bd"><span class="eyebrow">${meta}</span><span>${esc(clip(x.caption,160))}</span></div></a>`;}
-function videoCard(x){const u=safeUrl(x.url);const yt=ytId(u),vm=vmId(u),ig=igCode(u);const mp4=/\.(mp4|webm|mov)(\?|$)|\/videos\//i.test(u)&&!yt&&!vm&&!ig;
+function videoCard(x){if(x.file){const src=safeUrl(x.source||x.url);const meta=esc([x.fair,x.year].filter(Boolean).join(" · "));
+    return `<div class="vid"><div class="vf"><video src="${esc(blob(x.file))}" ${x.poster?`poster="${esc(blob(x.poster))}"`:""} controls playsinline preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#111"></video></div><div class="bd">${meta?`<span class="eyebrow">${meta}</span>`:""}<b>${esc(x.title||"Video")}</b>${src?ext(src,"Kaynak: "+(ytId(src)?"YouTube":hostOf(src))+" ↗"):""}</div></div>`;}
+  const u=safeUrl(x.url);const yt=ytId(u),vm=vmId(u),ig=igCode(u);const mp4=/\.(mp4|webm|mov)(\?|$)|\/videos\//i.test(u)&&!yt&&!vm&&!ig;
   const src=yt?`https://www.youtube-nocookie.com/embed/${yt}?autoplay=1&rel=0`:vm?`https://player.vimeo.com/video/${vm}?autoplay=1`:"";
   const th=yt?`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`:"";
   const meta=esc([x.fair,x.year,x.platform].filter(Boolean).join(" · "));
@@ -1468,8 +1480,8 @@ function firmHTML(){const f=firmByName(S.firm);if(!f)return `<div class="empty">
    <section class="block"><div class="head"><div><h2>Katıldığı fuarlar</h2></div></div>${fairs.length?`<ol class="ftl">${fairs.map(x=>`<li><span class="yr">${esc(x.year||"–")}</span><div><b>${esc(x.name||"")}</b>${x.city?`<span class="muted">${esc(x.city)}</span>`:""}</div></li>`).join("")}</ol>`:fEmpty("Fuar bilgisi henüz eklenmedi.")}</section>
    <section class="block"><div class="head"><div><h2>Mağazalar</h2></div>${d.storeCount?`<p>${esc(d.storeCount)}</p>`:""}</div>${stores.length?`<div class="fstores">${stores.map(x=>{const q=[x.name,x.address,x.city,x.country].filter(Boolean).join(", ");const u=safeUrl(x.url);
      const si=x.img?(/^https?:/i.test(x.img)?safeUrl(x.img):blob(x.img)):"";return `<div class="fstore${si?" wimg":""}">${si?`<img src="${esc(si)}" alt="${esc(x.name||"Mağaza")}" loading="lazy">`:""}<div class="fst"><b>${esc(x.name||x.city||"Mağaza")}</b><span class="muted">${esc([x.address,x.city,x.country].filter(Boolean).join(", "))}</span><span class="fs-l">${ext("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q),"Haritada aç ↗")}${u?ext(u,"Mağaza sayfası ↗"):""}</span></div></div>`;}).join("")}</div>`:fEmpty("Mağaza bilgisi henüz eklenmedi.")}</section></div>
-  <section class="block"><div class="head"><div><h2>Son paylaşımlar</h2></div>${soc.length?`<p>${soc.map(([k,l])=>ext(safeUrl(d.social[k]),l)).join(" · ")}</p>`:""}</div>
-   ${posts.length?`<div class="${posts.some(x=>igCode(x.url)&&!x.img)?"figgrid":"fposts"}">${posts.map(postCard).join("")}</div>`
+  <section class="block"><div class="head"><div>${posts.some(x=>x.video)?`<span class="eyebrow">Instagram</span>`:""}<h2>${posts.some(x=>x.video)?"Son Instagram videoları":"Son paylaşımlar"}</h2></div>${soc.length?`<p>${soc.map(([k,l])=>ext(safeUrl(d.social[k]),l)).join(" · ")}</p>`:""}</div>
+   ${posts.length?`<div class="${posts.some(x=>x.video)?"freels":posts.some(x=>igCode(x.url)&&!x.img)?"figgrid":"fposts"}">${posts.map(postCard).join("")}</div>`
      :igProfile(d.social?.instagram)?`<div class="igprof"><iframe src="https://www.instagram.com/${igProfile(d.social.instagram)}/embed/" loading="lazy" title="${esc(f.name)} Instagram" scrolling="no"></iframe>${ext(safeUrl(d.social.instagram),"@"+esc(igProfile(d.social.instagram))+" hesabını Instagram'da aç ↗")}</div>`
      :fEmpty(soc.length?"Henüz paylaşım eklenmedi. Güncel paylaşımlar için firmanın hesaplarına bakabilirsiniz.":"Paylaşım ve sosyal medya hesabı henüz eklenmedi.")}</section>
   ${vids.length?`<section class="block"><div class="head"><div><h2>Fuar ve tanıtım videoları</h2></div><p>Videolar tıklanınca oynar.</p></div>
@@ -1485,7 +1497,7 @@ function brandUseHTML(f){const u=brandUse(f);if(!u.length)return "";const pk=ran
     <div class="ftabs">${pk.map(b=>`<button data-bpkg="${esc(b.name)}" aria-pressed="${b.name===S.bpkg}">${esc(pl(b.name))}<span>${u.filter(x=>x.pkg===b.name).length} kalem</span></button>`).join("")}</div></div>
    ${villas().map(v=>{const a=cur.filter(x=>x.villa===v);if(!a.length)return "";const t=a.reduce((s,x)=>s+(+x.v||0),0);
      return `<details class="more" open><summary>${esc(v)} · ${esc(firmName(pkgByName(S.bpkg)))}<small>${a.length} kalem · ${money(t)} ${S.cur}</small></summary><div class="in" style="gap:0"><div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
-      ${a.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,S.bpkg,v)}<div>${esc(it.label)}<small class="ib">${esc(TYPES[it.t||""]||it.t||"")}</small>${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div></div></details>`;}).join("")}</section>`;}
+      ${a.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,S.bpkg,v)}<div>${esc(it.label)}<small class="ib">${esc(typeLabel(it))}</small>${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div></div></details>`;}).join("")}</section>`;}
 function bindFirm(){const m=$("#main");
   m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelectorAll("[data-goview]").forEach(b=>b.onclick=()=>setView(b.dataset.goview));
