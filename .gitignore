@@ -3,3 +3,5 @@ Thumbs.db
 *.tmp
 node_modules/
 drive-export/
+.mekke*.tgz
+*.new.html

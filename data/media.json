@@ -1,424 +1,1180 @@
 [
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_01.webp",
-    "brand": "Silver",
-    "createdAt": "2026-10-16T15:20:22.669Z",
-    "fileName": "bellona_ctipi_livingroom (1).jpg",
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_01.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-16T15:20:22.669Z",
+  "fileName": "bellona_ctipi_livingroom (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792164022669,
+  "original": "assets/villa-c/renders/zemin-kat_salon_01.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_01.webp",
+  "title": "Villa C · Salon · Silver · Bellona",
+  "villa": "Villa C",
+  "id": "yi8uuakur6z029w0yss3"
+ },
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_02.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-10-16T15:34:49.859Z",
+  "fileName": "inci_ctipi_livingroom (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792164889859,
+  "original": "assets/villa-c/renders/zemin-kat_salon_02.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_02.webp",
+  "title": "Villa C · Salon · Gold · Inci Design",
+  "villa": "Villa C",
+  "id": "b8z5nk9zgwxu6kibvpiw"
+ },
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_03.webp",
+  "brand": "Pearl",
+  "cover": true,
+  "coverAt": 1792180008131,
+  "createdAt": "2026-10-16T15:35:10.444Z",
+  "fileName": "sardunya_c_Livingeoom (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792164910444,
+  "original": "assets/villa-c/renders/zemin-kat_salon_03.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_03.webp",
+  "title": "Villa C · Salon · Platinum · Sardunya",
+  "villa": "Villa C",
+  "id": "856ybchos0usvysryh40"
+ },
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_05.webp",
+  "brand": "Royal",
+  "createdAt": "2026-10-16T15:36:15.526Z",
+  "fileName": "homage_living_room_c (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792164975526,
+  "original": "assets/villa-c/renders/zemin-kat_salon_05.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_05.webp",
+  "title": "Villa C · Salon · Diamond · Homage",
+  "villa": "Villa C",
+  "id": "baxrpz2ec9t9iimdfuj1"
+ },
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_04.webp",
+  "brand": "Emerald",
+  "cover": true,
+  "coverAt": 1792176966664,
+  "createdAt": "2026-10-16T15:36:35.490Z",
+  "fileName": "modis_tipc_livingroom.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792164995490,
+  "original": "assets/villa-c/renders/zemin-kat_salon_04.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_04.webp",
+  "title": "Villa C · Salon · Emerald · Modis",
+  "villa": "Villa C",
+  "id": "nphykofxsuem8ygqr5jq"
+ },
+ {
+  "asset": "assets/villa-c/renders/zemin-kat_salon_06.webp",
+  "brand": "Diamond",
+  "createdAt": "2026-10-16T16:31:07.001Z",
+  "fileName": "891db0e7-f22d-4e2e-9da3-ff30113405c7.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792168267000,
+  "original": "assets/villa-c/renders/zemin-kat_salon_06.jpg",
+  "room": "Salon",
+  "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_06.webp",
+  "title": "Villa C · Salon · Pearl · Gabba",
+  "villa": "Villa C",
+  "id": "wwu28bag69h2pri27uit"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_01.webp",
+  "brand": "Emerald",
+  "createdAt": "2026-10-16T16:50:57.710Z",
+  "fileName": "modis_tipb_meclis.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792169457710,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_01.webp",
+  "title": "Villa B · Meclis · Emerald · Modis",
+  "villa": "Villa B",
+  "id": "81gb7xaxx3eerghxzz3n",
+  "original": "assets/villa-b/renders/zemin-kat_meclis_01.jpg"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_02.webp",
+  "brand": "Pearl",
+  "createdAt": "2026-10-16T16:51:24.336Z",
+  "fileName": "sardunya_tipb_meclis.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792169484336,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_02.webp",
+  "title": "Villa B · Meclis · Platinum · Sardunya",
+  "villa": "Villa B",
+  "id": "o6j9dett50l8crx6bh0g"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_gabba.webp",
+  "brand": "Diamond",
+  "cover": true,
+  "coverAt": 1792176954342,
+  "createdAt": "2026-10-16T17:33:21.586Z",
+  "fileName": "gabba_living_room_hm (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792172001586,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_gabba.webp",
+  "title": "Villa B · Meclis · Pearl · Gabba",
+  "villa": "Villa B",
+  "id": "e60wutmxf4bt8l7d8sl0"
+ },
+ {
+  "asset": "assets/villa-c/renders/1-kat_yatak-odasi-1_gabba.webp",
+  "brand": "Diamond",
+  "createdAt": "2026-10-16T18:15:17.066Z",
+  "fileName": "6ea1708f-4aa1-4687-b1d6-332ef0b9ea06.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792174517066,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-c/renders/thumbs/1-kat_yatak-odasi-1_gabba.webp",
+  "title": "Villa C · Yatak odası 1 · Pearl · Gabba",
+  "villa": "Villa C",
+  "id": "a7lub3le2t052187w9nj"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_bellona.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-16T18:42:47.195Z",
+  "fileName": "bellona_tipb_meclis.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792176167195,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_bellona.webp",
+  "title": "Villa B · Meclis · Silver · Bellona",
+  "villa": "Villa B",
+  "id": "dhguqudmb41rvt8fvi7a"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_homage.webp",
+  "brand": "Royal",
+  "cover": true,
+  "coverAt": 1792179988257,
+  "createdAt": "2026-10-16T18:43:14.594Z",
+  "fileName": "Homage_tipb_Meclis.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792176194594,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_homage.webp",
+  "title": "Villa B · Meclis · Diamond · Homage",
+  "villa": "Villa B",
+  "id": "094wisbh7pbjk1setven"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_meclis_inci-design.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-10-16T19:07:54.015Z",
+  "fileName": "İnci_tipb_meclis.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1792177674015,
+  "room": "Meclis",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_inci-design.webp",
+  "title": "Villa B · Meclis · Gold · Inci Design",
+  "villa": "Villa B",
+  "id": "q0f4loaobska81nzanue"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_gabba.webp",
+  "brand": "Diamond",
+  "createdAt": "2026-10-16T19:38:20.322Z",
+  "fileName": "gabba_atip_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792179500322,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_gabba.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Pearl · Gabba",
+  "villa": "Villa A",
+  "id": "pu3lcf15x36wwfqcgzxy"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_homage.webp",
+  "brand": "Royal",
+  "createdAt": "2026-10-16T19:42:33.595Z",
+  "fileName": "homage_atip_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792179753595,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_homage.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Diamond · Homage",
+  "villa": "Villa A",
+  "id": "8ci92jgw7w5jdocr7a4d"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_sardunya.webp",
+  "brand": "Pearl",
+  "createdAt": "2026-10-16T19:52:15.771Z",
+  "fileName": "sardunya_atip_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792180335771,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_sardunya.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Platinum · Sardunya",
+  "villa": "Villa A",
+  "id": "wff2go1uio2yu8hun0r0"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_bellona.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-16T20:12:38.786Z",
+  "fileName": "Bellona_atip_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792181558786,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_bellona.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Silver · Bellona",
+  "villa": "Villa A",
+  "id": "rnzruhbcm3vub26uft2o"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_inci-design.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-10-16T20:12:56.524Z",
+  "fileName": "İnci_atip_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792181576524,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_inci-design.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Gold · Inci Design",
+  "villa": "Villa A",
+  "id": "x5pnp10afror3mji9yze"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_modis.webp",
+  "brand": "Emerald",
+  "createdAt": "2026-10-16T20:38:49.874Z",
+  "fileName": "modis_atip_masterbedroom (1).jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1792183129874,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_modis.webp",
+  "title": "Villa A · Ebeveyn yatak odası · Pearl · Modis",
+  "villa": "Villa A",
+  "id": "ayx3c5h727txbsmocvr2"
+ },
+ {
+  "asset": "assets/villa-a/plans/kat-planlari.webp",
+  "brand": null,
+  "createdAt": "2026-10-16T21:10:49.316Z",
+  "fileName": "New_Type_A_040826.png",
+  "floor": null,
+  "kind": "plan",
+  "order": 1792185049316,
+  "pins": [
+   {
+    "codes": [
+     "F-001",
+     "F-002"
+    ],
     "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792164022669,
-    "original": "assets/villa-c/renders/zemin-kat_salon_01.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_01.webp",
-    "title": "Villa C · Salon · Silver · Bellona",
-    "villa": "Villa C",
-    "id": "yi8uuakur6z029w0yss3",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_02.webp",
-    "brand": "Gold",
-    "createdAt": "2026-10-16T15:34:49.859Z",
-    "fileName": "inci_ctipi_livingroom (1).jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792164889859,
-    "original": "assets/villa-c/renders/zemin-kat_salon_02.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_02.webp",
-    "title": "Villa C · Salon · Gold · Inci Design",
-    "villa": "Villa C",
-    "id": "b8z5nk9zgwxu6kibvpiw",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_03.webp",
-    "brand": "Platinum",
-    "cover": true,
-    "coverAt": 1792180008131,
-    "createdAt": "2026-10-16T15:35:10.444Z",
-    "fileName": "sardunya_c_Livingeoom (1).jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792164910444,
-    "original": "assets/villa-c/renders/zemin-kat_salon_03.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_03.webp",
-    "title": "Villa C · Salon · Platinum · Sardunya",
-    "villa": "Villa C",
-    "id": "856ybchos0usvysryh40"
-  },
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_05.webp",
-    "brand": "Diamond",
-    "createdAt": "2026-10-16T15:36:15.526Z",
-    "fileName": "homage_living_room_c (1).jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792164975526,
-    "original": "assets/villa-c/renders/zemin-kat_salon_05.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_05.webp",
-    "title": "Villa C · Salon · Diamond · Homage",
-    "villa": "Villa C",
-    "id": "baxrpz2ec9t9iimdfuj1",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_04.webp",
-    "brand": "Pearl",
-    "cover": true,
-    "coverAt": 1792176966664,
-    "createdAt": "2026-10-16T15:36:35.490Z",
-    "fileName": "modis_tipc_livingroom.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792164995490,
-    "original": "assets/villa-c/renders/zemin-kat_salon_04.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_04.webp",
-    "title": "Villa C · Salon · Emerald · Modis",
-    "villa": "Villa C",
-    "id": "nphykofxsuem8ygqr5jq"
-  },
-  {
-    "asset": "assets/villa-c/renders/zemin-kat_salon_06.webp",
-    "brand": "Emerald",
-    "createdAt": "2026-10-16T16:31:07.001Z",
-    "fileName": "891db0e7-f22d-4e2e-9da3-ff30113405c7.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792168267000,
-    "original": "assets/villa-c/renders/zemin-kat_salon_06.jpg",
-    "room": "Salon",
-    "thumb": "assets/villa-c/renders/thumbs/zemin-kat_salon_06.webp",
-    "title": "Villa C · Salon · Pearl · Gabba",
-    "villa": "Villa C",
-    "id": "wwu28bag69h2pri27uit",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_01.webp",
-    "brand": "Pearl",
-    "createdAt": "2026-10-16T16:50:57.710Z",
-    "fileName": "modis_tipb_meclis.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792169457710,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_01.webp",
-    "title": "Villa B · Meclis · Emerald · Modis",
-    "villa": "Villa B",
-    "id": "81gb7xaxx3eerghxzz3n",
-    "original": "assets/villa-b/renders/zemin-kat_meclis_01.jpg",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_02.webp",
-    "brand": "Platinum",
-    "createdAt": "2026-10-16T16:51:24.336Z",
-    "fileName": "sardunya_tipb_meclis.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792169484336,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_02.webp",
-    "title": "Villa B · Meclis · Platinum · Sardunya",
-    "villa": "Villa B",
-    "id": "o6j9dett50l8crx6bh0g",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_gabba.webp",
-    "brand": "Emerald",
-    "cover": true,
-    "coverAt": 1792176954342,
-    "createdAt": "2026-10-16T17:33:21.586Z",
-    "fileName": "gabba_living_room_hm (1).jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792172001586,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_gabba.webp",
-    "title": "Villa B · Meclis · Pearl · Gabba",
-    "villa": "Villa B",
-    "id": "e60wutmxf4bt8l7d8sl0"
-  },
-  {
-    "asset": "assets/villa-c/renders/1-kat_yatak-odasi-1_gabba.webp",
-    "brand": "Emerald",
-    "createdAt": "2026-10-16T18:15:17.066Z",
-    "fileName": "6ea1708f-4aa1-4687-b1d6-332ef0b9ea06.jpg",
+    "room": "Teras",
+    "x": 0.2052,
+    "y": 0.0846
+   },
+   {
+    "codes": [
+     "F-040",
+     "F-041",
+     "F-042"
+    ],
     "floor": "1. kat",
-    "kind": "render",
-    "order": 1792174517066,
     "room": "Yatak odası 1",
-    "thumb": "assets/villa-c/renders/thumbs/1-kat_yatak-odasi-1_gabba.webp",
-    "title": "Villa C · Yatak odası 1 · Pearl · Gabba",
-    "villa": "Villa C",
-    "id": "a7lub3le2t052187w9nj",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_bellona.webp",
-    "brand": "Silver",
-    "createdAt": "2026-10-16T18:42:47.195Z",
-    "fileName": "bellona_tipb_meclis.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792176167195,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_bellona.webp",
-    "title": "Villa B · Meclis · Silver · Bellona",
-    "villa": "Villa B",
-    "id": "dhguqudmb41rvt8fvi7a",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_homage.webp",
-    "brand": "Diamond",
-    "cover": true,
-    "coverAt": 1792179988257,
-    "createdAt": "2026-10-16T18:43:14.594Z",
-    "fileName": "Homage_tipb_Meclis.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792176194594,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_homage.webp",
-    "title": "Villa B · Meclis · Diamond · Homage",
-    "villa": "Villa B",
-    "id": "094wisbh7pbjk1setven"
-  },
-  {
-    "asset": "assets/villa-b/renders/zemin-kat_meclis_inci-design.webp",
-    "brand": "Gold",
-    "createdAt": "2026-10-16T19:07:54.015Z",
-    "fileName": "İnci_tipb_meclis.jpg",
-    "floor": "Zemin kat",
-    "kind": "render",
-    "order": 1792177674015,
-    "room": "Meclis",
-    "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_inci-design.webp",
-    "title": "Villa B · Meclis · Gold · Inci Design",
-    "villa": "Villa B",
-    "id": "q0f4loaobska81nzanue",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_gabba.webp",
-    "brand": "Emerald",
-    "createdAt": "2026-10-16T19:38:20.322Z",
-    "fileName": "gabba_atip_masterbedroom.jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792179500322,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_gabba.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Pearl · Gabba",
-    "villa": "Villa A",
-    "id": "pu3lcf15x36wwfqcgzxy",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_homage.webp",
-    "brand": "Diamond",
-    "createdAt": "2026-10-16T19:42:33.595Z",
-    "fileName": "homage_atip_masterbedroom.jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792179753595,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_homage.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Diamond · Homage",
-    "villa": "Villa A",
-    "id": "8ci92jgw7w5jdocr7a4d",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_sardunya.webp",
-    "brand": "Platinum",
-    "createdAt": "2026-10-16T19:52:15.771Z",
-    "fileName": "sardunya_atip_masterbedroom.jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792180335771,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_sardunya.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Platinum · Sardunya",
-    "villa": "Villa A",
-    "id": "wff2go1uio2yu8hun0r0",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_bellona.webp",
-    "brand": "Silver",
-    "createdAt": "2026-10-16T20:12:38.786Z",
-    "fileName": "Bellona_atip_masterbedroom.jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792181558786,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_bellona.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Silver · Bellona",
-    "villa": "Villa A",
-    "id": "rnzruhbcm3vub26uft2o",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_inci-design.webp",
-    "brand": "Gold",
-    "createdAt": "2026-10-16T20:12:56.524Z",
-    "fileName": "İnci_atip_masterbedroom.jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792181576524,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_inci-design.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Gold · Inci Design",
-    "villa": "Villa A",
-    "id": "x5pnp10afror3mji9yze",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_modis.webp",
-    "brand": "Pearl",
-    "createdAt": "2026-10-16T20:38:49.874Z",
-    "fileName": "modis_atip_masterbedroom (1).jpg",
-    "floor": "1. kat",
-    "kind": "render",
-    "order": 1792183129874,
-    "room": "Ebeveyn yatak odası",
-    "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_modis.webp",
-    "title": "Villa A · Ebeveyn yatak odası · Pearl · Modis",
-    "villa": "Villa A",
-    "id": "ayx3c5h727txbsmocvr2",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-a/plans/kat-planlari.webp",
-    "brand": null,
-    "createdAt": "2026-10-16T21:10:49.316Z",
-    "fileName": "New_Type_A_040826.png",
-    "floor": null,
-    "kind": "plan",
-    "order": 1792185049316,
-    "pins": [
-      {
-        "room": "Yatak odası 1",
-        "x": 0.4228,
-        "y": 0.2141
-      },
-      {
-        "room": "Ebeveyn yatak odası",
-        "x": 0.4211,
-        "y": 0.7885
-      },
-      {
-        "room": "Yatak odası 3",
-        "x": 0.5143,
-        "y": 0.6261
-      },
-      {
-        "room": "Yatak odası 2",
-        "x": 0.521,
-        "y": 0.2965
-      },
-      {
-        "room": "Salon",
-        "x": 0.1864,
-        "y": 0.2776
-      },
-      {
-        "room": "Aile salonu",
-        "x": 0.8106,
-        "y": 0.5978
-      },
-      {
-        "room": "Meclis",
-        "x": 0.2147,
-        "y": 0.6072
-      }
+    "x": 0.4146,
+    "y": 0.19
+   },
+   {
+    "codes": [
+     "F-044",
+     "F-045",
+     "F-046",
+     "F-047",
+     "F-048"
     ],
-    "room": null,
-    "thumb": "assets/villa-a/plans/thumbs/kat-planlari.webp",
-    "title": "Villa A",
-    "villa": "Villa A",
-    "id": "tunuocaujc4lywge3mzk",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-b/plans/kat-planlari.webp",
-    "brand": null,
-    "createdAt": "2026-10-16T21:11:19.394Z",
-    "fileName": "New_Type_B-040826.png",
-    "floor": null,
-    "kind": "plan",
-    "order": 1792185079394,
-    "pins": [
-      {
-        "room": "Meclis",
-        "x": 0.2031,
-        "y": 0.6355
-      },
-      {
-        "room": "Salon",
-        "x": 0.1864,
-        "y": 0.2611
-      },
-      {
-        "room": "Rawashin",
-        "x": 0.7707,
-        "y": 0.2729
-      },
-      {
-        "room": "Mutfak",
-        "x": 0.1049,
-        "y": 0.1246
-      }
+    "floor": "1. kat",
+    "room": "Yatak odası 2",
+    "x": 0.5199,
+    "y": 0.2526
+   },
+   {
+    "codes": [
+     "F-049"
     ],
-    "room": null,
-    "thumb": "assets/villa-b/plans/thumbs/kat-planlari.webp",
-    "title": "Villa B",
-    "villa": "Villa B",
-    "id": "yur3cli5ym9z01flm4sv",
-    "cover": false
-  },
-  {
-    "asset": "assets/villa-c/plans/kat-planlari.webp",
-    "brand": null,
-    "createdAt": "2026-10-16T21:11:30.555Z",
-    "fileName": "New_Type_C_040826.png",
-    "floor": null,
-    "kind": "plan",
-    "order": 1792185090555,
-    "pins": [
-      {
-        "room": "Salon",
-        "x": 0.1714,
-        "y": 0.2847
-      },
-      {
-        "room": "Meclis",
-        "x": 0.2114,
-        "y": 0.5907
-      },
-      {
-        "room": "Mutfak",
-        "x": 0.2114,
-        "y": 0.4565
-      },
-      {
-        "room": "Ebeveyn yatak odası",
-        "x": 0.5127,
-        "y": 0.6778
-      }
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.5177,
+    "y": 0.3745
+   },
+   {
+    "codes": [
+     "F-055"
     ],
-    "room": null,
-    "thumb": "assets/villa-c/plans/thumbs/kat-planlari.webp",
-    "title": "Villa C",
-    "villa": "Villa C",
-    "id": "bhn3iip16u9tcr4mfl3k",
-    "cover": false
-  }
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.518,
+    "y": 0.5301
+   },
+   {
+    "codes": [
+     "F-061"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4175,
+    "y": 0.5481
+   },
+   {
+    "codes": [
+     "F-043"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4185,
+    "y": 0.3291
+   },
+   {
+    "codes": [
+     "F-050",
+     "F-051",
+     "F-052",
+     "F-053",
+     "F-054"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 3",
+    "x": 0.5202,
+    "y": 0.6248
+   },
+   {
+    "codes": [
+     "F-056",
+     "F-057",
+     "F-058",
+     "F-059",
+     "F-060",
+     "F-062",
+     "F-063"
+    ],
+    "floor": "1. kat",
+    "room": "Ebeveyn yatak odası",
+    "x": 0.4236,
+    "y": 0.7473
+   },
+   {
+    "codes": [
+     "F-064",
+     "F-065"
+    ],
+    "floor": "1. kat",
+    "room": "Teras",
+    "x": 0.4217,
+    "y": 0.8793
+   },
+   {
+    "codes": [
+     "F-074",
+     "F-075"
+    ],
+    "floor": "Çatı katı",
+    "room": "Depo",
+    "x": 0.7123,
+    "y": 0.6034
+   },
+   {
+    "codes": [
+     "F-069",
+     "F-070",
+     "F-071",
+     "F-072",
+     "F-073"
+    ],
+    "floor": "Çatı katı",
+    "room": "Aile salonu",
+    "x": 0.8398,
+    "y": 0.6134
+   },
+   {
+    "codes": [
+     "F-076",
+     "F-077"
+    ],
+    "floor": "Çatı katı",
+    "room": "Teras",
+    "x": 0.748,
+    "y": 0.7716
+   },
+   {
+    "codes": [
+     "F-066",
+     "F-067"
+    ],
+    "floor": "Çatı katı",
+    "room": "Teras",
+    "x": 0.7245,
+    "y": 0.2549
+   },
+   {
+    "codes": [
+     "F-068"
+    ],
+    "floor": "Çatı katı",
+    "room": "Koridor",
+    "x": 0.7915,
+    "y": 0.4574
+   },
+   {
+    "codes": [
+     "F-003",
+     "F-004",
+     "F-005",
+     "F-006",
+     "F-007",
+     "F-008",
+     "F-009",
+     "F-010",
+     "F-011"
+    ],
+    "floor": "Zemin kat",
+    "room": "Salon",
+    "x": 0.1774,
+    "y": 0.2977
+   },
+   {
+    "codes": [
+     "F-031"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir WC",
+    "x": 0.0904,
+    "y": 0.527
+   },
+   {
+    "codes": [
+     "F-034"
+    ],
+    "floor": "Zemin kat",
+    "room": "Hizmetli banyosu",
+    "x": 0.0773,
+    "y": 0.5541
+   },
+   {
+    "codes": [
+     "F-032",
+     "F-033"
+    ],
+    "floor": "Zemin kat",
+    "room": "Hizmetli odası",
+    "x": 0.0966,
+    "y": 0.66
+   },
+   {
+    "codes": [
+     "F-035"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir lavabosu",
+    "x": 0.0954,
+    "y": 0.7203
+   },
+   {
+    "codes": [
+     "F-036"
+    ],
+    "floor": "Zemin kat",
+    "room": "Giriş holü",
+    "x": 0.1311,
+    "y": 0.7667
+   },
+   {
+    "codes": [
+     "F-037",
+     "F-038"
+    ],
+    "floor": "Zemin kat",
+    "room": "Şoför odası",
+    "x": 0.1012,
+    "y": 0.912
+   },
+   {
+    "codes": [
+     "F-039"
+    ],
+    "floor": "Zemin kat",
+    "room": "Banyo",
+    "x": 0.0642,
+    "y": 0.8711
+   },
+   {
+    "codes": [
+     "F-024",
+     "F-025",
+     "F-026",
+     "F-027",
+     "F-028",
+     "F-029",
+     "F-030"
+    ],
+    "floor": "Zemin kat",
+    "room": "Meclis",
+    "x": 0.1957,
+    "y": 0.6245
+   },
+   {
+    "codes": [
+     "F-016",
+     "F-017",
+     "F-018",
+     "F-019"
+    ],
+    "floor": "Zemin kat",
+    "room": "Mutfak",
+    "x": 0.1,
+    "y": 0.2
+   }
+  ],
+  "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
+  "room": null,
+  "thumb": "assets/villa-a/plans/thumbs/kat-planlari.webp",
+  "title": "Villa A",
+  "villa": "Villa A",
+  "id": "tunuocaujc4lywge3mzk"
+ },
+ {
+  "asset": "assets/villa-b/plans/kat-planlari.webp",
+  "brand": null,
+  "createdAt": "2026-10-16T21:11:19.394Z",
+  "fileName": "New_Type_B-040826.png",
+  "floor": null,
+  "kind": "plan",
+  "order": 1792185079394,
+  "pins": [
+   {
+    "codes": [
+     "F-078",
+     "F-079"
+    ],
+    "floor": "Zemin kat",
+    "room": "Teras",
+    "x": 0.2161,
+    "y": 0.1363
+   },
+   {
+    "codes": [
+     "F-092",
+     "F-093",
+     "F-094",
+     "F-095",
+     "F-096",
+     "F-097",
+     "F-098"
+    ],
+    "floor": "Zemin kat",
+    "room": "Salon",
+    "x": 0.206,
+    "y": 0.2766
+   },
+   {
+    "codes": [
+     "F-101"
+    ],
+    "floor": "Zemin kat",
+    "room": "Salon",
+    "x": 0.0877,
+    "y": 0.3853
+   },
+   {
+    "codes": [
+     "F-100"
+    ],
+    "floor": "Zemin kat",
+    "room": "Salon",
+    "x": 0.0877,
+    "y": 0.2508
+   },
+   {
+    "codes": [
+     "F-102"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir WC",
+    "x": 0.0877,
+    "y": 0.5737
+   },
+   {
+    "codes": [
+     "F-105"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir WC",
+    "x": 0.0813,
+    "y": 0.6661
+   },
+   {
+    "codes": [
+     "F-103"
+    ],
+    "floor": "Zemin kat",
+    "room": "Giriş holü",
+    "x": 0.1129,
+    "y": 0.6573
+   },
+   {
+    "codes": [
+     "F-104"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir lavabosu",
+    "x": 0.0948,
+    "y": 0.6017
+   },
+   {
+    "codes": [
+     "F-106",
+     "F-107",
+     "F-108",
+     "F-109",
+     "F-110",
+     "F-111",
+     "F-112",
+     "F-113",
+     "F-114"
+    ],
+    "floor": "Zemin kat",
+    "room": "Meclis",
+    "x": 0.2062,
+    "y": 0.6626
+   },
+   {
+    "codes": [
+     "F-118",
+     "F-119",
+     "F-120",
+     "F-121"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 1",
+    "x": 0.4195,
+    "y": 0.2038
+   },
+   {
+    "codes": [
+     "F-122",
+     "F-123"
+    ],
+    "floor": "1. kat",
+    "room": "Ebeveyn yatak odası",
+    "x": 0.3926,
+    "y": 0.2972
+   },
+   {
+    "codes": [
+     "F-137",
+     "F-138",
+     "F-139",
+     "F-140",
+     "F-141",
+     "F-143",
+     "F-144"
+    ],
+    "floor": "1. kat",
+    "room": "Ebeveyn yatak odası",
+    "x": 0.5232,
+    "y": 0.6835
+   },
+   {
+    "codes": [
+     "F-125",
+     "F-126",
+     "F-127",
+     "F-128",
+     "F-129"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 2",
+    "x": 0.5204,
+    "y": 0.2533
+   },
+   {
+    "codes": [
+     "F-130"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.5168,
+    "y": 0.3807
+   },
+   {
+    "codes": [
+     "F-124"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4161,
+    "y": 0.3807
+   },
+   {
+    "codes": [
+     "F-136"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4194,
+    "y": 0.5829
+   },
+   {
+    "codes": [
+     "F-142"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.5178,
+    "y": 0.5241
+   },
+   {
+    "codes": [
+     "F-149",
+     "F-150",
+     "F-151",
+     "F-152",
+     "F-153"
+    ],
+    "floor": "Çatı katı",
+    "room": "Aile salonu",
+    "x": 0.7381,
+    "y": 0.6293
+   },
+   {
+    "codes": [
+     "F-154"
+    ],
+    "floor": "Çatı katı",
+    "room": "Hizmetli odası",
+    "x": 0.8318,
+    "y": 0.5906
+   },
+   {
+    "codes": [
+     "F-155"
+    ],
+    "floor": "Çatı katı",
+    "room": "Hizmetli banyosu",
+    "x": 0.8013,
+    "y": 0.6926
+   },
+   {
+    "codes": [
+     "F-156",
+     "F-157"
+    ],
+    "floor": "Çatı katı",
+    "room": "Teras",
+    "x": 0.7085,
+    "y": 0.7451
+   },
+   {
+    "codes": [
+     "F-147",
+     "F-148"
+    ],
+    "floor": "Çatı katı",
+    "room": "Rawashin",
+    "x": 0.7317,
+    "y": 0.2718
+   },
+   {
+    "codes": [
+     "F-131",
+     "F-132",
+     "F-133",
+     "F-134",
+     "F-135"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 3",
+    "x": 0.4146,
+    "y": 0.6955
+   },
+   {
+    "codes": [
+     "F-145",
+     "F-146"
+    ],
+    "floor": "1. kat",
+    "room": "Teras",
+    "x": 0.5374,
+    "y": 0.8028
+   },
+   {
+    "codes": [
+     "F-115",
+     "F-116"
+    ],
+    "floor": "Zemin kat",
+    "room": "Şoför odası",
+    "x": 0.2801,
+    "y": 0.9228
+   },
+   {
+    "codes": [
+     "F-117"
+    ],
+    "floor": "Zemin kat",
+    "room": "Şoför WC",
+    "x": 0.272,
+    "y": 0.8428
+   },
+   {
+    "codes": [
+     "F-084",
+     "F-085",
+     "F-086",
+     "F-087"
+    ],
+    "floor": "Zemin kat",
+    "room": "Mutfak",
+    "x": 0.11,
+    "y": 0.125
+   }
+  ],
+  "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
+  "room": null,
+  "thumb": "assets/villa-b/plans/thumbs/kat-planlari.webp",
+  "title": "Villa B",
+  "villa": "Villa B",
+  "id": "yur3cli5ym9z01flm4sv"
+ },
+ {
+  "asset": "assets/villa-c/plans/kat-planlari.webp",
+  "brand": null,
+  "createdAt": "2026-10-16T21:11:30.555Z",
+  "fileName": "New_Type_C_040826.png",
+  "floor": null,
+  "kind": "plan",
+  "order": 1792185090555,
+  "pins": [
+   {
+    "codes": [
+     "F-158",
+     "F-159"
+    ],
+    "floor": "Zemin kat",
+    "room": "Teras",
+    "x": 0.2009,
+    "y": 0.1627
+   },
+   {
+    "codes": [
+     "F-199",
+     "F-200",
+     "F-201",
+     "F-202",
+     "F-203"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 1",
+    "x": 0.4201,
+    "y": 0.2191
+   },
+   {
+    "codes": [
+     "F-204"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4182,
+    "y": 0.3722
+   },
+   {
+    "codes": [
+     "F-210",
+     "F-222"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.503,
+    "y": 0.4282
+   },
+   {
+    "codes": [
+     "F-216"
+    ],
+    "floor": "1. kat",
+    "room": "Banyo",
+    "x": 0.4181,
+    "y": 0.5908
+   },
+   {
+    "codes": [
+     "F-217",
+     "F-218",
+     "F-219",
+     "F-220",
+     "F-221",
+     "F-223",
+     "F-224"
+    ],
+    "floor": "1. kat",
+    "room": "Ebeveyn yatak odası",
+    "x": 0.5258,
+    "y": 0.6369
+   },
+   {
+    "codes": [
+     "F-229",
+     "F-230",
+     "F-231",
+     "F-232",
+     "F-233"
+    ],
+    "floor": "Çatı katı",
+    "room": "Aile salonu",
+    "x": 0.7391,
+    "y": 0.6266
+   },
+   {
+    "codes": [
+     "F-237",
+     "F-238"
+    ],
+    "floor": "Çatı katı",
+    "room": "Teras",
+    "x": 0.7159,
+    "y": 0.7445
+   },
+   {
+    "codes": [
+     "F-234",
+     "F-235"
+    ],
+    "floor": "Çatı katı",
+    "room": "Hizmetli odası",
+    "x": 0.8187,
+    "y": 0.6084
+   },
+   {
+    "codes": [
+     "F-236"
+    ],
+    "floor": "Çatı katı",
+    "room": "Hizmetli banyosu",
+    "x": 0.8023,
+    "y": 0.4742
+   },
+   {
+    "codes": [
+     "F-227",
+     "F-228"
+    ],
+    "floor": "Çatı katı",
+    "room": "Rawashin",
+    "x": 0.7447,
+    "y": 0.2741
+   },
+   {
+    "codes": [
+     "F-211",
+     "F-212",
+     "F-213",
+     "F-214",
+     "F-215"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 3",
+    "x": 0.4156,
+    "y": 0.7144
+   },
+   {
+    "codes": [
+     "F-225",
+     "F-226"
+    ],
+    "floor": "1. kat",
+    "room": "Teras",
+    "x": 0.5478,
+    "y": 0.7609
+   },
+   {
+    "codes": [
+     "F-205",
+     "F-206",
+     "F-207",
+     "F-208",
+     "F-209"
+    ],
+    "floor": "1. kat",
+    "room": "Yatak odası 2",
+    "x": 0.5256,
+    "y": 0.2931
+   },
+   {
+    "codes": [
+     "F-160",
+     "F-161",
+     "F-162",
+     "F-163",
+     "F-164",
+     "F-165",
+     "F-166",
+     "F-167",
+     "F-168",
+     "F-169",
+     "F-170"
+    ],
+    "floor": "Zemin kat",
+    "room": "Salon",
+    "x": 0.1231,
+    "y": 0.289
+   },
+   {
+    "codes": [
+     "F-171",
+     "F-172",
+     "F-173",
+     "F-174",
+     "F-175",
+     "F-176",
+     "F-177",
+     "F-178",
+     "F-179"
+    ],
+    "floor": "Zemin kat",
+    "room": "Meclis",
+    "x": 0.2084,
+    "y": 0.667
+   },
+   {
+    "codes": [
+     "F-198"
+    ],
+    "floor": "Zemin kat",
+    "room": "Şoför WC",
+    "x": 0.2753,
+    "y": 0.8502
+   },
+   {
+    "codes": [
+     "F-196",
+     "F-197"
+    ],
+    "floor": "Zemin kat",
+    "room": "Şoför odası",
+    "x": 0.2792,
+    "y": 0.9151
+   },
+   {
+    "codes": [
+     "F-181"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir lavabosu",
+    "x": 0.0936,
+    "y": 0.6025
+   },
+   {
+    "codes": [
+     "F-180"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir WC",
+    "x": 0.0971,
+    "y": 0.5757
+   },
+   {
+    "codes": [
+     "F-194"
+    ],
+    "floor": "Zemin kat",
+    "room": "Misafir WC",
+    "x": 0.0819,
+    "y": 0.6661
+   },
+   {
+    "codes": [
+     "F-195"
+    ],
+    "floor": "Zemin kat",
+    "room": "Giriş holü",
+    "x": 0.1136,
+    "y": 0.6538
+   },
+   {
+    "codes": [
+     "F-186",
+     "F-187",
+     "F-188"
+    ],
+    "floor": "Zemin kat",
+    "room": "Mutfak",
+    "x": 0.2519,
+    "y": 0.4673
+   }
+  ],
+  "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
+  "room": null,
+  "thumb": "assets/villa-c/plans/thumbs/kat-planlari.webp",
+  "title": "Villa C",
+  "villa": "Villa C",
+  "id": "bhn3iip16u9tcr4mfl3k"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_yatak-odasi-1_ortak.webp",
+  "brand": null,
+  "createdAt": "2026-10-22T20:52:18.922Z",
+  "fileName": "typea_bedroom1.jpg",
+  "floor": "1. kat",
+  "hideFirms": [
+   "Ergo"
+  ],
+  "kind": "render",
+  "order": 1792702338922,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_yatak-odasi-1_ortak.webp",
+  "title": "Villa A · Yatak odası 1",
+  "villa": "Villa A",
+  "id": "0mv8jsdokuiamqyfyzjd"
+ },
+ {
+  "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_ortak.webp",
+  "brand": null,
+  "createdAt": "2026-10-22T20:53:04.677Z",
+  "fileName": "TypeA_Ebeveynyatakodası.jpg",
+  "floor": "1. kat",
+  "hideFirms": [
+   "Ergo"
+  ],
+  "kind": "render",
+  "order": 1792702384677,
+  "room": "Ebeveyn yatak odası",
+  "thumb": "assets/villa-a/renders/thumbs/1-kat_ebeveyn-yatak-odasi_ortak.webp",
+  "title": "Villa A · Ebeveyn yatak odası",
+  "villa": "Villa A",
+  "id": "lpxy1jgr8zjzcwlg1nu4"
+ }
 ]

@@ -661,6 +661,98 @@ th.muted,td.muted{color:var(--muted)}
 .lockbox b{font-family:var(--display);font-weight:400;font-size:24px}.lockbox span{font-size:13px;color:var(--muted)}
 .lockbox input{font:inherit;padding:10px 12px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
 .lockbox small{color:#B4472F;min-height:16px;font-size:12.5px}.lockact{display:flex;gap:8px;justify-content:flex-end}
+
+/* firms */
+.flink{background:none;border:0;padding:0;color:var(--accent);font-weight:600;font-size:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.flink:hover{color:var(--accent-2)}
+.flogo{width:56px;height:56px;object-fit:contain;display:grid;place-items:center;flex:none;background:#fff}
+.flogo.mono{font-family:var(--display);font-size:22px;color:var(--accent);background:var(--accent-soft);letter-spacing:.02em}
+.flogo.sm{width:40px;height:40px}.flogo.sm.mono{font-size:16px}
+.flogo.xl{width:132px;height:132px}.flogo.xl.mono{font-size:46px}
+.fstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line)}
+.fchip{display:flex;gap:12px;align-items:center;background:none;border:0;border-bottom:1px solid var(--line);padding:14px 12px 14px 0;text-align:left;color:var(--fg)}
+.fchip span{display:grid;gap:1px;min-width:0}.fchip b{font-weight:600;font-size:15px}.fchip small{font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.fchip:hover b{color:var(--accent)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:36px 28px}
+.fcard{display:grid;grid-template-rows:auto 1fr;background:none;border:0;padding:0;text-align:left;color:var(--fg)}
+.fc-top{position:relative;aspect-ratio:16/9;background:var(--surface-2);overflow:hidden;display:grid;place-items:center}
+.fc-top .fc-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .6s}
+.fcard:hover .fc-bg{transform:scale(1.02)}
+.fc-logo{position:relative;background:#fff;padding:12px;box-shadow:0 8px 30px -12px rgba(0,0,0,.35)}
+.fc-logo .flogo{width:84px;height:84px}.fc-logo .flogo.mono{font-size:30px}
+.fcard .bd{padding:14px 0 0;display:grid;gap:6px;align-content:start}
+.fcard h3{font-size:30px}.fcard p{font-size:14px;margin:0}
+.fcard .eyebrow{display:inline-flex;align-items:center;gap:6px}
+.fhero{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,48px);align-items:center;padding:clamp(20px,4vw,40px) 0;border-bottom:1px solid var(--line)}
+.fh-logo{background:#fff;border:1px solid var(--line);padding:14px}
+.fh-txt{display:grid;gap:10px;min-width:0}.fh-txt h1{font-size:clamp(40px,6vw,72px);font-weight:400}
+.fh-txt .eyebrow{display:inline-flex;align-items:center;gap:6px}.fh-txt p{margin:0}
+.fh-act{display:flex;gap:8px;flex-wrap:wrap}
+.fh-price{display:grid;gap:4px;min-width:250px}.fh-price small{font-size:12px;color:var(--muted)}
+.fh-price>b{font-family:var(--display);font-size:40px;font-weight:400}
+.fh-v{display:grid;border-top:1px solid var(--line);margin-top:6px}
+.fh-v button{display:flex;justify-content:space-between;gap:16px;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 0;color:var(--fg);font-size:14px}
+.fh-v button:hover{color:var(--accent)}.fh-v b{font-weight:600}
+.fabout{columns:2 320px;column-gap:40px;font-size:16px;line-height:1.65;max-width:1000px}.fabout p{margin:0 0 1em;break-inside:avoid}
+.fcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px}
+.ftl{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.ftl li{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ftl .yr{font-family:var(--display);font-size:22px;color:var(--accent);line-height:1.1}
+.ftl li div{display:grid;gap:2px}.ftl b{font-weight:600}
+.fstores{display:grid;border-top:1px solid var(--line)}
+.fstore{display:grid;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}.fstore.wimg{grid-template-columns:150px 1fr;align-items:start}.fstore img{width:150px;aspect-ratio:4/3;object-fit:cover;background:var(--surface-2)}.fst{display:grid;gap:3px}.fstore b{font-weight:600}@media (max-width:520px){.fstore.wimg{grid-template-columns:110px 1fr}.fstore img{width:110px}}
+.fs-l{display:flex;gap:16px;flex-wrap:wrap;font-size:13px}.fs-l a,.block .head p a,.note a{color:var(--accent);font-weight:600}
+.fposts{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px}
+.fpost{display:grid;grid-template-rows:auto 1fr;color:var(--fg);text-decoration:none}
+.fpost .ph{aspect-ratio:1}.fpost .bd{padding:10px 0 0;display:grid;gap:4px;font-size:14px}
+.fpost:hover .ph img{transform:scale(1.02)}
+.frend{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.frend button{background:none;border:0;padding:0;display:grid;gap:8px;text-align:left;color:var(--fg);font-size:13.5px}
+.frend img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--surface-2)}
+.fempty{padding:18px 0;border-top:1px solid var(--line);font-size:14px}
+.aflogo{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.afposts{display:grid;gap:8px;margin-top:10px}
+.afp{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.afp img,.afp .mono{width:56px;height:56px;object-fit:cover;display:grid;place-items:center;background:var(--surface-2);font-size:11px}
+.afp div{display:grid;gap:2px;min-width:0}.afp span{font-size:12.5px}
+.af textarea{font:inherit;font-size:14px;font-weight:400;color:var(--fg);border:1px solid var(--line);padding:8px 10px;border-radius:var(--r);resize:vertical}
+@media (max-width:820px){.fhero{grid-template-columns:auto 1fr}.fh-price{grid-column:1/-1;min-width:0}}
+@media (max-width:520px){.fhero{grid-template-columns:1fr}.flogo.xl{width:96px;height:96px}}
+
+.figgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;align-items:start}
+.igbox{display:grid;gap:8px}.igbox iframe{width:100%;height:600px;border:1px solid var(--line);background:#fff}
+.igbox .bd{display:grid;gap:3px;font-size:13.5px}
+.igprof{display:grid;gap:10px;max-width:560px}.igprof iframe{width:100%;height:720px;border:1px solid var(--line);background:#fff}
+.fvgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.vid{display:grid;gap:8px}.vid .vf{position:relative;aspect-ratio:16/9;background:#111;overflow:hidden}
+.vid .vf img,.vid .vf iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.vid .vf button{position:absolute;inset:0;border:0;background:rgba(0,0,0,.18);display:grid;place-items:center;cursor:pointer;padding:0}
+.vid .vf button::after{content:"";width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%231C1C1A'/%3E%3C/svg%3E") center/28px no-repeat}
+.vid .vf button:hover{background:rgba(0,0,0,.05)}
+.vid .bd{display:grid;gap:3px;font-size:14px}.vid .bd b{font-weight:600}
+
+.icell{display:flex;gap:12px;align-items:center}.icell>div{min-width:0}
+.ithumb{flex:none;width:64px;height:48px;border:1px solid var(--line);background:#fff;padding:2px;display:grid;place-items:center;cursor:zoom-in;border-radius:2px}
+.ithumb img{max-width:100%;max-height:100%;object-fit:contain}.ithumb:hover{border-color:var(--fg)}
+.ithumb.none{border-style:dashed;background:var(--surface-2);cursor:default;opacity:.5}
+.izov{position:fixed;inset:0;z-index:1000;background:rgba(18,18,16,.92);display:grid;grid-template-rows:auto 1fr auto;color:#fff}
+.iz-top{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:14px 20px}.iz-top b{display:block;font-size:16px;font-weight:600}.iz-top span{font-size:12.5px;opacity:.75}
+.iz-act{display:flex;gap:8px}.iz-act button{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;min-width:40px;height:36px;padding:0 14px;font-weight:600}
+.iz-stage{position:relative;overflow:hidden;display:grid;place-items:center;margin:0 20px;background:#fff;touch-action:none}
+.iz-stage img{max-width:100%;max-height:calc(100vh - 150px);transform-origin:center center;transition:transform .18s ease;user-select:none}
+.iz-hint{text-align:center;font-size:12px;opacity:.7;margin:10px 0 14px}
+/* plan rooms */
+.pplan{display:grid;gap:14px}
+.pp-stage{position:relative;background:var(--surface-2);overflow:hidden}
+.pp-inner{position:relative;width:100%}.pp-inner>img{display:block;width:100%;height:auto}
+.ppin{position:absolute;transform:translate(-50%,-50%);border:0;background:var(--fg);color:#fff;padding:5px 10px 6px;display:grid;gap:1px;text-align:center;line-height:1.15;cursor:pointer;box-shadow:0 6px 18px -8px rgba(0,0,0,.6);max-width:42%}
+.ppin span{font-size:11.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ppin b{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ppin.has{background:var(--accent)}.ppin.has::after{content:"";position:absolute;right:-5px;top:-5px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--accent)}
+.ppin:hover,.ppin:focus-visible{background:#000;z-index:3}
+.pp-total{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.96);padding:12px 16px;display:grid;gap:2px;box-shadow:0 10px 30px -14px rgba(0,0,0,.5);max-width:calc(100% - 28px)}
+.pp-total .eyebrow{display:flex;align-items:center;gap:6px}.pp-total b{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.05}.pp-total small{font-size:12px;color:var(--muted)}
+.pp-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}.pp-legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+@media (max-width:640px){.ppin{padding:3px 6px}.ppin span{font-size:9.5px}.ppin b{font-size:10.5px}.pp-total{position:static;box-shadow:none;border-bottom:1px solid var(--line)}.pp-total b{font-size:24px}}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -680,15 +772,15 @@ th.muted,td.muted{color:var(--muted)}
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610221144"></script>
+<script src="data/data.js?v=202610251831"></script>
 <script>
 (function(){
 "use strict";
-const SHEET_RANGE="Veri!A1:J80", HAM_RANGE="Ham!A1:I3000";
+const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:I4000";
 const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
 const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
 const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE6D8",Emerald:"#2F7A5B",Diamond:"#A9D2E0",Royal:"#5E4C8E"};
-const S={cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],view:"villas",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
+const S={cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],firms:{},itemImgs:{},view:"villas",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
   canEdit:false,db:null,assets:null,mcp:null,dbReady:false,admin:"media",pinPlan:null,pendingPin:null};
 try{const v=localStorage.getItem("hm_cur2");if(v==="SAR")S.cur="SAR";}catch(e){}
 try{const v=localStorage.getItem("hm_cmpv");if(v)S.cmpV=v;}catch(e){}
@@ -711,22 +803,28 @@ function toast(msg){const t=document.createElement("div");t.className="toast";t.
 /* ---------- BoQ labels (English source → Turkish display) ---------- */
 const ROOMS=[["Powder Bathroom","Misafir WC"],["Maid Room","Hizmetli odası"],["Maid Bath","Hizmetli banyosu"],["Guest Basin","Misafir lavabosu"],["Guest Entrance","Giriş holü"],
  ["Driver Room","Şoför odası"],["Driver WC","Şoför WC"],["Master Bedroom","Ebeveyn yatak odası"],["Walk-In Closet","Giyinme odası"],["Family Living","Aile salonu"],["Living Room","Salon"],
- ["Bedroom-1","Yatak odası 1"],["Bedroom-2","Yatak odası 2"],["Bedroom-3","Yatak odası 3"],["Bathroom","Banyo"],["Kitchen","Mutfak"],["Majlis","Meclis"],["Rawashin","Rawashin"],
+ ["Bedroom-1","Yatak odası 1"],["Bedroom 1","Yatak odası 1"],["Bedroom-2","Yatak odası 2"],["Bedroom-3","Yatak odası 3"],["Bathroom","Banyo"],["Kitchen","Mutfak"],["Majlis","Meclis"],["Rawashin","Rawashin"],
  ["Terrace","Teras"],["Hallway","Koridor"],["Storage","Depo"]];
-const ITEMS=[["Room Buffet","Büfe"],["Buffet","Büfe"],["Bookcase","Kitaplık"],["Cabinetry + Quartz Countertop","Mutfak dolapları + kuvars tezgâh"],["Outdoor lounge chair","Dış mekân şezlongu"],["3-Seater Sofa","Üçlü kanepe"],["2-Seater Sofa","İkili kanepe"],
+const ITEMS=[["Dining Chair","Yemek sandalyesi"],["Dresser","Şifonyer"],["Pouf","Puf"],["Sofa","Kanepe"],["Room Buffet","Büfe"],["Buffet","Büfe"],["Bookcase","Kitaplık"],["Cabinetry + Quartz Countertop","Mutfak dolapları + kuvars tezgâh"],["Outdoor lounge chair","Dış mekân şezlongu"],["3-Seater Sofa","Üçlü kanepe"],["2-Seater Sofa","İkili kanepe"],
  ["Armchair","Berjer"],["Coffee Table","Orta sehpa"],["Side Table","Yan sehpa"],["TV Console","TV ünitesi"],["Dining Table","Yemek masası"],["Console table","Konsol"],["Bedside Table","Komodin"],
  ["Dressing Table","Makyaj masası"],["Double Bed","Çift kişilik yatak"],["Bed bench","Yatak önü bankı"],["Bathroom Vanity","Lavabo dolabı"],["Base Cabinet","Alt dolap"],["Wall Cabinet","Üst dolap"],
  ["Vanity","Lavabo dolabı"],["Coat Rack","Portmanto"],["Wardrobe","Gardırop"],["Chair","Sandalye"],["Table","Masa"],["Bed","Yatak"]];
 const EXTRAS=[["Bed Linen","Nevresim takımları (6 oda × 2 takım, yorgan, yastık)"],["Bathroom Textiles","Banyo tekstili (havlu, bornoz, paspas · 8 banyo)"],["Dining & Kitchen","Mutfak ve sofra seti"],
  ["Carpets","Halı seti (6 oda)"],["Curtains","Perde paketi (karartma + tül)"]];
-const TYPES={"Fixed":"Hareketsiz mobilya","Loose Furniture":"Hareketli mobilya","Ev Dekorasyon":"Ev tekstili ve dekorasyon","":"Diğer"};
-const TYPE_COLOR={"Loose Furniture":"var(--f1)","Fixed":"var(--f2)","Ev Dekorasyon":"var(--fx)","":"var(--fv)"};
+const TYPES={"Fixed":"Hareketsiz mobilya","Loose Furniture":"Hareketli mobilya","Ev Dekorasyon":"Ev tekstili ve dekorasyon","Electrical Appliance":"Elektrikli ev aletleri","Smart Home":"Akıllı ev sistemi","Installation":"Cihaz montajı ve kurulum","":"Diğer"};
+const TYPE_COLOR={"Loose Furniture":"var(--f1)","Fixed":"var(--f2)","Ev Dekorasyon":"var(--fx)","Electrical Appliance":"#8A6D3B","Smart Home":"#3E5C76","Installation":"#9AA3A8","":"var(--fv)"};
 const BRAND_TR={"Kitchen Furniture":"Mutfak mobilyası","Bathroom Furniture":"Banyo mobilyası"};
 const brandLabel=b=>{if(!b)return "Marka belirtilmemiş";const m=String(b).match(/^(.+) koleksiyonu$/);const pk=m&&brands().find(x=>x.name===m[1]);if(pk&&pk.firm)return pk.firm;return BRAND_TR[b]||b;};
-const TYPE_NOTE={"Fixed":"mutfak, banyo dolapları, gardıroplar · yerinde montaj","Loose Furniture":"kanepe, yatak, masa, sandalye","Ev Dekorasyon":"nevresim, havlu, halı, perde, mutfak seti"};
+const TYPE_NOTE={"Fixed":"mutfak, banyo dolapları, gardıroplar · yerinde montaj","Loose Furniture":"kanepe, yatak, masa, sandalye","Ev Dekorasyon":"nevresim, havlu, halı, perde, mutfak seti","Electrical Appliance":"ankastre mutfak cihazları, buzdolabı, çamaşır makinesi, küçük ev aletleri, TV, split klima","Smart Home":"Volly KNX paketi: oda kontrol panelleri, akıllı kapı kilidi, görüntülü kapı paneli, kamera, devreye alma","Installation":"beyaz eşya, TV ve klima montajı, test ve devreye alma"};
+const APPL=[["Induction Hob","İndüksiyonlu ocak, 60 cm"],["Bottom-Freezer Refrigerator","Alttan donduruculu buzdolabı, 401 L"],["Built-in Oven","Ankastre çok fonksiyonlu fırın, 60 cm, 67 L"],["Recirculation Hood","Sürgülü aspiratör, 60 cm"],["Microwave","Ankastre mikrodalga + ızgara, 20 L"],["Dishwasher","Tam ankastre bulaşık makinesi, 12 kişilik"],["Washing Machine","Çamaşır makinesi, 8 kg"],["Electric Kettle","Elektrikli su ısıtıcı, 1,7 L"],["Steam Iron","Buharlı ütü, 2000 W"],["Vacuum Cleaner","Torbalı elektrikli süpürge, 1800 W"],["Smart Televisions","65\" akıllı televizyon (salon ve meclis)"],["Split AC","Split klima, 18.000 BTU inverter"],["Installation of all appliances","Tüm cihazların montajı (küçük ev aletleri hariç)"],["TV installation","TV montajı, kurulum ve test"],["AC back-to-back","Klima montaj işçiliği"],["KNX Smart Home System","KNX akıllı ev sistemi · komple villa paketi (16 kalem)"],["Room Controller","Oda kontrol paneli 4\" (Inspinia SQ)"],["10\" Panel – Siyah","Merkezi dokunmatik panel 10\" (Inspinia SQ, siyah çerçeve)"],["VRF Gateway","Klima (Midea VRF) KNX entegrasyon modülü"],["Fixed Dome","Güvenlik kamerası 2 MP, IR, PoE"],["LogicMachine5","Akıllı ev sunucusu (LogicMachine5 Lite)"],["Add-on Modülü","KNX ek modül (G2)"]];
+const isTech=f=>/elektrikli|akıllı ev/i.test(f||"");
 const isExtra=f=>/tamamlay/i.test(f||"");
 function labelItem(it){
   const n=String(it.n||"").trim();
+  if(isTech(it.f)){const smart=/akıllı/i.test(it.f);const model=(n.match(/\(([^)]*)\)\s*$/)||[])[1];const a=APPL.find(([k])=>n.toLowerCase().includes(k.toLowerCase()));
+    let label=a?a[1]:n;if(model&&a&&/[A-Z]{2,}\s?\w*\d/.test(model))label+=" · "+model;if(smart&&/^S\d+\.\d+/.test(it.c||""))label+=" · pakete dahil";
+    return {room:smart?"Akıllı ev sistemi":(/INS-/.test(it.c||"")?"Cihaz montajı":/Split AC/i.test(n)?"İklimlendirme":/Television/i.test(n)?"Televizyon":"Elektrikli ev aletleri"),label};}
+  if(it.c==="F-179"&&/^side table$/i.test(n))return {room:"Meclis",label:"Yan sehpa"};
   if(isExtra(it.f)){const e=EXTRAS.find(([k])=>n.toLowerCase().startsWith(k.toLowerCase()));return {room:"Ev tekstili ve tamamlayıcılar",label:e?e[1]:(n||"Diğer tamamlayıcı ürünler")};}
   let room="Diğer",rest=n;const r=ROOMS.find(([k])=>n.toLowerCase().startsWith(k.toLowerCase()));
   if(r){room=r[1];rest=n.slice(r[0].length).trim();}
@@ -768,10 +866,11 @@ function typeTotals(pkg,v){const m={};boqItems(pkg,v).forEach(it=>{const k=it.t|
 /* ---------- media helpers ---------- */
 const byOrder=(a,b)=>(a.order||0)-(b.order||0);
 function mediaOf(f){return S.media.filter(f).sort(byOrder);}
-const pkgMatch=(m,pkg)=>!m.brand||!pkg||m.brand===pkg;
+const hiddenFor=(m,pkg)=>{const h=m.hideFirms;if(!h||!h.length||!pkg)return false;const f=pkgByName(pkg)?.firm;return !!f&&h.includes(f);};
+const pkgMatch=(m,pkg)=>!pkg||m.brand===pkg||(!m.brand&&!hiddenFor(m,pkg));
 const floorIdx=f=>{const i=floorsOnly().indexOf(f);return i<0?99:i;};
 const byCover=(a,b)=>(b.coverAt||0)-(a.coverAt||0)||byOrder(a,b);
-function coverImg(villa,pkg,mode){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa));
+function coverImg(villa,pkg,mode){const pool=S.media.filter(m=>m.kind==="render"&&(!villa||m.villa===villa)&&!(!m.brand&&hiddenFor(m,pkg)));
   const pref=mode===true?[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand]
     :mode==="villa"?[x=>x.cover&&x.brand===pkg,x=>x.cover,x=>x.brand===pkg,x=>!x.brand,()=>true]
     :[x=>x.cover&&x.brand===pkg,x=>x.brand===pkg,x=>x.cover&&!x.brand,x=>!x.brand,x=>x.cover,()=>true];
@@ -785,14 +884,14 @@ const villaLetter=v=>String(v).replace(/^Villa\s*/i,"").slice(0,2)||"V";
 const initials=s=>String(s).split(/\s+/).filter(w=>!/^\d+$/.test(w)).slice(0,2).map(w=>w[0]).join("").toUpperCase()+(String(s).match(/\d+$/)?.[0]||"");
 
 /* ---------- header ---------- */
-const VIEWS=[["villas","Villalar"],["compare","Paketleri karşılaştır"],["admin","Yönetim"]];
+const VIEWS=[["villas","Villalar"],["compare","Paketleri karşılaştır"],["firms","Firmalar"],["admin","Yönetim"]];
 function renderBrandLogos(){const lg=S.cfg?.logos||{};const h=$("#hdrLogos"),f=$("#siteFoot");if(!h||!f)return;
   const key=[lg.emlak,lg.rapid].join("|");if(h.dataset.k===key)return;h.dataset.k=key;
   const e=lg.emlak?`<img class="lg-e" src="${blob(lg.emlak)}" alt="Emlak Konut">`:"",r=lg.rapid?`<img class="lg-r" src="${blob(lg.rapid)}" alt="RapidRender">`:"";
   h.innerHTML=e||r?`${e}${e&&r?`<span class="lg-sep"></span>`:""}${r}`:"";h.hidden=!(e||r);
   f.innerHTML=e||r?`<div class="wrap foot-in"><div class="foot-logos">${e}${e&&r?`<span class="lg-sep"></span>`:""}${r}</div><p>${esc(S.cfg?.projectName||"Hayat Mekke")} · ${esc(S.cfg?.subtitle||"Villa mobilya paketleri")}<br><span>Fiyatlar villa başı, navlun, montaj ve sigorta dahil; KDV hariç.</span></p></div>`:"";}
 function renderTabs(){renderBrandLogos();
-  const curV=S.view==="villa"?"villas":S.view;
+  const curV=S.view==="villa"?"villas":S.view==="firm"?"firms":S.view;
   $("#tabs").innerHTML=VIEWS.filter(([k])=>k!=="admin"||S.canEdit).map(([k,l])=>`<button data-view="${k}" aria-current="${curV===k}">${l}</button>`).join("");
   $("#curSAR").setAttribute("aria-pressed",S.cur==="SAR");$("#curUSD").setAttribute("aria-pressed",S.cur==="USD");
   if(S.cfg){$("#pname").textContent=S.cfg.projectName||"Hayat Mekke";$("#psub").textContent=S.cfg.subtitle||"Villa mobilya paketleri";}
@@ -821,6 +920,8 @@ function render(){
     if(!floorsOnly().includes(S.floor))S.floor=floorsOnly()[0];
     m.innerHTML=villaHTML();bindVilla();}
   else if(S.view==="compare"){m.innerHTML=compareHTML();bindCompare();}
+  else if(S.view==="firms"){m.innerHTML=firmsHTML();bindFirm();}
+  else if(S.view==="firm"){if(!firmByName(S.firm)){S.view="firms";return render();}m.innerHTML=firmHTML();bindFirm();}
   else if(S.view==="admin"){m.innerHTML=adminHTML();bindAdmin();}
   else {S.view="villas";m.innerHTML=listHTML();bindList();}
 }
@@ -834,7 +935,7 @@ function heroList(){const pool=heroPool();const key=pool.map(m=>m.id).sort().joi
   const ckey=pool.filter(m=>m.cover).map(m=>m.id+":"+(m.coverAt||0)).join(",");
   if(!S.hero||S.hero.key!==key||S.hero.ckey!==ckey){const covers=pool.filter(m=>m.cover).sort(byCover);const a=pool.filter(m=>!m.cover);for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}S.hero={key,ckey,list:[...covers,...a],i:0};}
   return S.hero.list;}
-function heroInfo(m){const b=pkgByName(m.brand);const v=m.villa;const pk=b||rankedFor(v)[0];
+function heroInfo(m){const b=pkgByName(m.brand);const v=m.villa;const pk=b||rankedFor(v).find(x=>!hiddenFor(m,x.name))||rankedFor(v)[0];
   return {villa:v,room:m.room||m.title||"Oda",pkg:pk,price:pk?net(pk,v):0,exact:!!b};}
 function heroSlide(m,i,on){const h=heroInfo(m);const load=on||i===((S.hero.i+1)%S.hero.list.length);
   return `<figure class="hs${on?" on":""}" data-hi="${i}" aria-hidden="${!on}"><img ${load?`src="${blob(m.asset)}"`:`data-src="${blob(m.asset)}"`} alt="${esc([h.villa,h.room,h.pkg?pl(h.pkg.name):""].filter(Boolean).join(" · "))}">
@@ -891,6 +992,7 @@ function listHTML(){
   <section class="block"><div class="head"><div><h2>Villa tipine göre paketler</h2></div>
     <p>${esc(S.cfg.scope||"Her paket aynı metraj ve aynı kalem listesiyle fiyatlandırıldı.")} Hareketsiz mobilya ve ev tekstili tüm paketlerde aynı; fark hareketli mobilyanın seviyesinden gelir.</p></div>
    ${villaMatrixHTML()}<p class="note">${S.cur} · villa başı net fiyat, KDV hariç. Bir tutara tıklayın; villa o paketle açılır. Her sütunda en uygun paket işaretli.</p></section>
+  ${firmStripHTML()}
   ${best?`<section class="band"><div><h2>Projenin tamamı ${esc(pl(best.name))} ile ${big(budget(best))} ${S.cur}</h2><p>${nf0.format(S.cfg.villaCount||0)} villa · KDV dahil · villa başı ortalama ${money(avgGross(best))} ${S.cur}</p></div>
     <button class="btn light" data-cmp>Tüm paketleri karşılaştır →</button></section>`:""}`;}
 function bindList(){const m=$("#main");bindHero();
@@ -934,16 +1036,13 @@ function villaHTML(){
     <aside class="buy"><div><span class="eyebrow">Villa tipi</span><h1>${esc(v)}</h1><p class="meta">${esc([meta.area?meta.area+" m²":"",meta.rooms,meta.desc].filter(Boolean).join(" · ")||"Zemin, 1. kat ve çatı katı · anahtar teslim döşeme")}</p></div>
      <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
        return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}">${dot(x.name)}<span class="n">${esc(pl(x.name))}${i===0?`<small>en uygun</small>`:""}</span><span class="p">${money(n)}<small>${i===0?"net · KDV hariç":"+"+money(n-net(lo,v))}</small></span></button>`;}).join("")}</div>
-     <div class="total"><span class="eyebrow">${esc(pl(b.name))} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span></div>
+     <div class="total"><span class="eyebrow">${esc(pl(b.name))} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span><span class="sub">${fLink(b,esc(firmName(b))+" firma profili →")}</span></div>
      <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button></div>
     </aside></div></section>
-  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>Odalar</h2></div>
+  ${plan?planRoomsHTML(v,b,plan,L):""}
+  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>${plan?"Kat kat odalar":"Odalar"}</h2></div>
      <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)}</span></button>`).join("")}</div></div>
    ${roomsHTML(v,b,f)}</section>
-  ${plan?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(v)}</span><h2>Kat planı</h2></div><button class="btn sm" data-zoomplan="${plan.id}">Büyüt</button></div>
-    <div class="plan"><div class="plan-stage"><div class="plan-inner"><img src="${blob(plan.asset)}" alt="${esc(plan.title||"Kat planı")}">
-     ${(plan.pins||[]).map(p=>`<button class="pin" style="left:${p.x*100}%;top:${p.y*100}%" data-room="${esc(p.room)}">${esc(p.room)}</button>`).join("")}</div></div>
-     ${plan.title?`<span class="status">${esc(plan.title)}</span>`:""}</div></section>`:""}
   ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
    <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
   <section class="block" id="cost"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))}</span><h2>Fiyat nasıl oluşuyor?</h2></div></div>
@@ -954,6 +1053,19 @@ function villaHTML(){
       <div class="bd"><span class="nm">${dot(x.name)}${esc(pl(x.name))}</span><span class="pr"><b>${money(net(x,v))}</b><span class="delta ${d<0?"ok":""}">${d<0?"−":"+"}${money(Math.abs(d))}</span></span></div></button>`;}).join("")}</div></section>
   <section class="band"><div><h2>${esc(v)} · ${esc(pl(b.name))}</h2><p>Bu villayı ve paketi tam ekran sunum olarak gösterin: görseller, odalar ve fiyat kırılımı.</p></div>
    <button class="btn light" data-deckv>Sunumu başlat →</button></section>`;}
+function roomAll(pkg,v){const m=new Map();boqItems(pkg,v).forEach(it=>{if(isExtra(it.f)||isTech(it.f))return;const {room}=labelItem(it);const o=m.get(room)||{v:0,n:0,f:{}};o.v+=(+it.v||0);o.n++;o.f[it.f]=(o.f[it.f]||0)+(+it.v||0);m.set(room,o);});return m;}
+function roomFloor(v,pkg,room){const o=roomAll(pkg,v).get(room);if(o){const e=Object.entries(o.f).sort((a,c)=>c[1]-a[1])[0];if(e)return e[0];}const md=S.media.find(m=>m.villa===v&&m.room===room&&m.floor);return md?.floor||S.floor;}
+function pinValue(p,pkg,v,ra){if(p.codes&&p.codes.length){const cs=new Set(p.codes);const its=boqItems(pkg,v).filter(it=>cs.has(it.c)||[...cs].some(c=>String(it.c||"").startsWith(c+".")));return its.length?its.reduce((a,it)=>a+(+it.v||0),0):null;}
+  const t=ra.get(p.room);if(!t)return null;return p.floor&&t.f[p.floor]!=null?t.f[p.floor]:t.v;}
+function planRoomsHTML(v,b,plan,L){const ra=roomAll(b.name,v);const pins=plan.pins||[];
+  const hasImg=room=>S.media.some(m=>m.villa===v&&m.room===room&&(m.kind==="render"||m.kind==="pano")&&pkgMatch(m,b.name));
+  const pinned=new Set(pins.map(p=>p.room));const off=[...ra.entries()].filter(([r,o])=>!pinned.has(r)&&o.v>0).sort((a,c)=>c[1].v-a[1].v);
+  return `<section class="block pplan" id="plan"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Kat planı üzerinden odalar</h2></div><p>Odaya tıklayın: görselleri, 360° panoraması ve ürün listesi açılır. Paket değişince oda fiyatları ve toplam plan üzerinde güncellenir.</p></div>
+   <div class="pp-stage"><div class="pp-inner"><img src="${blob(plan.asset)}" alt="${esc(v)} kat planı">
+    ${pins.map(p=>{const pv=pinValue(p,b.name,v,ra);return `<button class="ppin${hasImg(p.room)?" has":""}" style="left:${p.x*100}%;top:${p.y*100}%" data-proom="${esc(p.room)}" data-pfloor="${esc(p.floor||"")}" aria-label="${esc(p.room)}${p.floor?" · "+esc(p.floor):""}${pv!=null?" · "+money(pv)+" "+S.cur:""}"><span>${esc(p.room)}</span><b>${pv!=null?(pv?money(pv):"kapsam dışı"):"–"}</b></button>`;}).join("")}</div>
+    <div class="pp-total"><span class="eyebrow">${dot(b.name)}${esc(pl(b.name))} · toplam</span><b class="num">${money(L.net)}${cur()}</b><small>net, KDV hariç · KDV dahil ${money(L.gross)} ${S.cur}</small></div></div>
+   <div class="pp-legend"><span><i style="background:var(--accent)"></i>Görseli ya da 360° panoraması olan oda</span><span><i style="background:var(--fg)"></i>Yalnızca ürün listesi</span><span>Oda tutarları mobilya bedelidir (navlun, montaj, KDV hariç).</span>
+    ${off.length?`<span>Planda işaretli olmayanlar: ${off.map(([r,o])=>`<button class="flink" data-proom="${esc(r)}">${esc(r)} ${money(o.v)}</button>`).join(" · ")}</span>`:""}</div></section>`;}
 function roomsHTML(v,b,f){
   const rt=roomTotals(b.name,v,f);
   const mediaRooms=[...new Set(S.media.filter(m=>m.villa===v&&m.floor===f&&m.room&&pkgMatch(m,b.name)&&m.kind!=="plan").map(m=>m.room))];
@@ -996,7 +1108,9 @@ function fixedInsight(v){ // fixed furniture + home textiles identical across pa
   const bs=rankedFor(v);if(bs.length<2||!bs.every(b=>boqItems(b.name,v).length))return null;
   const tt=bs.map(b=>typeTotals(b.name,v));const fx=tt.map(t=>t["Fixed"]||0);const same=Math.max(...fx)-Math.min(...fx)<=Math.max(5,fx[0]*0.005);
   if(!same)return null;const lo=tt.map(t=>t["Loose Furniture"]||0);return {fixed:fx[0],looseMin:Math.min(...lo),looseMax:Math.max(...lo),lo:bs[lo.indexOf(Math.min(...lo))],hi:bs[lo.indexOf(Math.max(...lo))]};}
-function itemRows(arr){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap">${esc(it.label)}${it.b!==undefined?`<small class="ib">${esc(brandLabel(it.b))}</small>`:""}</td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}
+function itemImg(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];return d?.villas?.[v||S.villa]?.[it.c]||null;}
+function itemThumb(it,pkg,v){const id=itemImg(it,pkg,v);return id?`<button type="button" class="ithumb" data-izoom="${esc(id)}" data-ilabel="${esc(it.label||it.n||"")}" data-isub="${esc([it.c,brandLabel(it.b)].filter(Boolean).join(" · "))}" aria-label="${esc((it.label||"")+" görselini büyüt")}"><img src="${esc(blob(id))}" alt="" loading="lazy"></button>`:`<span class="ithumb none" aria-hidden="true"></span>`;}
+function itemRows(arr,pkg,v){return arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,v)}<div>${esc(it.label)}${it.b!==undefined?`<small class="ib">${esc(brandLabel(it.b))}</small>`:""}</div></div></td><td style="text-align:left"><span class="typetag">${esc(TYPES[it.t||""]||it.t)}</span></td><td class="${+it.v?"":"zero"}">${+it.v?money(+it.v):"dahil"}</td></tr>`).join("");}
 function boqHTML(pkg,v){
   const items=boqItems(pkg,v);
   return sections().map(sec=>{const its=items.filter(it=>it.f===sec);if(!its.length)return "";
@@ -1028,6 +1142,7 @@ function bindVilla(){
   m.querySelectorAll("[data-pkg]").forEach(b=>b.onclick=()=>{S.pkg=b.dataset.pkg;S.gi=0;const top=b.hasAttribute("data-top");const y=window.scrollY;render();window.scrollTo({top:top?0:y,behavior:top?"smooth":"instant"});});
   m.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{S.floor=b.dataset.f;const y=window.scrollY;render();window.scrollTo({top:y});});
   m.querySelectorAll("[data-room]").forEach(b=>b.onclick=()=>openRoom(b.dataset.room));
+  m.querySelectorAll("[data-proom]").forEach(b=>b.onclick=()=>{const r=b.dataset.proom;S.floor=b.dataset.pfloor||roomFloor(S.villa,S.pkg,r);openRoom(r);});
   m.querySelectorAll("[data-furn]").forEach(b=>b.onclick=()=>openFurn(b.dataset.furn));
   m.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView());
   m.querySelectorAll("[data-pano]").forEach(b=>b.onclick=()=>openPano(b.dataset.pano));
@@ -1112,7 +1227,7 @@ function openFurn(tab){
 function rankingHTML(v){v=v||cmpScope();
   const r=rankedIn(v);if(!r.length)return "";const max=netIn(r[r.length-1],v),min=netIn(r[0],v);
   return `<div class="rank">${r.map((b,i)=>{const t=netIn(b,v),d=(t-min)/min;
-    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span>
+    return `<div class="rank-row ${i===0?"best":""}"><span class="pos">${i+1}</span><span class="nm">${dot(b.name)}${esc(b.name)}${b.firm?" · "+fLink(b):""}</span>
       <div class="track"><i class="fill" style="width:${(t/max*100).toFixed(1)}%"></i></div>
       <div class="vals num"><b>${money(t)}</b> <span class="delta ${i===0?"ok":""}">${i===0?"en uygun":"+"+pct(d)}</span><br><span class="muted">KDV dahil ${money(grossIn(b,v))}</span></div></div>`;}).join("")}</div>`;}
 function villaMatrixHTML(){
@@ -1145,6 +1260,144 @@ function compareHTML(){const v=cmpScope();
   <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması · ${esc(scopeName(v))}</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML(v)}</section>`;}
 function bindCompare(){const m=$("#main");m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelectorAll("[data-cv]").forEach(b=>b.onclick=()=>{S.cmpV=b.dataset.cv;try{localStorage.setItem("hm_cmpv",S.cmpV)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});}
+
+
+/* ---------- item image zoom ---------- */
+function openItemZoom(id,label,sub){const o=document.createElement("div");o.className="izov";o.setAttribute("role","dialog");o.setAttribute("aria-label",label||"Ürün görseli");
+  o.innerHTML=`<div class="iz-top"><div><b>${esc(label||"Ürün")}</b><span>${esc(sub||"")}</span></div><div class="iz-act"><button type="button" data-zin aria-label="Yakınlaştır">+</button><button type="button" data-zout aria-label="Uzaklaştır">−</button><button type="button" data-zx>Kapat</button></div></div>
+   <div class="iz-stage"><img src="${esc(blob(id))}" alt="${esc(label||"")}" draggable="false"></div><p class="iz-hint">Görsele tıklayın: yakınlaştır / uzaklaştır. Yakınken sürükleyerek gezin.</p>`;
+  document.body.appendChild(o);const img=o.querySelector("img"),st=o.querySelector(".iz-stage");let z=1,x=0,y=0,drag=null,moved=false;
+  const apply=()=>{img.style.transform=`translate(${x}px,${y}px) scale(${z})`;img.style.cursor=z>1?"grab":"zoom-in";};
+  const setZ=(nz,cx,cy)=>{nz=Math.max(1,Math.min(5,nz));if(cx!=null){const r=st.getBoundingClientRect();const px=cx-r.left-r.width/2,py=cy-r.top-r.height/2;x=(x-px)*nz/z+px;y=(y-py)*nz/z+py;}z=nz;if(z===1){x=0;y=0;}apply();};
+  const close=()=>{o.remove();document.removeEventListener("keydown",key);};const key=e=>{if(e.key==="Escape")close();if(e.key==="+")setZ(z*1.5);if(e.key==="-")setZ(z/1.5);};document.addEventListener("keydown",key);
+  o.querySelector("[data-zx]").onclick=close;o.querySelector("[data-zin]").onclick=()=>setZ(z*1.5);o.querySelector("[data-zout]").onclick=()=>setZ(z/1.5);
+  o.addEventListener("click",e=>{if(e.target===o||e.target===st)close();});
+  st.addEventListener("wheel",e=>{e.preventDefault();setZ(z*(e.deltaY<0?1.2:1/1.2),e.clientX,e.clientY);},{passive:false});
+  img.addEventListener("pointerdown",e=>{drag={sx:e.clientX,sy:e.clientY,x,y};moved=false;img.setPointerCapture(e.pointerId);});
+  img.addEventListener("pointermove",e=>{if(!drag||z===1)return;const dx=e.clientX-drag.sx,dy=e.clientY-drag.sy;if(Math.abs(dx)+Math.abs(dy)>4)moved=true;x=drag.x+dx;y=drag.y+dy;apply();});
+  img.addEventListener("pointerup",e=>{const was=drag;drag=null;if(!moved&&was)setZ(z>1?1:2.5,e.clientX,e.clientY);});
+  apply();o.querySelector("[data-zx]").focus();}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-izoom]");if(!b)return;e.preventDefault();e.stopPropagation();openItemZoom(b.dataset.izoom,b.dataset.ilabel,b.dataset.isub);},true);
+
+/* ---------- firms ---------- */
+const NETS=[["instagram","Instagram"],["facebook","Facebook"],["linkedin","LinkedIn"],["youtube","YouTube"],["x","X"],["pinterest","Pinterest"]];
+const firmName=b=>b?.firm||b?.name||"";
+function firmList(){return ranked().map(b=>({b,name:firmName(b),d:S.firms[slug(firmName(b))]||{}}));}
+function firmByName(n){return firmList().find(f=>f.name===n);}
+function firmLogo(f,cls){const c=cls||"flogo";const d=f.d||{};return d.logo?`<img class="${c}" src="${esc(blob(d.logo))}" alt="${esc(f.name)} logosu">`:`<span class="${c} mono" aria-hidden="true">${esc(initials(f.name))}</span>`;}
+const fLink=(b,txt)=>`<button type="button" class="flink" data-firm="${esc(firmName(b))}">${txt||esc(firmName(b))}</button>`;
+function openFirm(n){S.firm=n;setView("firm");}
+const safeUrl=u=>{u=String(u||"").trim();return /^https?:\/\//i.test(u)?u:"";};
+const hostOf=u=>{try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return u;}};
+const clip=(s,n)=>{s=String(s||"").trim();return s.length>n?s.slice(0,n-1).replace(/\s+\S*$/,"")+"…":s;};
+const fEmpty=t=>`<div class="fempty muted">${esc(t)}</div>`;
+const netLabel=k=>(NETS.find(([x])=>x===k)||[0,k||""])[1];
+const fmtDate=s=>{if(!s)return "";const d=new Date(s);return isNaN(d)?String(s):d.toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"});};
+const ext=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`;
+function firmStripHTML(){const fs=firmList();if(!fs.length)return "";
+  return `<section class="block"><div class="head"><div><h2>Firmalar</h2></div><p>Paketleri hazırlayan firmalar. Firma sayfasında hakkında bilgi, katıldığı fuarlar, mağazalar ve son paylaşımlar yer alır.</p></div>
+   <div class="fstrip">${fs.map(f=>`<button class="fchip" data-firm="${esc(f.name)}">${firmLogo(f,"flogo sm")}<span><b>${esc(f.name)}</b><small>${dot(f.b.name)}${esc(f.b.name)} paketi</small></span></button>`).join("")}</div></section>`;}
+const igCode=u=>{const m=String(u||"").match(/instagram\.com\/(?:[^\/]+\/)?(p|reel|tv)\/([A-Za-z0-9_-]+)/);return m?{t:m[1],c:m[2]}:null;};
+const ytId=u=>{const m=String(u||"").match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);return m?m[1]:null;};
+const vmId=u=>{const m=String(u||"").match(/vimeo\.com\/(?:video\/)?(\d+)/);return m?m[1]:null;};
+function postCard(x){const u=safeUrl(x.url);const ig=igCode(u);const meta=esc([netLabel(x.network||(ig?"instagram":"")),fmtDate(x.date)].filter(Boolean).join(" · "));
+  if(ig&&!x.img)return `<div class="igbox"><iframe src="https://www.instagram.com/${ig.t==="reel"?"reel":"p"}/${ig.c}/embed/captioned/" loading="lazy" title="Instagram paylaşımı" allowtransparency="true" scrolling="no"></iframe><div class="bd"><span class="eyebrow">${meta}</span>${ext(u,"Instagram'da aç ↗")}</div></div>`;
+  const img=x.img?blob(x.img):"";
+  return `<a class="fpost" ${u?`href="${esc(u)}" target="_blank" rel="noopener"`:""}>${img?`<div class="ph"><img src="${esc(img)}" alt="" loading="lazy"></div>`:`<div class="ph empty-ph"><span>${esc(netLabel(x.network)||"Paylaşım")}</span></div>`}
+   <div class="bd"><span class="eyebrow">${meta}</span><span>${esc(clip(x.caption,160))}</span></div></a>`;}
+function videoCard(x){const u=safeUrl(x.url);const yt=ytId(u),vm=vmId(u),ig=igCode(u);const mp4=/\.(mp4|webm|mov)(\?|$)|\/videos\//i.test(u)&&!yt&&!vm&&!ig;
+  const src=yt?`https://www.youtube-nocookie.com/embed/${yt}?autoplay=1&rel=0`:vm?`https://player.vimeo.com/video/${vm}?autoplay=1`:"";
+  const th=yt?`https://i.ytimg.com/vi/${yt}/hqdefault.jpg`:"";
+  const meta=esc([x.fair,x.year,x.platform].filter(Boolean).join(" · "));
+  const frame=mp4?`<div class="vf"><video src="${esc(u)}#t=0.5" controls preload="metadata" playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#111"></video></div>`:src?`<div class="vf">${th?`<img src="${th}" alt="" loading="lazy">`:""}<button type="button" data-play="${esc(src)}" aria-label="Videoyu oynat"></button></div>`
+    :ig?`<div class="igbox"><iframe src="https://www.instagram.com/${ig.t==="reel"?"reel":"p"}/${ig.c}/embed/" loading="lazy" title="Instagram videosu" scrolling="no"></iframe></div>`
+    :`<div class="vf"><a href="${esc(u)}" target="_blank" rel="noopener" style="position:absolute;inset:0;display:grid;place-items:center;color:#fff">Videoyu aç ↗</a></div>`;
+  return `<div class="vid">${frame}<div class="bd">${meta?`<span class="eyebrow">${meta}</span>`:""}<b>${esc(x.title||"Video")}</b>${u&&!mp4?ext(u,(yt?"YouTube":vm?"Vimeo":ig?"Instagram":hostOf(u))+"'da aç ↗"):""}</div></div>`;}
+const igProfile=u=>{const m=String(u||"").match(/instagram\.com\/([A-Za-z0-9_.]+)\/?(?:$|\?)/);return m&&!/^(p|reel|tv|explore)$/.test(m[1])?m[1]:null;};
+function firmsHTML(){const fs=firmList();
+  if(!fs.length)return `<div class="empty"><strong>Firma yok</strong><span>Maliyet verisi yüklendiğinde firmalar burada listelenir.</span></div>`;
+  return `<section class="block"><div class="head"><div><span class="eyebrow">Tedarikçiler</span><h2>Firmalar</h2></div><p>Her mobilya paketi bir firmanın teklifine dayanır. Firmaya tıklayın; hakkında bilgi, fuarlar, mağazalar ve son paylaşımlar açılır.</p></div>
+   <div class="fgrid">${fs.map(f=>{const cv=coverImg(null,f.b.name,true);const sub=[f.d.hq,f.d.founded?"Kuruluş "+f.d.founded:""].filter(Boolean).join(" · ");
+     return `<button class="fcard" data-firm="${esc(f.name)}"><div class="fc-top">${cv&&cv.brand===f.b.name?`<img class="fc-bg" src="${thumb(cv)}" alt="" loading="lazy">`:""}<div class="fc-logo">${firmLogo(f)}</div></div>
+      <div class="bd"><span class="eyebrow">${dot(f.b.name)}${esc(f.b.name)} paketi${sub?" · "+esc(sub):""}</span><h3>${esc(f.name)}</h3>
+       <p class="muted">${esc(clip(f.d.about,150)||"Firma bilgisi henüz eklenmedi.")}</p>
+       <div class="price-line"><div><small>${villas().length} villa toplamı · net</small><b class="num">${money(total3(f.b))}${cur()}</b></div><span class="link">Firma sayfası</span></div></div></button>`;}).join("")}</div></section>`;}
+function firmHTML(){const f=firmByName(S.firm);const d=f.d,b=f.b,r=ranked(),pos=r.indexOf(b)+1;
+  const web=safeUrl(d.website);const soc=NETS.filter(([k])=>safeUrl(d.social?.[k]));
+  const fairs=(d.fairs||[]).slice().sort((x,y)=>(parseInt(y.year)||0)-(parseInt(x.year)||0));const stores=d.stores||[];
+  const posts=(d.posts||[]).slice().sort((x,y)=>String(y.date||"").localeCompare(String(x.date||"")));
+  const vids=(d.videos||[]).filter(x=>safeUrl(x.url)).sort((x,y)=>(parseInt(y.year)||0)-(parseInt(x.year)||0));const fv=vids.filter(x=>x.kind!=="brand"),bv=vids.filter(x=>x.kind==="brand");
+  const renders=S.media.filter(m=>m.kind==="render"&&m.brand===b.name&&m.asset&&villas().includes(m.villa)).sort(byCover).slice(0,8);
+  const meta=[d.hq,d.founded?"Kuruluş "+d.founded:"",d.storeCount||""].filter(Boolean).join(" · ");
+  return `<div class="crumbs"><nav class="crumb"><button data-goview="firms">Firmalar</button><span>/</span><span>${esc(f.name)}</span></nav></div>
+  <section class="fhero"><div class="fh-logo">${firmLogo(f,"flogo xl")}</div>
+   <div class="fh-txt"><span class="eyebrow">${dot(b.name)}${esc(b.name)} paketi · ${pos}. sırada (${r.length} paket)</span><h1>${esc(f.name)}</h1>${meta?`<p class="muted">${esc(meta)}</p>`:""}
+    <div class="fh-act">${web?`<a class="btn" href="${esc(web)}" target="_blank" rel="noopener">${esc(hostOf(web))} ↗</a>`:""}${soc.map(([k,l])=>`<a class="btn sm" href="${esc(safeUrl(d.social[k]))}" target="_blank" rel="noopener">${l}</a>`).join("")}</div></div>
+   <div class="fh-price"><small>${villas().length} villa toplamı · net, KDV hariç</small><b class="num">${money(total3(b))}${cur()}</b>
+    <div class="fh-v">${villas().map(v=>`<button data-open="${esc(v)}|${esc(b.name)}"><span>${esc(v)}</span><b class="num">${money(net(b,v))} ${S.cur}</b></button>`).join("")}</div></div></section>
+  <section class="block"><div class="head"><div><h2>Hakkımızda</h2></div></div>${d.about?`<div class="fabout">${esc(d.about).split(/\n{2,}/).map(x=>`<p>${x.replace(/\n/g,"<br>")}</p>`).join("")}</div>`:fEmpty("Hakkımızda metni henüz eklenmedi.")}</section>
+  <div class="fcols">
+   <section class="block"><div class="head"><div><h2>Katıldığı fuarlar</h2></div></div>${fairs.length?`<ol class="ftl">${fairs.map(x=>`<li><span class="yr">${esc(x.year||"–")}</span><div><b>${esc(x.name||"")}</b>${x.city?`<span class="muted">${esc(x.city)}</span>`:""}</div></li>`).join("")}</ol>`:fEmpty("Fuar bilgisi henüz eklenmedi.")}</section>
+   <section class="block"><div class="head"><div><h2>Mağazalar</h2></div>${d.storeCount?`<p>${esc(d.storeCount)}</p>`:""}</div>${stores.length?`<div class="fstores">${stores.map(x=>{const q=[x.name,x.address,x.city,x.country].filter(Boolean).join(", ");const u=safeUrl(x.url);
+     const si=x.img?(/^https?:/i.test(x.img)?safeUrl(x.img):blob(x.img)):"";return `<div class="fstore${si?" wimg":""}">${si?`<img src="${esc(si)}" alt="${esc(x.name||"Mağaza")}" loading="lazy">`:""}<div class="fst"><b>${esc(x.name||x.city||"Mağaza")}</b><span class="muted">${esc([x.address,x.city,x.country].filter(Boolean).join(", "))}</span><span class="fs-l">${ext("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q),"Haritada aç ↗")}${u?ext(u,"Mağaza sayfası ↗"):""}</span></div></div>`;}).join("")}</div>`:fEmpty("Mağaza bilgisi henüz eklenmedi.")}</section></div>
+  <section class="block"><div class="head"><div><h2>Son paylaşımlar</h2></div>${soc.length?`<p>${soc.map(([k,l])=>ext(safeUrl(d.social[k]),l)).join(" · ")}</p>`:""}</div>
+   ${posts.length?`<div class="${posts.some(x=>igCode(x.url)&&!x.img)?"figgrid":"fposts"}">${posts.map(postCard).join("")}</div>`
+     :igProfile(d.social?.instagram)?`<div class="igprof"><iframe src="https://www.instagram.com/${igProfile(d.social.instagram)}/embed/" loading="lazy" title="${esc(f.name)} Instagram" scrolling="no"></iframe>${ext(safeUrl(d.social.instagram),"@"+esc(igProfile(d.social.instagram))+" hesabını Instagram'da aç ↗")}</div>`
+     :fEmpty(soc.length?"Henüz paylaşım eklenmedi. Güncel paylaşımlar için firmanın hesaplarına bakabilirsiniz.":"Paylaşım ve sosyal medya hesabı henüz eklenmedi.")}</section>
+  ${vids.length?`<section class="block"><div class="head"><div><h2>Fuar ve tanıtım videoları</h2></div><p>Videolar tıklanınca oynar.</p></div>
+   ${fv.length?`<div class="fvgrid">${fv.map(videoCard).join("")}</div>`:""}${bv.length?`${fv.length?`<span class="eyebrow">Tanıtım ve showroom</span>`:""}<div class="fvgrid">${bv.map(videoCard).join("")}</div>`:""}</section>`:""}
+  ${renders.length?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(b.name)} paketi</span><h2>Bu projedeki tasarımları</h2></div></div><div class="frend">${renders.map(m=>`<button data-open="${esc(m.villa)}|${esc(b.name)}"><img src="${thumb(m)}" alt="" loading="lazy"><span>${esc([m.villa,m.room||m.title].filter(Boolean).join(" · "))}</span></button>`).join("")}</div></section>`:""}
+  ${(d.sources||[]).filter(safeUrl).length?`<p class="note">Kaynaklar: ${(d.sources||[]).filter(safeUrl).slice(0,6).map(u=>ext(u,esc(hostOf(u)))).join(" · ")}</p>`:""}`;}
+function bindFirm(){const m=$("#main");
+  m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
+  m.querySelectorAll("[data-goview]").forEach(b=>b.onclick=()=>setView(b.dataset.goview));
+  m.querySelectorAll("[data-play]").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src=b.dataset.play;f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;f.title="Video";const box=b.parentElement;box.innerHTML="";box.appendChild(f);});}
+$("#main").addEventListener("click",e=>{const b=e.target.closest("[data-firm]");if(!b||S.view==="admin")return;e.preventDefault();e.stopPropagation();openFirm(b.dataset.firm);});
+
+/* firm editor (admin) */
+function adminFirms(){const fs=firmList();if(!fs.length)return `<div class="empty"><strong>Önce maliyet verisini çekin</strong><span>Firmalar paket verisinden gelir.</span></div>`;
+  if(!fs.find(f=>f.name===S.admFirm))S.admFirm=fs[0].name;const f=fs.find(x=>x.name===S.admFirm),d=f.d;
+  const lines=(arr,keys)=>(arr||[]).map(x=>keys.map(k=>x[k]||"").join(" | ").replace(/( \| )+$/,"")).join("\n");
+  return `<div class="villa-grid"><div class="card"><label class="f">Firma<select id="afSel">${fs.map(x=>`<option ${x.name===f.name?"selected":""}>${esc(x.name)}</option>`).join("")}</select></label>
+    <div class="aflogo">${firmLogo(f,"flogo xl")}<div style="display:grid;gap:8px"><label class="btn sm">Logo yükle<input type="file" id="afLogo" accept="image/*" hidden></label>${d.logo?`<button class="btn sm" id="afLogoX">Logoyu kaldır</button>`:""}</div></div>
+    <p class="note">${esc(f.b.name)} paketi. Satır biçimleri · fuar: <b>Yıl | Fuar adı | Şehir</b> · mağaza: <b>Ad | Şehir | Ülke | Adres | Bağlantı | Görsel bağlantısı</b> · video: <b>Bağlantı | Başlık | Fuar | Yıl | fair/brand</b>. Her satır bir kayıt.</p>
+    <button class="btn sm" data-firm-view="${esc(f.name)}">Firma sayfasını aç</button></div>
+   <div class="card form af">
+    <label class="f">Web sitesi<input id="afWeb" value="${esc(d.website||"")}" placeholder="https://"></label>
+    <label class="f">Merkez<input id="afHq" value="${esc(d.hq||"")}"></label>
+    <label class="f">Kuruluş yılı<input id="afFd" value="${esc(d.founded||"")}"></label>
+    <label class="f">Mağaza sayısı<input id="afSc" value="${esc(d.storeCount||"")}"></label>
+    <label class="f" style="grid-column:1/-1">Hakkımızda<textarea id="afAbout" rows="6">${esc(d.about||"")}</textarea></label>
+    <label class="f" style="grid-column:1/-1">Katıldığı fuarlar<textarea id="afFairs" rows="5">${esc(lines(d.fairs,["year","name","city"]))}</textarea></label>
+    <label class="f" style="grid-column:1/-1">Mağazalar<textarea id="afStores" rows="6">${esc(lines(d.stores,["name","city","country","address","url","img"]))}</textarea></label>
+    <label class="f" style="grid-column:1/-1">Videolar (YouTube, Vimeo, Instagram)<textarea id="afVids" rows="4">${esc(lines(d.videos,["url","title","fair","year","kind"]))}</textarea></label>
+    ${NETS.map(([k,l])=>`<label class="f">${l}<input data-soc="${k}" value="${esc(d.social?.[k]||"")}" placeholder="https://"></label>`).join("")}
+    <div style="grid-column:1/-1;display:flex;justify-content:flex-end"><button class="btn primary" id="afSave">Kaydet</button></div></div></div>
+   <div class="card" style="margin-top:16px"><span class="eyebrow">Son paylaşımlar · ${esc(f.name)}</span>
+    <div class="afposts">${(d.posts||[]).map((x,i)=>`<div class="afp">${x.img?`<img src="${esc(blob(x.img))}" alt="">`:`<span class="mono">${esc(netLabel(x.network)||"–")}</span>`}<div><b>${esc([netLabel(x.network),fmtDate(x.date)].filter(Boolean).join(" · ")||"Paylaşım")}</b><span class="muted">${esc(clip(x.caption||x.url,100))}</span></div><button class="btn sm" data-delpost="${i}">Sil</button></div>`).join("")||`<span class="muted">Henüz paylaşım yok.</span>`}</div>
+    <div class="form af" style="margin-top:14px"><label class="f">Ağ<select id="apNet">${NETS.map(([k,l])=>`<option value="${k}">${l}</option>`).join("")}</select></label><label class="f">Tarih<input type="date" id="apDate"></label>
+     <label class="f" style="grid-column:1/-1">Paylaşım bağlantısı<input id="apUrl" placeholder="https://www.instagram.com/p/…"></label>
+     <label class="f" style="grid-column:1/-1">Açıklama<textarea id="apCap" rows="2"></textarea></label>
+     <label class="f">Görsel<input type="file" id="apImg" accept="image/*"></label>
+     <div style="display:flex;align-items:end;justify-content:flex-end"><button class="btn" id="apAdd">Paylaşımı ekle</button></div></div></div>`;}
+function bindFirmsAdmin(m){const f=firmByName(S.admFirm);if(!f)return;const key=slug(f.name);const doc=S.db.doc("firms/"+key);
+  const base=()=>({...(S.firms[key]||{}),name:f.name});delete base().id;
+  const val=sel=>(m.querySelector(sel)?.value||"").trim();
+  const save=async(patch,msg)=>{const o={...base(),...patch,updatedAt:new Date().toISOString()};delete o.id;try{await doc.set(o);toast(msg||"Kaydedildi");}catch(e){toast("Kaydedilemedi");}};
+  const parse=(t,keys)=>t.split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const p=l.split("|").map(x=>x.trim());const o={};keys.forEach((k,i)=>{if(p[i])o[k]=p[i];});return o;});
+  m.querySelector("#afSel").onchange=e=>{S.admFirm=e.target.value;render();};
+  m.querySelector("[data-firm-view]")?.addEventListener("click",()=>openFirm(f.name));
+  m.querySelector("#afSave").onclick=()=>{const social={};m.querySelectorAll("[data-soc]").forEach(i=>{const u=i.value.trim();if(u)social[i.dataset.soc]=u;});
+    save({website:val("#afWeb"),hq:val("#afHq"),founded:val("#afFd"),storeCount:val("#afSc"),about:m.querySelector("#afAbout").value.trim(),
+      fairs:parse(m.querySelector("#afFairs").value,["year","name","city"]),stores:parse(m.querySelector("#afStores").value,["name","city","country","address","url","img"]),videos:parse(m.querySelector("#afVids").value,["url","title","fair","year","kind"]),social},"Firma bilgileri kaydedildi");};
+  const upImg=async(file,maxW)=>{let bl=file;if(file.type!=="image/svg+xml"&&!(file.type==="image/png"&&file.size<1.5e6)){const {img,url}=await loadImg(file);bl=await encodeImg(img,maxW,.86);URL.revokeObjectURL(url);}
+    return (await S.assets.upload(bl,{type:bl.type||"image/png"})).id;};
+  m.querySelector("#afLogo").onchange=async e=>{const file=e.target.files[0];if(!file)return;S.busy=true;try{toast("Logo yükleniyor…");await save({logo:await upImg(file,800)},"Logo güncellendi");}catch(er){toast(errMsg(er));}finally{S.busy=false;render();}};
+  m.querySelector("#afLogoX")?.addEventListener("click",()=>save({logo:null},"Logo kaldırıldı"));
+  m.querySelector("#apAdd").onclick=async()=>{const url=val("#apUrl"),cap=m.querySelector("#apCap").value.trim(),file=m.querySelector("#apImg").files[0];
+    if(!url&&!file){toast("Bağlantı ya da görsel ekleyin");return;}S.busy=true;
+    try{const img=file?await upImg(file,1400):null;await save({posts:[...(base().posts||[]),{url,caption:cap,date:val("#apDate"),network:m.querySelector("#apNet").value,img}]},"Paylaşım eklendi");}catch(er){toast(errMsg(er));}finally{S.busy=false;render();}};
+  m.querySelectorAll("[data-delpost]").forEach(b=>b.onclick=()=>save({posts:(base().posts||[]).filter((_,i)=>i!==+b.dataset.delpost)},"Paylaşım silindi"));}
 
 /* ---------- presentation deck ---------- */
 function openDeckSetup(){
@@ -1249,7 +1502,7 @@ function pHeadV(c,villa,section){ptx(c,"Villa tipi",PM,170,{size:19,color:PDF_MU
 function pHead(c,eyebrow,title){ptx(c,eyebrow,PM,170,{size:19,color:PDF_MUTED,weight:500});ptx(c,title,PM,240,{size:58,d:true});}
 const pdfDate=()=>new Date().toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"});
 function pdfRenders(v,pkgs){const seen=new Set();const rank=n=>rankedFor(v).findIndex(b=>b.name===n);
-  return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.asset&&(!m.brand||pkgs.includes(m.brand))).sort(byOrder).filter(m=>{const k1=m.asset,k2=[m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return false;seen.add(k1);seen.add(k2);return true;})
+  return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.asset&&(!m.brand||pkgs.includes(m.brand))&&!(!m.brand&&pkgs.some(p=>hiddenFor(m,p)))).sort(byOrder).filter(m=>{const k1=m.asset,k2=[m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return false;seen.add(k1);seen.add(k2);return true;})
     .sort((a,b)=>floorIdx(a.floor)-floorIdx(b.floor)||String(a.room).localeCompare(String(b.room),"tr")||rank(b.brand)-rank(a.brand));}
 function pdfRoomItems(pkg,v,room,floor){const all=boqItems(pkg,v).map(it=>({...it,...labelItem(it)})).filter(it=>it.room===room);
   const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort((a,b)=>(+b.v||0)-(+a.v||0));}
@@ -1409,8 +1662,8 @@ function openPano(id){closeOv();const first=S.media.find(m=>m.id===id);if(!first
 function adminHTML(){
   const t=S.admin;
   return `<section class="block"><div class="block-head"><div><span class="eyebrow">Yönetim</span><h2>Görseller ve veriler</h2></div></div>
-   <div class="subtabs">${[["media","Medya yükle"],["pins","Plan üzerinde odalar"],["data","Maliyet verileri"],["info","Proje ve villa bilgileri"]].map(([k,l])=>`<button class="subtab" data-at="${k}" aria-current="${t===k}">${l}</button>`).join("")}</div>
-   ${t==="media"?adminMedia():t==="pins"?adminPins():t==="data"?adminData():adminInfo()}</section>`;}
+   <div class="subtabs">${[["media","Medya yükle"],["pins","Plan üzerinde odalar"],["data","Maliyet verileri"],["firms","Firmalar"],["info","Proje ve villa bilgileri"]].map(([k,l])=>`<button class="subtab" data-at="${k}" aria-current="${t===k}">${l}</button>`).join("")}</div>
+   ${t==="media"?adminMedia():t==="pins"?adminPins():t==="data"?adminData():t==="firms"?adminFirms():adminInfo()}</section>`;}
 function optsP(arr,sel,empty){return (empty!=null?`<option value="">${empty}</option>`:"")+arr.map(x=>`<option value="${esc(x)}" ${x===sel?"selected":""}>${esc(pl(x))}</option>`).join("");}
 function opts(arr,sel,empty){return (empty!=null?`<option value="">${empty}</option>`:"")+arr.map(x=>`<option value="${esc(x)}" ${x===sel?"selected":""}>${esc(x)}</option>`).join("");}
 function roomList(){const s=new Set(S.media.flatMap(m=>[m.room,...(m.pins||[]).map(p=>p.room)]).filter(Boolean));
@@ -1419,7 +1672,7 @@ function roomList(){const s=new Set(S.media.flatMap(m=>[m.room,...(m.pins||[]).m
 function roomTree(villa,pkg){ // floor → room → {n kalem, v tutar, img görsel}; rooms come from the item list (BoQ) and uploaded media
   const fs=floorsOnly(),tree=new Map(fs.map(f=>[f,new Map()]));const pk=(pkg&&S.boq[pkg])?pkg:(ranked()[0]?.name);
   boqItems(pk,villa).forEach(it=>{if(!tree.has(it.f))return;const r=labelItem(it).room;const o=tree.get(it.f).get(r)||{n:0,v:0,img:0};o.n++;o.v+=(+it.v||0);tree.get(it.f).set(r,o);});
-  S.media.forEach(m=>{if(m.villa!==villa||!m.room||!tree.has(m.floor))return;const t=tree.get(m.floor);const o=t.get(m.room)||{n:0,v:0,img:0};if(m.kind!=="plan"&&(!pkg||!m.brand||m.brand===pkg))o.img++;t.set(m.room,o);});
+  S.media.forEach(m=>{if(m.villa!==villa||!m.room||!tree.has(m.floor))return;const t=tree.get(m.floor);const o=t.get(m.room)||{n:0,v:0,img:0};if(m.kind!=="plan"&&pkgMatch(m,pkg))o.img++;t.set(m.room,o);});
   return {tree,pk};}
 function roomFloor(villa,room){for(const [f,t] of roomTree(villa,null).tree)if(t.has(room))return f;return null;}
 function roomOptionsHTML(villa,floor,pkg,current){
@@ -1589,7 +1842,7 @@ function adminInfo(){
    <div><button class="btn primary" id="saveInfo" ${S.cfg?"":"disabled"}>Kaydet</button></div>`;}
 function bindAdmin(){const m=$("#main");
   m.querySelectorAll("[data-at]").forEach(b=>b.onclick=()=>{S.admin=b.dataset.at;S.pendingPin=null;render();});
-  if(S.admin==="media")bindMedia(m);else if(S.admin==="pins")bindPins(m);else if(S.admin==="data")bindData(m);else bindInfo(m);}
+  if(S.admin==="media")bindMedia(m);else if(S.admin==="pins")bindPins(m);else if(S.admin==="data")bindData(m);else if(S.admin==="firms")bindFirmsAdmin(m);else bindInfo(m);}
 
 function loadImg(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file);const i=new Image();i.onload=()=>res({img:i,url:u});i.onerror=()=>{URL.revokeObjectURL(u);rej(new Error("Görsel okunamadı"));};i.src=u;});}
 function encodeImg(img,maxW,q){const s=Math.min(1,maxW/img.naturalWidth);const c=document.createElement("canvas");c.width=Math.round(img.naturalWidth*s);c.height=Math.round(img.naturalHeight*s);
@@ -1812,7 +2065,7 @@ function openUnlock(){closeOv();const o=$("#overlay");document.body.style.overfl
 (async function boot(){
   const claude=window.claude;
   if(!claude||!claude.use){ // standalone build (GitHub Pages / local): data comes from data/data.js
-    const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));S.boq=D.boq||{};
+    const D=window.HM_DATA;if(D){S.cfg=D.config||null;S.media=(D.media||[]).map(m=>({...m}));S.boq=D.boq||{};S.firms=D.firms||{};S.itemImgs=D.itemImages||{};
       if(D.enc){S.enc=D.enc;S.mask={cfg:S.cfg,boq:S.boq};S.locked=true;let pw=null;try{pw=sessionStorage.getItem("hm_pw");}catch(e){}
         if(pw)unlockPrices(pw,true).catch(()=>{});}}
     S.dbReady=true;renderLock();render();return;}
@@ -1823,6 +2076,8 @@ function openUnlock(){closeOv();const o=$("#overlay");document.body.style.overfl
   if(!db){S.dbReady=true;render();return;}
   db.doc("config/main").onSnapshot(s=>{S.cfg=s.exists?s.data():null;S.dbReady=true;scheduleRender();},()=>{S.dbReady=true;render();});
   db.collection("media").onSnapshot(q=>{S.media=q.docs.map(d=>({id:d.id,...d.data()}));scheduleRender();},()=>{});
+  db.collection("itemImages").onSnapshot(q=>{const o={};q.docs.forEach(d=>{o[d.id]=d.data();});S.itemImgs=o;scheduleRender();},()=>{});
+  db.collection("firms").onSnapshot(q=>{const o={};q.docs.forEach(d=>{o[d.id]={id:d.id,...d.data()};});S.firms=o;scheduleRender();},()=>{});
   db.collection("boq").onSnapshot(q=>{const b={},ids={};q.docs.forEach(d=>{const x=d.data();if(x.package){b[x.package]=x.villas||{};ids[x.package]=d.id;}});S.boq=b;S.boqDocs=ids;scheduleRender();},()=>{});
   if(S.canEdit)db.doc("private/keys").onSnapshot(s=>{if(s.exists){const d=s.data();S.keys={bySource:{...(d.bySource||{})},sheetId:d.sheetId||"",driveFolder:d.driveFolder||""};}},()=>{});
 })();
