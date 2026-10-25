@@ -786,7 +786,7 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 .dits2{grid-column:1/-1;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 24px;border-top:1px solid var(--line)}
 .dits2 li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 .dits2 .nm{display:grid;min-width:0}.dits2 small{font-size:11.5px;color:var(--muted)}
-.ppin.on{background:#B4442E;z-index:4;outline:2px solid #fff}
+.ppin.on,.ppin.on.has,.ppin.on.oosp{background:var(--accent)!important;z-index:4;outline:2px solid #fff;box-shadow:0 0 0 4px rgba(65,96,79,.35),0 8px 20px -6px rgba(0,0,0,.5)}
 .plogo{height:16px;width:auto;max-width:60px;object-fit:contain;vertical-align:middle;margin-right:2px}
 .vgrid{grid-template-columns:minmax(0,2.4fr) minmax(250px,300px)}
 .buy{gap:12px}.buy h1{font-size:clamp(32px,3.2vw,42px)}
@@ -818,7 +818,7 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610252313"></script>
+<script src="data/data.js?v=202610252316"></script>
 <script>
 (function(){
 "use strict";
@@ -948,7 +948,9 @@ function renderTabs(){renderBrandLogos();
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-view]");if(!b)return;setView(b.dataset.view);});
 $("#home").onclick=()=>setView("villas");
 function setView(v){S.view=v;closeSheet();render();window.scrollTo({top:0,behavior:"instant"});}
-function openVilla(v,pkg){S.froom=null;S.ffloor=null;S.villa=v;S.pkg=pkg||rankedFor(v)[0]?.name;S.room=null;S.gi=0;S.floor=floorsOnly()[0];setView("villa");}
+const DEF_ROOM=["Salon","Zemin kat"];
+function defaultFocus(v){const pk=S.pkg||rankedFor(v)[0]?.name;const has=roomAll(pk,v).has(DEF_ROOM[0])||S.media.some(m=>m.villa===v&&m.room===DEF_ROOM[0]);if(has){S.froom=DEF_ROOM[0];S.ffloor=DEF_ROOM[1];}else{S.froom=null;S.ffloor=null;}}
+function openVilla(v,pkg){S.froom=null;S.ffloor=null;S.villa=v;S.pkg=pkg||rankedFor(v)[0]?.name;defaultFocus(v);S.pkg=pkg||rankedFor(v)[0]?.name;S.room=null;S.gi=0;S.floor=floorsOnly()[0];setView("villa");}
 const setCur=c=>{S.cur=c;try{localStorage.setItem("hm_cur2",c)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});if($("#sheet").children.length){if(S.room)openRoom(S.room,true);else if(S.furnTab)openFurn(S.furnTab);}};
 $("#curSAR").onclick=()=>setCur("SAR");$("#curUSD").onclick=()=>setCur("USD");
 $("#startDeck").onclick=()=>openDeckSetup();
@@ -1120,7 +1122,7 @@ function planRoomsHTML(v,b,plan,L){const ra=roomAll(b.name,v);const pins=plan.pi
   const pinned=new Set(pins.map(p=>p.room));const off=[...ra.entries()].filter(([r,o])=>!pinned.has(r)&&o.v>0).sort((a,c)=>c[1].v-a[1].v);
   return `<section class="block pplan" id="plan"><div class="head"><div><span class="eyebrow">${esc(v)} · ${esc(pl(b.name))} paketi</span><h2>Kat planı üzerinden odalar</h2></div><p>Odaya tıklayın: görselleri, 360° panoraması ve ürün listesi açılır. Paket değişince oda fiyatları ve toplam plan üzerinde güncellenir.</p></div>
    <div class="pp-stage"><div class="pp-inner"><img src="${blob(plan.asset)}" alt="${esc(v)} kat planı">
-    ${pins.map(p=>{const pv=pinValue(p,b.name,v,ra);const pi=pinItems(p,b.name,v);const no=pi.filter(isOOS).length;const allO=no&&no===pi.length;return `<button class="ppin${hasImg(p.room)?" has":""}${allO?" oosp":no?" oosh":""}"${no?` title="${allO?"Kapsam dışı":no+" kalem kapsam dışı"}"`:""}${S.froom===p.room&&(!S.ffloor||!p.floor||S.ffloor===p.floor)?" on":""}" style="left:${p.x*100}%;top:${p.y*100}%" data-proom="${esc(p.room)}" data-pfloor="${esc(p.floor||"")}" aria-label="${esc(p.room)}${p.floor?" · "+esc(p.floor):""}${pv!=null?" · "+money(pv)+" "+S.cur:""}"><span>${esc(p.room)}</span><b>${pv!=null?(pv?money(pv)+`<i class="pcur">${S.cur==="USD"?"$":esc(S.cur)}</i>`:"Kapsam dışı"):"–"}</b>${no&&!allO?`<em class="oosdot" aria-label="${no} kalem kapsam dışı">${no}</em>`:""}</button>`;}).join("")}</div>
+    ${pins.map(p=>{const pv=pinValue(p,b.name,v,ra);const pi=pinItems(p,b.name,v);const no=pi.filter(isOOS).length;const allO=no&&no===pi.length;return `<button class="ppin${hasImg(p.room)?" has":""}${allO?" oosp":no?" oosh":""}${S.froom===p.room&&(!S.ffloor||!p.floor||S.ffloor===p.floor)?" on":""}"${no?` title="${allO?"Kapsam dışı":no+" kalem kapsam dışı"}"`:""} style="left:${p.x*100}%;top:${p.y*100}%" data-proom="${esc(p.room)}" data-pfloor="${esc(p.floor||"")}" aria-label="${esc(p.room)}${p.floor?" · "+esc(p.floor):""}${pv!=null?" · "+money(pv)+" "+S.cur:""}"><span>${esc(p.room)}</span><b>${pv!=null?(pv?money(pv)+`<i class="pcur">${S.cur==="USD"?"$":esc(S.cur)}</i>`:"Kapsam dışı"):"–"}</b>${no&&!allO?`<em class="oosdot" aria-label="${no} kalem kapsam dışı">${no}</em>`:""}</button>`;}).join("")}</div>
     <div class="pp-total"><span class="eyebrow">${dot(b.name)}${esc(pl(b.name))} · toplam</span><b class="num">${money(L.net)}${cur()}</b><small>net, KDV hariç · KDV dahil ${money(L.gross)} ${S.cur}</small><ul class="pp-fl">${floorsOnly().map(x=>`<li><span>${esc(x)}</span><b class="num">${money(+b.values?.[v]?.[sections().indexOf(x)]||0)} ${S.cur}</b></li>`).join("")}</ul></div></div>
    <div class="pp-legend"><span><i style="background:var(--accent)"></i>Görseli ya da 360° panoraması olan oda</span><span><i style="background:var(--fg)"></i>Yalnızca ürün listesi</span>${boqItems(b.name,v).some(isOOS)?`<span>${OOS_BADGE} Firmanın teklifinde olmayan oda / kalem (kırmızı rozet: kapsam dışı kalem sayısı)</span>`:""}<span>Oda tutarları mobilya bedelidir (navlun, montaj, KDV hariç).</span>
     ${off.length?`<span>Planda işaretli olmayanlar: ${off.map(([r,o])=>`<button class="flink" data-proom="${esc(r)}">${esc(r)} ${money(o.v)}</button>`).join(" · ")}</span>`:""}</div></section>`;}
@@ -1645,7 +1647,9 @@ function pdfRenders(v,pkgs){const seen=new Set();const rank=n=>rankedFor(v).find
   return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.asset&&(!m.brand||pkgs.includes(m.brand))&&!(!m.brand&&pkgs.some(p=>hiddenFor(m,p)))).sort(byOrder).filter(m=>{const k1=m.asset,k2=[m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return false;seen.add(k1);seen.add(k2);return true;})
     .sort((a,b)=>floorIdx(a.floor)-floorIdx(b.floor)||String(a.room).localeCompare(String(b.room),"tr")||rank(b.brand)-rank(a.brand));}
 function pdfRoomItems(pkg,v,room,floor){const all=boqItems(pkg,v).map(it=>({...it,...labelItem(it)})).filter(it=>it.room===room);
-  const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort((a,b)=>(+b.v||0)-(+a.v||0));}
+  const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort(byCode);}
+const codeKey=c=>String(c||"").replace(/\d+/g,d=>d.padStart(5,"0"));
+const byCode=(a,b)=>codeKey(a.c).localeCompare(codeKey(b.c))||String(a.n||"").localeCompare(String(b.n||""));
 function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);const pkgs=opt.pkg?[opt.pkg]:pkgsAll;const vs=opt.villas.length?opt.villas:villas();
   // cover
   P.push({title:"",cover:true,draw:async(c,L)=>{const top=pkgByName(opt.pkg)||topPkgWithImg(null);const im=await pimg(bestSrc(coverImg(null,top?.name)));c.fillStyle="#fff";c.fillRect(0,0,PW,PH);
