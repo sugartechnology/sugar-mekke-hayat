@@ -1111,12 +1111,9 @@ function villaHTML(){
      <div class="pklist" role="radiogroup" aria-label="Mobilya paketi">${r.map((x,i)=>{const n=net(x,v);
        return `<button class="pkrow" role="radio" data-pkg="${esc(x.name)}" aria-pressed="${x===b}" aria-checked="${x===b}"><span class="pkl">${firmLogoSm(x)}</span><span class="n">${esc(firmName(x))}<small class="tier">${esc(x.name)}${i===0?" · en uygun":""}</small></span><span class="p">${money(n)}${i?`<small>+${money(n-net(lo,v))}</small>`:""}</span></button>`;}).join("")}</div>
      <div class="total"><span class="eyebrow">${esc(pl(b.name))} paketi · KDV dahil</span><b class="num">${money(L.gross)}${cur()}</b><span class="sub">Net ${money(L.net)} · KDV ${money(L.vat)}</span><span class="sub">${fLink(b,esc(firmName(b))+" firma profili →")}</span></div>
-     <div class="actions"><button class="btn primary" data-jump="rooms">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button><button class="btn" data-pcgo="">Paketleri karşılaştır</button></div>
+     <div class="actions"><button class="btn primary" data-jump="plan">Odaları gez</button><button class="btn" data-jump="cost">Fiyat detayı</button><button class="btn" data-pcgo="">Paketleri karşılaştır</button></div>
     </aside></div></section>
   ${plan?planRoomsHTML(v,b,plan,L):""}
-  <section class="block" id="rooms"><div class="head"><div><span class="eyebrow">${esc(pl(b.name))} paketi ile</span><h2>${plan?"Kat kat odalar":"Odalar"}</h2></div>
-     <div class="ftabs">${floorsOnly().map(x=>`<button data-f="${esc(x)}" aria-pressed="${x===f}">${esc(x)}<span>${big(+b.values?.[v]?.[sections().indexOf(x)]||0)} ${esc(S.cur)}</span></button>`).join("")}</div></div>
-   ${roomsHTML(v,b,f)}</section>
   ${panos.length?`<section class="block"><div class="head"><div><span class="eyebrow">İçinde gezinin</span><h2>360° panoramalar</h2></div></div>
    <div class="rgrid">${panos.map(m=>`<button class="rc" data-pano="${m.id}"><div class="ph"><img src="${thumb(m)}" alt="" loading="lazy"><span class="b360">360°</span></div><div class="bd"><span class="t">${esc(m.title||m.room||"Panorama")}</span><span class="s"><span>${esc(m.floor||"")}</span><b>Gez →</b></span></div></button>`).join("")}</div></section>`:""}
   ${pkgCompareHTML(v)}
