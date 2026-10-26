@@ -794,6 +794,10 @@ td.oosc{text-align:right}tr:has(td.oosc) td{color:var(--muted)}li.isoos .nm{colo
 .bsplit .bst{color:var(--accent);font-weight:700;font-size:16px;line-height:1}.bsplit .bn{display:inline-flex;align-items:center;gap:6px}.bsplit .bn small{color:var(--muted);font-size:12px}.bsplit b{font-weight:600}.bsplit .muted{text-align:right;font-size:12px}
 .cplus{display:inline-grid;place-items:center;width:18px;height:18px;margin-right:6px;border:1px solid var(--accent);color:var(--accent);background:var(--surface);border-radius:50%;font:600 13px/1 var(--body);cursor:pointer;vertical-align:-3px;padding:0}
 td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent);color:#fff}tr.cmsplit td{background:var(--surface-2);padding:10px 16px 14px!important;text-align:left!important}.cmbox{display:grid;gap:6px;max-width:680px}.cmbox .bsplit{padding-left:0}
+.crow.crk{grid-template-columns:minmax(200px,260px) 1fr auto!important;align-items:center}.crow.crk[data-open]{cursor:pointer}.crow.crk[data-open]:hover{background:var(--surface-2)}
+@media (max-width:560px){.crow.crk{grid-template-columns:1fr auto!important}.crow.crk .cbar{grid-column:1/-1;grid-row:2}.crow .cv{min-width:0}}
+.crow .rk{display:inline-block;width:22px;font-family:var(--display);font-size:20px;color:var(--muted)}
+.crow .cv{display:grid;justify-items:end;gap:1px;min-width:170px;text-align:right}.crow .cv b{font-size:17px}.crow .cv em{font-style:normal;font-size:12px;font-weight:600}.crow .cv em.ok{color:var(--good)}.crow .cv em.up{color:var(--bad)}.crow .cv small{font-size:11.5px;color:var(--muted)}
 .pp-fl{list-style:none;margin:8px 0 0;padding:8px 0 0;border-top:1px solid var(--line);display:grid;gap:3px}.pp-fl li{display:flex;justify-content:space-between;gap:16px;font-size:12.5px}.pp-fl li b{font-family:inherit;font-size:12.5px;font-weight:600;line-height:1.3}
 .pp-total .eyebrow{display:flex;align-items:center;gap:6px}.pp-total b{font-family:var(--display);font-size:30px;font-weight:400;line-height:1.05}.pp-total small{font-size:12px;color:var(--muted)}
 .pp-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);align-items:center}.pp-legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
@@ -837,7 +841,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610261949"></script>
+<script src="data/data.js?v=202610262030"></script>
 <script>
 (function(){
 "use strict";
@@ -1339,9 +1343,9 @@ function compositionHTML(sv){sv=sv||cmpScope();
       Object.keys(tx).forEach(k=>{const kk=TK.includes(k)?k:"_other";o["x_"+kk]=(o["x_"+kk]||0)+(tx[k]||0);});o._fr+=L.freight;o._as+=L.assembly+L.insurance;});
     o.tot=SEG.reduce((a,[k])=>a+o[k],0);o.xt=TK.reduce((a,k)=>a+(o["x_"+k]||0),0)+(o.x__other||0);return {b,o};});
   const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const xsegs=SEG.filter(([k])=>rows.some(r=>(r.o["x_"+k]||0)>0.5));const hasOos=rows.some(r=>r.o._oos>0.5);
-  return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Maliyet kırılımı: mobilya, tekstil, cihazlar ve akıllı ev</h2></div><p>Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
+  return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend">${segs.map(([k,l,c])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>
-   ${rows.map(({b,o})=>`<div class="crow"><span class="nm">${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><b class="num">${money(o.tot)}</b></div>`).join("")}</div>
+   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l.split(" (")[0]}</th>`).join("")}<th>Toplam</th>${hasOos?`<th class="xcol">Kapsam dışı<small>referans fiyat · dahil değil</small></th>`:""}${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
     ${rows.map(({b,o})=>{const op=S.cmpOpen&&S.cmpOpen.p===b.name?S.cmpOpen.k:null;const ncol=1+segs.length+1+(hasOos?1:0)+xsegs.length;
       const cellSplit=k=>compSplit(b.name,vs,k);
@@ -1354,7 +1358,6 @@ function compositionHTML(sv){sv=sv||cmpScope();
    ${xsegs.length?`<p class="note">Elektrikli ev aletleri, cihaz montajı ve akıllı ev sistemi kalemleri BoQ'da ayrı listelenir ve paket fiyatına dahil değildir. Villa başına yaklaşık ${money(rows[0].o.xt/vs.length)} ${S.cur}; tüm paketlerde aynı cihaz listesi.</p>`:""}</section>`;}
 function compareHTML(){const v=cmpScope();
   return `<div class="cmp-scope"><span class="eyebrow">Villa tipi</span><div class="seg" role="tablist">${villas().map(x=>`<button data-cv="${esc(x)}" aria-pressed="${v===x}">${esc(x)}</button>`).join("")}<button data-cv="${ALLV}" aria-pressed="${v===ALLV}">${villas().length} villa toplamı</button></div></div>
-  <section class="block"><div class="head"><div><span class="eyebrow">Paket sıralaması</span><h2>${esc(scopeName(v))}</h2></div><p>${S.cur} · net, KDV hariç. Navlun, montaj ve sigorta dahil.</p></div>${rankingHTML(v)}</section>
   ${compositionHTML(v)}
   <section class="block"><div class="head"><div><span class="eyebrow">Villa × paket</span><h2>Villa başı fiyat</h2></div><p>Bir tutara tıklayın; villa o paketle açılır.</p></div>${villaMatrixHTML()}</section>
   <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması · ${esc(scopeName(v))}</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML(v)}</section>`;}
