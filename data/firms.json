@@ -429,7 +429,57 @@
  },
  "ergo": {
   "name": "Ergo",
-  "updatedAt": "2026-10-25T18:00:00Z"
+  "logo": "assets/firms/ergo-logo.png",
+  "website": "https://www.ergohomegroup.com/",
+  "hq": "Lefkoşa, Kıbrıs",
+  "founded": "1996",
+  "storeCount": "Lefkoşa ve Limasol'da showroom · Dubai, Riyad ve Çin'de ofis",
+  "about": "Ergo Home Group, perakende ve proje (contract) mobilya alanında çalışan bir şirketler grubudur. Yerel ve uluslararası pazarda hareketli ve hareketsiz mobilya, mutfak ve iç mekân çözümleri sunar.\n\nGrup 1996'da Lefkoşa'da Cucina & Cucina adıyla kuruldu; Kıbrıs'a ithal İtalyan mutfak dolaplarını getiren ilk işletme oldu. 2003'te Ergo Home Group adıyla şirketler grubuna dönüştü. Kıbrıs'ın ikinci büyük ankastre mutfak ve gardırop grubu Formatek'i bünyesine kattı.\n\nİlk yurt dışı ofisini 2006'da Dubai'de, ikincisini 2012'de Suudi Arabistan'da (Riyad), üçüncüsünü 2022'de Çin'de açtı. Living, Kartell, B&B Italia, Maxalto, Arclinea, Cucina & Cucina, Novamobili, Cinquanta3, Cesar ve Albed markalarıyla çalışır. Living Contract, Ergo Overseas, Ergo Energy ve Ergo Office bölümleri vardır.\n\nRiyad'da Al Bustan Village, The Orient ve KAFD gibi projelerde yer almıştır.",
+  "fairs": [],
+  "stores": [
+   {
+    "name": "Genel merkez",
+    "city": "Lefkoşa",
+    "country": "Kıbrıs",
+    "address": "46 Tempon Street, 2. kat, 2408 Engomi",
+    "url": "https://www.ergohomegroup.com/contact"
+   },
+   {
+    "name": "Suudi Arabistan ofisi",
+    "city": "Riyad",
+    "country": "Suudi Arabistan",
+    "address": "Saeed Bin Haraith Alley 7929, As Sulaymaniyah, Riyad 12245",
+    "url": "https://www.ergohomegroup.com/contact"
+   },
+   {
+    "name": "Living Plus showroom",
+    "city": "Limasol",
+    "country": "Kıbrıs"
+   },
+   {
+    "name": "Kartell flagship mağaza ve Living showroom",
+    "city": "Lefkoşa",
+    "country": "Kıbrıs"
+   }
+  ],
+  "videos": [
+   {
+    "url": "https://www.youtube.com/watch?v=lW4ifnOj7f0",
+    "source": "https://www.youtube.com/watch?v=lW4ifnOj7f0",
+    "title": "Ergo Home Group tanıtım filmi",
+    "kind": "brand",
+    "file": "assets/videos/ergo-tanitim.mp4",
+    "poster": "assets/videos/ergo-tanitim.jpg"
+   }
+  ],
+  "posts": [],
+  "social": {},
+  "sources": [
+   "https://www.ergohomegroup.com/",
+   "https://www.ergohomegroup.com/about/ergo-home-at-a-glance",
+   "https://www.ergohomegroup.com/contact",
+   "https://www.ergohomegroup.com/projects"
+  ]
  },
  "modis": {
   "about": "Modis Interiors, İnegöl merkezli bir premium mobilya ve iç mekân markasıdır. Ahşapla 200 yıllık aile geçmişine dayanır ve 2000'den beri mobilya üretir. 2025 itibarıyla 35'ten fazla ülkeye ihracat yaptığını belirtir. Türkiye'de altı şehirde, ayrıca Orta Doğu, Kafkasya, Orta Asya, Rusya ve Libya'da showroom'ları vardır. Yaklaşık 100–149 çalışanı var.",
