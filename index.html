@@ -839,6 +839,22 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 .total b{font-size:34px}.total .sub{font-size:12px}
 .buy .actions .btn{padding:8px 12px;font-size:13px}
 .qty{display:block;font-size:11.5px;color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums;margin-top:1px}
+/* villa types: large cards (no hero above) */
+.vcards{grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:40px 28px}
+.vc .ph{aspect-ratio:4/3.4}
+.vc h3{font-size:clamp(34px,3.4vw,48px)}
+.vc .bd{gap:10px;padding-top:18px}
+.vc .price-line b{font-size:clamp(26px,2.4vw,34px)}
+.vhead{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(4px,1.5vw,16px) 0 0}
+.vh-l{display:grid;gap:14px;align-content:center}.vh-l h1{font-size:clamp(44px,5.6vw,76px);line-height:.95;letter-spacing:-.02em}
+.vh-l p{margin:0;color:var(--muted);font-size:16.5px;max-width:46ch}.vh-l .hero-cta{margin-top:6px}
+.vh-facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.vh-facts div{background:var(--bg,#fff);padding:18px 20px;display:grid;gap:4px;align-content:start}
+.vh-facts b{font-family:var(--display);font-size:clamp(30px,3vw,42px);font-weight:400;line-height:1;font-variant-numeric:lining-nums}
+.vh-facts b small{font-family:var(--sans,inherit);font-size:14px;color:var(--muted);font-weight:600}
+.vh-facts span{font-size:13px;color:var(--muted)}.vh-facts .hl{background:var(--accent-soft,#eef2ee)}
+@media (max-width:820px){.vhead{grid-template-columns:1fr}}
+.vhead+.block{margin-top:clamp(-48px,-4vw,-24px)}
 </style>
 
 <header class="bar"><div class="bar-in">
@@ -858,7 +874,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610270851"></script>
+<script src="data/data.js?v=202610270855"></script>
 <script>
 (function(){
 "use strict";
@@ -1072,12 +1088,11 @@ function bindHero(){clearInterval(S.heroTimer);const h=$("#hero");if(!h||!S.hero
 function listHTML(){
   const best=ranked()[0];const c=coverImg(null,best?.name,"villa");
   const minAll=Math.min(...villas().map(v=>net(rankedFor(v)[0],v)));
-  return `<section><div class="intro"><div><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1></div>
-      <div><p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
-       <div class="hero-cta"><button class="btn primary" data-scroll="villas">Villaları incele</button><button class="btn" data-deck>Sunumu başlat</button></div></div></div>
-     ${heroHTML(c)}
-     <div class="facts"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
-      <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa</span></div><div><b>${money(minAll)} ${S.cur}</b><span>başlangıç fiyatı, KDV hariç</span></div></div></section>
+  return `<section class="vhead"><div class="vh-l"><span class="eyebrow">${esc(S.cfg.location||"Mekke · Suudi Arabistan")}</span><h1>${esc(S.cfg.projectName||"Hayat Mekke")}</h1>
+      <p>${esc(S.cfg.intro||"Anahtar teslim döşenmiş villalar. Villa tipinizi seçin, mobilya paketinizi belirleyin; odaları ve fiyatı aynı sayfada görün.")}</p>
+      <div class="hero-cta"><button class="btn primary" data-deck>Sunumu başlat</button><button class="btn" data-cmp>Paketleri karşılaştır</button></div></div>
+     <div class="vh-facts"><div><b>${villas().length}</b><span>villa tipi</span></div><div><b>${brands().length}</b><span>mobilya paketi</span></div>
+      <div><b>${nf0.format(S.cfg.villaCount||0)}</b><span>villa · proje toplamı</span></div><div class="hl"><b>${money(minAll)}<small> ${S.cur}</small></b><span>villa başı başlangıç fiyatı · KDV hariç</span></div></div></section>
   <section class="block" id="villas"><div class="head"><div><h2>Villa tipleri</h2></div>
     <p>Fiyatlar mobilya, navlun, montaj ve sigorta dahil, KDV hariçtir.</p></div>
    <div class="vcards">${villas().map(v=>{const r=rankedFor(v);const lo=r[0],hi=r[r.length-1];const cv=coverImg(v,lo?.name,"villa");const meta=S.cfg.villaMeta?.[v]||{};
