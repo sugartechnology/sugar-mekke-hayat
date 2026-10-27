@@ -206,7 +206,8 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .crow .nm{display:flex;gap:8px;align-items:center;font-weight:800;font-size:14px}
 .crow b{text-align:right}
 .cbar{display:flex;height:20px;border-radius:6px;overflow:hidden;gap:2px}
-.cbar i{display:block;height:100%;min-width:2px}
+.cbar i{display:block;height:100%;min-width:2px;cursor:default;transition:opacity .12s}.cbar:hover i{opacity:.55}.cbar i:hover,.cbar i.tipon{opacity:1}
+.ctip{position:fixed;z-index:80;pointer-events:none;background:var(--fg);color:var(--bg);padding:8px 10px;border-radius:4px;font-size:12.5px;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.18);max-width:260px;display:none}.ctip b{display:block;font-size:15px;font-variant-numeric:tabular-nums;margin:2px 0}.ctip .tl{display:flex;align-items:center;gap:6px;font-weight:600}.ctip .tl i{width:10px;height:10px;border-radius:2px;flex:none}.ctip small{opacity:.75}
 @media (max-width:560px){.crow{grid-template-columns:1fr auto}.crow .cbar{grid-column:1/-1;grid-row:2}}
 
 /* plan */
@@ -845,11 +846,11 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610270312"></script>
+<script src="data/data.js?v=202610270632"></script>
 <script>
 (function(){
 "use strict";
-const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:J4000";
+const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:K4000";
 const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
 const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
 const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE6D8",Emerald:"#2F7A5B",Diamond:"#A9D2E0",Royal:"#5E4C8E"};
@@ -1203,7 +1204,7 @@ function fixedInsight(v){ // fixed furniture + home textiles identical across pa
 const qtyOf=it=>{const q=+it.q;return isFinite(q)&&it.q!=null&&it.q!==""?q:null;};
 const qtyTag=it=>{const q=qtyOf(it);if(q==null)return "";const u=q?(+it.v||0)/q:0;return `<span class="qty">${nf0.format(q)} adet${q>1&&u?` × ${money(u)}`:""}</span>`;};
 function itemImgList(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];const x=d?.villas?.[v||S.villa]?.[it.c];if(!x)return [];return (Array.isArray(x)?x:[x]).map(e=>typeof e==="string"?{a:e}:e).filter(e=>e&&e.a);}
-function itemModel(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];return d?.models?.[v||S.villa]?.[it.c]||"";}
+function itemModel(it,pkg,v){const f=pkgByName(pkg||S.pkg)?.firm;const d=f&&S.itemImgs[slug(f)];return d?.models?.[v||S.villa]?.[it.c]||it.m||"";}
 function modelTag(it,pkg,v){const m=itemModel(it,pkg,v);return m?`<em class="imodel">${esc(m)}</em>`:"";}
 function itemImg(it,pkg,v){return itemImgList(it,pkg,v)[0]?.a||null;}
 function itemThumb(it,pkg,v){const L=itemImgList(it,pkg,v);if(!L.length)return `<span class="ithumb none" aria-hidden="true"></span>`;
@@ -1355,7 +1356,7 @@ function compositionHTML(sv){sv=sv||cmpScope();
   const mx=Math.max(...rows.map(r=>r.o.tot));const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const xsegs=SEG.filter(([k])=>rows.some(r=>(r.o["x_"+k]||0)>0.5));const hasOos=rows.some(r=>r.o._oos>0.5);
   return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend">${segs.map(([k,l,c])=>`<span><i style="background:${c}"></i>${l}</span>`).join("")}</div>
-   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" title="${l}: ${money(o[k])}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
+   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>o[k]>0.5?`<i style="flex:${o[k]};background:${c}" data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th>${l.split(" (")[0]}</th>`).join("")}<th>Toplam</th>${hasOos?`<th class="xcol">Kapsam dışı<small>referans fiyat · dahil değil</small></th>`:""}${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
     ${rows.map(({b,o})=>{const op=S.cmpOpen&&S.cmpOpen.p===b.name?S.cmpOpen.k:null;const ncol=1+segs.length+1+(hasOos?1:0)+xsegs.length;
       const cellSplit=k=>compSplit(b.name,vs,k);
@@ -1392,6 +1393,14 @@ function openItemZoom(id,label,sub,set,k0){let L=[];try{L=set?JSON.parse(set):[]
   img.addEventListener("pointerup",e=>{const was=drag;drag=null;if(!moved&&was)setZ(z>1?1:2.5,e.clientX,e.clientY);});
   o.querySelectorAll("[data-zm]").forEach(b=>b.onclick=()=>{k=+b.dataset.zm;img.src=blob(L[k].a);z=1;x=0;y=0;apply();o.querySelector(".iz-top span").textContent=msub(L[k]);o.querySelectorAll("[data-zm]").forEach(c=>c.setAttribute("aria-pressed",c===b));});
   apply();o.querySelector("[data-zx]").focus();}
+/* bar-segment tooltip (hover on desktop, tap on touch) */
+(()=>{let tip=null,cur=null;const el=()=>tip||(tip=Object.assign(document.createElement("div"),{className:"ctip"}),document.body.appendChild(tip),tip);
+  const show=(i,x,y)=>{const t=el();if(cur!==i){cur?.classList.remove("tipon");cur=i;i.classList.add("tipon");t.innerHTML=`<span class="tl"><i style="background:${i.dataset.tipc||"#999"}"></i>${esc(i.dataset.tip)}</span><b>${esc(i.dataset.tipv||"")}</b><small>${esc(i.dataset.tipp||"")}</small>`;}
+    t.style.display="block";const w=t.offsetWidth,h=t.offsetHeight;let L=x+14,T=y-h-12;if(L+w>innerWidth-8)L=x-w-14;if(T<8)T=y+18;t.style.left=Math.max(8,L)+"px";t.style.top=T+"px";};
+  const hide=()=>{if(tip)tip.style.display="none";cur?.classList.remove("tipon");cur=null;};
+  document.addEventListener("mousemove",e=>{const i=e.target.closest?.("[data-tip]");if(i)show(i,e.clientX,e.clientY);else if(cur)hide();},{passive:true});
+  document.addEventListener("click",e=>{const i=e.target.closest?.("[data-tip]");if(i&&matchMedia("(hover:none)").matches){e.preventDefault();e.stopPropagation();const r=i.getBoundingClientRect();if(cur===i)hide();else show(i,r.left+r.width/2,r.top);}else if(cur&&matchMedia("(hover:none)").matches)hide();},true);
+  addEventListener("scroll",()=>{if(cur&&matchMedia("(hover:none)").matches)hide();},{passive:true});})();
 document.addEventListener("play",e=>{if(e.target.tagName!=="VIDEO")return;document.querySelectorAll("video").forEach(v=>{if(v!==e.target&&!v.paused)v.pause();});},true);
 document.addEventListener("click",e=>{const b=e.target.closest("[data-izoom]");if(!b)return;e.preventDefault();e.stopPropagation();openItemZoom(b.dataset.izoom,b.dataset.ilabel,b.dataset.isub,b.dataset.iset,b.dataset.ik);},true);
 
@@ -2186,9 +2195,9 @@ function parseVeri(rows){
   return out;}
 function parseHam(rows){ // Firma, Villa, Bölüm, Kod, Kalem, Marka, Tip, Toplam, Kalem mi  (Marka is dropped on purpose)
   const out={};if(!rows?.length)return out;const h=rows[0].map(x=>String(x).trim());const ix=k=>h.indexOf(k);
-  const F=ix("Firma"),V=ix("Villa"),B=ix("Bölüm"),K=ix("Kod"),N=ix("Kalem"),M=ix("Marka"),T=ix("Tip"),P=ix("Toplam"),Q=ix("Kalem mi"),A=ix("Adet");if(F<0||V<0||P<0)return out;
+  const F=ix("Firma"),V=ix("Villa"),B=ix("Bölüm"),K=ix("Kod"),N=ix("Kalem"),M=ix("Marka"),T=ix("Tip"),P=ix("Toplam"),Q=ix("Kalem mi"),A=ix("Adet"),MD=ix("Model");if(F<0||V<0||P<0)return out;
   rows.slice(1).forEach(r=>{if(Q>=0&&!/^true$/i.test(String(r[Q]||"").trim()))return;const f=String(r[F]||"").trim();if(!f)return;const v=String(r[V]||"").trim();
-    ((out[f]=out[f]||{})[v]=out[f][v]||[]).push({f:String(r[B]||"").trim(),c:String(r[K]||"").trim(),n:String(r[N]||"").trim(),b:M>=0?String(r[M]||"").trim():"",t:String(r[T]||"").trim(),v:parseNum(r[P]),...(A>=0&&String(r[A]??"").trim()!==""?{q:parseNum(r[A])}:{})});});
+    ((out[f]=out[f]||{})[v]=out[f][v]||[]).push({f:String(r[B]||"").trim(),c:String(r[K]||"").trim(),n:String(r[N]||"").trim(),b:M>=0?String(r[M]||"").trim():"",t:String(r[T]||"").trim(),v:parseNum(r[P]),...(A>=0&&String(r[A]??"").trim()!==""?{q:parseNum(r[A])}:{}),...(MD>=0&&String(r[MD]??"").trim()!==""?{m:String(r[MD]).trim()}:{})});});
   return out;}
 function mergeParsed(p,extraFields){
   const cur=S.cfg||{projectName:"Hayat Mekke",subtitle:"Villa mobilya paketleri",location:"Mekke · Suudi Arabistan",vat:0.15,villaCount:250,fx:3.75,villaMeta:{}};
@@ -2233,13 +2242,17 @@ function bindData(m){
     st.textContent="Google Sheets okunuyor…";
     try{const rows=payloadRows(await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:SHEET_RANGE},{cache:false}));
       if(!Array.isArray(rows))throw {message:"Veri sayfası okunamadı"};
+      const LOADING=/Yükleniyor|Loading\.\.\.|#REF!|#N\/A|#ERROR!|#VALUE!|#NAME\?/;
+      if(LOADING.test(JSON.stringify(rows)))throw {message:"Tablo hâlâ hesaplanıyor (bazı hücreler 'Yükleniyor…' ya da hata gösteriyor). Google Sheets'te dosyayı açıp yüklenmesini bekleyin, sonra tekrar çekin. Veriler değiştirilmedi"};
       const parsed=parseVeri(rows);if(!parsed)throw {message:"Veri sayfasında 'Villa | Bölüm' tablosu bulunamadı"};
       if(parsed.currency==="SAR")throw {message:"Excel SAR modunda. Özet sayfasında para birimini USD yapıp tekrar çekin"};
-      let ham={};try{ham=parseHam(payloadRows(await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:HAM_RANGE},{cache:false})));}catch(e){}
+      let ham={};let hamRows=null;try{hamRows=payloadRows(await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:HAM_RANGE},{cache:false}));}catch(e){}
+      if(hamRows&&LOADING.test(JSON.stringify(hamRows)))throw {message:"Kalem listesi (Ham) hâlâ hesaplanıyor ya da hata içeriyor. Birkaç dakika sonra tekrar çekin. Veriler değiştirilmedi"};
+      try{if(hamRows)ham=parseHam(hamRows);}catch(e){}
       if(id!==S.keys.sheetId){try{await saveKeys({sheetId:id});}catch(e){}}
-      const cfg=mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"});const map=S._pendingKeys||S.keys.bySource;const ren=S._renames||{};S._renames=null;
+      const cfg=mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"});delete cfg.pricing;const map=S._pendingKeys||S.keys.bySource;const ren=S._renames||{};S._renames=null;
       const hasHam=Object.keys(ham).length>0;
-      if(await saveCfg(cfg)){await applyRenames(ren,hasHam);if(hasHam)await saveBoq(ham,map);
+      if(await saveCfg(cfg)){await applyRenames(ren,hasHam);if(hasHam){await saveBoq(ham,map);try{await S.db.doc("private/sugarBackup").delete();}catch(e){}}
         const n=Object.values(ham).reduce((a,vv)=>a+Object.values(vv).reduce((x,arr)=>x+arr.length,0),0);
         toast(`${parsed.brands.length} paket, ${parsed.villas.length} villa${n?`, ${n} kalem`:""} güncellendi`);st.textContent="Güncellendi";}}
     catch(e){st.textContent=e?.code==="not_granted"||e?.code==="server_not_connected"?"Google Sheets bağlantısına izin verin ya da bağlayıcıyı claude.ai'de açın.":"Çekilemedi: "+(e?.message||e?.code||"bilinmeyen hata");}});
