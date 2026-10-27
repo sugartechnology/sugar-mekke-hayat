@@ -205,6 +205,7 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .cseg{font:inherit;color:inherit;background:none;border:1px solid transparent;border-radius:999px;padding:4px 10px 4px 8px;margin:-4px -2px;cursor:pointer;transition:opacity .15s,border-color .15s}
 .cseg:hover{border-color:var(--line,#ddd)}.cseg.off{opacity:.42;text-decoration:line-through}.cseg.off i{background:transparent!important;box-shadow:inset 0 0 0 1.5px currentColor}
 .cbar i[data-segk]{cursor:pointer;transition:filter .15s}.cbar i[data-segk]:hover,.cbar i[data-segk]:focus-visible{filter:brightness(1.12);outline:2px solid var(--fg);outline-offset:1px}
+.items td.fcol{text-align:left;white-space:nowrap;width:1%}.fcell{display:inline-flex;align-items:center;gap:8px;text-decoration:none}.fcell img{height:22px;max-width:96px;object-fit:contain;display:block}.fc-name{font-size:13px;font-weight:600;color:var(--fg)}
 .segdot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .cseg-all{display:inline-flex;gap:6px;margin-left:auto}.cseg.all:disabled{opacity:.4;cursor:default;border-color:var(--line,#ddd)}
 .cseg.all{border-color:var(--line,#ddd);color:var(--ink,#222)}td.segoff,th.segoff{color:var(--muted);opacity:.4}td.segoff{font-weight:700}.clegend i{width:10px;height:10px;border-radius:3px}
@@ -877,7 +878,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610280110"></script>
+<script src="data/data.js?v=202610280115"></script>
 <script>
 (function(){
 "use strict";
@@ -1378,6 +1379,11 @@ const CMP_OFF_DEFAULT=["Fixed:Banyo","_fr","_as"];
 /* click on a composition segment: the items behind it, with product images */
 const segMatch=(it,k)=>k==="x_EL"?isTech(it.f)&&it.t!=="Smart Home":k==="x_SM"?isTech(it.f)&&it.t==="Smart Home":!isTech(it.f)&&segKey(it)===k;
 const segKey=it=>isExtra(it.f)?"Ev Dekorasyon":it.t==="Fixed"?"Fixed:"+FIXED_SUB(it):(["Loose Furniture"].includes(it.t)?it.t:"_other");
+/* firm of an item (third-party brand or the package's own supplier) and its cell: logo only when the logo carries the name, otherwise logo + name */
+function firmOfItem(it){const b=String(it.b||"").replace(/\s*\(kapsam\s*dışı\)\s*$/i,"").trim();const f=brandDoc(b);if(f)return f;const m=b.match(/^(.+) koleksiyonu$/);const p=m&&pkgByName(m[1]);return p?firmByName(firmName(p)):null;}
+function firmCell(it){const f=firmOfItem(it);const nm=f?f.name:brandLabel(it.b);if(!f)return `<span class="fc-name">${esc(nm)}</span>`;
+  const ls=(f.d?.logos&&f.d.logos.length?f.d.logos:f.d?.logo?[f.d.logo]:[]);const showName=!ls.length||f.d.logoMark;
+  return `<span class="flink fcell" role="link" tabindex="0" data-firm="${esc(f.name)}" title="${esc(nm)}">${ls.map(l=>`<img src="${esc(blob(l))}" alt="${esc(nm)}" loading="lazy">`).join("")}${showName?`<span class="fc-name">${esc(nm)}</span>`:""}</span>`;}
 function openSegItems(pkg,k,sv,lab,col){const vs=sv===ALLV?villas():[sv];const b=pkgByName(pkg);if(!b)return;
   const groups=vs.map(v=>({v,arr:boqItems(pkg,v).filter(it=>segMatch(it,k)).map(it=>({...it,...labelItem(it)})).sort((a,c)=>(+c.v||0)-(+a.v||0))})).filter(g=>g.arr.length);
   const all=groups.flatMap(g=>g.arr);const tot=all.reduce((a,x)=>a+(+x.v||0),0);const nImg=all.filter(it=>itemImgList(it,pkg,it._vil).length).length;
@@ -1386,12 +1392,13 @@ function openSegItems(pkg,k,sv,lab,col){const vs=sv===ALLV?villas():[sv];const b
     <div class="sheet-head"><div><span class="eyebrow"><i class="segdot" style="background:${col}"></i>${esc(scopeName(sv))} · ${esc(pl(pkg))}</span><h2>${esc(lab)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
     <div class="sumrow"><div><span class="eyebrow">Toplam · net</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${all.length}</b></div><div><span class="eyebrow">Görselli</span><b>${nImg}</b></div></div>
     ${groups.length?groups.map(g=>`${vs.length>1?`<span class="eyebrow" style="margin-top:6px">${esc(g.v)} · ${money(g.arr.reduce((a,x)=>a+(+x.v||0),0))} ${S.cur}</span>`:""}
-     <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
-     ${g.arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,g.v)}<div>${esc(it.label)}${modelTag(it,pkg,g.v)}<small class="ib">${brandTag(it.b)}</small>${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`).join("")
+     <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Firma</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
+     ${g.arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="fcol">${firmCell(it)}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,g.v)}<div>${esc(it.label)}${modelTag(it,pkg,g.v)}${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`).join("")
      :`<div class="empty"><strong>Bu bölümde kalem yok</strong></div>`}
     <p class="note">Görsele tıklayınca büyür. Tutarlar kalem fiyatlarıdır (birim fiyat × adet); navlun, montaj ve KDV hariç.</p></div></div>`;
   s.querySelector("[data-x]").onclick=closeSheet;s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget)closeSheet();});
   if(sheetKeys)document.removeEventListener("keydown",sheetKeys);sheetKeys=e=>{if(!$("#overlay").children.length&&e.key==="Escape")closeSheet();};document.addEventListener("keydown",sheetKeys);
+  s.querySelectorAll("[data-firm]").forEach(x=>x.onclick=e=>{e.stopPropagation();const n=x.dataset.firm;closeSheet();openFirm(n);});
   s.querySelector("[data-x]").focus({preventScroll:true});}
 function cmpOff(){if(!S.cmpOff){let a=CMP_OFF_DEFAULT;try{const v=localStorage.getItem("hm_cmpoff3");if(v!=null)a=JSON.parse(v);}catch(e){}S.cmpOff=new Set(Array.isArray(a)?a:[]);}return S.cmpOff;}
 function compositionHTML(sv){sv=sv||cmpScope();
