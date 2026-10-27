@@ -387,5 +387,300 @@
     "F-077": "Dante Sandalye"
    }
   }
+ },
+ "bellona": {
+  "firm": "Bellona",
+  "source": "bellona.com.tr · livello.com.tr · luvaconcept.com · sardunyafurniture.com",
+  "villas": {
+   "Villa A": {
+    "F-001": "assets/items/sardunya/A_F-001.webp",
+    "F-002": "assets/items/sardunya/A_F-002.webp",
+    "F-032": "assets/items/sardunya/A_F-032.webp",
+    "F-033": [
+     {
+      "a": "assets/items/sardunya/A_F-033.webp",
+      "n": "Flex 100cm Camlı Dolap"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-033_2.webp",
+      "n": "Flex Sol Raflı Dolap"
+     }
+    ],
+    "F-036": [
+     {
+      "a": "assets/items/sardunya/A_F-036.webp",
+      "n": "Flex 100cm Dolap"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-036_2.webp",
+      "n": "Flex Sol Raflı Dolap"
+     }
+    ],
+    "F-037": "assets/items/sardunya/A_F-037.webp",
+    "F-038": [
+     {
+      "a": "assets/items/sardunya/A_F-038.webp",
+      "n": "Flex 100cm Dolap"
+     }
+    ],
+    "F-040": "assets/items/sardunya/A_F-040.webp",
+    "F-041": "assets/items/sardunya/A_F-041.webp",
+    "F-042": [
+     {
+      "a": "assets/items/sardunya/A_F-042.webp",
+      "n": "Lina 100'lük Dolap",
+      "q": 2
+     }
+    ],
+    "F-044": "assets/items/sardunya/A_F-044.webp",
+    "F-045": "assets/items/sardunya/A_F-045.webp",
+    "F-046": "assets/items/sardunya/A_F-046.webp",
+    "F-047": [
+     {
+      "a": "assets/items/sardunya/A_F-047.webp",
+      "n": "Lina 100'lük Dolap",
+      "q": 2
+     }
+    ],
+    "F-048": "assets/items/sardunya/A_F-048.webp",
+    "F-050": "assets/items/sardunya/A_F-050.webp",
+    "F-051": "assets/items/sardunya/A_F-051.webp",
+    "F-052": "assets/items/sardunya/A_F-052.webp",
+    "F-053": "assets/items/sardunya/A_F-053.webp",
+    "F-054": [
+     {
+      "a": "assets/items/sardunya/A_F-054.webp",
+      "n": "Lina 100'lük Dolap",
+      "q": 2
+     }
+    ],
+    "F-056": "assets/items/sardunya/A_F-056.webp",
+    "F-057": "assets/items/sardunya/A_F-057.webp",
+    "F-058": "assets/items/sardunya/A_F-058.webp",
+    "F-060": "assets/items/sardunya/A_F-060.webp",
+    "F-062": [
+     {
+      "a": "assets/items/sardunya/A_F-062.webp",
+      "n": "Lina 50'lik Dolap"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-062_2.webp",
+      "n": "Lina 100'lük Dolap"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-062_3.webp",
+      "n": "Lina Köşe Dolap"
+     }
+    ],
+    "F-063": [
+     {
+      "a": "assets/items/sardunya/A_F-063.webp",
+      "n": "Lina 50'lik Dolap"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-063_2.webp",
+      "n": "Lina 100'lük Dolap"
+     }
+    ],
+    "F-064": "assets/items/sardunya/A_F-064.webp",
+    "F-065": "assets/items/sardunya/A_F-065.webp",
+    "F-066": "assets/items/sardunya/A_F-066.webp",
+    "F-067": "assets/items/sardunya/A_F-067.webp",
+    "F-074": [
+     {
+      "a": "assets/items/sardunya/A_F-074.webp",
+      "n": "Los Angeles 25 cm Raflı Modül"
+     },
+     {
+      "a": "assets/items/sardunya/A_F-074_2.webp",
+      "n": "Los Angeles Köşe Dolap"
+     }
+    ],
+    "F-075": [
+     {
+      "a": "assets/items/sardunya/A_F-075.webp",
+      "n": "Los Angeles 50'lik Askılı Dolap",
+      "q": 2
+     }
+    ],
+    "F-076": "assets/items/sardunya/A_F-076.webp",
+    "F-077": "assets/items/sardunya/A_F-077.webp",
+    "F-003": "assets/items/bellona/montella-uclu-koltuk.webp",
+    "F-004": "assets/items/bellona/montella-ikili-koltuk.webp",
+    "F-005": "assets/items/bellona/montella-berjer.webp",
+    "F-006": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-007": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-008": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-009": "assets/items/bellona/montella-tv-sehpasi.webp",
+    "F-010": "assets/items/bellona/loria-sabit-yemek-masasi.webp",
+    "F-011": "assets/items/bellona/loria-sandalye.webp",
+    "F-024": "assets/items/bellona/veronica-kare-orta-sehpa.webp",
+    "F-025": "assets/items/bellona/veronica-yuvarlak-orta-sehpa.webp",
+    "F-026": "assets/items/bellona/veronica-tv-sehpasi.webp",
+    "F-027": "assets/items/bellona/veronica-koltuk-takimi.webp",
+    "F-028": "assets/items/bellona/veronica-ikili-koltuk.webp",
+    "F-029": "assets/items/bellona/veronica-acilir-yemek-masasi.webp",
+    "F-030": "assets/items/bellona/veronica-sandalye.webp",
+    "F-069": "assets/items/bellona/boheems-uclu-koltuk.webp",
+    "F-070": "assets/items/bellona/boheems-uclu-koltuk.webp",
+    "F-071": "assets/items/bellona/boheems-tv-sehpasi.webp",
+    "F-072": "assets/items/bellona/boheems-orta-sehpa.webp",
+    "F-073": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "D6": "assets/items/bellona/premium-line-yatak.webp"
+   },
+   "Villa B": {
+    "F-092": "assets/items/bellona/montella-uclu-koltuk.webp",
+    "F-093": "assets/items/bellona/montella-ikili-koltuk.webp",
+    "F-094": "assets/items/bellona/montella-berjer.webp",
+    "F-095": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-096": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-097": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-098": "assets/items/bellona/montella-tv-sehpasi.webp",
+    "F-099": "assets/items/bellona/loria-sabit-yemek-masasi.webp",
+    "F-100": "assets/items/bellona/loria-sandalye.webp",
+    "F-106": "assets/items/bellona/veronica-kare-orta-sehpa.webp",
+    "F-107": "assets/items/bellona/veronica-yuvarlak-orta-sehpa.webp",
+    "F-108": "assets/items/bellona/veronica-tv-sehpasi.webp",
+    "F-109": "assets/items/bellona/veronica-koltuk-takimi.webp",
+    "F-110": "assets/items/bellona/veronica-ikili-koltuk.webp",
+    "F-111": "assets/items/bellona/veronica-acilir-yemek-masasi.webp",
+    "F-112": "assets/items/bellona/veronica-sandalye.webp",
+    "F-149": "assets/items/bellona/boheems-uclu-koltuk.webp",
+    "F-150": "assets/items/bellona/boheems-tv-sehpasi.webp",
+    "F-151": "assets/items/bellona/boheems-orta-sehpa.webp",
+    "F-152": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "D6": "assets/items/bellona/premium-line-yatak.webp"
+   },
+   "Villa C": {
+    "F-160": "assets/items/bellona/montella-uclu-koltuk.webp",
+    "F-161": "assets/items/bellona/montella-ikili-koltuk.webp",
+    "F-162": "assets/items/bellona/montella-berjer.webp",
+    "F-163": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-164": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-165": "assets/items/bellona/montella-orta-sehpa.webp",
+    "F-167": "assets/items/bellona/montella-tv-sehpasi.webp",
+    "F-168": "assets/items/bellona/loria-sabit-yemek-masasi.webp",
+    "F-169": "assets/items/bellona/loria-sandalye.webp",
+    "F-171": "assets/items/bellona/veronica-kare-orta-sehpa.webp",
+    "F-172": "assets/items/bellona/veronica-yuvarlak-orta-sehpa.webp",
+    "F-173": "assets/items/bellona/veronica-tv-sehpasi.webp",
+    "F-174": "assets/items/bellona/veronica-koltuk-takimi.webp",
+    "F-175": "assets/items/bellona/veronica-ikili-koltuk.webp",
+    "F-176": "assets/items/bellona/veronica-acilir-yemek-masasi.webp",
+    "F-177": "assets/items/bellona/veronica-sandalye.webp",
+    "F-229": "assets/items/bellona/boheems-uclu-koltuk.webp",
+    "F-230": "assets/items/bellona/boheems-tv-sehpasi.webp",
+    "F-231": "assets/items/bellona/boheems-orta-sehpa.webp",
+    "F-232": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "D6": "assets/items/bellona/premium-line-yatak.webp"
+   }
+  },
+  "models": {
+   "Villa A": {
+    "F-001": "Asparas Sehpa",
+    "F-002": "Casper Tekli Koltuk",
+    "F-032": "Solaris Karyola",
+    "F-033": "Flex 100 cm Camlı Dolap + Flex Sol Raflı Dolap",
+    "F-036": "Flex 100 cm Dolap + Flex Sol Raflı Dolap",
+    "F-037": "Solaris Karyola",
+    "F-038": "Flex 100 cm Dolap",
+    "F-040": "Paris Karyola",
+    "F-041": "Paris Komodin",
+    "F-042": "Lina 100'lük Dolap ×2",
+    "F-044": "Volare Karyola",
+    "F-045": "Volare Komodin",
+    "F-046": "Volare Çalışma Masası",
+    "F-047": "Lina 100'lük Dolap ×2",
+    "F-048": "Volare Berjer",
+    "F-050": "Lina Karyola",
+    "F-051": "Lina Komodin",
+    "F-052": "Lina Şifonyer",
+    "F-053": "Lina Mini Berjer",
+    "F-054": "Lina 100'lük Dolap ×2",
+    "F-056": "Pegasus Karyola",
+    "F-057": "Pegasus Komodin",
+    "F-058": "Pegasus Köşe Şifonyer",
+    "F-059": "Pegasus Puf",
+    "F-060": "Volare Bench",
+    "F-062": "Lina 50'lik + Lina 100'lük + Lina Köşe Dolap",
+    "F-063": "Lina 50'lik + Lina 100'lük Dolap",
+    "F-064": "Nardo Yan Sehpa",
+    "F-065": "Cosmo Pedli Koltuk",
+    "F-066": "Olivia Küçük Orta Sehpa",
+    "F-067": "Casper Tekli Koltuk",
+    "F-074": "Los Angeles 25 cm Raflı Modül + Los Angeles Köşe Dolap",
+    "F-075": "Los Angeles 50'lik Askılı Dolap ×2",
+    "F-076": "Nardo Büyük Sehpa",
+    "F-077": "Dante Sandalye",
+    "F-003": "Montella Üçlü Koltuk",
+    "F-004": "Montella İkili Koltuk",
+    "F-005": "Montella Berjer",
+    "F-006": "Montella Orta Sehpa",
+    "F-007": "Montella Orta Sehpa",
+    "F-008": "Montella Orta Sehpa",
+    "F-009": "Montella TV Sehpası",
+    "F-010": "Loria Sabit Yemek Masası",
+    "F-011": "Loria Sandalye",
+    "F-024": "Veronica Kare Orta Sehpa",
+    "F-025": "Veronica Yuvarlak Orta Sehpa",
+    "F-026": "Veronica TV Sehpası",
+    "F-027": "Veronica Üçlü Koltuk",
+    "F-028": "Veronica İkili Koltuk",
+    "F-029": "Veronica Yemek Masası",
+    "F-030": "Veronica Sandalye",
+    "F-069": "Boheems Üçlü Koltuk",
+    "F-070": "Boheems Üçlü Koltuk",
+    "F-071": "Boheems TV Sehpası",
+    "F-072": "Boheems Orta Sehpa",
+    "F-073": "Boheems Yan Sehpa",
+    "D6": "Premium Line Yatak"
+   },
+   "Villa B": {
+    "F-092": "Montella Üçlü Koltuk",
+    "F-093": "Montella İkili Koltuk",
+    "F-094": "Montella Berjer",
+    "F-095": "Montella Orta Sehpa",
+    "F-096": "Montella Orta Sehpa",
+    "F-097": "Montella Orta Sehpa",
+    "F-098": "Montella TV Sehpası",
+    "F-099": "Loria Sabit Yemek Masası",
+    "F-100": "Loria Sandalye",
+    "F-106": "Veronica Kare Orta Sehpa",
+    "F-107": "Veronica Yuvarlak Orta Sehpa",
+    "F-108": "Veronica TV Sehpası",
+    "F-109": "Veronica Üçlü Koltuk",
+    "F-110": "Veronica İkili Koltuk",
+    "F-111": "Veronica Yemek Masası",
+    "F-112": "Veronica Sandalye",
+    "F-149": "Boheems Üçlü Koltuk",
+    "F-150": "Boheems TV Sehpası",
+    "F-151": "Boheems Orta Sehpa",
+    "F-152": "Boheems Yan Sehpa",
+    "D6": "Premium Line Yatak"
+   },
+   "Villa C": {
+    "F-160": "Montella Üçlü Koltuk",
+    "F-161": "Montella İkili Koltuk",
+    "F-162": "Montella Berjer",
+    "F-163": "Montella Orta Sehpa",
+    "F-164": "Montella Orta Sehpa",
+    "F-165": "Montella Orta Sehpa",
+    "F-167": "Montella TV Sehpası",
+    "F-168": "Loria Sabit Yemek Masası",
+    "F-169": "Loria Sandalye",
+    "F-171": "Veronica Kare Orta Sehpa",
+    "F-172": "Veronica Yuvarlak Orta Sehpa",
+    "F-173": "Veronica TV Sehpası",
+    "F-174": "Veronica Üçlü Koltuk",
+    "F-175": "Veronica İkili Koltuk",
+    "F-176": "Veronica Yemek Masası",
+    "F-177": "Veronica Sandalye",
+    "F-229": "Boheems Üçlü Koltuk",
+    "F-230": "Boheems TV Sehpası",
+    "F-231": "Boheems Orta Sehpa",
+    "F-232": "Boheems Yan Sehpa",
+    "D6": "Premium Line Yatak"
+   }
+  }
  }
 }

@@ -1392,5 +1392,190 @@
   "sources": [],
   "stores": [],
   "videos": []
+ },
+ "arel-interior": {
+  "name": "Arel Interior",
+  "aliases": [
+   "Arel Interior",
+   "Arel Interiors",
+   "Arel",
+   "Arel Interior Design"
+  ],
+  "role": "brand",
+  "featured": true,
+  "roleNote": "Hareketsiz mobilya üreticisi",
+  "about": "Arel Interior Design, 1960'tan bu yana Bursa'da mobilya ve iç mimarlık alanında çalışan bir firmadır. Büyük ölçekli projelerden butik üretimlere kadar tasarımdan üretime ve uygulamaya uzanan hizmet verir.\n\nBünyesindeki zemin kaplama, metal ve boya üniteleri sayesinde projeleri tek elden yürütür. Bursa-Nilüfer ve Düzce-Gümüşova'daki fabrikalarında konut, ofis, otel ve ticari projelere özel mobilya üretir; shop drawing ve proje yönetimini de kendi ekibiyle yapar.\n\nOtel ve konut projeleri Macaristan, Hırvatistan, İsviçre, Yunanistan, Bulgaristan, Almanya, Romanya ve Suudi Arabistan'a (Medine) uzanır.\n\nBu projede villaların hareketsiz mobilyalarını, yani mutfak, gömme dolap ve banyo dolaplarını Arel Interior üretir.",
+  "founded": "1960",
+  "hq": "Nilüfer, Bursa",
+  "products": "Hareketsiz mobilya: mutfak, gömme dolap, banyo dolabı ve projeye özel ahşap işleri",
+  "logo": "assets/firms/arel-interior/logo.png",
+  "website": "https://www.arelinterior.com/tr",
+  "social": {
+   "instagram": "https://www.instagram.com/arelinteriors/",
+   "facebook": "https://www.facebook.com/arelinteriorsdesign",
+   "youtube": "https://www.youtube.com/@arelinteriordesign"
+  },
+  "storeCount": "2 fabrika · Bursa-Nilüfer ve Düzce-Gümüşova; Bursa'da 2 showroom",
+  "stores": [
+   {
+    "name": "Arel Fabrika · Bursa-Nilüfer",
+    "address": "Barış Mah. İzmir Yolu Cad. No:186B",
+    "city": "Nilüfer, Bursa",
+    "country": "Türkiye",
+    "img": "assets/firms/arel-interior/p-nilufer.webp",
+    "url": "https://www.arelinterior.com/tr/arel-fabrika-bursa-nilufer"
+   },
+   {
+    "name": "Arel Fabrika · Düzce-Gümüşova",
+    "city": "Gümüşova, Düzce",
+    "country": "Türkiye",
+    "img": "assets/firms/arel-interior/p-duzce.webp",
+    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika"
+   },
+   {
+    "name": "Arel Interior Design · Bursa-Balat",
+    "address": "Balat Mah. Sanayi Cd. No:433, Kıratlı İş Merkezi",
+    "city": "Nilüfer, Bursa",
+    "country": "Türkiye",
+    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-balat"
+   },
+   {
+    "name": "Arel Interior Design · Bursa-Beşevler",
+    "city": "Nilüfer, Bursa",
+    "country": "Türkiye",
+    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-besevler"
+   }
+  ],
+  "projects": [
+   {
+    "name": "H.M.O Evi",
+    "place": "Medine, Suudi Arabistan",
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-hmo.webp",
+    "url": "https://www.arelinterior.com/tr/hmo-evi-saudi-arabia-medina"
+   },
+   {
+    "name": "Medine Café Projesi",
+    "place": "Medine, Suudi Arabistan",
+    "cat": "Restoran",
+    "img": "assets/firms/arel-interior/p-medinacafe.webp",
+    "url": "https://www.arelinterior.com/tr/saudi-arabia-medina-cafe-project"
+   },
+   {
+    "name": "Matild Palace, a Luxury Collection Hotel",
+    "place": "Budapeşte, Macaristan",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-matild.webp",
+    "url": "https://www.arelinterior.com/tr/matild-palace-a-luxury-collection-hotel-budapeste-macaristan"
+   },
+   {
+    "name": "Hyatt Regency",
+    "place": "Zadar, Hırvatistan",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-hyatt.webp",
+    "url": "https://www.arelinterior.com/tr/hyatt-regency-hotel-zadar-hirvatistan"
+   },
+   {
+    "name": "Deltapark Hotel",
+    "place": "Ascona, İsviçre",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-deltapark.webp",
+    "url": "https://www.arelinterior.com/tr/deltapark-hotel-ascona-isvicre"
+   },
+   {
+    "name": "Brown Beach",
+    "place": "Eretria, Yunanistan",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-brownbeach.webp",
+    "url": "https://www.arelinterior.com/tr/brown-beach-greece-eretria"
+   },
+   {
+    "name": "The One Bodrum",
+    "place": "Bodrum, Muğla",
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-theone.webp",
+    "url": "https://www.arelinterior.com/tr/the-one-bodrumbodrummugla-tamamlandi"
+   },
+   {
+    "name": "Merit Royal Hotel Restoran",
+    "place": "Kıbrıs",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-merit.webp",
+    "url": "https://www.arelinterior.com/tr/merit-royal-hotel-restoran"
+   },
+   {
+    "name": "Heviz Otel",
+    "place": "Macaristan",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-heviz.webp",
+    "url": "https://www.arelinterior.com/tr/heviz-otel-macaristan"
+   },
+   {
+    "name": "Bulgaristan Otel",
+    "place": "Bulgaristan",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-bulgaria.webp",
+    "url": "https://www.arelinterior.com/tr/bulgaria-otel"
+   },
+   {
+    "name": "C.M.A Evi",
+    "place": "Almanya",
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-cma.webp",
+    "url": "https://www.arelinterior.com/tr/cma-almanya"
+   },
+   {
+    "name": "Arel Düzce Fabrikası",
+    "place": "Düzce",
+    "cat": "Fabrika",
+    "year": "2025",
+    "img": "assets/firms/arel-interior/p-duzce.webp",
+    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika"
+   }
+  ],
+  "projectsUrl": "https://www.arelinterior.com/tr/projeler",
+  "videos": [
+   {
+    "title": "Arel Interior Design · Fabrika",
+    "kind": "factory",
+    "file": "assets/firms/arel-interior/factory.mp4",
+    "poster": "assets/firms/arel-interior/factory-poster.jpg",
+    "url": "https://www.youtube.com/watch?v=79tZr8cq7UE",
+    "source": "https://www.youtube.com/watch?v=79tZr8cq7UE"
+   },
+   {
+    "title": "Matild Palace, a Luxury Collection Hotel",
+    "kind": "project",
+    "file": "assets/firms/arel-interior/matild.mp4",
+    "poster": "assets/firms/arel-interior/matild-poster.jpg",
+    "url": "https://www.youtube.com/watch?v=KsYi5gLMNRc",
+    "source": "https://www.youtube.com/watch?v=KsYi5gLMNRc"
+   },
+   {
+    "title": "Bursa-Balat showroom",
+    "kind": "brand",
+    "url": "https://www.youtube.com/watch?v=bOikO2HuLik"
+   },
+   {
+    "title": "Teknosab · Nukon Lazer Makina",
+    "kind": "project",
+    "url": "https://youtu.be/UpFHKNxfEsQ"
+   },
+   {
+    "title": "Teknosab · Nuri Körüstan Makina",
+    "kind": "project",
+    "url": "https://www.youtube.com/watch?v=nr87L8dRKp4"
+   }
+  ],
+  "fairs": [],
+  "posts": [],
+  "sources": [
+   "https://www.arelinterior.com/tr/hakkimizda",
+   "https://www.arelinterior.com/tr/fabrikadan",
+   "https://www.arelinterior.com/tr/projeler",
+   "https://www.arelinterior.com/tr/video",
+   "https://www.arelinterior.com/tr/iletisim"
+  ],
+  "id": "arel-interior"
  }
 }
