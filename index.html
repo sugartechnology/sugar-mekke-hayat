@@ -858,7 +858,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610270817"></script>
+<script src="data/data.js?v=202610270851"></script>
 <script>
 (function(){
 "use strict";
@@ -866,7 +866,7 @@ const SHEET_RANGE="Veri!A1:L90", HAM_RANGE="Ham!A1:K4000";
 const RATE_LABELS={"Navlun ve lojistik":"freight","Montaj ve kurulum":"assembly","Sigorta ve beklenmedik giderler":"insurance"};
 const TIERS=["Silver","Gold","Platinum","Pearl","Emerald","Diamond","Royal"];
 const TIER_COLOR={Silver:"#BFC3C8",Gold:"#CDA85C",Platinum:"#DCD8CE",Pearl:"#EDE6D8",Emerald:"#2F7A5B",Diamond:"#A9D2E0",Royal:"#5E4C8E"};
-const S={sg:{loaded:false,cost:null,cfg:{rates:{},est:{},mix:null,pick:{}},dirty:false},cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],firms:{},itemImgs:{},view:"villas",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
+const S={sg:{loaded:false,cost:null,cfg:{rates:{},est:{},mix:null,pick:{}},dirty:false},cfg:null,keys:{bySource:{},sheetId:""},boq:{},boqDocs:{},media:[],firms:{},itemImgs:{},view:"compare",villa:null,pkg:null,floor:null,room:null,gi:0,cur:"USD",
   canEdit:false,db:null,assets:null,mcp:null,dbReady:false,admin:"media",pinPlan:null,pendingPin:null};
 try{const v=localStorage.getItem("hm_cur2");if(v==="SAR")S.cur="SAR";}catch(e){}
 try{const v=localStorage.getItem("hm_cmpv");if(v)S.cmpV=v;}catch(e){}
