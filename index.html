@@ -206,6 +206,7 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .cseg:hover{border-color:var(--line,#ddd)}.cseg.off{opacity:.42;text-decoration:line-through}.cseg.off i{background:transparent!important;box-shadow:inset 0 0 0 1.5px currentColor}
 .cbar i[data-segk]{cursor:pointer;transition:filter .15s}.cbar i[data-segk]:hover,.cbar i[data-segk]:focus-visible{filter:brightness(1.12);outline:2px solid var(--fg);outline-offset:1px}
 .segdot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.cseg-all{display:inline-flex;gap:6px;margin-left:auto}.cseg.all:disabled{opacity:.4;cursor:default;border-color:var(--line,#ddd)}
 .cseg.all{border-color:var(--line,#ddd);color:var(--ink,#222)}td.segoff,th.segoff{color:var(--muted);opacity:.4}td.segoff{font-weight:700}.clegend i{width:10px;height:10px;border-radius:3px}
 .crow{display:grid;grid-template-columns:120px 1fr 90px;gap:14px;align-items:center}
 .crow .nm{display:flex;gap:8px;align-items:center;font-weight:800;font-size:14px}
@@ -876,7 +877,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610271156"></script>
+<script src="data/data.js?v=202610280110"></script>
 <script>
 (function(){
 "use strict";
@@ -1407,9 +1408,9 @@ function compositionHTML(sv){sv=sv||cmpScope();
   rows.forEach(r=>{r.o.full=r.o.tot;r.o.tot=segs.reduce((a,[k])=>a+(on(k)?r.o[k]:0),0);});rows.sort((a,c)=>a.o.tot-c.o.tot);
   const mx=Math.max(...rows.map(r=>r.o.tot),1);const nOff=segs.filter(([k])=>off.has(k)).length;const xsegs=[];const hasOos=rows.some(r=>r.o._oos>0.5);
   return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
-   <div class="comp"><div class="clegend" role="group" aria-label="Grafikte gösterilecek kalemler">${segs.map(([k,l,c])=>`<button type="button" class="cseg${on(k)?"":" off"}" data-cseg="${esc(k)}" aria-pressed="${on(k)}" title="${on(k)?"Gizlemek":"Göstermek"} için tıklayın"><i style="background:${c}"></i>${l.split(" (")[0]}</button>`).join("")}${nOff?`<button type="button" class="cseg all" data-cseg="__all">Tümünü göster</button>`:""}</div>
+   <div class="comp"><div class="clegend" role="group" aria-label="Grafikte gösterilecek kalemler">${segs.map(([k,l,c])=>`<button type="button" class="cseg${on(k)?"":" off"}" data-cseg="${esc(k)}" aria-pressed="${on(k)}" title="${on(k)?"Gizlemek":"Göstermek"} için tıklayın"><i style="background:${c}"></i>${l.split(" (")[0]}</button>`).join("")}<span class="cseg-all"><button type="button" class="cseg all" data-cseg="__all" ${nOff?"":"disabled"}>Tümünü seç</button><button type="button" class="cseg all" data-cseg="__none" ${nOff===segs.length?"disabled":""}>Tümünü kapat</button></span></div>
    ${nOff?`<p class="note" style="margin:0">${nOff} kalem gizli: grafik, sıralama ve toplamlar yalnızca seçili kalemlerle hesaplanıyor; tabloda gizli sütunlar silik görünür ve toplama dahil edilmez.</p>`:""}
-   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>on(k)&&o[k]>0.5?`<i style="flex:${o[k]};background:${c}"${k.startsWith("_")?"":` data-segk="${esc(k)}" data-segp="${esc(b.name)}" data-segv="${esc(sv)}" data-segl="${esc(l.split(" (")[0])}" data-segc="${c}" role="button" tabindex="0"`} data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
+   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>on(k)&&o[k]>0.5?`<i style="flex:${o[k]};background:${c}"${k.startsWith("_")?"":` data-segk="${esc(k)}" data-segp="${esc(b.name)}" data-segv="${esc(sv)}" data-segl="${esc(l.split(" (")[0])}" data-segc="${c}" role="button" tabindex="0"`} data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?(o.tot>0.5?`<em class="ok">en uygun</em>`:""):`<em class="up">+${pct(mn>0?(o.tot-mn)/mn:0)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th class="${on(k)?"":"segoff"}">${l.split(" (")[0]}</th>`).join("")}<th>${nOff?"Seçili toplam":"Toplam"}</th>${hasOos?`<th class="xcol">Kapsam dışı<small>referans fiyat · dahil değil</small></th>`:""}${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
     ${rows.map(({b,o})=>{const op=S.cmpOpen&&S.cmpOpen.p===b.name?S.cmpOpen.k:null;const ncol=1+segs.length+1+(hasOos?1:0)+xsegs.length;
       const cellSplit=k=>compSplit(b.name,vs,k);
@@ -1428,7 +1429,7 @@ function compareHTML(){const v=cmpScope();
 function bindCompare(){const m=$("#main");m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelectorAll("[data-cmpk]").forEach(b=>b.onclick=e=>{e.stopPropagation();const [p,k]=b.dataset.cmpk.split("|");S.cmpOpen=S.cmpOpen&&S.cmpOpen.p===p&&S.cmpOpen.k===k?null:{p,k};const y=window.scrollY;render();window.scrollTo({top:y});});
   m.querySelectorAll("[data-segk]").forEach(x=>{const go=e=>{e.stopPropagation();e.preventDefault();openSegItems(x.dataset.segp,x.dataset.segk,x.dataset.segv,x.dataset.segl,x.dataset.segc);};x.onclick=go;x.onkeydown=e=>{if(e.key==="Enter"||e.key===" ")go(e);};});
-  m.querySelectorAll("[data-cseg]").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=b.dataset.cseg;const off=cmpOff();if(k==="__all")off.clear();else if(off.has(k))off.delete(k);else off.add(k);try{localStorage.setItem("hm_cmpoff3",JSON.stringify([...off]))}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});
+  m.querySelectorAll("[data-cseg]").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=b.dataset.cseg;const off=cmpOff();if(k==="__all")off.clear();else if(k==="__none"){m.querySelectorAll("[data-cseg]").forEach(x=>{const kk=x.dataset.cseg;if(!kk.startsWith("__"))off.add(kk);});}else if(off.has(k))off.delete(k);else off.add(k);try{localStorage.setItem("hm_cmpoff3",JSON.stringify([...off]))}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});
   m.querySelectorAll("[data-cv]").forEach(b=>b.onclick=()=>{S.cmpV=b.dataset.cv;try{localStorage.setItem("hm_cmpv",S.cmpV)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});}
 
 
@@ -2284,7 +2285,7 @@ function mergeParsed(p,extraFields){
 async function saveKeys(patch){const k={...S.keys,bySource:{...(S.keys.bySource||{})},sheetId:S.keys.sheetId||"",...patch};await S.db.doc("private/keys").set(k);S.keys=k;}
 async function saveCfg(c,msg){try{delete c.sheetId;
   if(S._pendingKeys){await saveKeys({bySource:S._pendingKeys});S._pendingKeys=null;}
-  await S.db.doc("config/main").set(c);if(msg)toast(msg);return true;}catch(e){toast(e?.code==="invalid_argument"?"Kaydetme yetkiniz yok":"Kaydedilemedi, tekrar deneyin");return false;}}
+  await S.db.doc("config/main").set(c);if(msg)toast(msg);return true;}catch(e){console.error("saveCfg",e);toast(e?.code==="invalid_argument"?"Kaydetme yetkiniz yok":"Paket fiyatları kaydedilemedi ("+(e?.code||e?.message||"hata")+"). Sugar'da “Yeniden uygula”ya tekrar basın");return false;}}
 function normB(x){return String(x||"").toLocaleLowerCase("tr").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/ı/g,"i").replace(/[^a-z0-9]/g,"");}
 function brandMasker(map){ // supplier names never reach shared data: a supplier's own brand shows as "<package> koleksiyonu"
   const tok=new Map(),byNorm={};for(const [k,n] of Object.entries(map))byNorm[normB(k)]=n;
