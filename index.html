@@ -204,6 +204,8 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .clegend span,.clegend .cseg{display:flex;gap:6px;align-items:center}
 .cseg{font:inherit;color:inherit;background:none;border:1px solid transparent;border-radius:999px;padding:4px 10px 4px 8px;margin:-4px -2px;cursor:pointer;transition:opacity .15s,border-color .15s}
 .cseg:hover{border-color:var(--line,#ddd)}.cseg.off{opacity:.42;text-decoration:line-through}.cseg.off i{background:transparent!important;box-shadow:inset 0 0 0 1.5px currentColor}
+.cbar i[data-segk]{cursor:pointer;transition:filter .15s}.cbar i[data-segk]:hover,.cbar i[data-segk]:focus-visible{filter:brightness(1.12);outline:2px solid var(--fg);outline-offset:1px}
+.segdot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .cseg.all{border-color:var(--line,#ddd);color:var(--ink,#222)}td.segoff,th.segoff{color:var(--muted);opacity:.4}td.segoff{font-weight:700}.clegend i{width:10px;height:10px;border-radius:3px}
 .crow{display:grid;grid-template-columns:120px 1fr 90px;gap:14px;align-items:center}
 .crow .nm{display:flex;gap:8px;align-items:center;font-weight:800;font-size:14px}
@@ -874,7 +876,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610270855"></script>
+<script src="data/data.js?v=202610271156"></script>
 <script>
 (function(){
 "use strict";
@@ -1372,23 +1374,42 @@ function matrixHTML(sv){sv=sv||cmpScope();
   return `<div class="tbl-wrap"><table><thead><tr><th>Bölüm</th>${bs.map(b=>`<th>${esc(pl(b.name))}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;}
 function compSplit(pkg,vs,k){const tech=k.startsWith("x_");const kk=tech?k.slice(2):k;const arr=[];vs.forEach(v=>boqItems(pkg,v).forEach(it=>{if(!!isTech(it.f)!==tech)return;const t=isExtra(it.f)?"Ev Dekorasyon":it.t==="Fixed"?"Fixed:"+FIXED_SUB(it):(it.t||"");const tk=["Loose Furniture","Ev Dekorasyon","Electrical Appliance","Installation","Smart Home"].includes(t)||t.startsWith("Fixed:")?t:"_other";if(tk===kk)arr.push(it);}));return brandSplit(arr);}
 const CMP_OFF_DEFAULT=["Fixed:Banyo","_fr","_as"];
+/* click on a composition segment: the items behind it, with product images */
+const segMatch=(it,k)=>k==="x_EL"?isTech(it.f)&&it.t!=="Smart Home":k==="x_SM"?isTech(it.f)&&it.t==="Smart Home":!isTech(it.f)&&segKey(it)===k;
+const segKey=it=>isExtra(it.f)?"Ev Dekorasyon":it.t==="Fixed"?"Fixed:"+FIXED_SUB(it):(["Loose Furniture"].includes(it.t)?it.t:"_other");
+function openSegItems(pkg,k,sv,lab,col){const vs=sv===ALLV?villas():[sv];const b=pkgByName(pkg);if(!b)return;
+  const groups=vs.map(v=>({v,arr:boqItems(pkg,v).filter(it=>segMatch(it,k)).map(it=>({...it,...labelItem(it)})).sort((a,c)=>(+c.v||0)-(+a.v||0))})).filter(g=>g.arr.length);
+  const all=groups.flatMap(g=>g.arr);const tot=all.reduce((a,x)=>a+(+x.v||0),0);const nImg=all.filter(it=>itemImgList(it,pkg,it._vil).length).length;
+  const s=$("#sheet");document.body.style.overflow="hidden";
+  s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet" role="dialog" aria-label="${esc(lab)} kalemleri">
+    <div class="sheet-head"><div><span class="eyebrow"><i class="segdot" style="background:${col}"></i>${esc(scopeName(sv))} · ${esc(pl(pkg))}</span><h2>${esc(lab)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
+    <div class="sumrow"><div><span class="eyebrow">Toplam · net</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${all.length}</b></div><div><span class="eyebrow">Görselli</span><b>${nImg}</b></div></div>
+    ${groups.length?groups.map(g=>`${vs.length>1?`<span class="eyebrow" style="margin-top:6px">${esc(g.v)} · ${money(g.arr.reduce((a,x)=>a+(+x.v||0),0))} ${S.cur}</span>`:""}
+     <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
+     ${g.arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,g.v)}<div>${esc(it.label)}${modelTag(it,pkg,g.v)}<small class="ib">${brandTag(it.b)}</small>${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`).join("")
+     :`<div class="empty"><strong>Bu bölümde kalem yok</strong></div>`}
+    <p class="note">Görsele tıklayınca büyür. Tutarlar kalem fiyatlarıdır (birim fiyat × adet); navlun, montaj ve KDV hariç.</p></div></div>`;
+  s.querySelector("[data-x]").onclick=closeSheet;s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget)closeSheet();});
+  if(sheetKeys)document.removeEventListener("keydown",sheetKeys);sheetKeys=e=>{if(!$("#overlay").children.length&&e.key==="Escape")closeSheet();};document.addEventListener("keydown",sheetKeys);
+  s.querySelector("[data-x]").focus({preventScroll:true});}
 function cmpOff(){if(!S.cmpOff){let a=CMP_OFF_DEFAULT;try{const v=localStorage.getItem("hm_cmpoff3");if(v!=null)a=JSON.parse(v);}catch(e){}S.cmpOff=new Set(Array.isArray(a)?a:[]);}return S.cmpOff;}
 function compositionHTML(sv){sv=sv||cmpScope();
   const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv];if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
-  const SEG=[["Loose Furniture","Hareketli M.","var(--f1)"],["Fixed:Mutfak","Hareketsiz M. · Mutfak","#5F7E6C"],["Fixed:Dolap","Hareketsiz M. · Dolap","var(--f2)"],["Fixed:Banyo","Hareketsiz M. · Banyo","#A9BDB1"],["Fixed:Diğer","Hareketsiz M. · Diğer","#C8D4CC"],["Ev Dekorasyon","Ev tekstili ve dekorasyon","var(--f3)"],["Electrical Appliance","Elektrikli ev aletleri (beyaz eşya, mutfak cihazları, TV, klima)","#8FA3B8"],["Installation","Cihaz montajı ve kurulumu","#C3CFDA"],["Smart Home","Akıllı ev sistemi (otomasyon, sensör, kontrol)","#B79FC2"],["_other","Tipi belirtilmemiş kalemler","var(--f4)"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
+  const SEG=[["Loose Furniture","Hareketli M.","var(--f1)"],["Fixed:Mutfak","Hareketsiz M. · Mutfak","#5F7E6C"],["Fixed:Dolap","Hareketsiz M. · Dolap","var(--f2)"],["Fixed:Banyo","Hareketsiz M. · Banyo","#A9BDB1"],["Fixed:Diğer","Hareketsiz M. · Diğer","#C8D4CC"],["Ev Dekorasyon","Ev tekstili ve dekorasyon","var(--f3)"],["Electrical Appliance","Elektrikli ev aletleri (beyaz eşya, mutfak cihazları, TV, klima)","#8FA3B8"],["Installation","Cihaz montajı ve kurulumu","#C3CFDA"],["Smart Home","Akıllı ev sistemi (otomasyon, sensör, kontrol)","#B79FC2"],["_other","Tipi belirtilmemiş kalemler","var(--f4)"],["x_EL","Elektrikli ev aletleri (beyaz eşya, TV, klima ve montajı)","#8FA3B8"],["x_SM","Akıllı ev sistemleri","#B79FC2"],["_fr","Navlun","var(--fx)"],["_as","Montaj ve sigorta","var(--fv)"]];
   const TK=["Electrical Appliance","Installation","Smart Home"];const inPrice=k=>!TK.includes(k);
   const rows=bs.map(b=>{const o={};SEG.forEach(([k])=>o[k]=0);vs.forEach(v=>{const L=layers(b,v);const t={},tx={};boqItems(b.name,v).forEach(it=>{const k=isExtra(it.f)?"Ev Dekorasyon":it.t==="Fixed"?"Fixed:"+FIXED_SUB(it):(it.t||"");const d=isTech(it.f)?tx:t;d[k]=(d[k]||0)+(+it.v||0);if(isOOS(it)&&!isTech(it.f))o._oos=(o._oos||0)+oosRef(it);});
       const typed=Object.values(t).reduce((x,y)=>x+y,0);const f=typed?L.furn/typed:0;
       Object.keys(t).forEach(k=>{const kk=(["Loose Furniture","Ev Dekorasyon"].includes(k)||k.startsWith("Fixed:"))?k:TK.includes(k)?k:"_other";o[kk]+=(t[k]||0)*f;});
       Object.keys(tx).forEach(k=>{const kk=TK.includes(k)?k:"_other";o["x_"+kk]=(o["x_"+kk]||0)+(tx[k]||0);});o._fr+=L.freight;o._as+=L.assembly+L.insurance;});
+    o.x_EL=(o["x_Electrical Appliance"]||0)+(o.x_Installation||0)+(o.x__other||0);o.x_SM=o["x_Smart Home"]||0;
     o.tot=SEG.reduce((a,[k])=>a+o[k],0);o.xt=TK.reduce((a,k)=>a+(o["x_"+k]||0),0)+(o.x__other||0);return {b,o};});
   const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const off=cmpOff();const on=k=>!off.has(k);
   rows.forEach(r=>{r.o.full=r.o.tot;r.o.tot=segs.reduce((a,[k])=>a+(on(k)?r.o[k]:0),0);});rows.sort((a,c)=>a.o.tot-c.o.tot);
-  const mx=Math.max(...rows.map(r=>r.o.tot),1);const nOff=segs.filter(([k])=>off.has(k)).length;const xsegs=SEG.filter(([k])=>rows.some(r=>(r.o["x_"+k]||0)>0.5));const hasOos=rows.some(r=>r.o._oos>0.5);
+  const mx=Math.max(...rows.map(r=>r.o.tot),1);const nOff=segs.filter(([k])=>off.has(k)).length;const xsegs=[];const hasOos=rows.some(r=>r.o._oos>0.5);
   return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend" role="group" aria-label="Grafikte gösterilecek kalemler">${segs.map(([k,l,c])=>`<button type="button" class="cseg${on(k)?"":" off"}" data-cseg="${esc(k)}" aria-pressed="${on(k)}" title="${on(k)?"Gizlemek":"Göstermek"} için tıklayın"><i style="background:${c}"></i>${l.split(" (")[0]}</button>`).join("")}${nOff?`<button type="button" class="cseg all" data-cseg="__all">Tümünü göster</button>`:""}</div>
    ${nOff?`<p class="note" style="margin:0">${nOff} kalem gizli: grafik, sıralama ve toplamlar yalnızca seçili kalemlerle hesaplanıyor; tabloda gizli sütunlar silik görünür ve toplama dahil edilmez.</p>`:""}
-   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>on(k)&&o[k]>0.5?`<i style="flex:${o[k]};background:${c}" data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
+   ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}</span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>on(k)&&o[k]>0.5?`<i style="flex:${o[k]};background:${c}"${k.startsWith("_")?"":` data-segk="${esc(k)}" data-segp="${esc(b.name)}" data-segv="${esc(sv)}" data-segl="${esc(l.split(" (")[0])}" data-segc="${c}" role="button" tabindex="0"`} data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?`<em class="ok">en uygun</em>`:`<em class="up">+${pct((o.tot-mn)/mn)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
    <div class="tbl-wrap"><table><thead><tr><th>Paket</th>${segs.map(([k,l])=>`<th class="${on(k)?"":"segoff"}">${l.split(" (")[0]}</th>`).join("")}<th>${nOff?"Seçili toplam":"Toplam"}</th>${hasOos?`<th class="xcol">Kapsam dışı<small>referans fiyat · dahil değil</small></th>`:""}${xsegs.map(([k,l])=>`<th class="xcol">${l.split(" (")[0]}<small>fiyata dahil değil</small></th>`).join("")}</tr></thead><tbody>
     ${rows.map(({b,o})=>{const op=S.cmpOpen&&S.cmpOpen.p===b.name?S.cmpOpen.k:null;const ncol=1+segs.length+1+(hasOos?1:0)+xsegs.length;
       const cellSplit=k=>compSplit(b.name,vs,k);
@@ -1398,7 +1419,7 @@ function compositionHTML(sv){sv=sv||cmpScope();
       return `<tr><td><span style="display:inline-flex;gap:8px;align-items:center;font-weight:800">${dot(b.name)}${esc(pl(b.name))}</span></td>${segs.map(([k])=>!on(k)?`<td class="segoff" title="Gizli kalem: toplama dahil değil">${money(o[k])}</td>`:(k.startsWith("_")?`<td>${money(o[k])}</td>`:tdv(k,o[k]))).join("")}<td><b>${money(o.tot)}</b></td>${hasOos?`<td class="xcol">${o._oos>0.5?`<span class="oosv" title="Firmanın teklifinde olmayan kalemler; diğer paketlerdeki aynı kalemlerin fiyatıyla">${money(o._oos)}</span>`:"–"}</td>`:""}${xsegs.map(([k])=>tdv("x_"+k,o["x_"+k]||0,"xcol")).join("")}</tr>${det}`;}).join("")}</tbody></table></div>
    <p class="note"><span class="cplus" style="pointer-events:none">+</span> işaretli hücrelerde birden fazla firmanın ürünü var; tıklayınca her firmanın ürün maliyet toplamı (<b>*</b>) açılır.</p>
    ${hasOos?`<p class="note"><span class="oosv">Altı çizili</span> tutarlar firmanın teklif kapsamı dışında kalan kalemlerdir (Ergo: banyo dolapları, mutfak seti ve birkaç sehpa). Tutar, aynı kalemin diğer paketlerdeki fiyatıdır; paket toplamına dahil değildir.</p>`:""}
-   ${xsegs.length?`<p class="note">Elektrikli ev aletleri, cihaz montajı ve akıllı ev sistemi kalemleri BoQ'da ayrı listelenir ve paket fiyatına dahil değildir. Villa başına yaklaşık ${money(rows[0].o.xt/vs.length)} ${S.cur}; tüm paketlerde aynı cihaz listesi.</p>`:""}</section>`;}
+   ${segs.some(([k])=>k.startsWith("x_"))?`<p class="note">Elektrikli ev aletleri ve akıllı ev sistemleri BoQ'da ayrı listelenir; sunumdaki paket fiyatlarına dahil değildir. Grafikte ve tabloda gösterilir, başlığa tıklayarak çıkarabilirsiniz. Tüm paketlerde aynı cihaz listesi.</p>`:""}</section>`;}
 function compareHTML(){const v=cmpScope();
   return `<div class="cmp-scope"><span class="eyebrow">Villa tipi</span><div class="seg" role="tablist">${villas().map(x=>`<button data-cv="${esc(x)}" aria-pressed="${v===x}">${esc(x)}</button>`).join("")}<button data-cv="${ALLV}" aria-pressed="${v===ALLV}">${villas().length} villa toplamı</button></div></div>
   ${compositionHTML(v)}
@@ -1406,6 +1427,7 @@ function compareHTML(){const v=cmpScope();
   <section class="block"><div class="head"><div><span class="eyebrow">Kat kırılımı</span><h2>Kat ve bölüm karşılaştırması · ${esc(scopeName(v))}</h2></div><p>Mobilya net. Yeşil satırdaki en uygun, kırmızı en yüksek.</p></div>${matrixHTML(v)}</section>`;}
 function bindCompare(){const m=$("#main");m.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const [v,p]=b.dataset.open.split("|");openVilla(v,p);});
   m.querySelectorAll("[data-cmpk]").forEach(b=>b.onclick=e=>{e.stopPropagation();const [p,k]=b.dataset.cmpk.split("|");S.cmpOpen=S.cmpOpen&&S.cmpOpen.p===p&&S.cmpOpen.k===k?null:{p,k};const y=window.scrollY;render();window.scrollTo({top:y});});
+  m.querySelectorAll("[data-segk]").forEach(x=>{const go=e=>{e.stopPropagation();e.preventDefault();openSegItems(x.dataset.segp,x.dataset.segk,x.dataset.segv,x.dataset.segl,x.dataset.segc);};x.onclick=go;x.onkeydown=e=>{if(e.key==="Enter"||e.key===" ")go(e);};});
   m.querySelectorAll("[data-cseg]").forEach(b=>b.onclick=e=>{e.stopPropagation();const k=b.dataset.cseg;const off=cmpOff();if(k==="__all")off.clear();else if(off.has(k))off.delete(k);else off.add(k);try{localStorage.setItem("hm_cmpoff3",JSON.stringify([...off]))}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});
   m.querySelectorAll("[data-cv]").forEach(b=>b.onclick=()=>{S.cmpV=b.dataset.cv;try{localStorage.setItem("hm_cmpv",S.cmpV)}catch(e){}const y=window.scrollY;render();window.scrollTo({top:y});});}
 
