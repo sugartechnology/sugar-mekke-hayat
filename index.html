@@ -736,6 +736,7 @@ th.muted,td.muted{color:var(--muted)}
 .ithumb{flex:none;width:64px;height:48px;border:1px solid var(--line);background:#fff;padding:2px;display:grid;place-items:center;cursor:zoom-in;border-radius:2px}
 .ithumb img{max-width:100%;max-height:100%;object-fit:contain}.ithumb:hover{border-color:var(--fg)}
 .ithumb{position:relative}.ithumb .iq{position:absolute;right:-5px;top:-6px;font:600 9.5px/1 var(--sans,inherit);font-style:normal;background:var(--fg);color:var(--bg);padding:2px 4px;border-radius:8px;pointer-events:none}
+.psrc{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:4px 0 2px}.psrc label{display:flex;gap:6px;align-items:center;font-size:13.5px}
 .imodel{display:block;font-style:normal;font-size:12px;font-weight:500;color:var(--accent);line-height:1.3;margin:1px 0}.pcit .imodel{margin:0 0 2px}
 .ithumbs{display:inline-flex;gap:3px;flex:none}.ithumbs .ithumb.im{width:40px}.pcit .ithumbs .ithumb{width:32px}
 .iz-mods{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:6px 12px}.iz-mods button{display:flex;flex-direction:column;align-items:center;gap:4px;background:#fff;border:1px solid #ccc;border-radius:3px;padding:4px;cursor:pointer;color:#222;font-size:11.5px;max-width:120px}.iz-mods button[aria-pressed=true]{border-color:#111;box-shadow:0 0 0 1px #111}.iz-mods img{height:54px;width:auto;max-width:100px;object-fit:contain}
@@ -846,7 +847,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610270632"></script>
+<script src="data/data.js?v=202610270636"></script>
 <script>
 (function(){
 "use strict";
@@ -2060,9 +2061,10 @@ function adminData(){
   const c=S.cfg;const bs=brands(),vs=villas(),secs=sections();
   const nItems=Object.values(S.boq).reduce((a,vv)=>a+Object.values(vv).reduce((x,arr)=>x+arr.length,0),0);
   return `<div class="card"><span class="eyebrow">Google Sheets bağlantısı</span>
-     <p class="note" style="margin:0">Excel'deki Veri sayfasını (kat tutarları, oranlar, KDV, villa adedi, kur) ve Ham sayfasını (kalem listesi) çeker. Tutarlar USD olmalı.</p>
+     <p class="note" style="margin:0">Excel'deki Veri sayfasını (kat tutarları, oranlar, KDV, villa adedi, kur) ve Ham sayfasını (kalem listesi) çeker. Tutarlar USD olmalı.${S.sg?.cost?` ${(S.sg.cfg.source||"v2")==="v2"?"<b>Fiyatlar V2 firma tekliflerinden alınır</b> ve Sugar'daki firma kâr oranlarıyla çarpılır; V3'ten yalnızca kalem listesi, odalar, navlun/montaj ve Ergo gibi V2'de olmayan kalemler gelir.":"Fiyatlar V3 dosyalarından alınır."}`:""}</p>
+     ${S.sg?.cost?`<div class="psrc" role="radiogroup" aria-label="Fiyat kaynağı"><span class="eyebrow">Fiyat kaynağı</span><label><input type="radio" name="psrc" value="v2" ${(S.sg.cfg.source||"v2")==="v2"?"checked":""}> V2 firma teklifleri × Sugar kâr oranları</label><label><input type="radio" name="psrc" value="v3" ${S.sg.cfg.source==="v3"?"checked":""}> V3 dosyalarındaki fiyatlar</label></div>`:""}
      <div class="form"><label class="f" style="grid-column:1/-1">Tablo bağlantısı ya da ID<input id="sheetId" value="${esc(S.keys.sheetId||"")}"></label></div>
-     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn primary" id="syncBtn" ${S.mcp?"":"disabled"}>Google Sheets'ten çek</button>
+     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn primary" id="syncBtn" ${S.mcp?"":"disabled"}>Google Sheets'ten çek</button>${S.sg?.cost?.v2SheetId&&(S.sg.cfg.source||"v2")==="v2"?`<button class="btn" id="v2Btn" ${S.mcp?"":"disabled"}>Yalnızca V2 fiyatlarını güncelle</button>`:""}
       <span class="status" id="syncStatus">${S.mcp?[c?.syncedAt?"Son çekim: "+new Date(c.syncedAt).toLocaleString("tr-TR"):"",nItems?nItems+" kalem yüklü":""].filter(Boolean).join(" · "):"Google Sheets bağlantısı bu görünümde kullanılamıyor."}</span></div></div>
    ${c?`<div class="card"><div class="block-head"><span class="eyebrow">Tutarları düzenle · USD, mobilya net</span><div style="display:flex;gap:8px"><button class="btn primary sm" id="saveData">Kaydet</button></div></div>
      <div class="form"><label class="f">KDV oranı (%)<input id="dVat" type="number" step="0.1" value="${((c.vat||0)*100).toFixed(1)}"></label><label class="f">Proje villa adedi<input id="dCount" type="number" value="${c.villaCount||0}"></label><label class="f">Kur · 1 USD = SAR<input id="dFx" type="number" step="0.0001" value="${c.fx||3.75}"></label></div>
@@ -2238,6 +2240,8 @@ async function applyRenames(ren,hasHam){ // move image tags (and, without a fres
 function sheetIdFrom(s){const m=String(s||"").match(/\/d\/([A-Za-z0-9_-]{20,})/);return m?m[1]:String(s||"").trim();}
 const payloadRows=res=>{let p=res?.payload;if(typeof p==="string"){try{p=JSON.parse(p)}catch(e){}}return p?.values||p?.valueRange?.values;};
 function bindData(m){
+  m.querySelectorAll('input[name="psrc"]').forEach(r=>r.onchange=()=>{if(typeof sgSave!=="function")return;S.sg.cfg.source=r.value;sgSave();const y=window.scrollY;render();window.scrollTo({top:y});});
+  m.querySelector("#v2Btn")?.addEventListener("click",async()=>{const st=m.querySelector("#syncStatus");st.textContent="V2 fiyatları okunuyor…";try{await sgV2Price();st.textContent="Fiyatlar V2 × Sugar oranlarıyla güncellendi";}catch(e){st.textContent="Güncellenemedi: "+(e?.message||e?.code||"hata");}});
   m.querySelector("#syncBtn")?.addEventListener("click",async()=>{const st=m.querySelector("#syncStatus");const id=sheetIdFrom(m.querySelector("#sheetId").value);if(!id){st.textContent="Tablo bağlantısını girin.";return;}
     st.textContent="Google Sheets okunuyor…";
     try{const rows=payloadRows(await S.mcp.callTool("Google Sheets","get_values",{spreadsheetId:id,range:SHEET_RANGE},{cache:false}));
@@ -2252,7 +2256,8 @@ function bindData(m){
       if(id!==S.keys.sheetId){try{await saveKeys({sheetId:id});}catch(e){}}
       const cfg=mergeParsed(parsed,{syncedAt:new Date().toISOString(),source:"sheets"});delete cfg.pricing;const map=S._pendingKeys||S.keys.bySource;const ren=S._renames||{};S._renames=null;
       const hasHam=Object.keys(ham).length>0;
-      if(await saveCfg(cfg)){await applyRenames(ren,hasHam);if(hasHam){await saveBoq(ham,map);try{await S.db.doc("private/sugarBackup").delete();}catch(e){}}
+      if(await saveCfg(cfg)){await applyRenames(ren,hasHam);if(hasHam){await saveBoq(ham,map);try{await S.db.doc("private/sugarBackup").delete();}catch(e){}S.sg&&(S.sg.backup=null);}
+        if(typeof sgV2Price==="function"&&(S.sg?.cfg?.source||"v2")==="v2"&&S.sg?.cost?.v2SheetId){st.textContent="Fiyatlar V2 tekliflerinden hesaplanıyor…";await sgV2Price(cfg.syncedAt);}
         const n=Object.values(ham).reduce((a,vv)=>a+Object.values(vv).reduce((x,arr)=>x+arr.length,0),0);
         toast(`${parsed.brands.length} paket, ${parsed.villas.length} villa${n?`, ${n} kalem`:""} güncellendi`);st.textContent="Güncellendi";}}
     catch(e){st.textContent=e?.code==="not_granted"||e?.code==="server_not_connected"?"Google Sheets bağlantısına izin verin ya da bağlayıcıyı claude.ai'de açın.":"Çekilemedi: "+(e?.message||e?.code||"bilinmeyen hata");}});
