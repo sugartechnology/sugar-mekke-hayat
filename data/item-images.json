@@ -2617,14 +2617,14 @@
     "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-001": "Asparas Sehpa",
     "F-002": "Casper Tekli Koltuk",
-    "F-003": "Oslo 3'lü Kanepe",
-    "F-004": "Oslo 2'li Kanepe",
+    "F-003": "Matisse 3 Seater",
+    "F-004": "Matisse 2 Seater",
     "F-005": "Solaris Berjer",
     "F-006": "Solaris Orta Sehpa",
     "F-007": "Solaris Küçük Sehpa",
     "F-008": "Solaris Küçük Sehpa",
     "F-009": "Solaris Küçük TV Ünitesi",
-    "F-010": "Solaris Yemek Masası (ahşap)",
+    "F-010": "Matisse Masa 190 cm",
     "F-011": "Solaris Sandalye",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
@@ -2637,11 +2637,11 @@
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
     "F-024": "Soho Orta Sehpa",
-    "F-025": "Soho Küçük Sehpa",
+    "F-025": "Soho Yan Sehpa",
     "F-026": "Soho TV Ünitesi (alt modül)",
     "F-027": "Life 3'lü Kanepe",
     "F-028": "Life 2'li Kanepe",
-    "F-029": "Soho Yemek Masası",
+    "F-029": "Soho Masa 180 cm",
     "F-030": "Soho Sandalye",
     "F-032": "Solaris Karyola",
     "F-033": "Flex 100 cm Camlı Dolap + Flex Sol Raflı Dolap",
@@ -2672,9 +2672,9 @@
     "F-065": "Cosmo Pedli Koltuk",
     "F-066": "Olivia Küçük Orta Sehpa",
     "F-067": "Casper Tekli Koltuk",
-    "F-068": "Lumo Kitaplık",
-    "F-069": "Lumo Sağ Kollu Modül ×2",
-    "F-070": "Lumo Sağ Kollu Modül ×2",
+    "F-068": "Luma Kitaplık",
+    "F-069": "Lumo 3'lü Koltuk",
+    "F-070": "Lumo 2'lü Koltuk",
     "F-071": "Lumo TV Ünitesi (alt modül)",
     "F-072": "Lumo Orta Sehpa",
     "F-073": "Lumo Yan Sehpa",
@@ -2719,6 +2719,31 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-092": "Moon 3'lü Koltuk",
+    "F-093": "Moon 2'li Koltuk",
+    "F-094": "Moon Berjer (Bob Berjer)",
+    "F-095": "Moon Orta Sehpa",
+    "F-096": "Moon Yan Sehpa",
+    "F-097": "Moon Yan Sehpa",
+    "F-098": "Moon TV Alt Blok",
+    "F-099": "Moon Masa 210 cm",
+    "F-100": "Moon Sandalye Döner",
+    "F-101": "Moon Bookshelves",
+    "F-106": "Soho Orta Sehpa",
+    "F-107": "Soho Yan Sehpa",
+    "F-108": "Soho TV Ünitesi Alt Blok",
+    "F-109": "Life 3'lü Koltuk",
+    "F-110": "Life 2'li Koltuk",
+    "F-111": "Soho Masa 190 cm",
+    "F-112": "Soho Sandalye",
+    "F-113": "Soho Berjer",
+    "F-114": "Soho Yan Sehpa",
+    "F-149": "Lumo Mini Köşe (Sol)+Lumo Mini Köşe (Sağ)",
+    "F-150": "Lumo TV Alt Blok",
+    "F-151": "Lumo Middle Table",
+    "F-152": "Lumo Middle Table",
+    "F-153": "Lumo Bedside Table x2",
+    "F-154": "Solaris Karyola (90x190 yatak)",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -2756,6 +2781,33 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-160": "Moon 3 seater",
+    "F-161": "Moon 2 seater",
+    "F-162": "Harmony Berjer",
+    "F-163": "Harmony Orta Sehpa",
+    "F-164": "Harmony Yan Sehpa",
+    "F-165": "Harmony Yan Sehpa",
+    "F-166": "Harmony Konsol",
+    "F-167": "Harmony TV Ünitesi Takımı (Alt Blok + Raf)",
+    "F-168": "Harmony Masa 210 cm",
+    "F-169": "Harmony Sandalye",
+    "F-170": "Moon Kitaplık",
+    "F-171": "Soho Orta Sehpa",
+    "F-172": "Soho Yan Sehpa",
+    "F-173": "Soho TV Ünitesi Alt Blok",
+    "F-174": "Life 3'lü Koltuk",
+    "F-175": "Life 2'li Koltuk",
+    "F-176": "Soho Masa 210 cm",
+    "F-177": "Soho Sandalye",
+    "F-178": "Life Armchair",
+    "F-179": "Harmony Yan Sehpa",
+    "F-196": "Solaris Karyola (90x190 yatak)",
+    "F-229": "Lumo Mini Köşe (Sol)",
+    "F-230": "Lumo TV Alt Blok",
+    "F-231": "Lumo orta sehpa",
+    "F-232": "Lumo yan sehpa",
+    "F-233": "Lumo Kitaplık",
+    "F-234": "Solaris Karyola (90x190 yatak)",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -2813,14 +2865,23 @@
     ],
     "F-001": "assets/items/sardunya/A_F-001.webp",
     "F-002": "assets/items/sardunya/A_F-002.webp",
-    "F-003": "assets/items/sardunya/A_F-003.webp",
-    "F-004": "assets/items/sardunya/A_F-004.webp",
+    "F-003": [
+     "assets/items/sardunya/site/matisse-koltuk-takimi_2.webp",
+     "assets/items/sardunya/site/matisse-koltuk-takimi_0.webp"
+    ],
+    "F-004": [
+     "assets/items/sardunya/site/matisse-koltuk-takimi_3.webp",
+     "assets/items/sardunya/site/matisse-koltuk-takimi_0.webp"
+    ],
     "F-005": "assets/items/sardunya/A_F-005.webp",
     "F-006": "assets/items/sardunya/A_F-006.webp",
     "F-007": "assets/items/sardunya/A_F-006.webp",
     "F-008": "assets/items/sardunya/A_F-006.webp",
     "F-009": "assets/items/sardunya/A_F-009.webp",
-    "F-010": "assets/items/sardunya/A_F-010.webp",
+    "F-010": [
+     "assets/items/sardunya/site/matisse-yemek-odasi-takimi_4.webp",
+     "assets/items/sardunya/site/matisse-yemek-odasi-takimi_2.webp"
+    ],
     "F-011": "assets/items/sardunya/A_F-011.webp",
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
@@ -2857,11 +2918,17 @@
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
     "F-024": "assets/items/sardunya/A_F-024.webp",
-    "F-025": "assets/items/sardunya/A_F-025.webp",
+    "F-025": [
+     "assets/items/sardunya/site/soho-sehpa_1.webp",
+     "assets/items/sardunya/site/soho-sehpa_0.webp"
+    ],
     "F-026": "assets/items/sardunya/A_F-026.webp",
     "F-027": "assets/items/sardunya/A_F-027.webp",
     "F-028": "assets/items/sardunya/A_F-028.webp",
-    "F-029": "assets/items/sardunya/A_F-029.webp",
+    "F-029": [
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_2.webp",
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_3.webp"
+    ],
     "F-030": "assets/items/sardunya/A_F-030.webp",
     "F-032": "assets/items/sardunya/A_F-032.webp",
     "F-033": [
@@ -2954,20 +3021,17 @@
     "F-065": "assets/items/sardunya/A_F-065.webp",
     "F-066": "assets/items/sardunya/A_F-066.webp",
     "F-067": "assets/items/sardunya/A_F-002.webp",
-    "F-068": "assets/items/sardunya/A_F-068.webp",
+    "F-068": [
+     "assets/items/sardunya/site/lumo-kitaplik_0.webp",
+     "assets/items/sardunya/site/lumo-kitaplik_4.webp"
+    ],
     "F-069": [
-     {
-      "a": "assets/items/sardunya/A_F-069.webp",
-      "n": "Lumo Sağ Kollu Modül",
-      "q": 2
-     }
+     "assets/items/sardunya/site/lumo-kose-takimi_2.webp",
+     "assets/items/sardunya/site/lumo-kose-takimi_3.webp"
     ],
     "F-070": [
-     {
-      "a": "assets/items/sardunya/A_F-069.webp",
-      "n": "Lumo Sağ Kollu Modül",
-      "q": 2
-     }
+     "assets/items/sardunya/site/lumo-kose-takimi_2.webp",
+     "assets/items/sardunya/site/lumo-kose-takimi_3.webp"
     ],
     "F-071": "assets/items/sardunya/A_F-071.webp",
     "F-072": "assets/items/sardunya/A_F-072.webp",
@@ -3077,6 +3141,87 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-092": [
+     "assets/items/sardunya/site/moon-koltuk-takimi_2.webp",
+     "assets/items/sardunya/site/moon-koltuk-takimi_0.webp"
+    ],
+    "F-093": [
+     "assets/items/sardunya/site/moon-koltuk-takimi_5.webp",
+     "assets/items/sardunya/site/moon-koltuk-takimi_1.webp"
+    ],
+    "F-094": [
+     "assets/items/sardunya/site/bob-berjer_0.webp",
+     "assets/items/sardunya/site/bob-berjer_3.webp"
+    ],
+    "F-095": [
+     "assets/items/sardunya/site/moon-sehpa_0.webp",
+     "assets/items/sardunya/site/moon-sehpa_2.webp"
+    ],
+    "F-096": [
+     "assets/items/sardunya/site/moon-sehpa_1.webp",
+     "assets/items/sardunya/site/moon-sehpa_2.webp"
+    ],
+    "F-097": [
+     "assets/items/sardunya/site/moon-sehpa_1.webp",
+     "assets/items/sardunya/site/moon-sehpa_2.webp"
+    ],
+    "F-098": [
+     "assets/items/sardunya/site/moon-tv-unitesi_1.webp",
+     "assets/items/sardunya/site/moon-tv-unitesi_0.webp"
+    ],
+    "F-099": [
+     "assets/items/sardunya/site/moon-yemek-odasi-takimi_4.webp",
+     "assets/items/sardunya/site/moon-yemek-odasi-takimi_2.webp"
+    ],
+    "F-100": [
+     "assets/items/sardunya/site/moon-sandalye-2_1.webp",
+     "assets/items/sardunya/site/moon-sandalye-2_0.webp"
+    ],
+    "F-101": [
+     "assets/items/sardunya/site/moon-kitaplik_1.webp",
+     "assets/items/sardunya/site/moon-kitaplik_2.webp"
+    ],
+    "F-106": "assets/items/sardunya/A_F-024.webp",
+    "F-107": [
+     "assets/items/sardunya/site/soho-sehpa_1.webp",
+     "assets/items/sardunya/site/soho-sehpa_0.webp"
+    ],
+    "F-108": "assets/items/sardunya/A_F-026.webp",
+    "F-109": "assets/items/sardunya/A_F-027.webp",
+    "F-110": "assets/items/sardunya/A_F-028.webp",
+    "F-111": [
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_2.webp",
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_3.webp"
+    ],
+    "F-112": "assets/items/sardunya/A_F-030.webp",
+    "F-113": [
+     "assets/items/sardunya/site/soho-koltuk-takimi_1.webp"
+    ],
+    "F-114": [
+     "assets/items/sardunya/site/soho-sehpa_1.webp",
+     "assets/items/sardunya/site/soho-sehpa_0.webp"
+    ],
+    "F-149": [
+     "assets/items/sardunya/site/lumo-kose-takimi_1.webp",
+     "assets/items/sardunya/site/lumo-kose-takimi_0.webp"
+    ],
+    "F-150": "assets/items/sardunya/A_F-071.webp",
+    "F-151": [
+     "assets/items/sardunya/site/lumo-sehpa_1.webp",
+     "assets/items/sardunya/site/lumo-sehpa_3.webp"
+    ],
+    "F-152": [
+     "assets/items/sardunya/site/lumo-sehpa_1.webp",
+     "assets/items/sardunya/site/lumo-sehpa_3.webp"
+    ],
+    "F-153": [
+     "assets/items/sardunya/site/lumo-komodin_2.webp",
+     "assets/items/sardunya/site/lumo-komodin_1.webp"
+    ],
+    "F-154": [
+     "assets/items/sardunya/site/solaris-yatak_1.webp",
+     "assets/items/sardunya/site/solaris-yatak_5.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -3163,6 +3308,96 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-160": [
+     "assets/items/sardunya/site/moon-koltuk-takimi_2.webp",
+     "assets/items/sardunya/site/moon-koltuk-takimi_0.webp"
+    ],
+    "F-161": [
+     "assets/items/sardunya/site/moon-koltuk-takimi_5.webp",
+     "assets/items/sardunya/site/moon-koltuk-takimi_1.webp"
+    ],
+    "F-162": [
+     "assets/items/sardunya/site/harmony-kose-takimi_5.webp",
+     "assets/items/sardunya/site/harmony-kose-takimi_1.webp"
+    ],
+    "F-163": [
+     "assets/items/sardunya/site/harmony-sehpa_0.webp",
+     "assets/items/sardunya/site/harmony-sehpa_2.webp"
+    ],
+    "F-164": [
+     "assets/items/sardunya/site/harmony-sehpa_1.webp",
+     "assets/items/sardunya/site/harmony-sehpa_2.webp"
+    ],
+    "F-165": [
+     "assets/items/sardunya/site/harmony-sehpa_1.webp",
+     "assets/items/sardunya/site/harmony-sehpa_2.webp"
+    ],
+    "F-166": [
+     "assets/items/sardunya/site/harmony-yemek-odasi-takimi_3.webp",
+     "assets/items/sardunya/site/harmony-yemek-odasi-takimi_4.webp"
+    ],
+    "F-167": [
+     "assets/items/sardunya/site/harmony-tv-unitesi_0.webp",
+     "assets/items/sardunya/site/harmony-tv-unitesi_2.webp"
+    ],
+    "F-168": [
+     "assets/items/sardunya/site/harmony-yemek-odasi-takimi_5.webp",
+     "assets/items/sardunya/site/harmony-yemek-odasi-takimi_2.webp"
+    ],
+    "F-169": [
+     "assets/items/sardunya/site/harmony-sandalye_3.webp",
+     "assets/items/sardunya/site/harmony-sandalye_0.webp"
+    ],
+    "F-170": [
+     "assets/items/sardunya/site/moon-kitaplik_1.webp",
+     "assets/items/sardunya/site/moon-kitaplik_2.webp"
+    ],
+    "F-171": "assets/items/sardunya/A_F-024.webp",
+    "F-172": [
+     "assets/items/sardunya/site/soho-sehpa_1.webp",
+     "assets/items/sardunya/site/soho-sehpa_0.webp"
+    ],
+    "F-173": "assets/items/sardunya/A_F-026.webp",
+    "F-174": "assets/items/sardunya/A_F-027.webp",
+    "F-175": "assets/items/sardunya/A_F-028.webp",
+    "F-176": [
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_2.webp",
+     "assets/items/sardunya/site/soho-yemek-odasi-takimi_3.webp"
+    ],
+    "F-177": "assets/items/sardunya/A_F-030.webp",
+    "F-178": [
+     "assets/items/sardunya/site/life-berjer_0.webp",
+     "assets/items/sardunya/site/life-berjer_2.webp"
+    ],
+    "F-179": [
+     "assets/items/sardunya/site/harmony-sehpa_1.webp",
+     "assets/items/sardunya/site/harmony-sehpa_2.webp"
+    ],
+    "F-196": [
+     "assets/items/sardunya/site/solaris-yatak_1.webp",
+     "assets/items/sardunya/site/solaris-yatak_5.webp"
+    ],
+    "F-229": [
+     "assets/items/sardunya/site/lumo-kose-takimi_1.webp",
+     "assets/items/sardunya/site/lumo-kose-takimi_0.webp"
+    ],
+    "F-230": "assets/items/sardunya/A_F-071.webp",
+    "F-231": [
+     "assets/items/sardunya/site/lumo-sehpa_1.webp",
+     "assets/items/sardunya/site/lumo-sehpa_3.webp"
+    ],
+    "F-232": [
+     "assets/items/sardunya/site/lumo-sehpa_2.webp",
+     "assets/items/sardunya/site/lumo-sehpa_3.webp"
+    ],
+    "F-233": [
+     "assets/items/sardunya/site/lumo-kitaplik_0.webp",
+     "assets/items/sardunya/site/lumo-kitaplik_4.webp"
+    ],
+    "F-234": [
+     "assets/items/sardunya/site/solaris-yatak_1.webp",
+     "assets/items/sardunya/site/solaris-yatak_5.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",

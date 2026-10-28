@@ -333,8 +333,8 @@
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
  "pricing": {
-  "at": "2026-10-28T10:12:01.808Z",
-  "cost": "2026-10-28T10:11:58.718Z",
+  "at": "2026-10-28T10:22:04.902Z",
+  "cost": "2026-10-28T10:22:00.089Z",
   "firm": {
    "arelinterior": 0,
    "bellona": 20,
@@ -358,7 +358,7 @@
  "source": "sheets",
  "subtitle": "Villa mobilya paketleri",
  "syncedAt": "2026-10-28T10:11:48.904Z",
- "updatedAt": "2026-10-28T10:12:01.808Z",
+ "updatedAt": "2026-10-28T10:22:04.902Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
