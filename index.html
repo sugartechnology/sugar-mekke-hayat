@@ -892,7 +892,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610281136"></script>
+<script src="data/data.js?v=202610281236"></script>
 <script>
 (function(){
 "use strict";
@@ -1499,6 +1499,7 @@ function pkgBoqPdf(pkg,sv){const vs=sv===ALLV?villas():[sv];const b=pkgByName(pk
     if(pi===pages.length-1){y+=60;ptx(c,"Kalemler toplamı · net",PW-PM-320,y,{size:19,color:PDF_MUTED,align:"right"});ptx(c,`${S.locked?"•":money(tot)} ${S.cur}`,PW-PM,y,{size:30,align:"right",weight:600});
       ptx(c,"Birim fiyat × adet; navlun, montaj, sigorta ve KDV hariç."+(ed?" Liste ekle/çıkar ile düzenlendi; sunumdaki paket fiyatından farklı olabilir.":""),PM,y,{size:16,color:PDF_MUTED,max:PW-PM*2-700});}}}));
   const nm=`Paket-BoQ-${slug(scopeName(sv))}-${slug(pkg)}${b.firm?"-"+slug(b.firm):""}.pdf`;runPdf({pages:P,fileName:nm,label:`Paket BoQ · ${head}`});}
+const lgIncl=()=>S.cfg?.lgIncl!==false;
 function cmpOff(){if(!S.cmpOff){let a=CMP_OFF_DEFAULT;try{const v=localStorage.getItem("hm_cmpoff3");if(v!=null)a=JSON.parse(v);}catch(e){}S.cmpOff=new Set(Array.isArray(a)?a:[]);}return S.cmpOff;}
 function compositionHTML(sv){sv=sv||cmpScope();
   const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv];if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
@@ -1511,12 +1512,13 @@ function compositionHTML(sv){sv=sv||cmpScope();
       Object.keys(tx).forEach(k=>{const kk=TK.includes(k)?k:"_other";o["x_"+kk]=(o["x_"+kk]||0)+(tx[k]||0);});o._fr+=L.freight;o._as+=L.assembly+L.insurance;});
     o.x_EL=(o["x_Electrical Appliance"]||0)+(o.x_Installation||0)+(o.x__other||0);o.x_SM=o["x_Smart Home"]||0;
     vs.forEach(v=>{const e=S.boqEd?.[b.name+"|"+v];if(!e)return;if(e.removed.size)boqItems(b.name,v).forEach(it=>{if(e.removed.has(segIid({...it,...labelItem(it),_pkg:it._pkg},v))){const kk=segKeyAny(it);if(kk in o)o[kk]-=(+it.v||0);}});e.added.forEach(a=>{if(a._k in o)o[a._k]+=(+a.v||0);});});
+    if(lgIncl()){const D=o._fr+o._as;const ks=SEG.map(([k])=>k).filter(k=>!["_fr","_as","x_EL","x_SM","Electrical Appliance","Installation","Smart Home"].includes(k));const base=ks.reduce((a,k)=>a+(o[k]>0?o[k]:0),0);if(base>0&&D>0)ks.forEach(k=>{if(o[k]>0)o[k]+=o[k]/base*D;});o._fr=0;o._as=0;}
     o.ed=pkgEdited(b.name,vs);
     o.tot=SEG.reduce((a,[k])=>a+o[k],0);o.xt=TK.reduce((a,k)=>a+(o["x_"+k]||0),0)+(o.x__other||0);return {b,o};});
   const segs=SEG.filter(([k])=>rows.some(r=>r.o[k]>0.5));const off=cmpOff();const on=k=>!off.has(k);
   rows.forEach(r=>{r.o.full=r.o.tot;r.o.tot=segs.reduce((a,[k])=>a+(on(k)?r.o[k]:0),0);});rows.sort((a,c)=>a.o.tot-c.o.tot);
   const mx=Math.max(...rows.map(r=>r.o.tot),1);const nOff=segs.filter(([k])=>off.has(k)).length;const xsegs=[];const hasOos=rows.some(r=>r.o._oos>0.5);
-  return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev ve navlun paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
+  return `<section class="block"><div class="head"><div><span class="eyebrow">${esc(scopeName(sv))} · net</span><h2>Paket sıralaması ve maliyet kırılımı</h2></div><p>${S.cur} · net, KDV hariç; navlun, montaj ve sigorta dahil${lgIncl()?" ve mobilya ile ev tekstili kalemlerine tutarları oranında dağıtıldı (elektrikli ev aletleri ve akıllı ev hariç)":""}. Fark en uygun pakete göredir. Hareketsiz mobilya, ev tekstili, elektrikli ev aletleri, akıllı ev${lgIncl()?"":" ve navlun"} paketler arasında büyük ölçüde aynı. Paketleri ayıran hareketli mobilya.</p></div>
    <div class="comp"><div class="clegend" role="group" aria-label="Grafikte gösterilecek kalemler">${segs.map(([k,l,c])=>`<button type="button" class="cseg${on(k)?"":" off"}" data-cseg="${esc(k)}" aria-pressed="${on(k)}" title="${on(k)?"Gizlemek":"Göstermek"} için tıklayın"><i style="background:${c}"></i>${l.split(" (")[0]}</button>`).join("")}<span class="cseg-all"><button type="button" class="cseg all" data-cseg="__all" ${nOff?"":"disabled"}>Tümünü seç</button><button type="button" class="cseg all" data-cseg="__none" ${nOff===segs.length?"disabled":""}>Tümünü kapat</button></span></div>
    ${nOff?`<p class="note" style="margin:0">${nOff} kalem gizli: grafik, sıralama ve toplamlar yalnızca seçili kalemlerle hesaplanıyor; tabloda gizli sütunlar silik görünür ve toplama dahil edilmez.</p>`:""}
    ${(()=>{const mn=Math.min(...rows.map(r=>r.o.tot));const vat=+S.cfg.vat||0;return rows.map(({b,o},i)=>`<div class="crow crk"${sv!==ALLV?` data-open="${esc(sv)}|${esc(b.name)}" role="button" tabindex="0"`:""}><span class="nm"><span class="rk">${i+1}</span>${dot(b.name)}${esc(pl(b.name))}<span class="pboq-w">${o.ed?`<em class="ped" title="Ekle/çıkar ile düzenlendi">düzenlendi</em><button type="button" class="pboq-r" data-pboqreset="${esc(b.name)}" title="Orijinal listeye dön" aria-label="Orijinal listeye dön">↻</button>`:""}<button type="button" class="pboq" data-pboq="${esc(b.name)}" data-pboqv="${esc(sv)}" title="Paket BoQ indir: paketin görselleri ve kalem listesi (PDF)">⤓ Paket BoQ</button></span></span><div class="cbar" style="width:${(o.tot/mx*100).toFixed(1)}%">${segs.map(([k,l,c])=>on(k)&&o[k]>0.5?`<i style="flex:${o[k]};background:${c}"${k.startsWith("_")?"":` data-segk="${esc(k)}" data-segp="${esc(b.name)}" data-segv="${esc(sv)}" data-segl="${esc(l.split(" (")[0])}" data-segc="${c}" role="button" tabindex="0"`} data-tip="${esc(l.split(" (")[0])}" data-tipv="${money(o[k])} ${S.cur}" data-tipp="${pct(o[k]/o.tot)} · ${esc(pl(b.name))}" data-tipc="${c}"></i>`:"").join("")}</div><span class="cv"><b class="num">${money(o.tot)}</b>${o.tot-mn<0.5?(o.tot>0.5?`<em class="ok">en uygun</em>`:""):`<em class="up">+${pct(mn>0?(o.tot-mn)/mn:0)} · +${money(o.tot-mn)}</em>`}<small>KDV dahil ${money(o.tot*(1+vat))}</small></span></div>`).join("");})()}</div>
@@ -1753,7 +1755,7 @@ function firmHTML(){const f=firmByName(S.firm);if(!f)return `<div class="empty">
      :igProfile(d.social?.instagram)?`<div class="igprof"><iframe src="https://www.instagram.com/${igProfile(d.social.instagram)}/embed/" loading="lazy" title="${esc(f.name)} Instagram" scrolling="no"></iframe>${ext(safeUrl(d.social.instagram),"@"+esc(igProfile(d.social.instagram))+" hesabını Instagram'da aç ↗")}</div>`
      :fEmpty(soc.length?"Henüz paylaşım eklenmedi. Güncel paylaşımlar için firmanın hesaplarına bakabilirsiniz.":"Paylaşım ve sosyal medya hesabı henüz eklenmedi.")}</section>
   ${(d.projects||[]).length?`<section class="block"><div class="head"><div><span class="eyebrow">Referanslar</span><h2>Yaptığı projeler</h2></div><p>${(d.projects||[]).length} proje${safeUrl(d.projectsUrl)?" · "+ext(safeUrl(d.projectsUrl),"Tüm projeler ↗"):""}</p></div>
-   <div class="fproj">${(d.projects||[]).map(x=>{const u=safeUrl(x.url);const im=x.img?(/^https?:/i.test(x.img)?safeUrl(x.img):blob(x.img)):"";return `<a class="fpj" ${u?`href="${esc(u)}" target="_blank" rel="noopener"`:""}>${im?`<div class="ph"><img src="${esc(im)}" alt="${esc(x.name||"")}" loading="lazy"></div>`:""}<div class="bd"><span class="eyebrow">${esc([x.cat,x.year].filter(Boolean).join(" · "))}</span><b>${esc(x.name||"")}</b>${x.place?`<span class="muted">${esc(x.place)}</span>`:""}</div></a>`;}).join("")}</div></section>`:""}
+   <div class="fproj">${(d.projects||[]).map(x=>{const u=safeUrl(x.url);const im=x.img?(/^https?:/i.test(x.img)?safeUrl(x.img):blob(x.img)):"";return `<a class="fpj" ${u?`href="${esc(u)}" target="_blank" rel="noopener"`:""}>${im?`<div class="ph"><img src="${esc(im)}" alt="${esc(x.name||"")}" loading="lazy"></div>`:""}<div class="bd"><span class="eyebrow">${esc([x.cat,x.year].filter(Boolean).join(" · "))}</span><b>${esc([x.name,x.place].filter(Boolean).join(" — "))}</b>${x.scope?`<span class="muted">${esc(x.scope)}</span>`:""}</div></a>`;}).join("")}</div></section>`:""}
   ${vids.length?`<section class="block"><div class="head"><div><h2>${vids.some(x=>x.kind==="factory")?"Fabrika ve proje videoları":"Fuar ve tanıtım videoları"}</h2></div><p>Videolar tıklanınca oynar.</p></div>
    ${fv.length?`<div class="fvgrid">${fv.map(videoCard).join("")}</div>`:""}${bv.length?`${fv.length?`<span class="eyebrow">Tanıtım ve showroom</span>`:""}<div class="fvgrid">${bv.map(videoCard).join("")}</div>`:""}</section>`:""}
   ${renders.length?`<section class="block"><div class="head"><div><span class="eyebrow">${esc(b.name)} paketi</span><h2>Bu projedeki tasarımları</h2></div></div><div class="frend">${renders.map(m=>`<button data-open="${esc(m.villa)}|${esc(b.name)}"><img src="${thumb(m)}" alt="" loading="lazy"><span>${esc([m.villa,m.room||m.title].filter(Boolean).join(" · "))}</span></button>`).join("")}</div></section>`:""}
@@ -2250,7 +2252,9 @@ function adminData(){
      <p class="note" style="margin:8px 0 0">Kâr oranını değiştirdiyseniz yeniden çekmeniz gerekmez: Sugar sekmesinde “Yeniden uygula”ya basmanız yeterli.</p></div>`;}
 function adminInfo(){
   const c=S.cfg||{};const vs=villas();
-  return `<div class="card"><span class="eyebrow">Proje</span><div class="form">
+  return `<div class="card"><span class="eyebrow">Fiyat gösterimi</span>
+     <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer"><input type="checkbox" id="iLgIncl" ${c.lgIncl!==false?"checked":""} ${S.cfg?"":"disabled"} style="margin-top:3px"><span><b>Lojistik ve montajı fiyatlara dahil et</b><br><span class="note" style="margin:0">Seçiliyken “Paket sıralaması ve maliyet kırılımı”nda navlun ile montaj ve sigorta ayrı kalem olarak gösterilmez; bu maliyetler her paketin mobilya ve ev tekstili kalemlerine, tutarları oranında dağıtılır; elektrikli ev aletleri ve akıllı ev sistemleri bu dağıtıma katılmaz. Ergo gibi bu maliyetleri zaten ürün fiyatına katan firmalarla karşılaştırma eşitlenir. Toplamlar değişmez.</span></span></label></div>
+   <div class="card"><span class="eyebrow">Proje</span><div class="form">
      <label class="f">Proje adı<input id="iName" value="${esc(c.projectName||"Hayat Mekke")}"></label>
      <label class="f">Alt başlık<input id="iSub" value="${esc(c.subtitle||"")}"></label>
      <label class="f">Konum<input id="iLoc" value="${esc(c.location||"")}" placeholder="Mekke · Suudi Arabistan"></label>
@@ -2456,7 +2460,8 @@ function bindData(m){
     if(await saveCfg(c,"Veriler kaydedildi")&&Object.keys(renames).length){
       S.media.filter(x=>renames[x.brand]).forEach(x=>S.db.doc("media/"+x.id).update({brand:renames[x.brand]}).catch(()=>{}));
       Object.entries(renames).forEach(([o,n])=>{const id=S.boqDocs[o];if(id)S.db.doc("boq/"+id).update({package:n}).catch(()=>{});});}};}
-function bindInfo(m){m.querySelector("#saveInfo").onclick=()=>{if(!S.cfg)return;const c=structuredClone(S.cfg);
+function bindInfo(m){const lg=m.querySelector("#iLgIncl");if(lg)lg.onchange=async()=>{if(!S.cfg)return;const c=structuredClone(S.cfg);c.lgIncl=lg.checked;if(await saveCfg(c,lg.checked?"Lojistik ve montaj fiyatlara dahil edildi":"Lojistik ve montaj ayrı gösteriliyor"))S.cfg=c;else lg.checked=!lg.checked;};
+  m.querySelector("#saveInfo").onclick=()=>{if(!S.cfg)return;const c=structuredClone(S.cfg);
   c.projectName=m.querySelector("#iName").value.trim()||"Hayat Mekke";c.subtitle=m.querySelector("#iSub").value.trim();c.location=m.querySelector("#iLoc").value.trim();c.intro=m.querySelector("#iIntro").value.trim();
   c.villaMeta=c.villaMeta||{};m.querySelectorAll("[data-vm]").forEach(el=>{const [v,k]=el.dataset.vm.split("|");c.villaMeta[v]=c.villaMeta[v]||{};c.villaMeta[v][k]=el.value.trim();});saveCfg(c,"Bilgiler kaydedildi");};}
 

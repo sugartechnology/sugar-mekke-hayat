@@ -14,36 +14,36 @@
   "name": "Homage",
   "posts": [
    {
+    "caption": "Homage flagship mağaza",
+    "date": "2026-10-13",
+    "img": "assets/videos/ig_homage_Debk3JZjGeR.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/Debk3JZjGeR/",
-    "video": "assets/videos/ig_homage_Debk3JZjGeR.mp4",
-    "img": "assets/videos/ig_homage_Debk3JZjGeR.jpg",
-    "caption": "Homage flagship mağaza",
-    "date": "2026-10-13"
+    "video": "assets/videos/ig_homage_Debk3JZjGeR.mp4"
    },
    {
+    "caption": "Monk koleksiyonu",
+    "date": "2026-08-06",
+    "img": "assets/videos/ig_homage_Dbs9fRCgFR9.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/Dbs9fRCgFR9/",
-    "video": "assets/videos/ig_homage_Dbs9fRCgFR9.mp4",
-    "img": "assets/videos/ig_homage_Dbs9fRCgFR9.jpg",
-    "caption": "Monk koleksiyonu",
-    "date": "2026-08-06"
+    "video": "assets/videos/ig_homage_Dbs9fRCgFR9.mp4"
    },
    {
+    "caption": "Monk oturma grubu",
+    "date": "2026-07-13",
+    "img": "assets/videos/ig_homage_DavKZgpCjJk.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DavKZgpCjJk/",
-    "video": "assets/videos/ig_homage_DavKZgpCjJk.mp4",
-    "img": "assets/videos/ig_homage_DavKZgpCjJk.jpg",
-    "caption": "Monk oturma grubu",
-    "date": "2026-07-13"
+    "video": "assets/videos/ig_homage_DavKZgpCjJk.mp4"
    },
    {
+    "caption": "Traverten detayları",
+    "date": "2026-08-19",
+    "img": "assets/videos/ig_homage_DcOZXXQMdcY.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DcOZXXQMdcY/",
-    "video": "assets/videos/ig_homage_DcOZXXQMdcY.mp4",
-    "img": "assets/videos/ig_homage_DcOZXXQMdcY.jpg",
-    "caption": "Traverten detayları",
-    "date": "2026-08-19"
+    "video": "assets/videos/ig_homage_DcOZXXQMdcY.mp4"
    }
   ],
   "social": {
@@ -100,23 +100,94 @@
   "updatedAt": "2026-10-25T18:10:00Z",
   "videos": [
    {
-    "kind": "brand",
-    "title": "Homage tanıtım filmi · 1",
-    "url": "https://homage.com.tr/img/first-video.mp4",
     "file": "assets/videos/homage-1.mp4",
+    "kind": "brand",
     "poster": "assets/videos/homage-1.jpg",
-    "source": "https://homage.com.tr/img/first-video.mp4"
+    "source": "https://homage.com.tr/img/first-video.mp4",
+    "title": "Homage tanıtım filmi · 1",
+    "url": "https://homage.com.tr/img/first-video.mp4"
    },
    {
-    "kind": "brand",
-    "title": "Homage tanıtım filmi · 2",
-    "url": "https://homage.com.tr/img/second-video.mp4",
     "file": "assets/videos/homage-2.mp4",
+    "kind": "brand",
     "poster": "assets/videos/homage-2.jpg",
-    "source": "https://homage.com.tr/img/second-video.mp4"
+    "source": "https://homage.com.tr/img/second-video.mp4",
+    "title": "Homage tanıtım filmi · 2",
+    "url": "https://homage.com.tr/img/second-video.mp4"
    }
   ],
   "website": "https://homage.com.tr/"
+ },
+ "volly-smart": {
+  "about": "Volly Teknoloji'nin akıllı ev ve IoT markası. Bu projede villaların akıllı ev sistemi kalemleri (aydınlatma ve iklim kontrolü, sensörler, kontrol panelleri) Volly Smart ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Volly Smart",
+   "Volly"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/volly.svg",
+  "name": "Volly Smart",
+  "posts": [],
+  "products": "Akıllı ev sistemi: otomasyon, sensörler, kontrol panelleri",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://volly.com.tr/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://volly.com.tr/"
+ },
+ "penelope": {
+  "about": "Bu projede nevresim takımları, yorgan ve yastıklar ile banyo tekstili (havlu, bornoz, paspas) Penelope ürünleriyle fiyatlandırıldı.",
+  "aliases": [
+   "Penelope"
+  ],
+  "fairs": [],
+  "name": "Penelope",
+  "posts": [],
+  "products": "Nevresim takımları ve banyo tekstili",
+  "role": "brand",
+  "social": {},
+  "sources": [],
+  "stores": [],
+  "videos": []
+ },
+ "teka": {
+  "about": "Mutfak ve banyo cihazları üreten TEKA, bu projede ocak, davlumbaz, mikrodalga, bulaşık makinesi, buzdolabı ve çamaşır makinesi kalemlerinde yer alır. Teklif ve büyük cihazların montajı TEKA ALJ üzerinden verildi (REV.2, 20.10.2026).",
+  "aliases": [
+   "TEKA",
+   "TEKA ALJ"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/brands/teka.svg",
+  "name": "TEKA",
+  "posts": [],
+  "products": "Ankastre mutfak cihazları ve beyaz eşya",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.teka.com/"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.teka.com/"
+ },
+ "dercan-tekstil": {
+  "about": "Bu projede tüm pencereler için çift katlı perde paketi (blackout ve tül, ray ve montaj dahil) Dercan Tekstil'in villaya özel fiyatıyla yer alır.",
+  "aliases": [
+   "Dercan Tekstil",
+   "Dercan"
+  ],
+  "fairs": [],
+  "name": "Dercan Tekstil",
+  "posts": [],
+  "products": "Perde paketi (blackout ve tül)",
+  "role": "brand",
+  "social": {},
+  "sources": [],
+  "stores": [],
+  "videos": []
  },
  "bellona": {
   "about": "Bellona Mobilya A.Ş., 1995'te Kayseri'de kurulmuş ve 1996'da üretime başlamış bir mobilya üreticisidir. Kayseri OSB'de toplam 292.654 m² alanda faaliyet gösterir ve 2.300'ü aşkın çalışanı vardır. Bayi ağı Türkiye'nin 81 ilini kapsar; ürünlerini 61 ülkeye ihraç ettiğini belirtir. Bugün Anadolu Güçbirliği Holding'in grup şirketidir (holdingin diğer markası Doqu Home).",
@@ -133,36 +204,36 @@
   "name": "Bellona",
   "posts": [
    {
+    "caption": "Valenty koltuk takımı",
+    "date": "2026-10-12",
+    "img": "assets/videos/ig_bellona_DeYwSUClFUd.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DeYwSUClFUd/",
-    "video": "assets/videos/ig_bellona_DeYwSUClFUd.mp4",
-    "img": "assets/videos/ig_bellona_DeYwSUClFUd.jpg",
-    "caption": "Valenty koltuk takımı",
-    "date": "2026-10-12"
+    "video": "assets/videos/ig_bellona_DeYwSUClFUd.mp4"
    },
    {
+    "caption": "Valencia köşe takımı",
+    "date": "2026-10-10",
+    "img": "assets/videos/ig_bellona_DeTdE1VlF8L.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DeTdE1VlF8L/",
-    "video": "assets/videos/ig_bellona_DeTdE1VlF8L.mp4",
-    "img": "assets/videos/ig_bellona_DeTdE1VlF8L.jpg",
-    "caption": "Valencia köşe takımı",
-    "date": "2026-10-10"
+    "video": "assets/videos/ig_bellona_DeTdE1VlF8L.mp4"
    },
    {
+    "caption": "Napoli yatak odası",
+    "date": "2026-10-08",
+    "img": "assets/videos/ig_bellona_DeOcP-uFdym.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DeOcP-uFdym/",
-    "video": "assets/videos/ig_bellona_DeOcP-uFdym.mp4",
-    "img": "assets/videos/ig_bellona_DeOcP-uFdym.jpg",
-    "caption": "Napoli yatak odası",
-    "date": "2026-10-08"
+    "video": "assets/videos/ig_bellona_DeOcP-uFdym.mp4"
    },
    {
+    "caption": "Valenty yemek odası",
+    "date": "2026-09-28",
+    "img": "assets/videos/ig_bellona_Dd0w7pyDg8N.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/Dd0w7pyDg8N/",
-    "video": "assets/videos/ig_bellona_Dd0w7pyDg8N.mp4",
-    "img": "assets/videos/ig_bellona_Dd0w7pyDg8N.jpg",
-    "caption": "Valenty yemek odası",
-    "date": "2026-09-28"
+    "video": "assets/videos/ig_bellona_Dd0w7pyDg8N.mp4"
    }
   ],
   "social": {
@@ -207,579 +278,385 @@
   "videos": [
    {
     "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "Bellona CEO'su Serdar Karavil, \"57 ülkeye yaptığımız ihracatın IIFF ile artmasını bekliyoruz\"",
-    "url": "https://www.youtube.com/watch?v=AamPcb-G7UY",
     "file": "assets/videos/AamPcb-G7UY.mp4",
+    "kind": "fair",
     "poster": "assets/videos/AamPcb-G7UY.jpg",
-    "source": "https://www.youtube.com/watch?v=AamPcb-G7UY"
+    "source": "https://www.youtube.com/watch?v=AamPcb-G7UY",
+    "title": "Bellona CEO'su Serdar Karavil, \"57 ülkeye yaptığımız ihracatın IIFF ile artmasını bekliyoruz\"",
+    "url": "https://www.youtube.com/watch?v=AamPcb-G7UY"
    },
    {
-    "kind": "brand",
-    "title": "Bellona Mobilya Fabrika Tanıtımı - Mobilya Tv",
-    "url": "https://www.youtube.com/watch?v=Zc4k-s08_nI",
     "file": "assets/videos/Zc4k-s08_nI.mp4",
+    "kind": "brand",
     "poster": "assets/videos/Zc4k-s08_nI.jpg",
-    "source": "https://www.youtube.com/watch?v=Zc4k-s08_nI"
+    "source": "https://www.youtube.com/watch?v=Zc4k-s08_nI",
+    "title": "Bellona Mobilya Fabrika Tanıtımı - Mobilya Tv",
+    "url": "https://www.youtube.com/watch?v=Zc4k-s08_nI"
    },
    {
-    "kind": "brand",
-    "title": "Bellona Mobilya Stuttgart & Frankfurt",
-    "url": "https://www.youtube.com/watch?v=LdC4fimFpZs",
     "file": "assets/videos/LdC4fimFpZs.mp4",
+    "kind": "brand",
     "poster": "assets/videos/LdC4fimFpZs.jpg",
-    "source": "https://www.youtube.com/watch?v=LdC4fimFpZs"
+    "source": "https://www.youtube.com/watch?v=LdC4fimFpZs",
+    "title": "Bellona Mobilya Stuttgart & Frankfurt",
+    "url": "https://www.youtube.com/watch?v=LdC4fimFpZs"
    }
   ],
   "website": "https://www.bellona.com.tr"
  },
- "inci-design": {
-  "hq": "İnegöl, Bursa",
-  "logo": "assets/firms/inci-design-logo.png",
-  "name": "Inci Design",
-  "social": {
-   "instagram": "https://www.instagram.com/inci.design1/"
-  },
-  "stores": [],
-  "updatedAt": "2026-10-25T18:10:00Z",
-  "website": "https://incikoltuk.com/",
-  "videos": [],
-  "posts": [
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/De06pr5CNP6/",
-    "video": "assets/videos/ig_inci-design_De06pr5CNP6.mp4",
-    "img": "assets/videos/ig_inci-design_De06pr5CNP6.jpg",
-    "caption": "Showroom",
-    "date": "2026-10-23"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DecdqQ6AdtH/",
-    "video": "assets/videos/ig_inci-design_DecdqQ6AdtH.mp4",
-    "img": "assets/videos/ig_inci-design_DecdqQ6AdtH.jpg",
-    "caption": "Mori koltuk takımı",
-    "date": "2026-10-13"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DecdbCXjP8s/",
-    "video": "assets/videos/ig_inci-design_DecdbCXjP8s.mp4",
-    "img": "assets/videos/ig_inci-design_DecdbCXjP8s.jpg",
-    "caption": "Mori yemek odası",
-    "date": "2026-10-13"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DdbDV2vD65B/",
-    "video": "assets/videos/ig_inci-design_DdbDV2vD65B.mp4",
-    "img": "assets/videos/ig_inci-design_DdbDV2vD65B.jpg",
-    "caption": "Sienna oturma odası",
-    "date": "2026-09-18"
-   }
-  ]
- },
- "gabba": {
-  "about": "Gabba Home, üçüncü kuşağın yönettiği, İnegöl merkezli bir lüks salon, oturma grubu ve yemek odası üreticisidir. Aile 1988'de üretim ve satışı İnegöl'e taşıdı, 1990'da ilk mağazasını açtı. İlk ihracatını 2001'de Yunanistan'a yaptı, 2013'te ilk yurt dışı deneyim merkezini Romanya'da açtı. 2020'de 65.000 m²'lik entegre tesise geçti. Yaklaşık 350–450 çalışanı var.",
-  "fairs": [
-   {
-    "city": "Amman, Ürdün",
-    "name": "TİM ticaret heyeti",
-    "year": "2023"
-   },
-   {
-    "city": "Lagos, Nijerya",
-    "name": "TİM ticaret heyeti",
-    "year": "2023"
-   }
+ "arel-interior": {
+  "about": "Arel Interior Design, 1960'tan bu yana Bursa'da mobilya ve iç mimarlık alanında çalışan bir firmadır. Büyük ölçekli projelerden butik üretimlere kadar tasarımdan üretime ve uygulamaya uzanan hizmet verir.\n\nBünyesindeki zemin kaplama, metal ve boya üniteleri sayesinde projeleri tek elden yürütür. Bursa-Nilüfer ve Düzce-Gümüşova'daki fabrikalarında konut, ofis, otel ve ticari projelere özel mobilya üretir; shop drawing ve proje yönetimini de kendi ekibiyle yapar.\n\nOtel ve konut projeleri Macaristan, Hırvatistan, İsviçre, Yunanistan, Bulgaristan, Almanya, Romanya ve Suudi Arabistan'a (Medine) uzanır.\n\nBu projede villaların hareketsiz mobilyalarını, yani mutfak, gömme dolap ve banyo dolaplarını Arel Interior üretir.",
+  "aliases": [
+   "Arel Interior",
+   "Arel Interiors",
+   "Arel",
+   "Arel Interior Design"
   ],
-  "founded": "2001",
-  "hq": "İnegöl, Bursa",
-  "logo": "assets/firms/gabba-logo.png",
-  "name": "Gabba",
-  "posts": [
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DeZ-7OasJ1b/",
-    "video": "assets/videos/ig_gabba_DeZ-7OasJ1b.mp4",
-    "img": "assets/videos/ig_gabba_DeZ-7OasJ1b.jpg",
-    "caption": "Hanedan koleksiyonu",
-    "date": "2026-10-12"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DeSGnTmhwHo/",
-    "video": "assets/videos/ig_gabba_DeSGnTmhwHo.mp4",
-    "img": "assets/videos/ig_gabba_DeSGnTmhwHo.jpg",
-    "caption": "FDI 2026 fuarı",
-    "date": "2026-10-09"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/Ddotmy5N_I8/",
-    "video": "assets/videos/ig_gabba_Ddotmy5N_I8.mp4",
-    "img": "assets/videos/ig_gabba_Ddotmy5N_I8.jpg",
-    "caption": "FDI 2026 fuar standı",
-    "date": "2026-09-23"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DdelysLBKIH/",
-    "video": "assets/videos/ig_gabba_DdelysLBKIH.mp4",
-    "img": "assets/videos/ig_gabba_DdelysLBKIH.jpg",
-    "caption": "Tamzara koleksiyonu",
-    "date": "2026-09-19"
-   }
-  ],
-  "social": {
-   "facebook": "https://www.facebook.com/furnituregabba",
-   "instagram": "https://www.instagram.com/gabbafurniture/",
-   "linkedin": "https://www.linkedin.com/company/gabba-furniture/",
-   "youtube": "https://www.youtube.com/@gabbafurniture"
-  },
-  "sources": [
-   "https://gabbahome.com/en/pages/hakkimizda",
-   "https://gabbahome.com/en/blogs/haberler",
-   "https://www.kariyer.net/firma-profil/gabba-furniture-202858-232986",
-   "https://delegations.tim.org.tr/event/jordan-amman-2023/company/gabba-home-8",
-   "https://delegations.tim.org.tr/event/nigeria-lagos-2023/company/gabba-home-6",
-   "https://delegations.tim.org.tr/storage/uploads/company/27557/gUnbgiVlmLNRfEpX10jqLTWMYUPxWIjbhufJhF6z.pdf"
-  ],
-  "storeCount": "",
-  "stores": [
-   {
-    "city": "İstanbul (Başakşehir)",
-    "country": "Türkiye",
-    "img": "assets/firms/stores/gabba-0.webp",
-    "name": "Gabba Home MASKO Deneyim Merkezi"
-   },
-   {
-    "city": "İnegöl / Bursa",
-    "country": "Türkiye",
-    "name": "Gabba ilk perakende mağazası",
-    "url": "https://gabbahome.com/en/pages/hakkimizda"
-   },
-   {
-    "country": "Romanya",
-    "name": "Gabba ilk yurt dışı deneyim merkezi",
-    "url": "https://gabbahome.com/en/pages/hakkimizda"
-   }
-  ],
-  "updatedAt": "2026-10-25T18:10:00Z",
-  "videos": [
-   {
-    "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "2023 IFF Furniture Fair | Gabba",
-    "url": "https://www.youtube.com/watch?v=0qcpnZDqvOc",
-    "year": "2023",
-    "file": "assets/videos/0qcpnZDqvOc.mp4",
-    "poster": "assets/videos/0qcpnZDqvOc.jpg",
-    "source": "https://www.youtube.com/watch?v=0qcpnZDqvOc"
-   },
-   {
-    "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "IIFF 2026 standı · 1",
-    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0",
-    "year": "2026",
-    "file": "assets/videos/gabba-iiff1.mp4",
-    "poster": "assets/videos/gabba-iiff1.jpg",
-    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0"
-   },
-   {
-    "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "IIFF 2026 standı · 2",
-    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0",
-    "year": "2026",
-    "file": "assets/videos/gabba-iiff2.mp4",
-    "poster": "assets/videos/gabba-iiff2.jpg",
-    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0"
-   },
-   {
-    "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "IIFF 2026 standı · 3",
-    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0",
-    "year": "2026",
-    "file": "assets/videos/gabba-iiff3.mp4",
-    "poster": "assets/videos/gabba-iiff3.jpg",
-    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0"
-   },
-   {
-    "kind": "brand",
-    "title": "Factory Trailer | Gabba",
-    "url": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y",
-    "year": "2022",
-    "file": "assets/videos/c4aPcCe3Q_Y.mp4",
-    "poster": "assets/videos/c4aPcCe3Q_Y.jpg",
-    "source": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y"
-   },
-   {
-    "kind": "brand",
-    "title": "MASKO Deneyim Merkezi",
-    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0",
-    "file": "assets/videos/gabba-masko.mp4",
-    "poster": "assets/videos/gabba-masko.jpg",
-    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0"
-   }
-  ],
-  "website": "https://gabbahome.com/"
- },
- "ergo": {
-  "name": "Ergo",
-  "logo": "assets/firms/ergo-logo.png",
-  "website": "https://www.ergohomegroup.com/",
-  "hq": "Lefkoşa, Kıbrıs",
-  "founded": "1996",
-  "storeCount": "Lefkoşa ve Limasol'da showroom · Dubai, Riyad ve Çin'de ofis",
-  "about": "Ergo Home Group, perakende ve proje (contract) mobilya alanında çalışan bir şirketler grubudur. Yerel ve uluslararası pazarda hareketli ve hareketsiz mobilya, mutfak ve iç mekân çözümleri sunar.\n\nGrup 1996'da Lefkoşa'da Cucina & Cucina adıyla kuruldu; Kıbrıs'a ithal İtalyan mutfak dolaplarını getiren ilk işletme oldu. 2003'te Ergo Home Group adıyla şirketler grubuna dönüştü. Kıbrıs'ın ikinci büyük ankastre mutfak ve gardırop grubu Formatek'i bünyesine kattı.\n\nİlk yurt dışı ofisini 2006'da Dubai'de, ikincisini 2012'de Suudi Arabistan'da (Riyad), üçüncüsünü 2022'de Çin'de açtı. Living, Kartell, B&B Italia, Maxalto, Arclinea, Cucina & Cucina, Novamobili, Cinquanta3, Cesar ve Albed markalarıyla çalışır. Living Contract, Ergo Overseas, Ergo Energy ve Ergo Office bölümleri vardır.\n\nRiyad'da Al Bustan Village, The Orient ve KAFD gibi projelerde yer almıştır.",
   "fairs": [],
-  "stores": [
-   {
-    "name": "Genel merkez",
-    "city": "Lefkoşa",
-    "country": "Kıbrıs",
-    "address": "46 Tempon Street, 2. kat, 2408 Engomi",
-    "url": "https://www.ergohomegroup.com/contact"
-   },
-   {
-    "name": "Suudi Arabistan ofisi",
-    "city": "Riyad",
-    "country": "Suudi Arabistan",
-    "address": "Saeed Bin Haraith Alley 7929, As Sulaymaniyah, Riyad 12245",
-    "url": "https://www.ergohomegroup.com/contact"
-   },
-   {
-    "name": "Living Plus showroom",
-    "city": "Limasol",
-    "country": "Kıbrıs"
-   },
-   {
-    "name": "Kartell flagship mağaza ve Living showroom",
-    "city": "Lefkoşa",
-    "country": "Kıbrıs"
-   }
-  ],
-  "videos": [
-   {
-    "url": "https://www.youtube.com/watch?v=lW4ifnOj7f0",
-    "source": "https://www.youtube.com/watch?v=lW4ifnOj7f0",
-    "title": "Ergo Home Group tanıtım filmi",
-    "kind": "brand",
-    "file": "assets/videos/ergo-tanitim.mp4",
-    "poster": "assets/videos/ergo-tanitim.jpg"
-   }
-  ],
+  "featured": true,
+  "founded": "1960",
+  "hq": "Nilüfer, Bursa",
+  "logo": "assets/firms/arel-interior/logo.png",
+  "name": "Arel Interior",
   "posts": [],
-  "social": {},
-  "sources": [
-   "https://www.ergohomegroup.com/",
-   "https://www.ergohomegroup.com/about/ergo-home-at-a-glance",
-   "https://www.ergohomegroup.com/contact",
-   "https://www.ergohomegroup.com/projects"
-  ]
- },
- "modis": {
-  "about": "Modis Interiors, İnegöl merkezli bir premium mobilya ve iç mekân markasıdır. Ahşapla 200 yıllık aile geçmişine dayanır ve 2000'den beri mobilya üretir. 2025 itibarıyla 35'ten fazla ülkeye ihracat yaptığını belirtir. Türkiye'de altı şehirde, ayrıca Orta Doğu, Kafkasya, Orta Asya, Rusya ve Libya'da showroom'ları vardır. Yaklaşık 100–149 çalışanı var.",
-  "fairs": [
+  "products": "Hareketsiz mobilya: mutfak, gömme dolap, banyo dolabı ve projeye özel ahşap işleri",
+  "projects": [
    {
-    "city": "Milano (Fiera Milano Rho)",
-    "name": "Salone del Mobile.Milano",
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/merit-crystal-cove.webp",
+    "name": "Merit Crystal Cove Hotel",
+    "place": "Girne, KKTC",
+    "scope": "Genel mekân, tüm mobilyalar",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/esplanade-zagreb.webp",
+    "name": "Hotel Esplanade Zagreb",
+    "place": "Zagreb, Hırvatistan",
+    "scope": "Konaklama odaları, sabit mobilyalar",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/grand-hotel-locarno.webp",
+    "name": "Grand Hotel Locarno",
+    "place": "Locarno, İsviçre",
+    "scope": "Genel mekân, tüm mobilyalar",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/al-safi-medine.webp",
+    "name": "Al-Safi Vakıf Oteli",
+    "place": "Medine, Suudi Arabistan",
+    "scope": "6 yıldızlı otel · 9 otel katı + ticari alanlar",
+    "url": "https://primeelite-sa.com/ar/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%81%D9%86%D8%AF%D9%82-%D9%88%D9%82%D9%81-%D8%A2%D9%84-%D8%A7%D9%84%D8%B5%D8%A7%D9%81%D9%8A/",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Restoran",
+    "img": "assets/firms/arel-interior/p-medinacafe.webp",
+    "name": "Noors Coffee",
+    "place": "Medine, Suudi Arabistan",
+    "scope": "Anahtar teslim",
+    "url": "https://www.arelinterior.com/tr/saudi-arabia-medina-cafe-project",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-theone.webp",
+    "name": "The Bodrum One",
+    "place": "Bodrum, Muğla",
+    "scope": "Anahtar teslim",
+    "url": "https://www.arelinterior.com/tr/the-one-bodrumbodrummugla-tamamlandi",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Mağaza",
+    "img": "assets/firms/arel-interior/projects/akcan-kuyumculuk.webp",
+    "name": "Akcan Kuyumculuk",
+    "place": "Bursa",
+    "scope": "Anahtar teslim",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/projects/yos-evi.webp",
+    "name": "Y.O.S Evi",
+    "place": "Bademli, Bursa",
+    "scope": "Anahtar teslim",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/projects/da-evi.webp",
+    "name": "D.A Evi",
+    "place": "Bademli, Bursa",
+    "scope": "Anahtar teslim",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-hmo.webp",
+    "name": "H.M.O Evi",
+    "place": "Medine, Suudi Arabistan",
+    "scope": "Anahtar teslim",
+    "url": "https://www.arelinterior.com/tr/hmo-evi-saudi-arabia-medina",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/projects/co-evi.webp",
+    "name": "Ç.Ö Evi",
+    "place": "Medine, Suudi Arabistan",
+    "scope": "Anahtar teslim",
+    "year": "Devam ediyor"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-matild.webp",
+    "name": "Matild Palace, a Luxury Collection Hotel",
+    "place": "Budapeşte, Macaristan",
+    "url": "https://www.arelinterior.com/tr/matild-palace-a-luxury-collection-hotel-budapeste-macaristan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-hyatt.webp",
+    "name": "Hyatt Regency",
+    "place": "Zadar, Hırvatistan",
+    "url": "https://www.arelinterior.com/tr/hyatt-regency-hotel-zadar-hirvatistan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-deltapark.webp",
+    "name": "Parkhotel Delta",
+    "place": "Ascona, İsviçre",
+    "url": "https://www.arelinterior.com/tr/deltapark-hotel-ascona-isvicre"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-brownbeach.webp",
+    "name": "Brown Beach",
+    "place": "Halkida, Eğriboz Adası, Yunanistan",
+    "url": "https://www.arelinterior.com/tr/brown-beach-greece-eretria"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-merit.webp",
+    "name": "Merit Royal Premium Hotel",
+    "place": "Girne, KKTC",
+    "url": "https://www.arelinterior.com/tr/merit-royal-hotel-restoran"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/xo-cape-arnna.webp",
+    "name": "XO Cape Arnna",
+    "place": "Fethiye, Muğla"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/hilton-belgrad.webp",
+    "name": "Hilton",
+    "place": "Belgrad, Sırbistan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/hgi-izmir.webp",
+    "name": "Hilton Garden Inn",
+    "place": "İzmir"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/millennium-golden-horn.webp",
+    "name": "Millennium Istanbul Golden Horn",
+    "place": "Fatih, İstanbul"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/rixos-tekirova.webp",
+    "name": "Rixos Premium Tekirova",
+    "place": "Kemer, Antalya"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/rixos-bodrum.webp",
+    "name": "Rixos Premium Bodrum",
+    "place": "Bodrum, Muğla"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/rixos-turkistan.webp",
+    "name": "Rixos Turkistan",
+    "place": "Türkistan, Kazakistan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/rixos-waterworld-aktau.webp",
+    "name": "Rixos WaterWorld",
+    "place": "Aktau, Kazakistan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/ramada-budapeste.webp",
+    "name": "Ramada by Wyndham",
+    "place": "Budapeşte, Macaristan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/ramada-istanbul.webp",
+    "name": "Ramada by Wyndham",
+    "place": "İstanbul"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/seven-villas-trogir.webp",
+    "name": "Seven Villas",
+    "place": "Trogir, Hırvatistan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/sundia-fethiye.webp",
+    "name": "Sundia Exclusive by Liberty",
+    "place": "Fethiye, Muğla"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/projects/liberty-fabay.webp",
+    "name": "Liberty Fabay",
+    "place": "Fethiye, Muğla"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-heviz.webp",
+    "name": "Heviz Otel",
+    "place": "Macaristan",
+    "url": "https://www.arelinterior.com/tr/heviz-otel-macaristan"
+   },
+   {
+    "cat": "Otel",
+    "img": "assets/firms/arel-interior/p-bulgaria.webp",
+    "name": "Bulgaristan Otel",
+    "place": "Bulgaristan",
+    "url": "https://www.arelinterior.com/tr/bulgaria-otel"
+   },
+   {
+    "cat": "Restoran",
+    "img": "assets/firms/arel-interior/projects/chef-burak-medine.webp",
+    "name": "Chef Burak Gurme Restaurant",
+    "place": "Medine, Suudi Arabistan"
+   },
+   {
+    "cat": "Konut",
+    "img": "assets/firms/arel-interior/p-cma.webp",
+    "name": "C.M.A Evi",
+    "place": "Almanya",
+    "url": "https://www.arelinterior.com/tr/cma-almanya"
+   },
+   {
+    "cat": "Fabrika / ofis",
+    "img": "assets/firms/arel-interior/projects/nuri-korustan.webp",
+    "name": "Nuri Körüstan"
+   },
+   {
+    "cat": "Fabrika / ofis",
+    "img": "assets/firms/arel-interior/projects/nukon.webp",
+    "name": "Nukon"
+   },
+   {
+    "cat": "Fabrika / ofis",
+    "img": "assets/firms/arel-interior/projects/kirac-galvaniz.webp",
+    "name": "Kıraç Galvaniz"
+   },
+   {
+    "cat": "Fabrika",
+    "img": "assets/firms/arel-interior/p-duzce.webp",
+    "name": "Arel Fabrikası",
+    "place": "Düzce",
+    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika",
     "year": "2025"
-   },
-   {
-    "city": "Milano (Fiera Milano Rho)",
-    "name": "Salone del Mobile.Milano",
-    "year": "2026"
-   },
-   {
-    "city": "İstanbul (Tüyap)",
-    "name": "Uluslararası İstanbul Mobilya Fuarı (IIFF)",
-    "year": "2026"
    }
   ],
-  "founded": "2000",
-  "hq": "İnegöl, Bursa",
-  "logo": "assets/firms/modis-logo.png",
-  "name": "Modis",
-  "posts": [
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DeRFHLJAjtn/",
-    "video": "assets/videos/ig_modis_DeRFHLJAjtn.mp4",
-    "img": "assets/videos/ig_modis_DeRFHLJAjtn.jpg",
-    "caption": "Villa projesi",
-    "date": "2026-10-09"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/Dc3BCCFDCUK/",
-    "video": "assets/videos/ig_modis_Dc3BCCFDCUK.mp4",
-    "img": "assets/videos/ig_modis_Dc3BCCFDCUK.jpg",
-    "caption": "Olympos",
-    "date": "2026-09-04"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DZpdVHhiZ3l/",
-    "video": "assets/videos/ig_modis_DZpdVHhiZ3l.mp4",
-    "img": "assets/videos/ig_modis_DZpdVHhiZ3l.jpg",
-    "caption": "Colosseum",
-    "date": "2026-06-16"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DXbPqchiOVF/",
-    "video": "assets/videos/ig_modis_DXbPqchiOVF.mp4",
-    "img": "assets/videos/ig_modis_DXbPqchiOVF.jpg",
-    "caption": "İtalya, yeni koleksiyonlar",
-    "date": "2026-04-22"
-   }
-  ],
+  "projectsUrl": "https://www.arelinterior.com/tr/projeler",
+  "role": "brand",
+  "roleNote": "Hareketsiz mobilya üreticisi",
   "social": {
-   "facebook": "https://www.facebook.com/modisinterior/",
-   "instagram": "https://www.instagram.com/modis_interiors/"
+   "facebook": "https://www.facebook.com/arelinteriorsdesign",
+   "instagram": "https://www.instagram.com/arelinteriors/",
+   "youtube": "https://www.youtube.com/@arelinteriordesign"
   },
   "sources": [
-   "https://modisinteriors.com/about-us",
-   "https://modisinteriors.com/history",
-   "https://www.modisinteriors.com/en/fuarlar",
-   "https://www.modisinteriors.com/",
-   "https://www.kariyer.net/firma-profil/modis-sofa-mobilya-san-ve-tic-ltd-sti-65025-140209",
-   "https://www.facebook.com/modisinterior/",
-   "https://www.instagram.com/modis_interiors.ksa/"
+   "https://www.arelinterior.com/tr/hakkimizda",
+   "https://www.arelinterior.com/tr/fabrikadan",
+   "https://www.arelinterior.com/tr/projeler",
+   "https://www.arelinterior.com/tr/video",
+   "https://www.arelinterior.com/tr/iletisim"
   ],
-  "storeCount": "18 showroom",
+  "storeCount": "2 fabrika · Bursa-Nilüfer ve Düzce-Gümüşova; Bursa'da 2 showroom",
   "stores": [
    {
-    "address": "Yeniceköy, İnegöl Bursa Karayolu 6. km, 16400 İnegöl/Bursa (ayrıca Mobiliyum AVM A ve B Blok)",
-    "city": "İnegöl / Bursa",
+    "address": "Barış Mah. İzmir Yolu Cad. No:186B",
+    "city": "Nilüfer, Bursa",
     "country": "Türkiye",
-    "name": "Modis İnegöl",
-    "url": "https://www.modisinteriors.com/"
+    "img": "assets/firms/arel-interior/p-nilufer.webp",
+    "name": "Arel Fabrika · Bursa-Nilüfer",
+    "url": "https://www.arelinterior.com/tr/arel-fabrika-bursa-nilufer"
    },
    {
-    "address": "İkitelli OSB Mh. Masko Mobilya Kenti, 34490 Başakşehir/İstanbul",
-    "city": "İstanbul",
+    "city": "Gümüşova, Düzce",
     "country": "Türkiye",
-    "name": "Modis İstanbul (Masko)",
-    "url": "https://www.modisinteriors.com/"
+    "img": "assets/firms/arel-interior/p-duzce.webp",
+    "name": "Arel Fabrika · Düzce-Gümüşova",
+    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika"
    },
    {
-    "address": "Önder, Karacakaya Cd. No:83, 06360 Altındağ/Ankara",
-    "city": "Ankara",
+    "address": "Balat Mah. Sanayi Cd. No:433, Kıratlı İş Merkezi",
+    "city": "Nilüfer, Bursa",
     "country": "Türkiye",
-    "name": "Modis Ankara",
-    "url": "https://modisinteriors.com/blog.php?id=53"
+    "name": "Arel Interior Design · Bursa-Balat",
+    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-balat"
    },
    {
-    "address": "Ulubatlıhasan, Ankara Cd. No:154, 42050 Karatay/Konya",
-    "city": "Konya",
+    "city": "Nilüfer, Bursa",
     "country": "Türkiye",
-    "name": "Modis Konya",
-    "url": "https://modisinteriors.com/blog/modis-interiors-konya"
-   },
-   {
-    "address": "Yeşilova, Aspendos Blv., Muratpaşa/Antalya",
-    "city": "Antalya",
-    "country": "Türkiye",
-    "name": "Modis Antalya",
-    "url": "https://www.modisinteriors.com/"
-   },
-   {
-    "city": "Dubai",
-    "country": "Birleşik Arap Emirlikleri",
-    "name": "Modis Interiors BAE",
-    "url": "https://www.modisinteriors.com/"
-   },
-   {
-    "city": "Maskat",
-    "country": "Umman",
-    "name": "Modis Maskat",
-    "url": "https://www.modisinteriors.com/"
-   },
-   {
-    "address": "21 Babək Prospekti, Bakı",
-    "city": "Bakü",
-    "country": "Azerbaycan",
-    "name": "Modis Bakü",
-    "url": "https://www.modisinteriors.com/"
+    "name": "Arel Interior Design · Bursa-Beşevler",
+    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-besevler"
    }
   ],
-  "updatedAt": "2026-10-25T18:10:00Z",
   "videos": [
    {
-    "kind": "brand",
-    "title": "FACTORY",
-    "url": "https://www.youtube.com/watch?v=1NOcFf670GM",
-    "file": "assets/videos/1NOcFf670GM.mp4",
-    "poster": "assets/videos/1NOcFf670GM.jpg",
-    "source": "https://www.youtube.com/watch?v=1NOcFf670GM"
+    "file": "assets/firms/arel-interior/factory.mp4",
+    "kind": "factory",
+    "poster": "assets/firms/arel-interior/factory-poster.jpg",
+    "source": "https://www.youtube.com/watch?v=79tZr8cq7UE",
+    "title": "Arel Interior Design · Fabrika",
+    "url": "https://www.youtube.com/watch?v=79tZr8cq7UE"
+   },
+   {
+    "file": "assets/firms/arel-interior/matild.mp4",
+    "kind": "project",
+    "poster": "assets/firms/arel-interior/matild-poster.jpg",
+    "source": "https://www.youtube.com/watch?v=KsYi5gLMNRc",
+    "title": "Matild Palace, a Luxury Collection Hotel",
+    "url": "https://www.youtube.com/watch?v=KsYi5gLMNRc"
    },
    {
     "kind": "brand",
-    "title": "Chester Long Design By Modis İnteriors ( Chester Köşe Koltuk )",
-    "url": "https://www.youtube.com/watch?v=EkLUVOpTVfc",
-    "file": "assets/videos/EkLUVOpTVfc.mp4",
-    "poster": "assets/videos/EkLUVOpTVfc.jpg",
-    "source": "https://www.youtube.com/watch?v=EkLUVOpTVfc"
+    "title": "Bursa-Balat showroom",
+    "url": "https://www.youtube.com/watch?v=bOikO2HuLik"
+   },
+   {
+    "kind": "project",
+    "title": "Teknosab · Nukon Lazer Makina",
+    "url": "https://youtu.be/UpFHKNxfEsQ"
+   },
+   {
+    "kind": "project",
+    "title": "Teknosab · Nuri Körüstan Makina",
+    "url": "https://www.youtube.com/watch?v=nr87L8dRKp4"
    }
   ],
-  "website": "https://www.modisinteriors.com/"
- },
- "sardunya": {
-  "about": "Sardunya, 2009'da İnegöl'de Ümit Kırnak ve Mehmet Yavuz tarafından kurulmuş bir oturma grubu ve salon mobilyası üreticisidir. 2014'ten itibaren modern salon ve oturma odası takımlarına yöneldi. 2021'de fabrikasını Hamzabey OSB'ye taşıdı, 2023'te Akhisar/İnegöl'de panel mobilya tesisi açtı. Türkiye'de yaklaşık 50 satış noktası olduğunu ve 38 ülkeye hizmet verdiğini belirtir. 2024 ihracatı 2,95 milyon USD.",
-  "fairs": [
-   {
-    "city": "İstanbul",
-    "name": "Uluslararası İstanbul Mobilya Fuarı (IIFF)",
-    "year": "Her yıl"
-   },
-   {
-    "city": "Birleşik Arap Emirlikleri",
-    "name": "BAE'deki sektör fuarları"
-   }
-  ],
-  "founded": "2009",
-  "hq": "İnegöl, Bursa",
-  "logo": "assets/firms/sardunya-logo.png",
-  "name": "Sardunya",
-  "posts": [
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DewBkJmAvle/",
-    "video": "assets/videos/ig_sardunya_DewBkJmAvle.mp4",
-    "img": "assets/videos/ig_sardunya_DewBkJmAvle.jpg",
-    "caption": "Metropol",
-    "date": "2026-10-21"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DaK8CzTk846/",
-    "video": "assets/videos/ig_sardunya_DaK8CzTk846.mp4",
-    "img": "assets/videos/ig_sardunya_DaK8CzTk846.jpg",
-    "caption": "Volume koleksiyonu",
-    "date": "2026-06-29"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DaK7dymDmoR/",
-    "video": "assets/videos/ig_sardunya_DaK7dymDmoR.mp4",
-    "img": "assets/videos/ig_sardunya_DaK7dymDmoR.jpg",
-    "caption": "Solaris koleksiyonu",
-    "date": "2026-06-29"
-   },
-   {
-    "network": "instagram",
-    "url": "https://www.instagram.com/reel/DUC4b_bjlhK/",
-    "video": "assets/videos/ig_sardunya_DUC4b_bjlhK.mp4",
-    "img": "assets/videos/ig_sardunya_DUC4b_bjlhK.jpg",
-    "caption": "IIFF 2026 fuar standı",
-    "date": "2026-01-28"
-   }
-  ],
-  "social": {
-   "facebook": "https://www.facebook.com/sardunyafurniture",
-   "instagram": "https://www.instagram.com/sardunyafurniture/",
-   "youtube": "https://www.youtube.com/@Sardunya.Furniture"
-  },
-  "sources": [
-   "https://sardunyafurniture.com/kurumsal/",
-   "https://sardunyafurniture.com/en/stores/",
-   "https://sardunyafurniture.com/iletisim/",
-   "https://www.mobsad.com/sardunya/"
-  ],
-  "storeCount": "40 satış noktası",
-  "stores": [
-   {
-    "address": "Yeniceköy Mah. Mobilya Cad. Mobiliyum AVM No:36/43, İnegöl/Bursa",
-    "city": "İnegöl / Bursa",
-    "country": "Türkiye",
-    "name": "Sardunya Fabrika Mağaza",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "Yukarı Dudullu Mh. 3. Sk. No:132, Dudullu OSB, Ümraniye/İstanbul",
-    "city": "İstanbul (Ümraniye)",
-    "country": "Türkiye",
-    "name": "Balkan Home (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "İkitelli OSB, Masko 12. B Blok Sk. No:24, Başakşehir/İstanbul",
-    "city": "İstanbul (Başakşehir)",
-    "country": "Türkiye",
-    "name": "N Elit Mobilya (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "İkitelli OSB, Masko 17B Blok No:1, Başakşehir/İstanbul",
-    "city": "İstanbul (Başakşehir)",
-    "country": "Türkiye",
-    "name": "Box Mobilya (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "Önder, Karacakaya Cd. No:188, Altındağ/Ankara",
-    "city": "Ankara",
-    "country": "Türkiye",
-    "name": "Işık Mobilya (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "Ulubey, Karacakaya Cd. No:72, Altındağ/Ankara",
-    "city": "Ankara",
-    "country": "Türkiye",
-    "name": "Asaş Mobilya (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "İstanbul Yolu Batıpark AVM 9. KM No:3 C, Yenimahalle/Ankara",
-    "city": "Ankara",
-    "country": "Türkiye",
-    "name": "Ref Home (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   },
-   {
-    "address": "Yeşillik Cd. No:282, Karabağlar/İzmir",
-    "city": "İzmir",
-    "country": "Türkiye",
-    "name": "İlker Gödence Mobilya (bayi)",
-    "url": "https://sardunyafurniture.com/en/stores/"
-   }
-  ],
-  "updatedAt": "2026-10-25T18:10:00Z",
-  "videos": [
-   {
-    "fair": "IIFF İstanbul",
-    "kind": "fair",
-    "title": "IIFF 2026 fuar standı",
-    "url": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4",
-    "year": "2026",
-    "file": "assets/videos/sardunya-iiff2026.mp4",
-    "poster": "assets/videos/sardunya-iiff2026.jpg",
-    "source": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4"
-   },
-   {
-    "kind": "brand",
-    "title": "Sardunya tanıtım filmi",
-    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4",
-    "file": "assets/videos/sardunya-home.mp4",
-    "poster": "assets/videos/sardunya-home.jpg",
-    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4"
-   },
-   {
-    "kind": "brand",
-    "title": "Sardunya hakkında",
-    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4",
-    "file": "assets/videos/sardunya-about.mp4",
-    "poster": "assets/videos/sardunya-about.jpg",
-    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
-   }
-  ],
-  "website": "https://sardunyafurniture.com/"
+  "website": "https://www.arelinterior.com/tr"
  },
  "livello": {
   "about": "Livello, İnegöl'de yatak odası ve giyinme odası sistemleri üreten bir Türk mobilya markasıdır. Kendini \"Türkiye'nin Sonsuz Giyinme Odası Markası\" olarak tanımlar.\n\nŞirket Kasım 2005'te AKC Mobilya San. Tic. Ltd. Şti. (Akan Ahşap) adıyla, 3.800 m² kapalı üretim alanında kuruldu. Tasarımı, üretimi ve kalite kontrolü kendi tesisinde yürütür; ürünleri işlevsel ve ölçüye göre uyarlanabilir yapıdadır. Türkiye genelinde satış noktalarıyla büyüyen marka, uluslararası pazarlara da açılmaktadır.\n\nBu projede villaların yatak odalarındaki yatak, gardırop ve komodin kalemlerinde Livello ürünleri yer alır.",
@@ -814,36 +691,36 @@
   "name": "Livello",
   "posts": [
    {
+    "caption": "FLEX giyinme odası",
+    "date": "2026-10-01",
+    "img": "assets/videos/ig_livello_Dd81cgvoehz.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/Dd81cgvoehz/",
-    "video": "assets/videos/ig_livello_Dd81cgvoehz.mp4",
-    "img": "assets/videos/ig_livello_Dd81cgvoehz.jpg",
-    "caption": "FLEX giyinme odası",
-    "date": "2026-10-01"
+    "video": "assets/videos/ig_livello_Dd81cgvoehz.mp4"
    },
    {
+    "caption": "Paris yatak odası",
+    "date": "2026-09-30",
+    "img": "assets/videos/ig_livello_Dd6POZtI-EV.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/Dd6POZtI-EV/",
-    "video": "assets/videos/ig_livello_Dd6POZtI-EV.mp4",
-    "img": "assets/videos/ig_livello_Dd6POZtI-EV.jpg",
-    "caption": "Paris yatak odası",
-    "date": "2026-09-30"
+    "video": "assets/videos/ig_livello_Dd6POZtI-EV.mp4"
    },
    {
+    "caption": "Paris REN karyola",
+    "date": "2026-06-02",
+    "img": "assets/videos/ig_livello_DZEwiaxI-l8.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DZEwiaxI-l8/",
-    "video": "assets/videos/ig_livello_DZEwiaxI-l8.mp4",
-    "img": "assets/videos/ig_livello_DZEwiaxI-l8.jpg",
-    "caption": "Paris REN karyola",
-    "date": "2026-06-02"
+    "video": "assets/videos/ig_livello_DZEwiaxI-l8.mp4"
    },
    {
+    "caption": "IFF 2026 standı",
+    "date": "2026-01-30",
+    "img": "assets/videos/ig_livello_DUIXY4nCDsh.jpg",
     "network": "instagram",
     "url": "https://www.instagram.com/reel/DUIXY4nCDsh/",
-    "video": "assets/videos/ig_livello_DUIXY4nCDsh.mp4",
-    "img": "assets/videos/ig_livello_DUIXY4nCDsh.jpg",
-    "caption": "IFF 2026 standı",
-    "date": "2026-01-30"
+    "video": "assets/videos/ig_livello_DUIXY4nCDsh.mp4"
    }
   ],
   "products": "Yatak, gardırop ve giyinme odası sistemleri, şifonyer, komodin",
@@ -1115,167 +992,290 @@
   "videos": [
    {
     "fair": "IFF",
+    "file": "assets/videos/livello-iff2026.mp4",
     "kind": "fair",
+    "poster": "assets/videos/livello-iff2026.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4",
     "title": "IFF 2026 standı",
     "url": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4",
-    "year": "2026",
-    "file": "assets/videos/livello-iff2026.mp4",
-    "poster": "assets/videos/livello-iff2026.jpg",
-    "source": "https://www.livello.com.tr/wp-content/uploads/2026/02/23146723.mp4"
+    "year": "2026"
    },
    {
     "fair": "İnegöl Mobilya Fuarı",
+    "file": "assets/videos/livello-inegol2024.mp4",
     "kind": "fair",
+    "poster": "assets/videos/livello-inegol2024.jpg",
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4",
     "title": "İnegöl Fuarı 2024 standı",
     "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4",
-    "year": "2024",
-    "file": "assets/videos/livello-inegol2024.mp4",
-    "poster": "assets/videos/livello-inegol2024.jpg",
-    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/INEGOL-FUARI-2024.mp4"
+    "year": "2024"
    },
    {
-    "kind": "brand",
-    "title": "Pegasus koleksiyonu",
-    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4",
     "file": "assets/videos/livello-pegasus.mp4",
+    "kind": "brand",
     "poster": "assets/videos/livello-pegasus.jpg",
-    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4"
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4",
+    "title": "Pegasus koleksiyonu",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/Livello-pegaus.mp4"
    },
    {
-    "kind": "brand",
-    "title": "Livello mağazası",
-    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4",
     "file": "assets/videos/livello-magaza.mp4",
+    "kind": "brand",
     "poster": "assets/videos/livello-magaza.jpg",
-    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4"
+    "source": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4",
+    "title": "Livello mağazası",
+    "url": "https://www.livello.com.tr/wp-content/uploads/2025/11/magaza.mp4"
    }
   ],
   "website": "https://www.livello.com.tr/"
  },
- "luva-concept": {
-  "about": "Luva Concept, dış mekân ve bahçe mobilyası üzerine çalışan bir markadır. İstanbul'da Masko ve Modoko'da, ayrıca Bodrum'da showroom'ları bulunur.\n\nShowroom'larında ithal ve yerli ürünleri bir arada sunar; kendi imalatından gelen deneyimle projeye özel üretim de yapar.\n\nBu projede villaların teras ve dış mekân oturma kalemlerinde Luva Concept ürünleri yer alır.",
-  "aliases": [
-   "Luva",
-   "Luva Concept"
-  ],
-  "fairs": [],
-  "hq": "İstanbul",
-  "logo": "assets/firms/luva-concept.png",
-  "name": "Luva Concept",
+ "inci-design": {
+  "hq": "İnegöl, Bursa",
+  "logo": "assets/firms/inci-design-logo.png",
+  "name": "Inci Design",
   "posts": [
    {
+    "caption": "Showroom",
+    "date": "2026-10-23",
+    "img": "assets/videos/ig_inci-design_De06pr5CNP6.jpg",
     "network": "instagram",
-    "url": "https://www.instagram.com/reel/De6H_kJj4C2/",
-    "video": "assets/videos/ig_luva-concept_De6H_kJj4C2.mp4",
-    "img": "assets/videos/ig_luva-concept_De6H_kJj4C2.jpg",
-    "caption": "Aurora",
-    "date": "2026-10-25"
+    "url": "https://www.instagram.com/reel/De06pr5CNP6/",
+    "video": "assets/videos/ig_inci-design_De06pr5CNP6.mp4"
    },
    {
+    "caption": "Mori koltuk takımı",
+    "date": "2026-10-13",
+    "img": "assets/videos/ig_inci-design_DecdqQ6AdtH.jpg",
     "network": "instagram",
-    "url": "https://www.instagram.com/reel/Dd8U-XSjL1L/",
-    "video": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.mp4",
-    "img": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.jpg",
-    "caption": "Aston",
-    "date": "2026-10-01"
+    "url": "https://www.instagram.com/reel/DecdqQ6AdtH/",
+    "video": "assets/videos/ig_inci-design_DecdqQ6AdtH.mp4"
    },
    {
+    "caption": "Mori yemek odası",
+    "date": "2026-10-13",
+    "img": "assets/videos/ig_inci-design_DecdbCXjP8s.jpg",
     "network": "instagram",
-    "url": "https://www.instagram.com/reel/DcXzD5ylLEp/",
-    "video": "assets/videos/ig_luva-concept_DcXzD5ylLEp.mp4",
-    "img": "assets/videos/ig_luva-concept_DcXzD5ylLEp.jpg",
-    "caption": "Copenhagen",
-    "date": "2026-08-23"
+    "url": "https://www.instagram.com/reel/DecdbCXjP8s/",
+    "video": "assets/videos/ig_inci-design_DecdbCXjP8s.mp4"
    },
    {
+    "caption": "Sienna oturma odası",
+    "date": "2026-09-18",
+    "img": "assets/videos/ig_inci-design_DdbDV2vD65B.jpg",
     "network": "instagram",
-    "url": "https://www.instagram.com/reel/DcFxeZrkg2b/",
-    "video": "assets/videos/ig_luva-concept_DcFxeZrkg2b.mp4",
-    "img": "assets/videos/ig_luva-concept_DcFxeZrkg2b.jpg",
-    "caption": "Luna",
-    "date": "2026-08-16"
+    "url": "https://www.instagram.com/reel/DdbDV2vD65B/",
+    "video": "assets/videos/ig_inci-design_DdbDV2vD65B.mp4"
    }
   ],
-  "products": "Dış mekân ve bahçe mobilyası: oturma grupları, şezlong, dış mekân masa ve sandalyeleri",
-  "role": "brand",
   "social": {
-   "instagram": "https://www.instagram.com/luvaconcept/",
-   "linkedin": "https://www.linkedin.com/company/luva-concept/",
-   "pinterest": "https://tr.pinterest.com/luvaconcept/"
+   "instagram": "https://www.instagram.com/inci.design1/"
+  },
+  "stores": [],
+  "updatedAt": "2026-10-25T18:10:00Z",
+  "videos": [],
+  "website": "https://incikoltuk.com/"
+ },
+ "gabba": {
+  "about": "Gabba Home, üçüncü kuşağın yönettiği, İnegöl merkezli bir lüks salon, oturma grubu ve yemek odası üreticisidir. Aile 1988'de üretim ve satışı İnegöl'e taşıdı, 1990'da ilk mağazasını açtı. İlk ihracatını 2001'de Yunanistan'a yaptı, 2013'te ilk yurt dışı deneyim merkezini Romanya'da açtı. 2020'de 65.000 m²'lik entegre tesise geçti. Yaklaşık 350–450 çalışanı var.",
+  "fairs": [
+   {
+    "city": "Amman, Ürdün",
+    "name": "TİM ticaret heyeti",
+    "year": "2023"
+   },
+   {
+    "city": "Lagos, Nijerya",
+    "name": "TİM ticaret heyeti",
+    "year": "2023"
+   }
+  ],
+  "founded": "2001",
+  "hq": "İnegöl, Bursa",
+  "logo": "assets/firms/gabba-logo.png",
+  "name": "Gabba",
+  "posts": [
+   {
+    "caption": "Hanedan koleksiyonu",
+    "date": "2026-10-12",
+    "img": "assets/videos/ig_gabba_DeZ-7OasJ1b.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeZ-7OasJ1b/",
+    "video": "assets/videos/ig_gabba_DeZ-7OasJ1b.mp4"
+   },
+   {
+    "caption": "FDI 2026 fuarı",
+    "date": "2026-10-09",
+    "img": "assets/videos/ig_gabba_DeSGnTmhwHo.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeSGnTmhwHo/",
+    "video": "assets/videos/ig_gabba_DeSGnTmhwHo.mp4"
+   },
+   {
+    "caption": "FDI 2026 fuar standı",
+    "date": "2026-09-23",
+    "img": "assets/videos/ig_gabba_Ddotmy5N_I8.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Ddotmy5N_I8/",
+    "video": "assets/videos/ig_gabba_Ddotmy5N_I8.mp4"
+   },
+   {
+    "caption": "Tamzara koleksiyonu",
+    "date": "2026-09-19",
+    "img": "assets/videos/ig_gabba_DdelysLBKIH.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DdelysLBKIH/",
+    "video": "assets/videos/ig_gabba_DdelysLBKIH.mp4"
+   }
+  ],
+  "social": {
+   "facebook": "https://www.facebook.com/furnituregabba",
+   "instagram": "https://www.instagram.com/gabbafurniture/",
+   "linkedin": "https://www.linkedin.com/company/gabba-furniture/",
+   "youtube": "https://www.youtube.com/@gabbafurniture"
   },
   "sources": [
-   "https://luvaconcept.com/hakkimizda/",
-   "https://luvaconcept.com/lokasyonlar/"
+   "https://gabbahome.com/en/pages/hakkimizda",
+   "https://gabbahome.com/en/blogs/haberler",
+   "https://www.kariyer.net/firma-profil/gabba-furniture-202858-232986",
+   "https://delegations.tim.org.tr/event/jordan-amman-2023/company/gabba-home-8",
+   "https://delegations.tim.org.tr/event/nigeria-lagos-2023/company/gabba-home-6",
+   "https://delegations.tim.org.tr/storage/uploads/company/27557/gUnbgiVlmLNRfEpX10jqLTWMYUPxWIjbhufJhF6z.pdf"
   ],
-  "storeCount": "3 showroom · İstanbul Avrupa ve Anadolu yakası, Bodrum",
+  "storeCount": "",
   "stores": [
    {
-    "address": "İkitelli OSB Mah. Masko Mobilyacılar Sitesi 17B Blok No:33-35",
-    "city": "Başakşehir, İstanbul",
+    "city": "İstanbul (Başakşehir)",
     "country": "Türkiye",
-    "img": "assets/firms/stores/luva-masko.jpg",
-    "name": "Avrupa Yakası showroom (Masko)",
-    "url": "https://luvaconcept.com/avrupa-yakasi/"
+    "img": "assets/firms/stores/gabba-0.webp",
+    "name": "Gabba Home MASKO Deneyim Merkezi"
    },
    {
-    "address": "Necip Fazıl Bulvarı No:84/A Şerifali",
-    "city": "Ümraniye, İstanbul",
+    "city": "İnegöl / Bursa",
     "country": "Türkiye",
-    "img": "assets/firms/stores/luva-umraniye.jpg",
-    "name": "Anadolu Yakası showroom",
-    "url": "https://luvaconcept.com/anadolu-yakasi/"
+    "name": "Gabba ilk perakende mağazası",
+    "url": "https://gabbahome.com/en/pages/hakkimizda"
    },
    {
-    "address": "Müskebi Mah. Kapuz Cad. Plaza Bodrum Sitesi No:8/8",
-    "city": "Bodrum, Muğla",
-    "country": "Türkiye",
-    "img": "assets/firms/stores/luva-bodrum.jpg",
-    "name": "Bodrum showroom",
-    "url": "https://luvaconcept.com/bodrum/"
+    "country": "Romanya",
+    "name": "Gabba ilk yurt dışı deneyim merkezi",
+    "url": "https://gabbahome.com/en/pages/hakkimizda"
    }
   ],
-  "videos": [],
-  "website": "https://luvaconcept.com/"
- },
- "volly-smart": {
-  "about": "Volly Teknoloji'nin akıllı ev ve IoT markası. Bu projede villaların akıllı ev sistemi kalemleri (aydınlatma ve iklim kontrolü, sensörler, kontrol panelleri) Volly Smart ürünleriyle fiyatlandırıldı.",
-  "aliases": [
-   "Volly Smart",
-   "Volly"
+  "updatedAt": "2026-10-25T18:10:00Z",
+  "videos": [
+   {
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/0qcpnZDqvOc.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/0qcpnZDqvOc.jpg",
+    "source": "https://www.youtube.com/watch?v=0qcpnZDqvOc",
+    "title": "2023 IFF Furniture Fair | Gabba",
+    "url": "https://www.youtube.com/watch?v=0qcpnZDqvOc",
+    "year": "2023"
+   },
+   {
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/gabba-iiff1.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/gabba-iiff1.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0",
+    "title": "IIFF 2026 standı · 1",
+    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/b9c3c9e05b93430d83a219e8ef323c81/b9c3c9e05b93430d83a219e8ef323c81.HD-1080p-7.2Mbps-66030523.mp4?v=0",
+    "year": "2026"
+   },
+   {
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/gabba-iiff2.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/gabba-iiff2.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0",
+    "title": "IIFF 2026 standı · 2",
+    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/91e6cb39fe4d4d6a998309db43615628/91e6cb39fe4d4d6a998309db43615628.HD-1080p-7.2Mbps-66030520.mp4?v=0",
+    "year": "2026"
+   },
+   {
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/gabba-iiff3.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/gabba-iiff3.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0",
+    "title": "IIFF 2026 standı · 3",
+    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/5b43bd868ecb4950adb315b8dff0703f/5b43bd868ecb4950adb315b8dff0703f.HD-1080p-7.2Mbps-66030522.mp4?v=0",
+    "year": "2026"
+   },
+   {
+    "file": "assets/videos/c4aPcCe3Q_Y.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/c4aPcCe3Q_Y.jpg",
+    "source": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y",
+    "title": "Factory Trailer | Gabba",
+    "url": "https://www.youtube.com/watch?v=c4aPcCe3Q_Y",
+    "year": "2022"
+   },
+   {
+    "file": "assets/videos/gabba-masko.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/gabba-masko.jpg",
+    "source": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0",
+    "title": "MASKO Deneyim Merkezi",
+    "url": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0"
+   }
   ],
+  "website": "https://gabbahome.com/"
+ },
+ "ergo": {
+  "about": "Ergo Home Group, perakende ve proje (contract) mobilya alanında çalışan bir şirketler grubudur. Yerel ve uluslararası pazarda hareketli ve hareketsiz mobilya, mutfak ve iç mekân çözümleri sunar.\n\nGrup 1996'da Lefkoşa'da Cucina & Cucina adıyla kuruldu; Kıbrıs'a ithal İtalyan mutfak dolaplarını getiren ilk işletme oldu. 2003'te Ergo Home Group adıyla şirketler grubuna dönüştü. Kıbrıs'ın ikinci büyük ankastre mutfak ve gardırop grubu Formatek'i bünyesine kattı.\n\nİlk yurt dışı ofisini 2006'da Dubai'de, ikincisini 2012'de Suudi Arabistan'da (Riyad), üçüncüsünü 2022'de Çin'de açtı. Living, Kartell, B&B Italia, Maxalto, Arclinea, Cucina & Cucina, Novamobili, Cinquanta3, Cesar ve Albed markalarıyla çalışır. Living Contract, Ergo Overseas, Ergo Energy ve Ergo Office bölümleri vardır.\n\nRiyad'da Al Bustan Village, The Orient ve KAFD gibi projelerde yer almıştır.",
   "fairs": [],
-  "logo": "assets/firms/brands/volly.svg",
-  "name": "Volly Smart",
+  "founded": "1996",
+  "hq": "Lefkoşa, Kıbrıs",
+  "logo": "assets/firms/ergo-logo.png",
+  "name": "Ergo",
   "posts": [],
-  "products": "Akıllı ev sistemi: otomasyon, sensörler, kontrol panelleri",
-  "role": "brand",
   "social": {},
   "sources": [
-   "https://volly.com.tr/"
+   "https://www.ergohomegroup.com/",
+   "https://www.ergohomegroup.com/about/ergo-home-at-a-glance",
+   "https://www.ergohomegroup.com/contact",
+   "https://www.ergohomegroup.com/projects"
   ],
-  "stores": [],
-  "videos": [],
-  "website": "https://volly.com.tr/"
- },
- "teka": {
-  "about": "Mutfak ve banyo cihazları üreten TEKA, bu projede ocak, davlumbaz, mikrodalga, bulaşık makinesi, buzdolabı ve çamaşır makinesi kalemlerinde yer alır. Teklif ve büyük cihazların montajı TEKA ALJ üzerinden verildi (REV.2, 20.10.2026).",
-  "aliases": [
-   "TEKA",
-   "TEKA ALJ"
+  "storeCount": "Lefkoşa ve Limasol'da showroom · Dubai, Riyad ve Çin'de ofis",
+  "stores": [
+   {
+    "address": "46 Tempon Street, 2. kat, 2408 Engomi",
+    "city": "Lefkoşa",
+    "country": "Kıbrıs",
+    "name": "Genel merkez",
+    "url": "https://www.ergohomegroup.com/contact"
+   },
+   {
+    "address": "Saeed Bin Haraith Alley 7929, As Sulaymaniyah, Riyad 12245",
+    "city": "Riyad",
+    "country": "Suudi Arabistan",
+    "name": "Suudi Arabistan ofisi",
+    "url": "https://www.ergohomegroup.com/contact"
+   },
+   {
+    "city": "Limasol",
+    "country": "Kıbrıs",
+    "name": "Living Plus showroom"
+   },
+   {
+    "city": "Lefkoşa",
+    "country": "Kıbrıs",
+    "name": "Kartell flagship mağaza ve Living showroom"
+   }
   ],
-  "fairs": [],
-  "logo": "assets/firms/brands/teka.svg",
-  "name": "TEKA",
-  "posts": [],
-  "products": "Ankastre mutfak cihazları ve beyaz eşya",
-  "role": "brand",
-  "social": {},
-  "sources": [
-   "https://www.teka.com/"
+  "videos": [
+   {
+    "file": "assets/videos/ergo-tanitim.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/ergo-tanitim.jpg",
+    "source": "https://www.youtube.com/watch?v=lW4ifnOj7f0",
+    "title": "Ergo Home Group tanıtım filmi",
+    "url": "https://www.youtube.com/watch?v=lW4ifnOj7f0"
+   }
   ],
-  "stores": [],
-  "videos": [],
-  "website": "https://www.teka.com/"
+  "website": "https://www.ergohomegroup.com/"
  },
  "philips": {
   "about": "Bu projede küçük ev aletleri (su ısıtıcı, buharlı ütü, toz torbalı süpürge) Philips ürünleriyle fiyatlandırıldı; TEKA ALJ teklifine dahil.",
@@ -1295,6 +1295,154 @@
   "stores": [],
   "videos": [],
   "website": "https://www.philips.com.tr/"
+ },
+ "modis": {
+  "about": "Modis Interiors, İnegöl merkezli bir premium mobilya ve iç mekân markasıdır. Ahşapla 200 yıllık aile geçmişine dayanır ve 2000'den beri mobilya üretir. 2025 itibarıyla 35'ten fazla ülkeye ihracat yaptığını belirtir. Türkiye'de altı şehirde, ayrıca Orta Doğu, Kafkasya, Orta Asya, Rusya ve Libya'da showroom'ları vardır. Yaklaşık 100–149 çalışanı var.",
+  "fairs": [
+   {
+    "city": "Milano (Fiera Milano Rho)",
+    "name": "Salone del Mobile.Milano",
+    "year": "2025"
+   },
+   {
+    "city": "Milano (Fiera Milano Rho)",
+    "name": "Salone del Mobile.Milano",
+    "year": "2026"
+   },
+   {
+    "city": "İstanbul (Tüyap)",
+    "name": "Uluslararası İstanbul Mobilya Fuarı (IIFF)",
+    "year": "2026"
+   }
+  ],
+  "founded": "2000",
+  "hq": "İnegöl, Bursa",
+  "logo": "assets/firms/modis-logo.png",
+  "name": "Modis",
+  "posts": [
+   {
+    "caption": "Villa projesi",
+    "date": "2026-10-09",
+    "img": "assets/videos/ig_modis_DeRFHLJAjtn.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DeRFHLJAjtn/",
+    "video": "assets/videos/ig_modis_DeRFHLJAjtn.mp4"
+   },
+   {
+    "caption": "Olympos",
+    "date": "2026-09-04",
+    "img": "assets/videos/ig_modis_Dc3BCCFDCUK.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dc3BCCFDCUK/",
+    "video": "assets/videos/ig_modis_Dc3BCCFDCUK.mp4"
+   },
+   {
+    "caption": "Colosseum",
+    "date": "2026-06-16",
+    "img": "assets/videos/ig_modis_DZpdVHhiZ3l.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DZpdVHhiZ3l/",
+    "video": "assets/videos/ig_modis_DZpdVHhiZ3l.mp4"
+   },
+   {
+    "caption": "İtalya, yeni koleksiyonlar",
+    "date": "2026-04-22",
+    "img": "assets/videos/ig_modis_DXbPqchiOVF.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DXbPqchiOVF/",
+    "video": "assets/videos/ig_modis_DXbPqchiOVF.mp4"
+   }
+  ],
+  "social": {
+   "facebook": "https://www.facebook.com/modisinterior/",
+   "instagram": "https://www.instagram.com/modis_interiors/"
+  },
+  "sources": [
+   "https://modisinteriors.com/about-us",
+   "https://modisinteriors.com/history",
+   "https://www.modisinteriors.com/en/fuarlar",
+   "https://www.modisinteriors.com/",
+   "https://www.kariyer.net/firma-profil/modis-sofa-mobilya-san-ve-tic-ltd-sti-65025-140209",
+   "https://www.facebook.com/modisinterior/",
+   "https://www.instagram.com/modis_interiors.ksa/"
+  ],
+  "storeCount": "18 showroom",
+  "stores": [
+   {
+    "address": "Yeniceköy, İnegöl Bursa Karayolu 6. km, 16400 İnegöl/Bursa (ayrıca Mobiliyum AVM A ve B Blok)",
+    "city": "İnegöl / Bursa",
+    "country": "Türkiye",
+    "name": "Modis İnegöl",
+    "url": "https://www.modisinteriors.com/"
+   },
+   {
+    "address": "İkitelli OSB Mh. Masko Mobilya Kenti, 34490 Başakşehir/İstanbul",
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Modis İstanbul (Masko)",
+    "url": "https://www.modisinteriors.com/"
+   },
+   {
+    "address": "Önder, Karacakaya Cd. No:83, 06360 Altındağ/Ankara",
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Modis Ankara",
+    "url": "https://modisinteriors.com/blog.php?id=53"
+   },
+   {
+    "address": "Ulubatlıhasan, Ankara Cd. No:154, 42050 Karatay/Konya",
+    "city": "Konya",
+    "country": "Türkiye",
+    "name": "Modis Konya",
+    "url": "https://modisinteriors.com/blog/modis-interiors-konya"
+   },
+   {
+    "address": "Yeşilova, Aspendos Blv., Muratpaşa/Antalya",
+    "city": "Antalya",
+    "country": "Türkiye",
+    "name": "Modis Antalya",
+    "url": "https://www.modisinteriors.com/"
+   },
+   {
+    "city": "Dubai",
+    "country": "Birleşik Arap Emirlikleri",
+    "name": "Modis Interiors BAE",
+    "url": "https://www.modisinteriors.com/"
+   },
+   {
+    "city": "Maskat",
+    "country": "Umman",
+    "name": "Modis Maskat",
+    "url": "https://www.modisinteriors.com/"
+   },
+   {
+    "address": "21 Babək Prospekti, Bakı",
+    "city": "Bakü",
+    "country": "Azerbaycan",
+    "name": "Modis Bakü",
+    "url": "https://www.modisinteriors.com/"
+   }
+  ],
+  "updatedAt": "2026-10-25T18:10:00Z",
+  "videos": [
+   {
+    "file": "assets/videos/1NOcFf670GM.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/1NOcFf670GM.jpg",
+    "source": "https://www.youtube.com/watch?v=1NOcFf670GM",
+    "title": "FACTORY",
+    "url": "https://www.youtube.com/watch?v=1NOcFf670GM"
+   },
+   {
+    "file": "assets/videos/EkLUVOpTVfc.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/EkLUVOpTVfc.jpg",
+    "source": "https://www.youtube.com/watch?v=EkLUVOpTVfc",
+    "title": "Chester Long Design By Modis İnteriors ( Chester Köşe Koltuk )",
+    "url": "https://www.youtube.com/watch?v=EkLUVOpTVfc"
+   }
+  ],
+  "website": "https://www.modisinteriors.com/"
  },
  "beko": {
   "about": "Bu projede 60 cm çok fonksiyonlu ankastre fırın kalemi BEKO ürünüyle fiyatlandırıldı; TEKA ALJ teklifine dahil.",
@@ -1362,220 +1510,241 @@
   "videos": [],
   "website": "https://www.loominology.com/"
  },
- "penelope": {
-  "about": "Bu projede nevresim takımları, yorgan ve yastıklar ile banyo tekstili (havlu, bornoz, paspas) Penelope ürünleriyle fiyatlandırıldı.",
-  "aliases": [
-   "Penelope"
+ "sardunya": {
+  "about": "Sardunya, 2009'da İnegöl'de Ümit Kırnak ve Mehmet Yavuz tarafından kurulmuş bir oturma grubu ve salon mobilyası üreticisidir. 2014'ten itibaren modern salon ve oturma odası takımlarına yöneldi. 2021'de fabrikasını Hamzabey OSB'ye taşıdı, 2023'te Akhisar/İnegöl'de panel mobilya tesisi açtı. Türkiye'de yaklaşık 50 satış noktası olduğunu ve 38 ülkeye hizmet verdiğini belirtir. 2024 ihracatı 2,95 milyon USD.",
+  "fairs": [
+   {
+    "city": "İstanbul",
+    "name": "Uluslararası İstanbul Mobilya Fuarı (IIFF)",
+    "year": "Her yıl"
+   },
+   {
+    "city": "Birleşik Arap Emirlikleri",
+    "name": "BAE'deki sektör fuarları"
+   }
   ],
-  "fairs": [],
-  "name": "Penelope",
-  "posts": [],
-  "products": "Nevresim takımları ve banyo tekstili",
-  "role": "brand",
-  "social": {},
-  "sources": [],
-  "stores": [],
-  "videos": []
- },
- "dercan-tekstil": {
-  "about": "Bu projede tüm pencereler için çift katlı perde paketi (blackout ve tül, ray ve montaj dahil) Dercan Tekstil'in villaya özel fiyatıyla yer alır.",
-  "aliases": [
-   "Dercan Tekstil",
-   "Dercan"
+  "founded": "2009",
+  "hq": "İnegöl, Bursa",
+  "logo": "assets/firms/sardunya-logo.png",
+  "name": "Sardunya",
+  "posts": [
+   {
+    "caption": "Metropol",
+    "date": "2026-10-21",
+    "img": "assets/videos/ig_sardunya_DewBkJmAvle.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DewBkJmAvle/",
+    "video": "assets/videos/ig_sardunya_DewBkJmAvle.mp4"
+   },
+   {
+    "caption": "Volume koleksiyonu",
+    "date": "2026-06-29",
+    "img": "assets/videos/ig_sardunya_DaK8CzTk846.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DaK8CzTk846/",
+    "video": "assets/videos/ig_sardunya_DaK8CzTk846.mp4"
+   },
+   {
+    "caption": "Solaris koleksiyonu",
+    "date": "2026-06-29",
+    "img": "assets/videos/ig_sardunya_DaK7dymDmoR.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DaK7dymDmoR/",
+    "video": "assets/videos/ig_sardunya_DaK7dymDmoR.mp4"
+   },
+   {
+    "caption": "IIFF 2026 fuar standı",
+    "date": "2026-01-28",
+    "img": "assets/videos/ig_sardunya_DUC4b_bjlhK.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DUC4b_bjlhK/",
+    "video": "assets/videos/ig_sardunya_DUC4b_bjlhK.mp4"
+   }
   ],
-  "fairs": [],
-  "name": "Dercan Tekstil",
-  "posts": [],
-  "products": "Perde paketi (blackout ve tül)",
-  "role": "brand",
-  "social": {},
-  "sources": [],
-  "stores": [],
-  "videos": []
- },
- "arel-interior": {
-  "name": "Arel Interior",
-  "aliases": [
-   "Arel Interior",
-   "Arel Interiors",
-   "Arel",
-   "Arel Interior Design"
-  ],
-  "role": "brand",
-  "featured": true,
-  "roleNote": "Hareketsiz mobilya üreticisi",
-  "about": "Arel Interior Design, 1960'tan bu yana Bursa'da mobilya ve iç mimarlık alanında çalışan bir firmadır. Büyük ölçekli projelerden butik üretimlere kadar tasarımdan üretime ve uygulamaya uzanan hizmet verir.\n\nBünyesindeki zemin kaplama, metal ve boya üniteleri sayesinde projeleri tek elden yürütür. Bursa-Nilüfer ve Düzce-Gümüşova'daki fabrikalarında konut, ofis, otel ve ticari projelere özel mobilya üretir; shop drawing ve proje yönetimini de kendi ekibiyle yapar.\n\nOtel ve konut projeleri Macaristan, Hırvatistan, İsviçre, Yunanistan, Bulgaristan, Almanya, Romanya ve Suudi Arabistan'a (Medine) uzanır.\n\nBu projede villaların hareketsiz mobilyalarını, yani mutfak, gömme dolap ve banyo dolaplarını Arel Interior üretir.",
-  "founded": "1960",
-  "hq": "Nilüfer, Bursa",
-  "products": "Hareketsiz mobilya: mutfak, gömme dolap, banyo dolabı ve projeye özel ahşap işleri",
-  "logo": "assets/firms/arel-interior/logo.png",
-  "website": "https://www.arelinterior.com/tr",
   "social": {
-   "instagram": "https://www.instagram.com/arelinteriors/",
-   "facebook": "https://www.facebook.com/arelinteriorsdesign",
-   "youtube": "https://www.youtube.com/@arelinteriordesign"
+   "facebook": "https://www.facebook.com/sardunyafurniture",
+   "instagram": "https://www.instagram.com/sardunyafurniture/",
+   "youtube": "https://www.youtube.com/@Sardunya.Furniture"
   },
-  "storeCount": "2 fabrika · Bursa-Nilüfer ve Düzce-Gümüşova; Bursa'da 2 showroom",
+  "sources": [
+   "https://sardunyafurniture.com/kurumsal/",
+   "https://sardunyafurniture.com/en/stores/",
+   "https://sardunyafurniture.com/iletisim/",
+   "https://www.mobsad.com/sardunya/"
+  ],
+  "storeCount": "40 satış noktası",
   "stores": [
    {
-    "name": "Arel Fabrika · Bursa-Nilüfer",
-    "address": "Barış Mah. İzmir Yolu Cad. No:186B",
-    "city": "Nilüfer, Bursa",
+    "address": "Yeniceköy Mah. Mobilya Cad. Mobiliyum AVM No:36/43, İnegöl/Bursa",
+    "city": "İnegöl / Bursa",
     "country": "Türkiye",
-    "img": "assets/firms/arel-interior/p-nilufer.webp",
-    "url": "https://www.arelinterior.com/tr/arel-fabrika-bursa-nilufer"
+    "name": "Sardunya Fabrika Mağaza",
+    "url": "https://sardunyafurniture.com/en/stores/"
    },
    {
-    "name": "Arel Fabrika · Düzce-Gümüşova",
-    "city": "Gümüşova, Düzce",
+    "address": "Yukarı Dudullu Mh. 3. Sk. No:132, Dudullu OSB, Ümraniye/İstanbul",
+    "city": "İstanbul (Ümraniye)",
     "country": "Türkiye",
-    "img": "assets/firms/arel-interior/p-duzce.webp",
-    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika"
+    "name": "Balkan Home (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
    },
    {
-    "name": "Arel Interior Design · Bursa-Balat",
-    "address": "Balat Mah. Sanayi Cd. No:433, Kıratlı İş Merkezi",
-    "city": "Nilüfer, Bursa",
+    "address": "İkitelli OSB, Masko 12. B Blok Sk. No:24, Başakşehir/İstanbul",
+    "city": "İstanbul (Başakşehir)",
     "country": "Türkiye",
-    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-balat"
+    "name": "N Elit Mobilya (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
    },
    {
-    "name": "Arel Interior Design · Bursa-Beşevler",
-    "city": "Nilüfer, Bursa",
+    "address": "İkitelli OSB, Masko 17B Blok No:1, Başakşehir/İstanbul",
+    "city": "İstanbul (Başakşehir)",
     "country": "Türkiye",
-    "url": "https://www.arelinterior.com/tr/arel-interior-design-bursa-besevler"
+    "name": "Box Mobilya (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
+   },
+   {
+    "address": "Önder, Karacakaya Cd. No:188, Altındağ/Ankara",
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Işık Mobilya (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
+   },
+   {
+    "address": "Ulubey, Karacakaya Cd. No:72, Altındağ/Ankara",
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Asaş Mobilya (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
+   },
+   {
+    "address": "İstanbul Yolu Batıpark AVM 9. KM No:3 C, Yenimahalle/Ankara",
+    "city": "Ankara",
+    "country": "Türkiye",
+    "name": "Ref Home (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
+   },
+   {
+    "address": "Yeşillik Cd. No:282, Karabağlar/İzmir",
+    "city": "İzmir",
+    "country": "Türkiye",
+    "name": "İlker Gödence Mobilya (bayi)",
+    "url": "https://sardunyafurniture.com/en/stores/"
    }
   ],
-  "projects": [
-   {
-    "name": "H.M.O Evi",
-    "place": "Medine, Suudi Arabistan",
-    "cat": "Konut",
-    "img": "assets/firms/arel-interior/p-hmo.webp",
-    "url": "https://www.arelinterior.com/tr/hmo-evi-saudi-arabia-medina"
-   },
-   {
-    "name": "Medine Café Projesi",
-    "place": "Medine, Suudi Arabistan",
-    "cat": "Restoran",
-    "img": "assets/firms/arel-interior/p-medinacafe.webp",
-    "url": "https://www.arelinterior.com/tr/saudi-arabia-medina-cafe-project"
-   },
-   {
-    "name": "Matild Palace, a Luxury Collection Hotel",
-    "place": "Budapeşte, Macaristan",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-matild.webp",
-    "url": "https://www.arelinterior.com/tr/matild-palace-a-luxury-collection-hotel-budapeste-macaristan"
-   },
-   {
-    "name": "Hyatt Regency",
-    "place": "Zadar, Hırvatistan",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-hyatt.webp",
-    "url": "https://www.arelinterior.com/tr/hyatt-regency-hotel-zadar-hirvatistan"
-   },
-   {
-    "name": "Deltapark Hotel",
-    "place": "Ascona, İsviçre",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-deltapark.webp",
-    "url": "https://www.arelinterior.com/tr/deltapark-hotel-ascona-isvicre"
-   },
-   {
-    "name": "Brown Beach",
-    "place": "Eretria, Yunanistan",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-brownbeach.webp",
-    "url": "https://www.arelinterior.com/tr/brown-beach-greece-eretria"
-   },
-   {
-    "name": "The One Bodrum",
-    "place": "Bodrum, Muğla",
-    "cat": "Konut",
-    "img": "assets/firms/arel-interior/p-theone.webp",
-    "url": "https://www.arelinterior.com/tr/the-one-bodrumbodrummugla-tamamlandi"
-   },
-   {
-    "name": "Merit Royal Hotel Restoran",
-    "place": "Kıbrıs",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-merit.webp",
-    "url": "https://www.arelinterior.com/tr/merit-royal-hotel-restoran"
-   },
-   {
-    "name": "Heviz Otel",
-    "place": "Macaristan",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-heviz.webp",
-    "url": "https://www.arelinterior.com/tr/heviz-otel-macaristan"
-   },
-   {
-    "name": "Bulgaristan Otel",
-    "place": "Bulgaristan",
-    "cat": "Otel",
-    "img": "assets/firms/arel-interior/p-bulgaria.webp",
-    "url": "https://www.arelinterior.com/tr/bulgaria-otel"
-   },
-   {
-    "name": "C.M.A Evi",
-    "place": "Almanya",
-    "cat": "Konut",
-    "img": "assets/firms/arel-interior/p-cma.webp",
-    "url": "https://www.arelinterior.com/tr/cma-almanya"
-   },
-   {
-    "name": "Arel Düzce Fabrikası",
-    "place": "Düzce",
-    "cat": "Fabrika",
-    "year": "2025",
-    "img": "assets/firms/arel-interior/p-duzce.webp",
-    "url": "https://www.arelinterior.com/tr/arel-project-duzce-fabrika"
-   }
-  ],
-  "projectsUrl": "https://www.arelinterior.com/tr/projeler",
+  "updatedAt": "2026-10-25T18:10:00Z",
   "videos": [
    {
-    "title": "Arel Interior Design · Fabrika",
-    "kind": "factory",
-    "file": "assets/firms/arel-interior/factory.mp4",
-    "poster": "assets/firms/arel-interior/factory-poster.jpg",
-    "url": "https://www.youtube.com/watch?v=79tZr8cq7UE",
-    "source": "https://www.youtube.com/watch?v=79tZr8cq7UE"
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/sardunya-iiff2026.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/sardunya-iiff2026.jpg",
+    "source": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4",
+    "title": "IIFF 2026 fuar standı",
+    "url": "https://www.mobsad.com/videos/IIFF-2026-Video-SARDUNYA.mp4",
+    "year": "2026"
    },
    {
-    "title": "Matild Palace, a Luxury Collection Hotel",
-    "kind": "project",
-    "file": "assets/firms/arel-interior/matild.mp4",
-    "poster": "assets/firms/arel-interior/matild-poster.jpg",
-    "url": "https://www.youtube.com/watch?v=KsYi5gLMNRc",
-    "source": "https://www.youtube.com/watch?v=KsYi5gLMNRc"
-   },
-   {
-    "title": "Bursa-Balat showroom",
+    "file": "assets/videos/sardunya-home.mp4",
     "kind": "brand",
-    "url": "https://www.youtube.com/watch?v=bOikO2HuLik"
+    "poster": "assets/videos/sardunya-home.jpg",
+    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4",
+    "title": "Sardunya tanıtım filmi",
+    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4"
    },
    {
-    "title": "Teknosab · Nukon Lazer Makina",
-    "kind": "project",
-    "url": "https://youtu.be/UpFHKNxfEsQ"
-   },
-   {
-    "title": "Teknosab · Nuri Körüstan Makina",
-    "kind": "project",
-    "url": "https://www.youtube.com/watch?v=nr87L8dRKp4"
+    "file": "assets/videos/sardunya-about.mp4",
+    "kind": "brand",
+    "poster": "assets/videos/sardunya-about.jpg",
+    "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4",
+    "title": "Sardunya hakkında",
+    "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
    }
   ],
-  "fairs": [],
-  "posts": [],
-  "sources": [
-   "https://www.arelinterior.com/tr/hakkimizda",
-   "https://www.arelinterior.com/tr/fabrikadan",
-   "https://www.arelinterior.com/tr/projeler",
-   "https://www.arelinterior.com/tr/video",
-   "https://www.arelinterior.com/tr/iletisim"
+  "website": "https://sardunyafurniture.com/"
+ },
+ "luva-concept": {
+  "about": "Luva Concept, dış mekân ve bahçe mobilyası üzerine çalışan bir markadır. İstanbul'da Masko ve Modoko'da, ayrıca Bodrum'da showroom'ları bulunur.\n\nShowroom'larında ithal ve yerli ürünleri bir arada sunar; kendi imalatından gelen deneyimle projeye özel üretim de yapar.\n\nBu projede villaların teras ve dış mekân oturma kalemlerinde Luva Concept ürünleri yer alır.",
+  "aliases": [
+   "Luva",
+   "Luva Concept"
   ],
-  "id": "arel-interior"
+  "fairs": [],
+  "hq": "İstanbul",
+  "logo": "assets/firms/luva-concept.png",
+  "name": "Luva Concept",
+  "posts": [
+   {
+    "caption": "Aurora",
+    "date": "2026-10-25",
+    "img": "assets/videos/ig_luva-concept_De6H_kJj4C2.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/De6H_kJj4C2/",
+    "video": "assets/videos/ig_luva-concept_De6H_kJj4C2.mp4"
+   },
+   {
+    "caption": "Aston",
+    "date": "2026-10-01",
+    "img": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/Dd8U-XSjL1L/",
+    "video": "assets/videos/ig_luva-concept_Dd8U-XSjL1L.mp4"
+   },
+   {
+    "caption": "Copenhagen",
+    "date": "2026-08-23",
+    "img": "assets/videos/ig_luva-concept_DcXzD5ylLEp.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DcXzD5ylLEp/",
+    "video": "assets/videos/ig_luva-concept_DcXzD5ylLEp.mp4"
+   },
+   {
+    "caption": "Luna",
+    "date": "2026-08-16",
+    "img": "assets/videos/ig_luva-concept_DcFxeZrkg2b.jpg",
+    "network": "instagram",
+    "url": "https://www.instagram.com/reel/DcFxeZrkg2b/",
+    "video": "assets/videos/ig_luva-concept_DcFxeZrkg2b.mp4"
+   }
+  ],
+  "products": "Dış mekân ve bahçe mobilyası: oturma grupları, şezlong, dış mekân masa ve sandalyeleri",
+  "role": "brand",
+  "social": {
+   "instagram": "https://www.instagram.com/luvaconcept/",
+   "linkedin": "https://www.linkedin.com/company/luva-concept/",
+   "pinterest": "https://tr.pinterest.com/luvaconcept/"
+  },
+  "sources": [
+   "https://luvaconcept.com/hakkimizda/",
+   "https://luvaconcept.com/lokasyonlar/"
+  ],
+  "storeCount": "3 showroom · İstanbul Avrupa ve Anadolu yakası, Bodrum",
+  "stores": [
+   {
+    "address": "İkitelli OSB Mah. Masko Mobilyacılar Sitesi 17B Blok No:33-35",
+    "city": "Başakşehir, İstanbul",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-masko.jpg",
+    "name": "Avrupa Yakası showroom (Masko)",
+    "url": "https://luvaconcept.com/avrupa-yakasi/"
+   },
+   {
+    "address": "Necip Fazıl Bulvarı No:84/A Şerifali",
+    "city": "Ümraniye, İstanbul",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-umraniye.jpg",
+    "name": "Anadolu Yakası showroom",
+    "url": "https://luvaconcept.com/anadolu-yakasi/"
+   },
+   {
+    "address": "Müskebi Mah. Kapuz Cad. Plaza Bodrum Sitesi No:8/8",
+    "city": "Bodrum, Muğla",
+    "country": "Türkiye",
+    "img": "assets/firms/stores/luva-bodrum.jpg",
+    "name": "Bodrum showroom",
+    "url": "https://luvaconcept.com/bodrum/"
+   }
+  ],
+  "videos": [],
+  "website": "https://luvaconcept.com/"
  }
 }
