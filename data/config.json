@@ -332,6 +332,16 @@
   "rapid": "assets/brand/rapidrender.png",
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
+ "panoLinks": [
+  {
+   "floor": "Zemin kat",
+   "pkg": "Gold",
+   "room": "",
+   "title": "Villa A · Zemin kat · Gold · Sardunya · 360°",
+   "url": "https://app.sugartech.io/panaromic-viewer/88fc5158-8e04-4daa-b7d3-3a7075074812",
+   "villa": "Villa A"
+  }
+ ],
  "pricing": {
   "at": "2026-10-28T10:43:31.870Z",
   "cost": "2026-10-28T10:43:27.339Z",
