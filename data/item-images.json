@@ -323,7 +323,92 @@
     "F-076": "assets/items/sardunya/A_F-076.webp",
     "F-077": "assets/items/sardunya/A_F-077.webp",
     "F-003": "assets/items/sardunya/A_F-003.webp",
-    "F-004": "assets/items/sardunya/A_F-004.webp"
+    "F-004": "assets/items/sardunya/A_F-004.webp",
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa B": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa C": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
    }
   },
   "models": {
@@ -384,13 +469,33 @@
     "F-074": "Los Angeles 25 cm Raflı Modül + Los Angeles Köşe Dolap",
     "F-075": "Los Angeles 50'lik Askılı Dolap ×2",
     "F-076": "Nardo Büyük Sehpa",
-    "F-077": "Dante Sandalye"
+    "F-077": "Dante Sandalye",
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa B": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa C": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
    }
-  }
+  },
+  "source": "sardunyafurniture.com · livello.com.tr · luvaconcept.com · karaca.com · korkmazstore.com.tr · loominology.com"
  },
  "bellona": {
   "firm": "Bellona",
-  "source": "bellona.com.tr · livello.com.tr · luvaconcept.com · sardunyafurniture.com",
+  "source": "bellona.com.tr · livello.com.tr · luvaconcept.com · sardunyafurniture.com · karaca.com · korkmazstore.com.tr · loominology.com",
   "villas": {
    "Villa A": {
     "F-001": "assets/items/sardunya/A_F-001.webp",
@@ -526,7 +631,34 @@
     "F-071": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-072": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-073": "assets/items/bellona/boheems-yan-sehpa.webp",
-    "D6": "assets/items/bellona/premium-line-yatak.webp"
+    "D6": "assets/items/bellona/premium-line-yatak.webp",
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
    },
    "Villa B": {
     "F-092": "assets/items/bellona/montella-uclu-koltuk.webp",
@@ -549,7 +681,34 @@
     "F-150": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-151": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-152": "assets/items/bellona/boheems-yan-sehpa.webp",
-    "D6": "assets/items/bellona/premium-line-yatak.webp"
+    "D6": "assets/items/bellona/premium-line-yatak.webp",
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
    },
    "Villa C": {
     "F-160": "assets/items/bellona/montella-uclu-koltuk.webp",
@@ -572,7 +731,34 @@
     "F-230": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-231": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-232": "assets/items/bellona/boheems-yan-sehpa.webp",
-    "D6": "assets/items/bellona/premium-line-yatak.webp"
+    "D6": "assets/items/bellona/premium-line-yatak.webp",
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
    }
   },
   "models": {
@@ -633,7 +819,12 @@
     "F-071": "Boheems TV Sehpası",
     "F-072": "Boheems Orta Sehpa",
     "F-073": "Boheems Yan Sehpa",
-    "D6": "Premium Line Yatak"
+    "D6": "Premium Line Yatak",
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
    },
    "Villa B": {
     "F-092": "Montella Üçlü Koltuk",
@@ -656,7 +847,12 @@
     "F-150": "Boheems TV Sehpası",
     "F-151": "Boheems Orta Sehpa",
     "F-152": "Boheems Yan Sehpa",
-    "D6": "Premium Line Yatak"
+    "D6": "Premium Line Yatak",
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
    },
    "Villa C": {
     "F-160": "Montella Üçlü Koltuk",
@@ -679,7 +875,476 @@
     "F-230": "Boheems TV Sehpası",
     "F-231": "Boheems Orta Sehpa",
     "F-232": "Boheems Yan Sehpa",
-    "D6": "Premium Line Yatak"
+    "D6": "Premium Line Yatak",
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   }
+  }
+ },
+ "inci-design": {
+  "firm": "Inci Design",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "villas": {
+   "Villa A": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa B": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa C": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   }
+  },
+  "models": {
+   "Villa A": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa B": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa C": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   }
+  }
+ },
+ "gabba": {
+  "firm": "Gabba",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "villas": {
+   "Villa A": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa B": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa C": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   }
+  },
+  "models": {
+   "Villa A": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa B": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa C": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   }
+  }
+ },
+ "modis": {
+  "firm": "Modis",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "villas": {
+   "Villa A": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa B": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa C": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   }
+  },
+  "models": {
+   "Villa A": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa B": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa C": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   }
+  }
+ },
+ "homage": {
+  "firm": "Homage",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "villas": {
+   "Villa A": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa B": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   },
+   "Villa C": {
+    "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
+    "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
+    "D3": [
+     {
+      "a": "assets/items/textile/karaca-fine-pearl-55.webp",
+      "n": "Karaca Fine Pearl Extra Shell White · 55 parça yemek takımı"
+     },
+     {
+      "a": "assets/items/textile/karaca-camille-84.webp",
+      "n": "Karaca Camille · 84 parça çatal-kaşık-bıçak takımı"
+     },
+     {
+      "a": "assets/items/textile/korkmaz-erna-8.webp",
+      "n": "Korkmaz Erna · 8 parça çelik tencere seti"
+     }
+    ],
+    "D4": [
+     {
+      "a": "assets/items/textile/loominology-infiniti-9595a.webp",
+      "n": "Loominology Infiniti 9595-A krem-gri"
+     },
+     {
+      "a": "assets/items/textile/loominology-lexus-c701ag.webp",
+      "n": "Loominology Lexus C701AG bej-gri"
+     }
+    ],
+    "D5": "assets/items/textile/dercan-perde-blackout-tul.webp"
+   }
+  },
+  "models": {
+   "Villa A": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa B": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
+   },
+   "Villa C": {
+    "D1": "Pamuk percale nevresim takımı · temsilî görsel",
+    "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
+    "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
+    "D4": "Loominology Infiniti / Lexus makine halısı",
+    "D5": "Blackout + tül perde paketi · temsilî görsel"
    }
   }
  }

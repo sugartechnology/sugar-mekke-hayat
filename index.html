@@ -206,6 +206,17 @@ small.ib{display:block;font-size:11.5px;color:var(--muted);font-weight:600;margi
 .cseg:hover{border-color:var(--line,#ddd)}.cseg.off{opacity:.42;text-decoration:line-through}.cseg.off i{background:transparent!important;box-shadow:inset 0 0 0 1.5px currentColor}
 .cbar i[data-segk]{cursor:pointer;transition:filter .15s}.cbar i[data-segk]:hover,.cbar i[data-segk]:focus-visible{filter:brightness(1.12);outline:2px solid var(--fg);outline-offset:1px}
 .items td.fcol{text-align:left;white-space:nowrap;width:1%}.fcell{display:inline-flex;align-items:center;gap:8px;text-decoration:none}.fcell img{height:22px;max-width:96px;object-fit:contain;display:block}.fc-name{font-size:13px;font-weight:600;color:var(--fg)}
+.segsheet .ithumb{width:168px;height:126px;padding:4px;overflow:hidden}.segsheet .ithumb img{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain}
+.segsheet .ithumbs .ithumb,.segsheet .ithumbs .ithumb.im{width:110px;height:126px}.segsheet .icell{gap:16px;align-items:center}
+@media (max-width:640px){.segsheet .ithumb{width:112px;height:84px}.segsheet .ithumbs .ithumb,.segsheet .ithumbs .ithumb.im{width:72px;height:84px}}
+.segsheet .cur-s{font-size:11px;color:var(--muted);font-weight:600}
+.sheet.segsheet{width:min(1180px,100%)}.segsheet .items td.wrap{min-width:280px}.segx .btn{padding:6px 10px}
+.seg-act{display:flex;gap:8px;align-items:center}.seg-act .btn:disabled{opacity:.4;cursor:default}
+.segrend{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(200px,1fr);gap:10px;overflow-x:auto;padding-bottom:4px}.segrend button{display:grid;gap:6px;background:none;border:0;padding:0;text-align:left;color:var(--fg);cursor:zoom-in}.segrend img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:block}.segrend span{font-size:12px;color:var(--muted)}
+.segx{width:1%;white-space:nowrap}.segadd td{background:var(--accent-soft)}.segedit{color:var(--accent)}.segwarn{background:var(--accent-soft);padding:10px 12px;border-radius:6px;margin:0}
+.segpick{display:grid;gap:10px;justify-items:start;border-top:1px solid var(--line);padding-top:14px}.sp-head{display:flex;gap:10px;align-items:center;width:100%}.sp-head input{flex:1;min-width:0;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit}
+.sp-list{display:grid;gap:0;width:100%;max-height:440px;overflow:auto;border:1px solid var(--line);border-radius:6px}.sp-row{display:grid;grid-template-columns:auto 1fr auto auto;gap:14px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line)}.sp-row:last-child{border-bottom:0}.sp-t{display:grid;gap:2px;min-width:0}.sp-t small{font-size:12px}
+.sp-row .ithumb{width:96px;height:72px}
 .segdot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .cseg-all{display:inline-flex;gap:6px;margin-left:auto}.cseg.all:disabled{opacity:.4;cursor:default;border-color:var(--line,#ddd)}
 .cseg.all{border-color:var(--line,#ddd);color:var(--ink,#222)}td.segoff,th.segoff{color:var(--muted);opacity:.4}td.segoff{font-weight:700}.clegend i{width:10px;height:10px;border-radius:3px}
@@ -878,7 +889,7 @@ td.cmx.on{background:var(--accent-soft)}td.cmx.on .cplus{background:var(--accent
 <div id="sheet"></div>
 <div id="overlay"></div>
 
-<script src="data/data.js?v=202610280115"></script>
+<script src="data/data.js?v=202610281107"></script>
 <script>
 (function(){
 "use strict";
@@ -1384,22 +1395,68 @@ function firmOfItem(it){const b=String(it.b||"").replace(/\s*\(kapsam\s*dışı\
 function firmCell(it){const f=firmOfItem(it);const nm=f?f.name:brandLabel(it.b);if(!f)return `<span class="fc-name">${esc(nm)}</span>`;
   const ls=(f.d?.logos&&f.d.logos.length?f.d.logos:f.d?.logo?[f.d.logo]:[]);const showName=!ls.length||f.d.logoMark;
   return `<span class="flink fcell" role="link" tabindex="0" data-firm="${esc(f.name)}" title="${esc(nm)}">${ls.map(l=>`<img src="${esc(blob(l))}" alt="${esc(nm)}" loading="lazy">`).join("")}${showName?`<span class="fc-name">${esc(nm)}</span>`:""}</span>`;}
-function openSegItems(pkg,k,sv,lab,col){const vs=sv===ALLV?villas():[sv];const b=pkgByName(pkg);if(!b)return;
-  const groups=vs.map(v=>({v,arr:boqItems(pkg,v).filter(it=>segMatch(it,k)).map(it=>({...it,...labelItem(it)})).sort((a,c)=>(+c.v||0)-(+a.v||0))})).filter(g=>g.arr.length);
-  const all=groups.flatMap(g=>g.arr);const tot=all.reduce((a,x)=>a+(+x.v||0),0);const nImg=all.filter(it=>itemImgList(it,pkg,it._vil).length).length;
-  const s=$("#sheet");document.body.style.overflow="hidden";
-  s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet" role="dialog" aria-label="${esc(lab)} kalemleri">
-    <div class="sheet-head"><div><span class="eyebrow"><i class="segdot" style="background:${col}"></i>${esc(scopeName(sv))} · ${esc(pl(pkg))}</span><h2>${esc(lab)}</h2></div><button class="xbtn" data-x aria-label="Kapat">✕</button></div>
-    <div class="sumrow"><div><span class="eyebrow">Toplam · net</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${all.length}</b></div><div><span class="eyebrow">Görselli</span><b>${nImg}</b></div></div>
-    ${groups.length?groups.map(g=>`${vs.length>1?`<span class="eyebrow" style="margin-top:6px">${esc(g.v)} · ${money(g.arr.reduce((a,x)=>a+(+x.v||0),0))} ${S.cur}</span>`:""}
-     <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Firma</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar</th></tr></thead><tbody>
-     ${g.arr.map(it=>`<tr><td class="muted">${esc(it.c||"")}</td><td class="fcol">${firmCell(it)}</td><td class="wrap"><div class="icell">${itemThumb(it,pkg,g.v)}<div>${esc(it.label)}${modelTag(it,pkg,g.v)}${qtyTag(it)}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}</td></tr>`).join("")}</tbody></table></div>`).join("")
-     :`<div class="empty"><strong>Bu bölümde kalem yok</strong></div>`}
+/* segment popup: renders of this villa + package on top, editable item list (add / remove, only in this window and its PDF) */
+function openSegItems(pkg,k,sv,lab,col){const vs=sv===ALLV?villas():[sv];if(!pkgByName(pkg))return;
+  S.seg={pkg,k,sv,lab,col,vs,removed:new Set(),added:[],pick:false,q:""};renderSeg(true);}
+const segIid=(it,v)=>[v,it.c||"",it.n||"",it._pkg||""].join("|");
+function segBase(){const g=S.seg;return g.vs.flatMap(v=>boqItems(g.pkg,v).filter(it=>segMatch(it,g.k)).map(it=>({...it,...labelItem(it),_vil:v,_src:g.pkg})));}
+function segItems(){const g=S.seg;return [...segBase().filter(it=>!g.removed.has(segIid(it,it._vil))),...g.added];}
+function segCandidates(){const g=S.seg;const have=new Set(segItems().map(it=>[it._vil,normB(firmOfItem(it)?.name||it.b),normB(itemModel(it,it._src,it._vil)||it.n)].join("|")));const seen=new Set();const out=[];
+  ranked().forEach(b=>g.vs.forEach(v=>boqItems(b.name,v).forEach(it=>{if(!+it.v)return;const L={...it,...labelItem(it),_vil:v,_src:b.name};const key=[v,normB(firmOfItem(L)?.name||L.b),normB(itemModel(L,b.name,v)||L.n)].join("|");if(have.has(key)||seen.has(key))return;seen.add(key);out.push(L);})));
+  const q=normB(g.q);return out.filter(it=>!q||normB([it.label,it.n,itemModel(it,it._src,it._vil),firmOfItem(it)?.name||brandLabel(it.b),pl(it._src),it.room].join(" ")).includes(q)).sort((a,c)=>(segMatch(c,g.k)?1:0)-(segMatch(a,g.k)?1:0)||String(a.label).localeCompare(String(c.label),"tr")).slice(0,60);}
+function segRenders(){const g=S.seg;return g.vs.flatMap(v=>pdfRenders(v,[g.pkg]).filter(m=>!m.brand||m.brand===g.pkg));}
+function renderSeg(first){const g=S.seg;if(!g)return;const s=$("#sheet");const items=segItems();const tot=items.reduce((a,x)=>a+(+x.v||0),0);const nImg=items.filter(it=>itemImgList(it,it._src,it._vil).length).length;
+  const edited=g.removed.size||g.added.length;const rnd=segRenders();const remList=segBase().filter(it=>g.removed.has(segIid(it,it._vil)));
+  const row=(it,isAdd)=>`<tr class="${isAdd?"segadd":""}"><td class="muted">${esc(it.c||"")}</td><td class="fcol">${firmCell(it)}</td><td class="wrap"><div class="icell">${itemThumb(it,it._src,it._vil)}<div>${esc(it.label)}${modelTag(it,it._src,it._vil)}${qtyTag(it)}${isAdd||it._src!==g.pkg?`<small class="ib">${esc(pl(it._src))} paketinden eklendi</small>`:""}</div></div></td><td style="text-align:left" class="muted">${esc(it.room)} · ${esc(it.f)}</td><td class="${+it.v?"":isOOS(it)?"oosc":"zero"}">${priceTxt(it)}${+it.v&&!S.locked?` <small class="cur-s">${S.cur}</small>`:""}</td><td class="segx"><button type="button" class="btn sm" data-segrm="${esc(isAdd?"a:"+g.added.indexOf(it):segIid(it,it._vil))}" title="Bu listeden çıkar" aria-label="Listeden çıkar">✕</button></td></tr>`;
+  const groups=g.vs.map(v=>({v,arr:items.filter(it=>it._vil===v).sort((a,c)=>(+c.v||0)-(+a.v||0))})).filter(x=>x.arr.length);
+  s.innerHTML=`<div class="sheet-wrap" data-close><div class="sheet segsheet" role="dialog" aria-label="${esc(g.lab)} kalemleri">
+    <div class="sheet-head"><div><span class="eyebrow"><i class="segdot" style="background:${g.col}"></i>${esc(scopeName(g.sv))} · ${esc(pl(g.pkg))}</span><h2>${esc(g.lab)}</h2></div>
+     <div class="seg-act"><button class="btn sm" data-segreset ${edited?"":"disabled"} title="Orijinal ürün listesine dön" aria-label="Orijinal listeye dön">↻ Orijinal liste</button><button class="btn primary sm" data-segpdf>PDF indir</button><button class="xbtn" data-x aria-label="Kapat">✕</button></div></div>
+    ${rnd.length?`<div class="segrend">${rnd.slice(0,12).map((m,i)=>`<button type="button" data-segimg="${i}" title="${esc([m.villa,m.room].filter(Boolean).join(" · "))}"><img src="${thumb(m)}" alt="" loading="lazy"><span>${esc([g.vs.length>1?m.villa:"",m.room||m.title].filter(Boolean).join(" · "))}</span></button>`).join("")}</div>`:""}
+    <div class="sumrow"><div><span class="eyebrow">Toplam · net</span><b>${money(tot)} ${S.cur}</b></div><div><span class="eyebrow">Kalem</span><b>${items.length}</b></div><div><span class="eyebrow">Görselli</span><b>${nImg}</b></div>${edited?`<div><span class="eyebrow">Düzenleme</span><b class="segedit">${g.added.length?`+${g.added.length}`:""}${g.added.length&&g.removed.size?" / ":""}${g.removed.size?`−${g.removed.size}`:""}</b></div>`:""}</div>
+    ${edited?`<p class="note segwarn">Bu liste düzenlendi. Değişiklikler yalnızca bu pencerede ve indireceğiniz PDF'te geçerlidir; sunumdaki fiyatlar değişmez. “↻ Orijinal liste” ile geri dönebilirsiniz.</p>`:""}
+    ${groups.length?groups.map(gr=>`${g.vs.length>1?`<span class="eyebrow" style="margin-top:6px">${esc(gr.v)} · ${money(gr.arr.reduce((a,x)=>a+(+x.v||0),0))} ${S.cur}</span>`:""}
+     <div class="tbl-wrap"><table class="items"><thead><tr><th>Kod</th><th style="text-align:left">Firma</th><th style="text-align:left">Kalem</th><th style="text-align:left">Oda · kat</th><th>Tutar · ${S.cur}</th><th></th></tr></thead><tbody>
+     ${gr.arr.map(it=>row(it,g.added.includes(it))).join("")}</tbody></table></div>`).join(""):`<div class="empty"><strong>Listede kalem yok</strong></div>`}
+    <div class="segpick">${g.pick?`<div class="sp-head"><b>Kalem ekle</b><input type="search" id="segQ" placeholder="Ürün, model, firma ya da oda ara" value="${esc(g.q)}" autocomplete="off"><button class="btn sm" data-segpick="0">Kapat</button></div>
+      <div class="sp-list">${segCandidates().map((it,i)=>`<div class="sp-row">${itemThumb(it,it._src,it._vil)}<div class="sp-t"><b>${esc(it.label)}</b>${modelTag(it,it._src,it._vil)}<small class="muted">${esc([firmOfItem(it)?.name||brandLabel(it.b),pl(it._src),g.vs.length>1?it._vil:"",it.room].filter(Boolean).join(" · "))}</small></div><span class="num">${priceTxt(it)}</span><button class="btn sm" data-segaddi="${i}">Ekle</button></div>`).join("")||`<span class="muted">Eşleşen kalem yok.</span>`}</div>`
+      :`<button class="btn" data-segpick="1">+ Kalem ekle</button><small class="muted">Diğer paketlerdeki ürünlerden seçerek bu listeye ekleyebilirsiniz.</small>`}</div>
+    ${remList.length?`<details class="more"><summary>Çıkarılan kalemler<small>${remList.length} kalem</small></summary><div class="in">${remList.map(it=>`<div class="sp-row">${itemThumb(it,it._src,it._vil)}<div class="sp-t"><b>${esc(it.label)}</b>${modelTag(it,it._src,it._vil)}</div><span class="num">${priceTxt(it)}</span><button class="btn sm" data-segundo="${esc(segIid(it,it._vil))}">Geri ekle</button></div>`).join("")}</div></details>`:""}
     <p class="note">Görsele tıklayınca büyür. Tutarlar kalem fiyatlarıdır (birim fiyat × adet); navlun, montaj ve KDV hariç.</p></div></div>`;
-  s.querySelector("[data-x]").onclick=closeSheet;s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget)closeSheet();});
-  if(sheetKeys)document.removeEventListener("keydown",sheetKeys);sheetKeys=e=>{if(!$("#overlay").children.length&&e.key==="Escape")closeSheet();};document.addEventListener("keydown",sheetKeys);
-  s.querySelectorAll("[data-firm]").forEach(x=>x.onclick=e=>{e.stopPropagation();const n=x.dataset.firm;closeSheet();openFirm(n);});
-  s.querySelector("[data-x]").focus({preventScroll:true});}
+  const cands=g.pick?segCandidates():[];
+  s.querySelector("[data-x]").onclick=()=>{S.seg=null;closeSheet();};s.querySelector("[data-close]").addEventListener("click",e=>{if(e.target===e.currentTarget){S.seg=null;closeSheet();}});
+  s.querySelectorAll("[data-firm]").forEach(x=>x.onclick=e=>{e.stopPropagation();const n=x.dataset.firm;S.seg=null;closeSheet();openFirm(n);});
+  const keep=()=>{const sc=s.querySelector(".sheet")?.scrollTop||0;return ()=>{const el=s.querySelector(".sheet");if(el)el.scrollTop=sc;};};
+  const rer=()=>{const r=keep();renderSeg();r();};
+  s.querySelectorAll("[data-segrm]").forEach(x=>x.onclick=()=>{const id=x.dataset.segrm;if(id.startsWith("a:"))g.added.splice(+id.slice(2),1);else g.removed.add(id);rer();});
+  s.querySelectorAll("[data-segundo]").forEach(x=>x.onclick=()=>{g.removed.delete(x.dataset.segundo);rer();});
+  s.querySelectorAll("[data-segaddi]").forEach(x=>x.onclick=()=>{const it=cands[+x.dataset.segaddi];if(it){g.added.push(it);toast(`${it.label} eklendi`);}rer();});
+  s.querySelectorAll("[data-segpick]").forEach(x=>x.onclick=()=>{g.pick=x.dataset.segpick==="1";rer();if(g.pick)s.querySelector("#segQ")?.focus();});
+  const q=s.querySelector("#segQ");if(q){let t;q.oninput=()=>{clearTimeout(t);t=setTimeout(()=>{g.q=q.value;const r=keep();renderSeg();r();const nq=s.querySelector("#segQ");if(nq){nq.focus();nq.setSelectionRange(nq.value.length,nq.value.length);}},180);};}
+  s.querySelector("[data-segreset]")?.addEventListener("click",()=>{g.removed.clear();g.added=[];g.pick=false;g.q="";rer();toast("Orijinal ürün listesine dönüldü");});
+  s.querySelector("[data-segpdf]").onclick=()=>segPdf();
+  s.querySelectorAll("[data-segimg]").forEach(x=>x.onclick=()=>openLightbox(rnd,+x.dataset.segimg));
+  if(first){if(sheetKeys)document.removeEventListener("keydown",sheetKeys);sheetKeys=e=>{if(!$("#overlay").children.length&&e.key==="Escape"){S.seg=null;closeSheet();}};document.addEventListener("keydown",sheetKeys);s.querySelector("[data-x]").focus({preventScroll:true});}}
+/* PDF of the (edited) segment list: renders on the first page(s), then the item list with product images */
+function segPdf(){const g=S.seg;if(!g)return;const items=segItems().slice().sort((a,c)=>g.vs.indexOf(a._vil)-g.vs.indexOf(c._vil)||(+c.v||0)-(+a.v||0));const rnd=segRenders();const tot=items.reduce((a,x)=>a+(+x.v||0),0);
+  const head=`${scopeName(g.sv)} · ${pl(g.pkg)}`;const P=[];
+  P.push({title:g.lab,draw:async(c)=>{pHead(c,head,g.lab);ptx(c,`${items.length} kalem · toplam ${money(tot)} ${S.cur} · net, KDV hariç${g.removed.size||g.added.length?" · düzenlenmiş liste":""}`,PM,288,{size:21,color:PDF_MUTED});
+    const ims=rnd.slice(0,6);if(!ims.length){ptx(c,"Bu villa ve paket için görsel yok.",PM,380,{size:22,color:PDF_MUTED});return;}
+    const cols=ims.length>4?3:ims.length>1?2:1,rows=Math.ceil(ims.length/cols),gx=24,x0=PM,y0=330,aw=PW-PM*2,ah=PH-110-y0,cw=(aw-(cols-1)*gx)/cols,ch=(ah-(rows-1)*gx)/rows;
+    for(let i=0;i<ims.length;i++){const m=ims[i];const im=await pimg(bestSrc(m));const x=x0+(i%cols)*(cw+gx),y=y0+Math.floor(i/cols)*(ch+gx);c.fillStyle=PDF_SOFT;c.fillRect(x,y,cw,ch-34);if(im)fitCover(c,im,x,y,cw,ch-34);
+      ptx(c,[g.vs.length>1?m.villa:"",m.room||m.title].filter(Boolean).join(" · "),x,y+ch-8,{size:17,color:PDF_MUTED,max:cw});}}});
+  const per=8;for(let p=0;p<Math.max(1,Math.ceil(items.length/per));p++){const chunk=items.slice(p*per,(p+1)*per);const last=(p+1)*per>=items.length;
+    P.push({title:`${g.lab} · ürün listesi`,draw:async(c)=>{pHead(c,head,"Ürün listesi");const cx={code:PM,img:PM+130,txt:PM+130+210,firm:PW-PM-760,room:PW-PM-470,price:PW-PM};let y=300;
+      [["Kod",cx.code,"left"],["Ürün",cx.img,"left"],["Firma",cx.firm,"left"],["Oda · kat",cx.room,"left"],["Tutar · "+S.cur,cx.price,"right"]].forEach(([t,x,a])=>ptx(c,t,x,y,{size:16,color:PDF_MUTED,weight:500,align:a}));prule(c,PM,y+14,PW-PM,PDF_INK);y+=30;
+      const rh=100;for(const it of chunk){const L=itemImgList(it,it._src,it._vil);const im=L[0]?await pimg(blob(L[0].a)):null;
+        if(im){c.fillStyle="#fff";c.fillRect(cx.img,y+6,190,rh-12);fitContain(c,im,cx.img,y+6,190,rh-12);}else{c.fillStyle=PDF_SOFT;c.fillRect(cx.img,y+6,190,rh-12);}
+        const my=y+rh/2;ptx(c,it.c||"",cx.code,my+7,{size:18,color:PDF_MUTED});ptx(c,it.label,cx.txt,my-8,{size:21,weight:600,max:cx.firm-cx.txt-24});
+        const mdl=itemModel(it,it._src,it._vil);ptx(c,[mdl,it.q>1?it.q+" adet":"",it._src!==g.pkg?pl(it._src)+" paketinden":""].filter(Boolean).join(" · "),cx.txt,my+22,{size:16,color:PDF_MUTED,max:cx.firm-cx.txt-24});
+        ptx(c,firmOfItem(it)?.name||brandLabel(it.b),cx.firm,my+7,{size:18,max:cx.room-cx.firm-20});ptx(c,[g.vs.length>1?it._vil:"",it.room,it.f].filter(Boolean).join(" · "),cx.room,my+7,{size:17,color:PDF_MUTED,max:cx.price-cx.room-170});
+        ptx(c,S.locked?"•":money(it.v),cx.price,my+7,{size:20,align:"right",weight:600});prule(c,PM,y+rh,PW-PM);y+=rh;}
+      if(last){y+=56;ptx(c,"Toplam · net",PW-PM-300,y,{size:19,color:PDF_MUTED,align:"right"});ptx(c,`${S.locked?"•":money(tot)} ${S.cur}`,PW-PM,y,{size:30,align:"right",weight:600});
+        ptx(c,"Birim fiyat × adet; navlun, montaj ve KDV hariç.",PM,y,{size:16,color:PDF_MUTED});}}});}
+  const nm=`${(S.cfg.projectName||"Hayat Mekke").replace(/\s+/g,"-")}-${slug(scopeName(g.sv))}-${slug(g.pkg)}-${slug(g.lab)}.pdf`;runPdf({pages:P,fileName:nm,label:`${head} · ${g.lab}`});}
 function cmpOff(){if(!S.cmpOff){let a=CMP_OFF_DEFAULT;try{const v=localStorage.getItem("hm_cmpoff3");if(v!=null)a=JSON.parse(v);}catch(e){}S.cmpOff=new Set(Array.isArray(a)?a:[]);}return S.cmpOff;}
 function compositionHTML(sv){sv=sv||cmpScope();
   const bs=rankedIn(sv),vs=sv===ALLV?villas():[sv];if(!bs.every(b=>vs.every(v=>boqItems(b.name,v).length)))return "";
@@ -1905,7 +1962,7 @@ function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);con
 async function makePdf(opt,onProg){await loadScript(JSPDF_SRC);
   await Promise.all([PF(40,400,true),PF(40,400),PF(40,500),PF(40,600)].map(f=>document.fonts.load(f).catch(()=>{})));
   const lg=S.cfg.logos||{};const [emlak,rapid]=await Promise.all([pimg(blob(lg.emlak)),pimg(blob(lg.rapid))]);const L={emlak,rapid};
-  const pages=buildPdfPages(opt);const {jsPDF}=window.jspdf;const doc=new jsPDF({orientation:"landscape",unit:"mm",format:"a4",compress:true});
+  const pages=opt.pages||buildPdfPages(opt);const {jsPDF}=window.jspdf;const doc=new jsPDF({orientation:"landscape",unit:"mm",format:"a4",compress:true});
   const PS=2;const cv=document.createElement("canvas");cv.width=PW*PS;cv.height=PH*PS;const c=cv.getContext("2d");c.imageSmoothingEnabled=true;c.imageSmoothingQuality="high";
   for(let i=0;i<pages.length;i++){onProg&&onProg(i,pages.length);const p=pages[i];c.save();c.setTransform(PS,0,0,PS,0,0);c.imageSmoothingQuality="high";if(!p.cover)pFrame(c,L,i+1,pages.length,p.title);await p.draw(c,L);c.restore();
     let data;try{data=cv.toDataURL("image/jpeg",.9);}catch(e){throw new Error("Görseller bu açılışta PDF'e eklenemiyor. Sayfayı bir web adresinden açın.");}
@@ -1915,10 +1972,10 @@ async function savePdf(res,name){
   if(S.downloads){try{await S.downloads.save({filename:name,data:res.blob});toast("PDF kaydedildi");}catch(e){const c=e&&e.code;if(c==="declined")return;toast(c==="rate_limited"?"Bir indirme penceresi zaten açık":"PDF bu görünümde indirilemiyor");}return;}
   const u=URL.createObjectURL(res.blob);const a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);}
 function runPdf(opt){const o=$("#overlay");document.body.style.overflow="hidden";
-  o.innerHTML=`<div class="ov" role="dialog" aria-label="PDF"><div class="ov-top"><div class="t"><b>PDF hazırlanıyor</b>Logolar, kat planları, paket maliyetleri ve oda görselleri</div><button class="ov-btn" data-x>Kapat</button></div>
+  o.innerHTML=`<div class="ov" role="dialog" aria-label="PDF"><div class="ov-top"><div class="t"><b>PDF hazırlanıyor</b>${esc(opt.label||"Logolar, kat planları, paket maliyetleri ve oda görselleri")}</div><button class="ov-btn" data-x>Kapat</button></div>
    <div class="ov-body"><div class="pdfbox"><b id="pdfMsg">Sayfalar hazırlanıyor…</b><div class="prog"><i id="pdfBar"></i></div><button class="btn primary" id="pdfSave" hidden>PDF'i indir</button><span id="pdfNote" class="muted"></span></div></div></div>`;
   let cancelled=false;o.querySelector("[data-x]").onclick=()=>{cancelled=true;closeOv();};
-  const name=`${(S.cfg.projectName||"Hayat Mekke").replace(/\s+/g,"-")}-sunum-${new Date().toISOString().slice(0,10)}.pdf`;
+  const name=opt.fileName||`${(S.cfg.projectName||"Hayat Mekke").replace(/\s+/g,"-")}-sunum-${new Date().toISOString().slice(0,10)}.pdf`;
   makePdf(opt,(i,n)=>{if(cancelled)return;const m=o.querySelector("#pdfMsg");if(m)m.textContent=i<n?`Sayfa ${i+1} / ${n}`:`${n} sayfa hazır`;const b=o.querySelector("#pdfBar");if(b)b.style.width=(i/n*100)+"%";})
    .then(res=>{if(cancelled)return;const s=o.querySelector("#pdfSave");s.hidden=false;s.textContent=`PDF'i indir · ${(res.blob.size/1048576).toFixed(1)} MB`;s.onclick=()=>savePdf(res,name);s.focus();})
    .catch(e=>{if(cancelled)return;const m=o.querySelector("#pdfMsg");if(m)m.textContent="PDF oluşturulamadı";const n=o.querySelector("#pdfNote");if(n)n.textContent=e.message||"";});}
