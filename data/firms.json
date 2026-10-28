@@ -118,6 +118,23 @@
   ],
   "website": "https://homage.com.tr/"
  },
+ "dora": {
+  "about": "Dora, salon ve meclis için 65 inç Android 15, UHD 4K akıllı televizyonları (model UA65D26) sağlar. Teklif, kurulum ve 2 yıl garanti Abdul Latif Jameel (ALJ) üzerinden verildi.",
+  "aliases": [
+   "Dora",
+   "DORA"
+  ],
+  "fairs": [],
+  "name": "Dora",
+  "posts": [],
+  "products": "Akıllı televizyon",
+  "role": "brand",
+  "social": {},
+  "sources": [],
+  "stores": [],
+  "videos": [],
+  "website": ""
+ },
  "volly-smart": {
   "about": "Volly Teknoloji'nin akıllı ev ve IoT markası. Bu projede villaların akıllı ev sistemi kalemleri (aydınlatma ve iklim kontrolü, sensörler, kontrol panelleri) Volly Smart ürünleriyle fiyatlandırıldı.",
   "aliases": [
@@ -1028,6 +1045,25 @@
    }
   ],
   "website": "https://www.livello.com.tr/"
+ },
+ "midea": {
+  "about": "Midea, bu projede yatak odaları, şoför ve hizmetli odaları için 18.000 BTU Air Eco Inverter duvar tipi split klimaları (model SAPV18CDEF) sağlar. Teklif ve back-to-back montaj Abdul Latif Jameel (ALJ) üzerinden verildi.",
+  "aliases": [
+   "Midea",
+   "MIDEA"
+  ],
+  "fairs": [],
+  "name": "Midea",
+  "posts": [],
+  "products": "Split klima",
+  "role": "brand",
+  "social": {},
+  "sources": [
+   "https://www.midea.com/sa/residential-ac/split-ac/midea-air-eco-wall-mount-split-ac.sapv18cdefksa"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://www.midea.com/sa"
  },
  "inci-design": {
   "hq": "İnegöl, Bursa",

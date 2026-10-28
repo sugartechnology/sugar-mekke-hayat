@@ -3,13 +3,13 @@
   "firm": "Homage",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -20,6 +20,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -37,13 +40,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -54,6 +57,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -71,13 +77,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -88,6 +94,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -108,7 +117,7 @@
   "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -136,7 +145,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -171,6 +183,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -188,7 +203,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -216,7 +231,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -251,6 +269,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -268,7 +289,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -296,7 +317,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -331,6 +355,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -353,14 +380,14 @@
   "firm": "Bellona",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
     "D6": "Premium Line Yatak",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-001": "Asparas Sehpa",
     "F-002": "Casper Tekli Koltuk",
     "F-003": "Montella Üçlü Koltuk",
@@ -427,6 +454,9 @@
     "F-075": "Los Angeles 50'lik Askılı Dolap ×2",
     "F-076": "Nardo Büyük Sehpa",
     "F-077": "Dante Sandalye",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -444,14 +474,14 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
     "D6": "Premium Line Yatak",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -482,6 +512,9 @@
     "F-150": "Boheems TV Sehpası",
     "F-151": "Boheems Orta Sehpa",
     "F-152": "Boheems Yan Sehpa",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -499,14 +532,14 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
     "D6": "Premium Line Yatak",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -537,6 +570,9 @@
     "F-230": "Boheems TV Sehpası",
     "F-231": "Boheems Orta Sehpa",
     "F-232": "Boheems Yan Sehpa",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -557,7 +593,7 @@
   "source": "bellona.com.tr · livello.com.tr · luvaconcept.com · sardunyafurniture.com · karaca.com · korkmazstore.com.tr · loominology.com",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -586,7 +622,10 @@
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
     "D6": "assets/items/bellona/premium-line-yatak.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-001": "assets/items/sardunya/A_F-001.webp",
     "F-002": "assets/items/sardunya/A_F-002.webp",
     "F-003": "assets/items/bellona/montella-uclu-koltuk.webp",
@@ -754,6 +793,9 @@
     ],
     "F-076": "assets/items/sardunya/A_F-076.webp",
     "F-077": "assets/items/sardunya/A_F-077.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -771,7 +813,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -800,7 +842,10 @@
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
     "D6": "assets/items/bellona/premium-line-yatak.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -855,6 +900,9 @@
     "F-150": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-151": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-152": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -872,7 +920,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -901,7 +949,10 @@
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
     "D6": "assets/items/bellona/premium-line-yatak.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -956,6 +1007,9 @@
     "F-230": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-231": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-232": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -978,13 +1032,13 @@
   "firm": "Inci Design",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -995,6 +1049,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1012,13 +1069,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1029,6 +1086,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1046,13 +1106,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1063,6 +1123,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1083,7 +1146,7 @@
   "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1111,7 +1174,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1146,6 +1212,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1163,7 +1232,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1191,7 +1260,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1226,6 +1298,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1243,7 +1318,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1271,7 +1346,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1306,6 +1384,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1328,13 +1409,13 @@
   "firm": "Gabba",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1345,6 +1426,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1362,13 +1446,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1379,6 +1463,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1396,13 +1483,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1413,6 +1500,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1433,7 +1523,7 @@
   "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1461,7 +1551,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1496,6 +1589,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1513,7 +1609,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1541,7 +1637,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1576,6 +1675,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1593,7 +1695,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -1621,7 +1723,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1656,6 +1761,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1678,8 +1786,8 @@
   "firm": "Ergo",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1690,6 +1798,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1707,8 +1818,8 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1719,6 +1830,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1736,8 +1850,8 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1748,6 +1862,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -1768,11 +1885,14 @@
   "source": "SA466-HAYAT COMPOUND-ERGO SUBMISSION-REV01 (ERGO PROPOSAL IMAGE + MATERIAL FINISHES)",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D4": "assets/items/ergo/A_D4.webp",
     "D5": "assets/items/ergo/A_D5.webp",
     "D6": "assets/items/ergo/A_D6.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-001": "assets/items/ergo/A_F-001.webp",
     "F-002": "assets/items/ergo/A_F-002.webp",
     "F-002.A": "assets/items/ergo/A_F-002.A.webp",
@@ -1862,6 +1982,9 @@
     "F-076": "assets/items/ergo/A_F-076.webp",
     "F-076.A": "assets/items/ergo/A_F-076.A.webp",
     "F-077": "assets/items/ergo/A_F-077.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1879,11 +2002,14 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D4": "assets/items/ergo/B_D4.webp",
     "D5": "assets/items/ergo/B_D5.webp",
     "D6": "assets/items/ergo/B_D6.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1967,6 +2093,9 @@
     "F-154": "assets/items/ergo/B_F-154.webp",
     "F-156": "assets/items/ergo/B_F-156.webp",
     "F-157": "assets/items/ergo/B_F-157.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -1984,11 +2113,14 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D4": "assets/items/ergo/C_D4.webp",
     "D5": "assets/items/ergo/C_D5.webp",
     "D6": "assets/items/ergo/C_D6.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2074,6 +2206,9 @@
     "F-235": "assets/items/ergo/C_F-235.webp",
     "F-237": "assets/items/ergo/C_F-237.webp",
     "F-238": "assets/items/ergo/C_F-238.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2096,13 +2231,13 @@
   "firm": "Modis",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2113,6 +2248,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2130,13 +2268,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2147,6 +2285,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2164,13 +2305,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2181,6 +2322,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2201,7 +2345,7 @@
   "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2229,7 +2373,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2264,6 +2411,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2281,7 +2431,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2309,7 +2459,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2344,6 +2497,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2361,7 +2517,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2389,7 +2545,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2424,6 +2583,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2446,13 +2608,13 @@
   "firm": "Sardunya",
   "models": {
    "Villa A": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-001": "Asparas Sehpa",
     "F-002": "Casper Tekli Koltuk",
     "F-003": "Oslo 3'lü Kanepe",
@@ -2520,6 +2682,9 @@
     "F-075": "Los Angeles 50'lik Askılı Dolap ×2",
     "F-076": "Nardo Büyük Sehpa",
     "F-077": "Dante Sandalye",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2537,13 +2702,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa B": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2554,6 +2719,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2571,13 +2739,13 @@
     "S1.16": "Devreye alma · temsilî görsel"
    },
    "Villa C": {
-    "B2": "18.000 BTU split klima · temsilî görsel",
+    "B2": "MIDEA Air Eco Inverter · soğutma kapasitesi 18.400 BTU · 220V / 1 faz / 60 Hz · Model SAPV18CDEF",
     "D1": "Pamuk percale nevresim takımı · temsilî görsel",
     "D2": "Havlu seti, bornoz ve paspas · temsilî görsel",
     "D3": "Karaca yemek ve çatal-bıçak takımı + Korkmaz tencere seti",
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
-    "Elektrikli ev aletleri|D5": "65\" Smart TV · temsilî görsel",
+    "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2588,6 +2756,9 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "INS-1": "Montaj ve kurulum · temsilî görsel",
+    "INS-2": "Montaj ve kurulum · temsilî görsel",
+    "INS-3": "Montaj ve kurulum · temsilî görsel",
     "S1": "KNX akıllı ev sistemi · temsilî görsel",
     "S1.01": "KNX güç kaynağı · temsilî görsel",
     "S1.02": "Inspinia KNX klima gateway",
@@ -2608,7 +2779,7 @@
   "source": "sardunyafurniture.com · livello.com.tr · luvaconcept.com · karaca.com · korkmazstore.com.tr · loominology.com",
   "villas": {
    "Villa A": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2636,7 +2807,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-001": "assets/items/sardunya/A_F-001.webp",
     "F-002": "assets/items/sardunya/A_F-002.webp",
     "F-003": "assets/items/sardunya/A_F-003.webp",
@@ -2817,6 +2991,9 @@
     ],
     "F-076": "assets/items/sardunya/A_F-076.webp",
     "F-077": "assets/items/sardunya/A_F-077.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2834,7 +3011,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2862,7 +3039,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2897,6 +3077,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",
@@ -2914,7 +3097,7 @@
     "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa C": {
-    "B2": "assets/items/appliances/split-klima-18000btu.webp",
+    "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
     "D1": "assets/items/textile/penelope-nevresim-takimi.webp",
     "D2": "assets/items/textile/penelope-banyo-tekstili.webp",
     "D3": [
@@ -2942,7 +3125,10 @@
      }
     ],
     "D5": "assets/items/textile/dercan-perde-blackout-tul.webp",
-    "Elektrikli ev aletleri|D5": "assets/items/appliances/smart-tv-65.webp",
+    "Elektrikli ev aletleri|D5": [
+     "assets/items/appliances/dora-ua65d26-1.webp",
+     "assets/items/appliances/dora-ua65d26-2.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2977,6 +3163,9 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "INS-1": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-2": "assets/items/appliances/montaj-kurulum.webp",
+    "INS-3": "assets/items/appliances/montaj-kurulum.webp",
     "S1": "assets/items/volly/overview.webp",
     "S1.01": "assets/items/volly/knx-psu.webp",
     "S1.02": "assets/items/volly/ins-aircon.webp",

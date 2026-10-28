@@ -4,19 +4,19 @@
    "firm": "Bellona",
    "layers": {
     "Villa A": {
-     "assembly": 3259,
-     "freight": 7000,
-     "insurance": 311.66
+     "assembly": 2992,
+     "freight": 5000,
+     "insurance": 280.23
     },
     "Villa B": {
-     "assembly": 3375,
-     "freight": 7000,
-     "insurance": 320.87
+     "assembly": 3118,
+     "freight": 5000,
+     "insurance": 291.59
     },
     "Villa C": {
-     "assembly": 3348,
-     "freight": 7000,
-     "insurance": 319.08
+     "assembly": 3031,
+     "freight": 5000,
+     "insurance": 284.69
     }
    },
    "name": "Silver",
@@ -27,22 +27,22 @@
    },
    "values": {
     "Villa A": [
-     28382.5,
-     19613.75,
-     6405,
-     7835
+     25594.4,
+     17338.8,
+     5403.6,
+     7790.8
     ],
     "Villa B": [
-     28096.25,
-     20857.5,
-     7445,
-     7835
+     26291.6,
+     18309.2,
+     5889.6,
+     7790.8
     ],
     "Villa C": [
-     28122.5,
-     20196.25,
-     7671.25,
-     7835
+     25248.8,
+     17607.6,
+     6187.2,
+     7790.8
     ]
    }
   },
@@ -50,19 +50,19 @@
    "firm": "Sardunya",
    "layers": {
     "Villa A": {
-     "assembly": 3672,
-     "freight": 7000,
-     "insurance": 354.2
+     "assembly": 3386,
+     "freight": 5000,
+     "insurance": 320.13
     },
     "Villa B": {
-     "assembly": 3994,
-     "freight": 7000,
-     "insurance": 385.83
+     "assembly": 3682,
+     "freight": 5000,
+     "insurance": 348.93
     },
     "Villa C": {
-     "assembly": 3968,
-     "freight": 7000,
-     "insurance": 384.07
+     "assembly": 3650,
+     "freight": 5000,
+     "insurance": 345.95
     }
    },
    "name": "Gold",
@@ -73,22 +73,22 @@
    },
    "values": {
     "Villa A": [
-     33270,
-     19613.75,
-     10110,
-     7855
+     30286.4,
+     17004.8,
+     8960.4,
+     7810
     ],
     "Villa B": [
-     35092.5,
-     20857.5,
-     13331.25,
-     7855
+     32080,
+     18309.2,
+     11540.4,
+     7810
     ],
     "Villa C": [
-     35900,
-     20196.25,
-     12788.75,
-     7855
+     32715.2,
+     17607.6,
+     11100,
+     7810
     ]
    }
   },
@@ -96,19 +96,19 @@
    "firm": "Inci Design",
    "layers": {
     "Villa A": {
-     "assembly": 3845,
-     "freight": 7000,
-     "insurance": 367.71
+     "assembly": 3558,
+     "freight": 5000,
+     "insurance": 334.07
     },
     "Villa B": {
-     "assembly": 4016,
-     "freight": 7000,
-     "insurance": 388.31
+     "assembly": 3703,
+     "freight": 5000,
+     "insurance": 351.31
     },
     "Villa C": {
-     "assembly": 4130,
-     "freight": 7000,
-     "insurance": 400.35
+     "assembly": 3812,
+     "freight": 5000,
+     "insurance": 362.7
     }
    },
    "name": "Platinum",
@@ -119,22 +119,68 @@
    },
    "values": {
     "Villa A": [
-     36290,
-     19613.75,
-     10686.25,
-     7048.32
+     33185.6,
+     17004.8,
+     9513.6,
+     7003.32
     ],
     "Villa B": [
-     36810,
-     20857.5,
-     12058.75,
-     7855
+     33728.8,
+     18309.2,
+     10318.8,
+     7810
     ],
     "Villa C": [
-     40658.75,
-     20196.25,
-     11397.5,
-     7855
+     37283.6,
+     17607.6,
+     9764.4,
+     7810
+    ]
+   }
+  },
+  {
+   "firm": "Modis",
+   "layers": {
+    "Villa A": {
+     "assembly": 4455,
+     "freight": 5000,
+     "insurance": 435.76
+    },
+    "Villa B": {
+     "assembly": 4803,
+     "freight": 5000,
+     "insurance": 471.2
+    },
+    "Villa C": {
+     "assembly": 5182,
+     "freight": 5000,
+     "insurance": 512
+    }
+   },
+   "name": "Pearl",
+   "rates": {
+    "assembly": 0.06,
+    "freight": 0,
+    "insurance": 0.005
+   },
+   "values": {
+    "Villa A": [
+     40700.4,
+     26229.4,
+     12475.2,
+     7810
+    ],
+    "Villa B": [
+     44155.7,
+     27915.55,
+     14422.6,
+     7810
+    ],
+    "Villa C": [
+     52689.65,
+     27118.95,
+     14750.2,
+     7810
     ]
    }
   },
@@ -144,20 +190,20 @@
     "Villa A": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 453
+     "insurance": 474.01
     },
     "Villa B": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 446
+     "insurance": 489
     },
     "Villa C": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 412
+     "insurance": 444
     }
    },
-   "name": "Pearl",
+   "name": "Emerald",
    "rates": {
     "assembly": 0,
     "freight": 0,
@@ -165,68 +211,22 @@
    },
    "values": {
     "Villa A": [
-     29733.33,
-     37574.4,
-     14436.53,
-     8854.67
+     32266.19,
+     40842.4,
+     13929.33,
+     7737.33
     ],
     "Villa B": [
-     34305.07,
-     39586.13,
-     3470.4,
-     11902.4
+     38390.77,
+     44666.13,
+     4759.47,
+     9997.87
     ],
     "Villa C": [
-     31957.87,
-     34029.87,
-     6707.47,
-     9768
-    ]
-   }
-  },
-  {
-   "firm": "Modis",
-   "layers": {
-    "Villa A": {
-     "assembly": 4913,
-     "freight": 7000,
-     "insurance": 483.03
-    },
-    "Villa B": {
-     "assembly": 5339,
-     "freight": 7000,
-     "insurance": 525.85
-    },
-    "Villa C": {
-     "assembly": 5761,
-     "freight": 7000,
-     "insurance": 570.35
-    }
-   },
-   "name": "Emerald",
-   "rates": {
-    "assembly": 0.06,
-    "freight": 0,
-    "insurance": 0.005
-   },
-   "values": {
-    "Villa A": [
-     45091.25,
-     29606.25,
-     14150,
-     7855
-    ],
-    "Villa B": [
-     48861.25,
-     31647.5,
-     16776.25,
-     7855
-    ],
-    "Villa C": [
-     58316.25,
-     30882.5,
-     17036.25,
-     7855
+     35400.05,
+     38426.67,
+     7044.27,
+     7830.67
     ]
    }
   },
@@ -234,19 +234,19 @@
    "firm": "Gabba",
    "layers": {
     "Villa A": {
-     "assembly": 5598,
-     "freight": 7000,
-     "insurance": 554.24
+     "assembly": 5004,
+     "freight": 5000,
+     "insurance": 493.69
     },
     "Villa B": {
-     "assembly": 7015,
-     "freight": 7000,
-     "insurance": 700.82
+     "assembly": 6257,
+     "freight": 5000,
+     "insurance": 622.49
     },
     "Villa C": {
-     "assembly": 6880,
-     "freight": 7000,
-     "insurance": 686.6
+     "assembly": 6124,
+     "freight": 5000,
+     "insurance": 609.56
     }
    },
    "name": "Diamond",
@@ -257,22 +257,22 @@
    },
    "values": {
     "Villa A": [
-     46982.5,
-     39473.75,
-     16653.75,
-     7855
+     41940.4,
+     34435.4,
+     14547.7,
+     7810
     ],
     "Villa B": [
-     67432.5,
-     47885,
-     16897.5,
-     7855
+     60306.95,
+     42158.05,
+     14318.85,
+     7810
     ],
     "Villa C": [
-     66842.5,
-     48318.75,
-     14381.25,
-     7855
+     59594.65,
+     42442.7,
+     12150.2,
+     7810
     ]
    }
   },
@@ -280,19 +280,19 @@
    "firm": "Homage",
    "layers": {
     "Villa A": {
-     "assembly": 5367,
-     "freight": 7000,
-     "insurance": 642.94
+     "assembly": 5157,
+     "freight": 5000,
+     "insurance": 616.66
     },
     "Villa B": {
-     "assembly": 5867,
-     "freight": 7000,
-     "insurance": 703.32
+     "assembly": 5606,
+     "freight": 5000,
+     "insurance": 672.61
     },
     "Villa C": {
-     "assembly": 6225,
-     "freight": 7000,
-     "insurance": 749.06
+     "assembly": 5960,
+     "freight": 5000,
+     "insurance": 717.02
     }
    },
    "name": "Royal",
@@ -303,22 +303,22 @@
    },
    "values": {
     "Villa A": [
-     59355,
-     43667.5,
-     17631.25,
-     7855
+     57422.4,
+     41356.65,
+     16682.7,
+     7810
     ],
     "Villa B": [
-     64631.25,
-     46042.5,
-     22070,
-     7855
+     62248.25,
+     43813.05,
+     20566.35,
+     7810
     ],
     "Villa C": [
-     71316.25,
-     48083.75,
-     22445,
-     7855
+     68777.15,
+     45813.95,
+     21012.7,
+     7810
     ]
    }
   }
@@ -333,16 +333,16 @@
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
  "pricing": {
-  "at": "2026-10-28T08:43:58.735Z",
-  "cost": "2026-10-28T08:43:50.922Z",
+  "at": "2026-10-28T10:12:01.808Z",
+  "cost": "2026-10-28T10:11:58.718Z",
   "firm": {
    "arelinterior": 0,
-   "bellona": 25,
+   "bellona": 20,
    "dercantekstil": 100,
-   "incidesign": 25,
-   "livello": 25,
-   "luva": 25,
-   "sardunya": 25
+   "incidesign": 20,
+   "livello": 20,
+   "luva": 20,
+   "sardunya": 20
   },
   "rates": {},
   "source": "sugar"
@@ -357,8 +357,8 @@
  ],
  "source": "sheets",
  "subtitle": "Villa mobilya paketleri",
- "syncedAt": "2026-10-28T08:43:35.003Z",
- "updatedAt": "2026-10-28T08:43:58.735Z",
+ "syncedAt": "2026-10-28T10:11:48.904Z",
+ "updatedAt": "2026-10-28T10:12:01.808Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
