@@ -6,17 +6,17 @@
     "Villa A": {
      "assembly": 2992,
      "freight": 5000,
-     "insurance": 280.23
+     "insurance": 292.41
     },
     "Villa B": {
      "assembly": 3118,
      "freight": 5000,
-     "insurance": 291.59
+     "insurance": 304.76
     },
     "Villa C": {
      "assembly": 3031,
      "freight": 5000,
-     "insurance": 284.69
+     "insurance": 297.14
     }
    },
    "name": "Silver",
@@ -27,22 +27,22 @@
    },
    "values": {
     "Villa A": [
-     25594.4,
-     17338.8,
-     5403.6,
-     7790.8
+     27443.9,
+     18243.95,
+     5628.75,
+     7250
     ],
     "Villa B": [
-     26291.6,
-     18309.2,
-     5889.6,
-     7790.8
+     28260.45,
+     19235.3,
+     6168.6,
+     7250
     ],
     "Villa C": [
-     25248.8,
-     17607.6,
-     6187.2,
-     7790.8
+     27078.3,
+     18512.05,
+     6478.6,
+     7250
     ]
    }
   },
@@ -52,17 +52,17 @@
     "Villa A": {
      "assembly": 3386,
      "freight": 5000,
-     "insurance": 320.13
+     "insurance": 333.87
     },
     "Villa B": {
      "assembly": 3682,
      "freight": 5000,
-     "insurance": 348.93
+     "insurance": 364.22
     },
     "Villa C": {
      "assembly": 3650,
      "freight": 5000,
-     "insurance": 345.95
+     "insurance": 360.95
     }
    },
    "name": "Gold",
@@ -73,22 +73,22 @@
    },
    "values": {
     "Villa A": [
-     30286.4,
-     17004.8,
-     8960.4,
-     7810
+     32331.4,
+     17876.55,
+     9333.75,
+     7270
     ],
     "Villa B": [
-     32080,
-     18309.2,
-     11540.4,
-     7810
+     34235.9,
+     19235.3,
+     12054.85,
+     7270
     ],
     "Villa C": [
-     32715.2,
-     17607.6,
-     11100,
-     7810
+     34855.8,
+     18512.05,
+     11596.1,
+     7270
     ]
    }
   },
@@ -98,17 +98,17 @@
     "Villa A": {
      "assembly": 3558,
      "freight": 5000,
-     "insurance": 334.07
+     "insurance": 352.6
     },
     "Villa B": {
      "assembly": 3703,
      "freight": 5000,
-     "insurance": 351.31
+     "insurance": 366.7
     },
     "Villa C": {
      "assembly": 3812,
      "freight": 5000,
-     "insurance": 362.7
+     "insurance": 378.4
     }
    },
    "name": "Platinum",
@@ -119,22 +119,22 @@
    },
    "values": {
     "Villa A": [
-     33185.6,
-     17004.8,
-     9513.6,
-     7003.32
+     35351.4,
+     17876.55,
+     9910,
+     7270
     ],
     "Villa B": [
-     33728.8,
-     18309.2,
-     10318.8,
-     7810
+     35953.4,
+     19235.3,
+     10782.35,
+     7270
     ],
     "Villa C": [
-     37283.6,
-     17607.6,
-     9764.4,
-     7810
+     39614.55,
+     18512.05,
+     10204.85,
+     7270
     ]
    }
   },
@@ -144,17 +144,17 @@
     "Villa A": {
      "assembly": 4455,
      "freight": 5000,
-     "insurance": 435.76
+     "insurance": 444.88
     },
     "Villa B": {
      "assembly": 4803,
      "freight": 5000,
-     "insurance": 471.2
+     "insurance": 480.5
     },
     "Villa C": {
      "assembly": 5182,
      "freight": 5000,
-     "insurance": 512
+     "insurance": 520.9
     }
    },
    "name": "Pearl",
@@ -165,22 +165,22 @@
    },
    "values": {
     "Villa A": [
-     40700.4,
-     26229.4,
-     12475.2,
-     7810
+     42286.4,
+     26836.45,
+     12647.5,
+     7270
     ],
     "Villa B": [
-     44155.7,
-     27915.55,
-     14422.6,
-     7810
+     45722.15,
+     28522.8,
+     14649.85,
+     7270
     ],
     "Villa C": [
-     52689.65,
-     27118.95,
-     14750.2,
-     7810
+     54184.55,
+     27704.55,
+     14989.85,
+     7270
     ]
    }
   },
@@ -236,17 +236,17 @@
     "Villa A": {
      "assembly": 5004,
      "freight": 5000,
-     "insurance": 493.69
+     "insurance": 502.65
     },
     "Villa B": {
      "assembly": 6257,
      "freight": 5000,
-     "insurance": 622.49
+     "insurance": 631.79
     },
     "Villa C": {
      "assembly": 6124,
      "freight": 5000,
-     "insurance": 609.56
+     "insurance": 618.45
     }
    },
    "name": "Diamond",
@@ -257,22 +257,22 @@
    },
    "values": {
     "Villa A": [
-     41940.4,
-     34435.4,
-     14547.7,
-     7810
+     43526.4,
+     35009.05,
+     14720,
+     7270
     ],
     "Villa B": [
-     60306.95,
-     42158.05,
-     14318.85,
-     7810
+     61873.4,
+     42765.3,
+     14546.1,
+     7270
     ],
     "Villa C": [
-     59594.65,
-     42442.7,
-     12150.2,
-     7810
+     61089.55,
+     43028.3,
+     12389.85,
+     7270
     ]
    }
   },
@@ -282,17 +282,17 @@
     "Villa A": {
      "assembly": 5157,
      "freight": 5000,
-     "insurance": 616.66
+     "insurance": 625.92
     },
     "Villa B": {
      "assembly": 5606,
      "freight": 5000,
-     "insurance": 672.61
+     "insurance": 681.72
     },
     "Villa C": {
      "assembly": 5960,
      "freight": 5000,
-     "insurance": 717.02
+     "insurance": 725.92
     }
    },
    "name": "Royal",
@@ -303,22 +303,22 @@
    },
    "values": {
     "Villa A": [
-     57422.4,
-     41356.65,
-     16682.7,
-     7810
+     59067.6,
+     41930.3,
+     16855,
+     7270
     ],
     "Villa B": [
-     62248.25,
-     43813.05,
-     20566.35,
-     7810
+     63774.65,
+     44420.3,
+     20793.6,
+     7270
     ],
     "Villa C": [
-     68777.15,
-     45813.95,
-     21012.7,
-     7810
+     70272.05,
+     46399.55,
+     21252.35,
+     7270
     ]
    }
   }
@@ -333,16 +333,16 @@
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
  "pricing": {
-  "at": "2026-10-28T10:22:04.902Z",
-  "cost": "2026-10-28T10:22:00.089Z",
+  "at": "2026-10-28T10:43:31.870Z",
+  "cost": "2026-10-28T10:43:27.339Z",
   "firm": {
-   "arelinterior": 0,
-   "bellona": 20,
-   "dercantekstil": 100,
-   "incidesign": 20,
-   "livello": 20,
-   "luva": 20,
-   "sardunya": 20
+   "arelinterior": 10,
+   "bellona": 25,
+   "dercantekstil": 25,
+   "incidesign": 25,
+   "livello": 25,
+   "luva": 25,
+   "sardunya": 25
   },
   "rates": {},
   "source": "sugar"
@@ -358,7 +358,7 @@
  "source": "sheets",
  "subtitle": "Villa mobilya paketleri",
  "syncedAt": "2026-10-28T10:11:48.904Z",
- "updatedAt": "2026-10-28T10:22:04.902Z",
+ "updatedAt": "2026-10-28T10:43:31.870Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
