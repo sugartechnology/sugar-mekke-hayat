@@ -6,17 +6,17 @@
     "Villa A": {
      "assembly": 2992,
      "freight": 5000,
-     "insurance": 292.41
+     "insurance": 295.33
     },
     "Villa B": {
      "assembly": 3118,
      "freight": 5000,
-     "insurance": 304.76
+     "insurance": 307.69
     },
     "Villa C": {
      "assembly": 3031,
      "freight": 5000,
-     "insurance": 297.14
+     "insurance": 300.07
     }
    },
    "name": "Silver",
@@ -30,19 +30,19 @@
      27443.9,
      18243.95,
      5628.75,
-     7250
+     7835
     ],
     "Villa B": [
      28260.45,
      19235.3,
      6168.6,
-     7250
+     7835
     ],
     "Villa C": [
      27078.3,
      18512.05,
      6478.6,
-     7250
+     7835
     ]
    }
   },
@@ -52,17 +52,17 @@
     "Villa A": {
      "assembly": 3386,
      "freight": 5000,
-     "insurance": 333.87
+     "insurance": 336.79
     },
     "Villa B": {
      "assembly": 3682,
      "freight": 5000,
-     "insurance": 364.22
+     "insurance": 367.15
     },
     "Villa C": {
      "assembly": 3650,
      "freight": 5000,
-     "insurance": 360.95
+     "insurance": 363.87
     }
    },
    "name": "Gold",
@@ -76,19 +76,19 @@
      32331.4,
      17876.55,
      9333.75,
-     7270
+     7855
     ],
     "Villa B": [
      34235.9,
      19235.3,
      12054.85,
-     7270
+     7855
     ],
     "Villa C": [
      34855.8,
      18512.05,
      11596.1,
-     7270
+     7855
     ]
    }
   },
@@ -98,17 +98,17 @@
     "Villa A": {
      "assembly": 3558,
      "freight": 5000,
-     "insurance": 352.6
+     "insurance": 355.53
     },
     "Villa B": {
      "assembly": 3703,
      "freight": 5000,
-     "insurance": 366.7
+     "insurance": 369.63
     },
     "Villa C": {
      "assembly": 3812,
      "freight": 5000,
-     "insurance": 378.4
+     "insurance": 381.33
     }
    },
    "name": "Platinum",
@@ -122,19 +122,19 @@
      35351.4,
      17876.55,
      9910,
-     7270
+     7855
     ],
     "Villa B": [
      35953.4,
      19235.3,
      10782.35,
-     7270
+     7855
     ],
     "Villa C": [
      39614.55,
      18512.05,
      10204.85,
-     7270
+     7855
     ]
    }
   },
@@ -144,17 +144,17 @@
     "Villa A": {
      "assembly": 4455,
      "freight": 5000,
-     "insurance": 444.88
+     "insurance": 447.8
     },
     "Villa B": {
      "assembly": 4803,
      "freight": 5000,
-     "insurance": 480.5
+     "insurance": 483.42
     },
     "Villa C": {
      "assembly": 5182,
      "freight": 5000,
-     "insurance": 520.9
+     "insurance": 523.83
     }
    },
    "name": "Pearl",
@@ -168,19 +168,19 @@
      42286.4,
      26836.45,
      12647.5,
-     7270
+     7855
     ],
     "Villa B": [
      45722.15,
      28522.8,
      14649.85,
-     7270
+     7855
     ],
     "Villa C": [
      54184.55,
      27704.55,
      14989.85,
-     7270
+     7855
     ]
    }
   },
@@ -236,17 +236,17 @@
     "Villa A": {
      "assembly": 5004,
      "freight": 5000,
-     "insurance": 502.65
+     "insurance": 505.58
     },
     "Villa B": {
      "assembly": 6257,
      "freight": 5000,
-     "insurance": 631.79
+     "insurance": 634.71
     },
     "Villa C": {
      "assembly": 6124,
      "freight": 5000,
-     "insurance": 618.45
+     "insurance": 621.37
     }
    },
    "name": "Diamond",
@@ -260,19 +260,19 @@
      43526.4,
      35009.05,
      14720,
-     7270
+     7855
     ],
     "Villa B": [
      61873.4,
      42765.3,
      14546.1,
-     7270
+     7855
     ],
     "Villa C": [
      61089.55,
      43028.3,
      12389.85,
-     7270
+     7855
     ]
    }
   },
@@ -282,17 +282,17 @@
     "Villa A": {
      "assembly": 5157,
      "freight": 5000,
-     "insurance": 625.92
+     "insurance": 628.85
     },
     "Villa B": {
      "assembly": 5606,
      "freight": 5000,
-     "insurance": 681.72
+     "insurance": 684.65
     },
     "Villa C": {
      "assembly": 5960,
      "freight": 5000,
-     "insurance": 725.92
+     "insurance": 728.84
     }
    },
    "name": "Royal",
@@ -306,19 +306,19 @@
      59067.6,
      41930.3,
      16855,
-     7270
+     7855
     ],
     "Villa B": [
      63774.65,
      44420.3,
      20793.6,
-     7270
+     7855
     ],
     "Villa C": [
      70272.05,
      46399.55,
      21252.35,
-     7270
+     7855
     ]
    }
   }
@@ -331,6 +331,188 @@
   "emlak": "assets/brand/emlak-konut.png",
   "rapid": "assets/brand/rapidrender.png",
   "rapidWhite": "assets/brand/rapidrender-white.png"
+ },
+ "maket": {
+  "Villa A": {
+   "glb": "maket/villa-a.gltf.json",
+   "rooms": [
+    {
+     "floor": "Zemin kat",
+     "pin": 24,
+     "room": "Mutfak",
+     "x": 7.9,
+     "z": -22.4
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 0,
+     "room": "Teras",
+     "x": 3.2,
+     "z": -22.5
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 15,
+     "room": "Salon",
+     "x": 5.8,
+     "z": -18.2
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 20,
+     "room": "Giriş holü",
+     "x": 6,
+     "z": -13.2
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 23,
+     "room": "Meclis",
+     "x": 3.9,
+     "z": -8.6
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 16,
+     "room": "Misafir WC",
+     "x": 8.4,
+     "z": -11
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 17,
+     "room": "Hizmetli banyosu",
+     "x": 8.4,
+     "z": -9.4
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 18,
+     "room": "Hizmetli odası",
+     "x": 8.6,
+     "z": -7.8
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 19,
+     "room": "Misafir lavabosu",
+     "x": 6.9,
+     "z": -6.6
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 22,
+     "room": "Banyo",
+     "x": 1,
+     "z": -3.1
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 21,
+     "room": "Şoför odası",
+     "x": 1.7,
+     "z": -1.2
+    },
+    {
+     "floor": "1. kat",
+     "pin": 1,
+     "room": "Yatak odası 1",
+     "x": 7.9,
+     "z": -19.5
+    },
+    {
+     "floor": "1. kat",
+     "pin": 2,
+     "room": "Yatak odası 2",
+     "x": 3.9,
+     "z": -19
+    },
+    {
+     "floor": "1. kat",
+     "pin": 6,
+     "room": "Banyo",
+     "x": 8.5,
+     "z": -16.2
+    },
+    {
+     "floor": "1. kat",
+     "pin": 3,
+     "room": "Banyo",
+     "x": 3.4,
+     "z": -16.2
+    },
+    {
+     "floor": "1. kat",
+     "pin": 4,
+     "room": "Banyo",
+     "x": 3.3,
+     "z": -11.1
+    },
+    {
+     "floor": "1. kat",
+     "pin": 5,
+     "room": "Banyo",
+     "x": 8.5,
+     "z": -9.8
+    },
+    {
+     "floor": "1. kat",
+     "pin": 7,
+     "room": "Yatak odası 3",
+     "x": 7.9,
+     "z": -7
+    },
+    {
+     "floor": "1. kat",
+     "pin": 8,
+     "room": "Ebeveyn yatak odası",
+     "x": 3.9,
+     "z": -7.5
+    },
+    {
+     "floor": "1. kat",
+     "pin": 9,
+     "room": "Teras",
+     "x": 3.9,
+     "z": -4.3
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 13,
+     "room": "Teras",
+     "x": 5.9,
+     "z": -18.2
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 14,
+     "room": "Koridor",
+     "x": 6.4,
+     "z": -13
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 10,
+     "room": "Depo",
+     "x": 4.8,
+     "z": -10.4
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 11,
+     "room": "Aile salonu",
+     "x": 7.9,
+     "z": -8.8
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 12,
+     "room": "Teras",
+     "x": 6.8,
+     "z": -6
+    }
+   ]
+  }
  },
  "panoLinks": [
   {
@@ -606,12 +788,12 @@
   }
  ],
  "pricing": {
-  "at": "2026-10-28T10:43:31.870Z",
+  "at": "2026-10-29T18:29:42.305Z",
   "cost": "2026-10-28T10:43:27.339Z",
   "firm": {
    "arelinterior": 10,
    "bellona": 25,
-   "dercantekstil": 25,
+   "dercantekstil": 100,
    "incidesign": 25,
    "livello": 25,
    "luva": 25,
@@ -631,7 +813,7 @@
  "source": "sheets",
  "subtitle": "Villa mobilya paketleri",
  "syncedAt": "2026-10-28T10:11:48.904Z",
- "updatedAt": "2026-10-28T10:43:31.870Z",
+ "updatedAt": "2026-10-29T18:29:42.305Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},

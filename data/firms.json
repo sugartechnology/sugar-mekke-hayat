@@ -119,21 +119,43 @@
   "website": "https://homage.com.tr/"
  },
  "dora": {
-  "about": "Dora, salon ve meclis için 65 inç Android 15, UHD 4K akıllı televizyonları (model UA65D26) sağlar. Teklif, kurulum ve 2 yıl garanti Abdul Latif Jameel (ALJ) üzerinden verildi.",
+  "about": "Dora, Suudi Arabistan'da Abdul Latif Jameel Electronics (ALJ) tarafından satılan bir ev elektroniği ve beyaz eşya markasıdır. Ürün gamında akıllı televizyonlar, split klimalar, buzdolabı ve derin dondurucular, ocaklar, çamaşır makineleri ve su sebilleri bulunur. Ürünler ALJ mağazaları, alje.com ve ALJ'ye bağlı Redsea üzerinden satılır; kurulum ve servis ALJ servis ağıyla verilir.\n\nBu projede salon ve meclis için 65 inç Android 15, UHD 4K akıllı televizyonları (model UA65D26) sağlar. Teklif, kurulum ve 2 yıl garanti ALJ üzerinden verildi.",
   "aliases": [
    "Dora",
    "DORA"
   ],
   "fairs": [],
+  "logo": "assets/firms/brands/dora.png",
   "name": "Dora",
   "posts": [],
-  "products": "Akıllı televizyon",
+  "products": "Akıllı televizyon, klima ve beyaz eşya",
   "role": "brand",
-  "social": {},
-  "sources": [],
-  "stores": [],
+  "social": {
+   "facebook": "https://www.facebook.com/aljelectronics",
+   "instagram": "https://www.instagram.com/alj_electronics/",
+   "tiktok": "https://www.tiktok.com/@alj_electronics",
+   "x": "https://x.com/alj_electronics"
+  },
+  "sources": [
+   "https://alje.com/en/collections/dora",
+   "https://redsea.com/en/dora-appliances-in-saudi-arabia-your-guide-to-choosing-the-right-products"
+  ],
+  "stores": [
+   {
+    "city": "Suudi Arabistan",
+    "country": "Suudi Arabistan",
+    "name": "Abdul Latif Jameel Electronics (online)",
+    "url": "https://alje.com/en/collections/dora"
+   },
+   {
+    "city": "Suudi Arabistan",
+    "country": "Suudi Arabistan",
+    "name": "Redsea (ALJ)",
+    "url": "https://redsea.com/en/dora-appliances-in-saudi-arabia-your-guide-to-choosing-the-right-products"
+   }
+  ],
   "videos": [],
-  "website": ""
+  "website": "https://alje.com/en/collections/dora"
  },
  "volly-smart": {
   "about": "Volly Teknoloji'nin akıllı ev ve IoT markası. Bu projede villaların akıllı ev sistemi kalemleri (aydınlatma ve iklim kontrolü, sensörler, kontrol panelleri) Volly Smart ürünleriyle fiyatlandırıldı.",
@@ -1047,18 +1069,27 @@
   "website": "https://www.livello.com.tr/"
  },
  "midea": {
-  "about": "Midea, bu projede yatak odaları, şoför ve hizmetli odaları için 18.000 BTU Air Eco Inverter duvar tipi split klimaları (model SAPV18CDEF) sağlar. Teklif ve back-to-back montaj Abdul Latif Jameel (ALJ) üzerinden verildi.",
+  "about": "Midea, Fortune Global 500 listesindeki Midea Group'un ev aletleri ve iklimlendirme markasıdır. Suudi Arabistan'da konut ve ticari klimalar, buzdolapları, çamaşır ve bulaşık makineleri, ocaklar, mikrodalgalar, su sebilleri ve küçük ev aletleri sunar; enerji verimli ürünlere odaklanır.\n\nBu projede yatak odaları, şoför ve hizmetli odaları için 18.000 BTU Air Eco Inverter duvar tipi split klimaları (model SAPV18CDEF) sağlar. Teklif ve back-to-back montaj Abdul Latif Jameel (ALJ) üzerinden verildi.",
   "aliases": [
    "Midea",
    "MIDEA"
   ],
   "fairs": [],
+  "founded": "1968",
+  "hq": "Foshan, Çin",
+  "logo": "assets/firms/brands/midea.png",
   "name": "Midea",
   "posts": [],
-  "products": "Split klima",
+  "products": "Split klima ve iklimlendirme",
   "role": "brand",
-  "social": {},
+  "social": {
+   "facebook": "https://www.facebook.com/profile.php?id=61575990987783",
+   "instagram": "https://www.instagram.com/midea_saudi",
+   "linkedin": "https://www.linkedin.com/company/midea-saudi-arabia/",
+   "tiktok": "https://www.tiktok.com/@midea.ksa"
+  },
   "sources": [
+   "https://www.midea.com/sa",
    "https://www.midea.com/sa/residential-ac/split-ac/midea-air-eco-wall-mount-split-ac.sapv18cdefksa"
   ],
   "stores": [],
