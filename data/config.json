@@ -376,14 +376,14 @@
      "floor": "Zemin kat",
      "room": "Misafir WC",
      "x": 1.12,
-     "z": -10.98
+     "z": -11.6
     },
     {
      "floor": "Zemin kat",
      "pin": 7,
      "room": "Misafir lavabosu",
      "x": 1.48,
-     "z": -9.56
+     "z": -9.3
     },
     {
      "floor": "Zemin kat",
@@ -429,6 +429,7 @@
     },
     {
      "floor": "1. kat",
+     "label": "Banyo · Yatak odası 2",
      "pin": 13,
      "room": "Banyo",
      "x": 6.26,
@@ -436,6 +437,7 @@
     },
     {
      "floor": "1. kat",
+     "label": "Banyo · Yatak odası 1",
      "pin": 14,
      "room": "Banyo",
      "x": 1.53,
@@ -443,6 +445,7 @@
     },
     {
      "floor": "1. kat",
+     "label": "Ebeveyn banyosu",
      "pin": 16,
      "room": "Banyo",
      "x": 6.26,
@@ -450,6 +453,7 @@
     },
     {
      "floor": "1. kat",
+     "label": "Banyo · Yatak odası 3",
      "pin": 15,
      "room": "Banyo",
      "x": 1.53,
@@ -504,7 +508,7 @@
      "floor": "Çatı katı",
      "pin": 17,
      "room": "Aile salonu",
-     "x": 2.0,
+     "x": 2,
      "z": -8.86
     },
     {

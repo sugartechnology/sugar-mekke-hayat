@@ -310,42 +310,6 @@
    },
    {
     "codes": [
-     "F-049"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.5177,
-    "y": 0.3745
-   },
-   {
-    "codes": [
-     "F-055"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.518,
-    "y": 0.5301
-   },
-   {
-    "codes": [
-     "F-061"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.4175,
-    "y": 0.5481
-   },
-   {
-    "codes": [
-     "F-043"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.4185,
-    "y": 0.3291
-   },
-   {
-    "codes": [
      "F-050",
      "F-051",
      "F-052",
@@ -542,6 +506,26 @@
     "room": "Mutfak",
     "x": 0.1,
     "y": 0.2
+   },
+   {
+    "room": "Banyo 2",
+    "x": 0.5159,
+    "y": 0.3783
+   },
+   {
+    "room": "Banyo 3",
+    "x": 0.5228,
+    "y": 0.5471
+   },
+   {
+    "room": "Ebeveyn Banyo",
+    "x": 0.4062,
+    "y": 0.5549
+   },
+   {
+    "room": "Banyo 1",
+    "x": 0.4048,
+    "y": 0.3065
    }
   ],
   "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
@@ -670,16 +654,6 @@
    },
    {
     "codes": [
-     "F-122",
-     "F-123"
-    ],
-    "floor": "1. kat",
-    "room": "Ebeveyn yatak odası",
-    "x": 0.3926,
-    "y": 0.2972
-   },
-   {
-    "codes": [
      "F-137",
      "F-138",
      "F-139",
@@ -705,42 +679,6 @@
     "room": "Yatak odası 2",
     "x": 0.5204,
     "y": 0.2533
-   },
-   {
-    "codes": [
-     "F-130"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.5168,
-    "y": 0.3807
-   },
-   {
-    "codes": [
-     "F-124"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.4161,
-    "y": 0.3807
-   },
-   {
-    "codes": [
-     "F-136"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.4194,
-    "y": 0.5829
-   },
-   {
-    "codes": [
-     "F-142"
-    ],
-    "floor": "1. kat",
-    "room": "Banyo",
-    "x": 0.5178,
-    "y": 0.5241
    },
    {
     "codes": [
@@ -846,6 +784,21 @@
     "room": "Mutfak",
     "x": 0.11,
     "y": 0.125
+   },
+   {
+    "room": "Banyo 2",
+    "x": 0.5168,
+    "y": 0.3794
+   },
+   {
+    "room": "Banyo 3",
+    "x": 0.4131,
+    "y": 0.5992
+   },
+   {
+    "room": "Banyo 1",
+    "x": 0.3919,
+    "y": 0.3493
    }
   ],
   "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
@@ -1302,6 +1255,8 @@
  {
   "asset": "assets/villa-a/renders/zemin-kat_salon_typea-livingroom-2.webp",
   "brand": "Gold",
+  "cover": true,
+  "coverAt": 1793311564719,
   "createdAt": "2026-10-28T09:24:49.809Z",
   "fileName": "TypeA_livingroom_2.jpg",
   "floor": "Zemin kat",
@@ -1316,7 +1271,7 @@
  {
   "asset": "assets/villa-a/renders/zemin-kat_salon_typea-livingroom.webp",
   "brand": "Gold",
-  "cover": true,
+  "cover": false,
   "coverAt": 1793277330105,
   "createdAt": "2026-10-28T09:24:53.354Z",
   "fileName": "TypeA_LivingRoom.jpg",
@@ -2282,5 +2237,369 @@
   "title": "Villa A · Meclis · Gold · Sardunya · 2",
   "villa": "Villa A",
   "id": "fefax1k12at4kxkrhtmj"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-3.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-29T22:08:27.136Z",
+  "fileName": "TypeB_bellona_livingroom (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793311707136,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-3.webp",
+  "title": "Villa B · Salon · Silver · Bellona · 1",
+  "villa": "Villa B",
+  "id": "dyk9inhnpu57sc8zwbfn"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-4.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-29T22:08:30.126Z",
+  "fileName": "TypeB_bellona_livinroomkarşı (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793311710126,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-4.webp",
+  "title": "Villa B · Salon · Silver · Bellona · 2",
+  "villa": "Villa B",
+  "id": "f3ldwph0x0dtpdizmrw1"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_inci-3.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-10-29T22:09:00.638Z",
+  "fileName": "TypeB_inci_liviingroom (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793311740638,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_inci-3.webp",
+  "title": "Villa B · Salon · Platinum · Inci Design · 1",
+  "villa": "Villa B",
+  "id": "9cc6873q0phh05ogyp1h"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_inci-4.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-10-29T22:09:03.710Z",
+  "fileName": "TypeB_inci_livingroomkarşı (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793311743710,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_inci-4.webp",
+  "title": "Villa B · Salon · Platinum · Inci Design · 2",
+  "villa": "Villa B",
+  "id": "tdj6bdnx1jx9bqgvmt57"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_teras_sardunya-1.webp",
+  "brand": "Gold",
+  "createdAt": "2026-10-29T23:13:53.854Z",
+  "fileName": "TypeB_altteras.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315633854,
+  "room": "Teras",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_teras_sardunya-1.webp",
+  "title": "Villa B · Teras · Gold · Sardunya",
+  "villa": "Villa B",
+  "id": "23mchiycx81mm3oz66ke"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_mutfak_sardunya-1.webp",
+  "brand": "Gold",
+  "createdAt": "2026-10-29T23:14:25.825Z",
+  "fileName": "TypeB_mutfak.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315665825,
+  "room": "Mutfak",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_mutfak_sardunya-1.webp",
+  "title": "Villa B · Mutfak · Gold · Sardunya",
+  "villa": "Villa B",
+  "id": "okhvkj5cd0xa9uvs3e7f"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_sardunya-1.webp",
+  "brand": "Gold",
+  "createdAt": "2026-10-29T23:15:11.196Z",
+  "fileName": "TypeB_livingroom.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315711196,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_sardunya-1.webp",
+  "title": "Villa B · Salon · Gold · Sardunya",
+  "villa": "Villa B",
+  "id": "7277fw1cz2qt162gm6ec"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_giris-holu_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:15:33.810Z",
+  "fileName": "TypeB_giriş_zemin.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315733810,
+  "room": "Giriş holü",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_giris-holu_ortak-1.webp",
+  "title": "Villa B · Giriş holü",
+  "villa": "Villa B",
+  "id": "b3d6d9i1mxxuojyybxnx"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_sofor-odasi_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:16:21.312Z",
+  "fileName": "TypeB_soforodası.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315781312,
+  "room": "Şoför odası",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_sofor-odasi_ortak-1.webp",
+  "title": "Villa B · Şoför odası",
+  "villa": "Villa B",
+  "id": "c73kyket476h4h2otmsn"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_misafir-wc_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:17:18.838Z",
+  "fileName": "TypeB_bathroom_zemin2.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315838838,
+  "room": "Misafir WC",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_misafir-wc_ortak-1.webp",
+  "title": "Villa B · Misafir WC · 1",
+  "villa": "Villa B",
+  "id": "7zpyfzl5jyi4yjfnwy3s"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_misafir-wc_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:17:21.657Z",
+  "fileName": "TypeB_bathroom_zemin1.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315841657,
+  "room": "Misafir WC",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_misafir-wc_ortak-2.webp",
+  "title": "Villa B · Misafir WC · 2",
+  "villa": "Villa B",
+  "id": "sc81vh1dkyaypafjtodc"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_sofor-wc_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:18:19.992Z",
+  "fileName": "TypeB_sofor_banyo.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315899992,
+  "room": "Şoför WC",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_sofor-wc_ortak-1.webp",
+  "title": "Villa B · Şoför WC",
+  "villa": "Villa B",
+  "id": "9pnw7ymj0oazxlmmypcd"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_teras_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:18:52.177Z",
+  "fileName": "TypeB_altteras.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793315932177,
+  "room": "Teras",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_teras_ortak-1.webp",
+  "title": "Villa B · Teras",
+  "villa": "Villa B",
+  "id": "kl866rkwnp2fss3dd0u1"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_teras_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:19:25.991Z",
+  "fileName": "TypeB_masterbedroom_teras.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793315965991,
+  "room": "Teras",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_teras_ortak-1.webp",
+  "title": "Villa B · Teras",
+  "villa": "Villa B",
+  "id": "t14w6l11mps0fsobmh2n"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_giyinme-odasi_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:19:52.069Z",
+  "fileName": "TypeB_masterbedroom_karşı.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793315992069,
+  "room": "Giyinme odası",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_giyinme-odasi_ortak-1.webp",
+  "title": "Villa B · Giyinme odası · 1",
+  "villa": "Villa B",
+  "id": "kaylzeh1yt35q8s4gbdk"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_giyinme-odasi_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:19:55.301Z",
+  "fileName": "TypeB_masterbedroom.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793315995301,
+  "room": "Giyinme odası",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_giyinme-odasi_ortak-2.webp",
+  "title": "Villa B · Giyinme odası · 2",
+  "villa": "Villa B",
+  "id": "uqpk19ab7gk8dzikxud7"
+ },
+ {
+  "asset": "assets/villa-a/renders/genel_genel_ortak-4.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:20:13.216Z",
+  "fileName": "TypeB_bedroom2_karşı.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793316013216,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/genel_genel_ortak-4.webp",
+  "title": "Villa B · Yatak odası 2 · 1",
+  "villa": "Villa A",
+  "id": "nzwaontg3cehuyrgzd4y"
+ },
+ {
+  "asset": "assets/villa-a/renders/genel_genel_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:20:15.814Z",
+  "fileName": "TypeB_bedroom2.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793316015814,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/genel_genel_ortak-1.webp",
+  "title": "Villa B · Yatak odası 2 · 2",
+  "villa": "Villa A",
+  "id": "1mpih0ovkgirnyye1937"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_banyo_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:20:38.275Z",
+  "fileName": "TypeB_masterbedroom_banyo.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316038275,
+  "room": "Banyo",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_banyo_ortak-1.webp",
+  "title": "Villa B · Banyo",
+  "villa": "Villa B",
+  "id": "1e4kqdwlakkzf7jdc2rk"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_yatak-odasi-3_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:21:57.236Z",
+  "fileName": "TypeB_bedroom3_karşı.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316117236,
+  "room": "Yatak odası 3",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_yatak-odasi-3_ortak-1.webp",
+  "title": "Villa B · Yatak odası 3",
+  "villa": "Villa B",
+  "id": "4hcqag9cayp635cul7up"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_yatak-odasi-1_ortak-3.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:22:18.359Z",
+  "fileName": "TypeB_bedroom1111.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316138359,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_yatak-odasi-1_ortak-3.webp",
+  "title": "Villa B · Yatak odası 1 · 1",
+  "villa": "Villa B",
+  "id": "9r8o3zy96022shs3ow8r"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_yatak-odasi-1_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:22:21.069Z",
+  "fileName": "TypeB_bedroom11.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316141069,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_yatak-odasi-1_ortak-1.webp",
+  "title": "Villa B · Yatak odası 1 · 2",
+  "villa": "Villa B",
+  "id": "0fik3ry83uwtu6mcekrf"
+ },
+ {
+  "asset": "assets/villa-a/renders/genel_genel_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:22:56.727Z",
+  "fileName": "TypeB_masterbedroom.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793316176727,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/genel_genel_ortak-2.webp",
+  "title": "Villa B · Ebeveyn yatak odası · 1",
+  "villa": "Villa A",
+  "id": "3k5nlgafbq50qlm25bdy"
+ },
+ {
+  "asset": "assets/villa-a/renders/genel_genel_ortak-3.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:22:59.716Z",
+  "fileName": "TypeB_masterbedroom_karşı.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793316179716,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/genel_genel_ortak-3.webp",
+  "title": "Villa B · Ebeveyn yatak odası · 2",
+  "villa": "Villa A",
+  "id": "asy2ew0hwb2sd2t1ceu8"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_yatak-odasi-1_ortak-4.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:23:37.078Z",
+  "fileName": "TypeB_bedroom11.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316217078,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_yatak-odasi-1_ortak-4.webp",
+  "title": "Villa B · Yatak odası 1 · 1",
+  "villa": "Villa B",
+  "id": "qbps2y7jk75mgfwpzcr7"
+ },
+ {
+  "asset": "assets/villa-b/renders/1-kat_yatak-odasi-1_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T23:23:40.046Z",
+  "fileName": "TypeB_bedroom1111.jpg",
+  "floor": "1. kat",
+  "kind": "render",
+  "order": 1793316220046,
+  "room": "Yatak odası 1",
+  "thumb": "assets/villa-b/renders/thumbs/1-kat_yatak-odasi-1_ortak-2.webp",
+  "title": "Villa B · Yatak odası 1 · 2",
+  "villa": "Villa B",
+  "id": "5u1g2k3fytwcooj9fulr"
  }
 ]
