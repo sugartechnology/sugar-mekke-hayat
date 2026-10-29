@@ -1647,7 +1647,9 @@ function pdfRenders(v,pkgs){const seen=new Set();const rank=n=>rankedFor(v).find
   return S.media.filter(m=>m.kind==="render"&&m.villa===v&&m.asset&&(!m.brand||pkgs.includes(m.brand))&&!(!m.brand&&pkgs.some(p=>hiddenFor(m,p)))).sort(byOrder).filter(m=>{const k1=m.asset,k2=[m.room,m.brand,m.fileName].join("|");if(seen.has(k1)||seen.has(k2))return false;seen.add(k1);seen.add(k2);return true;})
     .sort((a,b)=>floorIdx(a.floor)-floorIdx(b.floor)||String(a.room).localeCompare(String(b.room),"tr")||rank(b.brand)-rank(a.brand));}
 function pdfRoomItems(pkg,v,room,floor){const all=boqItems(pkg,v).map(it=>({...it,...labelItem(it)})).filter(it=>it.room===room);
-  const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort((a,b)=>(+b.v||0)-(+a.v||0));}
+  const f=all.filter(it=>!floor||it.f===floor);return (f.length?f:all).sort(byCode);}
+const codeKey=c=>String(c||"").replace(/\d+/g,d=>d.padStart(5,"0"));
+const byCode=(a,b)=>codeKey(a.c).localeCompare(codeKey(b.c))||String(a.n||"").localeCompare(String(b.n||""));
 function buildPdfPages(opt){const P=[];const pkgsAll=ranked().map(b=>b.name);const pkgs=opt.pkg?[opt.pkg]:pkgsAll;const vs=opt.villas.length?opt.villas:villas();
   // cover
   P.push({title:"",cover:true,draw:async(c,L)=>{const top=pkgByName(opt.pkg)||topPkgWithImg(null);const im=await pimg(bestSrc(coverImg(null,top?.name)));c.fillStyle="#fff";c.fillRect(0,0,PW,PH);
