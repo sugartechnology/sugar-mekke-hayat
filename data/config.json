@@ -333,183 +333,193 @@
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
  "maket": {
-  "Villa A": {
-   "glb": "maket/villa-a.gltf.json",
+  "Villa B": {
+   "glb": "maket/villa-b.gltf.json",
+   "north": 0,
    "rooms": [
     {
      "floor": "Zemin kat",
-     "pin": 24,
+     "pin": 26,
      "room": "Mutfak",
-     "x": 7.9,
-     "z": -22.4
+     "x": 7.61,
+     "z": -22.55
     },
     {
      "floor": "Zemin kat",
      "pin": 0,
      "room": "Teras",
-     "x": 3.2,
-     "z": -22.5
+     "x": 3.82,
+     "z": -22.31
     },
     {
+     "codes": [
+      "F-092",
+      "F-093",
+      "F-094",
+      "F-095",
+      "F-096",
+      "F-097",
+      "F-098",
+      "F-101",
+      "F-100"
+     ],
      "floor": "Zemin kat",
-     "pin": 15,
      "room": "Salon",
-     "x": 5.8,
-     "z": -18.2
+     "x": 5.83,
+     "z": -18.06
     },
     {
+     "codes": [
+      "F-102",
+      "F-105"
+     ],
      "floor": "Zemin kat",
-     "pin": 20,
-     "room": "Giriş holü",
-     "x": 6,
-     "z": -13.2
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 23,
-     "room": "Meclis",
-     "x": 3.9,
-     "z": -8.6
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 16,
      "room": "Misafir WC",
-     "x": 8.4,
-     "z": -11
+     "x": 8.68,
+     "z": -10.98
     },
     {
      "floor": "Zemin kat",
-     "pin": 17,
-     "room": "Hizmetli banyosu",
-     "x": 8.4,
-     "z": -9.4
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 18,
-     "room": "Hizmetli odası",
-     "x": 8.6,
-     "z": -7.8
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 19,
-     "room": "Misafir lavabosu",
-     "x": 6.9,
-     "z": -6.6
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 22,
-     "room": "Banyo",
-     "x": 1,
-     "z": -3.1
-    },
-    {
-     "floor": "Zemin kat",
-     "pin": 21,
-     "room": "Şoför odası",
-     "x": 1.7,
-     "z": -1.2
-    },
-    {
-     "floor": "1. kat",
-     "pin": 1,
-     "room": "Yatak odası 1",
-     "x": 7.9,
-     "z": -19.5
-    },
-    {
-     "floor": "1. kat",
-     "pin": 2,
-     "room": "Yatak odası 2",
-     "x": 3.9,
-     "z": -19
-    },
-    {
-     "floor": "1. kat",
-     "pin": 6,
-     "room": "Banyo",
-     "x": 8.5,
-     "z": -16.2
-    },
-    {
-     "floor": "1. kat",
-     "pin": 3,
-     "room": "Banyo",
-     "x": 3.4,
-     "z": -16.2
-    },
-    {
-     "floor": "1. kat",
-     "pin": 4,
-     "room": "Banyo",
-     "x": 3.3,
-     "z": -11.1
-    },
-    {
-     "floor": "1. kat",
-     "pin": 5,
-     "room": "Banyo",
-     "x": 8.5,
-     "z": -9.8
-    },
-    {
-     "floor": "1. kat",
      "pin": 7,
-     "room": "Yatak odası 3",
-     "x": 7.9,
-     "z": -7
+     "room": "Misafir lavabosu",
+     "x": 8.32,
+     "z": -9.56
     },
     {
-     "floor": "1. kat",
+     "floor": "Zemin kat",
+     "pin": 6,
+     "room": "Giriş holü",
+     "x": 6.78,
+     "z": -8.97
+    },
+    {
+     "floor": "Zemin kat",
      "pin": 8,
-     "room": "Ebeveyn yatak odası",
-     "x": 3.9,
-     "z": -7.5
+     "room": "Meclis",
+     "x": 3.94,
+     "z": -8.5
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 25,
+     "room": "Şoför WC",
+     "x": 1.34,
+     "z": -2.83
+    },
+    {
+     "floor": "Zemin kat",
+     "pin": 24,
+     "room": "Şoför odası",
+     "x": 1.93,
+     "z": -1.42
     },
     {
      "floor": "1. kat",
      "pin": 9,
-     "room": "Teras",
-     "x": 3.9,
-     "z": -4.3
+     "room": "Yatak odası 1",
+     "x": 8.04,
+     "z": -19.95
     },
     {
-     "floor": "Çatı katı",
-     "pin": 13,
-     "room": "Teras",
-     "x": 5.9,
-     "z": -18.2
-    },
-    {
-     "floor": "Çatı katı",
-     "pin": 14,
-     "room": "Koridor",
-     "x": 6.4,
-     "z": -13
-    },
-    {
-     "floor": "Çatı katı",
-     "pin": 10,
-     "room": "Depo",
-     "x": 4.8,
-     "z": -10.4
-    },
-    {
-     "floor": "Çatı katı",
-     "pin": 11,
-     "room": "Aile salonu",
-     "x": 7.9,
-     "z": -8.8
-    },
-    {
-     "floor": "Çatı katı",
+     "floor": "1. kat",
      "pin": 12,
+     "room": "Yatak odası 2",
+     "x": 4.01,
+     "z": -19.13
+    },
+    {
+     "floor": "1. kat",
+     "pin": 13,
+     "room": "Banyo",
+     "x": 3.54,
+     "z": -16.18
+    },
+    {
+     "floor": "1. kat",
+     "pin": 14,
+     "room": "Banyo",
+     "x": 8.27,
+     "z": -16.18
+    },
+    {
+     "floor": "1. kat",
+     "pin": 16,
+     "room": "Banyo",
+     "x": 3.54,
+     "z": -11.22
+    },
+    {
+     "floor": "1. kat",
+     "pin": 15,
+     "room": "Banyo",
+     "x": 8.27,
+     "z": -9.56
+    },
+    {
+     "codes": [
+      "F-122",
+      "F-123",
+      "F-137",
+      "F-138",
+      "F-139",
+      "F-140",
+      "F-141",
+      "F-143",
+      "F-144"
+     ],
+     "floor": "1. kat",
+     "room": "Ebeveyn yatak odası",
+     "x": 3.78,
+     "z": -7.56
+    },
+    {
+     "floor": "1. kat",
+     "pin": 22,
+     "room": "Yatak odası 3",
+     "x": 8.04,
+     "z": -7.32
+    },
+    {
+     "floor": "1. kat",
+     "pin": 23,
      "room": "Teras",
-     "x": 6.8,
-     "z": -6
+     "x": 4.01,
+     "z": -4.49
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 21,
+     "room": "Rawashin",
+     "x": 5.91,
+     "z": -18.06
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 18,
+     "room": "Hizmetli odası",
+     "x": 4.72,
+     "z": -9.8
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 17,
+     "room": "Aile salonu",
+     "x": 7.8,
+     "z": -8.86
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 19,
+     "room": "Hizmetli banyosu",
+     "x": 4.84,
+     "z": -7.91
+    },
+    {
+     "floor": "Çatı katı",
+     "pin": 20,
+     "room": "Teras",
+     "x": 7.33,
+     "z": -5.9
     }
    ]
   }
