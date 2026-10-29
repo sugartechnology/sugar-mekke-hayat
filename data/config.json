@@ -422,7 +422,7 @@
       "y": 1453
      }
     ],
-    "start": "kamera_1793188837773"
+    "start": "kamera_1793188833508"
    },
    "url": "https://app.sugartech.io/panaromic-viewer/88fc5158-8e04-4daa-b7d3-3a7075074812",
    "villa": "Villa A"
@@ -454,7 +454,7 @@
       "hi": "assets/pano/72748a7f/kamera_1793186657151_4k.webp",
       "id": "kamera_1793186657151",
       "lo": "assets/pano/72748a7f/kamera_1793186657151_lo.webp",
-      "name": "Yatak odası 1 · banyo",
+      "name": "Banyo",
       "room": "Banyo",
       "src": "https://image-s3.sm.mncdn.com/cdn.sugartech/mottobucket/render-output/8301b52d-c4fa-406a-8ba3-a43118901b91.jpg",
       "x": 1503,
@@ -476,7 +476,7 @@
       "hi": "assets/pano/72748a7f/kamera_1793186659865_4k.webp",
       "id": "kamera_1793186659865",
       "lo": "assets/pano/72748a7f/kamera_1793186659865_lo.webp",
-      "name": "Yatak odası 2 · banyo",
+      "name": "Banyo",
       "room": "Banyo",
       "src": "https://image-s3.sm.mncdn.com/cdn.sugartech/mottobucket/render-output/d7811900-387d-443f-9d6e-9b496e77b867.jpg",
       "x": 1880,
@@ -509,7 +509,7 @@
       "hi": "assets/pano/72748a7f/kamera_1793186671688_4k.webp",
       "id": "kamera_1793186671688",
       "lo": "assets/pano/72748a7f/kamera_1793186671688_lo.webp",
-      "name": "Ebeveyn banyosu",
+      "name": "Banyo",
       "room": "Banyo",
       "src": "https://image-s3.sm.mncdn.com/cdn.sugartech/mottobucket/render-output/8d72a87e-b728-442d-9e67-ad0fc64a152c.jpg",
       "x": 1500,
@@ -531,7 +531,7 @@
       "hi": "assets/pano/72748a7f/kamera_1793186675079_4k.webp",
       "id": "kamera_1793186675079",
       "lo": "assets/pano/72748a7f/kamera_1793186675079_lo.webp",
-      "name": "Yatak odası 3 · banyo",
+      "name": "Banyo",
       "room": "Banyo",
       "src": "https://image-s3.sm.mncdn.com/cdn.sugartech/mottobucket/render-output/4bf3cace-2214-4954-99e3-40504b8fcd1b.jpg",
       "x": 1897,
@@ -556,9 +556,9 @@
   },
   {
    "floor": "Çatı katı",
-   "pkg": "Silver",
+   "pkg": "Gold",
    "room": "",
-   "title": "Villa A · Çatı katı · Silver · Bellona · 360°",
+   "title": "Villa A · Çatı katı · Silver · Sardunya · 360°",
    "tour": {
     "fetchedAt": "2026-10-29T06:40:00Z",
     "plan": "assets/pano/636cdfc2/plan.webp",
@@ -570,7 +570,7 @@
       "hi": "assets/pano/636cdfc2/kamera_1793189861575_4k.webp",
       "id": "kamera_1793189861575",
       "lo": "assets/pano/636cdfc2/kamera_1793189861575_lo.webp",
-      "name": "Kat holü",
+      "name": "Koridor",
       "room": "Koridor",
       "src": "https://image-s3.sm.mncdn.com/cdn.sugartech/mottobucket/render-output/8a13d28c-4646-480f-bb2f-d0611345e49a.jpg",
       "x": 2492,
