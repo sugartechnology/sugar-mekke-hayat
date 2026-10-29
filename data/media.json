@@ -2094,5 +2094,19 @@
   "title": "Villa C · Teras · Emerald · Ergo",
   "villa": "Villa C",
   "id": "ergo3baho80gjee0xwov"
+ },
+ {
+  "asset": "assets/villa-a/renders/zemin-kat_salon_modis-2.webp",
+  "brand": "Pearl",
+  "createdAt": "2026-10-29T08:19:49.885Z",
+  "fileName": "0c4ec2e4-c595-448c-b8be-29bb7db9da8e.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793261989885,
+  "room": "Salon",
+  "thumb": "assets/villa-a/renders/thumbs/zemin-kat_salon_modis-2.webp",
+  "title": "Villa A · Salon · Pearl · Modis",
+  "villa": "Villa A",
+  "id": "6j8c1czb1uvsdiiodkfc"
  }
 ]
