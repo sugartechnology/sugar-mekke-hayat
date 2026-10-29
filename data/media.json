@@ -2108,5 +2108,61 @@
   "title": "Villa A · Salon · Pearl · Modis",
   "villa": "Villa A",
   "id": "6j8c1czb1uvsdiiodkfc"
+ },
+ {
+  "asset": "assets/villa-a/renders/zemin-kat_salon_bellona-1.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-29T11:04:21.483Z",
+  "fileName": "TypeA_belllona_Livingroomkarşı.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793271861483,
+  "room": "Salon",
+  "thumb": "assets/villa-a/renders/thumbs/zemin-kat_salon_bellona-1.webp",
+  "title": "Villa A · Silver · Bellona · 1",
+  "villa": "Villa A",
+  "id": "91ash25gnizotipuimyy"
+ },
+ {
+  "asset": "assets/villa-a/renders/zemin-kat_salon_bellona-2.webp",
+  "brand": "Silver",
+  "createdAt": "2026-10-29T11:04:24.565Z",
+  "fileName": "TypeA_Bellona_livingroom.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793271864565,
+  "room": "Salon",
+  "thumb": "assets/villa-a/renders/thumbs/zemin-kat_salon_bellona-2.webp",
+  "title": "Villa A · Silver · Bellona · 2",
+  "villa": "Villa A",
+  "id": "01s2t1cro0o37o1mws6t"
+ },
+ {
+  "asset": "assets/villa-a/renders/inci-livingroom-1.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T11:04:43.718Z",
+  "fileName": "TypeA_inci_livingroomkarşı.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793271883718,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/inci-livingroom-1.webp",
+  "title": "Villa A · 1",
+  "villa": "Villa A",
+  "id": "4gwrcaxsjdzmida8p8mz"
+ },
+ {
+  "asset": "assets/villa-a/renders/inci-livingroom-2.webp",
+  "brand": null,
+  "createdAt": "2026-10-29T11:04:47.112Z",
+  "fileName": "TypeA_inci_livingroom.jpg",
+  "floor": null,
+  "kind": "render",
+  "order": 1793271887112,
+  "room": null,
+  "thumb": "assets/villa-a/renders/thumbs/inci-livingroom-2.webp",
+  "title": "Villa A · 2",
+  "villa": "Villa A",
+  "id": "1v87u5pkf1taeta93xa0"
  }
 ]
