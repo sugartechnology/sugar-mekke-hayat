@@ -917,7 +917,9 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-120": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-121": "assets/items/livello/liv-paris-mini-berjer.webp"
    },
    "Villa C": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -1024,7 +1026,9 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-201": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-202": "assets/items/livello/liv-paris-mini-berjer.webp"
    }
   }
  },
@@ -1315,7 +1319,9 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-120": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-121": "assets/items/livello/liv-paris-mini-berjer.webp"
    },
    "Villa C": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -1401,7 +1407,9 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-201": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-202": "assets/items/livello/liv-paris-mini-berjer.webp"
    }
   }
  },
@@ -3270,7 +3278,12 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-120": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-121": "assets/items/livello/liv-paris-mini-berjer.webp",
+    "F-123": "assets/items/livello/liv-flex-gardirop.webp",
+    "F-143": "assets/items/livello/liv-paris-100-camli-dolap.webp",
+    "F-144": "assets/items/livello/liv-paris-200-dolap.webp"
    },
    "Villa C": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -3446,7 +3459,10 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-197": "assets/items/livello/liv-flex-100-dolap.webp",
+    "F-201": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
+    "F-202": "assets/items/livello/liv-paris-mini-berjer.webp"
    }
   }
  }
