@@ -329,6 +329,8 @@
  "location": "Mekke · Suudi Arabistan",
  "logos": {
   "emlak": "assets/brand/emlak-konut.png",
+  "nhc": "assets/brand/nhc.webp",
+  "project": "assets/brand/hayat-makkah.webp",
   "rapid": "assets/brand/rapidrender.png",
   "rapidWhite": "assets/brand/rapidrender-white.png"
  },
@@ -893,7 +895,7 @@
   "Ev tamamlayıcı ürünler"
  ],
  "source": "sheets",
- "subtitle": "Villa mobilya paketleri",
+ "subtitle": "Villa donatım paketleri",
  "syncedAt": "2026-10-28T10:11:48.904Z",
  "updatedAt": "2026-10-31T19:50:00.000Z",
  "vat": 0.15,
