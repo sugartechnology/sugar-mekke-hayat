@@ -152,20 +152,6 @@
   "id": "a7lub3le2t052187w9nj"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_meclis_bellona.webp",
-  "brand": "Silver",
-  "createdAt": "2026-10-16T18:42:47.195Z",
-  "fileName": "bellona_tipb_meclis.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1792176167195,
-  "room": "Meclis",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_bellona.webp",
-  "title": "Villa B · Meclis · Silver · Bellona",
-  "villa": "Villa B",
-  "id": "dhguqudmb41rvt8fvi7a"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_meclis_homage.webp",
   "brand": "Royal",
   "cover": true,
