@@ -2310,20 +2310,6 @@
   "id": "okhvkj5cd0xa9uvs3e7f"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_sardunya-1.webp",
-  "brand": "Gold",
-  "createdAt": "2026-10-29T23:15:11.196Z",
-  "fileName": "TypeB_livingroom.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793315711196,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_sardunya-1.webp",
-  "title": "Villa B · Salon · Gold · Sardunya",
-  "villa": "Villa B",
-  "id": "7277fw1cz2qt162gm6ec"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_giris-holu_ortak-1.webp",
   "brand": null,
   "createdAt": "2026-10-29T23:15:33.810Z",
@@ -2812,20 +2798,6 @@
   "title": "Villa B · Ana Giriş Holü · Gold · Sardunya",
   "villa": "Villa B",
   "id": "g54dyo1vffpv1zaad8ms"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_sardunya-2.webp",
-  "brand": "Gold",
-  "createdAt": "2026-10-30T00:02:53.570Z",
-  "fileName": "TypeB_livingroom.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793318573570,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_sardunya-2.webp",
-  "title": "Villa B · Salon · Gold · Sardunya",
-  "villa": "Villa B",
-  "id": "t02xszsykduv6zhpps9p"
  },
  {
   "asset": "assets/villa-b/renders/zemin-kat_sofor-wc_sardunya-1.webp",
@@ -3935,5 +3907,19 @@
   "title": "Villa B · Aile salonu · Diamond · Gabba",
   "villa": "Villa B",
   "id": "gabc5zux295uqwk66qxa"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_sardunya-3.webp",
+  "brand": "Gold",
+  "createdAt": "2026-11-01T20:21:47.711Z",
+  "fileName": "Typeb_sardunya yeni.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793564507711,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_sardunya-3.webp",
+  "title": "Villa B · Salon · Gold · Sardunya",
+  "villa": "Villa B",
+  "id": "2lhyye6tbx4llsl355wl"
  }
 ]
