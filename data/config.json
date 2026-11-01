@@ -334,7 +334,7 @@
  },
  "maket": {
   "Villa B": {
-   "codesSource": "BoQ Excel · Category / Room sütunu",
+   "codesSource": "BoQ Excel · Category / Room (Villa B, 2026-10-31)",
    "glb": "maket/villa-b.gltf.json",
    "north": 0,
    "rooms": [
@@ -342,8 +342,7 @@
      "codes": [
       "F-085",
       "F-086",
-      "F-087",
-      "F-084"
+      "F-087"
      ],
      "floor": "Zemin kat",
      "room": "Mutfak",
@@ -380,13 +379,21 @@
     },
     {
      "codes": [
-      "F-102",
+      "F-102"
+     ],
+     "floor": "Zemin kat",
+     "room": "Misafir tuvaleti",
+     "x": 1.64,
+     "z": -10.64
+    },
+    {
+     "codes": [
       "F-105"
      ],
      "floor": "Zemin kat",
-     "room": "Misafir WC",
-     "x": 1.12,
-     "z": -11.6
+     "room": "Misafir banyosu",
+     "x": 1.45,
+     "z": -8.17
     },
     {
      "codes": [
@@ -402,7 +409,7 @@
       "F-103"
      ],
      "floor": "Zemin kat",
-     "room": "Giriş holü",
+     "room": "Misafir girişi",
      "x": 3.02,
      "z": -8.97
     },
@@ -458,6 +465,15 @@
     },
     {
      "codes": [
+      "F-124"
+     ],
+     "floor": "1. kat",
+     "room": "Banyo 1",
+     "x": 1.53,
+     "z": -16.18
+    },
+    {
+     "codes": [
       "F-125",
       "F-126",
       "F-127",
@@ -474,37 +490,28 @@
       "F-130"
      ],
      "floor": "1. kat",
-     "label": "Banyo · Yatak odası 2",
      "room": "Banyo 2",
      "x": 6.26,
      "z": -16.18
     },
     {
      "codes": [
-      "F-124"
+      "F-131",
+      "F-132",
+      "F-133",
+      "F-134",
+      "F-135"
      ],
      "floor": "1. kat",
-     "label": "Banyo · Yatak odası 1",
-     "room": "Banyo 1",
-     "x": 1.53,
-     "z": -16.18
-    },
-    {
-     "codes": [
-      "F-142"
-     ],
-     "floor": "1. kat",
-     "label": "Ebeveyn banyosu",
-     "room": "Ebeveyn banyosu",
-     "x": 6.26,
-     "z": -11.22
+     "room": "Yatak odası 3",
+     "x": 1.76,
+     "z": -7.32
     },
     {
      "codes": [
       "F-136"
      ],
      "floor": "1. kat",
-     "label": "Banyo · Yatak odası 3",
      "room": "Banyo 3",
      "x": 1.53,
      "z": -9.56
@@ -526,16 +533,12 @@
     },
     {
      "codes": [
-      "F-131",
-      "F-132",
-      "F-133",
-      "F-134",
-      "F-135"
+      "F-142"
      ],
      "floor": "1. kat",
-     "room": "Yatak odası 3",
-     "x": 1.76,
-     "z": -7.32
+     "room": "Ebeveyn banyosu",
+     "x": 6.26,
+     "z": -11.22
     },
     {
      "codes": [
@@ -559,15 +562,6 @@
     },
     {
      "codes": [
-      "F-154"
-     ],
-     "floor": "Çatı katı",
-     "room": "Hizmetli odası",
-     "x": 5.08,
-     "z": -9.8
-    },
-    {
-     "codes": [
       "F-149",
       "F-150",
       "F-151",
@@ -581,12 +575,13 @@
     },
     {
      "codes": [
+      "F-154",
       "F-155"
      ],
      "floor": "Çatı katı",
-     "room": "Hizmetli banyosu",
-     "x": 4.96,
-     "z": -7.91
+     "room": "Hizmetli odası",
+     "x": 5.08,
+     "z": -9.8
     },
     {
      "codes": [
@@ -900,7 +895,7 @@
  "source": "sheets",
  "subtitle": "Villa mobilya paketleri",
  "syncedAt": "2026-10-28T10:11:48.904Z",
- "updatedAt": "2026-10-29T18:29:42.305Z",
+ "updatedAt": "2026-10-31T19:50:00.000Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
