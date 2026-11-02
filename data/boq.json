@@ -9,7 +9,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -19,7 +19,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -29,7 +29,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 401
+    "v": 501.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -39,7 +39,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 358
+    "v": 447.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -49,7 +49,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 520
+    "v": 650
    },
    {
     "b": "Silver koleksiyonu",
@@ -59,7 +59,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -69,7 +69,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -79,7 +79,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -89,7 +89,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 195
+    "v": 243.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -99,7 +99,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 296
+    "v": 370
    },
    {
     "b": "Silver koleksiyonu",
@@ -109,7 +109,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 860
+    "v": 1075
    },
    {
     "b": "Arel Interior",
@@ -155,7 +155,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 64
+    "v": 80
    },
    {
     "b": "Silver koleksiyonu",
@@ -165,7 +165,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 117
+    "v": 146.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -175,7 +175,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 294
+    "v": 367.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -185,7 +185,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 493
+    "v": 616.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -195,7 +195,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 443
+    "v": 553.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -205,7 +205,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 168
+    "v": 210
    },
    {
     "b": "Silver koleksiyonu",
@@ -215,7 +215,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Saudi Ceramics",
@@ -235,7 +235,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -245,7 +245,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -275,7 +275,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -285,7 +285,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -295,7 +295,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -315,7 +315,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -325,7 +325,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -335,7 +335,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -355,7 +355,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -365,7 +365,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -375,7 +375,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -385,7 +385,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Livello",
@@ -395,7 +395,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -415,7 +415,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -425,7 +425,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -435,7 +435,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -445,7 +445,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -455,7 +455,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -475,7 +475,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 919
+    "v": 1148.75
    },
    {
     "b": "Livello",
@@ -485,7 +485,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -495,7 +495,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -505,7 +505,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -515,7 +515,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -535,7 +535,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -545,7 +545,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -555,7 +555,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -565,7 +565,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -575,7 +575,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -585,7 +585,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Silver koleksiyonu",
@@ -594,7 +594,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 209
+    "v": 261.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -604,7 +604,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 664
+    "v": 830
    },
    {
     "b": "Silver koleksiyonu",
@@ -614,7 +614,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 332
+    "v": 415
    },
    {
     "b": "Silver koleksiyonu",
@@ -624,7 +624,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 106
+    "v": 132.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -634,7 +634,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 31
+    "v": 38.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -644,7 +644,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 25
+    "v": 31.25
    },
    {
     "b": "Livello",
@@ -654,7 +654,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 408
+    "v": 510
    },
    {
     "b": "Livello",
@@ -664,7 +664,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Luva",
@@ -674,7 +674,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -684,7 +684,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -729,7 +729,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -739,7 +739,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 884
+    "v": 1105
    },
    {
     "b": "TEKA",
@@ -883,7 +883,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -1039,7 +1039,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -1049,7 +1049,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -1086,7 +1086,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 401
+    "v": 501.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -1096,7 +1096,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 358
+    "v": 447.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -1106,7 +1106,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 520
+    "v": 650
    },
    {
     "b": "Silver koleksiyonu",
@@ -1116,7 +1116,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1126,7 +1126,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1136,7 +1136,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1146,7 +1146,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 195
+    "v": 243.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1156,7 +1156,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 296
+    "v": 370
    },
    {
     "b": "Silver koleksiyonu",
@@ -1166,7 +1166,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 860
+    "v": 1075
    },
    {
     "b": "Silver koleksiyonu",
@@ -1176,7 +1176,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 430
+    "v": 537.5
    },
    {
     "b": "Saudi Ceramics",
@@ -1196,7 +1196,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -1226,7 +1226,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 64
+    "v": 80
    },
    {
     "b": "Silver koleksiyonu",
@@ -1236,7 +1236,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 117
+    "v": 146.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -1246,7 +1246,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 294
+    "v": 367.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -1256,7 +1256,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 493
+    "v": 616.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -1266,7 +1266,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 443
+    "v": 553.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1276,7 +1276,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 168
+    "v": 210
    },
    {
     "b": "Silver koleksiyonu",
@@ -1286,7 +1286,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Silver koleksiyonu",
@@ -1296,7 +1296,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 440
+    "v": 550
    },
    {
     "b": "Silver koleksiyonu",
@@ -1306,7 +1306,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 52
+    "v": 65
    },
    {
     "b": "Gold koleksiyonu",
@@ -1316,7 +1316,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -1326,7 +1326,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -1346,7 +1346,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -1356,7 +1356,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -1366,7 +1366,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -1376,7 +1376,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -1385,7 +1385,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -1394,7 +1394,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -1414,7 +1414,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -1424,7 +1424,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -1434,7 +1434,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -1443,7 +1443,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Livello",
@@ -1453,7 +1453,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -1473,7 +1473,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -1483,7 +1483,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -1493,7 +1493,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -1503,7 +1503,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -1513,7 +1513,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -1533,7 +1533,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -1543,7 +1543,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -1553,7 +1553,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -1563,7 +1563,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -1573,7 +1573,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -1592,7 +1592,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -1601,7 +1601,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -1611,7 +1611,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -1621,7 +1621,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -1630,7 +1630,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -1639,7 +1639,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Silver koleksiyonu",
@@ -1649,7 +1649,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 664
+    "v": 830
    },
    {
     "b": "Silver koleksiyonu",
@@ -1659,7 +1659,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 106
+    "v": 132.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -1669,7 +1669,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 31
+    "v": 38.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -1679,7 +1679,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 25
+    "v": 31.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -1689,7 +1689,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 209
+    "v": 261.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -1699,7 +1699,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Saudi Ceramics",
@@ -1719,7 +1719,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -1729,7 +1729,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -1774,7 +1774,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -1784,7 +1784,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 884
+    "v": 1105
    },
    {
     "b": "TEKA",
@@ -1928,7 +1928,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -2084,7 +2084,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -2094,7 +2094,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -2104,7 +2104,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 401
+    "v": 501.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -2114,7 +2114,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 358
+    "v": 447.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -2124,7 +2124,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 520
+    "v": 650
    },
    {
     "b": "Silver koleksiyonu",
@@ -2134,7 +2134,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2144,7 +2144,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2154,7 +2154,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2164,7 +2164,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 430
+    "v": 537.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -2174,7 +2174,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 195
+    "v": 243.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2184,7 +2184,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 296
+    "v": 370
    },
    {
     "b": "Silver koleksiyonu",
@@ -2194,7 +2194,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 860
+    "v": 1075
    },
    {
     "b": "Silver koleksiyonu",
@@ -2203,7 +2203,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Silver koleksiyonu",
@@ -2213,7 +2213,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 64
+    "v": 80
    },
    {
     "b": "Silver koleksiyonu",
@@ -2223,7 +2223,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 117
+    "v": 146.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -2233,7 +2233,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 294
+    "v": 367.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -2243,7 +2243,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 493
+    "v": 616.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -2253,7 +2253,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 443
+    "v": 553.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2263,7 +2263,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 168
+    "v": 210
    },
    {
     "b": "Silver koleksiyonu",
@@ -2273,7 +2273,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Silver koleksiyonu",
@@ -2283,7 +2283,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 440
+    "v": 550
    },
    {
     "b": "Silver koleksiyonu",
@@ -2293,7 +2293,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 52
+    "v": 65
    },
    {
     "b": "Saudi Ceramics",
@@ -2369,7 +2369,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -2379,7 +2379,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -2389,7 +2389,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -2409,7 +2409,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -2419,7 +2419,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -2429,7 +2429,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -2439,7 +2439,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -2449,7 +2449,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -2469,7 +2469,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -2479,7 +2479,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -2489,7 +2489,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -2499,7 +2499,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -2509,7 +2509,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -2529,7 +2529,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -2539,7 +2539,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -2549,7 +2549,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -2559,7 +2559,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -2569,7 +2569,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -2589,7 +2589,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -2599,7 +2599,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -2609,7 +2609,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -2619,7 +2619,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -2629,7 +2629,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -2649,7 +2649,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -2658,7 +2658,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -2668,7 +2668,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -2678,7 +2678,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -2687,7 +2687,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -2696,7 +2696,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -2706,7 +2706,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 664
+    "v": 830
    },
    {
     "b": "Silver koleksiyonu",
@@ -2716,7 +2716,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 106
+    "v": 132.5
    },
    {
     "b": "Silver koleksiyonu",
@@ -2726,7 +2726,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 31
+    "v": 38.75
    },
    {
     "b": "Silver koleksiyonu",
@@ -2736,7 +2736,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 25
+    "v": 31.25
    },
    {
     "b": "Silver koleksiyonu",
@@ -2746,7 +2746,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 209
+    "v": 261.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -2756,7 +2756,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -2765,7 +2765,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -2785,7 +2785,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -2795,7 +2795,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -2840,7 +2840,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -2850,7 +2850,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 884
+    "v": 1105
    },
    {
     "b": "TEKA",
@@ -2994,7 +2994,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -3152,7 +3152,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -3162,7 +3162,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -3172,7 +3172,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 800
+    "v": 1000
    },
    {
     "b": "Gold koleksiyonu",
@@ -3182,7 +3182,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 800
+    "v": 1000
    },
    {
     "b": "Gold koleksiyonu",
@@ -3192,7 +3192,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 815
+    "v": 1018.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -3202,7 +3202,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 464
+    "v": 580
    },
    {
     "b": "Gold koleksiyonu",
@@ -3212,7 +3212,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 138
+    "v": 172.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3222,7 +3222,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 138
+    "v": 172.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3232,7 +3232,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -3242,7 +3242,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -3252,7 +3252,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1231
+    "v": 1538.75
    },
    {
     "b": "Arel Interior",
@@ -3298,7 +3298,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 278
+    "v": 347.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3308,7 +3308,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 151
+    "v": 188.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -3318,7 +3318,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -3328,7 +3328,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 710
+    "v": 887.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3338,7 +3338,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 710
+    "v": 887.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3348,7 +3348,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 840
+    "v": 1050
    },
    {
     "b": "Gold koleksiyonu",
@@ -3358,7 +3358,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 907
+    "v": 1133.75
    },
    {
     "b": "Saudi Ceramics",
@@ -3378,7 +3378,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Livello",
@@ -3388,7 +3388,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -3418,7 +3418,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "livello",
@@ -3428,7 +3428,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Livello",
@@ -3438,7 +3438,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -3458,7 +3458,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -3468,7 +3468,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -3478,7 +3478,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -3498,7 +3498,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -3508,7 +3508,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -3518,7 +3518,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -3528,7 +3528,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Livello",
@@ -3538,7 +3538,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -3558,7 +3558,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -3568,7 +3568,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -3578,7 +3578,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -3588,7 +3588,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -3598,7 +3598,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -3618,7 +3618,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 919
+    "v": 1148.75
    },
    {
     "b": "Livello",
@@ -3628,7 +3628,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -3638,7 +3638,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -3648,7 +3648,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -3658,7 +3658,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -3678,7 +3678,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -3688,7 +3688,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -3698,7 +3698,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -3708,7 +3708,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -3718,7 +3718,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -3728,7 +3728,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Gold koleksiyonu",
@@ -3738,7 +3738,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Gold koleksiyonu",
@@ -3748,7 +3748,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1852
+    "v": 2315
    },
    {
     "b": "Gold koleksiyonu",
@@ -3758,7 +3758,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 926
+    "v": 1157.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3768,7 +3768,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Gold koleksiyonu",
@@ -3778,7 +3778,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 413
+    "v": 516.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -3788,7 +3788,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 140
+    "v": 175
    },
    {
     "b": "Livello",
@@ -3798,7 +3798,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 408
+    "v": 510
    },
    {
     "b": "Livello",
@@ -3808,7 +3808,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Luva",
@@ -3818,7 +3818,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -3828,7 +3828,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -3873,7 +3873,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -3882,7 +3882,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -4026,7 +4026,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -4182,7 +4182,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -4192,7 +4192,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -4229,7 +4229,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 926
+    "v": 1157.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4239,7 +4239,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 797
+    "v": 996.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -4249,7 +4249,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4259,7 +4259,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 413
+    "v": 516.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -4269,7 +4269,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 140
+    "v": 175
    },
    {
     "b": "Gold koleksiyonu",
@@ -4279,7 +4279,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 140
+    "v": 175
    },
    {
     "b": "Gold koleksiyonu",
@@ -4289,7 +4289,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -4299,7 +4299,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 859
+    "v": 1073.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4309,7 +4309,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1382
+    "v": 1727.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4319,7 +4319,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Saudi Ceramics",
@@ -4339,7 +4339,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -4369,7 +4369,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 278
+    "v": 347.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4379,7 +4379,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 151
+    "v": 188.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4389,7 +4389,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Gold koleksiyonu",
@@ -4399,7 +4399,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 886
+    "v": 1107.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4409,7 +4409,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 886
+    "v": 1107.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4419,7 +4419,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 840
+    "v": 1050
    },
    {
     "b": "Gold koleksiyonu",
@@ -4429,7 +4429,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 907
+    "v": 1133.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4439,7 +4439,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Gold koleksiyonu",
@@ -4449,7 +4449,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "livello",
@@ -4459,7 +4459,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Livello",
@@ -4469,7 +4469,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -4489,7 +4489,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -4499,7 +4499,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -4509,7 +4509,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -4519,7 +4519,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -4529,7 +4529,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -4539,7 +4539,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -4559,7 +4559,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -4569,7 +4569,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -4579,7 +4579,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -4589,7 +4589,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Livello",
@@ -4599,7 +4599,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -4619,7 +4619,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -4629,7 +4629,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -4639,7 +4639,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -4649,7 +4649,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -4659,7 +4659,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -4679,7 +4679,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -4689,7 +4689,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -4699,7 +4699,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -4709,7 +4709,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -4719,7 +4719,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -4739,7 +4739,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -4749,7 +4749,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -4759,7 +4759,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -4769,7 +4769,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -4779,7 +4779,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -4789,7 +4789,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Gold koleksiyonu",
@@ -4799,7 +4799,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2533
+    "v": 3166.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -4809,7 +4809,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 994
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4819,7 +4819,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 459
+    "v": 573.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4829,7 +4829,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 459
+    "v": 573.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4839,7 +4839,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1600
+    "v": 2000
    },
    {
     "b": "Gold koleksiyonu",
@@ -4849,7 +4849,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Saudi Ceramics",
@@ -4869,7 +4869,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -4879,7 +4879,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -4924,7 +4924,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -4933,7 +4933,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -5077,7 +5077,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -5233,7 +5233,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -5243,7 +5243,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -5253,7 +5253,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 926
+    "v": 1157.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5263,7 +5263,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 796
+    "v": 995
    },
    {
     "b": "Gold koleksiyonu",
@@ -5273,7 +5273,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 821
+    "v": 1026.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -5283,7 +5283,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 343
+    "v": 428.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5293,7 +5293,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 119
+    "v": 148.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5303,7 +5303,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 119
+    "v": 148.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5313,7 +5313,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Gold koleksiyonu",
@@ -5323,7 +5323,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Gold koleksiyonu",
@@ -5333,7 +5333,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 761
+    "v": 951.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -5343,7 +5343,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1642
+    "v": 2052.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5353,7 +5353,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -5363,7 +5363,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 278
+    "v": 347.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5373,7 +5373,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 151
+    "v": 188.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5383,7 +5383,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1007
+    "v": 1258.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5393,7 +5393,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Gold koleksiyonu",
@@ -5403,7 +5403,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 710
+    "v": 887.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5413,7 +5413,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 840
+    "v": 1050
    },
    {
     "b": "Gold koleksiyonu",
@@ -5423,7 +5423,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 994
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5433,7 +5433,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1170
+    "v": 1462.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5443,7 +5443,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 90
+    "v": 112.5
    },
    {
     "b": "Saudi Ceramics",
@@ -5519,7 +5519,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5529,7 +5529,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Livello",
@@ -5539,7 +5539,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -5559,7 +5559,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -5569,7 +5569,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -5579,7 +5579,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -5589,7 +5589,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -5599,7 +5599,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -5619,7 +5619,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -5629,7 +5629,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -5639,7 +5639,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -5649,7 +5649,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -5659,7 +5659,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -5679,7 +5679,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -5689,7 +5689,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -5699,7 +5699,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -5709,7 +5709,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -5719,7 +5719,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -5739,7 +5739,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -5749,7 +5749,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -5759,7 +5759,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -5769,7 +5769,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -5779,7 +5779,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -5799,7 +5799,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -5809,7 +5809,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -5819,7 +5819,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -5829,7 +5829,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -5839,7 +5839,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -5849,7 +5849,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5859,7 +5859,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2533
+    "v": 3166.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -5869,7 +5869,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 994
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5879,7 +5879,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Gold koleksiyonu",
@@ -5889,7 +5889,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5899,7 +5899,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 965
+    "v": 1206.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -5909,7 +5909,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Livello",
@@ -5919,7 +5919,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -5939,7 +5939,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -5949,7 +5949,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -5994,7 +5994,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -6003,7 +6003,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -6147,7 +6147,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -6305,7 +6305,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -6315,7 +6315,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6324,7 +6324,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6333,7 +6333,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6342,7 +6342,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 818
+    "v": 1022.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6351,7 +6351,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6360,7 +6360,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6369,7 +6369,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 210
+    "v": 262.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6378,7 +6378,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6387,7 +6387,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 770
+    "v": 962.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6396,7 +6396,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 864
+    "v": 1080
    },
    {
     "b": "Arel Interior",
@@ -6441,7 +6441,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6450,7 +6450,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6459,7 +6459,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 657
+    "v": 821.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6468,7 +6468,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6477,7 +6477,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6486,7 +6486,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1049
+    "v": 1311.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6495,7 +6495,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1360
+    "v": 1700
    },
    {
     "b": "Saudi Ceramics",
@@ -6515,7 +6515,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -6525,7 +6525,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -6555,7 +6555,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -6565,7 +6565,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -6575,7 +6575,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -6595,7 +6595,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -6605,7 +6605,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -6615,7 +6615,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -6635,7 +6635,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -6645,7 +6645,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -6655,7 +6655,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -6665,7 +6665,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Livello",
@@ -6675,7 +6675,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -6695,7 +6695,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -6705,7 +6705,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -6715,7 +6715,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -6725,7 +6725,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -6735,7 +6735,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -6755,7 +6755,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 919
+    "v": 1148.75
    },
    {
     "b": "Livello",
@@ -6765,7 +6765,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -6775,7 +6775,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -6785,7 +6785,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -6795,7 +6795,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -6815,7 +6815,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -6825,7 +6825,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -6835,7 +6835,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -6845,7 +6845,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -6855,7 +6855,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -6865,7 +6865,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6874,7 +6874,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 728
+    "v": 910
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6883,7 +6883,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1400
+    "v": 1750
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6892,7 +6892,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6901,7 +6901,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 780
+    "v": 975
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6910,7 +6910,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -6919,7 +6919,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Livello",
@@ -6929,7 +6929,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 408
+    "v": 510
    },
    {
     "b": "Livello",
@@ -6939,7 +6939,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Luva",
@@ -6949,7 +6949,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -6959,7 +6959,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -7004,7 +7004,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -7014,7 +7014,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -7158,7 +7158,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -7314,7 +7314,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -7324,7 +7324,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -7360,7 +7360,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7369,7 +7369,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7378,7 +7378,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 832
+    "v": 1040
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7387,7 +7387,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 695
+    "v": 868.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7396,7 +7396,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7405,7 +7405,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 210
+    "v": 262.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7414,7 +7414,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 657
+    "v": 821.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7423,7 +7423,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 770
+    "v": 962.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7432,7 +7432,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 856
+    "v": 1070
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7441,7 +7441,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 944
+    "v": 1180
    },
    {
     "b": "Saudi Ceramics",
@@ -7461,7 +7461,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -7490,7 +7490,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7499,7 +7499,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7508,7 +7508,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 657
+    "v": 821.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7517,7 +7517,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7526,7 +7526,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7535,7 +7535,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 770
+    "v": 962.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7544,7 +7544,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1360
+    "v": 1700
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7553,7 +7553,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 818
+    "v": 1022.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7562,7 +7562,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 210
+    "v": 262.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -7572,7 +7572,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -7582,7 +7582,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -7602,7 +7602,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -7612,7 +7612,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -7622,7 +7622,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -7632,7 +7632,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -7641,7 +7641,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -7650,7 +7650,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -7670,7 +7670,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -7680,7 +7680,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -7690,7 +7690,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -7699,7 +7699,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Livello",
@@ -7709,7 +7709,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -7729,7 +7729,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -7739,7 +7739,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -7749,7 +7749,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -7759,7 +7759,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -7769,7 +7769,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -7789,7 +7789,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -7799,7 +7799,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -7809,7 +7809,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -7819,7 +7819,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -7829,7 +7829,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -7848,7 +7848,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -7857,7 +7857,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -7867,7 +7867,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -7877,7 +7877,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -7886,7 +7886,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -7895,7 +7895,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7904,7 +7904,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1712
+    "v": 2140
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7913,7 +7913,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 680
+    "v": 850
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7922,7 +7922,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 695
+    "v": 868.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7931,7 +7931,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 695
+    "v": 868.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -7940,7 +7940,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 944
+    "v": 1180
    },
    {
     "b": "Gold koleksiyonu",
@@ -7950,7 +7950,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Saudi Ceramics",
@@ -7970,7 +7970,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -7980,7 +7980,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -8025,7 +8025,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -8035,7 +8035,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -8179,7 +8179,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -8335,7 +8335,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -8345,7 +8345,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8354,7 +8354,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8363,7 +8363,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8372,7 +8372,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 832
+    "v": 1040
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8381,7 +8381,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 695
+    "v": 868.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8390,7 +8390,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 695
+    "v": 868.75
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8399,7 +8399,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 210
+    "v": 262.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8408,7 +8408,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 944
+    "v": 1180
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8417,7 +8417,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 828
+    "v": 1035
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8426,7 +8426,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 770
+    "v": 962.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8435,7 +8435,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 2720
+    "v": 3400
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8444,7 +8444,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1102
+    "v": 1377.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8453,7 +8453,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8462,7 +8462,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 592
+    "v": 740
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8471,7 +8471,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 680
+    "v": 850
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8480,7 +8480,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8489,7 +8489,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 700
+    "v": 875
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8498,7 +8498,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1049
+    "v": 1311.25
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8507,7 +8507,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1184
+    "v": 1480
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8516,7 +8516,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 818
+    "v": 1022.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8525,7 +8525,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 210
+    "v": 262.5
    },
    {
     "b": "Saudi Ceramics",
@@ -8601,7 +8601,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -8611,7 +8611,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -8621,7 +8621,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -8641,7 +8641,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 545
+    "v": 681.25
    },
    {
     "b": "Livello",
@@ -8651,7 +8651,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 258
+    "v": 322.5
    },
    {
     "b": "Livello",
@@ -8661,7 +8661,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 544
+    "v": 680
    },
    {
     "b": "Livello",
@@ -8671,7 +8671,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 71
+    "v": 88.75
    },
    {
     "b": "Livello",
@@ -8681,7 +8681,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -8701,7 +8701,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 712.5
    },
    {
     "b": "Livello",
@@ -8711,7 +8711,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 342
+    "v": 427.5
    },
    {
     "b": "Livello",
@@ -8721,7 +8721,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 455
+    "v": 568.75
    },
    {
     "b": "Livello",
@@ -8731,7 +8731,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -8741,7 +8741,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 108
+    "v": 135
    },
    {
     "b": "Saudi Ceramics",
@@ -8761,7 +8761,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 601
+    "v": 751.25
    },
    {
     "b": "Livello",
@@ -8771,7 +8771,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 268
+    "v": 335
    },
    {
     "b": "Livello",
@@ -8781,7 +8781,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 456
+    "v": 570
    },
    {
     "b": "Livello",
@@ -8791,7 +8791,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 86
+    "v": 107.5
    },
    {
     "b": "Livello",
@@ -8801,7 +8801,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -8821,7 +8821,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 719
+    "v": 898.75
    },
    {
     "b": "Livello",
@@ -8831,7 +8831,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 494
+    "v": 617.5
    },
    {
     "b": "Livello",
@@ -8841,7 +8841,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 531
+    "v": 663.75
    },
    {
     "b": "Livello",
@@ -8851,7 +8851,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112
+    "v": 140
    },
    {
     "b": "Livello",
@@ -8861,7 +8861,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 217
+    "v": 271.25
    },
    {
     "b": "Saudi Ceramics",
@@ -8881,7 +8881,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -8890,7 +8890,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -8900,7 +8900,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -8910,7 +8910,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -8919,7 +8919,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -8928,7 +8928,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8937,7 +8937,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1712
+    "v": 2140
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8946,7 +8946,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 680
+    "v": 850
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8955,7 +8955,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 340
+    "v": 425
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8964,7 +8964,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 340
+    "v": 425
    },
    {
     "b": "Platinum koleksiyonu",
@@ -8973,7 +8973,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 944
+    "v": 1180
    },
    {
     "b": "Gold koleksiyonu",
@@ -8983,7 +8983,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -8992,7 +8992,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -9012,7 +9012,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -9022,7 +9022,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -9067,7 +9067,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -9077,7 +9077,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -9221,7 +9221,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -9379,7 +9379,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -9389,7 +9389,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9398,7 +9398,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1240
+    "v": 1550
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9407,7 +9407,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1014
+    "v": 1267.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9416,7 +9416,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1176
+    "v": 1470
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9425,7 +9425,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 681
+    "v": 851.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9434,7 +9434,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 366
+    "v": 457.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9443,7 +9443,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 442
+    "v": 552.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9452,7 +9452,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9461,7 +9461,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 733
+    "v": 916.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9470,7 +9470,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3287
+    "v": 4108.75
    },
    {
     "b": "Arel Interior",
@@ -9515,7 +9515,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 783
+    "v": 978.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9524,7 +9524,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9533,7 +9533,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9542,7 +9542,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 956
+    "v": 1195
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9551,7 +9551,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 956
+    "v": 1195
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9560,7 +9560,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1091
+    "v": 1363.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9569,7 +9569,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 2092
+    "v": 2615
    },
    {
     "b": "Saudi Ceramics",
@@ -9589,7 +9589,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -9599,7 +9599,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -9629,7 +9629,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -9639,7 +9639,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -9649,7 +9649,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -9668,7 +9668,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1260
+    "v": 1575
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9677,7 +9677,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 823
+    "v": 1028.75
    },
    {
     "b": "Livello",
@@ -9687,7 +9687,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -9706,7 +9706,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1260
+    "v": 1575
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9715,7 +9715,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 823
+    "v": 1028.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9724,7 +9724,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Livello",
@@ -9734,7 +9734,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9743,7 +9743,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 398
+    "v": 497.5
    },
    {
     "b": "Saudi Ceramics",
@@ -9762,7 +9762,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1260
+    "v": 1575
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9771,7 +9771,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 823
+    "v": 1028.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9780,7 +9780,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9789,7 +9789,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 412
+    "v": 515
    },
    {
     "b": "Livello",
@@ -9799,7 +9799,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -9818,7 +9818,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1471
+    "v": 1838.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9827,7 +9827,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 971
+    "v": 1213.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9836,7 +9836,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9845,7 +9845,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 522
+    "v": 652.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9854,7 +9854,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Saudi Ceramics",
@@ -9874,7 +9874,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -9884,7 +9884,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -9894,7 +9894,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -9904,7 +9904,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -9914,7 +9914,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -9924,7 +9924,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9933,7 +9933,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 409
+    "v": 511.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9942,7 +9942,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2924
+    "v": 3655
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9951,7 +9951,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1462
+    "v": 1827.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9960,7 +9960,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9969,7 +9969,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 653
+    "v": 816.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -9979,7 +9979,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 375
+    "v": 468.75
    },
    {
     "b": "Livello",
@@ -9989,7 +9989,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Livello",
@@ -9999,7 +9999,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 718
+    "v": 897.5
    },
    {
     "b": "Luva",
@@ -10009,7 +10009,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -10019,7 +10019,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -10064,7 +10064,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -10074,7 +10074,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -10218,7 +10218,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -10374,7 +10374,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -10384,7 +10384,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -10420,7 +10420,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1684
+    "v": 2105
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10429,7 +10429,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1684
+    "v": 2105
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10438,7 +10438,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1306
+    "v": 1632.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10447,7 +10447,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10456,7 +10456,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10465,7 +10465,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 497
+    "v": 621.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10474,7 +10474,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 423
+    "v": 528.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10483,7 +10483,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 496
+    "v": 620
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10492,7 +10492,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3395
+    "v": 4243.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10501,7 +10501,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 608
+    "v": 760
    },
    {
     "b": "Saudi Ceramics",
@@ -10521,7 +10521,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -10550,7 +10550,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 784
+    "v": 980
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10559,7 +10559,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10568,7 +10568,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 784
+    "v": 980
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10577,7 +10577,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 955
+    "v": 1193.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10586,7 +10586,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 955
+    "v": 1193.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10595,7 +10595,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1090
+    "v": 1362.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10604,7 +10604,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 2298
+    "v": 2872.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10613,7 +10613,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1176
+    "v": 1470
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10622,7 +10622,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 515
+    "v": 643.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -10632,7 +10632,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -10642,7 +10642,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -10661,7 +10661,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10670,7 +10670,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10679,7 +10679,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 741
+    "v": 926.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10688,7 +10688,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 291
+    "v": 363.75
    },
    {
     "b": "Livello",
@@ -10697,7 +10697,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -10706,7 +10706,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -10725,7 +10725,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10734,7 +10734,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10743,7 +10743,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 741
+    "v": 926.25
    },
    {
     "b": "Livello",
@@ -10752,7 +10752,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10761,7 +10761,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 291
+    "v": 363.75
    },
    {
     "b": "Saudi Ceramics",
@@ -10780,7 +10780,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10789,7 +10789,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10798,7 +10798,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 741
+    "v": 926.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10807,7 +10807,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 291
+    "v": 363.75
    },
    {
     "b": "Livello",
@@ -10817,7 +10817,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -10836,7 +10836,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10845,7 +10845,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10854,7 +10854,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 741
+    "v": 926.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10863,7 +10863,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 291
+    "v": 363.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10872,7 +10872,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Saudi Ceramics",
@@ -10891,7 +10891,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -10900,7 +10900,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -10910,7 +10910,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -10920,7 +10920,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -10929,7 +10929,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -10938,7 +10938,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10947,7 +10947,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2731
+    "v": 3413.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10956,7 +10956,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 848
+    "v": 1060
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10965,7 +10965,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 327
+    "v": 408.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10974,7 +10974,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 652
+    "v": 815
    },
    {
     "b": "Pearl koleksiyonu",
@@ -10983,7 +10983,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3262
+    "v": 4077.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -10993,7 +10993,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Saudi Ceramics",
@@ -11013,7 +11013,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -11023,7 +11023,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -11068,7 +11068,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -11078,7 +11078,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -11222,7 +11222,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -11378,7 +11378,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -11388,7 +11388,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11397,7 +11397,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1332
+    "v": 1665
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11406,7 +11406,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1273
+    "v": 1591.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11415,7 +11415,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1306
+    "v": 1632.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11424,7 +11424,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11433,7 +11433,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 784
+    "v": 980
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11442,7 +11442,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11451,7 +11451,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2481
+    "v": 3101.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11460,7 +11460,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11469,7 +11469,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1610
+    "v": 2012.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11478,7 +11478,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 4178
+    "v": 5222.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11487,7 +11487,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2479
+    "v": 3098.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11496,7 +11496,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 784
+    "v": 980
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11505,7 +11505,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11514,7 +11514,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11523,7 +11523,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 955
+    "v": 1193.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11532,7 +11532,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 955
+    "v": 1193.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11541,7 +11541,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1198
+    "v": 1497.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11550,7 +11550,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3648
+    "v": 4560
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11559,7 +11559,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1176
+    "v": 1470
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11568,7 +11568,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -11644,7 +11644,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -11654,7 +11654,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -11664,7 +11664,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -11683,7 +11683,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11692,7 +11692,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11701,7 +11701,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11710,7 +11710,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 292
+    "v": 365
    },
    {
     "b": "Livello",
@@ -11720,7 +11720,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -11739,7 +11739,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11748,7 +11748,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11757,7 +11757,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Livello",
@@ -11767,7 +11767,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11776,7 +11776,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 292
+    "v": 365
    },
    {
     "b": "Saudi Ceramics",
@@ -11795,7 +11795,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11804,7 +11804,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11813,7 +11813,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11822,7 +11822,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 292
+    "v": 365
    },
    {
     "b": "Livello",
@@ -11832,7 +11832,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -11851,7 +11851,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1347
+    "v": 1683.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11860,7 +11860,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 917
+    "v": 1146.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11869,7 +11869,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 730
+    "v": 912.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11878,7 +11878,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 399
+    "v": 498.75
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11887,7 +11887,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 480
+    "v": 600
    },
    {
     "b": "Saudi Ceramics",
@@ -11907,7 +11907,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -11916,7 +11916,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -11926,7 +11926,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -11936,7 +11936,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -11945,7 +11945,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -11954,7 +11954,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11963,7 +11963,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2792
+    "v": 3490
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11972,7 +11972,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 849
+    "v": 1061.25
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11981,7 +11981,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 418
+    "v": 522.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11990,7 +11990,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 522
+    "v": 652.5
    },
    {
     "b": "Pearl koleksiyonu",
@@ -11999,7 +11999,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3263
+    "v": 4078.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -12009,7 +12009,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -12018,7 +12018,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -12038,7 +12038,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -12048,7 +12048,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -12093,7 +12093,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -12103,7 +12103,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -12247,7 +12247,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -15602,7 +15602,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -15612,7 +15612,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15621,7 +15621,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1220
+    "v": 1525
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15630,7 +15630,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1220
+    "v": 1525
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15639,7 +15639,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1058
+    "v": 1322.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15648,7 +15648,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 761
+    "v": 951.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15657,7 +15657,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 761
+    "v": 951.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15666,7 +15666,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 465
+    "v": 581.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15675,7 +15675,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 985
+    "v": 1231.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15684,7 +15684,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 793
+    "v": 991.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15693,7 +15693,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1361
+    "v": 1701.25
    },
    {
     "b": "Arel Interior",
@@ -15738,7 +15738,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 738
+    "v": 922.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15747,7 +15747,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 233
+    "v": 291.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15756,7 +15756,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 985
+    "v": 1231.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15765,7 +15765,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1708
+    "v": 2135
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15774,7 +15774,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1708
+    "v": 2135
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15783,7 +15783,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1094
+    "v": 1367.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15792,7 +15792,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3046
+    "v": 3807.5
    },
    {
     "b": "Saudi Ceramics",
@@ -15812,7 +15812,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -15822,7 +15822,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -15852,7 +15852,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -15862,7 +15862,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -15872,7 +15872,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -15891,7 +15891,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1912
+    "v": 2390
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15900,7 +15900,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1404
+    "v": 1755
    },
    {
     "b": "Livello",
@@ -15910,7 +15910,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -15929,7 +15929,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1827
+    "v": 2283.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15938,7 +15938,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1827
+    "v": 2283.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15947,7 +15947,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 878
+    "v": 1097.5
    },
    {
     "b": "Livello",
@@ -15957,7 +15957,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15966,7 +15966,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 131
+    "v": 163.75
    },
    {
     "b": "Saudi Ceramics",
@@ -15985,7 +15985,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1827
+    "v": 2283.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -15994,7 +15994,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1827
+    "v": 2283.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16003,7 +16003,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 878
+    "v": 1097.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16012,7 +16012,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 131
+    "v": 163.75
    },
    {
     "b": "Livello",
@@ -16022,7 +16022,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -16041,7 +16041,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3830
+    "v": 4787.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16050,7 +16050,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1827
+    "v": 2283.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16059,7 +16059,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 878
+    "v": 1097.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16068,7 +16068,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 131
+    "v": 163.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16077,7 +16077,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 360
+    "v": 450
    },
    {
     "b": "Saudi Ceramics",
@@ -16097,7 +16097,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -16107,7 +16107,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -16117,7 +16117,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -16127,7 +16127,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -16137,7 +16137,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -16147,7 +16147,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16156,7 +16156,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1057
+    "v": 1321.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16165,7 +16165,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 3416
+    "v": 4270
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16174,7 +16174,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1708
+    "v": 2135
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16183,7 +16183,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1044
+    "v": 1305
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16192,7 +16192,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 738
+    "v": 922.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16202,7 +16202,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 367
+    "v": 458.75
    },
    {
     "b": "Livello",
@@ -16212,7 +16212,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Livello",
@@ -16222,7 +16222,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 718
+    "v": 897.5
    },
    {
     "b": "Luva",
@@ -16232,7 +16232,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -16242,7 +16242,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -16287,7 +16287,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -16297,7 +16297,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -16441,7 +16441,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -16597,7 +16597,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -16607,7 +16607,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -16643,7 +16643,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2721
+    "v": 3401.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16652,7 +16652,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2760
+    "v": 3450
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16661,7 +16661,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1964
+    "v": 2455
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16670,7 +16670,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 968
+    "v": 1210
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16679,7 +16679,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 968
+    "v": 1210
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16688,7 +16688,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 698
+    "v": 872.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16697,7 +16697,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1394
+    "v": 1742.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16706,7 +16706,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1281
+    "v": 1601.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16715,7 +16715,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3190
+    "v": 3987.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16724,7 +16724,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1440
+    "v": 1800
    },
    {
     "b": "Saudi Ceramics",
@@ -16744,7 +16744,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -16773,7 +16773,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1423
+    "v": 1778.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16782,7 +16782,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 698
+    "v": 872.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16791,7 +16791,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1366
+    "v": 1707.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16800,7 +16800,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2892
+    "v": 3615
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16809,7 +16809,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2892
+    "v": 3615
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16818,7 +16818,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16827,7 +16827,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3074
+    "v": 3842.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16836,7 +16836,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1622
+    "v": 2027.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16845,7 +16845,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 698
+    "v": 872.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -16855,7 +16855,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -16865,7 +16865,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -16884,7 +16884,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2660
+    "v": 3325
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16893,7 +16893,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1620
+    "v": 2025
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16902,7 +16902,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1849
+    "v": 2311.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16911,7 +16911,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 399
+    "v": 498.75
    },
    {
     "b": "Livello",
@@ -16920,7 +16920,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -16929,7 +16929,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -16948,7 +16948,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2127
+    "v": 2658.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16957,7 +16957,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1296
+    "v": 1620
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16966,7 +16966,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1664
+    "v": 2080
    },
    {
     "b": "Livello",
@@ -16975,7 +16975,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -16984,7 +16984,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 399
+    "v": 498.75
    },
    {
     "b": "Saudi Ceramics",
@@ -17003,7 +17003,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2668
+    "v": 3335
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17012,7 +17012,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1424
+    "v": 1780
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17021,7 +17021,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1749
+    "v": 2186.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17030,7 +17030,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 384
+    "v": 480
    },
    {
     "b": "Livello",
@@ -17040,7 +17040,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -17059,7 +17059,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1793
+    "v": 2241.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17068,7 +17068,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1530
+    "v": 1912.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17077,7 +17077,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1749
+    "v": 2186.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17086,7 +17086,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 384
+    "v": 480
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17095,7 +17095,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1506
+    "v": 1882.5
    },
    {
     "b": "Saudi Ceramics",
@@ -17114,7 +17114,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -17123,7 +17123,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -17133,7 +17133,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -17143,7 +17143,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -17152,7 +17152,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -17161,7 +17161,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17170,7 +17170,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 3452
+    "v": 4315
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17179,7 +17179,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1194
+    "v": 1492.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17188,7 +17188,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17197,7 +17197,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 751
+    "v": 938.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17206,7 +17206,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1440
+    "v": 1800
    },
    {
     "b": "Gold koleksiyonu",
@@ -17216,7 +17216,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Saudi Ceramics",
@@ -17236,7 +17236,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -17246,7 +17246,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -17291,7 +17291,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -17301,7 +17301,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -17445,7 +17445,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -17601,7 +17601,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -17611,7 +17611,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17620,7 +17620,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2090
+    "v": 2612.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17629,7 +17629,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2090
+    "v": 2612.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17638,7 +17638,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2075
+    "v": 2593.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17647,7 +17647,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1067
+    "v": 1333.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17656,7 +17656,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 786
+    "v": 982.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17665,7 +17665,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 393
+    "v": 491.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17674,7 +17674,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1778
+    "v": 2222.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17683,7 +17683,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1393
+    "v": 1741.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17692,7 +17692,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1423
+    "v": 1778.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17701,7 +17701,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3564
+    "v": 4455
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17710,7 +17710,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1800
+    "v": 2250
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17719,7 +17719,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1232
+    "v": 1540
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17728,7 +17728,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 527
+    "v": 658.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17737,7 +17737,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1873
+    "v": 2341.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17746,7 +17746,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1998
+    "v": 2497.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17755,7 +17755,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1998
+    "v": 2497.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17764,7 +17764,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1536
+    "v": 1920
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17773,7 +17773,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3190
+    "v": 3987.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17782,7 +17782,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2561
+    "v": 3201.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17791,7 +17791,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 527
+    "v": 658.75
    },
    {
     "b": "Saudi Ceramics",
@@ -17867,7 +17867,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -17877,7 +17877,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -17887,7 +17887,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -17906,7 +17906,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2668
+    "v": 3335
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17915,7 +17915,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1440
+    "v": 1800
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17924,7 +17924,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2119
+    "v": 2648.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17933,7 +17933,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 399
+    "v": 498.75
    },
    {
     "b": "Livello",
@@ -17943,7 +17943,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -17962,7 +17962,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1911
+    "v": 2388.75
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17971,7 +17971,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1402
+    "v": 1752.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17980,7 +17980,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1803
+    "v": 2253.75
    },
    {
     "b": "Livello",
@@ -17990,7 +17990,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -17999,7 +17999,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 405
+    "v": 506.25
    },
    {
     "b": "Saudi Ceramics",
@@ -18018,7 +18018,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1793
+    "v": 2241.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18027,7 +18027,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1260
+    "v": 1575
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18036,7 +18036,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1749
+    "v": 2186.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18045,7 +18045,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 405
+    "v": 506.25
    },
    {
     "b": "Livello",
@@ -18055,7 +18055,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -18074,7 +18074,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2561
+    "v": 3201.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18083,7 +18083,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 3240
+    "v": 4050
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18092,7 +18092,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1710
+    "v": 2137.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18101,7 +18101,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 405
+    "v": 506.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18110,7 +18110,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 720
+    "v": 900
    },
    {
     "b": "Saudi Ceramics",
@@ -18130,7 +18130,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -18139,7 +18139,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -18149,7 +18149,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -18159,7 +18159,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -18168,7 +18168,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -18177,7 +18177,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18186,7 +18186,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2533
+    "v": 3166.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18195,7 +18195,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 913
+    "v": 1141.25
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18204,7 +18204,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 540
+    "v": 675
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18213,7 +18213,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Diamond koleksiyonu",
@@ -18222,7 +18222,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1440
+    "v": 1800
    },
    {
     "b": "Gold koleksiyonu",
@@ -18232,7 +18232,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -18241,7 +18241,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -18261,7 +18261,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -18271,7 +18271,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -18316,7 +18316,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -18326,7 +18326,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -18470,7 +18470,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -18628,7 +18628,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -18638,7 +18638,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -18647,7 +18647,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1411
+    "v": 1763.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18656,7 +18656,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1411
+    "v": 1763.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18665,7 +18665,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2560
+    "v": 3200
    },
    {
     "b": "Royal koleksiyonu",
@@ -18674,7 +18674,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Royal koleksiyonu",
@@ -18683,7 +18683,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1224
+    "v": 1530
    },
    {
     "b": "Royal koleksiyonu",
@@ -18692,7 +18692,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 621
+    "v": 776.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -18701,7 +18701,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2873
+    "v": 3591.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -18710,7 +18710,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3051
+    "v": 3813.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18719,7 +18719,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3280
+    "v": 4100
    },
    {
     "b": "Arel Interior",
@@ -18764,7 +18764,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Royal koleksiyonu",
@@ -18773,7 +18773,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1024
+    "v": 1280
    },
    {
     "b": "Royal koleksiyonu",
@@ -18782,7 +18782,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -18791,7 +18791,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1411
+    "v": 1763.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18800,7 +18800,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1411
+    "v": 1763.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18809,7 +18809,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2754
+    "v": 3442.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -18818,7 +18818,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3040
+    "v": 3800
    },
    {
     "b": "Saudi Ceramics",
@@ -18838,7 +18838,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -18848,7 +18848,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 829
+    "v": 1036.25
    },
    {
     "b": "Saudi Ceramics",
@@ -18878,7 +18878,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -18888,7 +18888,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -18898,7 +18898,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -18917,7 +18917,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1751
+    "v": 2188.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18926,7 +18926,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Livello",
@@ -18936,7 +18936,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1286
+    "v": 1607.5
    },
    {
     "b": "Saudi Ceramics",
@@ -18955,7 +18955,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2975
+    "v": 3718.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -18964,7 +18964,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1734
+    "v": 2167.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -18973,7 +18973,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2329
+    "v": 2911.25
    },
    {
     "b": "Livello",
@@ -18983,7 +18983,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 986
+    "v": 1232.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -18992,7 +18992,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 323
+    "v": 403.75
    },
    {
     "b": "Saudi Ceramics",
@@ -19011,7 +19011,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1751
+    "v": 2188.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19020,7 +19020,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -19029,7 +19029,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2329
+    "v": 2911.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -19038,7 +19038,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 476
+    "v": 595
    },
    {
     "b": "Livello",
@@ -19048,7 +19048,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -19067,7 +19067,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2099
+    "v": 2623.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19076,7 +19076,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2800
+    "v": 3500
    },
    {
     "b": "Royal koleksiyonu",
@@ -19085,7 +19085,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2439
+    "v": 3048.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19094,7 +19094,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 323
+    "v": 403.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19103,7 +19103,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 476
+    "v": 595
    },
    {
     "b": "Saudi Ceramics",
@@ -19123,7 +19123,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -19133,7 +19133,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 847
+    "v": 1058.75
    },
    {
     "b": "Luva",
@@ -19143,7 +19143,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -19153,7 +19153,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -19163,7 +19163,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 337
+    "v": 421.25
    },
    {
     "b": "Luva",
@@ -19173,7 +19173,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 760
+    "v": 950
    },
    {
     "b": "Royal koleksiyonu",
@@ -19182,7 +19182,7 @@
     "n": "Hallway Console table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2176
+    "v": 2720
    },
    {
     "b": "Royal koleksiyonu",
@@ -19191,7 +19191,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2822
+    "v": 3527.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -19200,7 +19200,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1411
+    "v": 1763.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19209,7 +19209,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -19218,7 +19218,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Royal koleksiyonu",
@@ -19228,7 +19228,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 408
+    "v": 510
    },
    {
     "b": "Livello",
@@ -19238,7 +19238,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 240
+    "v": 300
    },
    {
     "b": "Livello",
@@ -19248,7 +19248,7 @@
     "n": "Storage Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 718
+    "v": 897.5
    },
    {
     "b": "Luva",
@@ -19258,7 +19258,7 @@
     "n": "Terrace Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 623
+    "v": 778.75
    },
    {
     "b": "Luva",
@@ -19268,7 +19268,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 768
+    "v": 960
    },
    {
     "b": "Penelope",
@@ -19313,7 +19313,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -19323,7 +19323,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -19467,7 +19467,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -19623,7 +19623,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -19633,7 +19633,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Arel Interior",
@@ -19669,7 +19669,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2592
+    "v": 3240
    },
    {
     "b": "Royal koleksiyonu",
@@ -19678,7 +19678,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2392
+    "v": 2990
    },
    {
     "b": "Royal koleksiyonu",
@@ -19687,7 +19687,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1156
+    "v": 1445
    },
    {
     "b": "Royal koleksiyonu",
@@ -19696,7 +19696,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1054
+    "v": 1317.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -19705,7 +19705,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1054
+    "v": 1317.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -19714,7 +19714,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 799
+    "v": 998.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19723,7 +19723,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1419
+    "v": 1773.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19732,7 +19732,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2099
+    "v": 2623.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19741,7 +19741,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 4080
+    "v": 5100
    },
    {
     "b": "Royal koleksiyonu",
@@ -19750,7 +19750,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 4063
+    "v": 5078.75
    },
    {
     "b": "Saudi Ceramics",
@@ -19770,7 +19770,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Saudi Ceramics",
@@ -19799,7 +19799,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 671
+    "v": 838.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19808,7 +19808,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 705
+    "v": 881.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -19817,7 +19817,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1326
+    "v": 1657.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -19826,7 +19826,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2099
+    "v": 2623.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19835,7 +19835,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2099
+    "v": 2623.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19844,7 +19844,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2236
+    "v": 2795
    },
    {
     "b": "Royal koleksiyonu",
@@ -19853,7 +19853,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3520
+    "v": 4400
    },
    {
     "b": "Royal koleksiyonu",
@@ -19862,7 +19862,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1580
+    "v": 1975
    },
    {
     "b": "Royal koleksiyonu",
@@ -19871,7 +19871,7 @@
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 476
+    "v": 595
    },
    {
     "b": "Royal koleksiyonu",
@@ -19880,7 +19880,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -19890,7 +19890,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -19909,7 +19909,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2558
+    "v": 3197.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -19918,7 +19918,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1428
+    "v": 1785
    },
    {
     "b": "Royal koleksiyonu",
@@ -19927,7 +19927,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1820
+    "v": 2275
    },
    {
     "b": "Royal koleksiyonu",
@@ -19936,7 +19936,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 323
+    "v": 403.75
    },
    {
     "b": "Livello",
@@ -19945,7 +19945,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Livello",
@@ -19954,7 +19954,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 397
+    "v": 496.25
    },
    {
     "b": "Saudi Ceramics",
@@ -19973,7 +19973,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1751
+    "v": 2188.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -19982,7 +19982,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -19991,7 +19991,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2482
+    "v": 3102.5
    },
    {
     "b": "Livello",
@@ -20000,7 +20000,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1267
+    "v": 1583.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20009,7 +20009,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 476
+    "v": 595
    },
    {
     "b": "Saudi Ceramics",
@@ -20028,7 +20028,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2252
+    "v": 2815
    },
    {
     "b": "Royal koleksiyonu",
@@ -20037,7 +20037,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -20046,7 +20046,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20055,7 +20055,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 561
+    "v": 701.25
    },
    {
     "b": "Livello",
@@ -20065,7 +20065,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -20084,7 +20084,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1751
+    "v": 2188.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20093,7 +20093,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -20102,7 +20102,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2482
+    "v": 3102.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20111,7 +20111,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 476
+    "v": 595
    },
    {
     "b": "Royal koleksiyonu",
@@ -20120,7 +20120,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Saudi Ceramics",
@@ -20139,7 +20139,7 @@
     "n": "Walk-In Closet",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Livello",
@@ -20148,7 +20148,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
-    "v": 1850
+    "v": 2312.5
    },
    {
     "b": "Luva",
@@ -20158,7 +20158,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -20168,7 +20168,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 490
+    "v": 612.5
    },
    {
     "b": "Luva",
@@ -20177,7 +20177,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Luva",
@@ -20186,7 +20186,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Royal koleksiyonu",
@@ -20195,7 +20195,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 5400
+    "v": 6750
    },
    {
     "b": "Royal koleksiyonu",
@@ -20204,7 +20204,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1419
+    "v": 1773.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20213,7 +20213,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1054
+    "v": 1317.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20222,7 +20222,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 799
+    "v": 998.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20231,7 +20231,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 4063
+    "v": 5078.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -20241,7 +20241,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Saudi Ceramics",
@@ -20261,7 +20261,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -20271,7 +20271,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 980
+    "v": 1225
    },
    {
     "b": "Penelope",
@@ -20316,7 +20316,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -20326,7 +20326,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -20470,7 +20470,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
@@ -20626,7 +20626,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -20636,7 +20636,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20645,7 +20645,7 @@
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2700
+    "v": 3375
    },
    {
     "b": "Royal koleksiyonu",
@@ -20654,7 +20654,7 @@
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2099
+    "v": 2623.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20663,7 +20663,7 @@
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2312
+    "v": 2890
    },
    {
     "b": "Royal koleksiyonu",
@@ -20672,7 +20672,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1224
+    "v": 1530
    },
    {
     "b": "Royal koleksiyonu",
@@ -20681,7 +20681,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Royal koleksiyonu",
@@ -20690,7 +20690,7 @@
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 799
+    "v": 998.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20699,7 +20699,7 @@
     "n": "Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2329
+    "v": 2911.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20708,7 +20708,7 @@
     "n": "Living Room TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1394
+    "v": 1742.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20717,7 +20717,7 @@
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2754
+    "v": 3442.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20726,7 +20726,7 @@
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3040
+    "v": 3800
    },
    {
     "b": "Royal koleksiyonu",
@@ -20735,7 +20735,7 @@
     "n": "Living Room Bookcase",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3961
+    "v": 4951.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20744,7 +20744,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1224
+    "v": 1530
    },
    {
     "b": "Royal koleksiyonu",
@@ -20753,7 +20753,7 @@
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 756
+    "v": 945
    },
    {
     "b": "Royal koleksiyonu",
@@ -20762,7 +20762,7 @@
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2873
+    "v": 3591.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20771,7 +20771,7 @@
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1800
+    "v": 2250
    },
    {
     "b": "Royal koleksiyonu",
@@ -20780,7 +20780,7 @@
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1800
+    "v": 2250
    },
    {
     "b": "Royal koleksiyonu",
@@ -20789,7 +20789,7 @@
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3051
+    "v": 3813.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20798,7 +20798,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 3264
+    "v": 4080
    },
    {
     "b": "Royal koleksiyonu",
@@ -20807,7 +20807,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2312
+    "v": 2890
    },
    {
     "b": "Royal koleksiyonu",
@@ -20816,7 +20816,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 799
+    "v": 998.75
    },
    {
     "b": "Saudi Ceramics",
@@ -20892,7 +20892,7 @@
     "n": "Guest Entrance Coat Rack",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -20902,7 +20902,7 @@
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -20912,7 +20912,7 @@
     "n": "Driver Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -20931,7 +20931,7 @@
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2795
+    "v": 3493.75
    },
    {
     "b": "Royal koleksiyonu",
@@ -20940,7 +20940,7 @@
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1734
+    "v": 2167.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20949,7 +20949,7 @@
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -20958,7 +20958,7 @@
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 552
+    "v": 690
    },
    {
     "b": "Livello",
@@ -20968,7 +20968,7 @@
     "n": "Bedroom-1 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Saudi Ceramics",
@@ -20987,7 +20987,7 @@
     "n": "Bedroom-2 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1750
+    "v": 2187.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -20996,7 +20996,7 @@
     "n": "Bedroom-2 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -21005,7 +21005,7 @@
     "n": "Bedroom-2 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2500
+    "v": 3125
    },
    {
     "b": "Livello",
@@ -21015,7 +21015,7 @@
     "n": "Bedroom-2 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 1089
+    "v": 1361.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -21024,7 +21024,7 @@
     "n": "Bedroom-2 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Saudi Ceramics",
@@ -21043,7 +21043,7 @@
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2584
+    "v": 3230
    },
    {
     "b": "Royal koleksiyonu",
@@ -21052,7 +21052,7 @@
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2040
+    "v": 2550
    },
    {
     "b": "Royal koleksiyonu",
@@ -21061,7 +21061,7 @@
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -21070,7 +21070,7 @@
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 552
+    "v": 690
    },
    {
     "b": "Livello",
@@ -21080,7 +21080,7 @@
     "n": "Bedroom-3 Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 788
+    "v": 985
    },
    {
     "b": "Saudi Ceramics",
@@ -21099,7 +21099,7 @@
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1750
+    "v": 2187.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -21108,7 +21108,7 @@
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1700
+    "v": 2125
    },
    {
     "b": "Royal koleksiyonu",
@@ -21117,7 +21117,7 @@
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2500
+    "v": 3125
    },
    {
     "b": "Royal koleksiyonu",
@@ -21126,7 +21126,7 @@
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 500
+    "v": 625
    },
    {
     "b": "Royal koleksiyonu",
@@ -21135,7 +21135,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 600
+    "v": 750
    },
    {
     "b": "Saudi Ceramics",
@@ -21155,7 +21155,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 963
+    "v": 1203.75
    },
    {
     "b": "Livello",
@@ -21164,7 +21164,7 @@
     "n": "Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 630
+    "v": 787.5
    },
    {
     "b": "Luva",
@@ -21174,7 +21174,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -21184,7 +21184,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Luva",
@@ -21193,7 +21193,7 @@
     "n": "Rawashin Chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 691
+    "v": 863.75
    },
    {
     "b": "Luva",
@@ -21202,7 +21202,7 @@
     "n": "Rawashin Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 338
+    "v": 422.5
    },
    {
     "b": "Royal koleksiyonu",
@@ -21211,7 +21211,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 5400
+    "v": 6750
    },
    {
     "b": "Royal koleksiyonu",
@@ -21220,7 +21220,7 @@
     "n": "Family Living TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2465
+    "v": 3081.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -21229,7 +21229,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1224
+    "v": 1530
    },
    {
     "b": "Royal koleksiyonu",
@@ -21238,7 +21238,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 765
+    "v": 956.25
    },
    {
     "b": "Royal koleksiyonu",
@@ -21247,7 +21247,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 3000
+    "v": 3750
    },
    {
     "b": "Gold koleksiyonu",
@@ -21257,7 +21257,7 @@
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 801
+    "v": 1001.25
    },
    {
     "b": "Livello",
@@ -21266,7 +21266,7 @@
     "n": "Maid Room Wardrobe",
     "q": 1,
     "t": "Fixed",
-    "v": 514
+    "v": 642.5
    },
    {
     "b": "Saudi Ceramics",
@@ -21286,7 +21286,7 @@
     "n": "Terrace Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 316
+    "v": 395
    },
    {
     "b": "Luva",
@@ -21296,7 +21296,7 @@
     "n": "Terrace Outdoor lounge chair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 981
+    "v": 1226.25
    },
    {
     "b": "Penelope",
@@ -21341,7 +21341,7 @@
     "n": "Curtains Package (Blackout + Sheer)",
     "q": 1,
     "t": "Ev Dekorasyon",
-    "v": 780
+    "v": 1560
    },
    {
     "b": "Silver koleksiyonu",
@@ -21351,7 +21351,7 @@
     "n": "",
     "q": 6,
     "t": "Ev Dekorasyon",
-    "v": 900
+    "v": 1125
    },
    {
     "b": "TEKA",
@@ -21495,7 +21495,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 9980
+    "v": 12475
    },
    {
     "b": "Volly Smart",
