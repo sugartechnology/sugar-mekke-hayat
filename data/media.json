@@ -2168,35 +2168,6 @@
   "id": "ijjhemde7ly4wqtaeo69"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-1.webp",
-  "brand": "Silver",
-  "createdAt": "2026-10-29T12:21:53.092Z",
-  "fileName": "TypeB_bellona_livinroomkarşı.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793276513092,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-1.webp",
-  "title": "Villa B · Salon · Silver · Bellona · 1",
-  "villa": "Villa B",
-  "id": "qqngfekyduurabnjsq4k"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-2.webp",
-  "brand": "Silver",
-  "createdAt": "2026-10-29T12:21:56.582Z",
-  "fileName": "TypeB_bellona_livingroom.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793276516582,
-  "room": "Salon",
-  "roomFirst": true,
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-2.webp",
-  "title": "Villa B · Salon · Silver · Bellona · 2",
-  "villa": "Villa B",
-  "id": "9jaijfgt09k0s6lca7an"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_salon_inci-2.webp",
   "brand": "Platinum",
   "createdAt": "2026-10-29T12:22:28.040Z",
@@ -2252,48 +2223,6 @@
   "title": "Villa A · Meclis · Gold · Sardunya · 2",
   "villa": "Villa A",
   "id": "fefax1k12at4kxkrhtmj"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-3.webp",
-  "brand": "Silver",
-  "createdAt": "2026-10-29T22:08:27.136Z",
-  "fileName": "TypeB_bellona_livingroom (1).jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793311707136,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-3.webp",
-  "title": "Villa B · Salon · Silver · Bellona · 1",
-  "villa": "Villa B",
-  "id": "dyk9inhnpu57sc8zwbfn"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_bellona-4.webp",
-  "brand": "Silver",
-  "createdAt": "2026-10-29T22:08:30.126Z",
-  "fileName": "TypeB_bellona_livinroomkarşı (1).jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793311710126,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_bellona-4.webp",
-  "title": "Villa B · Salon · Silver · Bellona · 2",
-  "villa": "Villa B",
-  "id": "f3ldwph0x0dtpdizmrw1"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_mutfak_sardunya-1.webp",
-  "brand": "Gold",
-  "createdAt": "2026-10-29T23:14:25.825Z",
-  "fileName": "TypeB_mutfak.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793315665825,
-  "room": "Mutfak",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_mutfak_sardunya-1.webp",
-  "title": "Villa B · Mutfak · Gold · Sardunya",
-  "villa": "Villa B",
-  "id": "okhvkj5cd0xa9uvs3e7f"
  },
  {
   "asset": "assets/villa-b/renders/zemin-kat_giris-holu_ortak-1.webp",
@@ -3178,20 +3107,6 @@
   "id": "h71fbwv3q0wpzmvaox9l"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_mutfak_ortak-1.webp",
-  "brand": null,
-  "createdAt": "2026-10-30T06:12:00.683Z",
-  "fileName": "TypeB_mutfak.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793340720683,
-  "room": "Mutfak",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_mutfak_ortak-1.webp",
-  "title": "Villa B · Mutfak",
-  "villa": "Villa B",
-  "id": "0od9aroesc6e8ukanegl"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_ana-giris-holu_ortak-1.webp",
   "brand": null,
   "createdAt": "2026-10-30T06:12:09.414Z",
@@ -3907,5 +3822,19 @@
   "title": "Villa B · Salon · Gold · Sardunya",
   "villa": "Villa B",
   "id": "2lhyye6tbx4llsl355wl"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_mutfak_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-11-02T07:54:43.662Z",
+  "fileName": "TybeB_mutfak.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793606083662,
+  "room": "Mutfak",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_mutfak_ortak-2.webp",
+  "title": "Villa B · Mutfak",
+  "villa": "Villa B",
+  "id": "kmkjze1jmutyhcuuxxa1"
  }
 ]
