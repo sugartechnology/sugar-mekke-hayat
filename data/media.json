@@ -108,20 +108,6 @@
   "id": "81gb7xaxx3eerghxzz3n"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_meclis_02.webp",
-  "brand": "Gold",
-  "createdAt": "2026-10-16T16:51:24.336Z",
-  "fileName": "sardunya_tipb_meclis.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1792169484336,
-  "room": "Meclis",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_02.webp",
-  "title": "Villa B · Meclis · Platinum · Sardunya",
-  "villa": "Villa B",
-  "id": "o6j9dett50l8crx6bh0g"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_meclis_gabba.webp",
   "brand": "Diamond",
   "cover": true,
@@ -166,20 +152,6 @@
   "title": "Villa B · Meclis · Diamond · Homage",
   "villa": "Villa B",
   "id": "094wisbh7pbjk1setven"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_meclis_inci-design.webp",
-  "brand": "Platinum",
-  "createdAt": "2026-10-16T19:07:54.015Z",
-  "fileName": "İnci_tipb_meclis.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1792177674015,
-  "room": "Meclis",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_inci-design.webp",
-  "title": "Villa B · Meclis · Gold · Inci Design",
-  "villa": "Villa B",
-  "id": "q0f4loaobska81nzanue"
  },
  {
   "asset": "assets/villa-a/renders/1-kat_ebeveyn-yatak-odasi_gabba.webp",
@@ -2168,35 +2140,6 @@
   "id": "ijjhemde7ly4wqtaeo69"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_inci-2.webp",
-  "brand": "Platinum",
-  "createdAt": "2026-10-29T12:22:28.040Z",
-  "fileName": "TypeB_inci_liviingroom.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793276548040,
-  "room": "Salon",
-  "roomFirst": true,
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_inci-2.webp",
-  "title": "Villa B · Salon · Platinum · Inci Design · 1",
-  "villa": "Villa B",
-  "id": "qjfc92541fg0oykjltdi"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_salon_inci-1.webp",
-  "brand": "Platinum",
-  "createdAt": "2026-10-29T12:22:32.146Z",
-  "fileName": "TypeB_inci_livingroomkarşı.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793276552146,
-  "room": "Salon",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_inci-1.webp",
-  "title": "Villa B · Salon · Platinum · Inci Design · 2",
-  "villa": "Villa B",
-  "id": "ans6llufx1wgntrpl1xw"
- },
- {
   "asset": "assets/villa-a/renders/zemin-kat_meclis_sardunya-1.webp",
   "brand": "Gold",
   "createdAt": "2026-10-29T12:33:38.867Z",
@@ -3597,35 +3540,6 @@
   "id": "gabpolmgctm79giprnt6"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_meclis_gabba-1.webp",
-  "brand": "Diamond",
-  "createdAt": "2026-11-01T13:31:26.000Z",
-  "fileName": "gabba_hayat_sayfa03_gorsel03.jpeg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793539886738,
-  "room": "Meclis",
-  "roomFirst": true,
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_gabba-1.webp",
-  "title": "Villa B · Meclis · Diamond · Gabba",
-  "villa": "Villa B",
-  "id": "gabgo5bfnkdr5sykt06m"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_meclis_gabba-2.webp",
-  "brand": "Diamond",
-  "createdAt": "2026-11-01T13:31:26.000Z",
-  "fileName": "gabba_hayat_sayfa05_gorsel04.jpeg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793539886748,
-  "room": "Meclis",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_meclis_gabba-2.webp",
-  "title": "Villa B · Meclis · Diamond · Gabba",
-  "villa": "Villa B",
-  "id": "gab1v7fh8ucuwo9y7978"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_salon_gabba-2.webp",
   "brand": "Diamond",
   "createdAt": "2026-11-01T13:31:26.000Z",
@@ -3836,5 +3750,19 @@
   "title": "Villa B · Mutfak",
   "villa": "Villa B",
   "id": "kmkjze1jmutyhcuuxxa1"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_salon_inci-5.webp",
+  "brand": "Platinum",
+  "createdAt": "2026-11-02T10:16:55.787Z",
+  "fileName": "TypeB_livingroom.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793614615787,
+  "room": "Salon",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_salon_inci-5.webp",
+  "title": "Villa B · Salon · Platinum · Inci Design",
+  "villa": "Villa B",
+  "id": "dpqehrmqo75bdwceaoet"
  }
 ]
