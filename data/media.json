@@ -783,9 +783,9 @@
    {
     "codes": [],
     "floor": "Zemin kat",
-    "room": "Misafir girişi",
-    "x": 0.1342,
-    "y": 0.4639
+    "room": "Ana Giriş Hol",
+    "x": 0.1456,
+    "y": 0.4507
    }
   ],
   "pinsSource": "Codes PDF (040826) · kod konumlarından otomatik",
@@ -2168,20 +2168,6 @@
   "id": "fefax1k12at4kxkrhtmj"
  },
  {
-  "asset": "assets/villa-b/renders/zemin-kat_giris-holu_ortak-1.webp",
-  "brand": null,
-  "createdAt": "2026-10-29T23:15:33.810Z",
-  "fileName": "TypeB_giriş_zemin.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793315733810,
-  "room": "Misafir girişi",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_giris-holu_ortak-1.webp",
-  "title": "Villa B · Giriş holü",
-  "villa": "Villa B",
-  "id": "b3d6d9i1mxxuojyybxnx"
- },
- {
   "asset": "assets/villa-b/renders/zemin-kat_sofor-odasi_ortak-1.webp",
   "brand": null,
   "createdAt": "2026-10-29T23:16:21.312Z",
@@ -2504,20 +2490,6 @@
   "id": "965q4363l6j40vy6q411"
  },
  {
-  "asset": "assets/villa-a/renders/zemin-kat_ana-giris-hol_ortak-1.webp",
-  "brand": null,
-  "createdAt": "2026-10-29T23:59:31.457Z",
-  "fileName": "TypeB_giriş_zemin.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793318371457,
-  "room": "Ana Giriş Hol",
-  "thumb": "assets/villa-a/renders/thumbs/zemin-kat_ana-giris-hol_ortak-1.webp",
-  "title": "Villa A · Ana Giriş Hol",
-  "villa": "Villa A",
-  "id": "7crcwxvao9ga46uvifyl"
- },
- {
   "asset": "assets/villa-a/renders/1-kat_yatak-odasi-2_ortak-1.webp",
   "brand": null,
   "createdAt": "2026-10-29T23:59:45.530Z",
@@ -2642,20 +2614,6 @@
   "title": "Villa A · Banyo 1 · Gold · Sardunya",
   "villa": "Villa A",
   "id": "y1ethscu9kyl1pycnrg9"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_ana-giris-holu_sardunya-1.webp",
-  "brand": "Gold",
-  "createdAt": "2026-10-30T00:02:27.616Z",
-  "fileName": "TypeB_giriş_zemin.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793318547616,
-  "room": "Misafir girişi",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_ana-giris-holu_sardunya-1.webp",
-  "title": "Villa B · Ana Giriş Holü · Gold · Sardunya",
-  "villa": "Villa B",
-  "id": "g54dyo1vffpv1zaad8ms"
  },
  {
   "asset": "assets/villa-b/renders/zemin-kat_sofor-wc_sardunya-1.webp",
@@ -3048,20 +3006,6 @@
   "title": "Villa B · Ebeveyn yatak odası · 2",
   "villa": "Villa B",
   "id": "h71fbwv3q0wpzmvaox9l"
- },
- {
-  "asset": "assets/villa-b/renders/zemin-kat_ana-giris-holu_ortak-1.webp",
-  "brand": null,
-  "createdAt": "2026-10-30T06:12:09.414Z",
-  "fileName": "TypeB_giriş_zemin.jpg",
-  "floor": "Zemin kat",
-  "kind": "render",
-  "order": 1793340729414,
-  "room": "Misafir girişi",
-  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_ana-giris-holu_ortak-1.webp",
-  "title": "Villa B · Ana Giriş Holü",
-  "villa": "Villa B",
-  "id": "6anfizz35k5jw11zduk7"
  },
  {
   "asset": "assets/villa-b/renders/cati-kati_rawashin_ortak-1.webp",
@@ -3764,5 +3708,33 @@
   "title": "Villa B · Salon · Platinum · Inci Design",
   "villa": "Villa B",
   "id": "dpqehrmqo75bdwceaoet"
+ },
+ {
+  "asset": "assets/villa-a/renders/zemin-kat_ana-giris-hol_ortak-2.webp",
+  "brand": null,
+  "createdAt": "2026-11-02T12:21:18.760Z",
+  "fileName": "TypeB_giriş (1).jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793622078760,
+  "room": "Ana Giriş Hol",
+  "thumb": "assets/villa-a/renders/thumbs/zemin-kat_ana-giris-hol_ortak-2.webp",
+  "title": "Villa A · Ana Giriş Hol",
+  "villa": "Villa A",
+  "id": "kpn21ecup3jzs0s41a11"
+ },
+ {
+  "asset": "assets/villa-b/renders/zemin-kat_misafir-tuvaleti_ortak-1.webp",
+  "brand": null,
+  "createdAt": "2026-11-02T12:25:40.053Z",
+  "fileName": "TypeB_bathroom_zemin1.jpg",
+  "floor": "Zemin kat",
+  "kind": "render",
+  "order": 1793622340053,
+  "room": "Misafir tuvaleti",
+  "thumb": "assets/villa-b/renders/thumbs/zemin-kat_misafir-tuvaleti_ortak-1.webp",
+  "title": "Villa B · Misafir tuvaleti",
+  "villa": "Villa B",
+  "id": "dw8wsyphh6vp52y33qre"
  }
 ]
