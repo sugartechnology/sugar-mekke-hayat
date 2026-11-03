@@ -1480,6 +1480,15 @@
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
     "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
+    "F-003": "Leora 3lü Koltuk",
+    "F-004": "Leora 3lü Koltuk",
+    "F-005": "Leora Berjer",
+    "F-006": "Leora Orta Sehpa Büyük",
+    "F-007": "Leora Zigon Sehpa Küçük",
+    "F-008": "Leora Zigon Sehpa Küçük",
+    "F-009": "Leora Ünite",
+    "F-010": "Leora Masa 240 cm",
+    "F-011": "Leora Sandalye",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -1490,6 +1499,34 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-024": "Mahzen Kaplamalı Orta Sehpa",
+    "F-025": "Mahzen Zigon Sehpa",
+    "F-026": "Mahzen TV Ünitesi",
+    "F-027": "Mahzen 4'lü Kanepe",
+    "F-028": "Mahzen 4'lü Kanepe",
+    "F-029": "Mahzen Masa 240 cm",
+    "F-030": "Mahzen Sandalye",
+    "F-040": "Ecrue Karyola 180×200",
+    "F-041": "Ecrue Komodin",
+    "F-044": "Casto Karyola 180×200",
+    "F-045": "Casto Komodin",
+    "F-046": "Casto Şifonyer",
+    "F-048": "Casto Puf",
+    "F-050": "Zenith Karyola (180×200)",
+    "F-051": "Zenith Komodin",
+    "F-052": "Zenith Şifonyer",
+    "F-053": "Zenith Puf",
+    "F-056": "Milano Karyola (180×200)",
+    "F-057": "Milano Komodin",
+    "F-058": "Milano Şifonyer",
+    "F-059": "Milano Puf",
+    "F-060": "Milano Puf",
+    "F-068": "Corte Konsol",
+    "F-069": "Corte Lounge 4'lü Koltuk",
+    "F-070": "Leora 3lü Koltuk",
+    "F-071": "Corte TV Ünite",
+    "F-072": "Corte Orta Sehpa",
+    "F-073": "Corte Yan Sehpa",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -1527,6 +1564,47 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-092": "Leora 3lü Koltuk",
+    "F-093": "Leora 3lü Koltuk",
+    "F-094": "Leora Berjer",
+    "F-095": "Leora Orta Sehpa Büyük",
+    "F-096": "Leora Zigon Sehpa Küçük",
+    "F-097": "Leora Zigon Sehpa Küçük",
+    "F-098": "Leora Ünite",
+    "F-099": "Leora Masa 240 cm",
+    "F-100": "Leora Sandalye",
+    "F-101": "Leora Dresuar",
+    "F-106": "Mahzen Kaplamalı Orta Sehpa",
+    "F-107": "Mahzen Zigon Sehpa",
+    "F-108": "Mahzen TV Ünitesi",
+    "F-109": "Mahzen 4'lü Kanepe",
+    "F-110": "Mahzen 4'lü Kanepe",
+    "F-111": "Mahzen Masa 240 cm",
+    "F-112": "Mahzen Sandalye",
+    "F-113": "Mahzen Berjer",
+    "F-114": "Mahzen Zigon Sehpa",
+    "F-118": "Ecrue Karyola 180×200",
+    "F-119": "Ecrue Komodin",
+    "F-120": "Ecrue Şifonyer",
+    "F-121": "Ecrue Sandalye",
+    "F-125": "Casto Karyola 180×200",
+    "F-126": "Casto Komodin",
+    "F-127": "Casto Şifonyer",
+    "F-129": "Casto Puf",
+    "F-131": "Zenith Karyola (180×200)",
+    "F-132": "Zenith Komodin",
+    "F-133": "Zenith Şifonyer",
+    "F-134": "Zenith Puf",
+    "F-137": "Milano Karyola (180×200)",
+    "F-138": "Milano Komodin",
+    "F-139": "Milano Şifonyer",
+    "F-140": "Milano Puf",
+    "F-141": "Milano Puf",
+    "F-149": "Corte Lounge 4'lü Koltuk",
+    "F-150": "Corte TV Ünite",
+    "F-151": "Corte Orta Sehpa",
+    "F-152": "Corte Yan Sehpa",
+    "F-153": "Corte Dresuar",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -1564,6 +1642,48 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-160": "Leora 3lü Koltuk",
+    "F-161": "Leora 3lü Koltuk",
+    "F-162": "Leora Berjer",
+    "F-163": "Leora Orta Sehpa Büyük",
+    "F-164": "Leora Zigon Sehpa Küçük",
+    "F-165": "Leora Zigon Sehpa Küçük",
+    "F-166": "Leora Dresuar",
+    "F-167": "Leora Ünite",
+    "F-168": "Leora Masa 240 cm",
+    "F-169": "Leora Sandalye",
+    "F-170": "Leora Bar",
+    "F-171": "Mahzen Kaplamalı Orta Sehpa",
+    "F-172": "Mahzen Zigon Sehpa",
+    "F-173": "Mahzen TV Ünitesi",
+    "F-174": "Mahzen 4'lü Kanepe",
+    "F-175": "Mahzen 4'lü Kanepe",
+    "F-176": "Mahzen Masa 240 cm",
+    "F-177": "Mahzen Sandalye",
+    "F-178": "Mahzen Berjer",
+    "F-179": "Leora Yan Sehpa",
+    "F-199": "Ecrue Karyola 180×200",
+    "F-200": "Ecrue Komodin",
+    "F-201": "Ecrue Şifonyer",
+    "F-202": "Ecrue Sandalye",
+    "F-205": "Casto Karyola 180×200",
+    "F-206": "Casto Komodin",
+    "F-207": "Casto Şifonyer",
+    "F-209": "Casto Puf",
+    "F-211": "Zenith Karyola (180×200)",
+    "F-212": "Zenith Komodin",
+    "F-213": "Zenith Şifonyer",
+    "F-214": "Zenith Puf",
+    "F-217": "Milano Karyola (180×200)",
+    "F-218": "Milano Komodin",
+    "F-219": "Milano Şifonyer",
+    "F-220": "Milano Puf",
+    "F-221": "Milano Puf",
+    "F-229": "Corte Lounge 4'lü Koltuk",
+    "F-230": "Corte TV Ünite",
+    "F-231": "Corte Orta Sehpa",
+    "F-232": "Corte Yan Sehpa",
+    "F-233": "Corte Dresuar",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -1584,7 +1704,7 @@
     "S1.16": "Devreye alma · temsilî görsel"
    }
   },
-  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller · gabbahome.com",
   "villas": {
    "Villa A": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -1619,6 +1739,33 @@
      "assets/items/appliances/dora-ua65d26-1.webp",
      "assets/items/appliances/dora-ua65d26-2.webp"
     ],
+    "F-003": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-004": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-005": [
+     "assets/items/gabba/gabba-leora-berjer.webp"
+    ],
+    "F-006": [
+     "assets/items/gabba/gabba-leora-orta-sehpa-buyuk.webp"
+    ],
+    "F-007": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-008": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-009": [
+     "assets/items/gabba/gabba-leora-unite.webp"
+    ],
+    "F-010": [
+     "assets/items/gabba/gabba-leora-masa-240cm.webp"
+    ],
+    "F-011": [
+     "assets/items/gabba/gabba-leora-sandalye.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -1653,6 +1800,90 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-024": [
+     "assets/items/gabba/gabba-mahzen-kaplamali-orta-sehpa.webp"
+    ],
+    "F-025": [
+     "assets/items/gabba/gabba-mahzen-zigon-sehpa.webp"
+    ],
+    "F-026": [
+     "assets/items/gabba/gabba-mahzen-tv-unitesi.webp"
+    ],
+    "F-027": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-028": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-029": [
+     "assets/items/gabba/gabba-mahzen-masa-240-cm.webp"
+    ],
+    "F-030": [
+     "assets/items/gabba/gabba-mahzen-sandalye.webp"
+    ],
+    "F-040": [
+     "assets/items/gabba/gabba-ecrue-karyola-180x200.webp"
+    ],
+    "F-041": [
+     "assets/items/gabba/gabba-ecrue-komodin.webp"
+    ],
+    "F-044": [
+     "assets/items/gabba/gabba-casto-karyola-180x200.webp"
+    ],
+    "F-045": [
+     "assets/items/gabba/gabba-casto-komodin.webp"
+    ],
+    "F-046": [
+     "assets/items/gabba/gabba-casto-sifonyer.webp"
+    ],
+    "F-048": [
+     "assets/items/gabba/gabba-casto-puf.webp"
+    ],
+    "F-050": [
+     "assets/items/gabba/gabba-zenith-karyola-180x200.webp"
+    ],
+    "F-051": [
+     "assets/items/gabba/gabba-zenith-komodin.webp"
+    ],
+    "F-052": [
+     "assets/items/gabba/gabba-zenith-sifonyer.webp"
+    ],
+    "F-053": [
+     "assets/items/gabba/gabba-zenith-puf.webp"
+    ],
+    "F-056": [
+     "assets/items/gabba/gabba-milano-karyola-180x200.webp"
+    ],
+    "F-057": [
+     "assets/items/gabba/gabba-milano-komodin.webp"
+    ],
+    "F-058": [
+     "assets/items/gabba/gabba-milano-sifonyer.webp"
+    ],
+    "F-059": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-060": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-068": [
+     "assets/items/gabba/gabba-corte-konsol.webp"
+    ],
+    "F-069": [
+     "assets/items/gabba/gabba-corte-lounge-koltuk-4lu.webp"
+    ],
+    "F-070": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-071": [
+     "assets/items/gabba/gabba-corte-tv-unite.webp"
+    ],
+    "F-072": [
+     "assets/items/gabba/gabba-corte-orta-sehpa.webp"
+    ],
+    "F-073": [
+     "assets/items/gabba/gabba-corte-yan-sehpa.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -1739,6 +1970,129 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-092": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-093": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-094": [
+     "assets/items/gabba/gabba-leora-berjer.webp"
+    ],
+    "F-095": [
+     "assets/items/gabba/gabba-leora-orta-sehpa-buyuk.webp"
+    ],
+    "F-096": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-097": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-098": [
+     "assets/items/gabba/gabba-leora-unite.webp"
+    ],
+    "F-099": [
+     "assets/items/gabba/gabba-leora-masa-240cm.webp"
+    ],
+    "F-100": [
+     "assets/items/gabba/gabba-leora-sandalye.webp"
+    ],
+    "F-101": [
+     "assets/items/gabba/gabba-leora-dresuar.webp"
+    ],
+    "F-106": [
+     "assets/items/gabba/gabba-mahzen-kaplamali-orta-sehpa.webp"
+    ],
+    "F-107": [
+     "assets/items/gabba/gabba-mahzen-zigon-sehpa.webp"
+    ],
+    "F-108": [
+     "assets/items/gabba/gabba-mahzen-tv-unitesi.webp"
+    ],
+    "F-109": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-110": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-111": [
+     "assets/items/gabba/gabba-mahzen-masa-240-cm.webp"
+    ],
+    "F-112": [
+     "assets/items/gabba/gabba-mahzen-sandalye.webp"
+    ],
+    "F-113": [
+     "assets/items/gabba/gabba-mahzen-berjer.webp"
+    ],
+    "F-114": [
+     "assets/items/gabba/gabba-mahzen-zigon-sehpa.webp"
+    ],
+    "F-118": [
+     "assets/items/gabba/gabba-ecrue-karyola-180x200.webp"
+    ],
+    "F-119": [
+     "assets/items/gabba/gabba-ecrue-komodin.webp"
+    ],
+    "F-120": [
+     "assets/items/gabba/gabba-ecrue-sifonyer.webp"
+    ],
+    "F-121": [
+     "assets/items/gabba/gabba-ecrue-sandalye.webp"
+    ],
+    "F-125": [
+     "assets/items/gabba/gabba-casto-karyola-180x200.webp"
+    ],
+    "F-126": [
+     "assets/items/gabba/gabba-casto-komodin.webp"
+    ],
+    "F-127": [
+     "assets/items/gabba/gabba-casto-sifonyer.webp"
+    ],
+    "F-129": [
+     "assets/items/gabba/gabba-casto-puf.webp"
+    ],
+    "F-131": [
+     "assets/items/gabba/gabba-zenith-karyola-180x200.webp"
+    ],
+    "F-132": [
+     "assets/items/gabba/gabba-zenith-komodin.webp"
+    ],
+    "F-133": [
+     "assets/items/gabba/gabba-zenith-sifonyer.webp"
+    ],
+    "F-134": [
+     "assets/items/gabba/gabba-zenith-puf.webp"
+    ],
+    "F-137": [
+     "assets/items/gabba/gabba-milano-karyola-180x200.webp"
+    ],
+    "F-138": [
+     "assets/items/gabba/gabba-milano-komodin.webp"
+    ],
+    "F-139": [
+     "assets/items/gabba/gabba-milano-sifonyer.webp"
+    ],
+    "F-140": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-141": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-149": [
+     "assets/items/gabba/gabba-corte-lounge-koltuk-4lu.webp"
+    ],
+    "F-150": [
+     "assets/items/gabba/gabba-corte-tv-unite.webp"
+    ],
+    "F-151": [
+     "assets/items/gabba/gabba-corte-orta-sehpa.webp"
+    ],
+    "F-152": [
+     "assets/items/gabba/gabba-corte-yan-sehpa.webp"
+    ],
+    "F-153": [
+     "assets/items/gabba/gabba-corte-dresuar.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -1825,6 +2179,132 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-160": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-161": [
+     "assets/items/gabba/gabba-leora-koltuk-3lu.webp"
+    ],
+    "F-162": [
+     "assets/items/gabba/gabba-leora-berjer.webp"
+    ],
+    "F-163": [
+     "assets/items/gabba/gabba-leora-orta-sehpa-buyuk.webp"
+    ],
+    "F-164": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-165": [
+     "assets/items/gabba/gabba-leora-zigon-sehpa-kucuk.webp"
+    ],
+    "F-166": [
+     "assets/items/gabba/gabba-leora-dresuar.webp"
+    ],
+    "F-167": [
+     "assets/items/gabba/gabba-leora-unite.webp"
+    ],
+    "F-168": [
+     "assets/items/gabba/gabba-leora-masa-240cm.webp"
+    ],
+    "F-169": [
+     "assets/items/gabba/gabba-leora-sandalye.webp"
+    ],
+    "F-170": [
+     "assets/items/gabba/gabba-leora-bar.webp"
+    ],
+    "F-171": [
+     "assets/items/gabba/gabba-mahzen-kaplamali-orta-sehpa.webp"
+    ],
+    "F-172": [
+     "assets/items/gabba/gabba-mahzen-zigon-sehpa.webp"
+    ],
+    "F-173": [
+     "assets/items/gabba/gabba-mahzen-tv-unitesi.webp"
+    ],
+    "F-174": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-175": [
+     "assets/items/gabba/gabba-mahzen-4-lu-kanepe.webp"
+    ],
+    "F-176": [
+     "assets/items/gabba/gabba-mahzen-masa-240-cm.webp"
+    ],
+    "F-177": [
+     "assets/items/gabba/gabba-mahzen-sandalye.webp"
+    ],
+    "F-178": [
+     "assets/items/gabba/gabba-mahzen-berjer.webp"
+    ],
+    "F-179": [
+     "assets/items/gabba/gabba-leora-yan-sehpa.webp"
+    ],
+    "F-199": [
+     "assets/items/gabba/gabba-ecrue-karyola-180x200.webp"
+    ],
+    "F-200": [
+     "assets/items/gabba/gabba-ecrue-komodin.webp"
+    ],
+    "F-201": [
+     "assets/items/gabba/gabba-ecrue-sifonyer.webp"
+    ],
+    "F-202": [
+     "assets/items/gabba/gabba-ecrue-sandalye.webp"
+    ],
+    "F-205": [
+     "assets/items/gabba/gabba-casto-karyola-180x200.webp"
+    ],
+    "F-206": [
+     "assets/items/gabba/gabba-casto-komodin.webp"
+    ],
+    "F-207": [
+     "assets/items/gabba/gabba-casto-sifonyer.webp"
+    ],
+    "F-209": [
+     "assets/items/gabba/gabba-casto-puf.webp"
+    ],
+    "F-211": [
+     "assets/items/gabba/gabba-zenith-karyola-180x200.webp"
+    ],
+    "F-212": [
+     "assets/items/gabba/gabba-zenith-komodin.webp"
+    ],
+    "F-213": [
+     "assets/items/gabba/gabba-zenith-sifonyer.webp"
+    ],
+    "F-214": [
+     "assets/items/gabba/gabba-zenith-puf.webp"
+    ],
+    "F-217": [
+     "assets/items/gabba/gabba-milano-karyola-180x200.webp"
+    ],
+    "F-218": [
+     "assets/items/gabba/gabba-milano-komodin.webp"
+    ],
+    "F-219": [
+     "assets/items/gabba/gabba-milano-sifonyer.webp"
+    ],
+    "F-220": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-221": [
+     "assets/items/gabba/gabba-milano-puf.webp"
+    ],
+    "F-229": [
+     "assets/items/gabba/gabba-corte-lounge-koltuk-4lu.webp"
+    ],
+    "F-230": [
+     "assets/items/gabba/gabba-corte-tv-unite.webp"
+    ],
+    "F-231": [
+     "assets/items/gabba/gabba-corte-orta-sehpa.webp"
+    ],
+    "F-232": [
+     "assets/items/gabba/gabba-corte-yan-sehpa.webp"
+    ],
+    "F-233": [
+     "assets/items/gabba/gabba-corte-dresuar.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -2333,6 +2813,15 @@
     "D4": "Loominology Infiniti / Lexus makine halısı",
     "D5": "Blackout + tül perde paketi · temsilî görsel",
     "Elektrikli ev aletleri|D5": "DORA 65\" · Android 15 · UHD 4K (3840 × 2160) · A+ panel · dört çekirdekli işlemci · E-Share ve Miracast ekran paylaşımı · Wi-Fi · 3 × HDMI · 2 × USB · ince kasa · 50.000 saat LED ömrü · fırçalanmış panel · Çin üretimi · Model UA65D26",
+    "F-003": "Kapadokya 3'lü Koltuk",
+    "F-004": "Kapadokya 3'lü Tek Kollu Koltuk",
+    "F-005": "Kapadokya Berjer",
+    "F-006": "Kapadokya Kutulu Orta Sehpa",
+    "F-007": "Kapadokya Sehpa",
+    "F-008": "Kapadokya Sehpa",
+    "F-009": "Kapadokya Bloklu, Alt Kutulu Tv Ünitesi",
+    "F-010": "Kapadokya Ahşap Yemek Masası, 260 cm",
+    "F-011": "Kapadokya Kollu Sandalye",
     "F-013": "TEKA IZC 64010 BK MSS",
     "F-014": "TEKA RBF 54650 SS",
     "F-015": "BEKO BBIE14100XC",
@@ -2343,6 +2832,34 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-024": "Olympos kare orta sehpa, Porselen",
+    "F-025": "Olympos Yan Sehpa, Porselen",
+    "F-026": "Lounge Tv Alt Bloğu",
+    "F-027": "Olympos Köşe Takımı",
+    "F-028": "Olympos Köşe Takımı",
+    "F-029": "Olympos masa, 260 cm, Porselen",
+    "F-030": "Kapadokya Kolsuz Sandalye",
+    "F-040": "Galaxy Yatak",
+    "F-041": "Galaxy Komodin",
+    "F-044": "Antik Yatak",
+    "F-045": "Antik Uzun Komodin",
+    "F-046": "Antik Makyaj Masası",
+    "F-048": "Antik Makyaj Pufu",
+    "F-050": "Lounge Yatak",
+    "F-051": "Galaxy Komodin",
+    "F-052": "Lounge Şifonyer, Pufsuz",
+    "F-053": "Galaxy Puf",
+    "F-056": "Lounge Yatak",
+    "F-057": "Galaxy Komodin",
+    "F-058": "Lounge Şifonyer, Pufsuz",
+    "F-059": "Galaxy Puf",
+    "F-060": "Kapadokya Bench",
+    "F-068": "Aspendos Konsol",
+    "F-069": "Trend Ara Kitaplıklı Üçlü Koltuk",
+    "F-070": "Kapadokya 3'lü Tek Kollu Koltuk",
+    "F-071": "Piramit Tv Ünitesi",
+    "F-072": "Trend Orta Sehpa, Camlı",
+    "F-073": "Trend Kare ve Yuvarlak Yan Sehpa",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -2380,6 +2897,47 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-092": "Kapadokya 3'lü Koltuk",
+    "F-093": "Kapadokya 3'lü Tek Kollu Koltuk",
+    "F-094": "Kapadokya Berjer",
+    "F-095": "Kapadokya Kutulu Orta Sehpa",
+    "F-096": "Kapadokya Sehpa",
+    "F-097": "Kapadokya Sehpa",
+    "F-098": "Kapadokya Bloklu, Alt Kutulu Tv Ünitesi",
+    "F-099": "Kapadokya Ahşap Yemek Masası, 260 cm",
+    "F-100": "Kapadokya Kollu Sandalye",
+    "F-101": "Kapadokya Dresuar 1",
+    "F-106": "Olympos kare orta sehpa, Porselen",
+    "F-107": "Olympos Yan Sehpa, Porselen",
+    "F-108": "Lounge Tv Alt Bloğu",
+    "F-109": "Olympos Köşe Takımı",
+    "F-110": "Olympos Köşe Takımı",
+    "F-111": "Olympos masa, 260 cm, Porselen",
+    "F-112": "Kapadokya Kolsuz Sandalye",
+    "F-113": "Olympos Berjer",
+    "F-114": "Olympos Yan Sehpa, Porselen",
+    "F-118": "Galaxy Yatak",
+    "F-119": "Galaxy Komodin",
+    "F-120": "Galaxy Şifonyer",
+    "F-121": "Galaxy Puf",
+    "F-125": "Antik Yatak",
+    "F-126": "Antik Uzun Komodin",
+    "F-127": "Antik Makyaj Masası",
+    "F-129": "Antik Makyaj Pufu",
+    "F-131": "Lounge Yatak",
+    "F-132": "Galaxy Komodin",
+    "F-133": "Lounge Şifonyer, Pufsuz",
+    "F-134": "Galaxy Puf",
+    "F-137": "Lounge Yatak",
+    "F-138": "Galaxy Komodin",
+    "F-139": "Lounge Şifonyer, Pufsuz",
+    "F-140": "Galaxy Puf",
+    "F-141": "Kapadokya Bench",
+    "F-149": "Trend Ara Kitaplıklı Üçlü Koltuk",
+    "F-150": "Piramit Tv Ünitesi",
+    "F-151": "Trend Orta Sehpa, Camlı",
+    "F-152": "Trend Kare ve Yuvarlak Yan Sehpa",
+    "F-153": "Techno Büfe",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -2417,6 +2975,48 @@
     "F-023": "Philips HD9350/92",
     "F-023A": "Philips DST2010/26",
     "F-023B": "Philips PowerGo FC8293/61",
+    "F-160": "Kapadokya 3'lü Koltuk",
+    "F-161": "Kapadokya 3'lü Tek Kollu Koltuk",
+    "F-162": "Kapadokya Berjer",
+    "F-163": "Kapadokya Kutulu Orta Sehpa",
+    "F-164": "Kapadokya Sehpa",
+    "F-165": "Kapadokya Sehpa",
+    "F-166": "Kapadokya Dresuar 1",
+    "F-167": "Kapadokya Bloklu, Alt Kutulu Tv Ünitesi",
+    "F-168": "Kapadokya Ahşap Yemek Masası, 260 cm",
+    "F-169": "Kapadokya Kollu Sandalye",
+    "F-170": "Kapadokya Kitaplık",
+    "F-171": "Olympos kare orta sehpa, Porselen",
+    "F-172": "Olympos Yan Sehpa, Porselen",
+    "F-173": "Lounge Tv Alt Bloğu",
+    "F-174": "Olympos Köşe Takımı",
+    "F-175": "Olympos Köşe Takımı",
+    "F-176": "Olympos masa, 260 cm, Porselen",
+    "F-177": "Kapadokya Kolsuz Sandalye",
+    "F-178": "Olympos Berjer",
+    "F-179": "Kapadokya Sehpa",
+    "F-199": "Galaxy Yatak",
+    "F-200": "Galaxy Komodin",
+    "F-201": "Galaxy Şifonyer",
+    "F-202": "Galaxy Puf",
+    "F-205": "Antik Yatak",
+    "F-206": "Antik Uzun Komodin",
+    "F-207": "Antik Makyaj Masası",
+    "F-209": "Antik Makyaj Pufu",
+    "F-211": "Lounge Yatak",
+    "F-212": "Galaxy Komodin",
+    "F-213": "Lounge Şifonyer, Pufsuz",
+    "F-214": "Galaxy Puf",
+    "F-217": "Lounge Yatak",
+    "F-218": "Galaxy Komodin",
+    "F-219": "Lounge Şifonyer, Pufsuz",
+    "F-220": "Galaxy Puf",
+    "F-221": "Kapadokya Bench",
+    "F-229": "Trend Ara Kitaplıklı Üçlü Koltuk",
+    "F-230": "Piramit Tv Ünitesi",
+    "F-231": "Trend Orta Sehpa, Camlı",
+    "F-232": "Trend Kare ve Yuvarlak Yan Sehpa",
+    "F-233": "Techno Büfe",
     "INS-1": "Montaj ve kurulum · temsilî görsel",
     "INS-2": "Montaj ve kurulum · temsilî görsel",
     "INS-3": "Montaj ve kurulum · temsilî görsel",
@@ -2437,7 +3037,7 @@
     "S1.16": "Devreye alma · temsilî görsel"
    }
   },
-  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller",
+  "source": "karaca.com · korkmazstore.com.tr · loominology.com · temsilî görseller · modisinteriors.com",
   "villas": {
    "Villa A": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -2472,6 +3072,33 @@
      "assets/items/appliances/dora-ua65d26-1.webp",
      "assets/items/appliances/dora-ua65d26-2.webp"
     ],
+    "F-003": [
+     "assets/items/modis/modis-kapadokya-3lu-koltuk.webp"
+    ],
+    "F-004": [
+     "assets/items/modis/modis-kapadokya-3lu-tek-kollu.webp"
+    ],
+    "F-005": [
+     "assets/items/modis/modis-kapadokya-berjer.webp"
+    ],
+    "F-006": [
+     "assets/items/modis/modis-kapadokya-kutulu-orta-sehpa.webp"
+    ],
+    "F-007": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-008": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-009": [
+     "assets/items/modis/modis-kapadokya-bloklu-alt-kutulu-tv-unitesi.webp"
+    ],
+    "F-010": [
+     "assets/items/modis/modis-kapadokya-ahsap-masa-260cm.webp"
+    ],
+    "F-011": [
+     "assets/items/modis/modis-kapadokya-kollu-sandalye.webp"
+    ],
     "F-013": [
      "assets/items/appliances/teka-izc-64010-1.webp",
      "assets/items/appliances/teka-izc-64010-2.webp",
@@ -2506,6 +3133,90 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-024": [
+     "assets/items/modis/modis-olympos-orta-sehpa-kare-porselen.webp"
+    ],
+    "F-025": [
+     "assets/items/modis/modis-olympos-yan-sehpa-porselen.webp"
+    ],
+    "F-026": [
+     "assets/items/modis/modis-lounge-tv-alt-blok.webp"
+    ],
+    "F-027": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-028": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-029": [
+     "assets/items/modis/modis-olympos-masa-porselen-260cm.webp"
+    ],
+    "F-030": [
+     "assets/items/modis/modis-kapadokya-kolsuz-sandalye.webp"
+    ],
+    "F-040": [
+     "assets/items/modis/modis-galaxy-yatak.webp"
+    ],
+    "F-041": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-044": [
+     "assets/items/modis/modis-antik-yatak.webp"
+    ],
+    "F-045": [
+     "assets/items/modis/modis-antik-uzun-komodin.webp"
+    ],
+    "F-046": [
+     "assets/items/modis/modis-antik-makyaj-masasi.webp"
+    ],
+    "F-048": [
+     "assets/items/modis/modis-antik-makyaj-pufu.webp"
+    ],
+    "F-050": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-051": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-052": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-053": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-056": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-057": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-058": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-059": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-060": [
+     "assets/items/modis/modis-kapadokya-bench.webp"
+    ],
+    "F-068": [
+     "assets/items/modis/modis-aspendos-konsol.webp"
+    ],
+    "F-069": [
+     "assets/items/modis/modis-trend-ara-kitaplikli-uclu-koltuk.webp"
+    ],
+    "F-070": [
+     "assets/items/modis/modis-kapadokya-3lu-tek-kollu.webp"
+    ],
+    "F-071": [
+     "assets/items/modis/modis-piramit-tv.webp"
+    ],
+    "F-072": [
+     "assets/items/modis/modis-trend-orta-sehpa.webp"
+    ],
+    "F-073": [
+     "assets/items/modis/modis-trend-kare-yuvarlak-yan-sehpa.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -2592,6 +3303,129 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-092": [
+     "assets/items/modis/modis-kapadokya-3lu-koltuk.webp"
+    ],
+    "F-093": [
+     "assets/items/modis/modis-kapadokya-3lu-tek-kollu.webp"
+    ],
+    "F-094": [
+     "assets/items/modis/modis-kapadokya-berjer.webp"
+    ],
+    "F-095": [
+     "assets/items/modis/modis-kapadokya-kutulu-orta-sehpa.webp"
+    ],
+    "F-096": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-097": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-098": [
+     "assets/items/modis/modis-kapadokya-bloklu-alt-kutulu-tv-unitesi.webp"
+    ],
+    "F-099": [
+     "assets/items/modis/modis-kapadokya-ahsap-masa-260cm.webp"
+    ],
+    "F-100": [
+     "assets/items/modis/modis-kapadokya-kollu-sandalye.webp"
+    ],
+    "F-101": [
+     "assets/items/modis/modis-kapadokya-dresuar-1.webp"
+    ],
+    "F-106": [
+     "assets/items/modis/modis-olympos-orta-sehpa-kare-porselen.webp"
+    ],
+    "F-107": [
+     "assets/items/modis/modis-olympos-yan-sehpa-porselen.webp"
+    ],
+    "F-108": [
+     "assets/items/modis/modis-lounge-tv-alt-blok.webp"
+    ],
+    "F-109": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-110": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-111": [
+     "assets/items/modis/modis-olympos-masa-porselen-260cm.webp"
+    ],
+    "F-112": [
+     "assets/items/modis/modis-kapadokya-kolsuz-sandalye.webp"
+    ],
+    "F-113": [
+     "assets/items/modis/modis-olympos-berjer.webp"
+    ],
+    "F-114": [
+     "assets/items/modis/modis-olympos-yan-sehpa-porselen.webp"
+    ],
+    "F-118": [
+     "assets/items/modis/modis-galaxy-yatak.webp"
+    ],
+    "F-119": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-120": [
+     "assets/items/modis/modis-galaxy-sifonyer.webp"
+    ],
+    "F-121": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-125": [
+     "assets/items/modis/modis-antik-yatak.webp"
+    ],
+    "F-126": [
+     "assets/items/modis/modis-antik-uzun-komodin.webp"
+    ],
+    "F-127": [
+     "assets/items/modis/modis-antik-makyaj-masasi.webp"
+    ],
+    "F-129": [
+     "assets/items/modis/modis-antik-makyaj-pufu.webp"
+    ],
+    "F-131": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-132": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-133": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-134": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-137": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-138": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-139": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-140": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-141": [
+     "assets/items/modis/modis-kapadokya-bench.webp"
+    ],
+    "F-149": [
+     "assets/items/modis/modis-trend-ara-kitaplikli-uclu-koltuk.webp"
+    ],
+    "F-150": [
+     "assets/items/modis/modis-piramit-tv.webp"
+    ],
+    "F-151": [
+     "assets/items/modis/modis-trend-orta-sehpa.webp"
+    ],
+    "F-152": [
+     "assets/items/modis/modis-trend-kare-yuvarlak-yan-sehpa.webp"
+    ],
+    "F-153": [
+     "assets/items/modis/modis-techno-bufe.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -2678,6 +3512,132 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-160": [
+     "assets/items/modis/modis-kapadokya-3lu-koltuk.webp"
+    ],
+    "F-161": [
+     "assets/items/modis/modis-kapadokya-3lu-tek-kollu.webp"
+    ],
+    "F-162": [
+     "assets/items/modis/modis-kapadokya-berjer.webp"
+    ],
+    "F-163": [
+     "assets/items/modis/modis-kapadokya-kutulu-orta-sehpa.webp"
+    ],
+    "F-164": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-165": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-166": [
+     "assets/items/modis/modis-kapadokya-dresuar-1.webp"
+    ],
+    "F-167": [
+     "assets/items/modis/modis-kapadokya-bloklu-alt-kutulu-tv-unitesi.webp"
+    ],
+    "F-168": [
+     "assets/items/modis/modis-kapadokya-ahsap-masa-260cm.webp"
+    ],
+    "F-169": [
+     "assets/items/modis/modis-kapadokya-kollu-sandalye.webp"
+    ],
+    "F-170": [
+     "assets/items/modis/modis-kapadokya-kitaplik.webp"
+    ],
+    "F-171": [
+     "assets/items/modis/modis-olympos-orta-sehpa-kare-porselen.webp"
+    ],
+    "F-172": [
+     "assets/items/modis/modis-olympos-yan-sehpa-porselen.webp"
+    ],
+    "F-173": [
+     "assets/items/modis/modis-lounge-tv-alt-blok.webp"
+    ],
+    "F-174": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-175": [
+     "assets/items/modis/modis-olympos-kose-takimi.webp"
+    ],
+    "F-176": [
+     "assets/items/modis/modis-olympos-masa-porselen-260cm.webp"
+    ],
+    "F-177": [
+     "assets/items/modis/modis-kapadokya-kolsuz-sandalye.webp"
+    ],
+    "F-178": [
+     "assets/items/modis/modis-olympos-berjer.webp"
+    ],
+    "F-179": [
+     "assets/items/modis/modis-kapadokya-sehpa.webp"
+    ],
+    "F-199": [
+     "assets/items/modis/modis-galaxy-yatak.webp"
+    ],
+    "F-200": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-201": [
+     "assets/items/modis/modis-galaxy-sifonyer.webp"
+    ],
+    "F-202": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-205": [
+     "assets/items/modis/modis-antik-yatak.webp"
+    ],
+    "F-206": [
+     "assets/items/modis/modis-antik-uzun-komodin.webp"
+    ],
+    "F-207": [
+     "assets/items/modis/modis-antik-makyaj-masasi.webp"
+    ],
+    "F-209": [
+     "assets/items/modis/modis-antik-makyaj-pufu.webp"
+    ],
+    "F-211": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-212": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-213": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-214": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-217": [
+     "assets/items/modis/modis-lounge-yatak.webp"
+    ],
+    "F-218": [
+     "assets/items/modis/modis-galaxy-komodin.webp"
+    ],
+    "F-219": [
+     "assets/items/modis/modis-lounge-sifonyer-pufsuz.webp"
+    ],
+    "F-220": [
+     "assets/items/modis/modis-galaxy-puf.webp"
+    ],
+    "F-221": [
+     "assets/items/modis/modis-kapadokya-bench.webp"
+    ],
+    "F-229": [
+     "assets/items/modis/modis-trend-ara-kitaplikli-uclu-koltuk.webp"
+    ],
+    "F-230": [
+     "assets/items/modis/modis-piramit-tv.webp"
+    ],
+    "F-231": [
+     "assets/items/modis/modis-trend-orta-sehpa.webp"
+    ],
+    "F-232": [
+     "assets/items/modis/modis-trend-kare-yuvarlak-yan-sehpa.webp"
+    ],
+    "F-233": [
+     "assets/items/modis/modis-techno-bufe.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",

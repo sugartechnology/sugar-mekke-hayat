@@ -212,6 +212,44 @@
   "videos": [],
   "website": "https://www.teka.com/"
  },
+ "marleth-co": {
+  "about": "Marleth&Co, el yapımı dekoratif ev aksesuarları sunan bir marka. Koleksiyonda kase, vazo, şamdan, kutu, sukulent saksısı, cam ürünler, pirinç aksesuar ve tepsiler, banyo setleri ve servis ürünleri yer alır; Murano cam, traverten dekor ve banyo aksesuarı serileri öne çıkar.",
+  "aliases": [
+   "Marleth",
+   "Marleth&Co",
+   "Marleth Design&Co"
+  ],
+  "fairs": [],
+  "hq": "İstanbul",
+  "logo": "assets/firms/marleth-co.png",
+  "name": "Marleth&Co",
+  "posts": [],
+  "products": "Dekoratif ev aksesuarları",
+  "role": "brand",
+  "social": {
+   "facebook": "https://www.facebook.com/Marleth.co",
+   "instagram": "https://www.instagram.com/marleth.co/"
+  },
+  "sources": [
+   "https://marleth.co/"
+  ],
+  "stores": [
+   {
+    "address": "Şerifali, Bayraktar Blv. No:42/A, 34775 Ümraniye",
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Marleth&Co Ataşehir"
+   },
+   {
+    "address": "İkitelli OSB, Başakşehir",
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "name": "Marleth&Co Masko"
+   }
+  ],
+  "videos": [],
+  "website": "https://marleth.co/"
+ },
  "dercan-tekstil": {
   "about": "Bu projede tüm pencereler için çift katlı perde paketi (blackout ve tül, ray ve montaj dahil) Dercan Tekstil'in villaya özel fiyatıyla yer alır.",
   "aliases": [
@@ -1158,6 +1196,12 @@
  },
  "gabba": {
   "about": "Gabba Home, üçüncü kuşağın yönettiği, İnegöl merkezli bir lüks salon, oturma grubu ve yemek odası üreticisidir. Aile 1988'de üretim ve satışı İnegöl'e taşıdı, 1990'da ilk mağazasını açtı. İlk ihracatını 2001'de Yunanistan'a yaptı, 2013'te ilk yurt dışı deneyim merkezini Romanya'da açtı. 2020'de 65.000 m²'lik entegre tesise geçti. Yaklaşık 350–450 çalışanı var.",
+  "facility": [
+   {
+    "a": "assets/firms/gabba-tesis.webp",
+    "caption": "Üretim tesisi · İnegöl, Bursa"
+   }
+  ],
   "fairs": [
    {
     "city": "Amman, Ürdün",
@@ -1302,13 +1346,7 @@
     "url": "https://gabbahome.com/cdn/shop/videos/c/vp/6d4446f11ddb444eb393b437d771ce28/6d4446f11ddb444eb393b437d771ce28.HD-1080p-7.2Mbps-67356260.mp4?v=0"
    }
   ],
-  "website": "https://gabbahome.com/",
-  "facility": [
-   {
-    "a": "assets/firms/gabba-tesis.webp",
-    "caption": "Üretim tesisi · İnegöl, Bursa"
-   }
-  ]
+  "website": "https://gabbahome.com/"
  },
  "ergo": {
   "about": "Ergo Home Group, perakende ve proje (contract) mobilya alanında çalışan bir şirketler grubudur. Yerel ve uluslararası pazarda hareketli ve hareketsiz mobilya, mutfak ve iç mekân çözümleri sunar.\n\nGrup 1996'da Lefkoşa'da Cucina & Cucina adıyla kuruldu; Kıbrıs'a ithal İtalyan mutfak dolaplarını getiren ilk işletme oldu. 2003'te Ergo Home Group adıyla şirketler grubuna dönüştü. Kıbrıs'ın ikinci büyük ankastre mutfak ve gardırop grubu Formatek'i bünyesine kattı.\n\nİlk yurt dışı ofisini 2006'da Dubai'de, ikincisini 2012'de Suudi Arabistan'da (Riyad), üçüncüsünü 2022'de Çin'de açtı. Living, Kartell, B&B Italia, Maxalto, Arclinea, Cucina & Cucina, Novamobili, Cinquanta3, Cesar ve Albed markalarıyla çalışır. Living Contract, Ergo Overseas, Ergo Energy ve Ergo Office bölümleri vardır.\n\nRiyad'da Al Bustan Village, The Orient ve KAFD gibi projelerde yer almıştır.",
@@ -1560,6 +1598,31 @@
   "stores": [],
   "videos": [],
   "website": "https://emlakkonutasansor.com/"
+ },
+ "avonni": {
+  "about": "Avonni, avize ve dekoratif aydınlatma markası. Ürün yelpazesinde sarkıt avizeler, masa lambaları, lambaderler, aplikler, şarjlı ve bahçe aydınlatmaları, lineer ve teknik aydınlatma ile özel üretim avizeler bulunur; bayi ağı ve çevrimiçi mağaza üzerinden satış yapar.",
+  "aliases": [
+   "Avonni",
+   "Avonni Aydınlatma",
+   "Avonni Lighting"
+  ],
+  "fairs": [],
+  "logo": "assets/firms/avonni.png",
+  "name": "Avonni",
+  "posts": [],
+  "products": "Avize ve aydınlatma",
+  "role": "brand",
+  "social": {
+   "instagram": "https://www.instagram.com/avonnilighting",
+   "x": "https://x.com/AvonniLighting",
+   "youtube": "https://www.youtube.com/@AvonniLighting"
+  },
+  "sources": [
+   "https://avonni.com.tr/sarkit-avizeler"
+  ],
+  "stores": [],
+  "videos": [],
+  "website": "https://avonni.com.tr/"
  },
  "saudi-ceramics": {
   "about": "Saudi Ceramic Company (Saudi Ceramics), 1977'de kurulan ve merkezi Riyad'da bulunan Suudi Arabistan'ın köklü seramik ve vitrifiye üreticisidir. Riyad İkinci Sanayi Bölgesi'ndeki fabrikalarında vitrifiye, seramik karo ve elektrikli su ısıtıcıları üretir; ürün yelpazesinde armatür ve aynalar da yer alır. Şirket Suudi Borsası'nda (Tadawul, 2040) işlem görür.\n\nBu projede tüm paketlerde banyo, misafir lavabosu, şoför ve hizmetli banyolarındaki lavabo dolabı (vanity) kalemleri Saudi Ceramics ürünleriyle verilir.",
