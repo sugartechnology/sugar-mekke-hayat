@@ -1030,6 +1030,14 @@
   ],
   "videos": [
    {
+    "file": "assets/videos/livello-9r519JLWgnQ.mp4",
+    "kind": "factory",
+    "poster": "assets/videos/livello-9r519JLWgnQ.jpg",
+    "source": "https://www.youtube.com/watch?v=9r519JLWgnQ",
+    "title": "Livello Mobilya · Entegre üretim tesisleri",
+    "url": "https://www.youtube.com/watch?v=9r519JLWgnQ"
+   },
+   {
     "fair": "IFF",
     "file": "assets/videos/livello-iff2026.mp4",
     "kind": "fair",
@@ -1097,6 +1105,12 @@
   "website": "https://www.midea.com/sa"
  },
  "inci-design": {
+  "facility": [
+   {
+    "a": "assets/firms/inci-design-tesis.webp",
+    "caption": "Üretim tesisi · İnegöl, Bursa"
+   }
+  ],
   "hq": "İnegöl, Bursa",
   "logo": "assets/firms/inci-design-logo.png",
   "name": "Inci Design",
@@ -1781,6 +1795,16 @@
     "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4",
     "title": "Sardunya hakkında",
     "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
+   },
+   {
+    "fair": "IIFF İstanbul",
+    "file": "assets/videos/sardunya-YxaeGh2yjD0.mp4",
+    "kind": "fair",
+    "poster": "assets/videos/sardunya-YxaeGh2yjD0.jpg",
+    "source": "https://www.youtube.com/shorts/YxaeGh2yjD0",
+    "title": "Sardunya IIFF 2026",
+    "url": "https://www.youtube.com/shorts/YxaeGh2yjD0",
+    "year": "2026"
    }
   ],
   "website": "https://sardunyafurniture.com/"

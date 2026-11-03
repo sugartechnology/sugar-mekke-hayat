@@ -626,8 +626,12 @@
      "assets/items/appliances/dora-ua65d26-1.webp",
      "assets/items/appliances/dora-ua65d26-2.webp"
     ],
-    "F-001": "assets/items/sardunya/A_F-001.webp",
-    "F-002": "assets/items/sardunya/A_F-002.webp",
+    "F-001": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-002": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-003": "assets/items/bellona/montella-uclu-koltuk.webp",
     "F-004": "assets/items/bellona/montella-ikili-koltuk.webp",
     "F-005": "assets/items/bellona/montella-berjer.webp",
@@ -678,6 +682,16 @@
     "F-028": "assets/items/bellona/veronica-ikili-koltuk.webp",
     "F-029": "assets/items/bellona/veronica-acilir-yemek-masasi.webp",
     "F-030": "assets/items/bellona/veronica-sandalye.webp",
+    "F-031": [
+     {
+      "a": "assets/items/saudi-ceramics/pure.webp",
+      "n": "Saudi Ceramics Pure · lavabo dolabı ve aynalı dolap"
+     },
+     {
+      "a": "assets/items/saudi-ceramics/pure-olculer.webp",
+      "n": "Pure · ölçüler: lavabo 800×470, dolap 780×455×430, aynalı dolap 750×700 mm"
+     }
+    ],
     "F-032": "assets/items/sardunya/A_F-032.webp",
     "F-033": [
      {
@@ -765,10 +779,14 @@
       "n": "Lina 100'lük Dolap"
      }
     ],
-    "F-064": "assets/items/sardunya/A_F-064.webp",
+    "F-064": [
+     "assets/items/luva/luva-nardo-sehpa.webp"
+    ],
     "F-065": "assets/items/sardunya/A_F-065.webp",
     "F-066": "assets/items/sardunya/A_F-066.webp",
-    "F-067": "assets/items/sardunya/A_F-002.webp",
+    "F-067": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-069": "assets/items/bellona/boheems-uclu-koltuk.webp",
     "F-070": "assets/items/bellona/boheems-uclu-koltuk.webp",
     "F-071": "assets/items/bellona/boheems-tv-sehpasi.webp",
@@ -791,7 +809,9 @@
       "q": 2
      }
     ],
-    "F-076": "assets/items/sardunya/A_F-076.webp",
+    "F-076": [
+     "assets/items/luva/luva-nardo-sehpa.webp"
+    ],
     "F-077": "assets/items/sardunya/A_F-077.webp",
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
@@ -810,17 +830,7 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp",
-    "F-031": [
-     {
-      "a": "assets/items/saudi-ceramics/pure.webp",
-      "n": "Saudi Ceramics Pure · lavabo dolabı ve aynalı dolap"
-     },
-     {
-      "a": "assets/items/saudi-ceramics/pure-olculer.webp",
-      "n": "Pure · ölçüler: lavabo 800×470, dolap 780×455×430, aynalı dolap 750×700 mm"
-     }
-    ]
+    "S1.16": "assets/items/volly/commissioning.webp"
    },
    "Villa B": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -890,6 +900,12 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-078": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-079": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-092": "assets/items/bellona/montella-uclu-koltuk.webp",
     "F-093": "assets/items/bellona/montella-ikili-koltuk.webp",
     "F-094": "assets/items/bellona/montella-berjer.webp",
@@ -908,10 +924,22 @@
     "F-112": "assets/items/bellona/veronica-sandalye.webp",
     "F-120": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
     "F-121": "assets/items/livello/liv-paris-mini-berjer.webp",
+    "F-145": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-146": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-149": "assets/items/bellona/boheems-uclu-koltuk.webp",
     "F-150": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-151": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-152": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "F-156": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-157": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -999,6 +1027,12 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-158": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-159": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-160": "assets/items/bellona/montella-uclu-koltuk.webp",
     "F-161": "assets/items/bellona/montella-ikili-koltuk.webp",
     "F-162": "assets/items/bellona/montella-berjer.webp",
@@ -1017,10 +1051,22 @@
     "F-177": "assets/items/bellona/veronica-sandalye.webp",
     "F-201": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
     "F-202": "assets/items/livello/liv-paris-mini-berjer.webp",
+    "F-225": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-226": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-229": "assets/items/bellona/boheems-uclu-koltuk.webp",
     "F-230": "assets/items/bellona/boheems-tv-sehpasi.webp",
     "F-231": "assets/items/bellona/boheems-orta-sehpa.webp",
     "F-232": "assets/items/bellona/boheems-yan-sehpa.webp",
+    "F-237": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-238": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
     "INS-3": "assets/items/appliances/montaj-kurulum.webp",
@@ -2912,8 +2958,12 @@
      "assets/items/appliances/dora-ua65d26-1.webp",
      "assets/items/appliances/dora-ua65d26-2.webp"
     ],
-    "F-001": "assets/items/sardunya/A_F-001.webp",
-    "F-002": "assets/items/sardunya/A_F-002.webp",
+    "F-001": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-002": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-003": [
      "assets/items/sardunya/site/matisse-koltuk-takimi_2.webp",
      "assets/items/sardunya/site/matisse-koltuk-takimi_0.webp"
@@ -2922,11 +2972,17 @@
      "assets/items/sardunya/site/matisse-koltuk-takimi_3.webp",
      "assets/items/sardunya/site/matisse-koltuk-takimi_0.webp"
     ],
-    "F-005": "assets/items/sardunya/A_F-005.webp",
-    "F-006": "assets/items/sardunya/A_F-006.webp",
-    "F-007": "assets/items/sardunya/A_F-006.webp",
-    "F-008": "assets/items/sardunya/A_F-006.webp",
-    "F-009": "assets/items/sardunya/A_F-009.webp",
+    "F-005": "assets/items/sardunya/site/sd-solaris-berjer.webp",
+    "F-006": [
+     "assets/items/sardunya/site/sd-solaris-orta.webp",
+     "assets/items/sardunya/A_F-006.webp"
+    ],
+    "F-007": "assets/items/sardunya/site/sd-solaris-yan.webp",
+    "F-008": "assets/items/sardunya/site/sd-solaris-yan.webp",
+    "F-009": [
+     "assets/items/sardunya/site/sd-solaris-tv.webp",
+     "assets/items/sardunya/A_F-009.webp"
+    ],
     "F-010": [
      "assets/items/sardunya/site/matisse-yemek-odasi-takimi_4.webp",
      "assets/items/sardunya/site/matisse-yemek-odasi-takimi_2.webp"
@@ -2971,7 +3027,10 @@
      "assets/items/sardunya/site/soho-sehpa_1.webp",
      "assets/items/sardunya/site/soho-sehpa_0.webp"
     ],
-    "F-026": "assets/items/sardunya/A_F-026.webp",
+    "F-026": [
+     "assets/items/sardunya/site/sd-soho-tv.webp",
+     "assets/items/sardunya/A_F-026.webp"
+    ],
     "F-027": "assets/items/sardunya/A_F-027.webp",
     "F-028": "assets/items/sardunya/A_F-028.webp",
     "F-029": [
@@ -3066,10 +3125,14 @@
       "n": "Lina 100'lük Dolap"
      }
     ],
-    "F-064": "assets/items/sardunya/A_F-064.webp",
+    "F-064": [
+     "assets/items/luva/luva-nardo-sehpa.webp"
+    ],
     "F-065": "assets/items/sardunya/A_F-065.webp",
     "F-066": "assets/items/sardunya/A_F-066.webp",
-    "F-067": "assets/items/sardunya/A_F-002.webp",
+    "F-067": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-068": [
      "assets/items/sardunya/site/lumo-kitaplik_0.webp",
      "assets/items/sardunya/site/lumo-kitaplik_4.webp"
@@ -3102,7 +3165,9 @@
       "q": 2
      }
     ],
-    "F-076": "assets/items/sardunya/A_F-076.webp",
+    "F-076": [
+     "assets/items/luva/luva-nardo-sehpa.webp"
+    ],
     "F-077": "assets/items/sardunya/A_F-077.webp",
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
@@ -3190,11 +3255,19 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-078": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-079": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-092": [
+     "assets/items/sardunya/site/sd-moon-3.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_2.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_0.webp"
     ],
     "F-093": [
+     "assets/items/sardunya/site/sd-moon-2.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_5.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_1.webp"
     ],
@@ -3215,6 +3288,7 @@
      "assets/items/sardunya/site/moon-sehpa_2.webp"
     ],
     "F-098": [
+     "assets/items/sardunya/site/sd-moon-tv.webp",
      "assets/items/sardunya/site/moon-tv-unitesi_1.webp",
      "assets/items/sardunya/site/moon-tv-unitesi_0.webp"
     ],
@@ -3227,6 +3301,7 @@
      "assets/items/sardunya/site/moon-sandalye-2_0.webp"
     ],
     "F-101": [
+     "assets/items/sardunya/site/sd-moon-kit.webp",
      "assets/items/sardunya/site/moon-kitaplik_1.webp",
      "assets/items/sardunya/site/moon-kitaplik_2.webp"
     ],
@@ -3235,7 +3310,10 @@
      "assets/items/sardunya/site/soho-sehpa_1.webp",
      "assets/items/sardunya/site/soho-sehpa_0.webp"
     ],
-    "F-108": "assets/items/sardunya/A_F-026.webp",
+    "F-108": [
+     "assets/items/sardunya/site/sd-soho-tv.webp",
+     "assets/items/sardunya/A_F-026.webp"
+    ],
     "F-109": "assets/items/sardunya/A_F-027.webp",
     "F-110": "assets/items/sardunya/A_F-028.webp",
     "F-111": [
@@ -3244,6 +3322,7 @@
     ],
     "F-112": "assets/items/sardunya/A_F-030.webp",
     "F-113": [
+     "assets/items/sardunya/site/sd-soho-berjer.webp",
      "assets/items/sardunya/site/soho-koltuk-takimi_1.webp"
     ],
     "F-114": [
@@ -3255,6 +3334,18 @@
     "F-123": "assets/items/livello/liv-flex-gardirop.webp",
     "F-143": "assets/items/livello/liv-paris-100-camli-dolap.webp",
     "F-144": "assets/items/livello/liv-paris-200-dolap.webp",
+    "F-145": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-146": [
+     "assets/items/luva/luva-casper.webp"
+    ],
+    "F-147": [
+     "assets/items/luva/luva-casper.webp"
+    ],
+    "F-148": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
     "F-149": [
      "assets/items/sardunya/site/lumo-kose-takimi_1.webp",
      "assets/items/sardunya/site/lumo-kose-takimi_0.webp"
@@ -3275,6 +3366,12 @@
     "F-154": [
      "assets/items/sardunya/site/solaris-yatak_1.webp",
      "assets/items/sardunya/site/solaris-yatak_5.webp"
+    ],
+    "F-156": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-157": [
+     "assets/items/luva/luva-casper.webp"
     ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
@@ -3362,15 +3459,24 @@
      "assets/items/appliances/philips-dst2010-2.webp"
     ],
     "F-023B": "assets/items/appliances/philips-fc8293-1.webp",
+    "F-158": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-159": [
+     "assets/items/luva/luva-casper.webp"
+    ],
     "F-160": [
+     "assets/items/sardunya/site/sd-moon-3.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_2.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_0.webp"
     ],
     "F-161": [
+     "assets/items/sardunya/site/sd-moon-2.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_5.webp",
      "assets/items/sardunya/site/moon-koltuk-takimi_1.webp"
     ],
     "F-162": [
+     "assets/items/sardunya/site/sd-harmony-berjer.webp",
      "assets/items/sardunya/site/harmony-kose-takimi_5.webp",
      "assets/items/sardunya/site/harmony-kose-takimi_1.webp"
     ],
@@ -3403,6 +3509,7 @@
      "assets/items/sardunya/site/harmony-sandalye_0.webp"
     ],
     "F-170": [
+     "assets/items/sardunya/site/sd-moon-kit.webp",
      "assets/items/sardunya/site/moon-kitaplik_1.webp",
      "assets/items/sardunya/site/moon-kitaplik_2.webp"
     ],
@@ -3411,7 +3518,10 @@
      "assets/items/sardunya/site/soho-sehpa_1.webp",
      "assets/items/sardunya/site/soho-sehpa_0.webp"
     ],
-    "F-173": "assets/items/sardunya/A_F-026.webp",
+    "F-173": [
+     "assets/items/sardunya/site/sd-soho-tv.webp",
+     "assets/items/sardunya/A_F-026.webp"
+    ],
     "F-174": "assets/items/sardunya/A_F-027.webp",
     "F-175": "assets/items/sardunya/A_F-028.webp",
     "F-176": [
@@ -3434,6 +3544,15 @@
     "F-197": "assets/items/livello/liv-flex-100-dolap.webp",
     "F-201": "assets/items/livello/liv-paris-sifonyer-ayna.webp",
     "F-202": "assets/items/livello/liv-paris-mini-berjer.webp",
+    "F-225": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-226": [
+     "assets/items/luva/luva-casper.webp"
+    ],
+    "F-228": [
+     "assets/items/luva/luva-nardo-sehpa.webp"
+    ],
     "F-229": [
      "assets/items/sardunya/site/lumo-kose-takimi_1.webp",
      "assets/items/sardunya/site/lumo-kose-takimi_0.webp"
@@ -3454,6 +3573,12 @@
     "F-234": [
      "assets/items/sardunya/site/solaris-yatak_1.webp",
      "assets/items/sardunya/site/solaris-yatak_5.webp"
+    ],
+    "F-237": [
+     "assets/items/luva/luva-asparas-sehpa.webp"
+    ],
+    "F-238": [
+     "assets/items/luva/luva-casper.webp"
     ],
     "INS-1": "assets/items/appliances/montaj-kurulum.webp",
     "INS-2": "assets/items/appliances/montaj-kurulum.webp",
