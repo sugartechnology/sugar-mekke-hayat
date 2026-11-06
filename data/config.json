@@ -206,17 +206,17 @@
     "Villa A": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 450
+     "insurance": 380.81
     },
     "Villa B": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 460
+     "insurance": 387.71
     },
     "Villa C": {
      "assembly": 0,
      "freight": 0,
-     "insurance": 417
+     "insurance": 351.47
     }
    },
    "name": "Emerald",
@@ -227,22 +227,22 @@
    },
    "values": {
     "Villa A": [
-     29806.67,
-     38508,
-     13929.33,
-     7737.33
+     25034.89,
+     32059.52,
+     11839.93,
+     7228.63
     ],
     "Villa B": [
-     35311.73,
-     42331.73,
-     4299.47,
-     9997.87
+     29899.39,
+     34803.09,
+     3486.76,
+     9352.04
     ],
     "Villa C": [
-     33036.53,
-     35962.67,
-     6584.27,
-     7830.67
+     27965.47,
+     29389.39,
+     5428.84,
+     7509.92
     ]
    }
   },
@@ -905,7 +905,7 @@
  "source": "sheets",
  "subtitle": "Villa donatım paketleri",
  "syncedAt": "2026-11-02T14:05:23.878Z",
- "updatedAt": "2026-11-02T18:47:09.180Z",
+ "updatedAt": "2026-11-03T22:38:27.173Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
