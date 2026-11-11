@@ -68,17 +68,17 @@
     "Villa A": {
      "assembly": 3098,
      "freight": 5000,
-     "insurance": 336.19
+     "insurance": 341.81
     },
     "Villa B": {
      "assembly": 3339,
      "freight": 5000,
-     "insurance": 332.09
+     "insurance": 339.58
     },
     "Villa C": {
      "assembly": 3333,
      "freight": 5000,
-     "insurance": 330.52
+     "insurance": 337.4
     }
    },
    "name": "Gold",
@@ -92,19 +92,19 @@
      31424.25,
      15262.75,
      12746.25,
-     7855
+     8980
     ],
     "Villa B": [
      32645.25,
      16824,
      9149.75,
-     7855
+     9355
     ],
     "Villa C": [
      33418,
      15755.25,
      9017.25,
-     7855
+     9230
     ]
    }
   },
