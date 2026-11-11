@@ -3160,7 +3160,7 @@
     "f": "Zemin kat",
     "m": "Casper Tekli",
     "n": "Terrace Outdoor lounge chair",
-    "q": 2,
+    "q": 4,
     "t": "Loose Furniture",
     "v": 2450
    },
@@ -3170,9 +3170,10 @@
     "f": "Zemin kat",
     "m": "Matisse 3 Seater",
     "n": "Living Room 3-Seater Sofa",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1000
+    "v": 1042.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3180,9 +3181,10 @@
     "f": "Zemin kat",
     "m": "Matisse 2 Seater",
     "n": "Living Room 2-Seater Sofa",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1000
+    "v": 1042.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3230,19 +3232,21 @@
     "f": "Zemin kat",
     "m": "Solaris TV Ünite Alt Blok",
     "n": "Living Room TV Console",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 1816.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-010",
     "f": "Zemin kat",
-    "m": "Matisse Masa 190 cm",
+    "m": "Solaris Masa 190 cm",
     "n": "Living Room Dining Table",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 1110
    },
    {
     "b": "Gold koleksiyonu",
@@ -3259,6 +3263,7 @@
     "c": "F-016",
     "f": "Zemin kat",
     "n": "Kitchen Base Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 121.5
@@ -3268,6 +3273,7 @@
     "c": "F-017",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 621
@@ -3277,6 +3283,7 @@
     "c": "F-018",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 438.75
@@ -3286,6 +3293,7 @@
     "c": "F-019",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "note": "Tezgah: Görseldekine uygun Kuvars veya Porselen olarak fiyatlandırılmıştır. Evye ve Batarya fiyata dahil değildir.",
     "q": 1,
     "t": "Fixed",
     "v": 7560
@@ -3316,29 +3324,30 @@
     "f": "Zemin kat",
     "m": "Soho TV Ünitesi Alt Blok",
     "n": "Majlis TV Console",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 1258.75
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-027",
     "f": "Zemin kat",
-    "m": "Life 3'lü Koltuk",
+    "m": "Metropol Köşe Koltuk",
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 887.5
+    "v": 2178.75
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-028",
     "f": "Zemin kat",
-    "m": "Life 2'li Koltuk",
+    "m": "Metropol Köşe Koltuk",
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 887.5
+    "v": 422.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3406,6 +3415,7 @@
     "f": "Zemin kat",
     "m": "Wash Basin Counter Pure",
     "n": "Guest Basin Bathroom Vanity",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Mdflam\nEvye fiyata dahildir ancak dolabın teknik olarak revize edilmesi gerekmektedir.\nLed Aydınlatma Fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 700
@@ -3736,29 +3746,30 @@
     "f": "Çatı katı",
     "m": "Luma Kitaplık",
     "n": "Hallway Console table",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 651.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-069",
     "f": "Çatı katı",
-    "m": "Lumo 3'lü Koltuk",
+    "m": "Lumo Köşe Koltuk",
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 2315
+    "v": 5000
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-070",
     "f": "Çatı katı",
-    "m": "Lumo 2'lü Koltuk",
+    "m": "Lumo Köşe Koltuk",
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1157.5
+    "v": 682.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3766,9 +3777,10 @@
     "f": "Çatı katı",
     "m": "Lumo TV Alt Blok",
     "n": "Family Living TV Console",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3778,7 +3790,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 516.25
+    "v": 827.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -3788,7 +3800,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 175
+    "v": 422.5
    },
    {
     "b": "Livello",
@@ -3883,6 +3895,22 @@
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
+   },
+   {
+    "b": "Avonni",
+    "c": "D7",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Chandeliers & Wall Sconce",
+    "t": "Ev Dekorasyon",
+    "v": 0
+   },
+   {
+    "b": "Marleth",
+    "c": "D8",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Accessories, Design Items",
+    "t": "Ev Dekorasyon",
+    "v": 0
    },
    {
     "b": "TEKA",
@@ -4190,7 +4218,7 @@
     "f": "Zemin kat",
     "m": "Casper Tekli",
     "n": "Terrace Outdoor lounge chair",
-    "q": 2,
+    "q": 4,
     "t": "Loose Furniture",
     "v": 2450
    },
@@ -4199,6 +4227,7 @@
     "c": "F-085",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 621
@@ -4208,6 +4237,7 @@
     "c": "F-086",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 438.75
@@ -4217,6 +4247,7 @@
     "c": "F-087",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "note": "Tezgah: Görseldekine uygun Kuvars veya Porselen olarak fiyatlandırılmıştır. Evye ve Batarya fiyata dahil değildir.",
     "q": 1,
     "t": "Fixed",
     "v": 7560
@@ -4225,98 +4256,100 @@
     "b": "Gold koleksiyonu",
     "c": "F-092",
     "f": "Zemin kat",
-    "m": "Moon 3'lü Koltuk",
+    "m": "Volume 3'lü Koltuk",
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1157.5
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-093",
     "f": "Zemin kat",
-    "m": "Moon 2'li Koltuk",
+    "m": "Volume 2'li Koltuk",
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 996.25
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-094",
     "f": "Zemin kat",
-    "m": "Moon Berjer (Bob Berjer)",
+    "m": "Volume Berjer (Bob Berjer)",
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 863.75
+    "v": 897.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-095",
     "f": "Zemin kat",
-    "m": "Moon Orta Sehpa",
+    "m": "Volume Orta Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 516.25
+    "v": 591.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-096",
     "f": "Zemin kat",
-    "m": "Moon Yan Sehpa",
+    "m": "volume Yan Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 175
+    "v": 391.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-097",
     "f": "Zemin kat",
-    "m": "Moon Yan Sehpa",
+    "m": "Metropol Yan Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 175
+    "v": 300
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-098",
     "f": "Zemin kat",
-    "m": "Moon TV Alt Blok",
+    "m": "Volume TV Alt Blok",
     "n": "Living Room TV Console",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 1191.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-099",
     "f": "Zemin kat",
-    "m": "Moon Masa 210 cm",
+    "m": "Metropol Masa 210 cm",
     "n": "Living Room Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1073.75
+    "v": 1185
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-100",
     "f": "Zemin kat",
-    "m": "Moon Sandalye Döner",
+    "m": "Metropol Sandalye",
     "n": "Living Room Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1727.5
+    "v": 1630
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-101",
     "f": "Zemin kat",
-    "m": "Moon Bookshelves",
+    "m": "Volume Bookshelves",
     "n": "Living Room Buffet",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
     "v": 750
@@ -4347,6 +4380,7 @@
     "f": "Zemin kat",
     "m": "Wash Basin Counter Pure",
     "n": "Guest Basin Bathroom Vanity",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Mdflam\nEvye fiyata dahildir ancak dolabın teknik olarak revize edilmesi gerekmektedir.\nLed Aydınlatma Fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 700
@@ -4365,91 +4399,92 @@
     "b": "Gold koleksiyonu",
     "c": "F-106",
     "f": "Zemin kat",
-    "m": "Soho Orta Sehpa",
+    "m": "Harmony Orta Sehpa",
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 347.5
+    "v": 428.75
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-107",
     "f": "Zemin kat",
-    "m": "Soho Yan Sehpa",
+    "m": "Harmony Yan Sehpa",
     "n": "Majlis Coffee table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 188.75
+    "v": 147.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-108",
     "f": "Zemin kat",
-    "m": "Soho TV Ünitesi Alt Blok",
+    "m": "Harmony TV Ünitesi Alt Blok+üst raf",
     "n": "Majlis TV Console",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 1202.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-109",
     "f": "Zemin kat",
-    "m": "Life 3'lü Koltuk",
+    "m": "Harmony Köşe Koltuk",
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1107.5
+    "v": 1443.75
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-110",
     "f": "Zemin kat",
-    "m": "Life 2'li Koltuk",
+    "m": "Harmony Köşe Koltuk",
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1107.5
+    "v": 1250
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-111",
     "f": "Zemin kat",
-    "m": "Soho Masa 190 cm",
+    "m": "Harmony Masa 190 cm",
     "n": "Majlis Dining Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1050
+    "v": 951.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-112",
     "f": "Zemin kat",
-    "m": "Soho Sandalye",
+    "m": "Harmony Sandalye",
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1133.75
+    "v": 2060
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-113",
     "f": "Zemin kat",
-    "m": "Soho Berjer",
+    "m": "Harmony Berjer",
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 945
+    "v": 1025
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-114",
     "f": "Zemin kat",
-    "m": "Soho Yan Sehpa",
+    "m": "Harmony Yan Sehpa",
     "n": "Majlis Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 422.5
+    "v": 147.5
    },
    {
     "b": "livello",
@@ -4799,7 +4834,7 @@
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 3166.25
+    "v": 1582.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4819,7 +4854,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 573.75
+    "v": 827.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4829,7 +4864,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 573.75
+    "v": 422.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -4839,7 +4874,7 @@
     "n": "Family Living Room Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 2000
+    "v": 1093.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -4847,6 +4882,7 @@
     "f": "Çatı katı",
     "m": "Solaris Karyola (90x190 yatak)",
     "n": "Maid Room Bed",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
     "v": 625
@@ -4934,6 +4970,22 @@
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
+   },
+   {
+    "b": "Avonni",
+    "c": "D7",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Chandeliers & Wall Sconce",
+    "t": "Ev Dekorasyon",
+    "v": 0
+   },
+   {
+    "b": "Marleth",
+    "c": "D8",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Accessories, Design Items",
+    "t": "Ev Dekorasyon",
+    "v": 0
    },
    {
     "b": "TEKA",
@@ -5241,7 +5293,7 @@
     "f": "Zemin kat",
     "m": "Casper Tekli",
     "n": "Terrace Outdoor lounge chair",
-    "q": 2,
+    "q": 4,
     "t": "Loose Furniture",
     "v": 2450
    },
@@ -5249,81 +5301,83 @@
     "b": "Gold koleksiyonu",
     "c": "F-160",
     "f": "Zemin kat",
-    "m": "Moon 3 seater",
+    "m": "Metropol 3lü Koltuk",
     "n": "Living Room 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1157.5
+    "v": 1435
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-161",
     "f": "Zemin kat",
-    "m": "Moon 2 seater",
+    "m": "Metropol 2li Koltuk",
     "n": "Living Room 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 995
+    "v": 1161.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-162",
     "f": "Zemin kat",
-    "m": "Harmony Berjer",
+    "m": "Metropol Berjer",
     "n": "Living Room Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1026.25
+    "v": 977.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-163",
     "f": "Zemin kat",
-    "m": "Harmony Orta Sehpa",
+    "m": "Metropol Orta Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 428.75
+    "v": 506.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-164",
     "f": "Zemin kat",
-    "m": "Harmony Yan Sehpa",
+    "m": "Metropol Yan Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 148.75
+    "v": 300
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-165",
     "f": "Zemin kat",
-    "m": "Harmony Yan Sehpa",
+    "m": "Metropol Yan Sehpa",
     "n": "Living Room Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 148.75
+    "v": 216.25
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-166",
     "f": "Zemin kat",
-    "m": "Harmony Konsol",
+    "m": "Metropol Büfe",
     "n": "Living Room Buffet",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 1242.5
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-167",
     "f": "Zemin kat",
-    "m": "Harmony TV Ünitesi Takımı (Alt Blok + Raf)",
+    "m": "Metropol TV Ünitesi Takımı (Alt Blok + Raf)",
     "n": "Living Room TV Console",
+    "note": "özel üreitm",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 1508.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5351,9 +5405,10 @@
     "f": "Zemin kat",
     "m": "Moon Kitaplık",
     "n": "Living Room Bookcase",
+    "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 1147.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5379,17 +5434,17 @@
     "b": "Gold koleksiyonu",
     "c": "F-173",
     "f": "Zemin kat",
-    "m": "Soho TV Ünitesi Alt Blok",
+    "m": "Soho TV Ünitesi Alt Blok+raf",
     "n": "Majlis TV Console",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1258.75
+    "v": 1625
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-174",
     "f": "Zemin kat",
-    "m": "Life 3'lü Koltuk",
+    "m": "Metropol Köşe Koltuk",
     "n": "Majlis 3-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
@@ -5399,7 +5454,7 @@
     "b": "Gold koleksiyonu",
     "c": "F-175",
     "f": "Zemin kat",
-    "m": "Life 2'li Koltuk",
+    "m": "Metropol Köşe Koltuk",
     "n": "Majlis 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
@@ -5423,7 +5478,7 @@
     "n": "Majlis Chair",
     "q": 8,
     "t": "Loose Furniture",
-    "v": 1242.5
+    "v": 1130
    },
    {
     "b": "Gold koleksiyonu",
@@ -5433,7 +5488,7 @@
     "n": "Majlis Armchair",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 1462.5
+    "v": 793.75
    },
    {
     "b": "Gold koleksiyonu",
@@ -5443,7 +5498,7 @@
     "n": "Side Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 112.5
+    "v": 147.5
    },
    {
     "b": "Saudi Ceramics",
@@ -5461,6 +5516,7 @@
     "f": "Zemin kat",
     "m": "Wash Basin Counter Pure",
     "n": "Guest Basin Bathroom Vanity",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Mdflam\nEvye fiyata dahildir ancak dolabın teknik olarak revize edilmesi gerekmektedir.\nLed Aydınlatma Fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 700
@@ -5470,6 +5526,7 @@
     "c": "F-186",
     "f": "Zemin kat",
     "n": "Kitchen Base Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 121.5
@@ -5479,6 +5536,7 @@
     "c": "F-187",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 621
@@ -5488,6 +5546,7 @@
     "c": "F-188",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
+    "note": "Gövde: Mdflam\nKapaklar: Kastamonu Entegre Lak Panel\nÇekmece Rayı: Hafele/Blum Tandembox\nMenteşe: Hafele/Blum\nAventos fiyata dahil değildir.\nLed aydınlatma fiyata dahildir.",
     "q": 1,
     "t": "Fixed",
     "v": 438.75
@@ -5497,6 +5556,7 @@
     "c": "F-189",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
+    "note": "Tezgah: Görseldekine uygun Kuvars veya Porselen olarak fiyatlandırılmıştır. Evye ve Batarya fiyata dahil değildir.",
     "q": 1,
     "t": "Fixed",
     "v": 7560
@@ -5855,11 +5915,11 @@
     "b": "Gold koleksiyonu",
     "c": "F-229",
     "f": "Çatı katı",
-    "m": "Lumo Mini Köşe (Sol)",
+    "m": "Lumo Mini Köşe (Sol)+sağ",
     "n": "Family Living 3-Seater Sofa",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 3166.25
+    "v": 1582.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5879,7 +5939,7 @@
     "n": "Family Living Coffee Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 750
+    "v": 827.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5899,7 +5959,7 @@
     "n": "Family Living Buffet",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1206.25
+    "v": 651.25
    },
    {
     "b": "Gold koleksiyonu",
@@ -6004,6 +6064,22 @@
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
+   },
+   {
+    "b": "Avonni",
+    "c": "D7",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Chandeliers & Wall Sconce",
+    "t": "Ev Dekorasyon",
+    "v": 0
+   },
+   {
+    "b": "Marleth",
+    "c": "D8",
+    "f": "Ev tamamlayıcı ürünler",
+    "n": "Accessories, Design Items",
+    "t": "Ev Dekorasyon",
+    "v": 0
    },
    {
     "b": "TEKA",

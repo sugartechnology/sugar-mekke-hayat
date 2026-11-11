@@ -68,17 +68,17 @@
     "Villa A": {
      "assembly": 3098,
      "freight": 5000,
-     "insurance": 304.92
+     "insurance": 336.19
     },
     "Villa B": {
      "assembly": 3339,
      "freight": 5000,
-     "insurance": 329.2
+     "insurance": 332.09
     },
     "Villa C": {
      "assembly": 3333,
      "freight": 5000,
-     "insurance": 329.78
+     "insurance": 330.52
     }
    },
    "name": "Gold",
@@ -89,21 +89,21 @@
    },
    "values": {
     "Villa A": [
-     28578,
+     31424.25,
      15262.75,
-     9333.75,
+     12746.25,
      7855
     ],
     "Villa B": [
-     29680.25,
+     32645.25,
      16824,
-     11537.25,
+     9149.75,
      7855
     ],
     "Villa C": [
-     31208,
+     33418,
      15755.25,
-     11078.5,
+     9017.25,
      7855
     ]
    }
@@ -905,7 +905,7 @@
  "source": "sheets",
  "subtitle": "Villa donatım paketleri",
  "syncedAt": "2026-11-02T14:05:23.878Z",
- "updatedAt": "2026-11-10T13:25:30.145Z",
+ "updatedAt": "2026-11-10T21:31:17.222Z",
  "vat": 0.15,
  "villaCount": 250,
  "villaMeta": {},
