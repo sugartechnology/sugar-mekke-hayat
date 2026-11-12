@@ -3259,7 +3259,7 @@
     "v": 1538.75
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-016",
     "f": "Zemin kat",
     "n": "Kitchen Base Cabinet",
@@ -3269,7 +3269,7 @@
     "v": 121.5
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-017",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -3279,7 +3279,7 @@
     "v": 621
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-018",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -3289,7 +3289,7 @@
     "v": 438.75
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-019",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
@@ -3380,14 +3380,14 @@
     "v": 116
    },
    {
-    "b": "livello",
+    "b": "Livello",
     "c": "F-032",
     "f": "Zemin kat",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Livello",
@@ -3431,14 +3431,14 @@
     "v": 787.5
    },
    {
-    "b": "livello",
+    "b": "Livello",
     "c": "F-037",
     "f": "Zemin kat",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Livello",
@@ -3685,7 +3685,7 @@
     "c": "F-062",
     "f": "1. kat",
     "m": "Lina 50'lik, Lina 100'lük, Lina Köşe Dolap",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 1203.75
@@ -3695,7 +3695,7 @@
     "c": "F-063",
     "f": "1. kat",
     "m": "Lina 50'lik, Lina 100'lük,",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 1058.75
@@ -3755,18 +3755,18 @@
     "b": "Gold koleksiyonu",
     "c": "F-069",
     "f": "Çatı katı",
-    "m": "Lumo Köşe Koltuk",
-    "n": "Family Living 3-Seater Sofa",
-    "q": 2,
+    "m": "Lumo Köşe Takımı",
+    "n": "Family Living Corner",
+    "q": 1,
     "t": "Loose Furniture",
-    "v": 5000
+    "v": 2500
    },
    {
     "b": "Gold koleksiyonu",
     "c": "F-070",
     "f": "Çatı katı",
     "m": "Lumo Köşe Koltuk",
-    "n": "Living Room 2-Seater Sofa",
+    "n": "Family Living 2-Seater Sofa",
     "q": 1,
     "t": "Loose Furniture",
     "v": 682.5
@@ -3891,7 +3891,7 @@
     "b": "Silver koleksiyonu",
     "c": "D6",
     "f": "Ev tamamlayıcı ürünler",
-    "n": "",
+    "n": "Mattress",
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
@@ -3902,7 +3902,7 @@
     "f": "Ev tamamlayıcı ürünler",
     "n": "Chandeliers & Wall Sconce",
     "t": "Ev Dekorasyon",
-    "v": 0
+    "v": 2050
    },
    {
     "b": "Marleth",
@@ -3916,10 +3916,10 @@
     "b": "TEKA",
     "c": "F-013",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Induction Hob (TEKA IZC 64010 BK MSS)",
+    "n": "60cm Gas on Glass Hob (TEKA GZC 64320 XB)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 445.3333333
+    "v": 426.6666667
    },
    {
     "b": "TEKA",
@@ -3943,10 +3943,10 @@
     "b": "TEKA",
     "c": "F-020A",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Pull-out Recirculation Hood (TEKA PLR 6320 MCS IX)",
+    "n": "60cm Pull-out Hood (TEKA CNL 6610 SA)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 120
+    "v": 229.0666667
    },
    {
     "b": "TEKA",
@@ -4054,7 +4054,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 12475
+    "v": 9980
    },
    {
     "b": "Volly Smart",
@@ -4223,7 +4223,7 @@
     "v": 2450
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-085",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -4233,7 +4233,7 @@
     "v": 621
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-086",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -4243,7 +4243,7 @@
     "v": 438.75
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-087",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
@@ -4487,14 +4487,14 @@
     "v": 147.5
    },
    {
-    "b": "livello",
+    "b": "Livello",
     "c": "F-115",
     "f": "Zemin kat",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Livello",
@@ -4520,48 +4520,48 @@
     "b": "Livello",
     "c": "F-118",
     "f": "1. kat",
-    "m": "Paris Karyola 160x200",
+    "m": "Pegasus Karyola 160x200",
     "n": "Bedroom-1 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 681.25
+    "v": 837.5
    },
    {
     "b": "Livello",
     "c": "F-119",
     "f": "1. kat",
-    "m": "Paris Komodin",
+    "m": "Pegasus Komodin",
     "n": "Bedroom-1 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 322.5
+    "v": 1235
    },
    {
     "b": "Livello",
     "c": "F-120",
     "f": "1. kat",
-    "m": "Paris Şifonyer + Ayna",
+    "m": "Pegasus Şifonyer + Ayna",
     "n": "Bedroom-1 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 680
+    "v": 543.75
    },
    {
     "b": "Livello",
     "c": "F-121",
     "f": "1. kat",
-    "m": "Paris Memory Mini Berjer",
+    "m": "Pegasus Memory Mini Berjer",
     "n": "Bedroom-1 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 88.75
+    "v": 140
    },
    {
     "b": "Livello",
     "c": "F-122",
     "f": "1. kat",
     "m": "Flex 100+100+40 cm Dolap",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Bedroom-1 Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 1361.25
@@ -4571,7 +4571,7 @@
     "c": "F-123",
     "f": "1. kat",
     "m": "Flex 70 cm Dolap",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Bedroom-1 Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 496.25
@@ -4650,41 +4650,41 @@
     "b": "Livello",
     "c": "F-131",
     "f": "1. kat",
-    "m": "Lina Karyola 160x200",
+    "m": "Volare Karyola 160x200",
     "n": "Bedroom-3 Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 751.25
+    "v": 712.5
    },
    {
     "b": "Livello",
     "c": "F-132",
     "f": "1. kat",
-    "m": "Lina Komodin",
+    "m": "Volare Komodin",
     "n": "Bedroom-3 Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 335
+    "v": 427.5
    },
    {
     "b": "Livello",
     "c": "F-133",
     "f": "1. kat",
-    "m": "Lina Şifonyer + Ayna",
+    "m": "Volare Şifonyer + Ayna",
     "n": "Bedroom-3 Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 570
+    "v": 568.75
    },
    {
     "b": "Livello",
     "c": "F-134",
     "f": "1. kat",
-    "m": "Lina Memory Mini Berjer",
+    "m": "Volare Memory Mini Berjer",
     "n": "Bedroom-3 Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 107.5
+    "v": 135
    },
    {
     "b": "Livello",
@@ -4710,41 +4710,41 @@
     "b": "Livello",
     "c": "F-137",
     "f": "1. kat",
-    "m": "Pegasus Karyola 160x200",
+    "m": "Olinda Karyola 160x200",
     "n": "Master Bedroom Double Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 898.75
+    "v": 660
    },
    {
     "b": "Livello",
     "c": "F-138",
     "f": "1. kat",
-    "m": "Pegasus Komodin",
+    "m": "Olinda Komodin",
     "n": "Master Bedroom Bedside Table",
     "q": 2,
     "t": "Loose Furniture",
-    "v": 617.5
+    "v": 570
    },
    {
     "b": "Livello",
     "c": "F-139",
     "f": "1. kat",
-    "m": "Pegasus Köşe Şifonyer",
+    "m": "Olinda Köşe Şifonyer",
     "n": "Master Bedroom Dressing Table",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 663.75
+    "v": 358.75
    },
    {
     "b": "Livello",
     "c": "F-140",
     "f": "1. kat",
-    "m": "Pegasus Memory Mini Berjer",
+    "m": "Olinda Memory Mini Berjer",
     "n": "Master Bedroom Chair",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 140
+    "v": 86.25
    },
    {
     "b": "Livello",
@@ -4754,7 +4754,7 @@
     "n": "Master Bedroom Bed bench",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 271.25
+    "v": 173.75
    },
    {
     "b": "Saudi Ceramics",
@@ -4771,7 +4771,7 @@
     "c": "F-143",
     "f": "1. kat",
     "m": "Paris 110cm dolap",
-    "n": "Walk-In Closet",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 642.5
@@ -4781,7 +4781,7 @@
     "c": "F-144",
     "f": "1. kat",
     "m": "Paris 100+100+50 cm dolap",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 2,
     "t": "Fixed",
     "v": 2312.5
@@ -4830,9 +4830,9 @@
     "b": "Gold koleksiyonu",
     "c": "F-149",
     "f": "Çatı katı",
-    "m": "Lumo Mini Köşe (Sol)+Lumo Mini Köşe (Sağ)",
-    "n": "Family Living 3-Seater Sofa",
-    "q": 2,
+    "m": "Lumo Üçlü Koltuk (Sol+Sağ Modül)",
+    "n": "Family Living Corner",
+    "q": 1,
     "t": "Loose Furniture",
     "v": 1582.5
    },
@@ -4877,15 +4877,15 @@
     "v": 1093.75
    },
    {
-    "b": "Gold koleksiyonu",
+    "b": "Livello",
     "c": "F-154",
     "f": "Çatı katı",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Maid Room Bed",
     "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Saudi Ceramics",
@@ -4966,7 +4966,7 @@
     "b": "Silver koleksiyonu",
     "c": "D6",
     "f": "Ev tamamlayıcı ürünler",
-    "n": "",
+    "n": "Mattress",
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
@@ -4977,7 +4977,7 @@
     "f": "Ev tamamlayıcı ürünler",
     "n": "Chandeliers & Wall Sconce",
     "t": "Ev Dekorasyon",
-    "v": 0
+    "v": 2050
    },
    {
     "b": "Marleth",
@@ -4985,16 +4985,16 @@
     "f": "Ev tamamlayıcı ürünler",
     "n": "Accessories, Design Items",
     "t": "Ev Dekorasyon",
-    "v": 1320
+    "v": 880
    },
    {
     "b": "TEKA",
     "c": "F-013",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Induction Hob (TEKA IZC 64010 BK MSS)",
+    "n": "60cm Gas on Glass Hob (TEKA GZC 64320 XB)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 445.3333333
+    "v": 426.6666667
    },
    {
     "b": "TEKA",
@@ -5018,10 +5018,10 @@
     "b": "TEKA",
     "c": "F-020A",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Pull-out Recirculation Hood (TEKA PLR 6320 MCS IX)",
+    "n": "60cm Pull-out Hood (TEKA CNL 6610 SA)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 120
+    "v": 229.0666667
    },
    {
     "b": "TEKA",
@@ -5129,7 +5129,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 12475
+    "v": 9980
    },
    {
     "b": "Volly Smart",
@@ -5400,15 +5400,15 @@
     "v": 2052.5
    },
    {
-    "b": "Gold koleksiyonu",
+    "b": "Bella Mobel",
     "c": "F-170",
     "f": "Zemin kat",
-    "m": "Moon Kitaplık",
+    "m": "Özelleştirilmiş Dolap",
     "n": "Living Room Bookcase",
     "note": "özel üretim",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 1147.5
+    "v": 2659.5
    },
    {
     "b": "Gold koleksiyonu",
@@ -5522,7 +5522,7 @@
     "v": 700
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-186",
     "f": "Zemin kat",
     "n": "Kitchen Base Cabinet",
@@ -5532,7 +5532,7 @@
     "v": 121.5
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-187",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -5542,7 +5542,7 @@
     "v": 621
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-188",
     "f": "Zemin kat",
     "n": "Kitchen Wall Cabinet",
@@ -5552,7 +5552,7 @@
     "v": 438.75
    },
    {
-    "b": "Arel Interior",
+    "b": "Bella Mobel",
     "c": "F-189",
     "f": "Zemin kat",
     "n": "Kitchen Cabinetry + Quartz Countertop (~20 lm)",
@@ -5582,14 +5582,14 @@
     "v": 787.5
    },
    {
-    "b": "Gold koleksiyonu",
+    "b": "Livello",
     "c": "F-196",
     "f": "Zemin kat",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Driver Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Livello",
@@ -5856,7 +5856,7 @@
     "c": "F-223",
     "f": "1. kat",
     "m": "Lina 50'lik, Lina 100'lük, Lina Köşe Dolap",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 1203.75
@@ -5866,7 +5866,7 @@
     "c": "F-224",
     "f": "1. kat",
     "m": "Lina 100+40 cm",
-    "n": "Walk-In Closet Wardrobe",
+    "n": "Master Bedroom Walk-In Closet Wardrobe",
     "q": 1,
     "t": "Fixed",
     "v": 787.5
@@ -5915,9 +5915,9 @@
     "b": "Gold koleksiyonu",
     "c": "F-229",
     "f": "Çatı katı",
-    "m": "Lumo Mini Köşe (Sol)+sağ",
+    "m": "Lumo Üçlü Koltuk (Sol+Sağ Modül)",
     "n": "Family Living 3-Seater Sofa",
-    "q": 2,
+    "q": 1,
     "t": "Loose Furniture",
     "v": 1582.5
    },
@@ -5962,14 +5962,14 @@
     "v": 651.25
    },
    {
-    "b": "Gold koleksiyonu",
+    "b": "Livello",
     "c": "F-234",
     "f": "Çatı katı",
-    "m": "Solaris Karyola (90x190 yatak)",
+    "m": "Los Angeles Karyola (90x190 yatak)",
     "n": "Maid Room Bed",
     "q": 1,
     "t": "Loose Furniture",
-    "v": 625
+    "v": 500
    },
    {
     "b": "Livello",
@@ -6060,7 +6060,7 @@
     "b": "Silver koleksiyonu",
     "c": "D6",
     "f": "Ev tamamlayıcı ürünler",
-    "n": "",
+    "n": "Mattress",
     "q": 6,
     "t": "Ev Dekorasyon",
     "v": 1125
@@ -6071,7 +6071,7 @@
     "f": "Ev tamamlayıcı ürünler",
     "n": "Chandeliers & Wall Sconce",
     "t": "Ev Dekorasyon",
-    "v": 0
+    "v": 2050
    },
    {
     "b": "Marleth",
@@ -6079,16 +6079,16 @@
     "f": "Ev tamamlayıcı ürünler",
     "n": "Accessories, Design Items",
     "t": "Ev Dekorasyon",
-    "v": 1210
+    "v": 880
    },
    {
     "b": "TEKA",
     "c": "F-013",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Induction Hob (TEKA IZC 64010 BK MSS)",
+    "n": "60cm Gas on Glass Hob (TEKA GZC 64320 XB)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 445.3333333
+    "v": 426.6666667
    },
    {
     "b": "TEKA",
@@ -6112,10 +6112,10 @@
     "b": "TEKA",
     "c": "F-020A",
     "f": "Elektrikli ev aletleri",
-    "n": "60cm Pull-out Recirculation Hood (TEKA PLR 6320 MCS IX)",
+    "n": "60cm Pull-out Hood (TEKA CNL 6610 SA)",
     "q": 1,
     "t": "Electrical Appliance",
-    "v": 120
+    "v": 229.0666667
    },
    {
     "b": "TEKA",
@@ -6223,7 +6223,7 @@
     "n": "KNX Smart Home System – complete villa package (16 items)",
     "q": 1,
     "t": "Smart Home",
-    "v": 12475
+    "v": 9980
    },
    {
     "b": "Volly Smart",

@@ -203,7 +203,8 @@
   "about": "Teka, 1924'te Almanya'nın Gelsenkirchen kentinde kurulan mutfak ve banyo cihazları üreticisidir. Bugün merkezi İspanya (Santander) ve İsviçre'dedir (Zug) ve Midea Group'a aittir. 116 ülkede satış yapar; Avrupa, Amerika ve Asya'da 14 fabrikası ve yaklaşık 4.700 çalışanı vardır.\n\nÜrün gamında ankastre fırın ve mikrodalga, davlumbaz, gazlı ve indüksiyonlu ocaklar, buzdolabı, çamaşır ve bulaşık makinesi, eviye ve mutfak armatürleri yer alır.\n\nBu projede ocak, davlumbaz, mikrodalga, bulaşık makinesi, buzdolabı ve çamaşır makinesi kalemlerinde yer alır. Teklif ve büyük cihazların montajı TEKA ALJ üzerinden verildi (REV.2, 20.10.2026).",
   "aliases": [
    "TEKA",
-   "TEKA ALJ"
+   "TEKA ALJ",
+   "ALJ"
   ],
   "fairs": [],
   "founded": "1924",
@@ -290,6 +291,14 @@
  },
  "bellona": {
   "about": "Bellona Mobilya A.Ş., 1995'te Kayseri'de kurulmuş ve 1996'da üretime başlamış bir mobilya üreticisidir. Kayseri OSB'de toplam 292.654 m² alanda faaliyet gösterir ve 2.300'ü aşkın çalışanı vardır. Bayi ağı Türkiye'nin 81 ilini kapsar; ürünlerini 61 ülkeye ihraç ettiğini belirtir. Bugün Anadolu Güçbirliği Holding'in grup şirketidir (holdingin diğer markası Doqu Home).",
+  "deckPics": [
+   "assets/firms/deck/bellona-80cdb696bec49a24156a757730617492.webp",
+   "assets/firms/deck/bellona-4180e9b20d32288c1f29d6f1ff5f2c19.webp"
+  ],
+  "deckProds": [
+   "Climarest yatak",
+   "Master Class köşe takımı"
+  ],
   "fairs": [
    {
     "city": "Köln, Almanya",
@@ -1812,6 +1821,31 @@
   "videos": [],
   "website": "https://www.loominology.com/"
  },
+ "arguc": {
+  "about": "Argüç, projenin dekoratif aydınlatma kalemlerini sağlayan tamamlayıcı markadır. Bu projede villaların avize ve aplik aydınlatmalarını karşılar.",
+  "aliases": [
+   "Arguc",
+   "Argüç",
+   "ARGÜÇ"
+  ],
+  "deckProds": [
+   "Avize",
+   "Aplik"
+  ],
+  "fairs": [],
+  "gamOverride": [
+   "Dekoratif aydınlatma"
+  ],
+  "id": "arguc",
+  "inDesign": true,
+  "name": "Argüç",
+  "posts": [],
+  "products": "Dekoratif aydınlatma",
+  "role": "brand",
+  "sources": [],
+  "stores": [],
+  "videos": []
+ },
  "sardunya": {
   "about": "Sardunya, 2009'da İnegöl'de Ümit Kırnak ve Mehmet Yavuz tarafından kurulmuş bir oturma grubu ve salon mobilyası üreticisidir. 2014'ten itibaren modern salon ve oturma odası takımlarına yöneldi. 2021'de fabrikasını Hamzabey OSB'ye taşıdı, 2023'te Akhisar/İnegöl'de panel mobilya tesisi açtı. Türkiye'de yaklaşık 50 satış noktası olduğunu ve 38 ülkeye hizmet verdiğini belirtir. 2024 ihracatı 2,95 milyon USD.",
   "fairs": [
@@ -1962,18 +1996,18 @@
     "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/home-video.mp4"
    },
    {
-    "file": "assets/videos/sardunya-home.mp4",
+    "file": "assets/videos/sardunya-tanitim.mp4",
     "kind": "brand",
-    "poster": "assets/videos/sardunya-home.jpg",
+    "poster": "assets/videos/sardunya-tanitim.jpg",
     "source": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4",
     "title": "Sardunya hakkında",
     "url": "https://sardunyafurniture.com/wp-content/uploads/2025/10/01.mp4"
    },
    {
     "fair": "IIFF İstanbul",
-    "file": "assets/videos/sardunya-about.mp4",
+    "file": "assets/videos/sardunya-home.mp4",
     "kind": "fair",
-    "poster": "assets/videos/sardunya-about.jpg",
+    "poster": "assets/videos/sardunya-home.jpg",
     "source": "https://www.youtube.com/shorts/YxaeGh2yjD0",
     "title": "Sardunya IIFF 2026",
     "url": "https://www.youtube.com/shorts/YxaeGh2yjD0",
