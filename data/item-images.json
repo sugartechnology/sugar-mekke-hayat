@@ -4167,7 +4167,14 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-031": [],
+    "F-034": [],
+    "F-039": [],
+    "F-043": [],
+    "F-049": [],
+    "F-055": [],
+    "F-061": []
    },
    "Villa B": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -4474,7 +4481,15 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-102": [],
+    "F-105": [],
+    "F-117": [],
+    "F-124": [],
+    "F-130": [],
+    "F-136": [],
+    "F-142": [],
+    "F-155": []
    },
    "Villa C": {
     "B2": "assets/items/appliances/midea-sapv18cdef-1.webp",
@@ -4766,7 +4781,15 @@
     "S1.11": "assets/items/volly/ins-sb-intercom.webp",
     "S1.12": "assets/items/volly/din-psu.webp",
     "S1.13": "assets/items/volly/dome-cam.webp",
-    "S1.16": "assets/items/volly/commissioning.webp"
+    "S1.16": "assets/items/volly/commissioning.webp",
+    "F-180": [],
+    "F-194": [],
+    "F-198": [],
+    "F-204": [],
+    "F-210": [],
+    "F-216": [],
+    "F-222": [],
+    "F-236": []
    }
   }
  }
