@@ -184,20 +184,29 @@
   "website": "https://volly.com.tr/"
  },
  "penelope": {
-  "about": "Penelope (Penelope Dokuma San. ve Tic. A.Ş.), Bursa'da üretim yapan bir ev tekstili ve dokuma firmasıdır. Perdelik ve döşemelik kumaş tasarlayıp üretir; yün, keten, akrilik, pamuk ve polyester karışımlı ipliklerle jakar, düz dokuma ve perde kumaşları sunar. 2010'da kurduğu Penelope Yarn ile ürün geliştirmeye iplik aşamasında başlar.\n\nBu projede nevresim takımları, yorgan ve yastıklar ile banyo tekstili (havlu, bornoz, paspas) Penelope ürünleriyle fiyatlandırıldı.",
+  "about": "Penelope, kendini \"Türkiye'nin ilk premium uyku markası\" olarak tanımlayan, Maya Tekstil bünyesindeki uyku ve ev tekstili markasıdır. Üretime 1993'te yastık, yorgan, şilte ve alez ile başladı; bugün nevresim takımları, battaniye ve yatak örtüleri, havlu ve bornoz, oda kokuları gibi ürünlerle 50'den fazla ülkede müşteriye ulaşıyor. Türkiye'deki mağazalarının yanında Azerbaycan ve Irak'ta da mağazaları bulunuyor.\n\nBu projede nevresim takımları, yorgan ve yastıklar ile banyo tekstili (havlu, bornoz, paspas) Penelope ürünleriyle fiyatlandırıldı.",
   "aliases": [
    "Penelope"
   ],
   "fairs": [],
-  "hq": "Nilüfer, Bursa",
   "name": "Penelope",
   "posts": [],
-  "products": "Nevresim takımları ve banyo tekstili",
+  "products": "Yastık, yorgan, nevresim takımları ve banyo tekstili",
   "role": "brand",
-  "social": {},
-  "sources": [],
+  "social": {
+   "instagram": "https://www.instagram.com/penelopebedroom/",
+   "facebook": "https://www.facebook.com/penelopebedroom/",
+   "youtube": "https://www.youtube.com/@penelopebedroom"
+  },
+  "sources": [
+   "https://www.penelopebedroom.com/hakkimizda"
+  ],
   "stores": [],
-  "videos": []
+  "videos": [],
+  "founded": "1993",
+  "logo": "assets/firms/brands/penelope.png",
+  "storeCount": "Türkiye'de 11 mağaza · Azerbaycan ve Irak'ta mağazalar",
+  "website": "https://www.penelopebedroom.com/"
  },
  "teka": {
   "about": "Teka, 1924'te Almanya'nın Gelsenkirchen kentinde kurulan mutfak ve banyo cihazları üreticisidir. Bugün merkezi İspanya (Santander) ve İsviçre'dedir (Zug) ve Midea Group'a aittir. 116 ülkede satış yapar; Avrupa, Amerika ve Asya'da 14 fabrikası ve yaklaşık 4.700 çalışanı vardır.\n\nÜrün gamında ankastre fırın ve mikrodalga, davlumbaz, gazlı ve indüksiyonlu ocaklar, buzdolabı, çamaşır ve bulaşık makinesi, eviye ve mutfak armatürleri yer alır.\n\nBu projede ocak, davlumbaz, mikrodalga, bulaşık makinesi, buzdolabı ve çamaşır makinesi kalemlerinde yer alır. Teklif ve büyük cihazların montajı TEKA ALJ üzerinden verildi (REV.2, 20.10.2026).",
@@ -1822,7 +1831,7 @@
   "website": "https://www.loominology.com/"
  },
  "arguc": {
-  "about": "Argüç, projenin dekoratif aydınlatma kalemlerini sağlayan tamamlayıcı markadır. Bu projede villaların avize ve aplik aydınlatmalarını karşılar.",
+  "about": "Argüç Aydınlatma, İstanbul Ümraniye'deki 3.500 m² kapalı alanlı fabrikasında 72 kişilik ekibiyle dekoratif aydınlatma üreten bir markadır. Titanyum (PVD) kaplama, CNC torna ve CNC lazer işlemlerini kendi bünyesinde yapar. Ürün yelpazesi avize ve sarkıt, aplik, masa lambası ve lambaderden oluşur; Ümraniye ve Sultangazi'de iki showroom'u vardır.\n\nBu projede villaların avize ve aplik aydınlatmaları Argüç ürünleriyle karşılanır.",
   "aliases": [
    "Arguc",
    "Argüç",
@@ -1840,11 +1849,33 @@
   "inDesign": true,
   "name": "Argüç",
   "posts": [],
-  "products": "Dekoratif aydınlatma",
+  "products": "Avize, sarkıt, aplik, masa lambası ve lambader",
   "role": "brand",
-  "sources": [],
-  "stores": [],
-  "videos": []
+  "sources": [
+   "https://www.argucaydinlatma.com/hakkimizda",
+   "https://www.argucaydinlatma.com/iletisim"
+  ],
+  "stores": [
+   {
+    "name": "Argüç Showroom Ümraniye",
+    "address": "Yamanevler Mah., Küçüksu Cad. No:61/C, Ümraniye",
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "url": "https://www.argucaydinlatma.com/iletisim"
+   },
+   {
+    "name": "Argüç Showroom Sultangazi",
+    "address": "Esentepe Mah., Avizeciler Sanayi Sit., 2971 Sk. No:3/B, Sultangazi",
+    "city": "İstanbul",
+    "country": "Türkiye",
+    "url": "https://www.argucaydinlatma.com/iletisim"
+   }
+  ],
+  "videos": [],
+  "hq": "Ümraniye, İstanbul",
+  "logo": "assets/firms/brands/arguc.png",
+  "storeCount": "2 showroom · Ümraniye ve Sultangazi",
+  "website": "https://www.argucaydinlatma.com/"
  },
  "sardunya": {
   "about": "Sardunya, 2009'da İnegöl'de Ümit Kırnak ve Mehmet Yavuz tarafından kurulmuş bir oturma grubu ve salon mobilyası üreticisidir. 2014'ten itibaren modern salon ve oturma odası takımlarına yöneldi. 2021'de fabrikasını Hamzabey OSB'ye taşıdı, 2023'te Akhisar/İnegöl'de panel mobilya tesisi açtı. Türkiye'de yaklaşık 50 satış noktası olduğunu ve 38 ülkeye hizmet verdiğini belirtir. 2024 ihracatı 2,95 milyon USD.",
